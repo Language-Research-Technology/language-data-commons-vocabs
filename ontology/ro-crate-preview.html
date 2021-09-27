@@ -1,0 +1,937 @@
+
+
+<html>
+<head>
+
+
+<script type="application/ld+json"> 
+  {
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@vocab": "http://schema.org/"
+    },
+    {
+      "@base": null
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "description": "This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects",
+      "hasPart": [],
+      "name": "Language Data Ontology",
+      "@reverse": {
+        "about": [
+          {
+            "@id": "ro-crate-metadata.json"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation",
+      "@type": "rdfs:Class",
+      "description": "The resource includes information which annotates some other linguistic record.",
+      "name": "Annotation",
+      "rdfs:SubclassOf": "",
+      "rdfs:comment": "A linguistic annotation is defined as structured linguistic information that is explicitly aligned to some spatial and/or temporal extent of some other linguistic record.",
+      "rdfs:label": "Annotation",
+      "@reverse": {
+        "rdfs:SubclassOf": [
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/discourse"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/gestural"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/kinesic"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/morphological"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/musical"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/part-of-speech"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/phonetic"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/phonological"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/prosodic"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/semantic"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/syntactic"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/translation"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/discourse",
+      "@type": "rdfs:Class",
+      "description": "The resource includes aligned discourse transcription.",
+      "name": "Discourse annotation",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:label": "DiscourseAnnotation"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/gestural",
+      "@type": "rdfs:Class",
+      "description": "The resource includes gestural annotation.",
+      "name": "Gestural annotation",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:label": "GesturalAnnotation"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/kinesic",
+      "@type": "rdfs:Class",
+      "description": "",
+      "name": "",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:comment": "The resource includes aligned representations of eye, face, and body movements.",
+      "rdfs:label": "KinesicAnnotation"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/morphological",
+      "@type": "rdfs:Class",
+      "description": "The resource includes morphological annotation.",
+      "name": "Morphological annotation",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:comment": "A morphological annotation is a morphological transcription where the component morphemes are aligned with some other linguistic record, such as an orthographic transcription or a speech signal. An example of morphological annotation is interlinear text with aligned morphemic glosses.",
+      "rdfs:label": "MorphologicalAnnotation"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/musical",
+      "@type": "rdfs:Class",
+      "description": "The resource includes musical annotation.",
+      "name": "Musical annotation",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:label": "MusicalAnnotation"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/part-of-speech",
+      "@type": "rdfs:Class",
+      "description": "The resource includes aligned part-of-speech tags.",
+      "name": "Part-of-speech annotation",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:label": "Part-of-speechAnnotation"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/phonetic",
+      "@type": "rdfs:Class",
+      "description": "The resource includes phonetic annotation.",
+      "name": "Phonetic annotation",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:comment": "An example of a phonetic annotation is the TIMIT database, in which each element of phonetic transcription is associated with a range of samples in a digital audio file [TIMIT].",
+      "rdfs:label": "PhoneticAnnotation"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/phonological",
+      "@type": "rdfs:Class",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:label": "PhonologicalAnnotation",
+      "name": ""
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/prosodic",
+      "@type": "rdfs:Class",
+      "description": "The resource includes prosodic annotation.",
+      "name": "Prosodic annotation",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:label": "ProsodicAnnotation"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/semantic",
+      "@type": "rdfs:Class",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:label": "SemanticAnnotation",
+      "name": ""
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/syntactic",
+      "@type": "rdfs:Class",
+      "description": "The resource includes aligned syntactic transcription.",
+      "name": "Syntactic annotation",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:comment": "A syntactic annotation might include supra-lexical features such as word order or auxiliary phrase constructions. They may thus be aligned with phrases or clauses rather than smaller segments of the annotated record.",
+      "rdfs:label": "SyntacticAnnotation"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/translation",
+      "@type": "rdfs:Class",
+      "description": "A translation is a version of the resource in another language.",
+      "name": "Translation",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      },
+      "rdfs:comment": "Translations may align with different linguistic levels of the resource: morpheme-by-morpheme translation, word-by-word translation, sentence-level free translation, or discourse-level free translation.",
+      "rdfs:label": "TranslationAnnotation"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#dataset",
+      "@type": "rdfs:Class",
+      "description": "The resource is a structured set of data items.",
+      "name": "Dataset",
+      "rdfs:SubclassOf": "",
+      "rdfs:comment": "A dataset is a collection of items organized in a structured format for some specific research purpose. Examples of datasets are: a database of sentences illustrating deictic terms; an inflectional affix paradigm; a list of utterance tokens in a uniform context (e.g. \"Say [pat] now.\").",
+      "rdfs:label": "Corpus"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#dataset/discourse",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of discourse data.",
+      "name": "Discourse dataset",
+      "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:label": "DiscourseDataset"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#dataset/gestural",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of gestural data.",
+      "name": "Gestural dataset",
+      "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:label": "GesturalDataset"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#dataset/kinesic",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of kinesic data.",
+      "name": "Kinesic dataset",
+      "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:label": "KinesicDataset"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#dataset/morphological",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of morphological data.",
+      "name": "Morphological dataset",
+      "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:label": "MorphologicalDataset"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#dataset/musical",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of musical data.",
+      "name": "Musical dataset",
+      "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:label": "MusicalDataset"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#dataset/orthographic",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of orthographic data.",
+      "name": "Orthographic dataset",
+      "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:label": "OrthographicDataset"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#dataset/part-of-speech",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of part-of-speech data.",
+      "name": "Part-of-speech dataset",
+      "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:label": "Part-of-speechDataset"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#dataset/phonetic",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of phonetic data.",
+      "name": "Phonetic dataset",
+      "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:label": "PhoneticDataset"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#dataset/phonological",
+      "@type": "rdfs:Class",
+      "description": "dataset/prosodic",
+      "name": "Phonological dataset",
+      "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:comment": "Prosodic dataset",
+      "rdfs:label": "PhonologicalDataset"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#dataset/semantic",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of semantic data.",
+      "name": "Semantic dataset",
+      "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:label": "SemanticDataset"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#dataset/syntactic",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of syntactic data.",
+      "name": "Syntactic dataset",
+      "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:label": "SyntacticDataset"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description",
+      "@type": "rdfs:Class",
+      "description": "The resource is a linguistic description.",
+      "name": "Description",
+      "rdfs:SubclassOf": "",
+      "rdfs:comment": "A description is any description or analysis of a language. Unlike a transcription or an annotation, the structure of a description is independent of the structure of the linguistic events that it describes.",
+      "rdfs:label": "LanguageDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/comparative",
+      "@type": "rdfs:Class",
+      "description": "The resource includes comparative or typological description.",
+      "name": "Comparative description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "ComparativeDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/discourse",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of discourse characteristics.",
+      "name": "Discourse description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "DiscourseDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/gestural",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of gestural characteristics.",
+      "name": "Gestural description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "GesturalDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/kinesic",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of kinesic characteristics.",
+      "name": "Kinesic description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "KinesicDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/morphological",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of morphological characteristics.",
+      "name": "Morphological description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "MorphologicalDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic",
+      "@type": "rdfs:Class",
+      "description": "The resource includes documentation of a writing system.",
+      "name": "Orthographic description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "OrthographicDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-speech",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of part-of-speech characteristics.",
+      "name": "Part-of-speech description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Part-of-speechDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/pedagogical",
+      "@type": "rdfs:Class",
+      "description": "The resource includes pedagogical description.",
+      "name": "Pedagogical description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "A pedagogical description is a style of presentation intended for use in teaching people to use the language.",
+      "rdfs:label": "PedagogicalDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonetic",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of phonetic characteristics.",
+      "name": "Phonetic description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "PhoneticDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonological",
+      "@type": "rdfs:Class",
+      "description": "The resource includes descriptionof phonological characteristics.",
+      "name": "Phonological description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "PhonologicalDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/prosodic",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of prosodic characteristics.",
+      "name": "Prosodic description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "ProsodicDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/semantic",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of semantic characteristics.",
+      "name": "Semantic description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "SemanticDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#description/syntactic",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of syntactic characteristics.",
+      "name": "Syntactica description",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "SyntacticDescription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon",
+      "@type": "rdfs:Class",
+      "description": "The resource includes a systematic listing of lexical items.",
+      "name": "Lexicon",
+      "rdfs:SubclassOf": "",
+      "rdfs:label": "Lexicon",
+      "@reverse": {
+        "rdfs:SubclassOf": [
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/analytical"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/bilingual"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/dictionary"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/etymological"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/frequency"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/phonetic"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/proper-names"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/terminology"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/wordlist"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/wordnet"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/analytical",
+      "@type": "rdfs:Class",
+      "description": "The lexicon contains analytical information.",
+      "name": "Analytical Lexicon",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
+      },
+      "rdfs:comment": "Analytical information includes such things as morphological derivation, grammatically related forms, argument structure, ...",
+      "rdfs:label": "AnalyticalLexicon"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/bilingual",
+      "@type": "rdfs:Class",
+      "description": "The resource includes ",
+      "name": "Bilingual Lexicon",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
+      },
+      "rdfs:comment": "s in another language.",
+      "rdfs:label": "BilingualLexicon"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/dictionary",
+      "@type": "rdfs:Class",
+      "description": "The resource includes a dictionary.",
+      "name": "Dictionary",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
+      },
+      "rdfs:comment": "This includes any resource that lists words or morphemes and defines them. It contrasts with a word list in that the ",
+      "rdfs:label": "DictionaryLexicon"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/etymological",
+      "@type": "rdfs:Class",
+      "description": "The lexicon contains etymological information.",
+      "name": "Etymological Lexicon",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
+      },
+      "rdfs:label": "EtymologicalLexicon"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/frequency",
+      "@type": "rdfs:Class",
+      "description": "The lexicon contains frequency information.",
+      "name": "Frequency Lexicon",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
+      },
+      "rdfs:label": "FrequencyLexicon"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/phonetic",
+      "@type": "rdfs:Class",
+      "description": "The lexicon contains phonetic information, including pronunciation, phonology, stress, rhymes.",
+      "name": "Phonetic Lexicon",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
+      },
+      "rdfs:label": "PhoneticLexicon"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/proper-names",
+      "@type": "rdfs:Class",
+      "description": "The resource includes only proper names sa dictionary headwords.",
+      "name": "Name Dictionary",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
+      },
+      "rdfs:label": "Proper-namesLexicon"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/terminology",
+      "@type": "rdfs:Class",
+      "description": "The resource includes a terminological lexicon.",
+      "name": "Terminology",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
+      },
+      "rdfs:comment": "A terminological lexicon is a glossary of domain-specific terms. Examples are technical terminology, kinship terms, color terms, acronyms, ...",
+      "rdfs:label": "TerminologyLexicon"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus",
+      "@type": "rdfs:Class",
+      "description": "The resource includes a thesaurus.",
+      "name": "Thesaurus",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
+      },
+      "rdfs:comment": "A thesaurus is a list of words or concepts arranged according to sense.",
+      "rdfs:label": "ThesaurusLexicon"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/wordlist",
+      "@type": "rdfs:Class",
+      "description": "The resource includes a word list.",
+      "name": "Word list",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
+      },
+      "rdfs:comment": "A word list is a list of reference words in a major language for which the nearest equivalent word in a target language has been elicited (for instance, the Swadesh 100-word list).",
+      "rdfs:label": "WordlistLexicon"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/wordnet",
+      "@type": "rdfs:Class",
+      "description": "The resource includes a semantic wordnet.",
+      "name": "WordNet",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
+      },
+      "rdfs:comment": "Whereas a dictionary documents the meanings of words by means of ",
+      "rdfs:label": "WordnetLexicon"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#text",
+      "@type": "rdfs:Class",
+      "description": "This is a primary resource: the object of study.",
+      "name": "Text",
+      "rdfs:SubclassOf": "",
+      "rdfs:comment": "A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse.",
+      "rdfs:label": "Text",
+      "@reverse": {
+        "rdfs:SubclassOf": [
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#text/dialogue"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#text/drama"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#text/formulaic"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#text/ludic"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#text/narrative"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#text/oratory"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#text/procedural"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#text/report"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#text/singing"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#text/unintelligible speech"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#text/dialogue",
+      "@type": "rdfs:Class",
+      "description": "An interactive discourse with two or more participants.",
+      "name": "Dialogue",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
+      },
+      "rdfs:comment": "Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.",
+      "rdfs:label": "DialogueText"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#text/drama",
+      "@type": "rdfs:Class",
+      "description": "A planned, creative, rendition of discourse with two or more participants.",
+      "name": "Drama",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
+      },
+      "rdfs:label": "DramaText"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#text/formulaic",
+      "@type": "rdfs:Class",
+      "description": "The resource is a ritually or conventionally structured discourse.",
+      "name": "Formulaic",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
+      },
+      "rdfs:comment": "Examples of formulaic discourse are prayers, curses, blessings, charms, curing rituals, marriage vows, and oaths.",
+      "rdfs:label": "FormulaicText"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#text/ludic",
+      "@type": "rdfs:Class",
+      "description": "Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language.",
+      "name": "Ludic",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
+      },
+      "rdfs:comment": "Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.",
+      "rdfs:label": "LudicText"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#text/narrative",
+      "@type": "rdfs:Class",
+      "description": "A monologic discourse which represents temporally organized events.",
+      "name": "Narrative",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
+      },
+      "rdfs:comment": "Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
+      "rdfs:label": "NarrativeText"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#text/oratory",
+      "@type": "rdfs:Class",
+      "description": "\"The art of public speaking, or of speaking eloquently according to rules or conventions.",
+      "name": "Oratory",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
+      },
+      "rdfs:comment": "Examples of oratory include sermons, lectures, political speeches, and invocations.",
+      "rdfs:label": "OratoryText"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#text/procedural",
+      "@type": "rdfs:Class",
+      "description": "An explanation or description of a method, process, or situation having ordered steps.",
+      "name": "Procedural",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
+      },
+      "rdfs:comment": "Examples of procedural discourses include recipes, instructions, and plans.",
+      "rdfs:label": "ProceduralText"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#text/report",
+      "@type": "rdfs:Class",
+      "description": "A factual account of some event or circumstance.",
+      "name": "Report",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
+      },
+      "rdfs:comment": "Examples of reports include news reports, essays, and commentaries.",
+      "rdfs:label": "ReportText"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#text/singing",
+      "@type": "rdfs:Class",
+      "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
+      "name": "Singing",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
+      },
+      "rdfs:comment": "Examples of singing include chants, songs, and choruses.",
+      "rdfs:label": "SingingText"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#text/unintelligible speech",
+      "@type": "rdfs:Class",
+      "description": "The resource consists of utterances that are not intended to be interpretable as ordinary language.",
+      "name": "Unintelligible speech",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
+      },
+      "rdfs:comment": "Examples of unintelligible speech include sacred languages, speaking in tongues, and singing syllables (fa-la-la).",
+      "rdfs:label": "UnintelligibleSpeechText"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription",
+      "@type": "rdfs:Class",
+      "description": "A transcription is a written representation of an audio or visual signal.",
+      "name": "Transcription",
+      "rdfs:SubclassOf": "",
+      "rdfs:comment": "A resource can be identified as a transcription if it includes a type of transcription as part of the content; for example, the first line of an interlinear analysis is often some type of transcription.",
+      "rdfs:label": "Transcription",
+      "@reverse": {
+        "rdfs:SubclassOf": [
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/gestural"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/kinesic"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/musical"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/orthographic"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/phonemic"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/phonetic"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/prosodic"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/gestural",
+      "@type": "rdfs:Class",
+      "description": "The resource includes gestural transcription.",
+      "name": "Gestural transcription",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"
+      },
+      "rdfs:label": "GesturalTranscription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/kinesic",
+      "@type": "rdfs:Class",
+      "description": "A kinesic transcription represents eye, face, and body movements.",
+      "name": "Kinesic transcription",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"
+      },
+      "rdfs:comment": "Kinesic transcriptions represent systematic uses of facial expressions, body language, and eye gaze that are used to communicate meaning.",
+      "rdfs:label": "KinesicTranscription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/musical",
+      "@type": "rdfs:Class",
+      "description": "A musical transcription represents music.",
+      "name": "Musical transcription",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"
+      },
+      "rdfs:label": "MusicalTranscription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/orthographic",
+      "@type": "rdfs:Class",
+      "description": "An orthographic transcription uses a standard or conventional orthography.",
+      "name": "Orthographic transcription",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"
+      },
+      "rdfs:comment": "Orthographic transcriptions differ from phonemic transcriptions that use a practical orthography in that they include orthographic conventions for punctuation, capitalization, etc.",
+      "rdfs:label": "OrthographicTranscription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/phonemic",
+      "@type": "rdfs:Class",
+      "description": "A phonemic transcription represents the signal at the level of the phoneme.",
+      "name": "Phonemic transcription",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"
+      },
+      "rdfs:comment": "Phonemic transcription may use the International Phonetic Alphabet [IPA] or a practical orthography.",
+      "rdfs:label": "PhonemicTranscription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/phonetic",
+      "@type": "rdfs:Class",
+      "description": "A phonetic transcription represents the signal at the phonetic level.",
+      "name": "Phonetic transcription",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"
+      },
+      "rdfs:comment": "Phonetic transcription may be narrow or broad, and will typically use the International Phonetic Alphabet [IPA] in a standard encoding (e.g. [Unicode-IPA], [SAMPA]). Phonological transcriptions are also classified here.",
+      "rdfs:label": "PhoneticTranscription"
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription/prosodic",
+      "@type": "rdfs:Class",
+      "description": "The resource includes prosodic transcription.",
+      "name": "Prosodic transcription",
+      "rdfs:SubclassOf": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"
+      },
+      "rdfs:comment": "A prosodic transcription is a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription.",
+      "rdfs:label": "ProsodicTranscription"
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "identifier": "ro-crate-metadata.json"
+    }
+  ]
+}
+</script>
+
+    
+<!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script -->
+<script src="https://unpkg.com/ro-crate-html-js/dist/ro-crate-dynamic.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset='utf-8'/>
+<style>
+
+table.table {
+  padding-bottom: 300px;
+}
+</style>
+</head>
+
+
+<body>
+
+  <nav class="navbar">
+
+    <ul class="nav navbar-nav" >
+        <li ><a href="#"><span class="glyphicon glyphicon-home dataset_name">&nbsp;Language Data Ontology</span></a></li>
+    </ul>
+
+  </nav>
+<div class="container">
+<div class="jumbotron">
+<h4 class="citation"></h3>
+<h3 class="item_name">Language Data Ontology</h4>
+
+
+<a href="./ro-crate-metadata.json">⬇️🏷️ Download all the metadata for <span class='name'>Language Data Ontology</span> in JSON-LD format</a>
+
+
+<div id="check"></div>
+
+
+</div>
+
+
+
+<div id="summary">
+<div class='all-meta'>
+           <div>
+            <h3> Language Data Ontology</h3>
+            
+            
+            
+            
+        <div id="./">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>./</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Language Data Ontology</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">about<span>&nbsp;</span><a href="http://schema.org/about">[?]</a></th>
+            <td style='text-align:left'><a href="#ro-crate-metadata.json">ro-crate-metadata.json</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/></div>
+</div>
+
+
+
+
+
+</body>
+</html>
