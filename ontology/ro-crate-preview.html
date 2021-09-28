@@ -31,6 +31,345 @@
       }
     },
     {
+      "@id": "schema:contributor",
+      "@type": "rdf:Property",
+      "name": "Contributor",
+      "rdfs:comment": "A secondary contributor to the CreativeWork or Event.",
+      "rdfs:label": "contributor",
+      "rdfs:subPropertyOf": "",
+      "@reverse": {
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#annotator"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#author"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#compiler"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#consultant"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#data_inputter"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#depositor"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#developer"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#editor"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#illustrator"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#interpreter"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#interviewer"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#participant"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#performer"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#photographer"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#recorder"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#research_participant"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#researcher"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#responder"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#signer"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#singer"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#speaker"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#sponsor"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#transcriber"
+          },
+          {
+            "@id": "http://www.language-archives.org/REC/role.html#translator"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#annotator",
+      "@type": "rdf:Property",
+      "name": "Annotator",
+      "rdfs:comment": "The participant produced an annotation of this or a related resource.",
+      "rdfs:label": "annotator",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#author",
+      "@type": "rdf:Property",
+      "name": "Author",
+      "rdfs:comment": "The participant contributed original writings to the resource.",
+      "rdfs:label": "author",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#compiler",
+      "@type": "rdf:Property",
+      "description": "This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately.",
+      "example": "A compiler of a book of short stories or a CD with several songs on it; a collector of a corpus of recordings in some language or on a given topic; a person who assembles a suite of software tools.",
+      "name": "Compiler",
+      "rdfs:comment": "The participant is responsible for collecting the sub-parts of the resource together.",
+      "rdfs:label": "compiler",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#consultant",
+      "@type": "rdf:Property",
+      "description": "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\".",
+      "name": "Consultant",
+      "rdfs:comment": "The participant contributes expertise to the creation of a work.",
+      "rdfs:label": "consultant",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#data_inputter",
+      "@type": "rdf:Property",
+      "name": "Data Inputter",
+      "rdfs:comment": "The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.",
+      "rdfs:label": "dataInputter",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#depositor",
+      "@type": "rdf:Property",
+      "name": "Depositor",
+      "rdfs:comment": "The participant was responsible for depositing the resource in an archive.",
+      "rdfs:label": "depositor",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#developer",
+      "@type": "rdf:Property",
+      "description": "A software programmer, designer, or analyst; a designer of a questionnaire or research task.",
+      "name": "Developer",
+      "rdfs:comment": "The participant developed the methodology or tools that constitute the resource, or that were used to create the resource.",
+      "rdfs:label": "developer",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#editor",
+      "@type": "rdf:Property",
+      "description": "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases.",
+      "name": "Editor",
+      "rdfs:comment": "The participant reviewed, corrected, and/or tested the resource.",
+      "rdfs:label": "editor",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#illustrator",
+      "@type": "rdf:Property",
+      "name": "Illustrator",
+      "rdfs:comment": "The participant contributed drawings or other illustrations to the resource.",
+      "rdfs:label": "illustrator",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#interpreter",
+      "@type": "rdf:Property",
+      "description": "The choice between 'interpreter' and 'translator' may depend on the dynamics of the resource creation event or process. Generally, if the participant is translating 'live'; that is, while the speaker or signer is speaking or signing, she or he should be identified as an interpreter. Also, some discourse genres include a participant who interprets or explains a performance of some kind.",
+      "example": "A person translating from English to ASL during a speech; a Kuna chief who interprets a chant that another chief has just performed, thus completing the ceremony.",
+      "name": "Interpreter",
+      "rdfs:comment": "The participant translates in real-time or explains the discourse recorded in the resource.",
+      "rdfs:label": "interpreter",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#interviewer",
+      "@type": "rdf:Property",
+      "name": "Interviewer",
+      "rdfs:comment": "The participant conducted an interview that forms part of the resource.",
+      "rdfs:label": "interviewer",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#participant",
+      "@type": "rdf:Property",
+      "description": "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in general sense of having allowed the creation event to take place, such as the mayor of an indigenous community.",
+      "name": "Participant",
+      "rdfs:comment": "The participant was present during the creation of the resource, but did not contribute substantially to its content.",
+      "rdfs:label": "participant",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#performer",
+      "@type": "rdf:Property",
+      "description": "It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.",
+      "example": "A person performing a ceremony or delivering an oration or a sermon; native speakers re-enacting a traditional genre of speech, such as ritual greetings or insults; an actor or musician.",
+      "name": "Performer",
+      "rdfs:comment": "The participant performed some portion of a recorded, filmed, or transcribed resource.",
+      "rdfs:label": "performer",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#photographer",
+      "@type": "rdf:Property",
+      "name": "Photographer",
+      "rdfs:comment": "The participant took the photograph, or shot the film, that appears in or constitutes the resource.",
+      "rdfs:label": "photographer",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#recorder",
+      "@type": "rdf:Property",
+      "name": "Recorder",
+      "rdfs:comment": "The participant operated the recording machinery used to create the resource.",
+      "rdfs:label": "recorder",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#research_participant",
+      "@type": "rdf:Property",
+      "name": "Research Participant",
+      "rdfs:comment": "The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.",
+      "rdfs:label": "researchParticipant",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#researcher",
+      "@type": "rdf:Property",
+      "name": "Researcher",
+      "rdfs:comment": "The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.",
+      "rdfs:label": "researcher",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#responder",
+      "@type": "rdf:Property",
+      "description": "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\".",
+      "name": "Responder",
+      "rdfs:comment": "The participant was an interlocutor in some sort of discourse event.",
+      "rdfs:label": "responder",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#signer",
+      "@type": "rdf:Property",
+      "description": "Signers are those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
+      "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
+      "name": "Signer",
+      "rdfs:comment": "The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
+      "rdfs:label": "signer",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#singer",
+      "@type": "rdf:Property",
+      "name": "Singer",
+      "rdfs:comment": "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
+      "rdfs:label": "singer",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#speaker",
+      "@type": "rdf:Property",
+      "description": "Speakers are those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
+      "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Speakers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
+      "name": "Speaker",
+      "rdfs:comment": "The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
+      "rdfs:label": "speaker",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#sponsor",
+      "@type": "rdf:Property",
+      "name": "Sponsor",
+      "rdfs:comment": "The participant contributed financial support to the creation of the resource.",
+      "rdfs:label": "sponsor",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#transcriber",
+      "@type": "rdf:Property",
+      "name": "Transcriber",
+      "rdfs:comment": "The participant produced a transcription of this or a related resource.",
+      "rdfs:label": "transcriber",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "http://www.language-archives.org/REC/role.html#translator",
+      "@type": "rdf:Property",
+      "name": "Translator",
+      "rdfs:comment": "The participant produced a translation of this or a related resource.",
+      "rdfs:label": "translator",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
       "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation",
       "@type": "rdfs:Class",
       "description": "The resource includes information which annotates some other linguistic record.",
@@ -87,6 +426,7 @@
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
       },
+      "rdfs:comment": "",
       "rdfs:label": "DiscourseAnnotation"
     },
     {
@@ -97,6 +437,7 @@
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
       },
+      "rdfs:comment": "",
       "rdfs:label": "GesturalAnnotation"
     },
     {
@@ -129,6 +470,7 @@
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
       },
+      "rdfs:comment": "",
       "rdfs:label": "MusicalAnnotation"
     },
     {
@@ -139,6 +481,7 @@
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
       },
+      "rdfs:comment": "",
       "rdfs:label": "Part-of-speechAnnotation"
     },
     {
@@ -155,11 +498,13 @@
     {
       "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/phonological",
       "@type": "rdfs:Class",
+      "description": "",
+      "name": "",
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
       },
-      "rdfs:label": "PhonologicalAnnotation",
-      "name": ""
+      "rdfs:comment": "",
+      "rdfs:label": "PhonologicalAnnotation"
     },
     {
       "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/prosodic",
@@ -169,16 +514,19 @@
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
       },
+      "rdfs:comment": "",
       "rdfs:label": "ProsodicAnnotation"
     },
     {
       "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/semantic",
       "@type": "rdfs:Class",
+      "description": "",
+      "name": "",
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
       },
-      "rdfs:label": "SemanticAnnotation",
-      "name": ""
+      "rdfs:comment": "",
+      "rdfs:label": "SemanticAnnotation"
     },
     {
       "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/syntactic",
@@ -217,6 +565,7 @@
       "description": "The dataset is comprised of discourse data.",
       "name": "Discourse dataset",
       "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:comment": "",
       "rdfs:label": "DiscourseDataset"
     },
     {
@@ -225,6 +574,7 @@
       "description": "The dataset is comprised of gestural data.",
       "name": "Gestural dataset",
       "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:comment": "",
       "rdfs:label": "GesturalDataset"
     },
     {
@@ -233,6 +583,7 @@
       "description": "The dataset is comprised of kinesic data.",
       "name": "Kinesic dataset",
       "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:comment": "",
       "rdfs:label": "KinesicDataset"
     },
     {
@@ -241,6 +592,7 @@
       "description": "The dataset is comprised of morphological data.",
       "name": "Morphological dataset",
       "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:comment": "",
       "rdfs:label": "MorphologicalDataset"
     },
     {
@@ -249,6 +601,7 @@
       "description": "The dataset is comprised of musical data.",
       "name": "Musical dataset",
       "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:comment": "",
       "rdfs:label": "MusicalDataset"
     },
     {
@@ -257,6 +610,7 @@
       "description": "The dataset is comprised of orthographic data.",
       "name": "Orthographic dataset",
       "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:comment": "",
       "rdfs:label": "OrthographicDataset"
     },
     {
@@ -265,6 +619,7 @@
       "description": "The dataset is comprised of part-of-speech data.",
       "name": "Part-of-speech dataset",
       "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:comment": "",
       "rdfs:label": "Part-of-speechDataset"
     },
     {
@@ -273,6 +628,7 @@
       "description": "The dataset is comprised of phonetic data.",
       "name": "Phonetic dataset",
       "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:comment": "",
       "rdfs:label": "PhoneticDataset"
     },
     {
@@ -290,6 +646,7 @@
       "description": "The dataset is comprised of semantic data.",
       "name": "Semantic dataset",
       "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:comment": "",
       "rdfs:label": "SemanticDataset"
     },
     {
@@ -298,6 +655,7 @@
       "description": "The dataset is comprised of syntactic data.",
       "name": "Syntactic dataset",
       "rdfs:SubclassOf": "\"Corpus\"",
+      "rdfs:comment": "",
       "rdfs:label": "SyntacticDataset"
     },
     {
@@ -315,6 +673,7 @@
       "description": "The resource includes comparative or typological description.",
       "name": "Comparative description",
       "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "",
       "rdfs:label": "ComparativeDescription"
     },
     {
@@ -323,6 +682,7 @@
       "description": "The resource includes description of discourse characteristics.",
       "name": "Discourse description",
       "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "",
       "rdfs:label": "DiscourseDescription"
     },
     {
@@ -331,6 +691,7 @@
       "description": "The resource includes description of gestural characteristics.",
       "name": "Gestural description",
       "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "",
       "rdfs:label": "GesturalDescription"
     },
     {
@@ -339,6 +700,7 @@
       "description": "The resource includes description of kinesic characteristics.",
       "name": "Kinesic description",
       "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "",
       "rdfs:label": "KinesicDescription"
     },
     {
@@ -347,6 +709,7 @@
       "description": "The resource includes description of morphological characteristics.",
       "name": "Morphological description",
       "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "",
       "rdfs:label": "MorphologicalDescription"
     },
     {
@@ -355,6 +718,7 @@
       "description": "The resource includes documentation of a writing system.",
       "name": "Orthographic description",
       "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "",
       "rdfs:label": "OrthographicDescription"
     },
     {
@@ -363,6 +727,7 @@
       "description": "The resource includes description of part-of-speech characteristics.",
       "name": "Part-of-speech description",
       "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "",
       "rdfs:label": "Part-of-speechDescription"
     },
     {
@@ -380,6 +745,7 @@
       "description": "The resource includes description of phonetic characteristics.",
       "name": "Phonetic description",
       "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "",
       "rdfs:label": "PhoneticDescription"
     },
     {
@@ -388,6 +754,7 @@
       "description": "The resource includes descriptionof phonological characteristics.",
       "name": "Phonological description",
       "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "",
       "rdfs:label": "PhonologicalDescription"
     },
     {
@@ -396,6 +763,7 @@
       "description": "The resource includes description of prosodic characteristics.",
       "name": "Prosodic description",
       "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "",
       "rdfs:label": "ProsodicDescription"
     },
     {
@@ -404,6 +772,7 @@
       "description": "The resource includes description of semantic characteristics.",
       "name": "Semantic description",
       "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "",
       "rdfs:label": "SemanticDescription"
     },
     {
@@ -412,6 +781,7 @@
       "description": "The resource includes description of syntactic characteristics.",
       "name": "Syntactica description",
       "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "",
       "rdfs:label": "SyntacticDescription"
     },
     {
@@ -420,6 +790,7 @@
       "description": "The resource includes a systematic listing of lexical items.",
       "name": "Lexicon",
       "rdfs:SubclassOf": "",
+      "rdfs:comment": "",
       "rdfs:label": "Lexicon",
       "@reverse": {
         "rdfs:SubclassOf": [
@@ -500,6 +871,7 @@
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
       },
+      "rdfs:comment": "",
       "rdfs:label": "EtymologicalLexicon"
     },
     {
@@ -510,6 +882,7 @@
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
       },
+      "rdfs:comment": "",
       "rdfs:label": "FrequencyLexicon"
     },
     {
@@ -520,6 +893,7 @@
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
       },
+      "rdfs:comment": "",
       "rdfs:label": "PhoneticLexicon"
     },
     {
@@ -530,6 +904,7 @@
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon"
       },
+      "rdfs:comment": "",
       "rdfs:label": "Proper-namesLexicon"
     },
     {
@@ -638,6 +1013,7 @@
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
       },
+      "rdfs:comment": "",
       "rdfs:label": "DramaText"
     },
     {
@@ -770,6 +1146,7 @@
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"
       },
+      "rdfs:comment": "",
       "rdfs:label": "GesturalTranscription"
     },
     {
@@ -791,6 +1168,7 @@
       "rdfs:SubclassOf": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"
       },
+      "rdfs:comment": "",
       "rdfs:label": "MusicalTranscription"
     },
     {
