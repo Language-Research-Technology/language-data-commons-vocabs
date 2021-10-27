@@ -2,665 +2,665 @@
 
 # Property: contributor
 
-undefined
+A secondary contributor to the CreativeWork or Event.
 
 </div>
 <div id="#annotator">
 
 # Property: annotator
 
-undefined
+The participant produced an annotation of this or a related resource.
 
 </div>
 <div id="#author">
 
 # Property: author
 
-undefined
+The participant contributed original writings to the resource.
 
 </div>
 <div id="#compiler">
 
 # Property: compiler
 
-undefined
+The participant is responsible for collecting the sub-parts of the resource together.
 
 </div>
 <div id="#consultant">
 
 # Property: consultant
 
-undefined
+The participant contributes expertise to the creation of a work.
 
 </div>
 <div id="#dataInputter">
 
 # Property: dataInputter
 
-undefined
+The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.
 
 </div>
 <div id="#depositor">
 
 # Property: depositor
 
-undefined
+The participant was responsible for depositing the resource in an archive.
 
 </div>
 <div id="#developer">
 
 # Property: developer
 
-undefined
+The participant developed the methodology or tools that constitute the resource, or that were used to create the resource.
 
 </div>
 <div id="#editor">
 
 # Property: editor
 
-undefined
+The participant reviewed, corrected, and/or tested the resource.
 
 </div>
 <div id="#illustrator">
 
 # Property: illustrator
 
-undefined
+The participant contributed drawings or other illustrations to the resource.
 
 </div>
 <div id="#interpreter">
 
 # Property: interpreter
 
-undefined
+The participant translates in real-time or explains the discourse recorded in the resource.
 
 </div>
 <div id="#interviewer">
 
 # Property: interviewer
 
-undefined
+The participant conducted an interview that forms part of the resource.
 
 </div>
 <div id="#participant">
 
 # Property: participant
 
-undefined
+The participant was present during the creation of the resource, but did not contribute substantially to its content.
 
 </div>
 <div id="#performer">
 
 # Property: performer
 
-undefined
+The participant performed some portion of a recorded, filmed, or transcribed resource.
 
 </div>
 <div id="#photographer">
 
 # Property: photographer
 
-undefined
+The participant took the photograph, or shot the film, that appears in or constitutes the resource.
 
 </div>
 <div id="#recorder">
 
 # Property: recorder
 
-undefined
+The participant operated the recording machinery used to create the resource.
 
 </div>
 <div id="#researchParticipant">
 
 # Property: researchParticipant
 
-undefined
+The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.
 
 </div>
 <div id="#researcher">
 
 # Property: researcher
 
-undefined
+The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.
 
 </div>
 <div id="#responder">
 
 # Property: responder
 
-undefined
+The participant was an interlocutor in some sort of discourse event.
 
 </div>
 <div id="#signer">
 
 # Property: signer
 
-undefined
+The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource.
 
 </div>
 <div id="#singer">
 
 # Property: singer
 
-undefined
+The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.
 
 </div>
 <div id="#speaker">
 
 # Property: speaker
 
-undefined
+The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource.
 
 </div>
 <div id="#sponsor">
 
 # Property: sponsor
 
-undefined
+The participant contributed financial support to the creation of the resource.
 
 </div>
 <div id="#transcriber">
 
 # Property: transcriber
 
-undefined
+The participant produced a transcription of this or a related resource.
 
 </div>
 <div id="#translator">
 
 # Property: translator
 
-undefined
+The participant produced a translation of this or a related resource.
 
 </div>
 <div id="#Annotation">
 
 # Class: Annotation
 
-undefined
+A linguistic annotation is defined as structured linguistic information that is explicitly aligned to some spatial and/or temporal extent of some other linguistic record.
 
 </div>
 <div id="#DiscourseAnnotation">
 
 # Class: DiscourseAnnotation
 
-undefined
+
 
 </div>
 <div id="#GesturalAnnotation">
 
 # Class: GesturalAnnotation
 
-undefined
+
 
 </div>
 <div id="#KinesicAnnotation">
 
 # Class: KinesicAnnotation
 
-undefined
+The resource includes aligned representations of eye, face, and body movements.
 
 </div>
 <div id="#MorphologicalAnnotation">
 
 # Class: MorphologicalAnnotation
 
-undefined
+A morphological annotation is a morphological transcription where the component morphemes are aligned with some other linguistic record, such as an orthographic transcription or a speech signal. An example of morphological annotation is interlinear text with aligned morphemic glosses.
 
 </div>
 <div id="#MusicalAnnotation">
 
 # Class: MusicalAnnotation
 
-undefined
+
 
 </div>
 <div id="#Part-of-speechAnnotation">
 
 # Class: Part-of-speechAnnotation
 
-undefined
+
 
 </div>
 <div id="#PhoneticAnnotation">
 
 # Class: PhoneticAnnotation
 
-undefined
+An example of a phonetic annotation is the TIMIT database, in which each element of phonetic transcription is associated with a range of samples in a digital audio file [TIMIT].
 
 </div>
 <div id="#PhonologicalAnnotation">
 
 # Class: PhonologicalAnnotation
 
-undefined
+
 
 </div>
 <div id="#ProsodicAnnotation">
 
 # Class: ProsodicAnnotation
 
-undefined
+
 
 </div>
 <div id="#SemanticAnnotation">
 
 # Class: SemanticAnnotation
 
-undefined
+
 
 </div>
 <div id="#SyntacticAnnotation">
 
 # Class: SyntacticAnnotation
 
-undefined
+A syntactic annotation might include supra-lexical features such as word order or auxiliary phrase constructions. They may thus be aligned with phrases or clauses rather than smaller segments of the annotated record.
 
 </div>
 <div id="#TranslationAnnotation">
 
 # Class: TranslationAnnotation
 
-undefined
+Translations may align with different linguistic levels of the resource: morpheme-by-morpheme translation, word-by-word translation, sentence-level free translation, or discourse-level free translation.
 
 </div>
 <div id="#Corpus">
 
 # Class: Corpus
 
-undefined
+A dataset is a collection of items organized in a structured format for some specific research purpose. Examples of datasets are: a database of sentences illustrating deictic terms; an inflectional affix paradigm; a list of utterance tokens in a uniform context (e.g. "Say [pat] now.").
 
 </div>
 <div id="#DiscourseDataset">
 
 # Class: DiscourseDataset
 
-undefined
+
 
 </div>
 <div id="#GesturalDataset">
 
 # Class: GesturalDataset
 
-undefined
+
 
 </div>
 <div id="#KinesicDataset">
 
 # Class: KinesicDataset
 
-undefined
+
 
 </div>
 <div id="#MorphologicalDataset">
 
 # Class: MorphologicalDataset
 
-undefined
+
 
 </div>
 <div id="#MusicalDataset">
 
 # Class: MusicalDataset
 
-undefined
+
 
 </div>
 <div id="#OrthographicDataset">
 
 # Class: OrthographicDataset
 
-undefined
+
 
 </div>
 <div id="#Part-of-speechDataset">
 
 # Class: Part-of-speechDataset
 
-undefined
+
 
 </div>
 <div id="#PhoneticDataset">
 
 # Class: PhoneticDataset
 
-undefined
+
 
 </div>
 <div id="#PhonologicalDataset">
 
 # Class: PhonologicalDataset
 
-undefined
+Prosodic dataset
 
 </div>
 <div id="#SemanticDataset">
 
 # Class: SemanticDataset
 
-undefined
+
 
 </div>
 <div id="#SyntacticDataset">
 
 # Class: SyntacticDataset
 
-undefined
+
 
 </div>
 <div id="#LanguageDescription">
 
 # Class: LanguageDescription
 
-undefined
+A description is any description or analysis of a language. Unlike a transcription or an annotation, the structure of a description is independent of the structure of the linguistic events that it describes.
 
 </div>
 <div id="#ComparativeDescription">
 
 # Class: ComparativeDescription
 
-undefined
+
 
 </div>
 <div id="#DiscourseDescription">
 
 # Class: DiscourseDescription
 
-undefined
+
 
 </div>
 <div id="#GesturalDescription">
 
 # Class: GesturalDescription
 
-undefined
+
 
 </div>
 <div id="#KinesicDescription">
 
 # Class: KinesicDescription
 
-undefined
+
 
 </div>
 <div id="#MorphologicalDescription">
 
 # Class: MorphologicalDescription
 
-undefined
+
 
 </div>
 <div id="#OrthographicDescription">
 
 # Class: OrthographicDescription
 
-undefined
+
 
 </div>
 <div id="#Part-of-speechDescription">
 
 # Class: Part-of-speechDescription
 
-undefined
+
 
 </div>
 <div id="#PedagogicalDescription">
 
 # Class: PedagogicalDescription
 
-undefined
+A pedagogical description is a style of presentation intended for use in teaching people to use the language.
 
 </div>
 <div id="#PhoneticDescription">
 
 # Class: PhoneticDescription
 
-undefined
+
 
 </div>
 <div id="#PhonologicalDescription">
 
 # Class: PhonologicalDescription
 
-undefined
+
 
 </div>
 <div id="#ProsodicDescription">
 
 # Class: ProsodicDescription
 
-undefined
+
 
 </div>
 <div id="#SemanticDescription">
 
 # Class: SemanticDescription
 
-undefined
+
 
 </div>
 <div id="#SyntacticDescription">
 
 # Class: SyntacticDescription
 
-undefined
+
 
 </div>
 <div id="#Lexicon">
 
 # Class: Lexicon
 
-undefined
+
 
 </div>
 <div id="#AnalyticalLexicon">
 
 # Class: AnalyticalLexicon
 
-undefined
+Analytical information includes such things as morphological derivation, grammatically related forms, argument structure, ...
 
 </div>
 <div id="#BilingualLexicon">
 
 # Class: BilingualLexicon
 
-undefined
+s in another language.
 
 </div>
 <div id="#DictionaryLexicon">
 
 # Class: DictionaryLexicon
 
-undefined
+This includes any resource that lists words or morphemes and defines them. It contrasts with a word list in that the 
 
 </div>
 <div id="#EtymologicalLexicon">
 
 # Class: EtymologicalLexicon
 
-undefined
+
 
 </div>
 <div id="#FrequencyLexicon">
 
 # Class: FrequencyLexicon
 
-undefined
+
 
 </div>
 <div id="#PhoneticLexicon">
 
 # Class: PhoneticLexicon
 
-undefined
+
 
 </div>
 <div id="#Proper-namesLexicon">
 
 # Class: Proper-namesLexicon
 
-undefined
+
 
 </div>
 <div id="#TerminologyLexicon">
 
 # Class: TerminologyLexicon
 
-undefined
+A terminological lexicon is a glossary of domain-specific terms. Examples are technical terminology, kinship terms, color terms, acronyms, ...
 
 </div>
 <div id="#ThesaurusLexicon">
 
 # Class: ThesaurusLexicon
 
-undefined
+A thesaurus is a list of words or concepts arranged according to sense.
 
 </div>
 <div id="#WordlistLexicon">
 
 # Class: WordlistLexicon
 
-undefined
+A word list is a list of reference words in a major language for which the nearest equivalent word in a target language has been elicited (for instance, the Swadesh 100-word list).
 
 </div>
 <div id="#WordnetLexicon">
 
 # Class: WordnetLexicon
 
-undefined
+Whereas a dictionary documents the meanings of words by means of 
 
 </div>
 <div id="#Text">
 
 # Class: Text
 
-undefined
+A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse.
 
 </div>
 <div id="#DialogueText">
 
 # Class: DialogueText
 
-undefined
+Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.
 
 </div>
 <div id="#DramaText">
 
 # Class: DramaText
 
-undefined
+
 
 </div>
 <div id="#FormulaicText">
 
 # Class: FormulaicText
 
-undefined
+Examples of formulaic discourse are prayers, curses, blessings, charms, curing rituals, marriage vows, and oaths.
 
 </div>
 <div id="#LudicText">
 
 # Class: LudicText
 
-undefined
+Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.
 
 </div>
 <div id="#NarrativeText">
 
 # Class: NarrativeText
 
-undefined
+Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.
 
 </div>
 <div id="#OratoryText">
 
 # Class: OratoryText
 
-undefined
+Examples of oratory include sermons, lectures, political speeches, and invocations.
 
 </div>
 <div id="#ProceduralText">
 
 # Class: ProceduralText
 
-undefined
+Examples of procedural discourses include recipes, instructions, and plans.
 
 </div>
 <div id="#ReportText">
 
 # Class: ReportText
 
-undefined
+Examples of reports include news reports, essays, and commentaries.
 
 </div>
 <div id="#SingingText">
 
 # Class: SingingText
 
-undefined
+Examples of singing include chants, songs, and choruses.
 
 </div>
 <div id="#UnintelligibleSpeechText">
 
 # Class: UnintelligibleSpeechText
 
-undefined
+Examples of unintelligible speech include sacred languages, speaking in tongues, and singing syllables (fa-la-la).
 
 </div>
 <div id="#Transcription">
 
 # Class: Transcription
 
-undefined
+A resource can be identified as a transcription if it includes a type of transcription as part of the content; for example, the first line of an interlinear analysis is often some type of transcription.
 
 </div>
 <div id="#GesturalTranscription">
 
 # Class: GesturalTranscription
 
-undefined
+
 
 </div>
 <div id="#KinesicTranscription">
 
 # Class: KinesicTranscription
 
-undefined
+Kinesic transcriptions represent systematic uses of facial expressions, body language, and eye gaze that are used to communicate meaning.
 
 </div>
 <div id="#MusicalTranscription">
 
 # Class: MusicalTranscription
 
-undefined
+
 
 </div>
 <div id="#OrthographicTranscription">
 
 # Class: OrthographicTranscription
 
-undefined
+Orthographic transcriptions differ from phonemic transcriptions that use a practical orthography in that they include orthographic conventions for punctuation, capitalization, etc.
 
 </div>
 <div id="#PhonemicTranscription">
 
 # Class: PhonemicTranscription
 
-undefined
+Phonemic transcription may use the International Phonetic Alphabet [IPA] or a practical orthography.
 
 </div>
 <div id="#PhoneticTranscription">
 
 # Class: PhoneticTranscription
 
-undefined
+Phonetic transcription may be narrow or broad, and will typically use the International Phonetic Alphabet [IPA] in a standard encoding (e.g. [Unicode-IPA], [SAMPA]). Phonological transcriptions are also classified here.
 
 </div>
 <div id="#ProsodicTranscription">
 
 # Class: ProsodicTranscription
 
-undefined
+A prosodic transcription is a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription.
 
 </div>
 
