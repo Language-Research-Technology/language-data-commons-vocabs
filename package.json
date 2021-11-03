@@ -1,0 +1,29 @@
+{
+  "name": "language-data-node-tools",
+  "version": "1.0.0",
+  "description": "Utilities for packaging and descring lanaguage data using RO-Crate",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Language-Research-Technology/language-data-node-tools.git"
+  },
+  "keywords": [
+    "ATAP",
+    "LDaCA",
+    "RO-Crate"
+  ],
+  "author": "Peter Sefton",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Language-Research-Technology/language-data-node-tools/issues"
+  },
+  "homepage": "https://github.com/Language-Research-Technology/language-data-node-tools#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "ro-crate": "^2.0.5",
+    "shelljs": "^0.8.4"
+  }
+}
