@@ -23,7 +23,9 @@
   "homepage": "https://github.com/Language-Research-Technology/language-data-node-tools#readme",
   "dependencies": {
     "chai": "^4.3.4",
+    "oni-ocfl": "git+https://github.com/Language-Research-Technology/oni-ocfl.git",
     "ro-crate": "^2.0.5",
-    "shelljs": "^0.8.4"
+    "shelljs": "^0.8.4",
+    "tmp": "^0.2.1"
   }
 }
