@@ -798,7 +798,7 @@
       "@type": "rdfs:Class",
       "description": "This is a primary resource: the object of study.",
       "name": "Text",
-      "rdfs:SubclassOf": "https://github.com/Language-Research-Technology/language-data-node-tools/blob/master/ontology.md#property-OrthographicText",
+      "rdfs:SubclassOf": "https://github.com/Language-Research-Technology/language-data-node-tools/blob/master/ontology.md#class-orthographictext",
       "rdfs:comment": "A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse.",
       "rdfs:label": "Text"
     },
