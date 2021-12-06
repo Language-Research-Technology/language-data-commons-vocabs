@@ -12,6 +12,7 @@
     {
       "@id": "./",
       "@type": "Dataset",
+      "hasFile": [],
       "description": "This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects",
       "hasPart": [],
       "name": "Language Data Ontology"
@@ -21,12 +22,21 @@
       "@type": "rdf:Property",
       "name": "Contributor",
       "rdfs:comment": "A secondary contributor to the CreativeWork or Event.",
-      "rdfs:label": "contributor",
-      "rdfs:subPropertyOf": ""
+      "rdfs:label": "contributor"
+    },
+    {
+      "@id": "http://w3id.org/meta-share/meta-share/register",
+      "@type": "rdf:Property",
+      "description": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
+      "name": "Register",
+      "rdfs:comment": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
+      "rdfs:label": "translator",
+      "rdfs:subPropertyOf": "\"schema:genre\""
     },
     {
       "@id": "http://www.language-archives.org/REC/role.html#annotator",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Annotator",
       "rdfs:comment": "The participant produced an annotation of this or a related resource.",
       "rdfs:label": "annotator",
@@ -37,6 +47,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#author",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Author",
       "rdfs:comment": "The participant contributed original writings to the resource.",
       "rdfs:label": "author",
@@ -70,6 +81,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#data_inputter",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Data Inputter",
       "rdfs:comment": "The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.",
       "rdfs:label": "dataInputter",
@@ -80,6 +92,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#depositor",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Depositor",
       "rdfs:comment": "The participant was responsible for depositing the resource in an archive.",
       "rdfs:label": "depositor",
@@ -112,6 +125,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#illustrator",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Illustrator",
       "rdfs:comment": "The participant contributed drawings or other illustrations to the resource.",
       "rdfs:label": "illustrator",
@@ -134,6 +148,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#interviewer",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Interviewer",
       "rdfs:comment": "The participant conducted an interview that forms part of the resource.",
       "rdfs:label": "interviewer",
@@ -167,6 +182,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#photographer",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Photographer",
       "rdfs:comment": "The participant took the photograph, or shot the film, that appears in or constitutes the resource.",
       "rdfs:label": "photographer",
@@ -177,6 +193,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#recorder",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Recorder",
       "rdfs:comment": "The participant operated the recording machinery used to create the resource.",
       "rdfs:label": "recorder",
@@ -187,6 +204,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#research_participant",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Research Participant",
       "rdfs:comment": "The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.",
       "rdfs:label": "researchParticipant",
@@ -197,6 +215,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#researcher",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Researcher",
       "rdfs:comment": "The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.",
       "rdfs:label": "researcher",
@@ -230,6 +249,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#singer",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Singer",
       "rdfs:comment": "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
       "rdfs:label": "singer",
@@ -252,6 +272,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#sponsor",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Sponsor",
       "rdfs:comment": "The participant contributed financial support to the creation of the resource.",
       "rdfs:label": "sponsor",
@@ -262,6 +283,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#transcriber",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Transcriber",
       "rdfs:comment": "The participant produced a transcription of this or a related resource.",
       "rdfs:label": "transcriber",
@@ -272,6 +294,7 @@
     {
       "@id": "http://www.language-archives.org/REC/role.html#translator",
       "@type": "rdf:Property",
+      "description": "",
       "name": "Translator",
       "rdfs:comment": "The participant produced a translation of this or a related resource.",
       "rdfs:label": "translator",
