@@ -5,6 +5,14 @@
 A secondary contributor to the CreativeWork or Event.
 
 </div>
+<div id="#translator">
+
+# Property: translator
+
+Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource
+
+
+</div>
 <div id="#annotator">
 
 # Property: annotator
