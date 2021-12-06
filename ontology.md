@@ -545,11 +545,11 @@ Whereas a dictionary documents the meanings of words by means of
 A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse.
 
 </div>
-<div id="#DialogueText">
+<div id="#OrthographicText">
 
-# Class: DialogueText
+# Class: OrthographicText
 
-Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.
+Examples of Orthographic texts include letters, books, and other written documents
 
 </div>
 <div id="#DramaText">
