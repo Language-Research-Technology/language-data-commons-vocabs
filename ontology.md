@@ -4,6 +4,10 @@
 
 A secondary contributor to the CreativeWork or Event.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#translator">
 
@@ -12,12 +16,20 @@ A secondary contributor to the CreativeWork or Event.
 Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource
 
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#annotator">
 
 # Property: annotator
 
 The participant produced an annotation of this or a related resource.
+
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
 
 </div>
 <div id="#author">
@@ -26,12 +38,20 @@ The participant produced an annotation of this or a related resource.
 
 The participant contributed original writings to the resource.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#compiler">
 
 # Property: compiler
 
 The participant is responsible for collecting the sub-parts of the resource together.
+
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
 
 </div>
 <div id="#consultant">
@@ -40,12 +60,20 @@ The participant is responsible for collecting the sub-parts of the resource toge
 
 The participant contributes expertise to the creation of a work.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#dataInputter">
 
 # Property: dataInputter
 
 The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.
+
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
 
 </div>
 <div id="#depositor">
@@ -54,12 +82,20 @@ The participant was responsible for entering, re-typing, and/or structuring the 
 
 The participant was responsible for depositing the resource in an archive.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#developer">
 
 # Property: developer
 
 The participant developed the methodology or tools that constitute the resource, or that were used to create the resource.
+
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
 
 </div>
 <div id="#editor">
@@ -68,12 +104,20 @@ The participant developed the methodology or tools that constitute the resource,
 
 The participant reviewed, corrected, and/or tested the resource.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#illustrator">
 
 # Property: illustrator
 
 The participant contributed drawings or other illustrations to the resource.
+
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
 
 </div>
 <div id="#interpreter">
@@ -82,12 +126,20 @@ The participant contributed drawings or other illustrations to the resource.
 
 The participant translates in real-time or explains the discourse recorded in the resource.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#interviewer">
 
 # Property: interviewer
 
 The participant conducted an interview that forms part of the resource.
+
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
 
 </div>
 <div id="#participant">
@@ -96,12 +148,20 @@ The participant conducted an interview that forms part of the resource.
 
 The participant was present during the creation of the resource, but did not contribute substantially to its content.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#performer">
 
 # Property: performer
 
 The participant performed some portion of a recorded, filmed, or transcribed resource.
+
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
 
 </div>
 <div id="#photographer">
@@ -110,12 +170,20 @@ The participant performed some portion of a recorded, filmed, or transcribed res
 
 The participant took the photograph, or shot the film, that appears in or constitutes the resource.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#recorder">
 
 # Property: recorder
 
 The participant operated the recording machinery used to create the resource.
+
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
 
 </div>
 <div id="#researchParticipant">
@@ -124,12 +192,20 @@ The participant operated the recording machinery used to create the resource.
 
 The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#researcher">
 
 # Property: researcher
 
 The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.
+
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
 
 </div>
 <div id="#responder">
@@ -138,12 +214,20 @@ The resource was created as part of the participant's research, or the research 
 
 The participant was an interlocutor in some sort of discourse event.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#signer">
 
 # Property: signer
 
 The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource.
+
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
 
 </div>
 <div id="#singer">
@@ -152,12 +236,20 @@ The participant was a principal signer in a resource that consists of a recordin
 
 The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#speaker">
 
 # Property: speaker
 
 The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource.
+
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
 
 </div>
 <div id="#sponsor">
@@ -166,6 +258,10 @@ The participant was a principal speaker in a resource that consists of a recordi
 
 The participant contributed financial support to the creation of the resource.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#transcriber">
 
@@ -173,12 +269,20 @@ The participant contributed financial support to the creation of the resource.
 
 The participant produced a transcription of this or a related resource.
 
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
+
 </div>
 <div id="#translator">
 
 # Property: translator
 
 The participant produced a translation of this or a related resource.
+
+## Values expected to be on of these typesPerson,Organization
+
+## Used on of these typesDataset
 
 </div>
 <div id="#Annotation">
@@ -192,14 +296,14 @@ A linguistic annotation is defined as structured linguistic information that is 
 
 # Class: DiscourseAnnotation
 
-
+undefined
 
 </div>
 <div id="#GesturalAnnotation">
 
 # Class: GesturalAnnotation
 
-
+undefined
 
 </div>
 <div id="#KinesicAnnotation">
@@ -220,14 +324,14 @@ A morphological annotation is a morphological transcription where the component 
 
 # Class: MusicalAnnotation
 
-
+undefined
 
 </div>
 <div id="#Part-of-speechAnnotation">
 
 # Class: Part-of-speechAnnotation
 
-
+undefined
 
 </div>
 <div id="#PhoneticAnnotation">
@@ -241,21 +345,21 @@ An example of a phonetic annotation is the TIMIT database, in which each element
 
 # Class: PhonologicalAnnotation
 
-
+undefined
 
 </div>
 <div id="#ProsodicAnnotation">
 
 # Class: ProsodicAnnotation
 
-
+undefined
 
 </div>
 <div id="#SemanticAnnotation">
 
 # Class: SemanticAnnotation
 
-
+undefined
 
 </div>
 <div id="#SyntacticAnnotation">
@@ -283,56 +387,56 @@ A dataset is a collection of items organized in a structured format for some spe
 
 # Class: DiscourseDataset
 
-
+undefined
 
 </div>
 <div id="#GesturalDataset">
 
 # Class: GesturalDataset
 
-
+undefined
 
 </div>
 <div id="#KinesicDataset">
 
 # Class: KinesicDataset
 
-
+undefined
 
 </div>
 <div id="#MorphologicalDataset">
 
 # Class: MorphologicalDataset
 
-
+undefined
 
 </div>
 <div id="#MusicalDataset">
 
 # Class: MusicalDataset
 
-
+undefined
 
 </div>
 <div id="#OrthographicDataset">
 
 # Class: OrthographicDataset
 
-
+undefined
 
 </div>
 <div id="#Part-of-speechDataset">
 
 # Class: Part-of-speechDataset
 
-
+undefined
 
 </div>
 <div id="#PhoneticDataset">
 
 # Class: PhoneticDataset
 
-
+undefined
 
 </div>
 <div id="#PhonologicalDataset">
@@ -346,14 +450,14 @@ Prosodic dataset
 
 # Class: SemanticDataset
 
-
+undefined
 
 </div>
 <div id="#SyntacticDataset">
 
 # Class: SyntacticDataset
 
-
+undefined
 
 </div>
 <div id="#LanguageDescription">
@@ -367,49 +471,49 @@ A description is any description or analysis of a language. Unlike a transcripti
 
 # Class: ComparativeDescription
 
-
+undefined
 
 </div>
 <div id="#DiscourseDescription">
 
 # Class: DiscourseDescription
 
-
+undefined
 
 </div>
 <div id="#GesturalDescription">
 
 # Class: GesturalDescription
 
-
+undefined
 
 </div>
 <div id="#KinesicDescription">
 
 # Class: KinesicDescription
 
-
+undefined
 
 </div>
 <div id="#MorphologicalDescription">
 
 # Class: MorphologicalDescription
 
-
+undefined
 
 </div>
 <div id="#OrthographicDescription">
 
 # Class: OrthographicDescription
 
-
+undefined
 
 </div>
 <div id="#Part-of-speechDescription">
 
 # Class: Part-of-speechDescription
 
-
+undefined
 
 </div>
 <div id="#PedagogicalDescription">
@@ -423,42 +527,42 @@ A pedagogical description is a style of presentation intended for use in teachin
 
 # Class: PhoneticDescription
 
-
+undefined
 
 </div>
 <div id="#PhonologicalDescription">
 
 # Class: PhonologicalDescription
 
-
+undefined
 
 </div>
 <div id="#ProsodicDescription">
 
 # Class: ProsodicDescription
 
-
+undefined
 
 </div>
 <div id="#SemanticDescription">
 
 # Class: SemanticDescription
 
-
+undefined
 
 </div>
 <div id="#SyntacticDescription">
 
 # Class: SyntacticDescription
 
-
+undefined
 
 </div>
 <div id="#Lexicon">
 
 # Class: Lexicon
 
-
+undefined
 
 </div>
 <div id="#AnalyticalLexicon">
@@ -486,28 +590,28 @@ This includes any resource that lists words or morphemes and defines them. It co
 
 # Class: EtymologicalLexicon
 
-
+undefined
 
 </div>
 <div id="#FrequencyLexicon">
 
 # Class: FrequencyLexicon
 
-
+undefined
 
 </div>
 <div id="#PhoneticLexicon">
 
 # Class: PhoneticLexicon
 
-
+undefined
 
 </div>
 <div id="#Proper-namesLexicon">
 
 # Class: Proper-namesLexicon
 
-
+undefined
 
 </div>
 <div id="#TerminologyLexicon">
@@ -556,7 +660,7 @@ Examples of Orthographic texts include letters, books, and other written documen
 
 # Class: DramaText
 
-
+undefined
 
 </div>
 <div id="#FormulaicText">
@@ -626,7 +730,7 @@ A resource can be identified as a transcription if it includes a type of transcr
 
 # Class: GesturalTranscription
 
-
+undefined
 
 </div>
 <div id="#KinesicTranscription">
@@ -640,7 +744,7 @@ Kinesic transcriptions represent systematic uses of facial expressions, body lan
 
 # Class: MusicalTranscription
 
-
+undefined
 
 </div>
 <div id="#OrthographicTranscription">
