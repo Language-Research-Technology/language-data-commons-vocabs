@@ -32,273 +32,715 @@
       }
     },
     {
-      "@id": "schema:contributor",
-      "@type": "rdf:Property",
-      "domainIncludes": "Dataset",
-      "name": "contributor",
-      "rangeIncludes": [
-        "Person",
-        "Organization"
-      ],
-      "rdf:label": "Contributor",
-      "rdfs:comment": "A secondary contributor to the CreativeWork or Event.",
-      "@reverse": {
-        "rdfs:subPropertyOf": [
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotator"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#author"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#compiler"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#consultant"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#data_inputter"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#depositor"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#developer"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#editor"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#illustrator"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#interpreter"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#interviewer"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#participant"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#performer"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#photographer"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#recorder"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#research_participant"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#researcher"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#responder"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#signer"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#singer"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#speaker"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#sponsor"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#transcriber"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#translator"
-          }
-        ]
-      }
+      "@id": "https://w3id.org/ro/terms/text-commons#AnalyticalLexicon",
+      "@type": "rdfs:Class",
+      "description": "The lexicon contains analytical information.",
+      "name": "AnalyticalLexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/analytical",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#lexicon\"",
+      "rdfs:comment": "Analytical information includes such things as morphological derivation, grammatically related forms, argument structure, ...",
+      "rdfs:label": "Analytical Lexicon"
     },
     {
-      "@id": "http://w3id.org/meta-share/meta-share/register",
-      "@type": "rdf:Property",
-      "description": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
-      "domainIncludes": "Dataset",
-      "name": "translator",
-      "rangeIncludes": [
-        "Person",
-        "Organization"
-      ],
-      "rdf:label": "Register",
-      "rdfs:comment": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
-      "rdfs:subPropertyOf": "\"schema:genre\""
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation",
+      "@id": "https://w3id.org/ro/terms/text-commons#Annotation",
       "@type": "rdfs:Class",
       "description": "The resource includes information which annotates some other linguistic record.",
       "name": "Annotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation",
       "rdfs:comment": "A linguistic annotation is defined as structured linguistic information that is explicitly aligned to some spatial and/or temporal extent of some other linguistic record.",
-      "rdfs:label": "Annotation",
+      "rdfs:label": "Annotation"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#BilingualLexicon",
+      "@type": "rdfs:Class",
+      "description": "The resource includes ",
+      "name": "BilingualLexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/bilingual",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#lexicon\"",
+      "rdfs:comment": "s in another language.",
+      "rdfs:label": "Bilingual Lexicon"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#ComparativeDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes comparative or typological description.",
+      "name": "ComparativeDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/comparative",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Comparative description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#Corpus",
+      "@type": "rdfs:Class",
+      "description": "The resource is a structured set of data items.",
+      "name": "Corpus",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset",
+      "rdfs:comment": "A dataset is a collection of items organized in a structured format for some specific research purpose. Examples of datasets are: a database of sentences illustrating deictic terms; an inflectional affix paradigm; a list of utterance tokens in a uniform context (e.g. \"Say [pat] now.\").",
+      "rdfs:label": "Dataset",
       "@reverse": {
         "rdfs:SubclassOf": [
           {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotation/discourse"
+            "@id": "https://w3id.org/ro/terms/text-commons#DiscourseDataset"
           },
           {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotation/gestural"
+            "@id": "https://w3id.org/ro/terms/text-commons#GesturalDataset"
           },
           {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotation/kinesic"
+            "@id": "https://w3id.org/ro/terms/text-commons#KinesicDataset"
           },
           {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotation/morphological"
+            "@id": "https://w3id.org/ro/terms/text-commons#MorphologicalDataset"
           },
           {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotation/musical"
+            "@id": "https://w3id.org/ro/terms/text-commons#MusicalDataset"
           },
           {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotation/part-of-speech"
+            "@id": "https://w3id.org/ro/terms/text-commons#OrthographicDataset"
           },
           {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotation/phonetic"
+            "@id": "https://w3id.org/ro/terms/text-commons#Part-of-speechDataset"
           },
           {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotation/phonological"
+            "@id": "https://w3id.org/ro/terms/text-commons#PhoneticDataset"
           },
           {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotation/prosodic"
+            "@id": "https://w3id.org/ro/terms/text-commons#PhonologicalDataset"
           },
           {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotation/semantic"
+            "@id": "https://w3id.org/ro/terms/text-commons#SemanticDataset"
           },
           {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotation/syntactic"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#annotation/translation"
+            "@id": "https://w3id.org/ro/terms/text-commons#SyntacticDataset"
           }
         ]
       }
     },
     {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation/discourse",
+      "@id": "https://w3id.org/ro/terms/text-commons#DictionaryLexicon",
+      "@type": "rdfs:Class",
+      "description": "The resource includes a dictionary.",
+      "name": "DictionaryLexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/dictionary",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#lexicon\"",
+      "rdfs:comment": "This includes any resource that lists words or morphemes and defines them. It contrasts with a word list in that the ",
+      "rdfs:label": "Dictionary"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#DiscourseAnnotation",
       "@type": "rdfs:Class",
       "description": "The resource includes aligned discourse transcription.",
       "name": "DiscourseAnnotation",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#annotation"
-      },
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/discourse",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#annotation\"",
       "rdfs:label": "Discourse annotation"
     },
     {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation/gestural",
+      "@id": "https://w3id.org/ro/terms/text-commons#DiscourseDataset",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of discourse data.",
+      "name": "DiscourseDataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/discourse",
+      "rdfs:SubclassOf": {
+        "@id": "https://w3id.org/ro/terms/text-commons#Corpus"
+      },
+      "rdfs:label": "Discourse dataset"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#DiscourseDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of discourse characteristics.",
+      "name": "DiscourseDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/discourse",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Discourse description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#DramaText",
+      "@type": "rdfs:Class",
+      "description": "A planned, creative, rendition of discourse with two or more participants.",
+      "name": "DramaText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/drama",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#text\"",
+      "rdfs:label": "Drama"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#EtymologicalLexicon",
+      "@type": "rdfs:Class",
+      "description": "The lexicon contains etymological information.",
+      "name": "EtymologicalLexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/etymological",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#lexicon\"",
+      "rdfs:label": "Etymological Lexicon"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#FormulaicText",
+      "@type": "rdfs:Class",
+      "description": "The resource is a ritually or conventionally structured discourse.",
+      "name": "FormulaicText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/formulaic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#text\"",
+      "rdfs:comment": "Examples of formulaic discourse are prayers, curses, blessings, charms, curing rituals, marriage vows, and oaths.",
+      "rdfs:label": "Formulaic"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#FrequencyLexicon",
+      "@type": "rdfs:Class",
+      "description": "The lexicon contains frequency information.",
+      "name": "FrequencyLexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/frequency",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#lexicon\"",
+      "rdfs:label": "Frequency Lexicon"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#GesturalAnnotation",
       "@type": "rdfs:Class",
       "description": "The resource includes gestural annotation.",
       "name": "GesturalAnnotation",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#annotation"
-      },
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/gestural",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#annotation\"",
       "rdfs:label": "Gestural annotation"
     },
     {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation/kinesic",
+      "@id": "https://w3id.org/ro/terms/text-commons#GesturalDataset",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of gestural data.",
+      "name": "GesturalDataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/gestural",
+      "rdfs:SubclassOf": {
+        "@id": "https://w3id.org/ro/terms/text-commons#Corpus"
+      },
+      "rdfs:label": "Gestural dataset"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#GesturalDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of gestural characteristics.",
+      "name": "GesturalDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/gestural",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Gestural description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#GesturalTranscription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes gestural transcription.",
+      "name": "GesturalTranscription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/gestural",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#transcription\"",
+      "rdfs:label": "Gestural transcription"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#KinesicAnnotation",
       "@type": "rdfs:Class",
       "name": "KinesicAnnotation",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#annotation"
-      },
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/kinesic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#annotation\"",
       "rdfs:comment": "The resource includes aligned representations of eye, face, and body movements."
     },
     {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation/morphological",
+      "@id": "https://w3id.org/ro/terms/text-commons#KinesicDataset",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of kinesic data.",
+      "name": "KinesicDataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/kinesic",
+      "rdfs:SubclassOf": {
+        "@id": "https://w3id.org/ro/terms/text-commons#Corpus"
+      },
+      "rdfs:label": "Kinesic dataset"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#KinesicDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of kinesic characteristics.",
+      "name": "KinesicDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/kinesic",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Kinesic description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#KinesicTranscription",
+      "@type": "rdfs:Class",
+      "description": "A kinesic transcription represents eye, face, and body movements.",
+      "name": "KinesicTranscription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/kinesic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#transcription\"",
+      "rdfs:comment": "Kinesic transcriptions represent systematic uses of facial expressions, body language, and eye gaze that are used to communicate meaning.",
+      "rdfs:label": "Kinesic transcription"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#LanguageDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource is a linguistic description.",
+      "name": "LanguageDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description",
+      "rdfs:comment": "A description is any description or analysis of a language. Unlike a transcription or an annotation, the structure of a description is independent of the structure of the linguistic events that it describes.",
+      "rdfs:label": "Description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#Lexicon",
+      "@type": "rdfs:Class",
+      "description": "The resource includes a systematic listing of lexical items.",
+      "name": "Lexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon",
+      "rdfs:label": "Lexicon"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#LudicText",
+      "@type": "rdfs:Class",
+      "description": "Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language.",
+      "name": "LudicText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/ludic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#text\"",
+      "rdfs:comment": "Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.",
+      "rdfs:label": "Ludic"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#MorphologicalAnnotation",
       "@type": "rdfs:Class",
       "description": "The resource includes morphological annotation.",
       "name": "MorphologicalAnnotation",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#annotation"
-      },
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/morphological",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#annotation\"",
       "rdfs:comment": "A morphological annotation is a morphological transcription where the component morphemes are aligned with some other linguistic record, such as an orthographic transcription or a speech signal. An example of morphological annotation is interlinear text with aligned morphemic glosses.",
       "rdfs:label": "Morphological annotation"
     },
     {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation/musical",
+      "@id": "https://w3id.org/ro/terms/text-commons#MorphologicalDataset",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of morphological data.",
+      "name": "MorphologicalDataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/morphological",
+      "rdfs:SubclassOf": {
+        "@id": "https://w3id.org/ro/terms/text-commons#Corpus"
+      },
+      "rdfs:label": "Morphological dataset"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#MorphologicalDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of morphological characteristics.",
+      "name": "MorphologicalDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/morphological",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Morphological description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#MusicalAnnotation",
       "@type": "rdfs:Class",
       "description": "The resource includes musical annotation.",
       "name": "MusicalAnnotation",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#annotation"
-      },
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/musical",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#annotation\"",
       "rdfs:label": "Musical annotation"
     },
     {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation/part-of-speech",
+      "@id": "https://w3id.org/ro/terms/text-commons#MusicalDataset",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of musical data.",
+      "name": "MusicalDataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/musical",
+      "rdfs:SubclassOf": {
+        "@id": "https://w3id.org/ro/terms/text-commons#Corpus"
+      },
+      "rdfs:label": "Musical dataset"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#MusicalTranscription",
+      "@type": "rdfs:Class",
+      "description": "A musical transcription represents music.",
+      "name": "MusicalTranscription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/musical",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#transcription\"",
+      "rdfs:label": "Musical transcription"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#NarrativeText",
+      "@type": "rdfs:Class",
+      "description": "A monologic discourse which represents temporally organized events.",
+      "name": "NarrativeText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/narrative",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#text\"",
+      "rdfs:comment": "Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
+      "rdfs:label": "Narrative"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#OratoryText",
+      "@type": "rdfs:Class",
+      "description": "\"The art of public speaking, or of speaking eloquently according to rules or conventions.",
+      "name": "OratoryText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/oratory",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#text\"",
+      "rdfs:comment": "Examples of oratory include sermons, lectures, political speeches, and invocations.",
+      "rdfs:label": "Oratory"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#OrthographicDataset",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of orthographic data.",
+      "name": "OrthographicDataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/orthographic",
+      "rdfs:SubclassOf": {
+        "@id": "https://w3id.org/ro/terms/text-commons#Corpus"
+      },
+      "rdfs:label": "Orthographic dataset"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#OrthographicDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes documentation of a writing system.",
+      "name": "OrthographicDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Orthographic description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#OrthographicText",
+      "@type": "rdfs:Class",
+      "description": "An orthographic (written) work.",
+      "name": "OrthographicText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/dialogue",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#text\"",
+      "rdfs:comment": "Examples of Orthographic texts include letters, books, and other written documents",
+      "rdfs:label": "Orthographic"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#OrthographicTranscription",
+      "@type": "rdfs:Class",
+      "description": "An orthographic transcription uses a standard or conventional orthography.",
+      "name": "OrthographicTranscription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/orthographic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#transcription\"",
+      "rdfs:comment": "Orthographic transcriptions differ from phonemic transcriptions that use a practical orthography in that they include orthographic conventions for punctuation, capitalization, etc.",
+      "rdfs:label": "Orthographic transcription"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#Part-of-speechAnnotation",
       "@type": "rdfs:Class",
       "description": "The resource includes aligned part-of-speech tags.",
       "name": "Part-of-speechAnnotation",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#annotation"
-      },
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/part-of-speech",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#annotation\"",
       "rdfs:label": "Part-of-speech annotation"
     },
     {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation/phonetic",
+      "@id": "https://w3id.org/ro/terms/text-commons#Part-of-speechDataset",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of part-of-speech data.",
+      "name": "Part-of-speechDataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/part-of-speech",
+      "rdfs:SubclassOf": {
+        "@id": "https://w3id.org/ro/terms/text-commons#Corpus"
+      },
+      "rdfs:label": "Part-of-speech dataset"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#Part-of-speechDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of part-of-speech characteristics.",
+      "name": "Part-of-speechDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-speech",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Part-of-speech description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#PedagogicalDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes pedagogical description.",
+      "name": "PedagogicalDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/pedagogical",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:comment": "A pedagogical description is a style of presentation intended for use in teaching people to use the language.",
+      "rdfs:label": "Pedagogical description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#PhonemicTranscription",
+      "@type": "rdfs:Class",
+      "description": "A phonemic transcription represents the signal at the level of the phoneme.",
+      "name": "PhonemicTranscription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/phonemic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#transcription\"",
+      "rdfs:comment": "Phonemic transcription may use the International Phonetic Alphabet [IPA] or a practical orthography.",
+      "rdfs:label": "Phonemic transcription"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#PhoneticAnnotation",
       "@type": "rdfs:Class",
       "description": "The resource includes phonetic annotation.",
       "name": "PhoneticAnnotation",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#annotation"
-      },
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/phonetic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#annotation\"",
       "rdfs:comment": "An example of a phonetic annotation is the TIMIT database, in which each element of phonetic transcription is associated with a range of samples in a digital audio file [TIMIT].",
       "rdfs:label": "Phonetic annotation"
     },
     {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation/phonological",
+      "@id": "https://w3id.org/ro/terms/text-commons#PhoneticDataset",
       "@type": "rdfs:Class",
-      "name": "PhonologicalAnnotation",
+      "description": "The dataset is comprised of phonetic data.",
+      "name": "PhoneticDataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/phonetic",
       "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#annotation"
-      }
+        "@id": "https://w3id.org/ro/terms/text-commons#Corpus"
+      },
+      "rdfs:label": "Phonetic dataset"
     },
     {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation/prosodic",
+      "@id": "https://w3id.org/ro/terms/text-commons#PhoneticDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of phonetic characteristics.",
+      "name": "PhoneticDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/phonetic",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Phonetic description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#PhoneticLexicon",
+      "@type": "rdfs:Class",
+      "description": "The lexicon contains phonetic information, including pronunciation, phonology, stress, rhymes.",
+      "name": "PhoneticLexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/phonetic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#lexicon\"",
+      "rdfs:label": "Phonetic Lexicon"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#PhoneticTranscription",
+      "@type": "rdfs:Class",
+      "description": "A phonetic transcription represents the signal at the phonetic level.",
+      "name": "PhoneticTranscription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/phonetic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#transcription\"",
+      "rdfs:comment": "Phonetic transcription may be narrow or broad, and will typically use the International Phonetic Alphabet [IPA] in a standard encoding (e.g. [Unicode-IPA], [SAMPA]). Phonological transcriptions are also classified here.",
+      "rdfs:label": "Phonetic transcription"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#PhonologicalAnnotation",
+      "@type": "rdfs:Class",
+      "name": "PhonologicalAnnotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/phonological",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#annotation\""
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#PhonologicalDataset",
+      "@type": "rdfs:Class",
+      "description": "dataset/prosodic",
+      "name": "PhonologicalDataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/phonological",
+      "rdfs:SubclassOf": {
+        "@id": "https://w3id.org/ro/terms/text-commons#Corpus"
+      },
+      "rdfs:comment": "Prosodic dataset",
+      "rdfs:label": "Phonological dataset"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#PhonologicalDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes descriptionof phonological characteristics.",
+      "name": "PhonologicalDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/phonological",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Phonological description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#ProceduralText",
+      "@type": "rdfs:Class",
+      "description": "An explanation or description of a method, process, or situation having ordered steps.",
+      "name": "ProceduralText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/procedural",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#text\"",
+      "rdfs:comment": "Examples of procedural discourses include recipes, instructions, and plans.",
+      "rdfs:label": "Procedural"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#Proper-namesLexicon",
+      "@type": "rdfs:Class",
+      "description": "The resource includes only proper names sa dictionary headwords.",
+      "name": "Proper-namesLexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/proper-names",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#lexicon\"",
+      "rdfs:label": "Name Dictionary"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#ProsodicAnnotation",
       "@type": "rdfs:Class",
       "description": "The resource includes prosodic annotation.",
       "name": "ProsodicAnnotation",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#annotation"
-      },
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/prosodic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#annotation\"",
       "rdfs:label": "Prosodic annotation"
     },
     {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation/semantic",
+      "@id": "https://w3id.org/ro/terms/text-commons#ProsodicDescription",
       "@type": "rdfs:Class",
-      "name": "SemanticAnnotation",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#annotation"
-      }
+      "description": "The resource includes description of prosodic characteristics.",
+      "name": "ProsodicDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/prosodic",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Prosodic description"
     },
     {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation/syntactic",
+      "@id": "https://w3id.org/ro/terms/text-commons#ProsodicTranscription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes prosodic transcription.",
+      "name": "ProsodicTranscription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/prosodic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#transcription\"",
+      "rdfs:comment": "A prosodic transcription is a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription.",
+      "rdfs:label": "Prosodic transcription"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#ReportText",
+      "@type": "rdfs:Class",
+      "description": "A factual account of some event or circumstance.",
+      "name": "ReportText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/report",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#text\"",
+      "rdfs:comment": "Examples of reports include news reports, essays, and commentaries.",
+      "rdfs:label": "Report"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#SemanticAnnotation",
+      "@type": "rdfs:Class",
+      "name": "SemanticAnnotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/semantic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#annotation\""
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#SemanticDataset",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of semantic data.",
+      "name": "SemanticDataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/semantic",
+      "rdfs:SubclassOf": {
+        "@id": "https://w3id.org/ro/terms/text-commons#Corpus"
+      },
+      "rdfs:label": "Semantic dataset"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#SemanticDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of semantic characteristics.",
+      "name": "SemanticDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/semantic",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Semantic description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#SingingText",
+      "@type": "rdfs:Class",
+      "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
+      "name": "SingingText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/singing",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#text\"",
+      "rdfs:comment": "Examples of singing include chants, songs, and choruses.",
+      "rdfs:label": "Singing"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#SyntacticAnnotation",
       "@type": "rdfs:Class",
       "description": "The resource includes aligned syntactic transcription.",
       "name": "SyntacticAnnotation",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#annotation"
-      },
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/syntactic",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#annotation\"",
       "rdfs:comment": "A syntactic annotation might include supra-lexical features such as word order or auxiliary phrase constructions. They may thus be aligned with phrases or clauses rather than smaller segments of the annotated record.",
       "rdfs:label": "Syntactic annotation"
     },
     {
-      "@id": "https://w3id.org/ro/terms/text-commons#annotation/translation",
+      "@id": "https://w3id.org/ro/terms/text-commons#SyntacticDataset",
+      "@type": "rdfs:Class",
+      "description": "The dataset is comprised of syntactic data.",
+      "name": "SyntacticDataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/syntactic",
+      "rdfs:SubclassOf": {
+        "@id": "https://w3id.org/ro/terms/text-commons#Corpus"
+      },
+      "rdfs:label": "Syntactic dataset"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#SyntacticDescription",
+      "@type": "rdfs:Class",
+      "description": "The resource includes description of syntactic characteristics.",
+      "name": "SyntacticDescription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/syntactic",
+      "rdfs:SubclassOf": "object Object",
+      "rdfs:label": "Syntactica description"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#TerminologyLexicon",
+      "@type": "rdfs:Class",
+      "description": "The resource includes a terminological lexicon.",
+      "name": "TerminologyLexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/terminology",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#lexicon\"",
+      "rdfs:comment": "A terminological lexicon is a glossary of domain-specific terms. Examples are technical terminology, kinship terms, color terms, acronyms, ...",
+      "rdfs:label": "Terminology"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#Text",
+      "@type": "rdfs:Class",
+      "description": "This is a primary resource: the object of study.",
+      "name": "Text",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
+      "rdfs:SubclassOf": "https://github.com/Language-Research-Technology/language-data-node-tools/blob/master/ontology.md#class-orthographictext",
+      "rdfs:comment": "A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse.",
+      "rdfs:label": "Text"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#ThesaurusLexicon",
+      "@type": "rdfs:Class",
+      "description": "The resource includes a thesaurus.",
+      "name": "ThesaurusLexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#lexicon\"",
+      "rdfs:comment": "A thesaurus is a list of words or concepts arranged according to sense.",
+      "rdfs:label": "Thesaurus"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#Transcription",
+      "@type": "rdfs:Class",
+      "description": "A transcription is a written representation of an audio or visual signal.",
+      "name": "Transcription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription",
+      "rdfs:comment": "A resource can be identified as a transcription if it includes a type of transcription as part of the content; for example, the first line of an interlinear analysis is often some type of transcription.",
+      "rdfs:label": "Transcription"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#TranslationAnnotation",
       "@type": "rdfs:Class",
       "description": "A translation is a version of the resource in another language.",
       "name": "TranslationAnnotation",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#annotation"
-      },
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/translation",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#annotation\"",
       "rdfs:comment": "Translations may align with different linguistic levels of the resource: morpheme-by-morpheme translation, word-by-word translation, sentence-level free translation, or discourse-level free translation.",
       "rdfs:label": "Translation"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#UnintelligibleSpeechText",
+      "@type": "rdfs:Class",
+      "description": "The resource consists of utterances that are not intended to be interpretable as ordinary language.",
+      "name": "UnintelligibleSpeechText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/unintelligible speech",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#text\"",
+      "rdfs:comment": "Examples of unintelligible speech include sacred languages, speaking in tongues, and singing syllables (fa-la-la).",
+      "rdfs:label": "Unintelligible speech"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#WordlistLexicon",
+      "@type": "rdfs:Class",
+      "description": "The resource includes a word list.",
+      "name": "WordlistLexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/wordlist",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#lexicon\"",
+      "rdfs:comment": "A word list is a list of reference words in a major language for which the nearest equivalent word in a target language has been elicited (for instance, the Swadesh 100-word list).",
+      "rdfs:label": "Word list"
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#WordnetLexicon",
+      "@type": "rdfs:Class",
+      "description": "The resource includes a semantic wordnet.",
+      "name": "WordnetLexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/wordnet",
+      "rdfs:SubclassOf": "\"http://www.language-archives.org/REC/type-20020628.html#lexicon\"",
+      "rdfs:comment": "Whereas a dictionary documents the meanings of words by means of ",
+      "rdfs:label": "WordNet"
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#annotator",
@@ -309,11 +751,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#annotator",
       "rdf:label": "Annotator",
       "rdfs:comment": "The participant produced an annotation of this or a related resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#author",
@@ -324,11 +765,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#author",
       "rdf:label": "Author",
       "rdfs:comment": "The participant contributed original writings to the resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#compiler",
@@ -341,11 +781,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#compiler",
       "rdf:label": "Compiler",
       "rdfs:comment": "The participant is responsible for collecting the sub-parts of the resource together.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#consultant",
@@ -357,11 +796,23 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#consultant",
       "rdf:label": "Consultant",
       "rdfs:comment": "The participant contributes expertise to the creation of a work.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#contributor",
+      "@type": "rdf:Property",
+      "domainIncludes": "Dataset",
+      "name": "contributor",
+      "rangeIncludes": [
+        "Person",
+        "Organization"
+      ],
+      "sameAs": "http://schema.org/contributor",
+      "rdf:label": "Contributor",
+      "rdfs:comment": "A secondary contributor to the CreativeWork or Event."
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#data_inputter",
@@ -372,167 +823,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#data_inputter",
       "rdf:label": "Data Inputter",
       "rdfs:comment": "The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#dataset",
-      "@type": "rdfs:Class",
-      "description": "The resource is a structured set of data items.",
-      "name": "Corpus",
-      "rdfs:comment": "A dataset is a collection of items organized in a structured format for some specific research purpose. Examples of datasets are: a database of sentences illustrating deictic terms; an inflectional affix paradigm; a list of utterance tokens in a uniform context (e.g. \"Say [pat] now.\").",
-      "rdfs:label": "Dataset",
-      "@reverse": {
-        "rdfs:SubclassOf": [
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#dataset/discourse"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#dataset/gestural"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#dataset/kinesic"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#dataset/morphological"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#dataset/musical"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#dataset/orthographic"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#dataset/part-of-speech"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#dataset/phonetic"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#dataset/phonological"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#dataset/semantic"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#dataset/syntactic"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#dataset/discourse",
-      "@type": "rdfs:Class",
-      "description": "The dataset is comprised of discourse data.",
-      "name": "DiscourseDataset",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#dataset"
-      },
-      "rdfs:label": "Discourse dataset"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#dataset/gestural",
-      "@type": "rdfs:Class",
-      "description": "The dataset is comprised of gestural data.",
-      "name": "GesturalDataset",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#dataset"
-      },
-      "rdfs:label": "Gestural dataset"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#dataset/kinesic",
-      "@type": "rdfs:Class",
-      "description": "The dataset is comprised of kinesic data.",
-      "name": "KinesicDataset",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#dataset"
-      },
-      "rdfs:label": "Kinesic dataset"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#dataset/morphological",
-      "@type": "rdfs:Class",
-      "description": "The dataset is comprised of morphological data.",
-      "name": "MorphologicalDataset",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#dataset"
-      },
-      "rdfs:label": "Morphological dataset"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#dataset/musical",
-      "@type": "rdfs:Class",
-      "description": "The dataset is comprised of musical data.",
-      "name": "MusicalDataset",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#dataset"
-      },
-      "rdfs:label": "Musical dataset"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#dataset/orthographic",
-      "@type": "rdfs:Class",
-      "description": "The dataset is comprised of orthographic data.",
-      "name": "OrthographicDataset",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#dataset"
-      },
-      "rdfs:label": "Orthographic dataset"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#dataset/part-of-speech",
-      "@type": "rdfs:Class",
-      "description": "The dataset is comprised of part-of-speech data.",
-      "name": "Part-of-speechDataset",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#dataset"
-      },
-      "rdfs:label": "Part-of-speech dataset"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#dataset/phonetic",
-      "@type": "rdfs:Class",
-      "description": "The dataset is comprised of phonetic data.",
-      "name": "PhoneticDataset",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#dataset"
-      },
-      "rdfs:label": "Phonetic dataset"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#dataset/phonological",
-      "@type": "rdfs:Class",
-      "description": "dataset/prosodic",
-      "name": "PhonologicalDataset",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#dataset"
-      },
-      "rdfs:comment": "Prosodic dataset",
-      "rdfs:label": "Phonological dataset"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#dataset/semantic",
-      "@type": "rdfs:Class",
-      "description": "The dataset is comprised of semantic data.",
-      "name": "SemanticDataset",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#dataset"
-      },
-      "rdfs:label": "Semantic dataset"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#dataset/syntactic",
-      "@type": "rdfs:Class",
-      "description": "The dataset is comprised of syntactic data.",
-      "name": "SyntacticDataset",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#dataset"
-      },
-      "rdfs:label": "Syntactic dataset"
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#depositor",
@@ -543,124 +837,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#depositor",
       "rdf:label": "Depositor",
       "rdfs:comment": "The participant was responsible for depositing the resource in an archive.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description",
-      "@type": "rdfs:Class",
-      "description": "The resource is a linguistic description.",
-      "name": "LanguageDescription",
-      "rdfs:comment": "A description is any description or analysis of a language. Unlike a transcription or an annotation, the structure of a description is independent of the structure of the linguistic events that it describes.",
-      "rdfs:label": "Description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/comparative",
-      "@type": "rdfs:Class",
-      "description": "The resource includes comparative or typological description.",
-      "name": "ComparativeDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:label": "Comparative description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/discourse",
-      "@type": "rdfs:Class",
-      "description": "The resource includes description of discourse characteristics.",
-      "name": "DiscourseDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:label": "Discourse description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/gestural",
-      "@type": "rdfs:Class",
-      "description": "The resource includes description of gestural characteristics.",
-      "name": "GesturalDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:label": "Gestural description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/kinesic",
-      "@type": "rdfs:Class",
-      "description": "The resource includes description of kinesic characteristics.",
-      "name": "KinesicDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:label": "Kinesic description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/morphological",
-      "@type": "rdfs:Class",
-      "description": "The resource includes description of morphological characteristics.",
-      "name": "MorphologicalDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:label": "Morphological description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/orthographic",
-      "@type": "rdfs:Class",
-      "description": "The resource includes documentation of a writing system.",
-      "name": "OrthographicDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:label": "Orthographic description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/part-of-speech",
-      "@type": "rdfs:Class",
-      "description": "The resource includes description of part-of-speech characteristics.",
-      "name": "Part-of-speechDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:label": "Part-of-speech description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/pedagogical",
-      "@type": "rdfs:Class",
-      "description": "The resource includes pedagogical description.",
-      "name": "PedagogicalDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:comment": "A pedagogical description is a style of presentation intended for use in teaching people to use the language.",
-      "rdfs:label": "Pedagogical description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/phonetic",
-      "@type": "rdfs:Class",
-      "description": "The resource includes description of phonetic characteristics.",
-      "name": "PhoneticDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:label": "Phonetic description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/phonological",
-      "@type": "rdfs:Class",
-      "description": "The resource includes descriptionof phonological characteristics.",
-      "name": "PhonologicalDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:label": "Phonological description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/prosodic",
-      "@type": "rdfs:Class",
-      "description": "The resource includes description of prosodic characteristics.",
-      "name": "ProsodicDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:label": "Prosodic description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/semantic",
-      "@type": "rdfs:Class",
-      "description": "The resource includes description of semantic characteristics.",
-      "name": "SemanticDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:label": "Semantic description"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#description/syntactic",
-      "@type": "rdfs:Class",
-      "description": "The resource includes description of syntactic characteristics.",
-      "name": "SyntacticDescription",
-      "rdfs:SubclassOf": "object Object",
-      "rdfs:label": "Syntactica description"
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#developer",
@@ -672,11 +852,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#developer",
       "rdf:label": "Developer",
       "rdfs:comment": "The participant developed the methodology or tools that constitute the resource, or that were used to create the resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#editor",
@@ -688,11 +867,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#editor",
       "rdf:label": "Editor",
       "rdfs:comment": "The participant reviewed, corrected, and/or tested the resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#illustrator",
@@ -703,11 +881,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#illustrator",
       "rdf:label": "Illustrator",
       "rdfs:comment": "The participant contributed drawings or other illustrations to the resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#interpreter",
@@ -720,11 +897,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#interpreter",
       "rdf:label": "Interpreter",
       "rdfs:comment": "The participant translates in real-time or explains the discourse recorded in the resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#interviewer",
@@ -735,172 +911,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#interviewer",
       "rdf:label": "Interviewer",
       "rdfs:comment": "The participant conducted an interview that forms part of the resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#lexicon",
-      "@type": "rdfs:Class",
-      "description": "The resource includes a systematic listing of lexical items.",
-      "name": "Lexicon",
-      "rdfs:label": "Lexicon",
-      "@reverse": {
-        "rdfs:SubclassOf": [
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#lexicon/analytical"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#lexicon/bilingual"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#lexicon/dictionary"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#lexicon/etymological"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#lexicon/frequency"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#lexicon/phonetic"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#lexicon/proper-names"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#lexicon/terminology"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#lexicon/thesaurus"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#lexicon/wordlist"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#lexicon/wordnet"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#lexicon/analytical",
-      "@type": "rdfs:Class",
-      "description": "The lexicon contains analytical information.",
-      "name": "AnalyticalLexicon",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#lexicon"
-      },
-      "rdfs:comment": "Analytical information includes such things as morphological derivation, grammatically related forms, argument structure, ...",
-      "rdfs:label": "Analytical Lexicon"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#lexicon/bilingual",
-      "@type": "rdfs:Class",
-      "description": "The resource includes ",
-      "name": "BilingualLexicon",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#lexicon"
-      },
-      "rdfs:comment": "s in another language.",
-      "rdfs:label": "Bilingual Lexicon"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#lexicon/dictionary",
-      "@type": "rdfs:Class",
-      "description": "The resource includes a dictionary.",
-      "name": "DictionaryLexicon",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#lexicon"
-      },
-      "rdfs:comment": "This includes any resource that lists words or morphemes and defines them. It contrasts with a word list in that the ",
-      "rdfs:label": "Dictionary"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#lexicon/etymological",
-      "@type": "rdfs:Class",
-      "description": "The lexicon contains etymological information.",
-      "name": "EtymologicalLexicon",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#lexicon"
-      },
-      "rdfs:label": "Etymological Lexicon"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#lexicon/frequency",
-      "@type": "rdfs:Class",
-      "description": "The lexicon contains frequency information.",
-      "name": "FrequencyLexicon",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#lexicon"
-      },
-      "rdfs:label": "Frequency Lexicon"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#lexicon/phonetic",
-      "@type": "rdfs:Class",
-      "description": "The lexicon contains phonetic information, including pronunciation, phonology, stress, rhymes.",
-      "name": "PhoneticLexicon",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#lexicon"
-      },
-      "rdfs:label": "Phonetic Lexicon"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#lexicon/proper-names",
-      "@type": "rdfs:Class",
-      "description": "The resource includes only proper names sa dictionary headwords.",
-      "name": "Proper-namesLexicon",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#lexicon"
-      },
-      "rdfs:label": "Name Dictionary"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#lexicon/terminology",
-      "@type": "rdfs:Class",
-      "description": "The resource includes a terminological lexicon.",
-      "name": "TerminologyLexicon",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#lexicon"
-      },
-      "rdfs:comment": "A terminological lexicon is a glossary of domain-specific terms. Examples are technical terminology, kinship terms, color terms, acronyms, ...",
-      "rdfs:label": "Terminology"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#lexicon/thesaurus",
-      "@type": "rdfs:Class",
-      "description": "The resource includes a thesaurus.",
-      "name": "ThesaurusLexicon",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#lexicon"
-      },
-      "rdfs:comment": "A thesaurus is a list of words or concepts arranged according to sense.",
-      "rdfs:label": "Thesaurus"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#lexicon/wordlist",
-      "@type": "rdfs:Class",
-      "description": "The resource includes a word list.",
-      "name": "WordlistLexicon",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#lexicon"
-      },
-      "rdfs:comment": "A word list is a list of reference words in a major language for which the nearest equivalent word in a target language has been elicited (for instance, the Swadesh 100-word list).",
-      "rdfs:label": "Word list"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#lexicon/wordnet",
-      "@type": "rdfs:Class",
-      "description": "The resource includes a semantic wordnet.",
-      "name": "WordnetLexicon",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#lexicon"
-      },
-      "rdfs:comment": "Whereas a dictionary documents the meanings of words by means of ",
-      "rdfs:label": "WordNet"
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#participant",
@@ -912,11 +926,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#participant",
       "rdf:label": "Participant",
       "rdfs:comment": "The participant was present during the creation of the resource, but did not contribute substantially to its content.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#performer",
@@ -929,11 +942,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#performer",
       "rdf:label": "Performer",
       "rdfs:comment": "The participant performed some portion of a recorded, filmed, or transcribed resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#photographer",
@@ -944,11 +956,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#photographer",
       "rdf:label": "Photographer",
       "rdfs:comment": "The participant took the photograph, or shot the film, that appears in or constitutes the resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#recorder",
@@ -959,11 +970,25 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#recorder",
       "rdf:label": "Recorder",
       "rdfs:comment": "The participant operated the recording machinery used to create the resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
+    },
+    {
+      "@id": "https://w3id.org/ro/terms/text-commons#register",
+      "@type": "rdf:Property",
+      "description": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
+      "domainIncludes": "Dataset",
+      "name": "translator",
+      "rangeIncludes": [
+        "Person",
+        "Organization"
+      ],
+      "sameAs": "http://w3id.org/meta-share/meta-share/register",
+      "rdf:label": "Register",
+      "rdfs:comment": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
+      "rdfs:subPropertyOf": "\"schema:genre\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#research_participant",
@@ -974,11 +999,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#research_participant",
       "rdf:label": "Research Participant",
       "rdfs:comment": "The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#researcher",
@@ -989,11 +1013,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#researcher",
       "rdf:label": "Researcher",
       "rdfs:comment": "The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#responder",
@@ -1005,11 +1028,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#responder",
       "rdf:label": "Responder",
       "rdfs:comment": "The participant was an interlocutor in some sort of discourse event.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#signer",
@@ -1022,11 +1044,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#signer",
       "rdf:label": "Signer",
       "rdfs:comment": "The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#singer",
@@ -1037,11 +1058,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#singer",
       "rdf:label": "Singer",
       "rdfs:comment": "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#speaker",
@@ -1054,11 +1074,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#speaker",
       "rdf:label": "Speaker",
       "rdfs:comment": "The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#sponsor",
@@ -1069,163 +1088,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#sponsor",
       "rdf:label": "Sponsor",
       "rdfs:comment": "The participant contributed financial support to the creation of the resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#text",
-      "@type": "rdfs:Class",
-      "description": "This is a primary resource: the object of study.",
-      "name": "Text",
-      "rdfs:SubclassOf": "https://github.com/Language-Research-Technology/language-data-node-tools/blob/master/ontology.md#class-orthographictext",
-      "rdfs:comment": "A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse.",
-      "rdfs:label": "Text",
-      "@reverse": {
-        "rdfs:SubclassOf": [
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#text/dialogue"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#text/drama"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#text/formulaic"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#text/ludic"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#text/narrative"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#text/oratory"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#text/procedural"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#text/report"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#text/singing"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#text/unintelligible speech"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#text/dialogue",
-      "@type": "rdfs:Class",
-      "description": "An orthographic (written) work.",
-      "name": "OrthographicText",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#text"
-      },
-      "rdfs:comment": "Examples of Orthographic texts include letters, books, and other written documents",
-      "rdfs:label": "Orthographic"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#text/drama",
-      "@type": "rdfs:Class",
-      "description": "A planned, creative, rendition of discourse with two or more participants.",
-      "name": "DramaText",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#text"
-      },
-      "rdfs:label": "Drama"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#text/formulaic",
-      "@type": "rdfs:Class",
-      "description": "The resource is a ritually or conventionally structured discourse.",
-      "name": "FormulaicText",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#text"
-      },
-      "rdfs:comment": "Examples of formulaic discourse are prayers, curses, blessings, charms, curing rituals, marriage vows, and oaths.",
-      "rdfs:label": "Formulaic"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#text/ludic",
-      "@type": "rdfs:Class",
-      "description": "Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language.",
-      "name": "LudicText",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#text"
-      },
-      "rdfs:comment": "Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.",
-      "rdfs:label": "Ludic"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#text/narrative",
-      "@type": "rdfs:Class",
-      "description": "A monologic discourse which represents temporally organized events.",
-      "name": "NarrativeText",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#text"
-      },
-      "rdfs:comment": "Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
-      "rdfs:label": "Narrative"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#text/oratory",
-      "@type": "rdfs:Class",
-      "description": "\"The art of public speaking, or of speaking eloquently according to rules or conventions.",
-      "name": "OratoryText",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#text"
-      },
-      "rdfs:comment": "Examples of oratory include sermons, lectures, political speeches, and invocations.",
-      "rdfs:label": "Oratory"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#text/procedural",
-      "@type": "rdfs:Class",
-      "description": "An explanation or description of a method, process, or situation having ordered steps.",
-      "name": "ProceduralText",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#text"
-      },
-      "rdfs:comment": "Examples of procedural discourses include recipes, instructions, and plans.",
-      "rdfs:label": "Procedural"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#text/report",
-      "@type": "rdfs:Class",
-      "description": "A factual account of some event or circumstance.",
-      "name": "ReportText",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#text"
-      },
-      "rdfs:comment": "Examples of reports include news reports, essays, and commentaries.",
-      "rdfs:label": "Report"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#text/singing",
-      "@type": "rdfs:Class",
-      "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
-      "name": "SingingText",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#text"
-      },
-      "rdfs:comment": "Examples of singing include chants, songs, and choruses.",
-      "rdfs:label": "Singing"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#text/unintelligible speech",
-      "@type": "rdfs:Class",
-      "description": "The resource consists of utterances that are not intended to be interpretable as ordinary language.",
-      "name": "UnintelligibleSpeechText",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#text"
-      },
-      "rdfs:comment": "Examples of unintelligible speech include sacred languages, speaking in tongues, and singing syllables (fa-la-la).",
-      "rdfs:label": "Unintelligible speech"
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#transcriber",
@@ -1236,119 +1102,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#transcriber",
       "rdf:label": "Transcriber",
       "rdfs:comment": "The participant produced a transcription of this or a related resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#transcription",
-      "@type": "rdfs:Class",
-      "description": "A transcription is a written representation of an audio or visual signal.",
-      "name": "Transcription",
-      "rdfs:comment": "A resource can be identified as a transcription if it includes a type of transcription as part of the content; for example, the first line of an interlinear analysis is often some type of transcription.",
-      "rdfs:label": "Transcription",
-      "@reverse": {
-        "rdfs:SubclassOf": [
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#transcription/gestural"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#transcription/kinesic"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#transcription/musical"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#transcription/orthographic"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#transcription/phonemic"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#transcription/phonetic"
-          },
-          {
-            "@id": "https://w3id.org/ro/terms/text-commons#transcription/prosodic"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#transcription/gestural",
-      "@type": "rdfs:Class",
-      "description": "The resource includes gestural transcription.",
-      "name": "GesturalTranscription",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#transcription"
-      },
-      "rdfs:label": "Gestural transcription"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#transcription/kinesic",
-      "@type": "rdfs:Class",
-      "description": "A kinesic transcription represents eye, face, and body movements.",
-      "name": "KinesicTranscription",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#transcription"
-      },
-      "rdfs:comment": "Kinesic transcriptions represent systematic uses of facial expressions, body language, and eye gaze that are used to communicate meaning.",
-      "rdfs:label": "Kinesic transcription"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#transcription/musical",
-      "@type": "rdfs:Class",
-      "description": "A musical transcription represents music.",
-      "name": "MusicalTranscription",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#transcription"
-      },
-      "rdfs:label": "Musical transcription"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#transcription/orthographic",
-      "@type": "rdfs:Class",
-      "description": "An orthographic transcription uses a standard or conventional orthography.",
-      "name": "OrthographicTranscription",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#transcription"
-      },
-      "rdfs:comment": "Orthographic transcriptions differ from phonemic transcriptions that use a practical orthography in that they include orthographic conventions for punctuation, capitalization, etc.",
-      "rdfs:label": "Orthographic transcription"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#transcription/phonemic",
-      "@type": "rdfs:Class",
-      "description": "A phonemic transcription represents the signal at the level of the phoneme.",
-      "name": "PhonemicTranscription",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#transcription"
-      },
-      "rdfs:comment": "Phonemic transcription may use the International Phonetic Alphabet [IPA] or a practical orthography.",
-      "rdfs:label": "Phonemic transcription"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#transcription/phonetic",
-      "@type": "rdfs:Class",
-      "description": "A phonetic transcription represents the signal at the phonetic level.",
-      "name": "PhoneticTranscription",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#transcription"
-      },
-      "rdfs:comment": "Phonetic transcription may be narrow or broad, and will typically use the International Phonetic Alphabet [IPA] in a standard encoding (e.g. [Unicode-IPA], [SAMPA]). Phonological transcriptions are also classified here.",
-      "rdfs:label": "Phonetic transcription"
-    },
-    {
-      "@id": "https://w3id.org/ro/terms/text-commons#transcription/prosodic",
-      "@type": "rdfs:Class",
-      "description": "The resource includes prosodic transcription.",
-      "name": "ProsodicTranscription",
-      "rdfs:SubclassOf": {
-        "@id": "https://w3id.org/ro/terms/text-commons#transcription"
-      },
-      "rdfs:comment": "A prosodic transcription is a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription.",
-      "rdfs:label": "Prosodic transcription"
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "https://w3id.org/ro/terms/text-commons#translator",
@@ -1359,11 +1116,10 @@
         "Person",
         "Organization"
       ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#translator",
       "rdf:label": "Translator",
       "rdfs:comment": "The participant produced a translation of this or a related resource.",
-      "rdfs:subPropertyOf": {
-        "@id": "schema:contributor"
-      }
+      "rdfs:subPropertyOf": "\"schema:contributor\""
     },
     {
       "@id": "ro-crate-metadata.json",
