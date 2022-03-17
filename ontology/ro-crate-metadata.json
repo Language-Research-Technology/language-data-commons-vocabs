@@ -14,28 +14,1067 @@
   ],
   "@graph": [
     {
-      "@id": "#TextCommonsLanguageForms",
-      "@type": "ItemList",
-      "itemListElement": [
-        {
-          "@id": "olac:HandwrittenWork"
-        },
-        {
-          "@id": "olac:TypewrittenWork"
-        },
-        {
-          "@id": "olac:NonDigitalWork"
-        },
-        {
-          "@id": "olac:DigitalWork"
-        }
-      ],
-      "name": "Original Form"
+      "@id": "./",
+      "@type": "Dataset",
+      "hasFile": [],
+      "description": "This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects",
+      "hasPart": [],
+      "name": "Language Data Ontology"
     },
     {
-      "@id": "#TextCommonsLanguageTypes",
-      "@type": "ItemList",
-      "itemListElement": [
+      "@id": "olac:AnalyticalLexicon",
+      "@type": "rdfs:Class",
+      "name": "Analytical Lexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/analytical",
+      "rdfs:comment": "Analytical information includes such things as morphological derivation, grammatically related forms, argument structure, ...",
+      "rdfs:label": "AnalyticalLexicon",
+      "rdfs:subClassOf": {
+        "@id": "olac:Lexicon"
+      }
+    },
+    {
+      "@id": "olac:Annotation",
+      "@type": "rdfs:Class",
+      "name": "Annotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation",
+      "rdfs:comment": "A linguistic annotation is defined as structured linguistic information that is explicitly aligned to some spatial and/or temporal extent of some other linguistic record.",
+      "rdfs:label": "Annotation",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "olac:BilingualLexicon",
+      "@type": "rdfs:Class",
+      "name": "Bilingual Lexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/bilingual",
+      "rdfs:comment": "s in another language.",
+      "rdfs:label": "BilingualLexicon",
+      "rdfs:subClassOf": {
+        "@id": "olac:Lexicon"
+      }
+    },
+    {
+      "@id": "olac:ComparativeDescription",
+      "@type": "rdfs:Class",
+      "name": "Comparative Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/comparative",
+      "rdfs:comment": "The resource includes comparative or typological description.",
+      "rdfs:label": "ComparativeDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:DictionaryLexicon",
+      "@type": "rdfs:Class",
+      "name": "Dictionary",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/dictionary",
+      "rdfs:comment": "This includes any resource that lists words or morphemes and defines them. It contrasts with a word list in that the ",
+      "rdfs:label": "DictionaryLexicon",
+      "rdfs:subClassOf": {
+        "@id": "olac:Lexicon"
+      }
+    },
+    {
+      "@id": "olac:DigitalWork",
+      "name": "Non Digital Work",
+      "rdfs:comment": "The original resource was created in non-digital form",
+      "rdfs:label": "NonDigitalWork",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      },
+      "@type": "Thing"
+    },
+    {
+      "@id": "olac:DiscourseAnnotation",
+      "@type": "rdfs:Class",
+      "name": "Discourse Annotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/discourse",
+      "rdfs:comment": "The resource includes aligned discourse transcription.",
+      "rdfs:label": "DiscourseAnnotation",
+      "rdfs:subClassOf": {
+        "@id": "olac:Annotation"
+      }
+    },
+    {
+      "@id": "olac:DiscourseDataset",
+      "@type": "rdfs:Class",
+      "name": "Discourse Dataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/discourse",
+      "rdfs:comment": "The dataset is comprised of discourse data.",
+      "rdfs:label": "DiscourseDataset",
+      "rdfs:subClassOf": {
+        "@id": "olac:Dataset"
+      }
+    },
+    {
+      "@id": "olac:DiscourseDescription",
+      "@type": "rdfs:Class",
+      "name": "Discourse Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/discourse",
+      "rdfs:comment": "The resource includes description of discourse characteristics.",
+      "rdfs:label": "DiscourseDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:DramaText",
+      "@type": "rdfs:Class",
+      "name": "Drama",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/drama",
+      "rdfs:comment": "A planned, creative, rendition of discourse with two or more participants.",
+      "rdfs:label": "DramaText",
+      "rdfs:subClassOf": {
+        "@id": "olac:Text"
+      }
+    },
+    {
+      "@id": "olac:EtymologicalLexicon",
+      "@type": "rdfs:Class",
+      "name": "Etymological Lexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/etymological",
+      "rdfs:comment": "The Lexicon contains etymological information.",
+      "rdfs:label": "EtymologicalLexicon",
+      "rdfs:subClassOf": {
+        "@id": "olac:Lexicon"
+      }
+    },
+    {
+      "@id": "olac:FormulaicText",
+      "@type": "rdfs:Class",
+      "name": "Formulaic",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/formulaic",
+      "rdfs:comment": "Examples of formulaic discourse are prayers, curses, blessings, charms, curing rituals, marriage vows, and oaths.",
+      "rdfs:label": "FormulaicText",
+      "rdfs:subClassOf": {
+        "@id": "olac:Text"
+      }
+    },
+    {
+      "@id": "olac:FrequencyLexicon",
+      "@type": "rdfs:Class",
+      "name": "Frequency Lexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/frequency",
+      "rdfs:comment": "The Lexicon contains frequency information.",
+      "rdfs:label": "FrequencyLexicon",
+      "rdfs:subClassOf": {
+        "@id": "olac:Lexicon"
+      }
+    },
+    {
+      "@id": "olac:GesturalAnnotation",
+      "@type": "rdfs:Class",
+      "name": "Gestural Annotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/gestural",
+      "rdfs:comment": "The resource includes gestural annotation.",
+      "rdfs:label": "GesturalAnnotation",
+      "rdfs:subClassOf": {
+        "@id": "olac:Annotation"
+      }
+    },
+    {
+      "@id": "olac:GesturalDataset",
+      "@type": "rdfs:Class",
+      "name": "Gestural Dataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/gestural",
+      "rdfs:comment": "The dataset is comprised of gestural data.",
+      "rdfs:label": "GesturalDataset",
+      "rdfs:subClassOf": {
+        "@id": "olac:Dataset"
+      }
+    },
+    {
+      "@id": "olac:GesturalDescription",
+      "@type": "rdfs:Class",
+      "name": "Gestural Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/gestural",
+      "rdfs:comment": "The resource includes description of gestural characteristics.",
+      "rdfs:label": "GesturalDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:GesturalTranscription",
+      "@type": "rdfs:Class",
+      "name": "Gestural Transcription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/gestural",
+      "rdfs:comment": "The resource includes gestural transcription.",
+      "rdfs:label": "GesturalTranscription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:HandwrittenWork",
+      "@type": "rdfs:Class",
+      "name": "Handwritten Work",
+      "rdfs:comment": "Original version was hand written",
+      "rdfs:label": "HandwrittenWork",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "olac:KinesicAnnotation",
+      "@type": "rdfs:Class",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/kinesic",
+      "rdfs:comment": "The resource includes aligned representations of eye, face, and body movements.",
+      "rdfs:label": "KinesicAnnotation",
+      "rdfs:subClassOf": {
+        "@id": "olac:Annotation"
+      },
+      "name": ""
+    },
+    {
+      "@id": "olac:KinesicDataset",
+      "@type": "rdfs:Class",
+      "name": "Kinesic Dataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/kinesic",
+      "rdfs:comment": "The dataset is comprised of kinesic data.",
+      "rdfs:label": "KinesicDataset",
+      "rdfs:subClassOf": {
+        "@id": "olac:Dataset"
+      }
+    },
+    {
+      "@id": "olac:KinesicDescription",
+      "@type": "rdfs:Class",
+      "name": "Kinesic Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/kinesic",
+      "rdfs:comment": "The resource includes description of kinesic characteristics.",
+      "rdfs:label": "KinesicDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:KinesicTranscription",
+      "@type": "rdfs:Class",
+      "name": "Kinesic Transcription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/kinesic",
+      "rdfs:comment": "Kinesic transcriptions represent systematic uses of facial expressions, body language, and eye gaze that are used to communicate meaning.",
+      "rdfs:label": "KinesicTranscription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Transcription"
+      }
+    },
+    {
+      "@id": "olac:LanguageDescription",
+      "@type": "rdfs:Class",
+      "name": "Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description",
+      "rdfs:comment": "A description is any description or analysis of a language. Unlike a transcription or an annotation, the structure of a description is independent of the structure of the linguistic events that it describes.",
+      "rdfs:label": "LanguageDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:Lexicon",
+      "@type": "rdfs:Class",
+      "name": "Lexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon",
+      "rdfs:comment": "The resource includes a systematic listing of lexical items.",
+      "rdfs:label": "Lexicon",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "olac:LudicText",
+      "@type": "rdfs:Class",
+      "name": "Ludic",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/ludic",
+      "rdfs:comment": "Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.",
+      "rdfs:label": "LudicText",
+      "rdfs:subClassOf": {
+        "@id": "olac:Text"
+      }
+    },
+    {
+      "@id": "olac:MorphologicalAnnotation",
+      "@type": "rdfs:Class",
+      "name": "Morphological Annotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/morphological",
+      "rdfs:comment": "A morphological annotation is a morphological transcription where the component morphemes are aligned with some other linguistic record, such as an orthographic transcription or a speech signal. An example of morphological annotation is interlinear text with aligned morphemic glosses.",
+      "rdfs:label": "MorphologicalAnnotation",
+      "rdfs:subClassOf": {
+        "@id": "olac:Annotation"
+      }
+    },
+    {
+      "@id": "olac:MorphologicalDataset",
+      "@type": "rdfs:Class",
+      "name": "Morphological Dataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/morphological",
+      "rdfs:comment": "The dataset is comprised of morphological data.",
+      "rdfs:label": "MorphologicalDataset",
+      "rdfs:subClassOf": {
+        "@id": "olac:Dataset"
+      }
+    },
+    {
+      "@id": "olac:MorphologicalDescription",
+      "@type": "rdfs:Class",
+      "name": "Morphological Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/morphological",
+      "rdfs:comment": "The resource includes description of morphological characteristics.",
+      "rdfs:label": "MorphologicalDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:MusicalAnnotation",
+      "@type": "rdfs:Class",
+      "name": "Musical Annotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/musical",
+      "rdfs:comment": "The resource includes musical annotation.",
+      "rdfs:label": "MusicalAnnotation",
+      "rdfs:subClassOf": {
+        "@id": "olac:Annotation"
+      }
+    },
+    {
+      "@id": "olac:MusicalDataset",
+      "@type": "rdfs:Class",
+      "name": "Musical Dataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/musical",
+      "rdfs:comment": "The dataset is comprised of musical data.",
+      "rdfs:label": "MusicalDataset",
+      "rdfs:subClassOf": {
+        "@id": "olac:Dataset"
+      }
+    },
+    {
+      "@id": "olac:MusicalTranscription",
+      "@type": "rdfs:Class",
+      "name": "Musical Transcription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/musical",
+      "rdfs:comment": "A musical transcription represents music.",
+      "rdfs:label": "MusicalTranscription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Transcription"
+      }
+    },
+    {
+      "@id": "olac:NarrativeText",
+      "@type": "rdfs:Class",
+      "name": "Narrative",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/narrative",
+      "rdfs:comment": "Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
+      "rdfs:label": "NarrativeText",
+      "rdfs:subClassOf": {
+        "@id": "olac:Text"
+      }
+    },
+    {
+      "@id": "olac:NonDigitalWork",
+      "@type": "rdfs:Class",
+      "name": "Born Digital Work",
+      "rdfs:comment": "The original resource was created in digital form",
+      "rdfs:label": "DigitalWork",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "olac:OratoryText",
+      "@type": "rdfs:Class",
+      "name": "Oratory",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/oratory",
+      "rdfs:comment": "Examples of oratory include sermons, lectures, political speeches, and invocations.",
+      "rdfs:label": "OratoryText",
+      "rdfs:subClassOf": {
+        "@id": "olac:Text"
+      }
+    },
+    {
+      "@id": "olac:OrthographicDataset",
+      "@type": "rdfs:Class",
+      "name": "Orthographic Dataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/orthographic",
+      "rdfs:comment": "The dataset is comprised of orthographic data.",
+      "rdfs:label": "OrthographicDataset",
+      "rdfs:subClassOf": {
+        "@id": "olac:Dataset"
+      }
+    },
+    {
+      "@id": "olac:OrthographicDescription",
+      "@type": "rdfs:Class",
+      "name": "Orthographic Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic",
+      "rdfs:comment": "The resource includes documentation of a writing system.",
+      "rdfs:label": "OrthographicDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:OrthographicText",
+      "@type": "rdfs:Class",
+      "name": "Orthographic",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/dialogue",
+      "rdfs:comment": "Examples of Orthographic texts include letters, books, and other written documents",
+      "rdfs:label": "OrthographicText",
+      "rdfs:subClassOf": {
+        "@id": "olac:Text"
+      }
+    },
+    {
+      "@id": "olac:OrthographicTranscription",
+      "@type": "rdfs:Class",
+      "name": "Orthographic Transcription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/orthographic",
+      "rdfs:comment": "Orthographic transcriptions differ from phonemic transcriptions that use a practical orthography in that they include orthographic conventions for punctuation, capitalization, etc.",
+      "rdfs:label": "OrthographicTranscription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Transcription"
+      }
+    },
+    {
+      "@id": "olac:Part-of-speechAnnotation",
+      "@type": "rdfs:Class",
+      "name": "Part-of-speech Annotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/part-of-speech",
+      "rdfs:comment": "The resource includes aligned part-of-speech tags.",
+      "rdfs:label": "Part-of-speechAnnotation",
+      "rdfs:subClassOf": {
+        "@id": "olac:Annotation"
+      }
+    },
+    {
+      "@id": "olac:Part-of-speechDataset",
+      "@type": "rdfs:Class",
+      "name": "Part-of-speech Dataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/part-of-speech",
+      "rdfs:comment": "The dataset is comprised of part-of-speech data.",
+      "rdfs:label": "Part-of-speechDataset",
+      "rdfs:subClassOf": {
+        "@id": "olac:Dataset"
+      }
+    },
+    {
+      "@id": "olac:Part-of-speechDescription",
+      "@type": "rdfs:Class",
+      "name": "Part-of-speech Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-speech",
+      "rdfs:comment": "The resource includes description of part-of-speech characteristics.",
+      "rdfs:label": "Part-of-speechDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:PedagogicalDescription",
+      "@type": "rdfs:Class",
+      "name": "Pedagogical Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/pedagogical",
+      "rdfs:comment": "A pedagogical description is a style of presentation intended for use in teaching people to use the language.",
+      "rdfs:label": "PedagogicalDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:PhonemicTranscription",
+      "@type": "rdfs:Class",
+      "name": "Phonemic Transcription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/phonemic",
+      "rdfs:comment": "Phonemic transcription may use the International Phonetic Alphabet [IPA] or a practical orthography.",
+      "rdfs:label": "PhonemicTranscription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Transcription"
+      }
+    },
+    {
+      "@id": "olac:PhoneticAnnotation",
+      "@type": "rdfs:Class",
+      "name": "Phonetic Annotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/phonetic",
+      "rdfs:comment": "An example of a phonetic annotation is the TIMIT database, in which each element of phonetic transcription is associated with a range of samples in a digital audio file [TIMIT].",
+      "rdfs:label": "PhoneticAnnotation",
+      "rdfs:subClassOf": {
+        "@id": "olac:Annotation"
+      }
+    },
+    {
+      "@id": "olac:PhoneticDataset",
+      "@type": "rdfs:Class",
+      "name": "Phonetic Dataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/phonetic",
+      "rdfs:comment": "The dataset is comprised of phonetic data.",
+      "rdfs:label": "PhoneticDataset",
+      "rdfs:subClassOf": {
+        "@id": "olac:Dataset"
+      }
+    },
+    {
+      "@id": "olac:PhoneticDescription",
+      "@type": "rdfs:Class",
+      "name": "Phonetic Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/phonetic",
+      "rdfs:comment": "The resource includes description of phonetic characteristics.",
+      "rdfs:label": "PhoneticDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:PhoneticLexicon",
+      "@type": "rdfs:Class",
+      "name": "Phonetic Lexicon",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/phonetic",
+      "rdfs:comment": "The Lexicon contains phonetic information, including pronunciation, phonology, stress, rhymes.",
+      "rdfs:label": "PhoneticLexicon",
+      "rdfs:subClassOf": {
+        "@id": "olac:Lexicon"
+      }
+    },
+    {
+      "@id": "olac:PhoneticTranscription",
+      "@type": "x",
+      "name": "Phonetic Transcription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/phonetic",
+      "rdfs:comment": "Phonetic transcription may be narrow or broad, and will typically use the International Phonetic Alphabet [IPA] in a standard encoding (e.g. [Unicode-IPA], [SAMPA]). Phonological transcriptions are also classified here.",
+      "rdfs:label": "PhoneticTranscription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Transcription"
+      }
+    },
+    {
+      "@id": "olac:PhonologicalAnnotation",
+      "@type": "rdfs:Class",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/phonological",
+      "rdfs:label": "PhonologicalAnnotation",
+      "rdfs:subClassOf": {
+        "@id": "olac:Annotation"
+      },
+      "name": ""
+    },
+    {
+      "@id": "olac:PhonologicalDataset",
+      "@type": "rdfs:Class",
+      "name": "Phonological Dataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/phonological",
+      "rdfs:comment": "Prosodic dataset",
+      "rdfs:label": "PhonologicalDataset",
+      "rdfs:subClassOf": {
+        "@id": "olac:Dataset"
+      }
+    },
+    {
+      "@id": "olac:PhonologicalDescription",
+      "@type": "rdfs:Class",
+      "name": "Phonological Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/phonological",
+      "rdfs:comment": "The resource includes descriptionof phonological characteristics.",
+      "rdfs:label": "PhonologicalDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:ProceduralText",
+      "@type": "rdfs:Class",
+      "name": "Procedural",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/procedural",
+      "rdfs:comment": "Examples of procedural discourses include recipes, instructions, and plans.",
+      "rdfs:label": "ProceduralText",
+      "rdfs:subClassOf": {
+        "@id": "olac:Text"
+      }
+    },
+    {
+      "@id": "olac:Proper-namesLexicon",
+      "@type": "rdfs:Class",
+      "name": "Name Dictionary",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/proper-names",
+      "rdfs:comment": "The resource includes only proper names sa dictionary headwords.",
+      "rdfs:label": "Proper-namesLexicon",
+      "rdfs:subClassOf": {
+        "@id": "olac:Lexicon"
+      }
+    },
+    {
+      "@id": "olac:ProsodicAnnotation",
+      "@type": "rdfs:Class",
+      "name": "Prosodic Annotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/prosodic",
+      "rdfs:comment": "The resource includes prosodic annotation.",
+      "rdfs:label": "ProsodicAnnotation",
+      "rdfs:subClassOf": {
+        "@id": "olac:Annotation"
+      }
+    },
+    {
+      "@id": "olac:ProsodicDescription",
+      "@type": "rdfs:Class",
+      "name": "Prosodic Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/prosodic",
+      "rdfs:comment": "The resource includes description of prosodic characteristics.",
+      "rdfs:label": "ProsodicDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:ProsodicTranscription",
+      "@type": "rdfs:Class",
+      "name": "Prosodic Transcription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/prosodic",
+      "rdfs:comment": "A prosodic transcription is a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription.",
+      "rdfs:label": "ProsodicTranscription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Transcription"
+      }
+    },
+    {
+      "@id": "olac:ReportText",
+      "@type": "rdfs:Class",
+      "name": "Report",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/report",
+      "rdfs:comment": "Examples of reports include news reports, essays, and commentaries.",
+      "rdfs:label": "ReportText",
+      "rdfs:subClassOf": {
+        "@id": "olac:Text"
+      }
+    },
+    {
+      "@id": "olac:SemanticAnnotation",
+      "@type": "rdfs:Class",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/semantic",
+      "rdfs:label": "SemanticAnnotation",
+      "rdfs:subClassOf": {
+        "@id": "olac:Annotation"
+      },
+      "name": ""
+    },
+    {
+      "@id": "olac:SemanticDataset",
+      "@type": "rdfs:Class",
+      "name": "Semantic Dataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/semantic",
+      "rdfs:comment": "The dataset is comprised of semantic data.",
+      "rdfs:label": "SemanticDataset",
+      "rdfs:subClassOf": {
+        "@id": "olac:Dataset"
+      }
+    },
+    {
+      "@id": "olac:SemanticDescription",
+      "@type": "rdfs:Class",
+      "name": "Semantic Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/semantic",
+      "rdfs:comment": "The resource includes description of semantic characteristics.",
+      "rdfs:label": "SemanticDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:SingingText",
+      "@type": "rdfs:Class",
+      "name": "Singing",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/singing",
+      "rdfs:comment": "Examples of singing include chants, songs, and choruses.",
+      "rdfs:label": "SingingText",
+      "rdfs:subClassOf": {
+        "@id": "olac:Text"
+      }
+    },
+    {
+      "@id": "olac:SyntacticAnnotation",
+      "@type": "rdfs:Class",
+      "name": "Syntactic Annotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/syntactic",
+      "rdfs:comment": "A syntactic annotation might include supra-lexical features such as word order or auxiliary phrase constructions. They may thus be aligned with phrases or clauses rather than smaller segments of the annotated record.",
+      "rdfs:label": "SyntacticAnnotation",
+      "rdfs:subClassOf": {
+        "@id": "olac:Annotation"
+      }
+    },
+    {
+      "@id": "olac:SyntacticDataset",
+      "@type": "rdfs:Class",
+      "name": "Syntactic Dataset",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/syntactic",
+      "rdfs:comment": "The dataset is comprised of syntactic data.",
+      "rdfs:label": "SyntacticDataset",
+      "rdfs:subClassOf": {
+        "@id": "olac:Dataset"
+      }
+    },
+    {
+      "@id": "olac:SyntacticDescription",
+      "@type": "rdfs:Class",
+      "name": "Syntactic Description",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/syntactic",
+      "rdfs:comment": "The resource includes description of syntactic characteristics.",
+      "rdfs:label": "SyntacticDescription",
+      "rdfs:subClassOf": {
+        "@id": "olac:Description"
+      }
+    },
+    {
+      "@id": "olac:TerminologyLexicon",
+      "@type": "rdfs:Class",
+      "name": "Terminology",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/terminology",
+      "rdfs:comment": "A terminological Lexicon is a glossary of domain-specific terms. Examples are technical terminology, kinship terms, color terms, acronyms, ...",
+      "rdfs:label": "TerminologyLexicon",
+      "rdfs:subClassOf": {
+        "@id": "olac:Lexicon"
+      }
+    },
+    {
+      "@id": "olac:Text",
+      "@type": "rdfs:Class",
+      "name": "Text",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
+      "rdfs:comment": "A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse.",
+      "rdfs:label": "Text",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "olac:ThesaurusLexicon",
+      "@type": "rdfs:Class",
+      "name": "Thesaurus",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/thesaurus",
+      "rdfs:comment": "A thesaurus is a list of words or concepts arranged according to sense.",
+      "rdfs:label": "ThesaurusLexicon",
+      "rdfs:subClassOf": {
+        "@id": "olac:Lexicon"
+      }
+    },
+    {
+      "@id": "olac:Transcription",
+      "@type": "rdfs:Class",
+      "name": "Transcription",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription",
+      "rdfs:comment": "A resource can be identified as a transcription if it includes a type of transcription as part of the content; for example, the first line of an interlinear analysis is often some type of transcription.",
+      "rdfs:label": "Transcription",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "olac:TranslationAnnotation",
+      "@type": "rdfs:Class",
+      "name": "Translation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/translation",
+      "rdfs:comment": "Translations may align with different linguistic levels of the resource: morpheme-by-morpheme translation, word-by-word translation, sentence-level free translation, or discourse-level free translation.",
+      "rdfs:label": "TranslationAnnotation",
+      "rdfs:subClassOf": {
+        "@id": "olac:Annotation"
+      }
+    },
+    {
+      "@id": "olac:TypewrittenWork",
+      "@type": "rdfs:Class",
+      "name": "Typewritten Work",
+      "rdfs:comment": "The original resource contains type-based writing from a typewriter",
+      "rdfs:label": "TypewrittenWork",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "olac:UnintelligibleSpeechText",
+      "@type": "rdfs:Class",
+      "name": "Unintelligible speech",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/unintelligible speech",
+      "rdfs:comment": "Examples of unintelligible speech include sacred languages, speaking in tongues, and singing syllables (fa-la-la).",
+      "rdfs:label": "UnintelligibleSpeechText",
+      "rdfs:subClassOf": {
+        "@id": "olac:Text"
+      }
+    },
+    {
+      "@id": "olac:WordlistLexicon",
+      "@type": "rdfs:Class",
+      "name": "Word list",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/wordlist",
+      "rdfs:comment": "A word list is a list of reference words in a major language for which the nearest equivalent word in a target language has been elicited (for instance, the Swadesh 100-word list).",
+      "rdfs:label": "WordlistLexicon",
+      "rdfs:subClassOf": {
+        "@id": "olac:Lexicon"
+      }
+    },
+    {
+      "@id": "olac:WordnetLexicon",
+      "@type": "rdfs:Class",
+      "name": "WordNet",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/wordnet",
+      "rdfs:comment": "Whereas a dictionary documents the meanings of words by means of ",
+      "rdfs:label": "WordnetLexicon",
+      "rdfs:subClassOf": {
+        "@id": "olac:Lexicon"
+      }
+    },
+    {
+      "@id": "olac:annotator",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Annotator",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#annotator",
+      "rdfs:comment": "The participant produced an annotation of this or a related resource.",
+      "rdfs:label": "annotator",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "olac:author",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Author",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#author",
+      "rdfs:comment": "The participant contributed original writings to the resource.",
+      "rdfs:label": "author",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "olac:compiler",
+      "@type": "rdf:Property",
+      "description": "This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately.",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "example": "A compiler of a book of short stories or a CD with several songs on it; a collector of a corpus of recordings in some language or on a given topic; a person who assembles a suite of software tools.",
+      "name": "Compiler",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#compiler",
+      "rdfs:comment": "The participant is responsible for collecting the sub-parts of the resource together.",
+      "rdfs:label": "compiler",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "olac:consultant",
+      "@type": "rdf:Property",
+      "description": "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\".",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Consultant",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#consultant",
+      "rdfs:comment": "The participant contributes expertise to the creation of a work.",
+      "rdfs:label": "consultant",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "olac:data_inputter",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Data Inputter",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#data_inputter",
+      "rdfs:comment": "The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.",
+      "rdfs:label": "dataInputter",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "olac:depositor",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Depositor",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#depositor",
+      "rdfs:comment": "The participant was responsible for depositing the resource in an archive.",
+      "rdfs:label": "depositor",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "olac:developer",
+      "@type": "rdf:Property",
+      "description": "A software programmer, designer, or analyst; a designer of a questionnaire or research task.",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Developer",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#developer",
+      "rdfs:comment": "The participant developed the methodology or tools that constitute the resource, or that were used to create the resource.",
+      "rdfs:label": "developer",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "olac:editor",
+      "@type": "rdf:Property",
+      "description": "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases.",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Editor",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#editor",
+      "rdfs:comment": "The participant reviewed, corrected, and/or tested the resource.",
+      "rdfs:label": "editor",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "olac:illustrator",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Illustrator",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#illustrator",
+      "rdfs:comment": "The participant contributed drawings or other illustrations to the resource.",
+      "rdfs:label": "illustrator",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "olac:interpreter",
+      "@type": "rdf:Property",
+      "description": "The choice between 'interpreter' and 'translator' may depend on the dynamics of the resource creation event or process. Generally, if the participant is translating 'live'; that is, while the speaker or signer is speaking or signing, she or he should be identified as an interpreter. Also, some discourse genres include a participant who interprets or explains a performance of some kind.",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "example": "A person translating from English to ASL during a speech; a Kuna chief who interprets a chant that another chief has just performed, thus completing the ceremony.",
+      "name": "Interpreter",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#interpreter",
+      "rdfs:comment": "The participant translates in real-time or explains the discourse recorded in the resource.",
+      "rdfs:label": "interpreter",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "olac:interviewer",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Interviewer",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#interviewer",
+      "rdfs:comment": "The participant conducted an interview that forms part of the resource.",
+      "rdfs:label": "interviewer",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
+    },
+    {
+      "@id": "olac:languageResourceType",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Translator",
+      "rangeIncludes": [
         {
           "@id": "olac:AnalyticalLexicon"
         },
@@ -48,9 +1087,7 @@
         {
           "@id": "olac:ComparativeDescription"
         },
-        {
-          "@id": "olac:DictionaryLexicon"
-        },
+        "\"Dictionary Lexicon\"",
         {
           "@id": "olac:DiscourseAnnotation"
         },
@@ -60,15 +1097,11 @@
         {
           "@id": "olac:DiscourseDescription"
         },
-        {
-          "@id": "olac:DramaText"
-        },
+        "\"Drama Text\"",
         {
           "@id": "olac:EtymologicalLexicon"
         },
-        {
-          "@id": "olac:FormulaicText"
-        },
+        "\"Formulaic Text\"",
         {
           "@id": "olac:FrequencyLexicon"
         },
@@ -84,9 +1117,7 @@
         {
           "@id": "olac:GesturalTranscription"
         },
-        {
-          "@id": "olac:KinesicAnnotation"
-        },
+        "\"Kinesic Annotation\"",
         {
           "@id": "olac:KinesicDataset"
         },
@@ -96,18 +1127,11 @@
         {
           "@id": "olac:KinesicTranscription"
         },
-        {
-          "@id": "olac:LanguageDescription"
-        },
+        "\"Language Description\"",
         {
           "@id": "olac:Lexicon"
         },
-        {
-          "@id": "olac:Text"
-        },
-        {
-          "@id": "olac:LudicText"
-        },
+        "\"Ludic Text\"",
         {
           "@id": "olac:MorphologicalAnnotation"
         },
@@ -126,21 +1150,15 @@
         {
           "@id": "olac:MusicalTranscription"
         },
-        {
-          "@id": "olac:NarrativeText"
-        },
-        {
-          "@id": "olac:OratoryText"
-        },
+        "\"Narrative Text\"",
+        "\"Oratory Text\"",
         {
           "@id": "olac:OrthographicDataset"
         },
         {
           "@id": "olac:OrthographicDescription"
         },
-        {
-          "@id": "olac:OrthographicText"
-        },
+        "\"Orthographic Text\"",
         {
           "@id": "olac:OrthographicTranscription"
         },
@@ -174,21 +1192,15 @@
         {
           "@id": "olac:PhoneticTranscription"
         },
-        {
-          "@id": "olac:PhonologicalAnnotation"
-        },
+        "\"Phonological Annotation\"",
         {
           "@id": "olac:PhonologicalDataset"
         },
         {
           "@id": "olac:PhonologicalDescription"
         },
-        {
-          "@id": "olac:ProceduralText"
-        },
-        {
-          "@id": "olac:Proper-namesLexicon"
-        },
+        "\"Procedural Text\"",
+        "\"Proper-names Lexicon\"",
         {
           "@id": "olac:ProsodicAnnotation"
         },
@@ -198,21 +1210,15 @@
         {
           "@id": "olac:ProsodicTranscription"
         },
-        {
-          "@id": "olac:ReportText"
-        },
-        {
-          "@id": "olac:SemanticAnnotation"
-        },
+        "\"Report Text\"",
+        "\"Semantic Annotation\"",
         {
           "@id": "olac:SemanticDataset"
         },
         {
           "@id": "olac:SemanticDescription"
         },
-        {
-          "@id": "olac:SingingText"
-        },
+        "\"Singing Text\"",
         {
           "@id": "olac:SyntacticAnnotation"
         },
@@ -222,1001 +1228,370 @@
         {
           "@id": "olac:SyntacticDescription"
         },
-        {
-          "@id": "olac:TerminologyLexicon"
-        },
-        {
-          "@id": "olac:ThesaurusLexicon"
-        },
+        "\"Terminology Lexicon\"",
+        "\"Thesaurus Lexicon\"",
         {
           "@id": "olac:Transcription"
         },
-        {
-          "@id": "olac:TranslationAnnotation"
-        },
-        {
-          "@id": "olac:UnintelligibleSpeechText"
-        },
-        {
-          "@id": "olac:WordlistLexicon"
-        },
-        {
-          "@id": "olac:WordnetLexicon"
-        },
+        "\"Translation\"] Annotation\"",
+        "\"Unintelligible Speech Text\"",
+        "\"Wordlist Lexicon\"",
+        "\"Wordnet Lexicon\"",
         {
           "@id": "olac:HandwrittenWork"
         },
         {
           "@id": "olac:TypewrittenWork"
         },
-        {
-          "@id": "olac:NonDigitalWork"
-        },
+        "\"Digital Work\"",
         {
           "@id": "olac:DigitalWork"
         }
       ],
-      "name": "Text Commons Language Types"
-    },
-    {
-      "@id": "./",
-      "@type": "Dataset",
-      "hasFile": [],
-      "description": "This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects",
-      "hasPart": [],
-      "name": "Language Data Ontology"
-    },
-    {
-      "@id": "olac:AnalyticalLexicon",
-      "@type": "rdfs:Class",
-      "name": "AnalyticalLexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/analytical",
-      "rdfs:comment": "Analytical information includes such things as morphological derivation, grammatically related forms, argument structure, ...",
-      "rdfs:label": "Analytical Lexicon",
-      "rdfs:subClassOf": {
-        "@id": "olac:Lexicon"
-      }
-    },
-    {
-      "@id": "olac:Annotation",
-      "@type": "rdfs:Class",
-      "name": "Annotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation",
-      "rdfs:comment": "A linguistic annotation is defined as structured linguistic information that is explicitly aligned to some spatial and/or temporal extent of some other linguistic record.",
-      "rdfs:label": "Annotation"
-    },
-    {
-      "@id": "olac:BilingualLexicon",
-      "@type": "rdfs:Class",
-      "name": "BilingualLexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/bilingual",
-      "rdfs:comment": "s in another language.",
-      "rdfs:label": "Bilingual Lexicon",
-      "rdfs:subClassOf": {
-        "@id": "olac:Lexicon"
-      }
-    },
-    {
-      "@id": "olac:ComparativeDescription",
-      "@type": "rdfs:Class",
-      "name": "ComparativeDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/comparative",
-      "rdfs:comment": "The resource includes comparative or typological description.",
-      "rdfs:label": "Comparative description"
-    },
-    {
-      "@id": "olac:DictionaryLexicon",
-      "@type": "rdfs:Class",
-      "name": "DictionaryLexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/dictionary",
-      "rdfs:comment": "This includes any resource that lists words or morphemes and defines them. It contrasts with a word list in that the ",
-      "rdfs:label": "Dictionary",
-      "rdfs:subClassOf": {
-        "@id": "olac:Lexicon"
-      }
-    },
-    {
-      "@id": "olac:DigitalWork",
-      "@type": "Thing",
-      "name": "NonDigitalWork",
-      "rdfs:comment": "The original resource was created in non-digital form",
-      "rdfs:label": "Non digital work"
-    },
-    {
-      "@id": "olac:DiscourseAnnotation",
-      "@type": "rdfs:Class",
-      "name": "DiscourseAnnotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/discourse",
-      "rdfs:comment": "The resource includes aligned discourse transcription.",
-      "rdfs:label": "Discourse annotation",
-      "rdfs:subClassOf": {
-        "@id": "olac:Annotation"
-      }
-    },
-    {
-      "@id": "olac:DiscourseDataset",
-      "@type": "rdfs:Class",
-      "name": "DiscourseDataset",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/discourse",
-      "rdfs:comment": "The dataset is comprised of discourse data.",
-      "rdfs:label": "Discourse dataset"
-    },
-    {
-      "@id": "olac:DiscourseDescription",
-      "@type": "rdfs:Class",
-      "name": "DiscourseDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/discourse",
-      "rdfs:comment": "The resource includes description of discourse characteristics.",
-      "rdfs:label": "Discourse description"
-    },
-    {
-      "@id": "olac:DramaText",
-      "@type": "rdfs:Class",
-      "name": "DramaText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/drama",
-      "rdfs:comment": "A planned, creative, rendition of discourse with two or more participants.",
-      "rdfs:label": "Drama",
-      "rdfs:subClassOf": {
-        "@id": "olac:Text"
-      }
-    },
-    {
-      "@id": "olac:EtymologicalLexicon",
-      "@type": "rdfs:Class",
-      "name": "EtymologicalLexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/etymological",
-      "rdfs:comment": "The Lexicon contains etymological information.",
-      "rdfs:label": "Etymological Lexicon",
-      "rdfs:subClassOf": {
-        "@id": "olac:Lexicon"
-      }
-    },
-    {
-      "@id": "olac:FormulaicText",
-      "@type": "rdfs:Class",
-      "name": "FormulaicText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/formulaic",
-      "rdfs:comment": "Examples of formulaic discourse are prayers, curses, blessings, charms, curing rituals, marriage vows, and oaths.",
-      "rdfs:label": "Formulaic",
-      "rdfs:subClassOf": {
-        "@id": "olac:Text"
-      }
-    },
-    {
-      "@id": "olac:FrequencyLexicon",
-      "@type": "rdfs:Class",
-      "name": "FrequencyLexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/frequency",
-      "rdfs:comment": "The Lexicon contains frequency information.",
-      "rdfs:label": "Frequency Lexicon",
-      "rdfs:subClassOf": {
-        "@id": "olac:Lexicon"
-      }
-    },
-    {
-      "@id": "olac:GesturalAnnotation",
-      "@type": "rdfs:Class",
-      "name": "GesturalAnnotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/gestural",
-      "rdfs:comment": "The resource includes gestural annotation.",
-      "rdfs:label": "Gestural annotation",
-      "rdfs:subClassOf": {
-        "@id": "olac:Annotation"
-      }
-    },
-    {
-      "@id": "olac:GesturalDataset",
-      "@type": "rdfs:Class",
-      "name": "GesturalDataset",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/gestural",
-      "rdfs:comment": "The dataset is comprised of gestural data.",
-      "rdfs:label": "Gestural dataset"
-    },
-    {
-      "@id": "olac:GesturalDescription",
-      "@type": "rdfs:Class",
-      "name": "GesturalDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/gestural",
-      "rdfs:comment": "The resource includes description of gestural characteristics.",
-      "rdfs:label": "Gestural description"
-    },
-    {
-      "@id": "olac:GesturalTranscription",
-      "@type": "rdfs:Class",
-      "name": "GesturalTranscription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/gestural",
-      "rdfs:comment": "The resource includes gestural transcription.",
-      "rdfs:label": "Gestural transcription"
-    },
-    {
-      "@id": "olac:HandwrittenWork",
-      "@type": "rdfs:Class",
-      "name": "HandwrittenWork",
-      "rdfs:comment": "Original version was hand written",
-      "rdfs:label": "Handwritten Work"
-    },
-    {
-      "@id": "olac:KinesicAnnotation",
-      "@type": "rdfs:Class",
-      "name": "KinesicAnnotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/kinesic",
-      "rdfs:comment": "The resource includes aligned representations of eye, face, and body movements.",
-      "rdfs:subClassOf": {
-        "@id": "olac:Annotation"
-      }
-    },
-    {
-      "@id": "olac:KinesicDataset",
-      "@type": "rdfs:Class",
-      "name": "KinesicDataset",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/kinesic",
-      "rdfs:comment": "The dataset is comprised of kinesic data.",
-      "rdfs:label": "Kinesic dataset"
-    },
-    {
-      "@id": "olac:KinesicDescription",
-      "@type": "rdfs:Class",
-      "name": "KinesicDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/kinesic",
-      "rdfs:comment": "The resource includes description of kinesic characteristics.",
-      "rdfs:label": "Kinesic description"
-    },
-    {
-      "@id": "olac:KinesicTranscription",
-      "@type": "rdfs:Class",
-      "name": "KinesicTranscription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/kinesic",
-      "rdfs:comment": "Kinesic transcriptions represent systematic uses of facial expressions, body language, and eye gaze that are used to communicate meaning.",
-      "rdfs:label": "Kinesic transcription",
-      "rdfs:subClassOf": {
-        "@id": "olac:Transcription"
-      }
-    },
-    {
-      "@id": "olac:LanguageDescription",
-      "@type": "rdfs:Class",
-      "name": "LanguageDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description",
-      "rdfs:comment": "A description is any description or analysis of a language. Unlike a transcription or an annotation, the structure of a description is independent of the structure of the linguistic events that it describes.",
-      "rdfs:label": "Description"
-    },
-    {
-      "@id": "olac:Lexicon",
-      "@type": "rdfs:Class",
-      "name": "Lexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon",
-      "rdfs:comment": "The resource includes a systematic listing of lexical items.",
-      "rdfs:label": "Lexicon"
-    },
-    {
-      "@id": "olac:LudicText",
-      "@type": "rdfs:Class",
-      "name": "LudicText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/ludic",
-      "rdfs:comment": "Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.",
-      "rdfs:label": "Ludic",
-      "rdfs:subClassOf": {
-        "@id": "olac:Text"
-      }
-    },
-    {
-      "@id": "olac:MorphologicalAnnotation",
-      "@type": "rdfs:Class",
-      "name": "MorphologicalAnnotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/morphological",
-      "rdfs:comment": "A morphological annotation is a morphological transcription where the component morphemes are aligned with some other linguistic record, such as an orthographic transcription or a speech signal. An example of morphological annotation is interlinear text with aligned morphemic glosses.",
-      "rdfs:label": "Morphological annotation",
-      "rdfs:subClassOf": {
-        "@id": "olac:Annotation"
-      }
-    },
-    {
-      "@id": "olac:MorphologicalDataset",
-      "@type": "rdfs:Class",
-      "name": "MorphologicalDataset",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/morphological",
-      "rdfs:comment": "The dataset is comprised of morphological data.",
-      "rdfs:label": "Morphological dataset"
-    },
-    {
-      "@id": "olac:MorphologicalDescription",
-      "@type": "rdfs:Class",
-      "name": "MorphologicalDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/morphological",
-      "rdfs:comment": "The resource includes description of morphological characteristics.",
-      "rdfs:label": "Morphological description"
-    },
-    {
-      "@id": "olac:MusicalAnnotation",
-      "@type": "rdfs:Class",
-      "name": "MusicalAnnotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/musical",
-      "rdfs:comment": "The resource includes musical annotation.",
-      "rdfs:label": "Musical annotation",
-      "rdfs:subClassOf": {
-        "@id": "olac:Annotation"
-      }
-    },
-    {
-      "@id": "olac:MusicalDataset",
-      "@type": "rdfs:Class",
-      "name": "MusicalDataset",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/musical",
-      "rdfs:comment": "The dataset is comprised of musical data.",
-      "rdfs:label": "Musical dataset"
-    },
-    {
-      "@id": "olac:MusicalTranscription",
-      "@type": "rdfs:Class",
-      "name": "MusicalTranscription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/musical",
-      "rdfs:comment": "A musical transcription represents music.",
-      "rdfs:label": "Musical transcription",
-      "rdfs:subClassOf": {
-        "@id": "olac:Transcription"
-      }
-    },
-    {
-      "@id": "olac:NarrativeText",
-      "@type": "rdfs:Class",
-      "name": "NarrativeText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/narrative",
-      "rdfs:comment": "Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
-      "rdfs:label": "Narrative",
-      "rdfs:subClassOf": {
-        "@id": "olac:Text"
-      }
-    },
-    {
-      "@id": "olac:NonDigitalWork",
-      "@type": "rdfs:Class",
-      "name": "DigitalWork",
-      "rdfs:comment": "The original resource was created in digital form",
-      "rdfs:label": "Born digital work"
-    },
-    {
-      "@id": "olac:OratoryText",
-      "@type": "rdfs:Class",
-      "name": "OratoryText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/oratory",
-      "rdfs:comment": "Examples of oratory include sermons, lectures, political speeches, and invocations.",
-      "rdfs:label": "Oratory",
-      "rdfs:subClassOf": {
-        "@id": "olac:Text"
-      }
-    },
-    {
-      "@id": "olac:OrthographicDataset",
-      "@type": "rdfs:Class",
-      "name": "OrthographicDataset",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/orthographic",
-      "rdfs:comment": "The dataset is comprised of orthographic data.",
-      "rdfs:label": "Orthographic dataset"
-    },
-    {
-      "@id": "olac:OrthographicDescription",
-      "@type": "rdfs:Class",
-      "name": "OrthographicDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic",
-      "rdfs:comment": "The resource includes documentation of a writing system.",
-      "rdfs:label": "Orthographic description"
-    },
-    {
-      "@id": "olac:OrthographicText",
-      "@type": "rdfs:Class",
-      "name": "OrthographicText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/dialogue",
-      "rdfs:comment": "Examples of Orthographic texts include letters, books, and other written documents",
-      "rdfs:label": "Orthographic",
-      "rdfs:subClassOf": {
-        "@id": "olac:Text"
-      }
-    },
-    {
-      "@id": "olac:OrthographicTranscription",
-      "@type": "rdfs:Class",
-      "name": "OrthographicTranscription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/orthographic",
-      "rdfs:comment": "Orthographic transcriptions differ from phonemic transcriptions that use a practical orthography in that they include orthographic conventions for punctuation, capitalization, etc.",
-      "rdfs:label": "Orthographic transcription",
-      "rdfs:subClassOf": {
-        "@id": "olac:Transcription"
-      }
-    },
-    {
-      "@id": "olac:Part-of-speechAnnotation",
-      "@type": "rdfs:Class",
-      "name": "Part-of-speechAnnotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/part-of-speech",
-      "rdfs:comment": "The resource includes aligned part-of-speech tags.",
-      "rdfs:label": "Part-of-speech annotation",
-      "rdfs:subClassOf": {
-        "@id": "olac:Annotation"
-      }
-    },
-    {
-      "@id": "olac:Part-of-speechDataset",
-      "@type": "rdfs:Class",
-      "name": "Part-of-speechDataset",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/part-of-speech",
-      "rdfs:comment": "The dataset is comprised of part-of-speech data.",
-      "rdfs:label": "Part-of-speech dataset"
-    },
-    {
-      "@id": "olac:Part-of-speechDescription",
-      "@type": "rdfs:Class",
-      "name": "Part-of-speechDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-speech",
-      "rdfs:comment": "The resource includes description of part-of-speech characteristics.",
-      "rdfs:label": "Part-of-speech description"
-    },
-    {
-      "@id": "olac:PedagogicalDescription",
-      "@type": "rdfs:Class",
-      "name": "PedagogicalDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/pedagogical",
-      "rdfs:comment": "A pedagogical description is a style of presentation intended for use in teaching people to use the language.",
-      "rdfs:label": "Pedagogical description"
-    },
-    {
-      "@id": "olac:PhonemicTranscription",
-      "@type": "rdfs:Class",
-      "name": "PhonemicTranscription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/phonemic",
-      "rdfs:comment": "Phonemic transcription may use the International Phonetic Alphabet [IPA] or a practical orthography.",
-      "rdfs:label": "Phonemic transcription",
-      "rdfs:subClassOf": {
-        "@id": "olac:Transcription"
-      }
-    },
-    {
-      "@id": "olac:PhoneticAnnotation",
-      "@type": "rdfs:Class",
-      "name": "PhoneticAnnotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/phonetic",
-      "rdfs:comment": "An example of a phonetic annotation is the TIMIT database, in which each element of phonetic transcription is associated with a range of samples in a digital audio file [TIMIT].",
-      "rdfs:label": "Phonetic annotation",
-      "rdfs:subClassOf": {
-        "@id": "olac:Annotation"
-      }
-    },
-    {
-      "@id": "olac:PhoneticDataset",
-      "@type": "rdfs:Class",
-      "name": "PhoneticDataset",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/phonetic",
-      "rdfs:comment": "The dataset is comprised of phonetic data.",
-      "rdfs:label": "Phonetic dataset"
-    },
-    {
-      "@id": "olac:PhoneticDescription",
-      "@type": "rdfs:Class",
-      "name": "PhoneticDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/phonetic",
-      "rdfs:comment": "The resource includes description of phonetic characteristics.",
-      "rdfs:label": "Phonetic description"
-    },
-    {
-      "@id": "olac:PhoneticLexicon",
-      "@type": "rdfs:Class",
-      "name": "PhoneticLexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/phonetic",
-      "rdfs:comment": "The Lexicon contains phonetic information, including pronunciation, phonology, stress, rhymes.",
-      "rdfs:label": "Phonetic Lexicon",
-      "rdfs:subClassOf": {
-        "@id": "olac:Lexicon"
-      }
-    },
-    {
-      "@id": "olac:PhoneticTranscription",
-      "@type": "rdfs:Class",
-      "name": "PhoneticTranscription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/phonetic",
-      "rdfs:comment": "Phonetic transcription may be narrow or broad, and will typically use the International Phonetic Alphabet [IPA] in a standard encoding (e.g. [Unicode-IPA], [SAMPA]). Phonological transcriptions are also classified here.",
-      "rdfs:label": "Phonetic transcription",
-      "rdfs:subClassOf": {
-        "@id": "olac:Transcription"
-      }
-    },
-    {
-      "@id": "olac:PhonologicalAnnotation",
-      "@type": "rdfs:Class",
-      "name": "PhonologicalAnnotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/phonological",
-      "rdfs:subClassOf": {
-        "@id": "olac:Annotation"
-      }
-    },
-    {
-      "@id": "olac:PhonologicalDataset",
-      "@type": "rdfs:Class",
-      "name": "PhonologicalDataset",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/phonological",
-      "rdfs:comment": "Prosodic dataset",
-      "rdfs:label": "Phonological dataset"
-    },
-    {
-      "@id": "olac:PhonologicalDescription",
-      "@type": "rdfs:Class",
-      "name": "PhonologicalDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/phonological",
-      "rdfs:comment": "The resource includes descriptionof phonological characteristics.",
-      "rdfs:label": "Phonological description"
-    },
-    {
-      "@id": "olac:ProceduralText",
-      "@type": "rdfs:Class",
-      "name": "ProceduralText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/procedural",
-      "rdfs:comment": "Examples of procedural discourses include recipes, instructions, and plans.",
-      "rdfs:label": "Procedural",
-      "rdfs:subClassOf": {
-        "@id": "olac:Text"
-      }
-    },
-    {
-      "@id": "olac:Proper-namesLexicon",
-      "@type": "rdfs:Class",
-      "name": "Proper-namesLexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/proper-names",
-      "rdfs:comment": "The resource includes only proper names sa dictionary headwords.",
-      "rdfs:label": "Name Dictionary",
-      "rdfs:subClassOf": {
-        "@id": "olac:Lexicon"
-      }
-    },
-    {
-      "@id": "olac:ProsodicAnnotation",
-      "@type": "rdfs:Class",
-      "name": "ProsodicAnnotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/prosodic",
-      "rdfs:comment": "The resource includes prosodic annotation.",
-      "rdfs:label": "Prosodic annotation",
-      "rdfs:subClassOf": {
-        "@id": "olac:Annotation"
-      }
-    },
-    {
-      "@id": "olac:ProsodicDescription",
-      "@type": "rdfs:Class",
-      "name": "ProsodicDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/prosodic",
-      "rdfs:comment": "The resource includes description of prosodic characteristics.",
-      "rdfs:label": "Prosodic description"
-    },
-    {
-      "@id": "olac:ProsodicTranscription",
-      "@type": "rdfs:Class",
-      "name": "ProsodicTranscription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription/prosodic",
-      "rdfs:comment": "A prosodic transcription is a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription.",
-      "rdfs:label": "Prosodic transcription",
-      "rdfs:subClassOf": {
-        "@id": "olac:Transcription"
-      }
-    },
-    {
-      "@id": "olac:ReportText",
-      "@type": "rdfs:Class",
-      "name": "ReportText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/report",
-      "rdfs:comment": "Examples of reports include news reports, essays, and commentaries.",
-      "rdfs:label": "Report",
-      "rdfs:subClassOf": {
-        "@id": "olac:Text"
-      }
-    },
-    {
-      "@id": "olac:SemanticAnnotation",
-      "@type": "rdfs:Class",
-      "name": "SemanticAnnotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/semantic",
-      "rdfs:subClassOf": {
-        "@id": "olac:Annotation"
-      }
-    },
-    {
-      "@id": "olac:SemanticDataset",
-      "@type": "rdfs:Class",
-      "name": "SemanticDataset",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/semantic",
-      "rdfs:comment": "The dataset is comprised of semantic data.",
-      "rdfs:label": "Semantic dataset"
-    },
-    {
-      "@id": "olac:SemanticDescription",
-      "@type": "rdfs:Class",
-      "name": "SemanticDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/semantic",
-      "rdfs:comment": "The resource includes description of semantic characteristics.",
-      "rdfs:label": "Semantic description"
-    },
-    {
-      "@id": "olac:SingingText",
-      "@type": "rdfs:Class",
-      "name": "SingingText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/singing",
-      "rdfs:comment": "Examples of singing include chants, songs, and choruses.",
-      "rdfs:label": "Singing",
-      "rdfs:subClassOf": {
-        "@id": "olac:Text"
-      }
-    },
-    {
-      "@id": "olac:SyntacticAnnotation",
-      "@type": "rdfs:Class",
-      "name": "SyntacticAnnotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/syntactic",
-      "rdfs:comment": "A syntactic annotation might include supra-lexical features such as word order or auxiliary phrase constructions. They may thus be aligned with phrases or clauses rather than smaller segments of the annotated record.",
-      "rdfs:label": "Syntactic annotation",
-      "rdfs:subClassOf": {
-        "@id": "olac:Annotation"
-      }
-    },
-    {
-      "@id": "olac:SyntacticDataset",
-      "@type": "rdfs:Class",
-      "name": "SyntacticDataset",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#dataset/syntactic",
-      "rdfs:comment": "The dataset is comprised of syntactic data.",
-      "rdfs:label": "Syntactic dataset"
-    },
-    {
-      "@id": "olac:SyntacticDescription",
-      "@type": "rdfs:Class",
-      "name": "SyntacticDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/syntactic",
-      "rdfs:comment": "The resource includes description of syntactic characteristics.",
-      "rdfs:label": "Syntactic description"
-    },
-    {
-      "@id": "olac:TerminologyLexicon",
-      "@type": "rdfs:Class",
-      "name": "TerminologyLexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/terminology",
-      "rdfs:comment": "A terminological Lexicon is a glossary of domain-specific terms. Examples are technical terminology, kinship terms, color terms, acronyms, ...",
-      "rdfs:label": "Terminology",
-      "rdfs:subClassOf": {
-        "@id": "olac:Lexicon"
-      }
-    },
-    {
-      "@id": "olac:Text",
-      "@type": "rdfs:Class",
-      "name": "Text",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
-      "rdfs:comment": "A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse.",
-      "rdfs:label": "Text"
-    },
-    {
-      "@id": "olac:ThesaurusLexicon",
-      "@type": "rdfs:Class",
-      "name": "ThesaurusLexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/thesaurus",
-      "rdfs:comment": "A thesaurus is a list of words or concepts arranged according to sense.",
-      "rdfs:label": "Thesaurus",
-      "rdfs:subClassOf": {
-        "@id": "olac:Lexicon"
-      }
-    },
-    {
-      "@id": "olac:Transcription",
-      "@type": "rdfs:Class",
-      "name": "Transcription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription",
-      "rdfs:comment": "A resource can be identified as a transcription if it includes a type of transcription as part of the content; for example, the first line of an interlinear analysis is often some type of transcription.",
-      "rdfs:label": "Transcription"
-    },
-    {
-      "@id": "olac:TranslationAnnotation",
-      "@type": "rdfs:Class",
-      "name": "TranslationAnnotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/translation",
-      "rdfs:comment": "Translations may align with different linguistic levels of the resource: morpheme-by-morpheme translation, word-by-word translation, sentence-level free translation, or discourse-level free translation.",
-      "rdfs:label": "Translation",
-      "rdfs:subClassOf": {
-        "@id": "olac:Annotation"
-      }
-    },
-    {
-      "@id": "olac:TypewrittenWork",
-      "@type": "rdfs:Class",
-      "name": "TypewrittenWork",
-      "rdfs:comment": "The original resource contains type-based writing from a typewriter",
-      "rdfs:label": "Typewritten Work"
-    },
-    {
-      "@id": "olac:UnintelligibleSpeechText",
-      "@type": "rdfs:Class",
-      "name": "UnintelligibleSpeechText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/unintelligible speech",
-      "rdfs:comment": "Examples of unintelligible speech include sacred languages, speaking in tongues, and singing syllables (fa-la-la).",
-      "rdfs:label": "Unintelligible speech",
-      "rdfs:subClassOf": {
-        "@id": "olac:Text"
-      }
-    },
-    {
-      "@id": "olac:WordlistLexicon",
-      "@type": "rdfs:Class",
-      "name": "WordlistLexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/wordlist",
-      "rdfs:comment": "A word list is a list of reference words in a major language for which the nearest equivalent word in a target language has been elicited (for instance, the Swadesh 100-word list).",
-      "rdfs:label": "Word list",
-      "rdfs:subClassOf": {
-        "@id": "olac:Lexicon"
-      }
-    },
-    {
-      "@id": "olac:WordnetLexicon",
-      "@type": "rdfs:Class",
-      "name": "WordnetLexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon/wordnet",
-      "rdfs:comment": "Whereas a dictionary documents the meanings of words by means of ",
-      "rdfs:label": "WordNet",
-      "rdfs:subClassOf": {
-        "@id": "olac:Lexicon"
-      }
-    },
-    {
-      "@id": "olac:annotator",
-      "@type": "rdf:Property",
-      "name": "annotator",
-      "rangeIncludes": "",
-      "sameAs": "http://www.language-archives.org/REC/role.html#annotator",
-      "rdfs:comment": "The participant produced an annotation of this or a related resource.",
-      "rdfs:label": "Annotator"
-    },
-    {
-      "@id": "olac:author",
-      "@type": "rdf:Property",
-      "name": "author",
-      "rangeIncludes": "",
-      "sameAs": "http://www.language-archives.org/REC/role.html#author",
-      "rdfs:comment": "The participant contributed original writings to the resource.",
-      "rdfs:label": "Author"
-    },
-    {
-      "@id": "olac:compiler",
-      "@type": "rdf:Property",
-      "description": "This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately.",
-      "example": "A compiler of a book of short stories or a CD with several songs on it; a collector of a corpus of recordings in some language or on a given topic; a person who assembles a suite of software tools.",
-      "name": "compiler",
-      "rangeIncludes": "",
-      "sameAs": "http://www.language-archives.org/REC/role.html#compiler",
-      "rdfs:comment": "The participant is responsible for collecting the sub-parts of the resource together.",
-      "rdfs:label": "Compiler"
-    },
-    {
-      "@id": "olac:consultant",
-      "@type": "rdf:Property",
-      "description": "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\".",
-      "name": "consultant",
-      "rangeIncludes": "",
-      "sameAs": "http://www.language-archives.org/REC/role.html#consultant",
-      "rdfs:comment": "The participant contributes expertise to the creation of a work.",
-      "rdfs:label": "Consultant"
-    },
-    {
-      "@id": "olac:data_inputter",
-      "@type": "rdf:Property",
-      "name": "dataInputter",
-      "rangeIncludes": "",
-      "sameAs": "http://www.language-archives.org/REC/role.html#data_inputter",
-      "rdfs:comment": "The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.",
-      "rdfs:label": "Data Inputter"
-    },
-    {
-      "@id": "olac:depositor",
-      "@type": "rdf:Property",
-      "name": "depositor",
-      "rangeIncludes": "",
-      "sameAs": "http://www.language-archives.org/REC/role.html#depositor",
-      "rdfs:comment": "The participant was responsible for depositing the resource in an archive.",
-      "rdfs:label": "Depositor"
-    },
-    {
-      "@id": "olac:developer",
-      "@type": "rdf:Property",
-      "description": "A software programmer, designer, or analyst; a designer of a questionnaire or research task.",
-      "name": "developer",
-      "rangeIncludes": "",
-      "sameAs": "http://www.language-archives.org/REC/role.html#developer",
-      "rdfs:comment": "The participant developed the methodology or tools that constitute the resource, or that were used to create the resource.",
-      "rdfs:label": "Developer"
-    },
-    {
-      "@id": "olac:editor",
-      "@type": "rdf:Property",
-      "description": "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases.",
-      "name": "editor",
-      "rangeIncludes": "",
-      "sameAs": "http://www.language-archives.org/REC/role.html#editor",
-      "rdfs:comment": "The participant reviewed, corrected, and/or tested the resource.",
-      "rdfs:label": "Editor"
-    },
-    {
-      "@id": "olac:illustrator",
-      "@type": "rdf:Property",
-      "name": "illustrator",
-      "rangeIncludes": "",
-      "sameAs": "http://www.language-archives.org/REC/role.html#illustrator",
-      "rdfs:comment": "The participant contributed drawings or other illustrations to the resource.",
-      "rdfs:label": "Illustrator"
-    },
-    {
-      "@id": "olac:interpreter",
-      "@type": "rdf:Property",
-      "description": "The choice between 'interpreter' and 'translator' may depend on the dynamics of the resource creation event or process. Generally, if the participant is translating 'live'; that is, while the speaker or signer is speaking or signing, she or he should be identified as an interpreter. Also, some discourse genres include a participant who interprets or explains a performance of some kind.",
-      "example": "A person translating from English to ASL during a speech; a Kuna chief who interprets a chant that another chief has just performed, thus completing the ceremony.",
-      "name": "interpreter",
-      "rangeIncludes": "",
-      "sameAs": "http://www.language-archives.org/REC/role.html#interpreter",
-      "rdfs:comment": "The participant translates in real-time or explains the discourse recorded in the resource.",
-      "rdfs:label": "Interpreter"
-    },
-    {
-      "@id": "olac:interviewer",
-      "@type": "rdf:Property",
-      "name": "interviewer",
-      "rangeIncludes": "",
-      "sameAs": "http://www.language-archives.org/REC/role.html#interviewer",
-      "rdfs:comment": "The participant conducted an interview that forms part of the resource.",
-      "rdfs:label": "Interviewer"
-    },
-    {
-      "@id": "olac:languageResourceType",
-      "@type": "rdf:Property",
-      "name": "languageResourceType",
-      "rangeIncludes": {
-        "@id": "#TextCommonsLanguageTypes"
-      },
       "sameAs": "http://www.language-archives.org/REC/role.html#translator",
       "rdfs:comment": "One or more additional types from the OLAC vocabulary.",
-      "rdfs:label": "Translator"
+      "rdfs:label": "languageResourceType",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:originalForm",
       "@type": "rdf:Property",
-      "name": "originalForm",
-      "rangeIncludes": {
-        "@id": "#TextCommonsLanguageForms"
-      }
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "rangeIncludes": [
+        {
+          "@id": "olac:HandwrittenWork"
+        },
+        {
+          "@id": "olac:TypewrittenWork"
+        },
+        "\"Digital Work\"",
+        {
+          "@id": "olac:DigitalWork"
+        }
+      ],
+      "rdfs:label": "originalForm",
+      "name": ""
     },
     {
       "@id": "olac:participant",
       "@type": "rdf:Property",
       "description": "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in general sense of having allowed the creation event to take place, such as the mayor of an indigenous community.",
-      "name": "participant",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Participant",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#participant",
       "rdfs:comment": "The participant was present during the creation of the resource, but did not contribute substantially to its content.",
-      "rdfs:label": "Participant"
+      "rdfs:label": "participant",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:performer",
       "@type": "rdf:Property",
       "description": "It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
       "example": "A person performing a ceremony or delivering an oration or a sermon; native speakers re-enacting a traditional genre of speech, such as ritual greetings or insults; an actor or musician.",
-      "name": "performer",
-      "rangeIncludes": "",
+      "name": "Performer",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#performer",
       "rdfs:comment": "The participant performed some portion of a recorded, filmed, or transcribed resource.",
-      "rdfs:label": "Performer"
+      "rdfs:label": "performer",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:photographer",
       "@type": "rdf:Property",
-      "name": "photographer",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Photographer",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#photographer",
       "rdfs:comment": "The participant took the photograph, or shot the film, that appears in or constitutes the resource.",
-      "rdfs:label": "Photographer"
+      "rdfs:label": "photographer",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:recorder",
       "@type": "rdf:Property",
-      "name": "recorder",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Recorder",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#recorder",
       "rdfs:comment": "The participant operated the recording machinery used to create the resource.",
-      "rdfs:label": "Recorder"
+      "rdfs:label": "recorder",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:register",
       "@type": "rdf:Property",
       "description": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
-      "name": "register",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Register",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://w3id.org/meta-share/meta-share/register",
       "rdfs:comment": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
-      "rdfs:label": "Register"
+      "rdfs:label": "register",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:genre"
+      }
     },
     {
       "@id": "olac:research_participant",
       "@type": "rdf:Property",
-      "name": "researchParticipant",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Research Participant",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#research_participant",
       "rdfs:comment": "The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.",
-      "rdfs:label": "Research Participant"
+      "rdfs:label": "researchParticipant",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:researcher",
       "@type": "rdf:Property",
-      "name": "researcher",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Researcher",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#researcher",
       "rdfs:comment": "The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.",
-      "rdfs:label": "Researcher"
+      "rdfs:label": "researcher",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:responder",
       "@type": "rdf:Property",
       "description": "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\".",
-      "name": "responder",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Responder",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#responder",
       "rdfs:comment": "The participant was an interlocutor in some sort of discourse event.",
-      "rdfs:label": "Responder"
+      "rdfs:label": "responder",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:signer",
       "@type": "rdf:Property",
       "description": "Signers are those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
       "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
-      "name": "signer",
-      "rangeIncludes": "",
+      "name": "Signer",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#signer",
       "rdfs:comment": "The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
-      "rdfs:label": "Signer"
+      "rdfs:label": "signer",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:singer",
       "@type": "rdf:Property",
-      "name": "singer",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Singer",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#singer",
       "rdfs:comment": "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
-      "rdfs:label": "Singer"
+      "rdfs:label": "singer",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:speaker",
       "@type": "rdf:Property",
       "description": "Speakers are those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
       "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Speakers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
-      "name": "speaker",
-      "rangeIncludes": "",
+      "name": "Speaker",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#speaker",
       "rdfs:comment": "The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
-      "rdfs:label": "Speaker"
+      "rdfs:label": "speaker",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:sponsor",
       "@type": "rdf:Property",
-      "name": "sponsor",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Sponsor",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#sponsor",
       "rdfs:comment": "The participant contributed financial support to the creation of the resource.",
-      "rdfs:label": "Sponsor"
+      "rdfs:label": "sponsor",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:transcriber",
       "@type": "rdf:Property",
-      "name": "transcriber",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Transcriber",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#transcriber",
       "rdfs:comment": "The participant produced a transcription of this or a related resource.",
-      "rdfs:label": "Transcriber"
+      "rdfs:label": "transcriber",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "olac:translator",
       "@type": "rdf:Property",
-      "name": "translator",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:Dataset"
+      },
+      "name": "Translator",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#translator",
       "rdfs:comment": "The participant produced a translation of this or a related resource.",
-      "rdfs:label": "Translator"
+      "rdfs:label": "translator",
+      "rdfs:subPropertyOf": {
+        "@id": "schema:contributor"
+      }
     },
     {
       "@id": "ro-crate-metadata.json",
