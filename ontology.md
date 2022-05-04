@@ -1,3 +1,248 @@
+<div id="Annotation">
+
+# Defined Term: Annotation
+
+The resource includes information which annotates some other linguistic record.
+
+</div>
+<div id="BornDigital">
+
+# Defined Term: BornDigital
+
+undefined
+
+</div>
+<div id="Code">
+
+# Defined Term: Code
+
+The resource contains a coded analysis or annotation
+
+</div>
+<div id="DerivedText">
+
+# Defined Term: DerivedText
+
+undefined
+
+</div>
+<div id="Dialogue">
+
+# Defined Term: Dialogue
+
+undefined
+
+</div>
+<div id="Gesture">
+
+# Defined Term: Gesture
+
+undefined
+
+</div>
+<div id="Handwritten">
+
+# Defined Term: Handwritten
+
+The resource was written using a writing implement such as pen, pencil, brush or computer stylus
+
+</div>
+<div id="Interview">
+
+# Defined Term: Interview
+
+The resource is conversation where one or more speakers are directing the conversation
+
+</div>
+<div id="Lexicon">
+
+# Defined Term: Lexicon
+
+The resource includes a systematic listing of lexical items.
+
+
+</div>
+<div id="LinguisticDescription">
+
+# Defined Term: LinguisticDescription
+
+undefined
+
+</div>
+<div id="Ludic">
+
+# Defined Term: Ludic
+
+undefined
+
+</div>
+<div id="Narrative">
+
+# Defined Term: Narrative
+
+A monologic discourse which represents temporally organized events.
+
+</div>
+<div id="NonDigital">
+
+# Defined Term: NonDigital
+
+The resource was not originally captured or created  in digital form
+
+</div>
+<div id="NotBornDigital">
+
+# Defined Term: NotBornDigital
+
+undefined
+
+</div>
+<div id="Oratory">
+
+# Defined Term: Oratory
+
+undefined
+
+</div>
+<div id="Orthography">
+
+# Defined Term: Orthography
+
+The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc
+
+</div>
+<div id="PartOfSpeech">
+
+# Defined Term: PartOfSpeech
+
+undefined
+
+</div>
+<div id="Phonemic">
+
+# Defined Term: Phonemic
+
+undefined
+
+</div>
+<div id="Phonetic">
+
+# Defined Term: Phonetic
+
+undefined
+
+</div>
+<div id="Phonological">
+
+# Defined Term: Phonological
+
+undefined
+
+</div>
+<div id="PrimaryText">
+
+# Defined Term: PrimaryText
+
+This is a primary resource: the object of study.   A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse
+
+</div>
+<div id="Procedural">
+
+# Defined Term: Procedural
+
+undefined
+
+</div>
+<div id="Prosodic">
+
+# Defined Term: Prosodic
+
+undefined
+
+</div>
+<div id="Report">
+
+# Defined Term: Report
+
+undefined
+
+</div>
+<div id="Singing">
+
+# Defined Term: Singing
+
+"Words or sounds [articulated] in succession with musical inflections or modulations of the voice" OED.
+
+</div>
+<div id="Speech">
+
+# Defined Term: Speech
+
+This resource contains a recording of one or more people speaking (NOT IN OLAC BUT NEEDED)
+
+</div>
+<div id="Syntactic">
+
+# Defined Term: Syntactic
+
+The resource contains annotation or other analysis describing  the syntactic structure of a PrimaryText
+
+</div>
+<div id="Thesaurus">
+
+# Defined Term: Thesaurus
+
+The resource contains  a list or data structure consisting  of words or concepts arranged according to sense.  
+
+
+</div>
+<div id="Transcription">
+
+# Defined Term: Transcription
+
+The resource contains a written or coded annotation or analysis into another representation
+
+</div>
+<div id="Translation">
+
+# Defined Term: Translation
+
+undefined
+
+</div>
+<div id="Typeset">
+
+# Defined Term: Typeset
+
+The resource has been formatted for display
+
+</div>
+<div id="Typewritten">
+
+# Defined Term: Typewritten
+
+The resource was captured on a typewriter or a keyboard
+
+</div>
+<div id="annotationType">
+
+# Property: annotationType
+
+undefined
+
+## Values expected to be one of these types: 
+
+
+
+## Used on these types: 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#Phonemic'> olac:Phonemic </a>] | [<a href='#Phonetic'> olac:Phonetic </a>] | [<a href='#Phonological'> olac:Phonological </a>] | [<a href='#Syntactic'> olac:Syntactic </a>] | [<a href='#Translation'> olac:Translation </a>] |  "olac:Semantic" | [<a href='#Transcription'> olac:Transcription </a>] | [<a href='#Annotation'> olac:Annotation </a>] | 
+
+</div>
 <div id="annotator">
 
 # Property: annotator
@@ -6,11 +251,11 @@ The participant produced an annotation of this or a related resource.
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="author">
@@ -21,30 +266,26 @@ The participant contributed original writings to the resource.
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
-<div id="communicationMode">
+<div id="channels">
 
-# Property: communicationMode
+# Property: channels
 
-undefined
+Number of audio channels this resource contains (eg 1, 2 5.1)
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/DefinedTermSet'> schema:DefinedTermSet </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>
 
-## Values expected to be one of these defined terms: 
-
-<a href='#Speech'> olac:Speech </a><a href='#Orthography'> olac:Orthography </a><a href='#Song'> olac:Song </a><a href='#Code'> olac:Code </a> "Code"  "HandWrtitten" <a href='#NonDigitalWork'> olac:NonDigitalWork </a><a href='#DigitalWork'> olac:DigitalWork </a>
 
 </div>
 <div id="compiler">
@@ -55,30 +296,11 @@ The participant is responsible for collecting the sub-parts of the resource toge
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
 
-</div>
-<div id="connmunicationGenre">
-
-# Property: connmunicationGenre
-
-undefined
-
-## Values expected to be one of these types: 
-
-<a href='http://schema.org/DefinedTermSet'> schema:DefinedTermSet </a>
-
-## Used on these types: 
-
-<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>
-
-## Values expected to be one of these defined terms: 
-
-<a href='#Thesaurus'> olac:Thesaurus </a><a href='#Dialogue'> olac:Dialogue </a><a href='#Oratory'> olac:Oratory </a><a href='#Report'> olac:Report </a><a href='#Ludic'> olac:Ludic </a><a href='#Procedural'> olac:Procedural </a><a href='#Narrative'> olac:Narrative </a><a href='#Interview'> olac:Interview </a><a href='#PartOfSpeech'> olac:PartOfSpeech </a>
 
 </div>
 <div id="consultant">
@@ -89,11 +311,11 @@ The participant contributes expertise to the creation of a work.
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="dataInputter">
@@ -104,11 +326,11 @@ The participant was responsible for entering, re-typing, and/or structuring the 
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="depositor">
@@ -119,30 +341,11 @@ The participant was responsible for depositing the resource in an archive.
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
 
-</div>
-<div id="derivedTextType">
-
-# Property: derivedTextType
-
-undefined
-
-## Values expected to be one of these types: 
-
-<a href='http://schema.org/DefinedTermSet'> schema:DefinedTermSet </a>
-
-## Used on these types: 
-
-<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>
-
-## Values expected to be one of these defined terms: 
-
-<a href='#Phonemic'> olac:Phonemic </a><a href='#Phonetic'> olac:Phonetic </a><a href='#Phonological'> olac:Phonological </a><a href='#Syntactic'> olac:Syntactic </a><a href='#Translation'> olac:Translation </a><a href='#Semantic'> olac:Semantic </a> "Semantic" <a href='#Transcription'> olac:Transcription </a><a href='#Annotation'> olac:Annotation </a>
 
 </div>
 <div id="developer">
@@ -153,11 +356,26 @@ The participant developed the methodology or tools that constitute the resource,
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
+
+</div>
+<div id="doi">
+
+# Property: doi
+
+A digital Object Identifier
+
+## Values expected to be one of these types: 
+
+
+
+## Used on these types: 
+
+
 
 </div>
 <div id="editor">
@@ -168,11 +386,26 @@ The participant reviewed, corrected, and/or tested the resource.
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
+
+</div>
+<div id="hasAnnotation">
+
+# Property: hasAnnotation
+
+This resource references another resource that describes it  such as a translation, transcription or other analysis 
+
+## Values expected to be one of these types: 
+
+
+
+## Used on these types: 
+
+
 
 </div>
 <div id="illustrator">
@@ -183,11 +416,11 @@ The participant contributed drawings or other illustrations to the resource.
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="interpreter">
@@ -198,11 +431,11 @@ The participant translates in real-time or explains the discourse recorded in th
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="interviewer">
@@ -213,11 +446,64 @@ The participant conducted an interview that forms part of the resource.
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
+
+</div>
+<div id="isAnnotationOf">
+
+# Property: isAnnotationOf
+
+This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references
+
+## Values expected to be one of these types: 
+
+
+
+## Used on these types: 
+
+
+
+</div>
+<div id="linguisticGenre">
+
+# Property: linguisticGenre
+
+undefined
+
+## Values expected to be one of these types: 
+
+
+
+## Used on these types: 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#Thesaurus'> olac:Thesaurus </a>] | [<a href='#Dialogue'> olac:Dialogue </a>] | [<a href='#Oratory'> olac:Oratory </a>] | [<a href='#Report'> olac:Report </a>] | [<a href='#Ludic'> olac:Ludic </a>] | [<a href='#Procedural'> olac:Procedural </a>] | [<a href='#Narrative'> olac:Narrative </a>] | [<a href='#Interview'> olac:Interview </a>] | 
+
+</div>
+<div id="modality">
+
+# Property: modality
+
+undefined
+
+## Values expected to be one of these types: 
+
+
+
+## Used on these types: 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#Speech'> olac:Speech </a>] | [<a href='#Orthography'> olac:Orthography </a>] | [<a href='#Singing'> olac:Singing </a>] | [<a href='#Code'> olac:Code </a>] | [<a href='#Handwritten'> olac:Handwritten </a>] | [<a href='#Typewritten'> olac:Typewritten </a>] | [<a href='#Typeset'> olac:Typeset </a>] | [<a href='#NotBornDigital'> olac:NotBornDigital </a>] | [<a href='#BornDigital'> olac:BornDigital </a>] | 
 
 </div>
 <div id="participant">
@@ -228,11 +514,11 @@ The participant was present during the creation of the resource, but did not con
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="performer">
@@ -243,11 +529,26 @@ The participant performed some portion of a recorded, filmed, or transcribed res
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
+
+</div>
+<div id="person">
+
+# Property: person
+
+This property references a Person item which represents the persistent identity of one or more ContributingPerson items.
+
+## Values expected to be one of these types: 
+
+
+
+## Used on these types: 
+
+
 
 </div>
 <div id="photographer">
@@ -258,11 +559,11 @@ The participant took the photograph, or shot the film, that appears in or consti
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="recorder">
@@ -273,11 +574,11 @@ The participant operated the recording machinery used to create the resource.
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="register">
@@ -289,11 +590,11 @@ Specifies the type of register (any of the varieties of a language that a speake
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="researchParticipant">
@@ -304,11 +605,11 @@ The participant acted as a research subject or responded to a questionnaire, the
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="researcher">
@@ -319,30 +620,11 @@ The resource was created as part of the participant's research, or the research 
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
 
-</div>
-<div id="resourceType">
-
-# Property: resourceType
-
-undefined
-
-## Values expected to be one of these types: 
-
-<a href='http://schema.org/DefinedTermSet'> schema:DefinedTermSet </a>
-
-## Used on these types: 
-
-<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>
-
-## Values expected to be one of these defined terms: 
-
-<a href='#SourceText'> olac:SourceText </a><a href='#Gesture'> olac:Gesture </a>
 
 </div>
 <div id="responder">
@@ -353,11 +635,11 @@ The participant was an interlocutor in some sort of discourse event.
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="signer">
@@ -368,11 +650,11 @@ The participant was a principal signer in a resource that consists of a recordin
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="singer">
@@ -383,11 +665,11 @@ The participant sang, either individually or as part of a group, in a resource t
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="speaker">
@@ -398,11 +680,11 @@ The participant was a principal speaker in a resource that consists of a recordi
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="sponsor">
@@ -413,11 +695,11 @@ The participant contributed financial support to the creation of the resource.
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="transcriber">
@@ -428,11 +710,11 @@ The participant produced a transcription of this or a related resource.
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
 
 </div>
 <div id="translator">
@@ -443,11 +725,22 @@ The participant produced a translation of this or a related resource.
 
 ## Values expected to be one of these types: 
 
-<a href='http://schema.org/Person'> schema:Person </a><a href='http://schema.org/Organization'> schema:Organization </a>
+
 
 ## Used on these types: 
 
-<a href='http://schema.org/Dataset'> schema:Dataset </a>
+
+
+</div>
+<div id="PersonSnapshot">
+
+# Class: PersonSnapshot
+
+This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class  is to caputre the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time. 
+
+## Subclass of 
+
+  
 
 </div>
 
