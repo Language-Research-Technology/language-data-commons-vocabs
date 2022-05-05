@@ -29,7 +29,7 @@
     {
       "@id": "olac:Annotation",
       "@type": "DefinedTerm",
-      "description": "The resource includes information which annotates some other linguistic record.",
+      "description": "The resource includes information which annotates, describes or otherwise an some other linguistic record.",
       "inDefinedTermSet": "DerivedTextTypeValues",
       "name": "Annotation",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation"
@@ -74,7 +74,9 @@
         },
         {
           "@id": "olac:Interview"
-        }
+        },
+        "",
+        "\"olac:Informational\"]"
       ],
       "name": "CommunicationGenreValues"
     },
@@ -115,6 +117,7 @@
     {
       "@id": "olac:DerivedText",
       "@type": "DefinedTerm",
+      "description": "The resource is derivied from another resource, eg a downsampled video or an abstract of a text but is not an analytical product",
       "inDefinedTermSet": "ResourceTypeValues",
       "name": "DerivedText"
     },
@@ -165,6 +168,13 @@
       "description": "The resource was written using a writing implement such as pen, pencil, brush or computer stylus",
       "inDefinedTermSet": "CommunicationModeValues",
       "name": "Handwritten"
+    },
+    {
+      "@id": "olac:Informational",
+      "@type": "DefinedTerm",
+      "description": "SIMON – TODO",
+      "inDefinedTermSet": "CommunicationGenreValues",
+      "name": "Informational"
     },
     {
       "@id": "olac:Interview",
@@ -329,6 +339,9 @@
         },
         {
           "@id": "olac:DerivedText"
+        },
+        {
+          "@id": "olac:Annotation"
         }
       ],
       "name": "ResourceTypeValues"
@@ -837,6 +850,19 @@
       "sameAs": "http://www.language-archives.org/REC/role.html#researcher",
       "rdfs:comment": "The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.",
       "rdfs:label": "researcher"
+    },
+    {
+      "@id": "olac:resourcePrimacy",
+      "@type": "rdf:Property",
+      "definedTermSet": {
+        "@id": "olac:ResourceTypeValues"
+      },
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "resourcePrimacy",
+      "rdfs:comment": "Is this a primary resource, an annotation or a derived resource (such as downsampled video file)",
+      "rdfs:label": "resourcePrimacy"
     },
     {
       "@id": "olac:responder",

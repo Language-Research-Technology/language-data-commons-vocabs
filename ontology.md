@@ -4,17 +4,17 @@
 
 # Properties
 
-<a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#illustrator">illustrator</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewer">interviewer</a> | <a href="#isAnnotationOf">isAnnotationOf</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
+<a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#illustrator">illustrator</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewer">interviewer</a> | <a href="#isAnnotationOf">isAnnotationOf</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#resourcePrimacy">resourcePrimacy</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
 
 # DefinedTerms
 
-<a href="#Annotation">Annotation</a> | <a href="#BornDigital">BornDigital</a> | <a href="#Code">Code</a> | <a href="#DerivedText">DerivedText</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#NonDigital">NonDigital</a> | <a href="#NotBornDigital">NotBornDigital</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#PrimaryText">PrimaryText</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Singing">Singing</a> | <a href="#Speech">Speech</a> | <a href="#Syntactic">Syntactic</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
+<a href="#Annotation">Annotation</a> | <a href="#BornDigital">BornDigital</a> | <a href="#Code">Code</a> | <a href="#DerivedText">DerivedText</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#NonDigital">NonDigital</a> | <a href="#NotBornDigital">NotBornDigital</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#PrimaryText">PrimaryText</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Singing">Singing</a> | <a href="#Speech">Speech</a> | <a href="#Syntactic">Syntactic</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
 
 <div id="Annotation"  style="border-style: solid">
 
 # Defined Term: Annotation
 
-The resource includes information which annotates some other linguistic record.
+The resource includes information which annotates, describes or otherwise an some other linguistic record.
 
 </div><br>
 <div id="BornDigital"  style="border-style: solid">
@@ -35,7 +35,7 @@ The resource contains a coded analysis or annotation
 
 # Defined Term: DerivedText
 
-undefined
+The resource is derivied from another resource, eg a downsampled video or an abstract of a text but is not an analytical product
 
 </div><br>
 <div id="Dialogue"  style="border-style: solid">
@@ -57,6 +57,13 @@ undefined
 # Defined Term: Handwritten
 
 The resource was written using a writing implement such as pen, pencil, brush or computer stylus
+
+</div><br>
+<div id="Informational"  style="border-style: solid">
+
+# Defined Term: Informational
+
+SIMON – TODO
 
 </div><br>
 <div id="Interview"  style="border-style: solid">
@@ -555,7 +562,7 @@ undefined
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Thesaurus'> olac:Thesaurus </a>] | [<a href='#Dialogue'> olac:Dialogue </a>] | [<a href='#Oratory'> olac:Oratory </a>] | [<a href='#Report'> olac:Report </a>] | [<a href='#Ludic'> olac:Ludic </a>] | [<a href='#Procedural'> olac:Procedural </a>] | [<a href='#Narrative'> olac:Narrative </a>] | [<a href='#Interview'> olac:Interview </a>] | 
+[<a href='#Thesaurus'> olac:Thesaurus </a>] | [<a href='#Dialogue'> olac:Dialogue </a>] | [<a href='#Oratory'> olac:Oratory </a>] | [<a href='#Report'> olac:Report </a>] | [<a href='#Ludic'> olac:Ludic </a>] | [<a href='#Procedural'> olac:Procedural </a>] | [<a href='#Narrative'> olac:Narrative </a>] | [<a href='#Interview'> olac:Interview </a>] |   |  "olac:Informational"] | 
 
 </div><br>
 <div id="modality"  style="border-style: solid">
@@ -696,6 +703,25 @@ The resource was created as part of the participant's research, or the research 
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+</div><br>
+<div id="resourcePrimacy"  style="border-style: solid">
+
+# Property: resourcePrimacy
+
+Is this a primary resource, an annotation or a derived resource (such as downsampled video file)
+
+## Values expected to be one of these types: 
+
+
+
+## Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#PrimaryText'> olac:PrimaryText </a>] | [<a href='#DerivedText'> olac:DerivedText </a>] | [<a href='#Annotation'> olac:Annotation </a>] | 
 
 </div><br>
 <div id="responder"  style="border-style: solid">
