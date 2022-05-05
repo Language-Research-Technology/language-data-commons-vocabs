@@ -331,6 +331,51 @@
       }
     },
     {
+      "@id": "olac:OrganizationBasedLicense",
+      "@type": "rdfs:Class",
+      "name": "OrganizationBasedLicense",
+      "rdfs:comment": "A licence document  setting out rights and oblications could be based copyright or other rights  based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community",
+      "rdfs:label": "OrganizationBasedLicense",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      },
+      "@reverse": {
+        "rdfs:subClassOf": [
+          {
+            "@id": "olac:OrganizationDepositLicense"
+          },
+          {
+            "@id": "olac:OrganizationReuseLicense"
+          }
+        ],
+        "domainIncludes": [
+          {
+            "@id": "olac:licensedOrganization"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "olac:OrganizationDepositLicense",
+      "@type": "rdfs:Class",
+      "name": "OrganizationDepositLicense",
+      "rdfs:comment": "A license document setting out terms for deposit into a repository by one or more identified groups ",
+      "rdfs:label": "OrganizationDepositLicense",
+      "rdfs:subClassOf": {
+        "@id": "olac:OrganizationBasedLicense"
+      }
+    },
+    {
+      "@id": "olac:OrganizationReuseLicense",
+      "@type": "rdfs:Class",
+      "name": "OrganizationReuseLicense",
+      "rdfs:comment": "A license document setting out terms for reuse of data by one or more identified groups ",
+      "rdfs:label": "OrganizationReuseLicense",
+      "rdfs:subClassOf": {
+        "@id": "olac:OrganizationBasedLicense"
+      }
+    },
+    {
       "@id": "olac:Orthography",
       "@type": "DefinedTerm",
       "description": "The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc",
@@ -349,6 +394,28 @@
       "@type": "DefinedTerm",
       "inDefinedTermSet": "DerivedTextTypeValues",
       "name": "PartOfSpeech"
+    },
+    {
+      "@id": "olac:PersonSnapshot",
+      "@type": "rdfs:Class",
+      "name": "PersonSnapshot",
+      "rdfs:comment": "This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class  is to caputre the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time. ",
+      "rdfs:label": "PersonSnapshot",
+      "rdfs:subClassOf": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Role"
+        }
+      ],
+      "@reverse": {
+        "domainIncludes": [
+          {
+            "@id": "olac:person"
+          }
+        ]
+      }
     },
     {
       "@id": "olac:Phonemic",
@@ -568,14 +635,27 @@
       "definedTermSet": {
         "@id": "olac:DerivedTextTypeValues"
       },
-      "name": "Annotation Type",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "annotationType",
       "rdfs:label": "annotationType"
     },
     {
       "@id": "olac:annotator",
       "@type": "rdf:Property",
-      "name": "Annotator",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "annotator",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#annotator",
       "rdfs:comment": "The participant produced an annotation of this or a related resource.",
       "rdfs:label": "annotator"
@@ -583,8 +663,18 @@
     {
       "@id": "olac:author",
       "@type": "rdf:Property",
-      "name": "Author",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "author",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#author",
       "rdfs:comment": "The participant contributed original writings to the resource.",
       "rdfs:label": "author"
@@ -592,7 +682,10 @@
     {
       "@id": "olac:channels",
       "@type": "rdf:Property",
-      "name": "Channels",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "channels",
       "rdfs:comment": "Number of audio channels this resource contains (eg 1, 2 5.1)",
       "rdfs:label": "channels"
     },
@@ -600,9 +693,19 @@
       "@id": "olac:compiler",
       "@type": "rdf:Property",
       "description": "This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately.",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
       "example": "A compiler of a book of short stories or a CD with several songs on it; a collector of a corpus of recordings in some language or on a given topic; a person who assembles a suite of software tools.",
-      "name": "Compiler",
-      "rangeIncludes": "",
+      "name": "compiler",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#compiler",
       "rdfs:comment": "The participant is responsible for collecting the sub-parts of the resource together.",
       "rdfs:label": "compiler"
@@ -611,8 +714,18 @@
       "@id": "olac:consultant",
       "@type": "rdf:Property",
       "description": "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\".",
-      "name": "Consultant",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "consultant",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#consultant",
       "rdfs:comment": "The participant contributes expertise to the creation of a work.",
       "rdfs:label": "consultant"
@@ -620,8 +733,18 @@
     {
       "@id": "olac:dataInputter",
       "@type": "rdf:Property",
-      "name": "Data Inputter",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "dataInputter",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#data_inputter",
       "rdfs:comment": "The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.",
       "rdfs:label": "dataInputter"
@@ -629,8 +752,18 @@
     {
       "@id": "olac:depositor",
       "@type": "rdf:Property",
-      "name": "Depositor",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "depositor",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#depositor",
       "rdfs:comment": "The participant was responsible for depositing the resource in an archive.",
       "rdfs:label": "depositor"
@@ -639,8 +772,18 @@
       "@id": "olac:developer",
       "@type": "rdf:Property",
       "description": "A software programmer, designer, or analyst; a designer of a questionnaire or research task.",
-      "name": "Developer",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "developer",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#developer",
       "rdfs:comment": "The participant developed the methodology or tools that constitute the resource, or that were used to create the resource.",
       "rdfs:label": "developer"
@@ -648,7 +791,10 @@
     {
       "@id": "olac:doi",
       "@type": "rdf:Property",
-      "name": "DOI",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "doi",
       "rdfs:comment": "A digital Object Identifier",
       "rdfs:label": "doi"
     },
@@ -656,8 +802,18 @@
       "@id": "olac:editor",
       "@type": "rdf:Property",
       "description": "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases.",
-      "name": "Editor",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "editor",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#editor",
       "rdfs:comment": "The participant reviewed, corrected, and/or tested the resource.",
       "rdfs:label": "editor"
@@ -665,15 +821,28 @@
     {
       "@id": "olac:hasAnnotation",
       "@type": "rdf:Property",
-      "name": "Has Annotation",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "hasAnnotation",
       "rdfs:comment": "This resource references another resource that describes it  such as a translation, transcription or other analysis ",
       "rdfs:label": "hasAnnotation"
     },
     {
       "@id": "olac:illustrator",
       "@type": "rdf:Property",
-      "name": "Illustrator",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "illustrator",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#illustrator",
       "rdfs:comment": "The participant contributed drawings or other illustrations to the resource.",
       "rdfs:label": "illustrator"
@@ -682,9 +851,19 @@
       "@id": "olac:interpreter",
       "@type": "rdf:Property",
       "description": "The choice between 'interpreter' and 'translator' may depend on the dynamics of the resource creation event or process. Generally, if the participant is translating 'live'; that is, while the speaker or signer is speaking or signing, she or he should be identified as an interpreter. Also, some discourse genres include a participant who interprets or explains a performance of some kind.",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
       "example": "A person translating from English to ASL during a speech; a Kuna chief who interprets a chant that another chief has just performed, thus completing the ceremony.",
-      "name": "Interpreter",
-      "rangeIncludes": "",
+      "name": "interpreter",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#interpreter",
       "rdfs:comment": "The participant translates in real-time or explains the discourse recorded in the resource.",
       "rdfs:label": "interpreter"
@@ -692,8 +871,18 @@
     {
       "@id": "olac:interviewer",
       "@type": "rdf:Property",
-      "name": "Interviewer",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "interviewer",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#interviewer",
       "rdfs:comment": "The participant conducted an interview that forms part of the resource.",
       "rdfs:label": "interviewer"
@@ -701,9 +890,26 @@
     {
       "@id": "olac:isAnnotationOf",
       "@type": "rdf:Property",
-      "name": "Is Annotation Of",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "isAnnotationOf",
       "rdfs:comment": "This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references",
       "rdfs:label": "isAnnotationOf"
+    },
+    {
+      "@id": "olac:licensedOrganization",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "olac:OrganizationBasedLicense"
+      },
+      "name": "licensedOrganization",
+      "rangeIncludes": {
+        "@id": "schema:Orgnization"
+      },
+      "sameAs": "http://www.language-archives.org/REC/role.html#translator",
+      "rdfs:comment": "Indicates a group of people who have the rights described in this license",
+      "rdfs:label": "licensedOrganization"
     },
     {
       "@id": "olac:linguisticGenre",
@@ -711,7 +917,10 @@
       "definedTermSet": {
         "@id": "olac:CommunicationGenreValues"
       },
-      "name": "Linguistic Genre",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "linguisticGenre",
       "rdfs:label": "linguisticGenre"
     },
     {
@@ -720,15 +929,28 @@
       "definedTermSet": {
         "@id": "olac:CommunicationModeValues"
       },
-      "name": "Modality",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "modality",
       "rdfs:label": "modality"
     },
     {
       "@id": "olac:participant",
       "@type": "rdf:Property",
       "description": "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in general sense of having allowed the creation event to take place, such as the mayor of an indigenous community.",
-      "name": "Participant",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "participant",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#participant",
       "rdfs:comment": "The participant was present during the creation of the resource, but did not contribute substantially to its content.",
       "rdfs:label": "participant"
@@ -737,9 +959,19 @@
       "@id": "olac:performer",
       "@type": "rdf:Property",
       "description": "It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
       "example": "A person performing a ceremony or delivering an oration or a sermon; native speakers re-enacting a traditional genre of speech, such as ritual greetings or insults; an actor or musician.",
-      "name": "Performer",
-      "rangeIncludes": "",
+      "name": "performer",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#performer",
       "rdfs:comment": "The participant performed some portion of a recorded, filmed, or transcribed resource.",
       "rdfs:label": "performer"
@@ -747,15 +979,31 @@
     {
       "@id": "olac:person",
       "@type": "rdf:Property",
-      "name": "Person",
+      "domainIncludes": {
+        "@id": "olac:PersonSnapshot"
+      },
+      "name": "person",
+      "rangeIncludes": {
+        "@id": "schema:Person"
+      },
       "rdfs:comment": "This property references a Person item which represents the persistent identity of one or more ContributingPerson items.",
       "rdfs:label": "person"
     },
     {
       "@id": "olac:photographer",
       "@type": "rdf:Property",
-      "name": "Photographer",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "photographer",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#photographer",
       "rdfs:comment": "The participant took the photograph, or shot the film, that appears in or constitutes the resource.",
       "rdfs:label": "photographer"
@@ -763,8 +1011,18 @@
     {
       "@id": "olac:recorder",
       "@type": "rdf:Property",
-      "name": "Recorder",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "recorder",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#recorder",
       "rdfs:comment": "The participant operated the recording machinery used to create the resource.",
       "rdfs:label": "recorder"
@@ -773,7 +1031,10 @@
       "@id": "olac:register",
       "@type": "rdf:Property",
       "description": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
-      "name": "Register",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "register",
       "sameAs": "http://w3id.org/meta-share/meta-share/register",
       "rdfs:comment": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
       "rdfs:label": "register"
@@ -781,8 +1042,18 @@
     {
       "@id": "olac:researchParticipant",
       "@type": "rdf:Property",
-      "name": "Research Participant",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "researchParticipant",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#research_participant",
       "rdfs:comment": "The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.",
       "rdfs:label": "researchParticipant"
@@ -790,8 +1061,18 @@
     {
       "@id": "olac:researcher",
       "@type": "rdf:Property",
-      "name": "Researcher",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "researcher",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#researcher",
       "rdfs:comment": "The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.",
       "rdfs:label": "researcher"
@@ -800,8 +1081,18 @@
       "@id": "olac:responder",
       "@type": "rdf:Property",
       "description": "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\".",
-      "name": "Responder",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "responder",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#responder",
       "rdfs:comment": "The participant was an interlocutor in some sort of discourse event.",
       "rdfs:label": "responder"
@@ -810,9 +1101,19 @@
       "@id": "olac:signer",
       "@type": "rdf:Property",
       "description": "Signers are those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
       "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
-      "name": "Signer",
-      "rangeIncludes": "",
+      "name": "signer",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#signer",
       "rdfs:comment": "The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
       "rdfs:label": "signer"
@@ -820,8 +1121,18 @@
     {
       "@id": "olac:singer",
       "@type": "rdf:Property",
-      "name": "Singer",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "singer",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#singer",
       "rdfs:comment": "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
       "rdfs:label": "singer"
@@ -830,9 +1141,19 @@
       "@id": "olac:speaker",
       "@type": "rdf:Property",
       "description": "Speakers are those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
       "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Speakers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
-      "name": "Speaker",
-      "rangeIncludes": "",
+      "name": "speaker",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#speaker",
       "rdfs:comment": "The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
       "rdfs:label": "speaker"
@@ -840,8 +1161,18 @@
     {
       "@id": "olac:sponsor",
       "@type": "rdf:Property",
-      "name": "Sponsor",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "sponsor",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#sponsor",
       "rdfs:comment": "The participant contributed financial support to the creation of the resource.",
       "rdfs:label": "sponsor"
@@ -849,8 +1180,18 @@
     {
       "@id": "olac:transcriber",
       "@type": "rdf:Property",
-      "name": "Transcriber",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "transcriber",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#transcriber",
       "rdfs:comment": "The participant produced a transcription of this or a related resource.",
       "rdfs:label": "transcriber"
@@ -858,19 +1199,21 @@
     {
       "@id": "olac:translator",
       "@type": "rdf:Property",
-      "name": "Translator",
-      "rangeIncludes": "",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "translator",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
       "sameAs": "http://www.language-archives.org/REC/role.html#translator",
       "rdfs:comment": "The participant produced a translation of this or a related resource.",
       "rdfs:label": "translator"
-    },
-    {
-      "@id": "olac",
-      "@type": "rdfs:Class",
-      "name": "Analytical Lexicon",
-      "rdfs:comment": "This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class  is to caputre the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time. ",
-      "rdfs:label": "PersonSnapshot",
-      "rdfs:subClassOf": ""
     },
     {
       "@id": "ro-crate-metadata.json",
