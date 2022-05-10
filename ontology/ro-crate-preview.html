@@ -26,6 +26,17 @@
       "name": ""
     },
     {
+      "@id": "#a4f96dd6-dcc5-4d98-8bef-775a5d946650",
+      "@type": "rdfs:Class",
+      "name": "PrimaryText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
+      "rdfs:comment": "This is a primary resource: the object of study.   A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse",
+      "rdfs:label": "PrimaryText",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
       "@id": "./",
       "@type": "Dataset",
       "hasFile": [],
@@ -42,31 +53,23 @@
     },
     {
       "@id": "olac:Annotation",
-      "@type": "DefinedTerm",
-      "description": "The resource includes information which annotates, describes or otherwise an some other linguistic record.",
-      "inDefinedTermSet": "DerivedTextTypeValues",
+      "@type": "rdfs:Class",
       "name": "Annotation",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation",
+      "rdfs:comment": "The resource includes information which annotates, describes or otherwise an some other linguistic record.",
+      "rdfs:label": "Annotation",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      },
       "@reverse": {
         "hasDefinedTerm": [
-          {
-            "@id": "olac:DerivedTextTypeValues"
-          },
           {
             "@id": "olac:ResourceTypeValues"
           }
-        ]
-      }
-    },
-    {
-      "@id": "olac:BornDigital",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "CommunicationModeValues",
-      "name": "BornDigital",
-      "@reverse": {
-        "hasDefinedTerm": [
+        ],
+        "domainIncludes": [
           {
-            "@id": "olac:CommunicationModeValues"
+            "@id": "olac:annotationType"
           }
         ]
       }
@@ -76,14 +79,7 @@
       "@type": "DefinedTerm",
       "description": "The resource contains a coded analysis or annotation",
       "inDefinedTermSet": "CommunicationModeValues",
-      "name": "Code",
-      "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "olac:CommunicationModeValues"
-          }
-        ]
-      }
+      "name": "Code"
     },
     {
       "@id": "olac:CommunicationGenreValues",
@@ -113,14 +109,16 @@
         {
           "@id": "olac:Interview"
         },
-        "",
-        "\"olac:Informational\"]"
+        "\"olac:Drama\"",
+        {
+          "@id": "olac:Informational"
+        }
       ],
       "name": "CommunicationGenreValues",
       "@reverse": {
         "definedTermSet": [
           {
-            "@id": "olac:linguisticGenre"
+            "@id": "olac:scriptType"
           }
         ]
       }
@@ -139,22 +137,7 @@
           "@id": "olac:Singing"
         },
         {
-          "@id": "olac:Code"
-        },
-        {
-          "@id": "olac:Handwritten"
-        },
-        {
-          "@id": "olac:Typewritten"
-        },
-        {
-          "@id": "olac:Typeset"
-        },
-        {
-          "@id": "olac:NotBornDigital"
-        },
-        {
-          "@id": "olac:BornDigital"
+          "@id": "olac:Gesture"
         }
       ],
       "name": "CommunicationModeValues",
@@ -168,10 +151,14 @@
     },
     {
       "@id": "olac:DerivedText",
-      "@type": "DefinedTerm",
-      "description": "The resource is derivied from another resource, eg a downsampled video or an abstract of a text but is not an analytical product",
-      "inDefinedTermSet": "ResourceTypeValues",
+      "@type": "rdfs:Class",
       "name": "DerivedText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
+      "rdfs:comment": "A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a text which  is not an analytical product ",
+      "rdfs:label": "DerivedText",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -199,15 +186,20 @@
         {
           "@id": "olac:Translation"
         },
-        "\"olac:Semantic\"",
+        {
+          "@id": "olac:Semantic"
+        },
         {
           "@id": "olac:Transcription"
         },
         {
-          "@id": "olac:Annotation"
+          "@id": "olac:TimeAligned"
+        },
+        {
+          "@id": "olac:Prosodic"
         }
       ],
-      "name": "DerivedTextTypeValues",
+      "name": "AnnotationTypeValues",
       "@reverse": {
         "definedTermSet": [
           {
@@ -233,7 +225,14 @@
       "@id": "olac:Gesture",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "CommunicationModeValues",
-      "name": "Gesture"
+      "name": "Gesture",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "olac:CommunicationModeValues"
+          }
+        ]
+      }
     },
     {
       "@id": "olac:Handwritten",
@@ -244,7 +243,7 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationModeValues"
+            "@id": "olac:OrthographyTypeValues"
           }
         ]
       }
@@ -254,7 +253,14 @@
       "@type": "DefinedTerm",
       "description": "SIMON – TODO",
       "inDefinedTermSet": "CommunicationGenreValues",
-      "name": "Informational"
+      "name": "Informational",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "olac:CommunicationGenreValues"
+          }
+        ]
+      }
     },
     {
       "@id": "olac:Interview",
@@ -306,26 +312,6 @@
         "hasDefinedTerm": [
           {
             "@id": "olac:CommunicationGenreValues"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "olac:NonDigital",
-      "@type": "DefinedTerm",
-      "description": "The resource was not originally captured or created  in digital form",
-      "inDefinedTermSet": "CommunicationModeValues",
-      "name": "NonDigital"
-    },
-    {
-      "@id": "olac:NotBornDigital",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "CommunicationModeValues",
-      "name": "NotBornDigital",
-      "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "olac:CommunicationModeValues"
           }
         ]
       }
@@ -403,6 +389,37 @@
       }
     },
     {
+      "@id": "olac:OrthographyTypeValues",
+      "@type": "DefinedTermSet",
+      "hasDefinedTerm": [
+        {
+          "@id": "olac:Handwritten"
+        },
+        {
+          "@id": "olac:Typewritten"
+        },
+        {
+          "@id": "olac:Typeset"
+        }
+      ],
+      "name": "",
+      "@reverse": {
+        "inDefinedTermSet": [
+          {
+            "@id": "olac:Typeset"
+          },
+          {
+            "@id": "olac:Typewritten"
+          }
+        ],
+        "definedTermSet": [
+          {
+            "@id": "olac:linguisticGenre"
+          }
+        ]
+      }
+    },
+    {
       "@id": "olac:PartOfSpeech",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "DerivedTextTypeValues",
@@ -471,15 +488,31 @@
     },
     {
       "@id": "olac:PrimaryText",
-      "@type": "DefinedTerm",
-      "description": "This is a primary resource: the object of study.   A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse",
-      "inDefinedTermSet": "ResourceTypeValues",
+      "@type": "rdfs:Class",
       "name": "PrimaryText",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
+      "rdfs:comment": "This is a primary resource: the object of study.   A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse",
+      "rdfs:label": "PrimaryText",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
             "@id": "olac:ResourceTypeValues"
+          }
+        ],
+        "domainIncludes": [
+          {
+            "@id": "olac:hasAnnotation"
+          },
+          {
+            "@id": "olac:linguisticGenre"
+          }
+        ],
+        "rangeIncludes": [
+          {
+            "@id": "olac:isAnnotationOf"
           }
         ]
       }
@@ -501,7 +534,14 @@
       "@id": "olac:Prosodic",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "DerivedTextTypeValues",
-      "name": "Prosodic"
+      "name": "Prosodic",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "olac:DerivedTextTypeValues"
+          }
+        ]
+      }
     },
     {
       "@id": "olac:Report",
@@ -535,6 +575,20 @@
         "definedTermSet": [
           {
             "@id": "olac:resourcePrimacy"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "olac:Semantic",
+      "@type": "DefinedTerm",
+      "description": "TODO",
+      "inDefinedTermSet": "CommunicationModeValues",
+      "name": "Speech",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "olac:DerivedTextTypeValues"
           }
         ]
       }
@@ -597,6 +651,21 @@
       }
     },
     {
+      "@id": "olac:TimeAligned",
+      "@type": "DefinedTerm",
+      "description": "The resource contains a written or coded annotation(s) which has data aligning the annotation(s)  with a PrimaryText",
+      "inDefinedTermSet": "DerivedTextTypeValues",
+      "name": "TimeAligned",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "olac:DerivedTextTypeValues"
+          }
+        ]
+      }
+    },
+    {
       "@id": "olac:Transcription",
       "@type": "DefinedTerm",
       "description": "The resource contains a written or coded annotation or analysis into another representation",
@@ -628,12 +697,14 @@
       "@id": "olac:Typeset",
       "@type": "DefinedTerm",
       "description": "The resource has been formatted for display",
-      "inDefinedTermSet": "CommunicationModeValues",
+      "inDefinedTermSet": {
+        "@id": "olac:OrthographyTypeValues"
+      },
       "name": "Typeset",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationModeValues"
+            "@id": "olac:OrthographyTypeValues"
           }
         ]
       }
@@ -641,13 +712,15 @@
     {
       "@id": "olac:Typewritten",
       "@type": "DefinedTerm",
-      "description": "The resource was captured on a typewriter or a keyboard",
-      "inDefinedTermSet": "CommunicationModeValues",
+      "description": "The annotation has time-alignement with the PrimaryText",
+      "inDefinedTermSet": {
+        "@id": "olac:OrthographyTypeValues"
+      },
       "name": "Typewritten",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationModeValues"
+            "@id": "olac:OrthographyTypeValues"
           }
         ]
       }
@@ -659,7 +732,7 @@
         "@id": "olac:DerivedTextTypeValues"
       },
       "domainIncludes": {
-        "@id": "schema:CreativeWork"
+        "@id": "olac:Annotation"
       },
       "name": "annotationType",
       "rdfs:label": "annotationType"
@@ -842,10 +915,29 @@
       "rdfs:label": "editor"
     },
     {
+      "@id": "olac:geoJSON",
+      "@type": "rdf:Property",
+      "domainIncludes": [
+        {
+          "@id": "schema:GeoCoordinates"
+        },
+        {
+          "@id": "schema:GeoShape"
+        },
+        {
+          "@id": "schema:Language"
+        }
+      ],
+      "name": "geoJSON",
+      "rangeIncludes": "Text",
+      "rdfs:comment": "A valid GEOJson feature or feature collection as a string that can be parsed as JSON ",
+      "rdfs:label": "geoJSON"
+    },
+    {
       "@id": "olac:hasAnnotation",
       "@type": "rdf:Property",
       "domainIncludes": {
-        "@id": "schema:CreativeWork"
+        "@id": "olac:PrimaryText"
       },
       "name": "hasAnnotation",
       "rdfs:comment": "This resource references another resource that describes it  such as a translation, transcription or other analysis ",
@@ -917,6 +1009,9 @@
         "@id": "schema:CreativeWork"
       },
       "name": "isAnnotationOf",
+      "rangeIncludes": {
+        "@id": "olac:PrimaryText"
+      },
       "rdfs:comment": "This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references",
       "rdfs:label": "isAnnotationOf"
     },
@@ -928,7 +1023,7 @@
       },
       "name": "licensedOrganization",
       "rangeIncludes": {
-        "@id": "schema:Orgnization"
+        "@id": "schema:Organization"
       },
       "sameAs": "http://www.language-archives.org/REC/role.html#translator",
       "rdfs:comment": "Indicates a group of people who have the rights described in this license",
@@ -938,13 +1033,14 @@
       "@id": "olac:linguisticGenre",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "olac:CommunicationGenreValues"
+        "@id": "olac:OrthographyTypeValues"
       },
       "domainIncludes": {
-        "@id": "schema:CreativeWork"
+        "@id": "olac:PrimaryText"
       },
-      "name": "linguisticGenre",
-      "rdfs:label": "linguisticGenre"
+      "name": "orthographyType",
+      "rdfs:comment": "NOTE: This is required for Nyingarn – do we want to have a further set of types for SungText, SpokenText, GesturedText, OrthographicText so that they can each have special sub-type properties",
+      "rdfs:label": "orthographyType"
     },
     {
       "@id": "olac:modality",
@@ -1132,6 +1228,15 @@
       "sameAs": "http://www.language-archives.org/REC/role.html#responder",
       "rdfs:comment": "The participant was an interlocutor in some sort of discourse event.",
       "rdfs:label": "responder"
+    },
+    {
+      "@id": "olac:scriptType",
+      "@type": "rdf:Property",
+      "definedTermSet": {
+        "@id": "olac:CommunicationGenreValues"
+      },
+      "name": "scriptType",
+      "rdfs:label": "scriptType"
     },
     {
       "@id": "olac:signer",

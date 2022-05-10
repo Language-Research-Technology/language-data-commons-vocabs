@@ -1,29 +1,39 @@
 # Classes
 
-<a href="#OrganizationBasedLicense">OrganizationBasedLicense</a> | <a href="#OrganizationDepositLicense">OrganizationDepositLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#PersonSnapshot">PersonSnapshot</a>
+<a href="#PrimaryText">PrimaryText</a> | <a href="#Annotation">Annotation</a> | <a href="#DerivedText">DerivedText</a> | <a href="#OrganizationBasedLicense">OrganizationBasedLicense</a> | <a href="#OrganizationDepositLicense">OrganizationDepositLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#PrimaryText">PrimaryText</a>
 
 # Properties
 
-<a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#illustrator">illustrator</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewer">interviewer</a> | <a href="#isAnnotationOf">isAnnotationOf</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#resourcePrimacy">resourcePrimacy</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
+<a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#illustrator">illustrator</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewer">interviewer</a> | <a href="#isAnnotationOf">isAnnotationOf</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#orthographyType">orthographyType</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#resourcePrimacy">resourcePrimacy</a> | <a href="#responder">responder</a> | <a href="#scriptType">scriptType</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
 
 # DefinedTerms
 
-<a href="#Annotation">Annotation</a> | <a href="#BornDigital">BornDigital</a> | <a href="#Code">Code</a> | <a href="#DerivedText">DerivedText</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#NonDigital">NonDigital</a> | <a href="#NotBornDigital">NotBornDigital</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#PrimaryText">PrimaryText</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Singing">Singing</a> | <a href="#Speech">Speech</a> | <a href="#Syntactic">Syntactic</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
+<a href="#Code">Code</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Speech">Speech</a> | <a href="#Singing">Singing</a> | <a href="#Speech">Speech</a> | <a href="#Syntactic">Syntactic</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
 
-<div id="Annotation"  style="border-style: solid">
+<div id="PrimaryText" style="border-style: solid">
 
-# Defined Term: Annotation
+# Class: PrimaryText
+
+This is a primary resource: the object of study.   A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse
+
+## Subclass of 
+
+  [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+</div><br>
+<div id="Annotation" style="border-style: solid">
+
+# Class: Annotation
 
 The resource includes information which annotates, describes or otherwise an some other linguistic record.
 
-</div><br>
-<div id="BornDigital"  style="border-style: solid">
+## Subclass of 
 
-# Defined Term: BornDigital
+  [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
-undefined
+## Properties
 
-</div><br>
+[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
 <div id="Code"  style="border-style: solid">
 
 # Defined Term: Code
@@ -31,11 +41,15 @@ undefined
 The resource contains a coded analysis or annotation
 
 </div><br>
-<div id="DerivedText"  style="border-style: solid">
+<div id="DerivedText" style="border-style: solid">
 
-# Defined Term: DerivedText
+# Class: DerivedText
 
-The resource is derivied from another resource, eg a downsampled video or an abstract of a text but is not an analytical product
+A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a text which  is not an analytical product 
+
+## Subclass of 
+
+  [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
 </div><br>
 <div id="Dialogue"  style="border-style: solid">
@@ -44,35 +58,45 @@ The resource is derivied from another resource, eg a downsampled video or an abs
 
 undefined
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#scriptType'> olac:scriptType </a>] | </div><br>
 <div id="Gesture"  style="border-style: solid">
 
 # Defined Term: Gesture
 
 undefined
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#modality'> olac:modality </a>] | </div><br>
 <div id="Handwritten"  style="border-style: solid">
 
 # Defined Term: Handwritten
 
 The resource was written using a writing implement such as pen, pencil, brush or computer stylus
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
 <div id="Informational"  style="border-style: solid">
 
 # Defined Term: Informational
 
 SIMON – TODO
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#scriptType'> olac:scriptType </a>] | </div><br>
 <div id="Interview"  style="border-style: solid">
 
 # Defined Term: Interview
 
 The resource is conversation where one or more speakers are directing the conversation
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#scriptType'> olac:scriptType </a>] | </div><br>
 <div id="Lexicon"  style="border-style: solid">
 
 # Defined Term: Lexicon
@@ -94,35 +118,27 @@ undefined
 
 undefined
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#scriptType'> olac:scriptType </a>] | </div><br>
 <div id="Narrative"  style="border-style: solid">
 
 # Defined Term: Narrative
 
 A monologic discourse which represents temporally organized events.
 
-</div><br>
-<div id="NonDigital"  style="border-style: solid">
+## Is an expected value for the following property
 
-# Defined Term: NonDigital
-
-The resource was not originally captured or created  in digital form
-
-</div><br>
-<div id="NotBornDigital"  style="border-style: solid">
-
-# Defined Term: NotBornDigital
-
-undefined
-
-</div><br>
+[<a href='#scriptType'> olac:scriptType </a>] | </div><br>
 <div id="Oratory"  style="border-style: solid">
 
 # Defined Term: Oratory
 
 undefined
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#scriptType'> olac:scriptType </a>] | </div><br>
 <div id="OrganizationBasedLicense" style="border-style: solid">
 
 # Class: OrganizationBasedLicense
@@ -133,7 +149,9 @@ A licence document  setting out rights and oblications could be based copyright 
 
   [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
-</div><br>
+## Properties
+
+[<a href='#licensedOrganization'> olac:licensedOrganization </a>] | </div><br>
 <div id="OrganizationDepositLicense" style="border-style: solid">
 
 # Class: OrganizationDepositLicense
@@ -162,7 +180,9 @@ A license document setting out terms for reuse of data by one or more identified
 
 The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#modality'> olac:modality </a>] | </div><br>
 <div id="PartOfSpeech"  style="border-style: solid">
 
 # Defined Term: PartOfSpeech
@@ -180,77 +200,112 @@ This class represents a snapshot of a Person in time, in their role as a contrib
 
   [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Role'> schema:Role </a>] | 
 
-</div><br>
+## Properties
+
+[<a href='#person'> olac:person </a>] | </div><br>
 <div id="Phonemic"  style="border-style: solid">
 
 # Defined Term: Phonemic
 
 undefined
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
 <div id="Phonetic"  style="border-style: solid">
 
 # Defined Term: Phonetic
 
 undefined
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
 <div id="Phonological"  style="border-style: solid">
 
 # Defined Term: Phonological
 
 undefined
 
-</div><br>
-<div id="PrimaryText"  style="border-style: solid">
+## Is an expected value for the following property
 
-# Defined Term: PrimaryText
+[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
+<div id="PrimaryText" style="border-style: solid">
+
+# Class: PrimaryText
 
 This is a primary resource: the object of study.   A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse
 
-</div><br>
+## Subclass of 
+
+  [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+## Properties
+
+[<a href='#hasAnnotation'> olac:hasAnnotation </a>] | [<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
 <div id="Procedural"  style="border-style: solid">
 
 # Defined Term: Procedural
 
 undefined
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#scriptType'> olac:scriptType </a>] | </div><br>
 <div id="Prosodic"  style="border-style: solid">
 
 # Defined Term: Prosodic
 
 undefined
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
 <div id="Report"  style="border-style: solid">
 
 # Defined Term: Report
 
 undefined
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#scriptType'> olac:scriptType </a>] | </div><br>
+<div id="Speech"  style="border-style: solid">
+
+# Defined Term: Speech
+
+TODO
+
+## Is an expected value for the following property
+
+[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
 <div id="Singing"  style="border-style: solid">
 
 # Defined Term: Singing
 
 "Words or sounds [articulated] in succession with musical inflections or modulations of the voice" OED.
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#modality'> olac:modality </a>] | </div><br>
 <div id="Speech"  style="border-style: solid">
 
 # Defined Term: Speech
 
 This resource contains a recording of one or more people speaking (NOT IN OLAC BUT NEEDED)
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#modality'> olac:modality </a>] | </div><br>
 <div id="Syntactic"  style="border-style: solid">
 
 # Defined Term: Syntactic
 
 The resource contains annotation or other analysis describing  the syntactic structure of a PrimaryText
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
 <div id="Thesaurus"  style="border-style: solid">
 
 # Defined Term: Thesaurus
@@ -258,35 +313,54 @@ The resource contains annotation or other analysis describing  the syntactic str
 The resource contains  a list or data structure consisting  of words or concepts arranged according to sense.  
 
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#scriptType'> olac:scriptType </a>] | </div><br>
+<div id="TimeAligned"  style="border-style: solid">
+
+# Defined Term: TimeAligned
+
+The resource contains a written or coded annotation(s) which has data aligning the annotation(s)  with a PrimaryText
+
+## Is an expected value for the following property
+
+[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
 <div id="Transcription"  style="border-style: solid">
 
 # Defined Term: Transcription
 
 The resource contains a written or coded annotation or analysis into another representation
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
 <div id="Translation"  style="border-style: solid">
 
 # Defined Term: Translation
 
 undefined
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
 <div id="Typeset"  style="border-style: solid">
 
 # Defined Term: Typeset
 
 The resource has been formatted for display
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
 <div id="Typewritten"  style="border-style: solid">
 
 # Defined Term: Typewritten
 
-The resource was captured on a typewriter or a keyboard
+The annotation has time-alignement with the PrimaryText
 
-</div><br>
+## Is an expected value for the following property
+
+[<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
 <div id="annotationType"  style="border-style: solid">
 
 # Property: annotationType
@@ -299,11 +373,11 @@ undefined
 
 ## Used on these types: 
 
-[<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+[<a href='#Annotation'> olac:Annotation </a>] | 
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Phonemic'> olac:Phonemic </a>] | [<a href='#Phonetic'> olac:Phonetic </a>] | [<a href='#Phonological'> olac:Phonological </a>] | [<a href='#Syntactic'> olac:Syntactic </a>] | [<a href='#Translation'> olac:Translation </a>] |  "olac:Semantic" | [<a href='#Transcription'> olac:Transcription </a>] | [<a href='#Annotation'> olac:Annotation </a>] | 
+[<a href='#Phonemic'> olac:Phonemic </a>] | [<a href='#Phonetic'> olac:Phonetic </a>] | [<a href='#Phonological'> olac:Phonological </a>] | [<a href='#Syntactic'> olac:Syntactic </a>] | [<a href='#Translation'> olac:Translation </a>] | [<a href='#Semantic'> olac:Semantic </a>] | [<a href='#Transcription'> olac:Transcription </a>] | [<a href='#TimeAligned'> olac:TimeAligned </a>] | [<a href='#Prosodic'> olac:Prosodic </a>] | 
 
 </div><br>
 <div id="annotator"  style="border-style: solid">
@@ -456,6 +530,21 @@ The participant reviewed, corrected, and/or tested the resource.
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
 </div><br>
+<div id="geoJSON"  style="border-style: solid">
+
+# Property: geoJSON
+
+A valid GEOJson feature or feature collection as a string that can be parsed as JSON 
+
+## Values expected to be one of these types: 
+
+ Text | 
+
+## Used on these types: 
+
+[<a href='http://schema.org/GeoCoordinates'> schema:GeoCoordinates </a>] | [<a href='http://schema.org/GeoShape'> schema:GeoShape </a>] | [<a href='http://schema.org/Language'> schema:Language </a>] | 
+
+</div><br>
 <div id="hasAnnotation"  style="border-style: solid">
 
 # Property: hasAnnotation
@@ -468,7 +557,7 @@ This resource references another resource that describes it  such as a translati
 
 ## Used on these types: 
 
-[<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+[<a href='#PrimaryText'> olac:PrimaryText </a>] | 
 
 </div><br>
 <div id="illustrator"  style="border-style: solid">
@@ -524,7 +613,7 @@ This resource contains some kind a description such as a translation, transcript
 
 ## Values expected to be one of these types: 
 
-
+[<a href='#PrimaryText'> olac:PrimaryText </a>] | 
 
 ## Used on these types: 
 
@@ -539,18 +628,18 @@ Indicates a group of people who have the rights described in this license
 
 ## Values expected to be one of these types: 
 
-[<a href='http://schema.org/Orgnization'> schema:Orgnization </a>] | 
+[<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
 ## Used on these types: 
 
 [<a href='#OrganizationBasedLicense'> olac:OrganizationBasedLicense </a>] | 
 
 </div><br>
-<div id="linguisticGenre"  style="border-style: solid">
+<div id="orthographyType"  style="border-style: solid">
 
-# Property: linguisticGenre
+# Property: orthographyType
 
-undefined
+NOTE: This is required for Nyingarn – do we want to have a further set of types for SungText, SpokenText, GesturedText, OrthographicText so that they can each have special sub-type properties
 
 ## Values expected to be one of these types: 
 
@@ -558,11 +647,11 @@ undefined
 
 ## Used on these types: 
 
-[<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+[<a href='#PrimaryText'> olac:PrimaryText </a>] | 
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Thesaurus'> olac:Thesaurus </a>] | [<a href='#Dialogue'> olac:Dialogue </a>] | [<a href='#Oratory'> olac:Oratory </a>] | [<a href='#Report'> olac:Report </a>] | [<a href='#Ludic'> olac:Ludic </a>] | [<a href='#Procedural'> olac:Procedural </a>] | [<a href='#Narrative'> olac:Narrative </a>] | [<a href='#Interview'> olac:Interview </a>] |   |  "olac:Informational"] | 
+[<a href='#Handwritten'> olac:Handwritten </a>] | [<a href='#Typewritten'> olac:Typewritten </a>] | [<a href='#Typeset'> olac:Typeset </a>] | 
 
 </div><br>
 <div id="modality"  style="border-style: solid">
@@ -581,7 +670,7 @@ undefined
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Speech'> olac:Speech </a>] | [<a href='#Orthography'> olac:Orthography </a>] | [<a href='#Singing'> olac:Singing </a>] | [<a href='#Code'> olac:Code </a>] | [<a href='#Handwritten'> olac:Handwritten </a>] | [<a href='#Typewritten'> olac:Typewritten </a>] | [<a href='#Typeset'> olac:Typeset </a>] | [<a href='#NotBornDigital'> olac:NotBornDigital </a>] | [<a href='#BornDigital'> olac:BornDigital </a>] | 
+[<a href='#Speech'> olac:Speech </a>] | [<a href='#Orthography'> olac:Orthography </a>] | [<a href='#Singing'> olac:Singing </a>] | [<a href='#Gesture'> olac:Gesture </a>] | 
 
 </div><br>
 <div id="participant"  style="border-style: solid">
@@ -737,6 +826,25 @@ The participant was an interlocutor in some sort of discourse event.
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+</div><br>
+<div id="scriptType"  style="border-style: solid">
+
+# Property: scriptType
+
+undefined
+
+## Values expected to be one of these types: 
+
+
+
+## Used on these types: 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#Thesaurus'> olac:Thesaurus </a>] | [<a href='#Dialogue'> olac:Dialogue </a>] | [<a href='#Oratory'> olac:Oratory </a>] | [<a href='#Report'> olac:Report </a>] | [<a href='#Ludic'> olac:Ludic </a>] | [<a href='#Procedural'> olac:Procedural </a>] | [<a href='#Narrative'> olac:Narrative </a>] | [<a href='#Interview'> olac:Interview </a>] |  "olac:Drama" | [<a href='#Informational'> olac:Informational </a>] | 
 
 </div><br>
 <div id="signer"  style="border-style: solid">
