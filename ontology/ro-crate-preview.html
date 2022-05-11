@@ -26,17 +26,6 @@
       "name": ""
     },
     {
-      "@id": "#a4f96dd6-dcc5-4d98-8bef-775a5d946650",
-      "@type": "rdfs:Class",
-      "name": "PrimaryText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
-      "rdfs:comment": "This is a primary resource: the object of study.   A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse",
-      "rdfs:label": "PrimaryText",
-      "rdfs:subClassOf": {
-        "@id": "schema:CreativeWork"
-      }
-    },
-    {
       "@id": "./",
       "@type": "Dataset",
       "hasFile": [],
@@ -118,7 +107,7 @@
       "@reverse": {
         "definedTermSet": [
           {
-            "@id": "olac:scriptType"
+            "@id": "olac:linguisticGenre"
           }
         ]
       }
@@ -411,11 +400,6 @@
           {
             "@id": "olac:Typewritten"
           }
-        ],
-        "definedTermSet": [
-          {
-            "@id": "olac:linguisticGenre"
-          }
         ]
       }
     },
@@ -570,21 +554,14 @@
           "@id": "olac:Annotation"
         }
       ],
-      "name": "ResourceTypeValues",
-      "@reverse": {
-        "definedTermSet": [
-          {
-            "@id": "olac:resourcePrimacy"
-          }
-        ]
-      }
+      "name": "ResourceTypeValues"
     },
     {
       "@id": "olac:Semantic",
       "@type": "DefinedTerm",
       "description": "TODO",
       "inDefinedTermSet": "CommunicationModeValues",
-      "name": "Speech",
+      "name": "Semantic",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -668,7 +645,7 @@
     {
       "@id": "olac:Transcription",
       "@type": "DefinedTerm",
-      "description": "The resource contains a written or coded annotation or analysis into another representation",
+      "description": "The resource contains a transcription, which  is a written (orthographic) or coded  representation of an audio or visual signal. ",
       "inDefinedTermSet": "DerivedTextTypeValues",
       "name": "Transcription",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription",
@@ -940,6 +917,7 @@
         "@id": "olac:PrimaryText"
       },
       "name": "hasAnnotation",
+      "rangeIncludes": "\"olac:Annnotation\"",
       "rdfs:comment": "This resource references another resource that describes it  such as a translation, transcription or other analysis ",
       "rdfs:label": "hasAnnotation"
     },
@@ -1033,14 +1011,13 @@
       "@id": "olac:linguisticGenre",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "olac:OrthographyTypeValues"
+        "@id": "olac:CommunicationGenreValues"
       },
       "domainIncludes": {
         "@id": "olac:PrimaryText"
       },
-      "name": "orthographyType",
-      "rdfs:comment": "NOTE: This is required for Nyingarn – do we want to have a further set of types for SungText, SpokenText, GesturedText, OrthographicText so that they can each have special sub-type properties",
-      "rdfs:label": "orthographyType"
+      "name": "linguisticGenre",
+      "rdfs:label": "linguisticGenre"
     },
     {
       "@id": "olac:modality",
@@ -1197,19 +1174,6 @@
       "rdfs:label": "researcher"
     },
     {
-      "@id": "olac:resourcePrimacy",
-      "@type": "rdf:Property",
-      "definedTermSet": {
-        "@id": "olac:ResourceTypeValues"
-      },
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "resourcePrimacy",
-      "rdfs:comment": "Is this a primary resource, an annotation or a derived resource (such as downsampled video file)",
-      "rdfs:label": "resourcePrimacy"
-    },
-    {
       "@id": "olac:responder",
       "@type": "rdf:Property",
       "description": "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\".",
@@ -1228,15 +1192,6 @@
       "sameAs": "http://www.language-archives.org/REC/role.html#responder",
       "rdfs:comment": "The participant was an interlocutor in some sort of discourse event.",
       "rdfs:label": "responder"
-    },
-    {
-      "@id": "olac:scriptType",
-      "@type": "rdf:Property",
-      "definedTermSet": {
-        "@id": "olac:CommunicationGenreValues"
-      },
-      "name": "scriptType",
-      "rdfs:label": "scriptType"
     },
     {
       "@id": "olac:signer",
