@@ -13,70 +13,28 @@
   ],
   "@graph": [
     {
-      "@id": "ro-crate-metadata.json",
-      "@type": "CreativeWork",
-      "about": {
-        "@id": "./"
-      },
-      "identifier": [
-        "ro-crate-metadata.json",
-        {
-          "@id": "#:localid:describo:a5ad20d6-4a8e-4636-b64c-b08be4de6c13"
-        }
-      ]
-    },
-    {
       "@id": "#261c406f-63bd-491f-ae4f-8208a9c784b8",
       "@type": "Thing",
       "inDefinedTermSet": "DerivedTextTypeValues",
       "name": ""
     },
     {
-      "name": "Language Data Ontology",
       "@id": "./",
       "@type": "Dataset",
-      "description": [
-        "This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects"
-      ],
-      "about": [
-        {
-          "@id": "olac:Annotation"
-        },
-        {
-          "@id": "olac:DerivedText"
-        },
-        {
-          "@id": "olac:annotationType"
-        }
-      ]
+      "hasFile": [],
+      "description": "This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects",
+      "hasPart": [],
+      "name": "Language Data Ontology"
     },
     {
-      "name": "Annotation",
       "@id": "olac:Annotation",
       "@type": "rdfs:Class",
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#annotation"
-      ],
-      "rdfs:comment": [
-        "The resource includes information which annotates, describes or otherwise an some other linguistic record."
-      ],
-      "rdfs:label": [
-        "Annotation"
-      ],
-      "rdfs:subClassOf": [
-        "schema:CreativeWork"
-      ],
-      "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "olac:ResourceTypeValues"
-          }
-        ],
-        "about": [
-          {
-            "@id": "./"
-          }
-        ]
+      "name": "Annotation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation",
+      "rdfs:comment": "The resource includes information which annotates, describes or otherwise an some other linguistic record.",
+      "rdfs:label": "Annotation",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
       }
     },
     {
@@ -141,32 +99,14 @@
       "name": "CommunicationModeValues"
     },
     {
-      "name": "DerivedText",
       "@id": "olac:DerivedText",
       "@type": "rdfs:Class",
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text"
-      ],
-      "rdfs:comment": [
-        "A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a text which  is not an analytical product "
-      ],
-      "rdfs:label": [
-        "DerivedText"
-      ],
-      "rdfs:subClassOf": [
-        "schema:CreativeWork"
-      ],
-      "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "olac:ResourceTypeValues"
-          }
-        ],
-        "about": [
-          {
-            "@id": "./"
-          }
-        ]
+      "name": "DerivedText",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
+      "rdfs:comment": "A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a text which  is not an analytical product ",
+      "rdfs:label": "DerivedText",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
       }
     },
     {
@@ -482,27 +422,16 @@
       "name": "Typewritten"
     },
     {
-      "name": "annotationType",
       "@id": "olac:annotationType",
       "@type": "rdf:Property",
-      "definedTermSet": [
-        {
-          "@id": "olac:DerivedTextTypeValues"
-        }
-      ],
-      "domainIncludes": [
-        "olac:Annotation"
-      ],
-      "rdfs:label": [
-        "annotationType"
-      ],
-      "@reverse": {
-        "about": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "definedTermSet": {
+        "@id": "olac:DerivedTextTypeValues"
+      },
+      "domainIncludes": {
+        "@id": "olac:Annotation"
+      },
+      "name": "annotationType",
+      "rdfs:label": "annotationType"
     },
     {
       "@id": "olac:annotator",
@@ -782,6 +711,17 @@
       },
       "rdfs:comment": "This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references",
       "rdfs:label": "isAnnotationOf"
+    },
+    {
+      "@id": "olac:isDeIdentified",
+      "@type": "rdf:Property",
+      "domainIncludes": "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, olac:PersonSnapshot]",
+      "name": "isDeIdentified",
+      "rangeIncludes": {
+        "@id": "schema:Boolean"
+      },
+      "rdfs:comment": "This data in this item has had identifying information removed, or in the case of a person the name is an alias",
+      "rdfs:label": "isDeIdentified"
     },
     {
       "@id": "olac:licensedOrganization",
@@ -1100,6 +1040,17 @@
       "sameAs": "http://www.language-archives.org/REC/role.html#translator",
       "rdfs:comment": "The participant produced a translation of this or a related resource.",
       "rdfs:label": "translator"
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      },
+      "identifier": "ro-crate-metadata.json"
     }
   ]
 }

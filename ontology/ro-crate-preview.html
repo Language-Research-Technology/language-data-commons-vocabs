@@ -994,6 +994,17 @@
       "rdfs:label": "isAnnotationOf"
     },
     {
+      "@id": "olac:isDeIdentified",
+      "@type": "rdf:Property",
+      "domainIncludes": "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, olac:PersonSnapshot]",
+      "name": "isDeIdentified",
+      "rangeIncludes": {
+        "@id": "schema:Boolean"
+      },
+      "rdfs:comment": "This data in this item has had identifying information removed, or in the case of a person the name is an alias",
+      "rdfs:label": "isDeIdentified"
+    },
+    {
       "@id": "olac:licensedOrganization",
       "@type": "rdf:Property",
       "domainIncludes": {
@@ -1314,6 +1325,9 @@
     {
       "@id": "ro-crate-metadata.json",
       "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
       "about": {
         "@id": "./"
       },
