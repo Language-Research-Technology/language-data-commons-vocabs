@@ -486,17 +486,17 @@
             "@id": "olac:ResourceTypeValues"
           }
         ],
+        "rangeIncludes": [
+          {
+            "@id": "olac:annotationOf"
+          }
+        ],
         "domainIncludes": [
           {
             "@id": "olac:hasAnnotation"
           },
           {
             "@id": "olac:linguisticGenre"
-          }
-        ],
-        "rangeIncludes": [
-          {
-            "@id": "olac:isAnnotationOf"
           }
         ]
       }
@@ -575,7 +575,7 @@
       "@type": "DefinedTerm",
       "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
       "inDefinedTermSet": "CommunicationModeValues",
-      "name": "Singing",
+      "name": "Song",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -587,9 +587,9 @@
     {
       "@id": "olac:Speech",
       "@type": "DefinedTerm",
-      "description": "This resource contains a recording of one or more people speaking (NOT IN OLAC BUT NEEDED)",
+      "description": "This resource contains a video recording of  sign language",
       "inDefinedTermSet": "CommunicationModeValues",
-      "name": "Speech",
+      "name": "Sign",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -701,6 +701,19 @@
           }
         ]
       }
+    },
+    {
+      "@id": "olac:annotationOf",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "isAnnotationOf",
+      "rangeIncludes": {
+        "@id": "olac:PrimaryText"
+      },
+      "rdfs:comment": "This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references",
+      "rdfs:label": "isAnnotationOf"
     },
     {
       "@id": "olac:annotationType",
@@ -962,6 +975,25 @@
       "rdfs:label": "interpreter"
     },
     {
+      "@id": "olac:interviewee",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "interviewee",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ],
+      "sameAs": "http://www.language-archives.org/REC/role.html#interviewer",
+      "rdfs:comment": "The participant was a respondent in an interview",
+      "rdfs:label": "interviewee"
+    },
+    {
       "@id": "olac:interviewer",
       "@type": "rdf:Property",
       "domainIncludes": {
@@ -981,23 +1013,18 @@
       "rdfs:label": "interviewer"
     },
     {
-      "@id": "olac:isAnnotationOf",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "isAnnotationOf",
-      "rangeIncludes": {
-        "@id": "olac:PrimaryText"
-      },
-      "rdfs:comment": "This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references",
-      "rdfs:label": "isAnnotationOf"
-    },
-    {
       "@id": "olac:isDeIdentified",
       "@type": "rdf:Property",
-      "domainIncludes": "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, olac:PersonSnapshot]",
-      "name": "isDeIdentified",
+      "domainIncludes": [
+        {
+          "@id": "schema:CreativeWork"
+        },
+        {
+          "@id": "schema:Person"
+        },
+        "olac:PersonSnapshot"
+      ],
+      "name": "deidentified",
       "rangeIncludes": {
         "@id": "schema:Boolean"
       },

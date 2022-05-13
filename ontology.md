@@ -4,11 +4,11 @@
 
 # Properties
 
-<a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#illustrator">illustrator</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewer">interviewer</a> | <a href="#isAnnotationOf">isAnnotationOf</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
+<a href="#isAnnotationOf">isAnnotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#illustrator">illustrator</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
 
 # DefinedTerms
 
-<a href="#Code">Code</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Singing">Singing</a> | <a href="#Speech">Speech</a> | <a href="#Syntactic">Syntactic</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
+<a href="#Code">Code</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Song">Song</a> | <a href="#Sign">Sign</a> | <a href="#Syntactic">Syntactic</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
 
 <div id="Annotation" style="border-style: solid">
 
@@ -266,20 +266,20 @@ TODO
 ## Is an expected value for the following property
 
 [<a href='#annotationType'> olac:annotationType </a>] | </div><br>
-<div id="Singing"  style="border-style: solid">
+<div id="Song"  style="border-style: solid">
 
-# Defined Term: Singing
+# Defined Term: Song
 
 "Words or sounds [articulated] in succession with musical inflections or modulations of the voice" OED.
 
 ## Is an expected value for the following property
 
 [<a href='#modality'> olac:modality </a>] | </div><br>
-<div id="Speech"  style="border-style: solid">
+<div id="Sign"  style="border-style: solid">
 
-# Defined Term: Speech
+# Defined Term: Sign
 
-This resource contains a recording of one or more people speaking (NOT IN OLAC BUT NEEDED)
+This resource contains a video recording of  sign language
 
 ## Is an expected value for the following property
 
@@ -342,6 +342,21 @@ The resource has been formatted for display
 # Defined Term: Typewritten
 
 The annotation has time-alignement with the PrimaryText
+
+</div><br>
+<div id="isAnnotationOf"  style="border-style: solid">
+
+# Property: isAnnotationOf
+
+This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references
+
+## Values expected to be one of these types: 
+
+[<a href='#PrimaryText'> olac:PrimaryText </a>] | 
+
+## Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
 </div><br>
 <div id="annotationType"  style="border-style: solid">
@@ -573,11 +588,11 @@ The participant translates in real-time or explains the discourse recorded in th
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
 </div><br>
-<div id="interviewer"  style="border-style: solid">
+<div id="interviewee"  style="border-style: solid">
 
-# Property: interviewer
+# Property: interviewee
 
-The participant conducted an interview that forms part of the resource.
+The participant was a respondent in an interview
 
 ## Values expected to be one of these types: 
 
@@ -588,15 +603,15 @@ The participant conducted an interview that forms part of the resource.
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
 </div><br>
-<div id="isAnnotationOf"  style="border-style: solid">
+<div id="interviewer"  style="border-style: solid">
 
-# Property: isAnnotationOf
+# Property: interviewer
 
-This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references
+The participant conducted an interview that forms part of the resource.
 
 ## Values expected to be one of these types: 
 
-[<a href='#PrimaryText'> olac:PrimaryText </a>] | 
+[<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
 ## Used on these types: 
 
@@ -615,7 +630,7 @@ This data in this item has had identifying information removed, or in the case o
 
 ## Used on these types: 
 
- [{"@id":"schema:CreativeWork"}, {"@id":"schema:Person"}, olac:PersonSnapshot] | 
+[<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | [<a href='http://schema.org/Person'> schema:Person </a>] |  olac:PersonSnapshot | 
 
 </div><br>
 <div id="licensedOrganization"  style="border-style: solid">
