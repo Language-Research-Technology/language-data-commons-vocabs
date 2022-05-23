@@ -4,7 +4,7 @@
 
 # Properties
 
-<a href="#isAnnotationOf">isAnnotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#illustrator">illustrator</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
+<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
 
 # DefinedTerms
 
@@ -22,7 +22,7 @@ The resource includes information which annotates, describes or otherwise an som
 
 ## Properties
 
-[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
 <div id="Code"  style="border-style: solid">
 
 # Defined Term: Code
@@ -40,16 +40,18 @@ A resource is derived from another resource, via some automated process, eg a do
 
   [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
-</div><br>
+## Properties
+
+[<a href='https://purl.archive.org/textcommons/terms#derivationOf'> txc:derivationOf </a>] | </div><br>
 <div id="Dialogue"  style="border-style: solid">
 
 # Defined Term: Dialogue
 
-undefined
+An interactive discourse with two or more participants. Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.
 
 ## Is an expected value for the following property
 
-[<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
 <div id="Gesture"  style="border-style: solid">
 
 # Defined Term: Gesture
@@ -58,7 +60,7 @@ undefined
 
 ## Is an expected value for the following property
 
-[<a href='#modality'> olac:modality </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#modality'> txc:modality </a>] | </div><br>
 <div id="Handwritten"  style="border-style: solid">
 
 # Defined Term: Handwritten
@@ -74,7 +76,7 @@ SIMON – TODO
 
 ## Is an expected value for the following property
 
-[<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
 <div id="Interview"  style="border-style: solid">
 
 # Defined Term: Interview
@@ -83,7 +85,7 @@ The resource is conversation where one or more speakers are directing the conver
 
 ## Is an expected value for the following property
 
-[<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
 <div id="Lexicon"  style="border-style: solid">
 
 # Defined Term: Lexicon
@@ -107,7 +109,7 @@ undefined
 
 ## Is an expected value for the following property
 
-[<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
 <div id="Narrative"  style="border-style: solid">
 
 # Defined Term: Narrative
@@ -116,7 +118,7 @@ A monologic discourse which represents temporally organized events.
 
 ## Is an expected value for the following property
 
-[<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
 <div id="Oratory"  style="border-style: solid">
 
 # Defined Term: Oratory
@@ -125,7 +127,7 @@ undefined
 
 ## Is an expected value for the following property
 
-[<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
 <div id="OrganizationBasedLicense" style="border-style: solid">
 
 # Class: OrganizationBasedLicense
@@ -138,7 +140,7 @@ A licence document  setting out rights and oblications could be based copyright 
 
 ## Properties
 
-[<a href='#licensedOrganization'> olac:licensedOrganization </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#licensedOrganization'> txc:licensedOrganization </a>] | </div><br>
 <div id="OrganizationDepositLicense" style="border-style: solid">
 
 # Class: OrganizationDepositLicense
@@ -147,7 +149,7 @@ A license document setting out terms for deposit into a repository by one or mor
 
 ## Subclass of 
 
-  [<a href='#OrganizationBasedLicense'> olac:OrganizationBasedLicense </a>] | 
+  [<a href='https://purl.archive.org/textcommons/terms#OrganizationBasedLicense'> txc:OrganizationBasedLicense </a>] | 
 
 </div><br>
 <div id="OrganizationReuseLicense" style="border-style: solid">
@@ -158,7 +160,7 @@ A license document setting out terms for reuse of data by one or more identified
 
 ## Subclass of 
 
-  [<a href='#OrganizationBasedLicense'> olac:OrganizationBasedLicense </a>] | 
+  [<a href='https://purl.archive.org/textcommons/terms#OrganizationBasedLicense'> txc:OrganizationBasedLicense </a>] | 
 
 </div><br>
 <div id="Orthography"  style="border-style: solid">
@@ -169,7 +171,7 @@ The resource contains written material using a standard or conventional orthogra
 
 ## Is an expected value for the following property
 
-[<a href='#modality'> olac:modality </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#modality'> txc:modality </a>] | </div><br>
 <div id="PartOfSpeech"  style="border-style: solid">
 
 # Defined Term: PartOfSpeech
@@ -189,7 +191,7 @@ This class represents a snapshot of a Person in time, in their role as a contrib
 
 ## Properties
 
-[<a href='#person'> olac:person </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#person'> txc:person </a>] | </div><br>
 <div id="Phonemic"  style="border-style: solid">
 
 # Defined Term: Phonemic
@@ -198,7 +200,7 @@ undefined
 
 ## Is an expected value for the following property
 
-[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
 <div id="Phonetic"  style="border-style: solid">
 
 # Defined Term: Phonetic
@@ -207,7 +209,7 @@ undefined
 
 ## Is an expected value for the following property
 
-[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
 <div id="Phonological"  style="border-style: solid">
 
 # Defined Term: Phonological
@@ -216,7 +218,7 @@ undefined
 
 ## Is an expected value for the following property
 
-[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
 <div id="PrimaryText" style="border-style: solid">
 
 # Class: PrimaryText
@@ -229,7 +231,7 @@ This is a primary resource: the object of study.   A text is defined as any prim
 
 ## Properties
 
-[<a href='#hasAnnotation'> olac:hasAnnotation </a>] | [<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#hasAnnotation'> txc:hasAnnotation </a>] | [<a href='https://purl.archive.org/textcommons/terms#hasDerivation'> txc:hasDerivation </a>] | [<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
 <div id="Procedural"  style="border-style: solid">
 
 # Defined Term: Procedural
@@ -238,7 +240,7 @@ undefined
 
 ## Is an expected value for the following property
 
-[<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
 <div id="Prosodic"  style="border-style: solid">
 
 # Defined Term: Prosodic
@@ -247,7 +249,7 @@ undefined
 
 ## Is an expected value for the following property
 
-[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
 <div id="Report"  style="border-style: solid">
 
 # Defined Term: Report
@@ -256,7 +258,7 @@ undefined
 
 ## Is an expected value for the following property
 
-[<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
 <div id="Semantic"  style="border-style: solid">
 
 # Defined Term: Semantic
@@ -265,7 +267,7 @@ TODO
 
 ## Is an expected value for the following property
 
-[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
 <div id="Song"  style="border-style: solid">
 
 # Defined Term: Song
@@ -274,7 +276,7 @@ TODO
 
 ## Is an expected value for the following property
 
-[<a href='#modality'> olac:modality </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#modality'> txc:modality </a>] | </div><br>
 <div id="Sign"  style="border-style: solid">
 
 # Defined Term: Sign
@@ -283,7 +285,7 @@ This resource contains a video recording of  sign language
 
 ## Is an expected value for the following property
 
-[<a href='#modality'> olac:modality </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#modality'> txc:modality </a>] | </div><br>
 <div id="Syntactic"  style="border-style: solid">
 
 # Defined Term: Syntactic
@@ -292,7 +294,7 @@ The resource contains annotation or other analysis describing  the syntactic str
 
 ## Is an expected value for the following property
 
-[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
 <div id="Thesaurus"  style="border-style: solid">
 
 # Defined Term: Thesaurus
@@ -302,7 +304,7 @@ The resource contains  a list or data structure consisting  of words or concepts
 
 ## Is an expected value for the following property
 
-[<a href='#linguisticGenre'> olac:linguisticGenre </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
 <div id="TimeAligned"  style="border-style: solid">
 
 # Defined Term: TimeAligned
@@ -311,7 +313,7 @@ The resource contains a written or coded annotation(s) which has data aligning t
 
 ## Is an expected value for the following property
 
-[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
 <div id="Transcription"  style="border-style: solid">
 
 # Defined Term: Transcription
@@ -320,7 +322,7 @@ The resource contains a transcription, which  is a written (orthographic) or cod
 
 ## Is an expected value for the following property
 
-[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
 <div id="Translation"  style="border-style: solid">
 
 # Defined Term: Translation
@@ -329,7 +331,7 @@ undefined
 
 ## Is an expected value for the following property
 
-[<a href='#annotationType'> olac:annotationType </a>] | </div><br>
+[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
 <div id="Typeset"  style="border-style: solid">
 
 # Defined Term: Typeset
@@ -344,15 +346,15 @@ The resource has been formatted for display
 The annotation has time-alignement with the PrimaryText
 
 </div><br>
-<div id="isAnnotationOf"  style="border-style: solid">
+<div id="annotationOf"  style="border-style: solid">
 
-# Property: isAnnotationOf
+# Property: annotationOf
 
 This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references
 
 ## Values expected to be one of these types: 
 
-[<a href='#PrimaryText'> olac:PrimaryText </a>] | 
+[<a href='https://purl.archive.org/textcommons/terms#PrimaryText'> txc:PrimaryText </a>] | 
 
 ## Used on these types: 
 
@@ -371,11 +373,11 @@ undefined
 
 ## Used on these types: 
 
-[<a href='#Annotation'> olac:Annotation </a>] | 
+[<a href='https://purl.archive.org/textcommons/terms#Annotation'> txc:Annotation </a>] | 
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Phonemic'> olac:Phonemic </a>] | [<a href='#Phonetic'> olac:Phonetic </a>] | [<a href='#Phonological'> olac:Phonological </a>] | [<a href='#Syntactic'> olac:Syntactic </a>] | [<a href='#Translation'> olac:Translation </a>] | [<a href='#Semantic'> olac:Semantic </a>] | [<a href='#Transcription'> olac:Transcription </a>] | [<a href='#TimeAligned'> olac:TimeAligned </a>] | [<a href='#Prosodic'> olac:Prosodic </a>] | 
+[<a href='https://purl.archive.org/textcommons/terms#Phonemic'> txc:Phonemic </a>] | [<a href='https://purl.archive.org/textcommons/terms#Phonetic'> txc:Phonetic </a>] | [<a href='https://purl.archive.org/textcommons/terms#Phonological'> txc:Phonological </a>] | [<a href='https://purl.archive.org/textcommons/terms#Syntactic'> txc:Syntactic </a>] | [<a href='https://purl.archive.org/textcommons/terms#Translation'> txc:Translation </a>] | [<a href='https://purl.archive.org/textcommons/terms#Semantic'> txc:Semantic </a>] | [<a href='https://purl.archive.org/textcommons/terms#Transcription'> txc:Transcription </a>] | [<a href='https://purl.archive.org/textcommons/terms#TimeAligned'> txc:TimeAligned </a>] | [<a href='https://purl.archive.org/textcommons/terms#Prosodic'> txc:Prosodic </a>] | 
 
 </div><br>
 <div id="annotator"  style="border-style: solid">
@@ -483,6 +485,21 @@ The participant was responsible for depositing the resource in an archive.
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
 </div><br>
+<div id="derivationOf"  style="border-style: solid">
+
+# Property: derivationOf
+
+This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF
+
+## Values expected to be one of these types: 
+
+[<a href='https://purl.archive.org/textcommons/terms#PrimaryText'> txc:PrimaryText </a>] | [<a href='https://purl.archive.org/textcommons/terms#Annotation'> txc:Annotation </a>] | 
+
+## Used on these types: 
+
+[<a href='https://purl.archive.org/textcommons/terms#DerivedText'> txc:DerivedText </a>] | 
+
+</div><br>
 <div id="developer"  style="border-style: solid">
 
 # Property: developer
@@ -551,11 +568,26 @@ This resource references another resource that describes it  such as a translati
 
 ## Values expected to be one of these types: 
 
- "olac:Annnotation" | 
+ "txc:Annnotation" | 
 
 ## Used on these types: 
 
-[<a href='#PrimaryText'> olac:PrimaryText </a>] | 
+[<a href='https://purl.archive.org/textcommons/terms#PrimaryText'> txc:PrimaryText </a>] | 
+
+</div><br>
+<div id="hasDerivation"  style="border-style: solid">
+
+# Property: hasDerivation
+
+This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF
+
+## Values expected to be one of these types: 
+
+[<a href='https://purl.archive.org/textcommons/terms#DerivedText'> txc:DerivedText </a>] | 
+
+## Used on these types: 
+
+[<a href='https://purl.archive.org/textcommons/terms#PrimaryText'> txc:PrimaryText </a>] | 
 
 </div><br>
 <div id="illustrator"  style="border-style: solid">
@@ -567,6 +599,21 @@ The participant contributed drawings or other illustrations to the resource.
 ## Values expected to be one of these types: 
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
+
+## Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+</div><br>
+<div id="indexableText"  style="border-style: solid">
+
+# Property: indexableText
+
+Indicates one or more  target File that  together contain the full text of an item  – each  file should indicate its language
+
+## Values expected to be one of these types: 
+
+[<a href='http://schema.org/File'> schema:File </a>] | 
 
 ## Used on these types: 
 
@@ -630,7 +677,7 @@ This data in this item has had identifying information removed, or in the case o
 
 ## Used on these types: 
 
-[<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | [<a href='http://schema.org/Person'> schema:Person </a>] |  olac:PersonSnapshot | 
+ [{"@id":"schema:CreativeWork"}, {"@id":"schema:Person"}, txc:PersonSnapshot] | 
 
 </div><br>
 <div id="licensedOrganization"  style="border-style: solid">
@@ -645,7 +692,7 @@ Indicates a group of people who have the rights described in this license
 
 ## Used on these types: 
 
-[<a href='#OrganizationBasedLicense'> olac:OrganizationBasedLicense </a>] | 
+[<a href='https://purl.archive.org/textcommons/terms#OrganizationBasedLicense'> txc:OrganizationBasedLicense </a>] | 
 
 </div><br>
 <div id="linguisticGenre"  style="border-style: solid">
@@ -660,11 +707,11 @@ undefined
 
 ## Used on these types: 
 
-[<a href='#PrimaryText'> olac:PrimaryText </a>] | 
+[<a href='https://purl.archive.org/textcommons/terms#PrimaryText'> txc:PrimaryText </a>] | 
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Thesaurus'> olac:Thesaurus </a>] | [<a href='#Dialogue'> olac:Dialogue </a>] | [<a href='#Oratory'> olac:Oratory </a>] | [<a href='#Report'> olac:Report </a>] | [<a href='#Ludic'> olac:Ludic </a>] | [<a href='#Procedural'> olac:Procedural </a>] | [<a href='#Narrative'> olac:Narrative </a>] | [<a href='#Interview'> olac:Interview </a>] |  "olac:Drama" | [<a href='#Informational'> olac:Informational </a>] | 
+[<a href='https://purl.archive.org/textcommons/terms#Thesaurus'> txc:Thesaurus </a>] | [<a href='https://purl.archive.org/textcommons/terms#Dialogue'> txc:Dialogue </a>] | [<a href='https://purl.archive.org/textcommons/terms#Oratory'> txc:Oratory </a>] | [<a href='https://purl.archive.org/textcommons/terms#Report'> txc:Report </a>] | [<a href='https://purl.archive.org/textcommons/terms#Ludic'> txc:Ludic </a>] | [<a href='https://purl.archive.org/textcommons/terms#Procedural'> txc:Procedural </a>] | [<a href='https://purl.archive.org/textcommons/terms#Narrative'> txc:Narrative </a>] | [<a href='https://purl.archive.org/textcommons/terms#Interview'> txc:Interview </a>] |  "txc:Drama" | [<a href='https://purl.archive.org/textcommons/terms#Informational'> txc:Informational </a>] | 
 
 </div><br>
 <div id="modality"  style="border-style: solid">
@@ -683,7 +730,7 @@ undefined
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Speech'> olac:Speech </a>] | [<a href='#Orthography'> olac:Orthography </a>] | [<a href='#Singing'> olac:Singing </a>] | [<a href='#Gesture'> olac:Gesture </a>] | 
+[<a href='https://purl.archive.org/textcommons/terms#Speech'> txc:Speech </a>] | [<a href='https://purl.archive.org/textcommons/terms#Orthography'> txc:Orthography </a>] | [<a href='https://purl.archive.org/textcommons/terms#Singing'> txc:Singing </a>] | [<a href='https://purl.archive.org/textcommons/terms#Gesture'> txc:Gesture </a>] | 
 
 </div><br>
 <div id="participant"  style="border-style: solid">
@@ -728,7 +775,7 @@ This property references a Person item which represents the persistent identity 
 
 ## Used on these types: 
 
-[<a href='#PersonSnapshot'> olac:PersonSnapshot </a>] | 
+[<a href='https://purl.archive.org/textcommons/terms#PersonSnapshot'> txc:PersonSnapshot </a>] | 
 
 </div><br>
 <div id="photographer"  style="border-style: solid">

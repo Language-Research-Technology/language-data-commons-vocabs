@@ -12,7 +12,7 @@
       "@vocab": "http://schema.org/"
     },
     {
-      "olac": "https://w3id.org/ro/terms/text-commons#"
+      "txc": "https://purl.archive.org/textcommons/terms#"
     },
     {
       "@base": null
@@ -28,7 +28,7 @@
     {
       "@id": "./",
       "@type": "Dataset",
-      "hasFile": [],
+      "hasFile": "",
       "description": "This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects",
       "hasPart": [],
       "name": "Language Data Ontology",
@@ -41,7 +41,7 @@
       }
     },
     {
-      "@id": "olac:Annotation",
+      "@id": "txc:Annotation",
       "@type": "rdfs:Class",
       "name": "Annotation",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation",
@@ -51,95 +51,95 @@
         "@id": "schema:CreativeWork"
       },
       "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "olac:ResourceTypeValues"
-          }
-        ],
         "domainIncludes": [
           {
-            "@id": "olac:annotationType"
+            "@id": "txc:annotationType"
+          }
+        ],
+        "rangeIncludes": [
+          {
+            "@id": "txc:derivationOf"
           }
         ]
       }
     },
     {
-      "@id": "olac:Code",
+      "@id": "txc:Code",
       "@type": "DefinedTerm",
       "description": "The resource contains a coded analysis or annotation",
       "inDefinedTermSet": "CommunicationModeValues",
       "name": "Code"
     },
     {
-      "@id": "olac:CommunicationGenreValues",
+      "@id": "txc:CommunicationGenreValues",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
-          "@id": "olac:Thesaurus"
+          "@id": "txc:Thesaurus"
         },
         {
-          "@id": "olac:Dialogue"
+          "@id": "txc:Dialogue"
         },
         {
-          "@id": "olac:Oratory"
+          "@id": "txc:Oratory"
         },
         {
-          "@id": "olac:Report"
+          "@id": "txc:Report"
         },
         {
-          "@id": "olac:Ludic"
+          "@id": "txc:Ludic"
         },
         {
-          "@id": "olac:Procedural"
+          "@id": "txc:Procedural"
         },
         {
-          "@id": "olac:Narrative"
+          "@id": "txc:Narrative"
         },
         {
-          "@id": "olac:Interview"
+          "@id": "txc:Interview"
         },
-        "\"olac:Drama\"",
+        "\"txc:Drama\"",
         {
-          "@id": "olac:Informational"
+          "@id": "txc:Informational"
         }
       ],
-      "name": "CommunicationGenreValues",
+      "name": "LinguistcGenreTerms",
       "@reverse": {
         "definedTermSet": [
           {
-            "@id": "olac:linguisticGenre"
+            "@id": "txc:linguisticGenre"
           }
         ]
       }
     },
     {
-      "@id": "olac:CommunicationModeValues",
+      "@id": "txc:CommunicationModeValues",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
-          "@id": "olac:Speech"
+          "@id": "txc:Speech"
         },
         {
-          "@id": "olac:Orthography"
+          "@id": "txc:Orthography"
         },
         {
-          "@id": "olac:Singing"
+          "@id": "txc:Singing"
         },
         {
-          "@id": "olac:Gesture"
+          "@id": "txc:Gesture"
         }
       ],
-      "name": "CommunicationModeValues",
+      "name": "ModalityTerms",
       "@reverse": {
         "definedTermSet": [
           {
-            "@id": "olac:modality"
+            "@id": "txc:modality"
           }
         ]
       }
     },
     {
-      "@id": "olac:DerivedText",
+      "@id": "txc:DerivedText",
       "@type": "rdfs:Class",
       "name": "DerivedText",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
@@ -149,82 +149,88 @@
         "@id": "schema:CreativeWork"
       },
       "@reverse": {
-        "hasDefinedTerm": [
+        "domainIncludes": [
           {
-            "@id": "olac:ResourceTypeValues"
+            "@id": "txc:derivationOf"
+          }
+        ],
+        "rangeIncludes": [
+          {
+            "@id": "txc:hasDerivation"
           }
         ]
       }
     },
     {
-      "@id": "olac:DerivedTextTypeValues",
+      "@id": "txc:DerivedTextTypeValues",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
-          "@id": "olac:Phonemic"
+          "@id": "txc:Phonemic"
         },
         {
-          "@id": "olac:Phonetic"
+          "@id": "txc:Phonetic"
         },
         {
-          "@id": "olac:Phonological"
+          "@id": "txc:Phonological"
         },
         {
-          "@id": "olac:Syntactic"
+          "@id": "txc:Syntactic"
         },
         {
-          "@id": "olac:Translation"
+          "@id": "txc:Translation"
         },
         {
-          "@id": "olac:Semantic"
+          "@id": "txc:Semantic"
         },
         {
-          "@id": "olac:Transcription"
+          "@id": "txc:Transcription"
         },
         {
-          "@id": "olac:TimeAligned"
+          "@id": "txc:TimeAligned"
         },
         {
-          "@id": "olac:Prosodic"
+          "@id": "txc:Prosodic"
         }
       ],
-      "name": "AnnotationTypeValues",
+      "name": "AnnotationTypeTerms",
       "@reverse": {
         "definedTermSet": [
           {
-            "@id": "olac:annotationType"
+            "@id": "txc:annotationType"
           }
         ]
       }
     },
     {
-      "@id": "olac:Dialogue",
+      "@id": "txc:Dialogue",
       "@type": "DefinedTerm",
+      "description": "An interactive discourse with two or more participants. Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.",
       "inDefinedTermSet": "CommunicationGenreValues",
       "name": "Dialogue",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationGenreValues"
+            "@id": "txc:CommunicationGenreValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Gesture",
+      "@id": "txc:Gesture",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "CommunicationModeValues",
       "name": "Gesture",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationModeValues"
+            "@id": "txc:CommunicationModeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Handwritten",
+      "@id": "txc:Handwritten",
       "@type": "DefinedTerm",
       "description": "The resource was written using a writing implement such as pen, pencil, brush or computer stylus",
       "inDefinedTermSet": "CommunicationModeValues",
@@ -232,13 +238,13 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:OrthographyTypeValues"
+            "@id": "txc:OrthographyTypeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Informational",
+      "@id": "txc:Informational",
       "@type": "DefinedTerm",
       "description": "SIMON – TODO",
       "inDefinedTermSet": "CommunicationGenreValues",
@@ -246,13 +252,13 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationGenreValues"
+            "@id": "txc:CommunicationGenreValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Interview",
+      "@id": "txc:Interview",
       "@type": "DefinedTerm",
       "description": "The resource is conversation where one or more speakers are directing the conversation",
       "inDefinedTermSet": "DerivedTextTypeValues",
@@ -260,39 +266,39 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationGenreValues"
+            "@id": "txc:CommunicationGenreValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Lexicon",
+      "@id": "txc:Lexicon",
       "@type": "DefinedTerm",
       "description": "The resource includes a systematic listing of lexical items.\n",
       "name": "Lexicon",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon"
     },
     {
-      "@id": "olac:LinguisticDescription",
+      "@id": "txc:LinguisticDescription",
       "@type": "DefinedTerm",
       "name": "LinguisticDescription",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description"
     },
     {
-      "@id": "olac:Ludic",
+      "@id": "txc:Ludic",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "CommunicationGenreValues",
       "name": "Ludic",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationGenreValues"
+            "@id": "txc:CommunicationGenreValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Narrative",
+      "@id": "txc:Narrative",
       "@type": "DefinedTerm",
       "description": "A monologic discourse which represents temporally organized events.",
       "inDefinedTermSet": "CommunicationGenreValues",
@@ -300,26 +306,26 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationGenreValues"
+            "@id": "txc:CommunicationGenreValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Oratory",
+      "@id": "txc:Oratory",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "CommunicationGenreValues",
       "name": "Oratory",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationGenreValues"
+            "@id": "txc:CommunicationGenreValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:OrganizationBasedLicense",
+      "@id": "txc:OrganizationBasedLicense",
       "@type": "rdfs:Class",
       "name": "OrganizationBasedLicense",
       "rdfs:comment": "A licence document  setting out rights and oblications could be based copyright or other rights  based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community",
@@ -330,41 +336,41 @@
       "@reverse": {
         "rdfs:subClassOf": [
           {
-            "@id": "olac:OrganizationDepositLicense"
+            "@id": "txc:OrganizationDepositLicense"
           },
           {
-            "@id": "olac:OrganizationReuseLicense"
+            "@id": "txc:OrganizationReuseLicense"
           }
         ],
         "domainIncludes": [
           {
-            "@id": "olac:licensedOrganization"
+            "@id": "txc:licensedOrganization"
           }
         ]
       }
     },
     {
-      "@id": "olac:OrganizationDepositLicense",
+      "@id": "txc:OrganizationDepositLicense",
       "@type": "rdfs:Class",
       "name": "OrganizationDepositLicense",
       "rdfs:comment": "A license document setting out terms for deposit into a repository by one or more identified groups ",
       "rdfs:label": "OrganizationDepositLicense",
       "rdfs:subClassOf": {
-        "@id": "olac:OrganizationBasedLicense"
+        "@id": "txc:OrganizationBasedLicense"
       }
     },
     {
-      "@id": "olac:OrganizationReuseLicense",
+      "@id": "txc:OrganizationReuseLicense",
       "@type": "rdfs:Class",
       "name": "OrganizationReuseLicense",
       "rdfs:comment": "A license document setting out terms for reuse of data by one or more identified groups ",
       "rdfs:label": "OrganizationReuseLicense",
       "rdfs:subClassOf": {
-        "@id": "olac:OrganizationBasedLicense"
+        "@id": "txc:OrganizationBasedLicense"
       }
     },
     {
-      "@id": "olac:Orthography",
+      "@id": "txc:Orthography",
       "@type": "DefinedTerm",
       "description": "The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc",
       "inDefinedTermSet": "CommunicationModeValues",
@@ -372,45 +378,45 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationModeValues"
+            "@id": "txc:CommunicationModeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:OrthographyTypeValues",
+      "@id": "txc:OrthographyTypeValues",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
-          "@id": "olac:Handwritten"
+          "@id": "txc:Handwritten"
         },
         {
-          "@id": "olac:Typewritten"
+          "@id": "txc:Typewritten"
         },
         {
-          "@id": "olac:Typeset"
+          "@id": "txc:Typeset"
         }
       ],
       "name": "",
       "@reverse": {
         "inDefinedTermSet": [
           {
-            "@id": "olac:Typeset"
+            "@id": "txc:Typeset"
           },
           {
-            "@id": "olac:Typewritten"
+            "@id": "txc:Typewritten"
           }
         ]
       }
     },
     {
-      "@id": "olac:PartOfSpeech",
+      "@id": "txc:PartOfSpeech",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "DerivedTextTypeValues",
       "name": "PartOfSpeech"
     },
     {
-      "@id": "olac:PersonSnapshot",
+      "@id": "txc:PersonSnapshot",
       "@type": "rdfs:Class",
       "name": "PersonSnapshot",
       "rdfs:comment": "This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class  is to caputre the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time. ",
@@ -426,52 +432,52 @@
       "@reverse": {
         "domainIncludes": [
           {
-            "@id": "olac:person"
+            "@id": "txc:person"
           }
         ]
       }
     },
     {
-      "@id": "olac:Phonemic",
+      "@id": "txc:Phonemic",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "DerivedTextTypeValues",
       "name": "Phonemic",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:DerivedTextTypeValues"
+            "@id": "txc:DerivedTextTypeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Phonetic",
+      "@id": "txc:Phonetic",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "DerivedTextTypeValues",
       "name": "Phonetic",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:DerivedTextTypeValues"
+            "@id": "txc:DerivedTextTypeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Phonological",
+      "@id": "txc:Phonological",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "DerivedTextTypeValues",
       "name": "Phonological",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:DerivedTextTypeValues"
+            "@id": "txc:DerivedTextTypeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:PrimaryText",
+      "@id": "txc:PrimaryText",
       "@type": "rdfs:Class",
       "name": "PrimaryText",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
@@ -481,83 +487,68 @@
         "@id": "schema:CreativeWork"
       },
       "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "olac:ResourceTypeValues"
-          }
-        ],
         "rangeIncludes": [
           {
-            "@id": "olac:annotationOf"
+            "@id": "txc:annotationOf"
+          },
+          {
+            "@id": "txc:derivationOf"
           }
         ],
         "domainIncludes": [
           {
-            "@id": "olac:hasAnnotation"
+            "@id": "txc:hasAnnotation"
           },
           {
-            "@id": "olac:linguisticGenre"
+            "@id": "txc:hasDerivation"
+          },
+          {
+            "@id": "txc:linguisticGenre"
           }
         ]
       }
     },
     {
-      "@id": "olac:Procedural",
+      "@id": "txc:Procedural",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "CommunicationGenreValues",
       "name": "Procedural",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationGenreValues"
+            "@id": "txc:CommunicationGenreValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Prosodic",
+      "@id": "txc:Prosodic",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "DerivedTextTypeValues",
       "name": "Prosodic",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:DerivedTextTypeValues"
+            "@id": "txc:DerivedTextTypeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Report",
+      "@id": "txc:Report",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "CommunicationGenreValues",
       "name": "Report",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationGenreValues"
+            "@id": "txc:CommunicationGenreValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:ResourceTypeValues",
-      "@type": "DefinedTermSet",
-      "hasDefinedTerm": [
-        {
-          "@id": "olac:PrimaryText"
-        },
-        {
-          "@id": "olac:DerivedText"
-        },
-        {
-          "@id": "olac:Annotation"
-        }
-      ],
-      "name": "ResourceTypeValues"
-    },
-    {
-      "@id": "olac:Semantic",
+      "@id": "txc:Semantic",
       "@type": "DefinedTerm",
       "description": "TODO",
       "inDefinedTermSet": "CommunicationModeValues",
@@ -565,13 +556,13 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:DerivedTextTypeValues"
+            "@id": "txc:DerivedTextTypeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Singing",
+      "@id": "txc:Singing",
       "@type": "DefinedTerm",
       "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
       "inDefinedTermSet": "CommunicationModeValues",
@@ -579,13 +570,13 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationModeValues"
+            "@id": "txc:CommunicationModeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Speech",
+      "@id": "txc:Speech",
       "@type": "DefinedTerm",
       "description": "This resource contains a video recording of  sign language",
       "inDefinedTermSet": "CommunicationModeValues",
@@ -593,13 +584,13 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationModeValues"
+            "@id": "txc:CommunicationModeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Syntactic",
+      "@id": "txc:Syntactic",
       "@type": "DefinedTerm",
       "description": "The resource contains annotation or other analysis describing  the syntactic structure of a PrimaryText",
       "inDefinedTermSet": "DerivedTextTypeValues",
@@ -607,13 +598,13 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:DerivedTextTypeValues"
+            "@id": "txc:DerivedTextTypeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Thesaurus",
+      "@id": "txc:Thesaurus",
       "@type": "DefinedTerm",
       "description": "The resource contains  a list or data structure consisting  of words or concepts arranged according to sense.  \n",
       "inDefinedTermSet": "CommunicationGenreValues",
@@ -622,13 +613,13 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:CommunicationGenreValues"
+            "@id": "txc:CommunicationGenreValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:TimeAligned",
+      "@id": "txc:TimeAligned",
       "@type": "DefinedTerm",
       "description": "The resource contains a written or coded annotation(s) which has data aligning the annotation(s)  with a PrimaryText",
       "inDefinedTermSet": "DerivedTextTypeValues",
@@ -637,13 +628,13 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:DerivedTextTypeValues"
+            "@id": "txc:DerivedTextTypeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Transcription",
+      "@id": "txc:Transcription",
       "@type": "DefinedTerm",
       "description": "The resource contains a transcription, which  is a written (orthographic) or coded  representation of an audio or visual signal. ",
       "inDefinedTermSet": "DerivedTextTypeValues",
@@ -652,83 +643,83 @@
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:DerivedTextTypeValues"
+            "@id": "txc:DerivedTextTypeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Translation",
+      "@id": "txc:Translation",
       "@type": "DefinedTerm",
       "inDefinedTermSet": "DerivedTextTypeValues",
       "name": "Translation",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:DerivedTextTypeValues"
+            "@id": "txc:DerivedTextTypeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Typeset",
+      "@id": "txc:Typeset",
       "@type": "DefinedTerm",
       "description": "The resource has been formatted for display",
       "inDefinedTermSet": {
-        "@id": "olac:OrthographyTypeValues"
+        "@id": "txc:OrthographyTypeValues"
       },
       "name": "Typeset",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:OrthographyTypeValues"
+            "@id": "txc:OrthographyTypeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:Typewritten",
+      "@id": "txc:Typewritten",
       "@type": "DefinedTerm",
       "description": "The annotation has time-alignement with the PrimaryText",
       "inDefinedTermSet": {
-        "@id": "olac:OrthographyTypeValues"
+        "@id": "txc:OrthographyTypeValues"
       },
       "name": "Typewritten",
       "@reverse": {
         "hasDefinedTerm": [
           {
-            "@id": "olac:OrthographyTypeValues"
+            "@id": "txc:OrthographyTypeValues"
           }
         ]
       }
     },
     {
-      "@id": "olac:annotationOf",
+      "@id": "txc:annotationOf",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
       },
-      "name": "isAnnotationOf",
+      "name": "annotationOf",
       "rangeIncludes": {
-        "@id": "olac:PrimaryText"
+        "@id": "txc:PrimaryText"
       },
       "rdfs:comment": "This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references",
-      "rdfs:label": "isAnnotationOf"
+      "rdfs:label": "annotationOf"
     },
     {
-      "@id": "olac:annotationType",
+      "@id": "txc:annotationType",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "olac:DerivedTextTypeValues"
+        "@id": "txc:DerivedTextTypeValues"
       },
       "domainIncludes": {
-        "@id": "olac:Annotation"
+        "@id": "txc:Annotation"
       },
       "name": "annotationType",
       "rdfs:label": "annotationType"
     },
     {
-      "@id": "olac:annotator",
+      "@id": "txc:annotator",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -747,7 +738,7 @@
       "rdfs:label": "annotator"
     },
     {
-      "@id": "olac:author",
+      "@id": "txc:author",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -766,7 +757,7 @@
       "rdfs:label": "author"
     },
     {
-      "@id": "olac:channels",
+      "@id": "txc:channels",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -776,7 +767,7 @@
       "rdfs:label": "channels"
     },
     {
-      "@id": "olac:compiler",
+      "@id": "txc:compiler",
       "@type": "rdf:Property",
       "description": "This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately.",
       "domainIncludes": {
@@ -797,7 +788,7 @@
       "rdfs:label": "compiler"
     },
     {
-      "@id": "olac:consultant",
+      "@id": "txc:consultant",
       "@type": "rdf:Property",
       "description": "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\".",
       "domainIncludes": {
@@ -817,7 +808,7 @@
       "rdfs:label": "consultant"
     },
     {
-      "@id": "olac:dataInputter",
+      "@id": "txc:dataInputter",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -836,7 +827,7 @@
       "rdfs:label": "dataInputter"
     },
     {
-      "@id": "olac:depositor",
+      "@id": "txc:depositor",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -855,7 +846,25 @@
       "rdfs:label": "depositor"
     },
     {
-      "@id": "olac:developer",
+      "@id": "txc:derivationOf",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "txc:DerivedText"
+      },
+      "name": "derivationOf",
+      "rangeIncludes": [
+        {
+          "@id": "txc:PrimaryText"
+        },
+        {
+          "@id": "txc:Annotation"
+        }
+      ],
+      "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF",
+      "rdfs:label": "derivationOf"
+    },
+    {
+      "@id": "txc:developer",
       "@type": "rdf:Property",
       "description": "A software programmer, designer, or analyst; a designer of a questionnaire or research task.",
       "domainIncludes": {
@@ -875,7 +884,7 @@
       "rdfs:label": "developer"
     },
     {
-      "@id": "olac:doi",
+      "@id": "txc:doi",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -885,7 +894,7 @@
       "rdfs:label": "doi"
     },
     {
-      "@id": "olac:editor",
+      "@id": "txc:editor",
       "@type": "rdf:Property",
       "description": "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases.",
       "domainIncludes": {
@@ -905,7 +914,7 @@
       "rdfs:label": "editor"
     },
     {
-      "@id": "olac:geoJSON",
+      "@id": "txc:geoJSON",
       "@type": "rdf:Property",
       "domainIncludes": [
         {
@@ -924,18 +933,31 @@
       "rdfs:label": "geoJSON"
     },
     {
-      "@id": "olac:hasAnnotation",
+      "@id": "txc:hasAnnotation",
       "@type": "rdf:Property",
       "domainIncludes": {
-        "@id": "olac:PrimaryText"
+        "@id": "txc:PrimaryText"
       },
       "name": "hasAnnotation",
-      "rangeIncludes": "\"olac:Annnotation\"",
+      "rangeIncludes": "\"txc:Annnotation\"",
       "rdfs:comment": "This resource references another resource that describes it  such as a translation, transcription or other analysis ",
       "rdfs:label": "hasAnnotation"
     },
     {
-      "@id": "olac:illustrator",
+      "@id": "txc:hasDerivation",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "txc:PrimaryText"
+      },
+      "name": "hasDerivation",
+      "rangeIncludes": {
+        "@id": "txc:DerivedText"
+      },
+      "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF",
+      "rdfs:label": "hasDerivation"
+    },
+    {
+      "@id": "txc:illustrator",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -954,7 +976,20 @@
       "rdfs:label": "illustrator"
     },
     {
-      "@id": "olac:interpreter",
+      "@id": "txc:indexableText",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "indexableText",
+      "rangeIncludes": {
+        "@id": "schema:File"
+      },
+      "rdfs:comment": "Indicates one or more  target File that  together contain the full text of an item  – each  file should indicate its language",
+      "rdfs:label": "indexableText"
+    },
+    {
+      "@id": "txc:interpreter",
       "@type": "rdf:Property",
       "description": "The choice between 'interpreter' and 'translator' may depend on the dynamics of the resource creation event or process. Generally, if the participant is translating 'live'; that is, while the speaker or signer is speaking or signing, she or he should be identified as an interpreter. Also, some discourse genres include a participant who interprets or explains a performance of some kind.",
       "domainIncludes": {
@@ -975,7 +1010,7 @@
       "rdfs:label": "interpreter"
     },
     {
-      "@id": "olac:interviewee",
+      "@id": "txc:interviewee",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -994,7 +1029,7 @@
       "rdfs:label": "interviewee"
     },
     {
-      "@id": "olac:interviewer",
+      "@id": "txc:interviewer",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1013,17 +1048,9 @@
       "rdfs:label": "interviewer"
     },
     {
-      "@id": "olac:isDeIdentified",
+      "@id": "txc:isDeIdentified",
       "@type": "rdf:Property",
-      "domainIncludes": [
-        {
-          "@id": "schema:CreativeWork"
-        },
-        {
-          "@id": "schema:Person"
-        },
-        "olac:PersonSnapshot"
-      ],
+      "domainIncludes": "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, txc:PersonSnapshot]",
       "name": "deidentified",
       "rangeIncludes": {
         "@id": "schema:Boolean"
@@ -1032,10 +1059,10 @@
       "rdfs:label": "isDeIdentified"
     },
     {
-      "@id": "olac:licensedOrganization",
+      "@id": "txc:licensedOrganization",
       "@type": "rdf:Property",
       "domainIncludes": {
-        "@id": "olac:OrganizationBasedLicense"
+        "@id": "txc:OrganizationBasedLicense"
       },
       "name": "licensedOrganization",
       "rangeIncludes": {
@@ -1046,22 +1073,22 @@
       "rdfs:label": "licensedOrganization"
     },
     {
-      "@id": "olac:linguisticGenre",
+      "@id": "txc:linguisticGenre",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "olac:CommunicationGenreValues"
+        "@id": "txc:CommunicationGenreValues"
       },
       "domainIncludes": {
-        "@id": "olac:PrimaryText"
+        "@id": "txc:PrimaryText"
       },
       "name": "linguisticGenre",
       "rdfs:label": "linguisticGenre"
     },
     {
-      "@id": "olac:modality",
+      "@id": "txc:modality",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "olac:CommunicationModeValues"
+        "@id": "txc:CommunicationModeValues"
       },
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1070,7 +1097,7 @@
       "rdfs:label": "modality"
     },
     {
-      "@id": "olac:participant",
+      "@id": "txc:participant",
       "@type": "rdf:Property",
       "description": "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in general sense of having allowed the creation event to take place, such as the mayor of an indigenous community.",
       "domainIncludes": {
@@ -1090,7 +1117,7 @@
       "rdfs:label": "participant"
     },
     {
-      "@id": "olac:performer",
+      "@id": "txc:performer",
       "@type": "rdf:Property",
       "description": "It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.",
       "domainIncludes": {
@@ -1111,10 +1138,10 @@
       "rdfs:label": "performer"
     },
     {
-      "@id": "olac:person",
+      "@id": "txc:person",
       "@type": "rdf:Property",
       "domainIncludes": {
-        "@id": "olac:PersonSnapshot"
+        "@id": "txc:PersonSnapshot"
       },
       "name": "person",
       "rangeIncludes": {
@@ -1124,7 +1151,7 @@
       "rdfs:label": "person"
     },
     {
-      "@id": "olac:photographer",
+      "@id": "txc:photographer",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1143,7 +1170,7 @@
       "rdfs:label": "photographer"
     },
     {
-      "@id": "olac:recorder",
+      "@id": "txc:recorder",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1162,7 +1189,7 @@
       "rdfs:label": "recorder"
     },
     {
-      "@id": "olac:register",
+      "@id": "txc:register",
       "@type": "rdf:Property",
       "description": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
       "domainIncludes": {
@@ -1174,7 +1201,7 @@
       "rdfs:label": "register"
     },
     {
-      "@id": "olac:researchParticipant",
+      "@id": "txc:researchParticipant",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1193,7 +1220,7 @@
       "rdfs:label": "researchParticipant"
     },
     {
-      "@id": "olac:researcher",
+      "@id": "txc:researcher",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1212,7 +1239,7 @@
       "rdfs:label": "researcher"
     },
     {
-      "@id": "olac:responder",
+      "@id": "txc:responder",
       "@type": "rdf:Property",
       "description": "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\".",
       "domainIncludes": {
@@ -1232,7 +1259,7 @@
       "rdfs:label": "responder"
     },
     {
-      "@id": "olac:signer",
+      "@id": "txc:signer",
       "@type": "rdf:Property",
       "description": "Signers are those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
       "domainIncludes": {
@@ -1253,7 +1280,7 @@
       "rdfs:label": "signer"
     },
     {
-      "@id": "olac:singer",
+      "@id": "txc:singer",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1272,7 +1299,7 @@
       "rdfs:label": "singer"
     },
     {
-      "@id": "olac:speaker",
+      "@id": "txc:speaker",
       "@type": "rdf:Property",
       "description": "Speakers are those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
       "domainIncludes": {
@@ -1293,7 +1320,7 @@
       "rdfs:label": "speaker"
     },
     {
-      "@id": "olac:sponsor",
+      "@id": "txc:sponsor",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1312,7 +1339,7 @@
       "rdfs:label": "sponsor"
     },
     {
-      "@id": "olac:transcriber",
+      "@id": "txc:transcriber",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1331,7 +1358,7 @@
       "rdfs:label": "transcriber"
     },
     {
-      "@id": "olac:translator",
+      "@id": "txc:translator",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
