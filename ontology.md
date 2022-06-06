@@ -1,14 +1,14 @@
 # Classes
 
-<a href="#Annotation">Annotation</a> | <a href="#DerivedText">DerivedText</a> | <a href="#OrganizationBasedLicense">OrganizationBasedLicense</a> | <a href="#OrganizationDepositLicense">OrganizationDepositLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#PrimaryText">PrimaryText</a>
+<a href="#Annotation">Annotation</a> | <a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DerivedText">DerivedText</a> | <a href="#OrganizationBasedLicense">OrganizationBasedLicense</a> | <a href="#OrganizationDepositLicense">OrganizationDepositLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#PrimaryText">PrimaryText</a>
 
 # Properties
 
-<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
+<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
 
 # DefinedTerms
 
-<a href="#Code">Code</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Song">Song</a> | <a href="#Sign">Sign</a> | <a href="#Syntactic">Syntactic</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
+<a href="#Code">Code</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#Song">Song</a> | <a href="#Sign">Sign</a> | <a href="#Syntactic">Syntactic</a> | <a href="#Task">Task</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
 
 <div id="Annotation" style="border-style: solid">
 
@@ -30,6 +30,32 @@ The resource includes information which annotates, describes or otherwise an som
 The resource contains a coded analysis or annotation
 
 </div><br>
+<div id="CollectionEvent" style="border-style: solid">
+
+# Class: CollectionEvent
+
+A description of an event at which one or more PrimaryTexts were captured,  eg as video or audio
+
+## Subclass of 
+
+  [<a href='http://schema.org/Event'> schema:Event </a>] | [<a href='http://schema.org/CreateAction'> schema:CreateAction </a>] | 
+
+## Properties
+
+[<a href='https://purl.archive.org/textcommons/terms#collectionEventType'> txc:collectionEventType </a>] | </div><br>
+<div id="CollectionProtocol" style="border-style: solid">
+
+# Class: CollectionProtocol
+
+Description of how this Object or Collection was obtained – such as strategy used for selecting orthographic text, or the prompts given to participants 
+
+## Subclass of 
+
+  [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+## Properties
+
+[<a href='https://purl.archive.org/textcommons/terms#collectionProtocolType'> txc:collectionProtocolType </a>] | </div><br>
 <div id="DerivedText" style="border-style: solid">
 
 # Class: DerivedText
@@ -52,6 +78,24 @@ An interactive discourse with two or more participants. Examples of dialogues in
 ## Is an expected value for the following property
 
 [<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+<div id="Drama"  style="border-style: solid">
+
+# Defined Term: Drama
+
+A planned, creative, rendition of discourse with two or more participants.
+
+
+## Is an expected value for the following property
+
+[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+<div id="Formulaic"  style="border-style: solid">
+
+# Defined Term: Formulaic
+
+The resource is a ritually or conventionally structured discourse.
+
+
+</div><br>
 <div id="Gesture"  style="border-style: solid">
 
 # Defined Term: Gesture
@@ -268,6 +312,15 @@ TODO
 ## Is an expected value for the following property
 
 [<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
+<div id="Session"  style="border-style: solid">
+
+# Defined Term: Session
+
+A collection event which is a recording or elicitation Session with particpants
+
+## Is an expected value for the following property
+
+[<a href='https://purl.archive.org/textcommons/terms#collectionEventType'> txc:collectionEventType </a>] | </div><br>
 <div id="Song"  style="border-style: solid">
 
 # Defined Term: Song
@@ -295,6 +348,15 @@ The resource contains annotation or other analysis describing  the syntactic str
 ## Is an expected value for the following property
 
 [<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
+<div id="Task"  style="border-style: solid">
+
+# Defined Term: Task
+
+The collection protocol includes a task-based prompt to partipants
+
+## Is an expected value for the following property
+
+[<a href='https://purl.archive.org/textcommons/terms#collectionProtocolType'> txc:collectionProtocolType </a>] | </div><br>
 <div id="Thesaurus"  style="border-style: solid">
 
 # Defined Term: Thesaurus
@@ -423,6 +485,44 @@ Number of audio channels this resource contains (eg 1, 2 5.1)
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+</div><br>
+<div id="collectionEventType"  style="border-style: solid">
+
+# Property: collectionEventType
+
+An event with a start and end time during which data are gathered from partipants, or from other materials
+
+## Values expected to be one of these types: 
+
+
+
+## Used on these types: 
+
+[<a href='https://purl.archive.org/textcommons/terms#CollectionEvent'> txc:CollectionEvent </a>] | 
+
+## Values expected to be one of these defined terms: 
+
+[<a href='https://purl.archive.org/textcommons/terms#Session'> txc:Session </a>] | 
+
+</div><br>
+<div id="collectionProtocolType"  style="border-style: solid">
+
+# Property: collectionProtocolType
+
+A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection
+
+## Values expected to be one of these types: 
+
+
+
+## Used on these types: 
+
+[<a href='https://purl.archive.org/textcommons/terms#CollectionProtocol'> txc:CollectionProtocol </a>] | 
+
+## Values expected to be one of these defined terms: 
+
+[<a href='https://purl.archive.org/textcommons/terms#Task'> txc:Task </a>] | 
 
 </div><br>
 <div id="compiler"  style="border-style: solid">
@@ -711,7 +811,7 @@ undefined
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='https://purl.archive.org/textcommons/terms#Thesaurus'> txc:Thesaurus </a>] | [<a href='https://purl.archive.org/textcommons/terms#Dialogue'> txc:Dialogue </a>] | [<a href='https://purl.archive.org/textcommons/terms#Oratory'> txc:Oratory </a>] | [<a href='https://purl.archive.org/textcommons/terms#Report'> txc:Report </a>] | [<a href='https://purl.archive.org/textcommons/terms#Ludic'> txc:Ludic </a>] | [<a href='https://purl.archive.org/textcommons/terms#Procedural'> txc:Procedural </a>] | [<a href='https://purl.archive.org/textcommons/terms#Narrative'> txc:Narrative </a>] | [<a href='https://purl.archive.org/textcommons/terms#Interview'> txc:Interview </a>] |  "txc:Drama" | [<a href='https://purl.archive.org/textcommons/terms#Informational'> txc:Informational </a>] | 
+[<a href='https://purl.archive.org/textcommons/terms#Thesaurus'> txc:Thesaurus </a>] | [<a href='https://purl.archive.org/textcommons/terms#Dialogue'> txc:Dialogue </a>] | [<a href='https://purl.archive.org/textcommons/terms#Oratory'> txc:Oratory </a>] | [<a href='https://purl.archive.org/textcommons/terms#Report'> txc:Report </a>] | [<a href='https://purl.archive.org/textcommons/terms#Ludic'> txc:Ludic </a>] | [<a href='https://purl.archive.org/textcommons/terms#Procedural'> txc:Procedural </a>] | [<a href='https://purl.archive.org/textcommons/terms#Narrative'> txc:Narrative </a>] | [<a href='https://purl.archive.org/textcommons/terms#Interview'> txc:Interview </a>] | [<a href='https://purl.archive.org/textcommons/terms#Drama'> txc:Drama </a>] | [<a href='https://purl.archive.org/textcommons/terms#Informational'> txc:Informational </a>] |  "txc:formulaic" | 
 
 </div><br>
 <div id="modality"  style="border-style: solid">

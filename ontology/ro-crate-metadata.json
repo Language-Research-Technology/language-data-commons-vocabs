@@ -15,7 +15,7 @@
     {
       "@id": "#261c406f-63bd-491f-ae4f-8208a9c784b8",
       "@type": "Thing",
-      "inDefinedTermSet": "DerivedTextTypeValues",
+      "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": ""
     },
     {
@@ -41,11 +41,52 @@
       "@id": "txc:Code",
       "@type": "DefinedTerm",
       "description": "The resource contains a coded analysis or annotation",
-      "inDefinedTermSet": "CommunicationModeValues",
+      "inDefinedTermSet": "CommunicationModeTerms",
       "name": "Code"
     },
     {
-      "@id": "txc:CommunicationGenreValues",
+      "@id": "txc:CollectionEvent",
+      "@type": "rdfs:Class",
+      "name": "CollectionEvent",
+      "rdfs:comment": "A description of an event at which one or more PrimaryTexts were captured,  eg as video or audio",
+      "rdfs:label": "CollectionEvent",
+      "rdfs:subClassOf": [
+        {
+          "@id": "schema:Event"
+        },
+        {
+          "@id": "schema:CreateAction"
+        }
+      ]
+    },
+    {
+      "@id": "txc:CollectionEventTypeTerms",
+      "@type": "DefinedTermSet",
+      "hasDefinedTerm": {
+        "@id": "txc:Session"
+      },
+      "name": "txc:CollectionEventTypeTerms"
+    },
+    {
+      "@id": "txc:CollectionProtocol",
+      "@type": "rdfs:Class",
+      "name": "CollectionProtocol",
+      "rdfs:comment": "Description of how this Object or Collection was obtained – such as strategy used for selecting orthographic text, or the prompts given to participants ",
+      "rdfs:label": "CollectionProtocol",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "txc:CollectionProtocolTypeTerms",
+      "@type": "DefinedTermSet",
+      "hasDefinedTerm": {
+        "@id": "txc:Task"
+      },
+      "name": "txc:CollectionProtocolTypeTerms"
+    },
+    {
+      "@id": "txc:CommunicationGenreTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
@@ -72,15 +113,18 @@
         {
           "@id": "txc:Interview"
         },
-        "\"txc:Drama\"",
+        {
+          "@id": "txc:Drama"
+        },
         {
           "@id": "txc:Informational"
-        }
+        },
+        "\"txc:formulaic\""
       ],
       "name": "LinguistcGenreTerms"
     },
     {
-      "@id": "txc:CommunicationModeValues",
+      "@id": "txc:CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
@@ -110,7 +154,7 @@
       }
     },
     {
-      "@id": "txc:DerivedTextTypeValues",
+      "@id": "txc:DerivedTextTypeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
@@ -147,34 +191,50 @@
       "@id": "txc:Dialogue",
       "@type": "DefinedTerm",
       "description": "An interactive discourse with two or more participants. Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.",
-      "inDefinedTermSet": "CommunicationGenreValues",
+      "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Dialogue"
+    },
+    {
+      "@id": "txc:Drama",
+      "@type": "DefinedTerm",
+      "description": "A planned, creative, rendition of discourse with two or more participants.\n",
+      "inDefinedTermSet": "CommunicationGenreTerms",
+      "name": "Drama",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/drama"
+    },
+    {
+      "@id": "txc:Formulaic",
+      "@type": "DefinedTerm",
+      "description": "The resource is a ritually or conventionally structured discourse.\n",
+      "inDefinedTermSet": "CommunicationGenreTerms",
+      "name": "Formulaic",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/formulaic"
     },
     {
       "@id": "txc:Gesture",
       "@type": "DefinedTerm",
-      "inDefinedTermSet": "CommunicationModeValues",
+      "inDefinedTermSet": "CommunicationModeTerms",
       "name": "Gesture"
     },
     {
       "@id": "txc:Handwritten",
       "@type": "DefinedTerm",
       "description": "The resource was written using a writing implement such as pen, pencil, brush or computer stylus",
-      "inDefinedTermSet": "CommunicationModeValues",
+      "inDefinedTermSet": "CommunicationModeTerms",
       "name": "Handwritten"
     },
     {
       "@id": "txc:Informational",
       "@type": "DefinedTerm",
       "description": "SIMON – TODO",
-      "inDefinedTermSet": "CommunicationGenreValues",
+      "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Informational"
     },
     {
       "@id": "txc:Interview",
       "@type": "DefinedTerm",
       "description": "The resource is conversation where one or more speakers are directing the conversation",
-      "inDefinedTermSet": "DerivedTextTypeValues",
+      "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Interview"
     },
     {
@@ -193,20 +253,20 @@
     {
       "@id": "txc:Ludic",
       "@type": "DefinedTerm",
-      "inDefinedTermSet": "CommunicationGenreValues",
+      "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Ludic"
     },
     {
       "@id": "txc:Narrative",
       "@type": "DefinedTerm",
       "description": "A monologic discourse which represents temporally organized events.",
-      "inDefinedTermSet": "CommunicationGenreValues",
+      "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Narrative"
     },
     {
       "@id": "txc:Oratory",
       "@type": "DefinedTerm",
-      "inDefinedTermSet": "CommunicationGenreValues",
+      "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Oratory"
     },
     {
@@ -243,11 +303,11 @@
       "@id": "txc:Orthography",
       "@type": "DefinedTerm",
       "description": "The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc",
-      "inDefinedTermSet": "CommunicationModeValues",
+      "inDefinedTermSet": "CommunicationModeTerms",
       "name": "Orthography"
     },
     {
-      "@id": "txc:OrthographyTypeValues",
+      "@id": "txc:OrthographyTypeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
@@ -260,12 +320,12 @@
           "@id": "txc:Typeset"
         }
       ],
-      "name": ""
+      "name": "OrthographyTypeTerms"
     },
     {
       "@id": "txc:PartOfSpeech",
       "@type": "DefinedTerm",
-      "inDefinedTermSet": "DerivedTextTypeValues",
+      "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "PartOfSpeech"
     },
     {
@@ -286,19 +346,19 @@
     {
       "@id": "txc:Phonemic",
       "@type": "DefinedTerm",
-      "inDefinedTermSet": "DerivedTextTypeValues",
+      "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Phonemic"
     },
     {
       "@id": "txc:Phonetic",
       "@type": "DefinedTerm",
-      "inDefinedTermSet": "DerivedTextTypeValues",
+      "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Phonetic"
     },
     {
       "@id": "txc:Phonological",
       "@type": "DefinedTerm",
-      "inDefinedTermSet": "DerivedTextTypeValues",
+      "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Phonological"
     },
     {
@@ -315,54 +375,73 @@
     {
       "@id": "txc:Procedural",
       "@type": "DefinedTerm",
-      "inDefinedTermSet": "CommunicationGenreValues",
+      "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Procedural"
     },
     {
       "@id": "txc:Prosodic",
       "@type": "DefinedTerm",
-      "inDefinedTermSet": "DerivedTextTypeValues",
+      "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Prosodic"
     },
     {
       "@id": "txc:Report",
       "@type": "DefinedTerm",
-      "inDefinedTermSet": "CommunicationGenreValues",
+      "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Report"
     },
     {
       "@id": "txc:Semantic",
       "@type": "DefinedTerm",
       "description": "TODO",
-      "inDefinedTermSet": "CommunicationModeValues",
+      "inDefinedTermSet": "CommunicationModeTerms",
       "name": "Semantic"
+    },
+    {
+      "@id": "txc:Session",
+      "@type": "DefinedTerm",
+      "description": "A collection event which is a recording or elicitation Session with particpants",
+      "inDefinedTermSet": {
+        "@id": "txc:OrthographyTypeTerms"
+      },
+      "name": "Session",
+      "sameAs": "https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"
     },
     {
       "@id": "txc:Singing",
       "@type": "DefinedTerm",
       "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
-      "inDefinedTermSet": "CommunicationModeValues",
+      "inDefinedTermSet": "CommunicationModeTerms",
       "name": "Song"
     },
     {
       "@id": "txc:Speech",
       "@type": "DefinedTerm",
       "description": "This resource contains a video recording of  sign language",
-      "inDefinedTermSet": "CommunicationModeValues",
+      "inDefinedTermSet": "CommunicationModeTerms",
       "name": "Sign"
     },
     {
       "@id": "txc:Syntactic",
       "@type": "DefinedTerm",
       "description": "The resource contains annotation or other analysis describing  the syntactic structure of a PrimaryText",
-      "inDefinedTermSet": "DerivedTextTypeValues",
+      "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Syntactic"
+    },
+    {
+      "@id": "txc:Task",
+      "@type": "DefinedTerm",
+      "description": "The collection protocol includes a task-based prompt to partipants",
+      "inDefinedTermSet": {
+        "@id": "txc:CollectionProtocolTypeTerms"
+      },
+      "name": "Task"
     },
     {
       "@id": "txc:Thesaurus",
       "@type": "DefinedTerm",
       "description": "The resource contains  a list or data structure consisting  of words or concepts arranged according to sense.  \n",
-      "inDefinedTermSet": "CommunicationGenreValues",
+      "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Thesaurus",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/singing"
     },
@@ -370,7 +449,7 @@
       "@id": "txc:TimeAligned",
       "@type": "DefinedTerm",
       "description": "The resource contains a written or coded annotation(s) which has data aligning the annotation(s)  with a PrimaryText",
-      "inDefinedTermSet": "DerivedTextTypeValues",
+      "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "TimeAligned",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription"
     },
@@ -378,14 +457,14 @@
       "@id": "txc:Transcription",
       "@type": "DefinedTerm",
       "description": "The resource contains a transcription, which  is a written (orthographic) or coded  representation of an audio or visual signal. ",
-      "inDefinedTermSet": "DerivedTextTypeValues",
+      "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Transcription",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription"
     },
     {
       "@id": "txc:Translation",
       "@type": "DefinedTerm",
-      "inDefinedTermSet": "DerivedTextTypeValues",
+      "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Translation"
     },
     {
@@ -393,7 +472,7 @@
       "@type": "DefinedTerm",
       "description": "The resource has been formatted for display",
       "inDefinedTermSet": {
-        "@id": "txc:OrthographyTypeValues"
+        "@id": "txc:OrthographyTypeTerms"
       },
       "name": "Typeset"
     },
@@ -402,7 +481,7 @@
       "@type": "DefinedTerm",
       "description": "The annotation has time-alignement with the PrimaryText",
       "inDefinedTermSet": {
-        "@id": "txc:OrthographyTypeValues"
+        "@id": "txc:OrthographyTypeTerms"
       },
       "name": "Typewritten"
     },
@@ -423,7 +502,7 @@
       "@id": "txc:annotationType",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "txc:DerivedTextTypeValues"
+        "@id": "txc:DerivedTextTypeTerms"
       },
       "domainIncludes": {
         "@id": "txc:Annotation"
@@ -478,6 +557,32 @@
       "name": "channels",
       "rdfs:comment": "Number of audio channels this resource contains (eg 1, 2 5.1)",
       "rdfs:label": "channels"
+    },
+    {
+      "@id": "txc:collectionEventType",
+      "@type": "rdf:Property",
+      "definedTermSet": {
+        "@id": "txc:CollectionEventTypeTerms"
+      },
+      "domainIncludes": {
+        "@id": "txc:CollectionEvent"
+      },
+      "name": "collectionEventType",
+      "rdfs:comment": "An event with a start and end time during which data are gathered from partipants, or from other materials",
+      "rdfs:label": "collectionEventType"
+    },
+    {
+      "@id": "txc:collectionProtocolType",
+      "@type": "rdf:Property",
+      "definedTermSet": {
+        "@id": "txc:CollectionProtocolTypeTerms"
+      },
+      "domainIncludes": {
+        "@id": "txc:CollectionProtocol"
+      },
+      "name": "collectionProtocolType",
+      "rdfs:comment": "A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection",
+      "rdfs:label": "collectionProtocolType"
     },
     {
       "@id": "txc:compiler",
@@ -789,7 +894,7 @@
       "@id": "txc:linguisticGenre",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "txc:CommunicationGenreValues"
+        "@id": "txc:CommunicationGenreTerms"
       },
       "domainIncludes": {
         "@id": "txc:PrimaryText"
@@ -801,7 +906,7 @@
       "@id": "txc:modality",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "txc:CommunicationModeValues"
+        "@id": "txc:CommunicationModeTerms"
       },
       "domainIncludes": {
         "@id": "schema:CreativeWork"
