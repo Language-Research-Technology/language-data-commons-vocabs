@@ -4,11 +4,11 @@
 
 # Properties
 
-<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
+<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
 
 # DefinedTerms
 
-<a href="#Code">Code</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#Song">Song</a> | <a href="#Sign">Sign</a> | <a href="#Syntactic">Syntactic</a> | <a href="#Task">Task</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
+<a href="#Code">Code</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#Song">Song</a> | <a href="#Sign">Sign</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
 
 <div id="Annotation" style="border-style: solid">
 
@@ -88,6 +88,15 @@ A planned, creative, rendition of discourse with two or more participants.
 ## Is an expected value for the following property
 
 [<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+<div id="ElicitationTask"  style="border-style: solid">
+
+# Defined Term: ElicitationTask
+
+The collection protocol includes a task-based prompt to participants
+
+## Is an expected value for the following property
+
+[<a href='https://purl.archive.org/textcommons/terms#collectionProtocolType'> txc:collectionProtocolType </a>] | </div><br>
 <div id="Formulaic"  style="border-style: solid">
 
 # Defined Term: Formulaic
@@ -348,11 +357,11 @@ The resource contains annotation or other analysis describing  the syntactic str
 ## Is an expected value for the following property
 
 [<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
-<div id="Task"  style="border-style: solid">
+<div id="TextSelectionCriteria"  style="border-style: solid">
 
-# Defined Term: Task
+# Defined Term: TextSelectionCriteria
 
-The collection protocol includes a task-based prompt to partipants
+A description of the criteria used to select texts in a collection
 
 ## Is an expected value for the following property
 
@@ -522,7 +531,7 @@ A description of the process used to collect or collate data, such as prompts gi
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='https://purl.archive.org/textcommons/terms#Task'> txc:Task </a>] | 
+[<a href='https://purl.archive.org/textcommons/terms#ElicitationTask'> txc:ElicitationTask </a>] | [<a href='https://purl.archive.org/textcommons/terms#TextSelectionCriteria'> txc:TextSelectionCriteria </a>] | 
 
 </div><br>
 <div id="compiler"  style="border-style: solid">
@@ -660,9 +669,9 @@ A valid GEOJson feature or feature collection as a string that can be parsed as 
 [<a href='http://schema.org/GeoCoordinates'> schema:GeoCoordinates </a>] | [<a href='http://schema.org/GeoShape'> schema:GeoShape </a>] | [<a href='http://schema.org/Language'> schema:Language </a>] | 
 
 </div><br>
-<div id="hasAnnotation"  style="border-style: solid">
+<div id="hasCollectionProtocol"  style="border-style: solid">
 
-# Property: hasAnnotation
+# Property: hasCollectionProtocol
 
 This resource references another resource that describes it  such as a translation, transcription or other analysis 
 
@@ -673,6 +682,21 @@ This resource references another resource that describes it  such as a translati
 ## Used on these types: 
 
 [<a href='https://purl.archive.org/textcommons/terms#PrimaryText'> txc:PrimaryText </a>] | 
+
+</div><br>
+<div id="hasAnnotation"  style="border-style: solid">
+
+# Property: hasAnnotation
+
+This resource  was assembled or collected according to the linked protocol
+
+## Values expected to be one of these types: 
+
+[<a href='https://purl.archive.org/textcommons/terms#CollectionProtocol'> txc:CollectionProtocol </a>] | 
+
+## Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
 </div><br>
 <div id="hasDerivation"  style="border-style: solid">

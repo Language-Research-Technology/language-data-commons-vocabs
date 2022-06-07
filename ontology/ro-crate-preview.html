@@ -121,20 +121,33 @@
           {
             "@id": "txc:collectionProtocolType"
           }
+        ],
+        "rangeIncludes": [
+          {
+            "@id": "txc:hasCollectionProtocol"
+          }
         ]
       }
     },
     {
       "@id": "txc:CollectionProtocolTypeTerms",
       "@type": "DefinedTermSet",
-      "hasDefinedTerm": {
-        "@id": "txc:Task"
-      },
+      "hasDefinedTerm": [
+        {
+          "@id": "txc:ElicitationTask"
+        },
+        {
+          "@id": "txc:TextSelectionCriteria"
+        }
+      ],
       "name": "txc:CollectionProtocolTypeTerms",
       "@reverse": {
         "inDefinedTermSet": [
           {
-            "@id": "txc:Task"
+            "@id": "txc:ElicitationTask"
+          },
+          {
+            "@id": "txc:TextSelectionCriteria"
           }
         ],
         "definedTermSet": [
@@ -304,6 +317,22 @@
         "hasDefinedTerm": [
           {
             "@id": "txc:CommunicationGenreTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "txc:ElicitationTask",
+      "@type": "DefinedTerm",
+      "description": "The collection protocol includes a task-based prompt to participants",
+      "inDefinedTermSet": {
+        "@id": "txc:CollectionProtocolTypeTerms"
+      },
+      "name": "ElicitationTask",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "txc:CollectionProtocolTypeTerms"
           }
         ]
       }
@@ -724,13 +753,13 @@
       }
     },
     {
-      "@id": "txc:Task",
+      "@id": "txc:TextSelectionCriteria",
       "@type": "DefinedTerm",
-      "description": "The collection protocol includes a task-based prompt to partipants",
+      "description": "A description of the criteria used to select texts in a collection",
       "inDefinedTermSet": {
         "@id": "txc:CollectionProtocolTypeTerms"
       },
-      "name": "Task",
+      "name": "TextSelectionCriteria",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1103,6 +1132,19 @@
       "name": "hasAnnotation",
       "rangeIncludes": "\"txc:Annnotation\"",
       "rdfs:comment": "This resource references another resource that describes it  such as a translation, transcription or other analysis ",
+      "rdfs:label": "hasCollectionProtocol"
+    },
+    {
+      "@id": "txc:hasCollectionProtocol",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "hasAnnotation",
+      "rangeIncludes": {
+        "@id": "txc:CollectionProtocol"
+      },
+      "rdfs:comment": "This resource  was assembled or collected according to the linked protocol",
       "rdfs:label": "hasAnnotation"
     },
     {

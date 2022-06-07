@@ -1,0 +1,432 @@
+{
+    "metadata": {
+        "name": "TextCommons top level Collection (corpus)",
+        "description": "Describo profile for https://purl.archive.org/textcommons/profile#Collection",
+        "version": 0.1
+    },
+    "rootDatasets": {
+        "Schema": { "type": "Dataset, RepositoryCollection" }
+       
+    },
+    "classes": {
+        "Dataset": {
+            "definition": "override",
+            "subClassOf": [],
+            "inputs": [
+                {
+                    "id": "http://schema.org/conformsTo",
+                    "name": "conformsTo",
+                    "help": "A link to the Text Commons RO-Crate profile for collections",
+                    "type": ["SelectURL"],
+                    "values" :[
+                        "https://purl.archive.org/textcommons/profile#Collection"
+                    ],
+                    "multiple": false
+                },
+              {
+                "id": "https://schema.org/name",
+                "name": "name",
+                "label": "Name",
+                "help": "The name of this collection",
+                "required": true,
+                "multiple": false,
+                "type": ["Text"]
+            },
+            {
+                "id": "http://schema.org/author",
+                "name": "author",
+                "help": "The person or organization responsible for creating this collection of data",
+                "type": ["Person", "Organization"],
+                "multiple": true
+            },
+            {
+                "id": "http://schema.org/publisher]",
+                "name": "publisher",
+                "help": "The organization responsible for releasing this collection of data",
+                "type": ["Organization"],
+                "multiple": true
+            },
+            {
+                "id": "http://schema.org/funder",
+                "name": "funder",
+                "help": "Organization(s) responsible for funding the creation or collection of this data",
+                "type": ["Organization"],
+                "multiple": true
+            },
+              {
+                "id": "http://schema.org/citation",
+                "name": "citation",
+                "help": "Associated Publications",
+                "type": ["Book", "ScholarlyArticle", "CreativeWork"],
+                "multiple": true
+            },
+            {
+              "id": "http://schema.org/description",
+              "name": "description",
+              "help": "An abstract of the collection. Include as much detail as possible about the motivation and use of the collection, including things that we do not yet have properties for",
+              "type": ["TextArea"],
+              "multiple": false
+          },
+          {
+            "id": "http://schema.org/temporalCoverage",
+            "name": "temporalCoverage",
+            "help": "The range of years of creation for items in this dataset eg 1900-1945. If there are sub collections with different coverages put this on the sub-collections not the top-level. ",
+            "type": ["Text"],
+            "multiple": false
+        },
+        {
+            "id": "http://schema.org/hasCollectionProtocol",
+            "name": "hasCollectionProtocol",
+            "help": "Link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection / sub-collection",
+            "type": ["CollectionProtocol"],
+            "multiple": false
+        },
+          {
+            "id": "http://schema.org/hasMember",
+            "name": "hasMember",
+            "help": "If this collection has sub-collections add them here.",
+            "type": ["RepositoryCollection"],
+            "multiple": true
+        }]},
+    
+        "RepositoryCollection": {
+            "definition": "override",
+            "subClassOf": [],
+            "inputs": [
+                {
+                    "id": "http://schema.org/conformsTo",
+                    "name": "conformsTo",
+                    "help": "A link to the Text Commons RO-Crate profile for collections",
+                    "type": ["SelectURL"],
+                    "values" :[
+                        "https://purl.archive.org/textcommons/profile#Collection"
+                    ],
+                    "multiple": false
+                },
+              {
+                "id": "https://schema.org/name",
+                "name": "name",
+                "label": "Name",
+                "help": "The name of this collection",
+                "required": true,
+                "multiple": false,
+                "type": ["Text"]
+            },
+            {
+                "id": "http://schema.org/author",
+                "name": "author",
+                "help": "The person or organization responsible for creating this collection of data. Authors should be identified using URIs such as ORCiD or ROR",
+                "type": ["Person", "Organization"],
+                "multiple": true
+            },
+            {
+                "id": "http://schema.org/funder",
+                "name": "funder",
+                "help": "Organization(s) responsible for funding the creation or collection of this data",
+                "type": ["Organization"],
+                "multiple": true
+            },
+            {
+                "id": "http://schema.org/citation",
+                "name": "citation",
+                "help": "Associated Publications",
+                "type": ["Book", "ScholarlyArticle", "CreativeWork"],
+                "multiple": true
+            },
+            {
+              "id": "http://schema.org/description",
+              "name": "description",
+              "help": "A description of the collection",
+              "type": ["TextArea"],
+              "multiple": false
+          },
+          {
+            "id": "http://schema.org/temporalCoverage",
+            "name": "temporalCoverage",
+            "help": "The range of years of creation for items in this dataset eg 1900-1945. If there are sub collections with different coverages put this on the sub-collections not the top-level. ",
+            "type": ["Text"],
+            "multiple": false
+        },
+        {
+            "id": "http://schema.org/hasCollectionProtocol",
+            "name": "hasCollectionProtocol",
+            "help": "Link to a CollectionProtocol object with (at least) a summary of how resources were selected or elicited for this collection / sub-collection",
+            "type": ["CollectionProtocol"],
+            "multiple": false
+        },
+          {
+            "id": "http://schema.org/hasMember",
+            "name": "hasMember",
+            "help": "Sub Collection",
+            "type": ["RepositoryCollection"],
+            "multiple": true
+        },
+          {
+            "id": "http://schema.org/dateCreated",
+            "name": "dateCreated",
+            "help": "The (earliest) date the data in this dataset were created",
+            "type": ["Date"],
+            "multiple": false
+        }]},
+        "Book": {
+            "definition": "override",
+            "subClassOf": [],
+            "inputs": [
+              {
+                "id": "https://schema.org/name",
+                "name": "name",
+                "label": "Name",
+                "help": "The name of this collection",
+                "required": true,
+                "multiple": false,
+                "type": ["Text"]
+            },
+            {
+                "id": "http://schema.org/author",
+                "name": "author",
+                "help": "The person or organization responsible for creating this collection of data",
+                "type": ["Person", "Organization"],
+                "multiple": true
+            },
+            {
+              "id": "http://schema.org/description",
+              "name": "description",
+              "help": "A description of the collection",
+              "type": ["TextArea"],
+              "multiple": false
+          },
+          {
+            "id": "http://schema.org/datePublished",
+            "name": "datePublished",
+            "help": "The (earliest) date the data in this dataset were created",
+            "type": ["Date"],
+            "multiple": false
+        },
+        {
+            "id": "http://schema.org/isbn",
+            "name": "isbn",
+            "help": "The ISBN for this book",
+            "type": ["Date"],
+            "multiple": false
+        }]},
+        "CreativeWork" : {
+            "definition": "override",
+            "subClassOf": [],
+            "inputs": [
+              {
+                "id": "https://schema.org/name",
+                "name": "name",
+                "label": "Name",
+                "help": "The name of this collection",
+                "required": true,
+                "multiple": false,
+                "type": ["Text"]
+            },
+            {
+                "id": "http://schema.org/description",
+                "name": "description",
+                "help": "An abstract of the book. Include citation details.",
+                "type": ["TextArea"],
+                "multiple": false
+            },
+            {
+                "id": "http://schema.org/author",
+                "name": "author",
+                "help": "The person or organization responsible for creating this collection of data",
+                "type": ["Person", "Organization"],
+                "multiple": true
+            },
+            {
+              "id": "http://schema.org/description",
+              "name": "description",
+              "help": "A description of the collection",
+              "type": ["TextArea"],
+              "multiple": false
+          },
+          {
+            "id": "http://schema.org/datePublished",
+            "name": "datePublished",
+            "help": "The (earliest) date the data in this dataset were created",
+            "type": ["Date"],
+            "multiple": false
+        },
+        {
+            "id": "http://schema.org/isbn",
+            "name": "isbn",
+            "help": "The ISBN for this book",
+            "type": ["Date"],
+            "multiple": false
+        }
+    ]
+},
+ "ScholarlyArticle" : {
+            "definition": "override",
+            "subClassOf": [],
+            "inputs": [
+              {
+                "id": "https://schema.org/name",
+                "name": "name",
+                "label": "Name",
+                "help": "The name of this article",
+                "required": true,
+                "multiple": false,
+                "type": ["Text"]
+            },
+            {
+                "id": "http://schema.org/description",
+                "name": "description",
+                "help": "An abstract of the article, include details of how to cite it. ",
+                "type": ["TextArea"],
+                "multiple": false
+            },
+            {
+                "id": "http://schema.org/author",
+                "name": "author",
+                "help": "The person or organization responsible for creating this collection of data",
+                "type": ["Person", "Organization"],
+                "multiple": true
+            },
+            {
+              "id": "http://schema.org/description",
+              "name": "description",
+              "help": "A description of the collection",
+              "type": ["TextArea"],
+              "multiple": false
+          },
+          {
+            "id": "http://schema.org/datePublished",
+            "name": "datePublished",
+            "help": "The (earliest) date the data in this dataset were created",
+            "type": ["Date"],
+            "multiple": false
+        }
+    ]
+},
+"CollectionProtocol" : {
+    "definition": "override",
+    "subClassOf": [],
+    "inputs": [
+      {
+        "id": "https://schema.org/name",
+        "name": "name",
+        "label": "Name",
+        "help": "The name of this artilce",
+        "required": true,
+        "multiple": false,
+        "type": ["Text"]
+    },
+    {
+        "id": "http://schema.org/description",
+        "name": "description",
+        "help": "An abstract of the article, include details of how to cite it. ",
+        "type": ["TextArea"],
+        "multiple": false
+    },
+    {
+        "id": "http://schema.org/author",
+        "name": "author",
+        "help": "The person or organization responsible for creating this collection of data",
+        "type": ["Person", "Organization"],
+        "multiple": true
+    },
+    {
+      "id": "http://schema.org/description",
+      "name": "description",
+      "help": "A summary of the collection protocol used for this collection or subcollection - eg how texts were selected, or what prompts were given to participants",
+      "type": ["TextArea"],
+      "multiple": false
+  },
+  {
+    "id": "http://purl.archive.org/textcommons/terms#CollectionProtocolType",
+    "name": "collectionProtocolType",
+    "help": "What kind of collection protocol is this",
+    "type": ["SelectObject"],
+    "values": [
+        {
+            "@id": "txc:ElicitationTask",
+            "@type": "DefinedTerm",
+            "description": "The collection protocol includes a task-based prompt to participants",
+            "inDefinedTermSet": {
+              "@id": "txc:CollectionProtocolTypeTerms"
+            },
+            "name": "ElicitationTask"
+          },{
+            "@id": "txc:TextSelectionCriteria",
+            "@type": "DefinedTerm",
+            "description": "A description of the criteria used to select texts in a collection",
+            "inDefinedTermSet": {
+              "@id": "txc:CollectionProtocolTypeTerms"
+            },
+            "name": "TextSelectionCriteria"
+          }
+
+     ],
+    "multiple": false
+},
+  {
+    "id": "http://schema.org/datePublished",
+    "name": "datePublished",
+    "help": "The (earliest) date the data in this dataset were created",
+    "type": ["Date"],
+    "multiple": false
+}
+]
+},
+"Person": {
+            "definition": "override",
+            "subClassOf": [],
+            "inputs": [
+                {
+                    "id": "https://schema.org/name",
+                    "name": "name",
+                    "label": "name",
+                    "help": "The name the person",
+                    "required": true,
+                    "multiple": false,
+                    "type": ["Text"]
+                },
+                {
+                    "id": "http://schema.org/description",
+                    "name": "description",
+                    "help": "Add any additional info not covered by other properties here.",
+                    "type": ["TextArea"],
+                    "multiple": false
+                },
+                {
+                    "id": "https://schema.org/affiliation",
+                    "name": "affiliation",
+                    "label": "affiliation",
+                    "help": "The name the person",
+                    "required": false,
+                    "multiple": true,
+                    "type": ["Organization"]
+                }
+            ]
+        },
+"Organization": {
+            "definition": "override",
+            "subClassOf": [],
+            "inputs": [
+                {
+                    "id": "https://schema.org/name",
+                    "name": "name",
+                    "label": "name",
+                    "help": "The name of the organization",
+                    "required": true,
+                    "multiple": false,
+                    "type": ["Text"]
+                },
+                {
+                    "id": "http://schema.org/description",
+                    "name": "description",
+                    "help": "An abstract of the collection. Include as much detail as possible about the motivation and use of the collection, including things that we do not yet have properties for",
+                    "type": ["TextArea"],
+                    "multiple": false
+                }
+            ]
+        }
+            
+        
+    },
+    "enabledClasses": ["Dataset", "Person", "Organization", "Book", "ScholarlyArticle", "RepositoryCollection", "CreativeWork", "CollectionProtocol"]
+}   

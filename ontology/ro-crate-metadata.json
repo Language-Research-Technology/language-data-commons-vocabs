@@ -80,9 +80,14 @@
     {
       "@id": "txc:CollectionProtocolTypeTerms",
       "@type": "DefinedTermSet",
-      "hasDefinedTerm": {
-        "@id": "txc:Task"
-      },
+      "hasDefinedTerm": [
+        {
+          "@id": "txc:ElicitationTask"
+        },
+        {
+          "@id": "txc:TextSelectionCriteria"
+        }
+      ],
       "name": "txc:CollectionProtocolTypeTerms"
     },
     {
@@ -201,6 +206,15 @@
       "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Drama",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/drama"
+    },
+    {
+      "@id": "txc:ElicitationTask",
+      "@type": "DefinedTerm",
+      "description": "The collection protocol includes a task-based prompt to participants",
+      "inDefinedTermSet": {
+        "@id": "txc:CollectionProtocolTypeTerms"
+      },
+      "name": "ElicitationTask"
     },
     {
       "@id": "txc:Formulaic",
@@ -429,13 +443,13 @@
       "name": "Syntactic"
     },
     {
-      "@id": "txc:Task",
+      "@id": "txc:TextSelectionCriteria",
       "@type": "DefinedTerm",
-      "description": "The collection protocol includes a task-based prompt to partipants",
+      "description": "A description of the criteria used to select texts in a collection",
       "inDefinedTermSet": {
         "@id": "txc:CollectionProtocolTypeTerms"
       },
-      "name": "Task"
+      "name": "TextSelectionCriteria"
     },
     {
       "@id": "txc:Thesaurus",
@@ -759,6 +773,19 @@
       "name": "hasAnnotation",
       "rangeIncludes": "\"txc:Annnotation\"",
       "rdfs:comment": "This resource references another resource that describes it  such as a translation, transcription or other analysis ",
+      "rdfs:label": "hasCollectionProtocol"
+    },
+    {
+      "@id": "txc:hasCollectionProtocol",
+      "@type": "rdf:Property",
+      "domainIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "name": "hasAnnotation",
+      "rangeIncludes": {
+        "@id": "txc:CollectionProtocol"
+      },
+      "rdfs:comment": "This resource  was assembled or collected according to the linked protocol",
       "rdfs:label": "hasAnnotation"
     },
     {
