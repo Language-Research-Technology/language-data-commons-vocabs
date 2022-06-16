@@ -203,10 +203,17 @@
             "multiple": false
         },
         {
+            "id": "http://schema.org/publisher",
+            "name": "publisher",
+            "help": "The Organization that published this work (use ROR IDs for institutions)",
+            "type": ["Organization"],
+            "multiple": false
+        },
+        {
             "id": "http://schema.org/isbn",
             "name": "isbn",
             "help": "The ISBN for this book",
-            "type": ["Date"],
+            "type": ["Text"],
             "multiple": false
         }]},
         "CreativeWork" : {
@@ -251,10 +258,10 @@
             "multiple": false
         },
         {
-            "id": "http://schema.org/isbn",
-            "name": "isbn",
-            "help": "The ISBN for this book",
-            "type": ["Date"],
+            "id": "http://schema.org/publisher",
+            "name": "publisher",
+            "help": "The Organization that published this work (use ROR IDs for institutions",
+            "type": ["Organization"],
             "multiple": false
         }
     ]
@@ -298,6 +305,20 @@
             "name": "datePublished",
             "help": "The (earliest) date the data in this dataset were created",
             "type": ["Date"],
+            "multiple": false
+        },
+        {
+            "id": "http://schema.org/publisher",
+            "name": "publisher",
+            "help": "The Organization that published this work (use ROR IDs for institution",
+            "type": ["Organization"],
+            "multiple": false
+        },
+        {
+            "id": "http://schema.org/issn",
+            "name": "issn",
+            "help": "The ISSN for this publication",
+            "type": ["Text"],
             "multiple": false
         }
     ]
@@ -360,7 +381,7 @@
             "name": "TextSelectionCriteria"
           }
 
-     ],
+     ], 
     "multiple": false
 },
   {
@@ -421,6 +442,13 @@
                     "name": "description",
                     "help": "An abstract of the collection. Include as much detail as possible about the motivation and use of the collection, including things that we do not yet have properties for",
                     "type": ["TextArea"],
+                    "multiple": false
+                },
+                {
+                    "id": "http://schema.org/location",
+                    "name": "location",
+                    "help": "A location for the organization (eg a city for a publisher)",
+                    "type": ["Text"],
                     "multiple": false
                 }
             ]
