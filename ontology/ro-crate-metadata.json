@@ -214,7 +214,7 @@
       "inDefinedTermSet": {
         "@id": "txc:CollectionProtocolTypeTerms"
       },
-      "name": "ElicitationTask"
+      "name": "Task"
     },
     {
       "@id": "txc:Formulaic",
@@ -449,7 +449,7 @@
       "inDefinedTermSet": {
         "@id": "txc:CollectionProtocolTypeTerms"
       },
-      "name": "TextSelectionCriteria"
+      "name": "Task"
     },
     {
       "@id": "txc:Thesaurus",
