@@ -8,7 +8,7 @@
 
 # DefinedTerms
 
-<a href="#Code">Code</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#Song">Song</a> | <a href="#Sign">Sign</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
+<a href="#Code">Code</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#Song">Song</a> | <a href="#Speech">Speech</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
 
 <div id="Annotation" style="border-style: solid">
 
@@ -339,9 +339,9 @@ A collection event which is a recording or elicitation Session with particpants
 ## Is an expected value for the following property
 
 [<a href='https://purl.archive.org/textcommons/terms#modality'> txc:modality </a>] | </div><br>
-<div id="Sign"  style="border-style: solid">
+<div id="Speech"  style="border-style: solid">
 
-# Defined Term: Sign
+# Defined Term: Speech
 
 This resource contains a video recording of  sign language
 
