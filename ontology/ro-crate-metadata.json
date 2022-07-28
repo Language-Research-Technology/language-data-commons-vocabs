@@ -214,7 +214,7 @@
       "inDefinedTermSet": {
         "@id": "txc:CollectionProtocolTypeTerms"
       },
-      "name": "Task"
+      "name": "ElicitationTask"
     },
     {
       "@id": "txc:Formulaic",
@@ -433,7 +433,7 @@
       "@type": "DefinedTerm",
       "description": "This resource contains a video recording of  sign language",
       "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "Sign"
+      "name": "Speech"
     },
     {
       "@id": "txc:Syntactic",
@@ -449,7 +449,7 @@
       "inDefinedTermSet": {
         "@id": "txc:CollectionProtocolTypeTerms"
       },
-      "name": "Task"
+      "name": "TextSelectionCriteria"
     },
     {
       "@id": "txc:Thesaurus",
