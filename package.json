@@ -23,8 +23,10 @@
   "homepage": "https://github.com/Language-Research-Technology/language-data-node-tools#readme",
   "dependencies": {
     "chai": "^4.3.4",
+    "install": "^0.13.0",
+    "npm": "^8.18.0",
     "oni-ocfl": "git+https://github.com/Language-Research-Technology/oni-ocfl.git",
-    "ro-crate": "^2.0.5",
+    "ro-crate": "github:Arkisto-Platform/ro-crate-js#develop-rewrite",
     "shelljs": "^0.8.4",
     "tmp": "^0.2.1"
   }
