@@ -8,7 +8,7 @@
 
 # DefinedTerms
 
-<a href="#Coded">Coded</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthographic">Orthographic</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
+<a href="#Coded">Coded</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignLanguage">SignLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a>
 
 <div id="Annotation" style="border-style: solid">
 
@@ -38,7 +38,7 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annot
 
 The resource contains a coded analysis or annotation
 
-undefined</div><br>
+</div><br>
 <div id="CollectionEvent" style="border-style: solid">
 
 # Class: CollectionEvent
@@ -55,7 +55,7 @@ A description of an event at which one or more PrimaryTexts were captured,  eg a
 
 [<a href=''> txc:collectionEventType </a>] | 
 
-undefined
+
 
 </div><br>
 <div id="CollectionProtocol" style="border-style: solid">
@@ -74,7 +74,7 @@ Description of how this Object or Collection was obtained – such as strategy u
 
 [<a href=''> txc:collectionProtocolType </a>] | 
 
-undefined
+
 
 </div><br>
 <div id="DerivedResource" style="border-style: solid">
@@ -105,7 +105,7 @@ An interactive discourse with two or more participants. Examples of dialogues in
 
 [<a href=''> txc:linguisticGenre </a>] | 
 
-undefined</div><br>
+</div><br>
 <div id="Drama"  style="border-style: solid">
 
 # Defined Term: Drama
@@ -131,7 +131,7 @@ The collection protocol includes a task-based prompt to participants
 
 [<a href=''> txc:collectionProtocolType </a>] | 
 
-undefined</div><br>
+</div><br>
 <div id="Formulaic"  style="border-style: solid">
 
 # Defined Term: Formulaic
@@ -153,14 +153,14 @@ The resource contains non-linguistic gestural communication (ie not sign languag
 
 [<a href=''> txc:modality </a>] | 
 
-undefined</div><br>
+</div><br>
 <div id="Handwritten"  style="border-style: solid">
 
 # Defined Term: Handwritten
 
 The resource was written using a writing implement such as pen, pencil, brush or computer stylus  (From Nyingarn - TODO check this)
 
-undefined</div><br>
+</div><br>
 <div id="Informational"  style="border-style: solid">
 
 # Defined Term: Informational
@@ -171,7 +171,7 @@ undefined</div><br>
 
 [<a href=''> txc:linguisticGenre </a>] | 
 
-undefined</div><br>
+</div><br>
 <div id="Interview"  style="border-style: solid">
 
 # Defined Term: Interview
@@ -182,7 +182,7 @@ The resource is conversation where one or more speakers are directing the conver
 
 [<a href=''> txc:linguisticGenre </a>] | 
 
-undefined</div><br>
+</div><br>
 <div id="Lexicon"  style="border-style: solid">
 
 # Defined Term: Lexicon
@@ -252,7 +252,7 @@ A licence document  setting out rights and oblications could be based copyright 
 
 [<a href=''> txc:licensedOrganization </a>] | 
 
-undefined
+
 
 </div><br>
 <div id="OrganizationDepositLicense" style="border-style: solid">
@@ -267,7 +267,7 @@ A license document setting out terms for deposit into a repository by one or mor
 
 
 
-undefined
+
 
 </div><br>
 <div id="OrganizationReuseLicense" style="border-style: solid">
@@ -282,7 +282,7 @@ A license document setting out terms for reuse of data by one or more identified
 
 
 
-undefined
+
 
 </div><br>
 <div id="Orthographic"  style="border-style: solid">
@@ -295,13 +295,6 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#descr
 
 
 </div><br>
-<div id="WrittenLanguage"  style="border-style: solid">
-
-# Defined Term: WrittenLanguage
-
-The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc
-
-undefined</div><br>
 <div id="PartOfSpeech"  style="border-style: solid">
 
 # Defined Term: PartOfSpeech
@@ -328,7 +321,7 @@ This class represents a snapshot of a Person in time, in their role as a contrib
 
 [<a href=''> txc:person </a>] | 
 
-undefined
+
 
 </div><br>
 <div id="Phonemic"  style="border-style: solid">
@@ -463,11 +456,26 @@ Same as: [<a href='https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
 
 
 </div><br>
+<div id="SignLanguage"  style="border-style: solid">
+
+# Defined Term: SignLanguage
+
+This resource contains  sign language
+
+## Is an expected value for the following property
+
+[<a href=''> txc:modality </a>] | 
+
+</div><br>
 <div id="Song"  style="border-style: solid">
 
 # Defined Term: Song
 
 "Words or sounds [articulated] in succession with musical inflections or modulations of the voice" OED.
+
+## Is an expected value for the following property
+
+[<a href=''> txc:modality </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/singing'> http://www.language-archives.org/REC/type-20020628.html#text/singing </a>] |
 
@@ -479,7 +487,11 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/
 
 This resource contains  spoken language
 
-undefined</div><br>
+## Is an expected value for the following property
+
+[<a href=''> txc:modality </a>] | 
+
+</div><br>
 <div id="Syntactic"  style="border-style: solid">
 
 # Defined Term: Syntactic
@@ -504,7 +516,7 @@ A description of the criteria used to select texts in a collection
 
 [<a href=''> txc:collectionProtocolType </a>] | 
 
-undefined</div><br>
+</div><br>
 <div id="Thesaurus"  style="border-style: solid">
 
 # Defined Term: Thesaurus
@@ -530,7 +542,7 @@ The resource contains a written or coded annotation(s) which has data aligning t
 
 [<a href=''> txc:annotationType </a>] | 
 
-undefined</div><br>
+</div><br>
 <div id="Transcription"  style="border-style: solid">
 
 # Defined Term: Transcription
@@ -565,14 +577,25 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annot
 
 The resource has been formatted for display
 
-undefined</div><br>
+</div><br>
 <div id="Typewritten"  style="border-style: solid">
 
 # Defined Term: Typewritten
 
 The resource contains text produced on a tpyewriter (From Nyingarn - TODO check this)
 
-undefined</div><br>
+</div><br>
+<div id="WrittenLanguage"  style="border-style: solid">
+
+# Defined Term: WrittenLanguage
+
+The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc
+
+## Is an expected value for the following property
+
+[<a href=''> txc:modality </a>] | 
+
+</div><br>
 <div id="annotationOf"  style="border-style: solid">
 
 # Property: annotationOf
@@ -591,7 +614,7 @@ This resource contains some kind a description such as a translation, transcript
 
 
 
-undefined
+
 
 </div><br>
 <div id="annotationType"  style="border-style: solid">
@@ -618,7 +641,7 @@ undefined
 
 
 
-undefined
+
 
 </div><br>
 <div id="annotator"  style="border-style: solid">
@@ -687,7 +710,7 @@ Number of audio channels this resource contains (eg 1, 2 5.1)
 
 
 
-undefined
+
 
 </div><br>
 <div id="collectionEventType"  style="border-style: solid">
@@ -714,7 +737,7 @@ An event with a start and end time during which data are gathered from partipant
 
 
 
-undefined
+
 
 </div><br>
 <div id="collectionProtocolType"  style="border-style: solid">
@@ -741,7 +764,7 @@ A description of the process used to collect or collate data, such as prompts gi
 
 
 
-undefined
+
 
 </div><br>
 <div id="compiler"  style="border-style: solid">
@@ -858,7 +881,7 @@ This resource references another resource that is derived from it such as a down
 
 
 
-undefined
+
 
 </div><br>
 <div id="developer"  style="border-style: solid">
@@ -903,7 +926,7 @@ A digital Object Identifier
 
 
 
-undefined
+
 
 </div><br>
 <div id="editor"  style="border-style: solid">
@@ -948,7 +971,7 @@ A valid GEOJson feature or feature collection as a string that can be parsed as 
 
 
 
-undefined
+
 
 </div><br>
 <div id="hasCollectionProtocol"  style="border-style: solid">
@@ -969,7 +992,7 @@ This resource references another resource that describes it  such as a translati
 
 
 
-undefined
+
 
 </div><br>
 <div id="hasAnnotation"  style="border-style: solid">
@@ -990,7 +1013,7 @@ This resource  was assembled or collected according to the linked protocol
 
 
 
-undefined
+
 
 </div><br>
 <div id="hasDerivation"  style="border-style: solid">
@@ -1011,7 +1034,7 @@ This resource references another resource that is derived from it such as a down
 
 
 
-undefined
+
 
 </div><br>
 <div id="illustrator"  style="border-style: solid">
@@ -1056,7 +1079,7 @@ Indicates one or more  target File that  together contain the full text of an it
 
 
 
-undefined
+
 
 </div><br>
 <div id="interpreter"  style="border-style: solid">
@@ -1149,7 +1172,7 @@ This data in this item has had identifying information removed, or in the case o
 
 
 
-undefined
+
 
 </div><br>
 <div id="licensedOrganization"  style="border-style: solid">
@@ -1200,7 +1223,7 @@ undefined
 
 
 
-undefined
+
 
 </div><br>
 <div id="modality"  style="border-style: solid">
@@ -1223,11 +1246,11 @@ undefined
 
 ## Values expected to be one of these defined terms: 
 
- "txc:SpokenLanguage" |  "txc:WrittenLanguage" |  "txc:Song" | [<a href=''> txc:Gesture </a>] |  "txc:SignLanguage" | 
+[<a href=''> txc:SpokenLanguage </a>] | [<a href=''> txc:WrittenLanguage </a>] | [<a href=''> txc:Song </a>] | [<a href=''> txc:Gesture </a>] | [<a href=''> txc:SignLanguage </a>] | 
 
 
 
-undefined
+
 
 </div><br>
 <div id="participant"  style="border-style: solid">
@@ -1296,7 +1319,7 @@ This property references a Person item which represents the persistent identity 
 
 
 
-undefined
+
 
 </div><br>
 <div id="photographer"  style="border-style: solid">

@@ -132,13 +132,21 @@
       "@id": "txc:CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
-        "\"txc:SpokenLanguage\"",
-        "\"txc:WrittenLanguage\"",
-        "\"txc:Song\"",
+        {
+          "@id": "txc:SpokenLanguage"
+        },
+        {
+          "@id": "txc:WrittenLanguage"
+        },
+        {
+          "@id": "txc:Song"
+        },
         {
           "@id": "txc:Gesture"
         },
-        "\"txc:SignLanguage\""
+        {
+          "@id": "txc:SignLanguage"
+        }
       ],
       "name": "ModalityTerms"
     },
@@ -317,13 +325,6 @@
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic"
     },
     {
-      "@id": "txc:Orthography",
-      "@type": "DefinedTerm",
-      "description": "The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc",
-      "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "WrittenLanguage"
-    },
-    {
       "@id": "txc:OrthographyTypeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
@@ -440,7 +441,14 @@
       "sameAs": "https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"
     },
     {
-      "@id": "txc:Singing",
+      "@id": "txc:SignLanguage",
+      "@type": "DefinedTerm",
+      "description": "This resource contains  sign language",
+      "inDefinedTermSet": "CommunicationModeTerms",
+      "name": "SignLanguage"
+    },
+    {
+      "@id": "txc:Song",
       "@type": "DefinedTerm",
       "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
       "inDefinedTermSet": "CommunicationModeTerms",
@@ -448,7 +456,7 @@
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/singing"
     },
     {
-      "@id": "txc:Speech",
+      "@id": "txc:SpokenLanguage",
       "@type": "DefinedTerm",
       "description": "This resource contains  spoken language",
       "inDefinedTermSet": "CommunicationModeTerms",
@@ -519,6 +527,13 @@
         "@id": "txc:OrthographyTypeTerms"
       },
       "name": "Typewritten"
+    },
+    {
+      "@id": "txc:WrittenLanguage",
+      "@type": "DefinedTerm",
+      "description": "The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc",
+      "inDefinedTermSet": "CommunicationModeTerms",
+      "name": "WrittenLanguage"
     },
     {
       "@id": "txc:annotationOf",

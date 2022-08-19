@@ -206,13 +206,21 @@
       "@id": "txc:CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
-        "\"txc:SpokenLanguage\"",
-        "\"txc:WrittenLanguage\"",
-        "\"txc:Song\"",
+        {
+          "@id": "txc:SpokenLanguage"
+        },
+        {
+          "@id": "txc:WrittenLanguage"
+        },
+        {
+          "@id": "txc:Song"
+        },
         {
           "@id": "txc:Gesture"
         },
-        "\"txc:SignLanguage\""
+        {
+          "@id": "txc:SignLanguage"
+        }
       ],
       "name": "ModalityTerms",
       "@reverse": {
@@ -490,13 +498,6 @@
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic"
     },
     {
-      "@id": "txc:Orthography",
-      "@type": "DefinedTerm",
-      "description": "The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc",
-      "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "WrittenLanguage"
-    },
-    {
       "@id": "txc:OrthographyTypeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
@@ -689,19 +690,47 @@
       }
     },
     {
-      "@id": "txc:Singing",
+      "@id": "txc:SignLanguage",
+      "@type": "DefinedTerm",
+      "description": "This resource contains  sign language",
+      "inDefinedTermSet": "CommunicationModeTerms",
+      "name": "SignLanguage",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "txc:CommunicationModeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "txc:Song",
       "@type": "DefinedTerm",
       "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
       "inDefinedTermSet": "CommunicationModeTerms",
       "name": "Song",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/singing"
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/singing",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "txc:CommunicationModeTerms"
+          }
+        ]
+      }
     },
     {
-      "@id": "txc:Speech",
+      "@id": "txc:SpokenLanguage",
       "@type": "DefinedTerm",
       "description": "This resource contains  spoken language",
       "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "SpokenLanguage"
+      "name": "SpokenLanguage",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "txc:CommunicationModeTerms"
+          }
+        ]
+      }
     },
     {
       "@id": "txc:Syntactic",
@@ -821,6 +850,20 @@
         "hasDefinedTerm": [
           {
             "@id": "txc:OrthographyTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "txc:WrittenLanguage",
+      "@type": "DefinedTerm",
+      "description": "The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc",
+      "inDefinedTermSet": "CommunicationModeTerms",
+      "name": "WrittenLanguage",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "txc:CommunicationModeTerms"
           }
         ]
       }
