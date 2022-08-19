@@ -1,6 +1,6 @@
 # Classes
 
-<a href="#Annotation">Annotation</a> | <a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DerivedText">DerivedText</a> | <a href="#OrganizationBasedLicense">OrganizationBasedLicense</a> | <a href="#OrganizationDepositLicense">OrganizationDepositLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#PrimaryText">PrimaryText</a>
+<a href="#Annotation">Annotation</a> | <a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DerivedResource">DerivedResource</a> | <a href="#OrganizationBasedLicense">OrganizationBasedLicense</a> | <a href="#OrganizationDepositLicense">OrganizationDepositLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#PrimaryResource">PrimaryResource</a>
 
 # Properties
 
@@ -8,7 +8,7 @@
 
 # DefinedTerms
 
-<a href="#Code">Code</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#LinguisticDescription">LinguisticDescription</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthography">Orthography</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#Song">Song</a> | <a href="#Speech">Speech</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
+<a href="#Coded">Coded</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthographic">Orthographic</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#TimeAligned">TimeAligned</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a>
 
 <div id="Annotation" style="border-style: solid">
 
@@ -20,16 +20,25 @@ The resource includes information which annotates, describes or otherwise an som
 
   [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
+
+
 ## Properties
 
-[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
-<div id="Code"  style="border-style: solid">
+[<a href=''> txc:annotationType </a>] | 
 
-# Defined Term: Code
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annotation'> http://www.language-archives.org/REC/type-20020628.html#annotation </a>] |
+
+
+
+
+</div><br>
+<div id="Coded"  style="border-style: solid">
+
+# Defined Term: Coded
 
 The resource contains a coded analysis or annotation
 
-</div><br>
+undefined</div><br>
 <div id="CollectionEvent" style="border-style: solid">
 
 # Class: CollectionEvent
@@ -40,35 +49,52 @@ A description of an event at which one or more PrimaryTexts were captured,  eg a
 
   [<a href='http://schema.org/Event'> schema:Event </a>] | [<a href='http://schema.org/CreateAction'> schema:CreateAction </a>] | 
 
+
+
 ## Properties
 
-[<a href='https://purl.archive.org/textcommons/terms#collectionEventType'> txc:collectionEventType </a>] | </div><br>
+[<a href=''> txc:collectionEventType </a>] | 
+
+undefined
+
+</div><br>
 <div id="CollectionProtocol" style="border-style: solid">
 
 # Class: CollectionProtocol
 
-Description of how this Object or Collection was obtained – such as strategy used for selecting orthographic text, or the prompts given to participants 
+Description of how this Object or Collection was obtained – such as strategy used for selecting written source texts, or the prompts given to participants 
 
 ## Subclass of 
 
   [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
+
+
 ## Properties
 
-[<a href='https://purl.archive.org/textcommons/terms#collectionProtocolType'> txc:collectionProtocolType </a>] | </div><br>
-<div id="DerivedText" style="border-style: solid">
+[<a href=''> txc:collectionProtocolType </a>] | 
 
-# Class: DerivedText
+undefined
 
-A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a text which  is not an analytical product 
+</div><br>
+<div id="DerivedResource" style="border-style: solid">
+
+# Class: DerivedResource
+
+A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a resource which  is not an annoation (description)
 
 ## Subclass of 
 
   [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
-## Properties
 
-[<a href='https://purl.archive.org/textcommons/terms#derivationOf'> txc:derivationOf </a>] | </div><br>
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text'> http://www.language-archives.org/REC/type-20020628.html#text </a>] |
+
+
+
+
+</div><br>
 <div id="Dialogue"  style="border-style: solid">
 
 # Defined Term: Dialogue
@@ -77,7 +103,9 @@ An interactive discourse with two or more participants. Examples of dialogues in
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+[<a href=''> txc:linguisticGenre </a>] | 
+
+undefined</div><br>
 <div id="Drama"  style="border-style: solid">
 
 # Defined Term: Drama
@@ -87,7 +115,12 @@ A planned, creative, rendition of discourse with two or more participants.
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+[<a href=''> txc:linguisticGenre </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/drama'> http://www.language-archives.org/REC/type-20020628.html#text/drama </a>] |
+
+
+</div><br>
 <div id="ElicitationTask"  style="border-style: solid">
 
 # Defined Term: ElicitationTask
@@ -96,7 +129,9 @@ The collection protocol includes a task-based prompt to participants
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#collectionProtocolType'> txc:collectionProtocolType </a>] | </div><br>
+[<a href=''> txc:collectionProtocolType </a>] | 
+
+undefined</div><br>
 <div id="Formulaic"  style="border-style: solid">
 
 # Defined Term: Formulaic
@@ -104,32 +139,39 @@ The collection protocol includes a task-based prompt to participants
 The resource is a ritually or conventionally structured discourse.
 
 
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/formulaic'> http://www.language-archives.org/REC/type-20020628.html#text/formulaic </a>] |
+
+
 </div><br>
 <div id="Gesture"  style="border-style: solid">
 
 # Defined Term: Gesture
 
-undefined
+The resource contains non-linguistic gestural communication (ie not sign language)
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#modality'> txc:modality </a>] | </div><br>
+[<a href=''> txc:modality </a>] | 
+
+undefined</div><br>
 <div id="Handwritten"  style="border-style: solid">
 
 # Defined Term: Handwritten
 
-The resource was written using a writing implement such as pen, pencil, brush or computer stylus
+The resource was written using a writing implement such as pen, pencil, brush or computer stylus  (From Nyingarn - TODO check this)
 
-</div><br>
+undefined</div><br>
 <div id="Informational"  style="border-style: solid">
 
 # Defined Term: Informational
 
-SIMON – TODO
+ Discourse whose primary purpose is to inform the reader about the natural or social world.
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+[<a href=''> txc:linguisticGenre </a>] | 
+
+undefined</div><br>
 <div id="Interview"  style="border-style: solid">
 
 # Defined Term: Interview
@@ -138,7 +180,9 @@ The resource is conversation where one or more speakers are directing the conver
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+[<a href=''> txc:linguisticGenre </a>] | 
+
+undefined</div><br>
 <div id="Lexicon"  style="border-style: solid">
 
 # Defined Term: Lexicon
@@ -146,41 +190,52 @@ The resource is conversation where one or more speakers are directing the conver
 The resource includes a systematic listing of lexical items.
 
 
-</div><br>
-<div id="LinguisticDescription"  style="border-style: solid">
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#Lexicon'> http://www.language-archives.org/REC/type-20020628.html#Lexicon </a>] |
 
-# Defined Term: LinguisticDescription
-
-undefined
 
 </div><br>
 <div id="Ludic"  style="border-style: solid">
 
 # Defined Term: Ludic
 
-undefined
+Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language. Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+[<a href=''> txc:linguisticGenre </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/ludic'> http://www.language-archives.org/REC/type-20020628.html#text/ludic </a>] |
+
+
+</div><br>
 <div id="Narrative"  style="border-style: solid">
 
 # Defined Term: Narrative
 
-A monologic discourse which represents temporally organized events.
+A monologic discourse which represents temporally organized events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+[<a href=''> txc:linguisticGenre </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/narrative'> http://www.language-archives.org/REC/type-20020628.html#text/narrative </a>] |
+
+
+</div><br>
 <div id="Oratory"  style="border-style: solid">
 
 # Defined Term: Oratory
 
-undefined
+The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+[<a href=''> txc:linguisticGenre </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/orratory'> http://www.language-archives.org/REC/type-20020628.html#text/orratory </a>] |
+
+
+</div><br>
 <div id="OrganizationBasedLicense" style="border-style: solid">
 
 # Class: OrganizationBasedLicense
@@ -191,9 +246,15 @@ A licence document  setting out rights and oblications could be based copyright 
 
   [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
+
+
 ## Properties
 
-[<a href='https://purl.archive.org/textcommons/terms#licensedOrganization'> txc:licensedOrganization </a>] | </div><br>
+[<a href=''> txc:licensedOrganization </a>] | 
+
+undefined
+
+</div><br>
 <div id="OrganizationDepositLicense" style="border-style: solid">
 
 # Class: OrganizationDepositLicense
@@ -202,7 +263,11 @@ A license document setting out terms for deposit into a repository by one or mor
 
 ## Subclass of 
 
-  [<a href='https://purl.archive.org/textcommons/terms#OrganizationBasedLicense'> txc:OrganizationBasedLicense </a>] | 
+  [<a href=''> txc:OrganizationBasedLicense </a>] | 
+
+
+
+undefined
 
 </div><br>
 <div id="OrganizationReuseLicense" style="border-style: solid">
@@ -213,23 +278,38 @@ A license document setting out terms for reuse of data by one or more identified
 
 ## Subclass of 
 
-  [<a href='https://purl.archive.org/textcommons/terms#OrganizationBasedLicense'> txc:OrganizationBasedLicense </a>] | 
+  [<a href=''> txc:OrganizationBasedLicense </a>] | 
+
+
+
+undefined
 
 </div><br>
-<div id="Orthography"  style="border-style: solid">
+<div id="Orthographic"  style="border-style: solid">
 
-# Defined Term: Orthography
+# Defined Term: Orthographic
+
+The resource contains annotations using  orthography (a writing ssytem) as opposed to a coded analysis such as a phonetic transcription
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/orthographic'> http://www.language-archives.org/REC/type-20020628.html#description/orthographic </a>] |
+
+
+</div><br>
+<div id="WrittenLanguage"  style="border-style: solid">
+
+# Defined Term: WrittenLanguage
 
 The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc
 
-## Is an expected value for the following property
-
-[<a href='https://purl.archive.org/textcommons/terms#modality'> txc:modality </a>] | </div><br>
+undefined</div><br>
 <div id="PartOfSpeech"  style="border-style: solid">
 
 # Defined Term: PartOfSpeech
 
-undefined
+TODO - Olac definitons are circular
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech'> http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech </a>] |
+
 
 </div><br>
 <div id="PersonSnapshot" style="border-style: solid">
@@ -242,85 +322,131 @@ This class represents a snapshot of a Person in time, in their role as a contrib
 
   [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Role'> schema:Role </a>] | 
 
+
+
 ## Properties
 
-[<a href='https://purl.archive.org/textcommons/terms#person'> txc:person </a>] | </div><br>
+[<a href=''> txc:person </a>] | 
+
+undefined
+
+</div><br>
 <div id="Phonemic"  style="border-style: solid">
 
 # Defined Term: Phonemic
 
-undefined
+TODO - Olac definitons are circular
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
+[<a href=''> txc:annotationType </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonemic'> http://www.language-archives.org/REC/type-20020628.html#description/phonemic </a>] |
+
+
+</div><br>
 <div id="Phonetic"  style="border-style: solid">
 
 # Defined Term: Phonetic
 
-undefined
+TODO - Olac definitons are circular
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
+[<a href=''> txc:annotationType </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonetic'> http://www.language-archives.org/REC/type-20020628.html#description/phonetic </a>] |
+
+
+</div><br>
 <div id="Phonological"  style="border-style: solid">
 
 # Defined Term: Phonological
 
-undefined
+TODO - Olac definitons are circular
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
-<div id="PrimaryText" style="border-style: solid">
+[<a href=''> txc:annotationType </a>] | 
 
-# Class: PrimaryText
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonological'> http://www.language-archives.org/REC/type-20020628.html#description/phonological </a>] |
 
-This is a primary resource: the object of study.   A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse
+
+</div><br>
+<div id="PrimaryResource" style="border-style: solid">
+
+# Class: PrimaryResource
+
+This is a primary resource: the object of study, such as a literary work, film, or recording of natural discourse
 
 ## Subclass of 
 
   [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
-## Properties
 
-[<a href='https://purl.archive.org/textcommons/terms#hasAnnotation'> txc:hasAnnotation </a>] | [<a href='https://purl.archive.org/textcommons/terms#hasDerivation'> txc:hasDerivation </a>] | [<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text'> http://www.language-archives.org/REC/type-20020628.html#text </a>] |
+
+
+
+
+</div><br>
 <div id="Procedural"  style="border-style: solid">
 
 # Defined Term: Procedural
 
-undefined
+An explanation or description of a method, process, or situation having ordered steps.
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+[<a href=''> txc:linguisticGenre </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/procedural'> http://www.language-archives.org/REC/type-20020628.html#text/procedural </a>] |
+
+
+</div><br>
 <div id="Prosodic"  style="border-style: solid">
 
 # Defined Term: Prosodic
 
-undefined
+TODO - Olac definitons are circular
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
+[<a href=''> txc:annotationType </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/prosodic'> http://www.language-archives.org/REC/type-20020628.html#description/prosodic </a>] |
+
+
+</div><br>
 <div id="Report"  style="border-style: solid">
 
 # Defined Term: Report
 
-undefined
+A factual account of some event or circumstance.
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+[<a href=''> txc:linguisticGenre </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/report'> http://www.language-archives.org/REC/type-20020628.html#text/report </a>] |
+
+
+</div><br>
 <div id="Semantic"  style="border-style: solid">
 
 # Defined Term: Semantic
 
-TODO
+The resource contains annotations of the meaning of another resource
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
+[<a href=''> txc:annotationType </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/semantic'> http://www.language-archives.org/REC/type-20020628.html#description/semantic </a>] |
+
+
+</div><br>
 <div id="Session"  style="border-style: solid">
 
 # Defined Term: Session
@@ -329,34 +455,45 @@ A collection event which is a recording or elicitation Session with particpants
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#collectionEventType'> txc:collectionEventType </a>] | </div><br>
+[<a href=''> txc:collectionEventType </a>] | 
+
+Same as: [<a href='https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
+'> https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
+ </a>] |
+
+
+</div><br>
 <div id="Song"  style="border-style: solid">
 
 # Defined Term: Song
 
 "Words or sounds [articulated] in succession with musical inflections or modulations of the voice" OED.
 
-## Is an expected value for the following property
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/singing'> http://www.language-archives.org/REC/type-20020628.html#text/singing </a>] |
 
-[<a href='https://purl.archive.org/textcommons/terms#modality'> txc:modality </a>] | </div><br>
-<div id="Speech"  style="border-style: solid">
 
-# Defined Term: Speech
+</div><br>
+<div id="SpokenLanguage"  style="border-style: solid">
 
-This resource contains a video recording of  sign language
+# Defined Term: SpokenLanguage
 
-## Is an expected value for the following property
+This resource contains  spoken language
 
-[<a href='https://purl.archive.org/textcommons/terms#modality'> txc:modality </a>] | </div><br>
+undefined</div><br>
 <div id="Syntactic"  style="border-style: solid">
 
 # Defined Term: Syntactic
 
-The resource contains annotation or other analysis describing  the syntactic structure of a PrimaryText
+The resource contains annotation or analysis describing  the syntactic structure of another resource
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
+[<a href=''> txc:annotationType </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/syntactic'> http://www.language-archives.org/REC/type-20020628.html#description/syntactic </a>] |
+
+
+</div><br>
 <div id="TextSelectionCriteria"  style="border-style: solid">
 
 # Defined Term: TextSelectionCriteria
@@ -365,7 +502,9 @@ A description of the criteria used to select texts in a collection
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#collectionProtocolType'> txc:collectionProtocolType </a>] | </div><br>
+[<a href=''> txc:collectionProtocolType </a>] | 
+
+undefined</div><br>
 <div id="Thesaurus"  style="border-style: solid">
 
 # Defined Term: Thesaurus
@@ -375,7 +514,12 @@ The resource contains  a list or data structure consisting  of words or concepts
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#linguisticGenre'> txc:linguisticGenre </a>] | </div><br>
+[<a href=''> txc:linguisticGenre </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus'> http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus </a>] |
+
+
+</div><br>
 <div id="TimeAligned"  style="border-style: solid">
 
 # Defined Term: TimeAligned
@@ -384,7 +528,9 @@ The resource contains a written or coded annotation(s) which has data aligning t
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
+[<a href=''> txc:annotationType </a>] | 
+
+undefined</div><br>
 <div id="Transcription"  style="border-style: solid">
 
 # Defined Term: Transcription
@@ -393,30 +539,40 @@ The resource contains a transcription, which  is a written (orthographic) or cod
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
+[<a href=''> txc:annotationType </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#transcription'> http://www.language-archives.org/REC/type-20020628.html#transcription </a>] |
+
+
+</div><br>
 <div id="Translation"  style="border-style: solid">
 
 # Defined Term: Translation
 
-undefined
+The resource has been translated from one natual language to another
 
 ## Is an expected value for the following property
 
-[<a href='https://purl.archive.org/textcommons/terms#annotationType'> txc:annotationType </a>] | </div><br>
+[<a href=''> txc:annotationType </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annotation/translation'> http://www.language-archives.org/REC/type-20020628.html#annotation/translation </a>] |
+
+
+</div><br>
 <div id="Typeset"  style="border-style: solid">
 
 # Defined Term: Typeset
 
 The resource has been formatted for display
 
-</div><br>
+undefined</div><br>
 <div id="Typewritten"  style="border-style: solid">
 
 # Defined Term: Typewritten
 
-The annotation has time-alignement with the PrimaryText
+The resource contains text produced on a tpyewriter (From Nyingarn - TODO check this)
 
-</div><br>
+undefined</div><br>
 <div id="annotationOf"  style="border-style: solid">
 
 # Property: annotationOf
@@ -425,11 +581,17 @@ This resource contains some kind a description such as a translation, transcript
 
 ## Values expected to be one of these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#PrimaryText'> txc:PrimaryText </a>] | 
+ "txc:PrimaryText" | 
+
+
 
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+undefined
 
 </div><br>
 <div id="annotationType"  style="border-style: solid">
@@ -442,13 +604,21 @@ undefined
 
 
 
+
+
 ## Used on these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#Annotation'> txc:Annotation </a>] | 
+[<a href=''> txc:Annotation </a>] | 
+
+
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='https://purl.archive.org/textcommons/terms#Phonemic'> txc:Phonemic </a>] | [<a href='https://purl.archive.org/textcommons/terms#Phonetic'> txc:Phonetic </a>] | [<a href='https://purl.archive.org/textcommons/terms#Phonological'> txc:Phonological </a>] | [<a href='https://purl.archive.org/textcommons/terms#Syntactic'> txc:Syntactic </a>] | [<a href='https://purl.archive.org/textcommons/terms#Translation'> txc:Translation </a>] | [<a href='https://purl.archive.org/textcommons/terms#Semantic'> txc:Semantic </a>] | [<a href='https://purl.archive.org/textcommons/terms#Transcription'> txc:Transcription </a>] | [<a href='https://purl.archive.org/textcommons/terms#TimeAligned'> txc:TimeAligned </a>] | [<a href='https://purl.archive.org/textcommons/terms#Prosodic'> txc:Prosodic </a>] | 
+[<a href=''> txc:Phonemic </a>] | [<a href=''> txc:Phonetic </a>] | [<a href=''> txc:Phonological </a>] | [<a href=''> txc:Syntactic </a>] | [<a href=''> txc:Translation </a>] | [<a href=''> txc:Semantic </a>] | [<a href=''> txc:Transcription </a>] | [<a href=''> txc:TimeAligned </a>] | [<a href=''> txc:Prosodic </a>] | 
+
+
+
+undefined
 
 </div><br>
 <div id="annotator"  style="border-style: solid">
@@ -461,9 +631,18 @@ The participant produced an annotation of this or a related resource.
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#annotator'> http://www.language-archives.org/REC/role.html#annotator </a>] |
+
+
+
 
 </div><br>
 <div id="author"  style="border-style: solid">
@@ -476,9 +655,18 @@ The participant contributed original writings to the resource.
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#author'> http://www.language-archives.org/REC/role.html#author </a>] |
+
+
+
 
 </div><br>
 <div id="channels"  style="border-style: solid">
@@ -491,9 +679,15 @@ Number of audio channels this resource contains (eg 1, 2 5.1)
 
 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+undefined
 
 </div><br>
 <div id="collectionEventType"  style="border-style: solid">
@@ -506,13 +700,21 @@ An event with a start and end time during which data are gathered from partipant
 
 
 
+
+
 ## Used on these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#CollectionEvent'> txc:CollectionEvent </a>] | 
+[<a href=''> txc:CollectionEvent </a>] | 
+
+
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='https://purl.archive.org/textcommons/terms#Session'> txc:Session </a>] | 
+[<a href=''> txc:Session </a>] | 
+
+
+
+undefined
 
 </div><br>
 <div id="collectionProtocolType"  style="border-style: solid">
@@ -525,13 +727,21 @@ A description of the process used to collect or collate data, such as prompts gi
 
 
 
+
+
 ## Used on these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#CollectionProtocol'> txc:CollectionProtocol </a>] | 
+[<a href=''> txc:CollectionProtocol </a>] | 
+
+
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='https://purl.archive.org/textcommons/terms#ElicitationTask'> txc:ElicitationTask </a>] | [<a href='https://purl.archive.org/textcommons/terms#TextSelectionCriteria'> txc:TextSelectionCriteria </a>] | 
+[<a href=''> txc:ElicitationTask </a>] | [<a href=''> txc:TextSelectionCriteria </a>] | 
+
+
+
+undefined
 
 </div><br>
 <div id="compiler"  style="border-style: solid">
@@ -544,9 +754,18 @@ The participant is responsible for collecting the sub-parts of the resource toge
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#compiler'> http://www.language-archives.org/REC/role.html#compiler </a>] |
+
+
+
 
 </div><br>
 <div id="consultant"  style="border-style: solid">
@@ -559,9 +778,18 @@ The participant contributes expertise to the creation of a work.
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#consultant'> http://www.language-archives.org/REC/role.html#consultant </a>] |
+
+
+
 
 </div><br>
 <div id="dataInputter"  style="border-style: solid">
@@ -574,9 +802,18 @@ The participant was responsible for entering, re-typing, and/or structuring the 
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#data_inputter'> http://www.language-archives.org/REC/role.html#data_inputter </a>] |
+
+
+
 
 </div><br>
 <div id="depositor"  style="border-style: solid">
@@ -589,9 +826,18 @@ The participant was responsible for depositing the resource in an archive.
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#depositor'> http://www.language-archives.org/REC/role.html#depositor </a>] |
+
+
+
 
 </div><br>
 <div id="derivationOf"  style="border-style: solid">
@@ -602,11 +848,17 @@ This resource references another resource that is derived from it such as a down
 
 ## Values expected to be one of these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#PrimaryText'> txc:PrimaryText </a>] | [<a href='https://purl.archive.org/textcommons/terms#Annotation'> txc:Annotation </a>] | 
+ "txc:PrimaryText" | [<a href=''> txc:Annotation </a>] | 
+
+
 
 ## Used on these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#DerivedText'> txc:DerivedText </a>] | 
+ "txc:DerivedText" | 
+
+
+
+undefined
 
 </div><br>
 <div id="developer"  style="border-style: solid">
@@ -619,9 +871,18 @@ The participant developed the methodology or tools that constitute the resource,
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#developer'> http://www.language-archives.org/REC/role.html#developer </a>] |
+
+
+
 
 </div><br>
 <div id="doi"  style="border-style: solid">
@@ -634,9 +895,15 @@ A digital Object Identifier
 
 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+undefined
 
 </div><br>
 <div id="editor"  style="border-style: solid">
@@ -649,9 +916,18 @@ The participant reviewed, corrected, and/or tested the resource.
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#editor'> http://www.language-archives.org/REC/role.html#editor </a>] |
+
+
+
 
 </div><br>
 <div id="geoJSON"  style="border-style: solid">
@@ -664,9 +940,15 @@ A valid GEOJson feature or feature collection as a string that can be parsed as 
 
  Text | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/GeoCoordinates'> schema:GeoCoordinates </a>] | [<a href='http://schema.org/GeoShape'> schema:GeoShape </a>] | [<a href='http://schema.org/Language'> schema:Language </a>] | 
+
+
+
+undefined
 
 </div><br>
 <div id="hasCollectionProtocol"  style="border-style: solid">
@@ -679,9 +961,15 @@ This resource references another resource that describes it  such as a translati
 
  "txc:Annnotation" | 
 
+
+
 ## Used on these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#PrimaryText'> txc:PrimaryText </a>] | 
+ "txc:PrimaryText" | 
+
+
+
+undefined
 
 </div><br>
 <div id="hasAnnotation"  style="border-style: solid">
@@ -692,11 +980,17 @@ This resource  was assembled or collected according to the linked protocol
 
 ## Values expected to be one of these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#CollectionProtocol'> txc:CollectionProtocol </a>] | 
+[<a href=''> txc:CollectionProtocol </a>] | 
+
+
 
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+undefined
 
 </div><br>
 <div id="hasDerivation"  style="border-style: solid">
@@ -707,11 +1001,17 @@ This resource references another resource that is derived from it such as a down
 
 ## Values expected to be one of these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#DerivedText'> txc:DerivedText </a>] | 
+ "txc:DerivedText" | 
+
+
 
 ## Used on these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#PrimaryText'> txc:PrimaryText </a>] | 
+ "txc:PrimaryText" | 
+
+
+
+undefined
 
 </div><br>
 <div id="illustrator"  style="border-style: solid">
@@ -724,9 +1024,18 @@ The participant contributed drawings or other illustrations to the resource.
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#illustrator'> http://www.language-archives.org/REC/role.html#illustrator </a>] |
+
+
+
 
 </div><br>
 <div id="indexableText"  style="border-style: solid">
@@ -737,11 +1046,17 @@ Indicates one or more  target File that  together contain the full text of an it
 
 ## Values expected to be one of these types: 
 
-[<a href='http://schema.org/File'> schema:File </a>] | 
+[<a href='http://schema.org/MediaObject'> schema:File </a>] | 
+
+
 
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+undefined
 
 </div><br>
 <div id="interpreter"  style="border-style: solid">
@@ -754,9 +1069,18 @@ The participant translates in real-time or explains the discourse recorded in th
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#interpreter'> http://www.language-archives.org/REC/role.html#interpreter </a>] |
+
+
+
 
 </div><br>
 <div id="interviewee"  style="border-style: solid">
@@ -769,9 +1093,18 @@ The participant was a respondent in an interview
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#interviewer'> http://www.language-archives.org/REC/role.html#interviewer </a>] |
+
+
+
 
 </div><br>
 <div id="interviewer"  style="border-style: solid">
@@ -784,9 +1117,18 @@ The participant conducted an interview that forms part of the resource.
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#interviewer'> http://www.language-archives.org/REC/role.html#interviewer </a>] |
+
+
+
 
 </div><br>
 <div id="isDeIdentified"  style="border-style: solid">
@@ -799,9 +1141,15 @@ This data in this item has had identifying information removed, or in the case o
 
 [<a href='http://schema.org/Boolean'> schema:Boolean </a>] | 
 
+
+
 ## Used on these types: 
 
  [{"@id":"schema:CreativeWork"}, {"@id":"schema:Person"}, txc:PersonSnapshot] | 
+
+
+
+undefined
 
 </div><br>
 <div id="licensedOrganization"  style="border-style: solid">
@@ -814,9 +1162,18 @@ Indicates a group of people who have the rights described in this license
 
 [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#OrganizationBasedLicense'> txc:OrganizationBasedLicense </a>] | 
+[<a href=''> txc:OrganizationBasedLicense </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#translator'> http://www.language-archives.org/REC/role.html#translator </a>] |
+
+
+
 
 </div><br>
 <div id="linguisticGenre"  style="border-style: solid">
@@ -829,13 +1186,21 @@ undefined
 
 
 
+
+
 ## Used on these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#PrimaryText'> txc:PrimaryText </a>] | 
+ "txc:PrimaryText" | 
+
+
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='https://purl.archive.org/textcommons/terms#Thesaurus'> txc:Thesaurus </a>] | [<a href='https://purl.archive.org/textcommons/terms#Dialogue'> txc:Dialogue </a>] | [<a href='https://purl.archive.org/textcommons/terms#Oratory'> txc:Oratory </a>] | [<a href='https://purl.archive.org/textcommons/terms#Report'> txc:Report </a>] | [<a href='https://purl.archive.org/textcommons/terms#Ludic'> txc:Ludic </a>] | [<a href='https://purl.archive.org/textcommons/terms#Procedural'> txc:Procedural </a>] | [<a href='https://purl.archive.org/textcommons/terms#Narrative'> txc:Narrative </a>] | [<a href='https://purl.archive.org/textcommons/terms#Interview'> txc:Interview </a>] | [<a href='https://purl.archive.org/textcommons/terms#Drama'> txc:Drama </a>] | [<a href='https://purl.archive.org/textcommons/terms#Informational'> txc:Informational </a>] |  "txc:formulaic" | 
+[<a href=''> txc:Thesaurus </a>] | [<a href=''> txc:Dialogue </a>] | [<a href=''> txc:Oratory </a>] | [<a href=''> txc:Report </a>] | [<a href=''> txc:Ludic </a>] | [<a href=''> txc:Procedural </a>] | [<a href=''> txc:Narrative </a>] | [<a href=''> txc:Interview </a>] | [<a href=''> txc:Drama </a>] | [<a href=''> txc:Informational </a>] |  "txc:formulaic" | 
+
+
+
+undefined
 
 </div><br>
 <div id="modality"  style="border-style: solid">
@@ -848,13 +1213,21 @@ undefined
 
 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
 
+
+
 ## Values expected to be one of these defined terms: 
 
-[<a href='https://purl.archive.org/textcommons/terms#Speech'> txc:Speech </a>] | [<a href='https://purl.archive.org/textcommons/terms#Orthography'> txc:Orthography </a>] | [<a href='https://purl.archive.org/textcommons/terms#Singing'> txc:Singing </a>] | [<a href='https://purl.archive.org/textcommons/terms#Gesture'> txc:Gesture </a>] | 
+ "txc:SpokenLanguage" |  "txc:WrittenLanguage" |  "txc:Song" | [<a href=''> txc:Gesture </a>] |  "txc:SignLanguage" | 
+
+
+
+undefined
 
 </div><br>
 <div id="participant"  style="border-style: solid">
@@ -867,9 +1240,18 @@ The participant was present during the creation of the resource, but did not con
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#participant'> http://www.language-archives.org/REC/role.html#participant </a>] |
+
+
+
 
 </div><br>
 <div id="performer"  style="border-style: solid">
@@ -882,9 +1264,18 @@ The participant performed some portion of a recorded, filmed, or transcribed res
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#performer'> http://www.language-archives.org/REC/role.html#performer </a>] |
+
+
+
 
 </div><br>
 <div id="person"  style="border-style: solid">
@@ -897,9 +1288,15 @@ This property references a Person item which represents the persistent identity 
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | 
 
+
+
 ## Used on these types: 
 
-[<a href='https://purl.archive.org/textcommons/terms#PersonSnapshot'> txc:PersonSnapshot </a>] | 
+[<a href=''> txc:PersonSnapshot </a>] | 
+
+
+
+undefined
 
 </div><br>
 <div id="photographer"  style="border-style: solid">
@@ -912,9 +1309,18 @@ The participant took the photograph, or shot the film, that appears in or consti
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#photographer'> http://www.language-archives.org/REC/role.html#photographer </a>] |
+
+
+
 
 </div><br>
 <div id="recorder"  style="border-style: solid">
@@ -927,9 +1333,18 @@ The participant operated the recording machinery used to create the resource.
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#recorder'> http://www.language-archives.org/REC/role.html#recorder </a>] |
+
+
+
 
 </div><br>
 <div id="register"  style="border-style: solid">
@@ -943,9 +1358,18 @@ Specifies the type of register (any of the varieties of a language that a speake
 
 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://w3id.org/meta-share/meta-share/register'> http://w3id.org/meta-share/meta-share/register </a>] |
+
+
+
 
 </div><br>
 <div id="researchParticipant"  style="border-style: solid">
@@ -958,9 +1382,18 @@ The participant acted as a research subject or responded to a questionnaire, the
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#research_participant'> http://www.language-archives.org/REC/role.html#research_participant </a>] |
+
+
+
 
 </div><br>
 <div id="researcher"  style="border-style: solid">
@@ -973,9 +1406,18 @@ The resource was created as part of the participant's research, or the research 
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#researcher'> http://www.language-archives.org/REC/role.html#researcher </a>] |
+
+
+
 
 </div><br>
 <div id="responder"  style="border-style: solid">
@@ -988,9 +1430,18 @@ The participant was an interlocutor in some sort of discourse event.
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#responder'> http://www.language-archives.org/REC/role.html#responder </a>] |
+
+
+
 
 </div><br>
 <div id="signer"  style="border-style: solid">
@@ -1003,9 +1454,18 @@ The participant was a principal signer in a resource that consists of a recordin
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#signer'> http://www.language-archives.org/REC/role.html#signer </a>] |
+
+
+
 
 </div><br>
 <div id="singer"  style="border-style: solid">
@@ -1018,9 +1478,18 @@ The participant sang, either individually or as part of a group, in a resource t
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#singer'> http://www.language-archives.org/REC/role.html#singer </a>] |
+
+
+
 
 </div><br>
 <div id="speaker"  style="border-style: solid">
@@ -1033,9 +1502,18 @@ The participant was a principal speaker in a resource that consists of a recordi
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#speaker'> http://www.language-archives.org/REC/role.html#speaker </a>] |
+
+
+
 
 </div><br>
 <div id="sponsor"  style="border-style: solid">
@@ -1048,9 +1526,18 @@ The participant contributed financial support to the creation of the resource.
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#sponsor'> http://www.language-archives.org/REC/role.html#sponsor </a>] |
+
+
+
 
 </div><br>
 <div id="transcriber"  style="border-style: solid">
@@ -1063,9 +1550,18 @@ The participant produced a transcription of this or a related resource.
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#transcriber'> http://www.language-archives.org/REC/role.html#transcriber </a>] |
+
+
+
 
 </div><br>
 <div id="translator"  style="border-style: solid">
@@ -1078,9 +1574,18 @@ The participant produced a translation of this or a related resource.
 
 [<a href='http://schema.org/Person'> schema:Person </a>] | [<a href='http://schema.org/Organization'> schema:Organization </a>] | 
 
+
+
 ## Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/role.html#translator'> http://www.language-archives.org/REC/role.html#translator </a>] |
+
+
+
 
 </div><br>
 

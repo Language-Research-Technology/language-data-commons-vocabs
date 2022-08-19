@@ -68,7 +68,7 @@
       "@type": "DefinedTerm",
       "description": "The resource contains a coded analysis or annotation",
       "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "Code"
+      "name": "Coded"
     },
     {
       "@id": "txc:CollectionEvent",
@@ -111,7 +111,7 @@
       "@id": "txc:CollectionProtocol",
       "@type": "rdfs:Class",
       "name": "CollectionProtocol",
-      "rdfs:comment": "Description of how this Object or Collection was obtained – such as strategy used for selecting orthographic text, or the prompts given to participants ",
+      "rdfs:comment": "Description of how this Object or Collection was obtained – such as strategy used for selecting written source texts, or the prompts given to participants ",
       "rdfs:label": "CollectionProtocol",
       "rdfs:subClassOf": {
         "@id": "schema:CreativeWork"
@@ -206,18 +206,13 @@
       "@id": "txc:CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
-        {
-          "@id": "txc:Speech"
-        },
-        {
-          "@id": "txc:Orthography"
-        },
-        {
-          "@id": "txc:Singing"
-        },
+        "\"txc:SpokenLanguage\"",
+        "\"txc:WrittenLanguage\"",
+        "\"txc:Song\"",
         {
           "@id": "txc:Gesture"
-        }
+        },
+        "\"txc:SignLanguage\""
       ],
       "name": "ModalityTerms",
       "@reverse": {
@@ -229,26 +224,14 @@
       }
     },
     {
-      "@id": "txc:DerivedText",
+      "@id": "txc:DerivedResource",
       "@type": "rdfs:Class",
-      "name": "DerivedText",
+      "name": "DerivedResource",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
-      "rdfs:comment": "A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a text which  is not an analytical product ",
-      "rdfs:label": "DerivedText",
+      "rdfs:comment": "A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a resource which  is not an annoation (description)",
+      "rdfs:label": "DerivedResource",
       "rdfs:subClassOf": {
         "@id": "schema:CreativeWork"
-      },
-      "@reverse": {
-        "domainIncludes": [
-          {
-            "@id": "txc:derivationOf"
-          }
-        ],
-        "rangeIncludes": [
-          {
-            "@id": "txc:hasDerivation"
-          }
-        ]
       }
     },
     {
@@ -348,6 +331,7 @@
     {
       "@id": "txc:Gesture",
       "@type": "DefinedTerm",
+      "description": "The resource contains non-linguistic gestural communication (ie not sign language)",
       "inDefinedTermSet": "CommunicationModeTerms",
       "name": "Gesture",
       "@reverse": {
@@ -361,7 +345,7 @@
     {
       "@id": "txc:Handwritten",
       "@type": "DefinedTerm",
-      "description": "The resource was written using a writing implement such as pen, pencil, brush or computer stylus",
+      "description": "The resource was written using a writing implement such as pen, pencil, brush or computer stylus  (From Nyingarn - TODO check this)",
       "inDefinedTermSet": "CommunicationModeTerms",
       "name": "Handwritten",
       "@reverse": {
@@ -375,7 +359,7 @@
     {
       "@id": "txc:Informational",
       "@type": "DefinedTerm",
-      "description": "SIMON – TODO",
+      "description": " Discourse whose primary purpose is to inform the reader about the natural or social world.",
       "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Informational",
       "@reverse": {
@@ -408,16 +392,12 @@
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon"
     },
     {
-      "@id": "txc:LinguisticDescription",
-      "@type": "DefinedTerm",
-      "name": "LinguisticDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description"
-    },
-    {
       "@id": "txc:Ludic",
       "@type": "DefinedTerm",
+      "description": "Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language. Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.",
       "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Ludic",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/ludic",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -429,9 +409,10 @@
     {
       "@id": "txc:Narrative",
       "@type": "DefinedTerm",
-      "description": "A monologic discourse which represents temporally organized events.",
+      "description": "A monologic discourse which represents temporally organized events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
       "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Narrative",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/narrative",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -443,8 +424,10 @@
     {
       "@id": "txc:Oratory",
       "@type": "DefinedTerm",
+      "description": "The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.",
       "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Oratory",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/orratory",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -499,18 +482,19 @@
       }
     },
     {
+      "@id": "txc:Orthographic",
+      "@type": "DefinedTerm",
+      "description": "The resource contains annotations using  orthography (a writing ssytem) as opposed to a coded analysis such as a phonetic transcription",
+      "inDefinedTermSet": "DerivedTextTypeTerms",
+      "name": "Orthographic",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic"
+    },
+    {
       "@id": "txc:Orthography",
       "@type": "DefinedTerm",
       "description": "The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc",
       "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "Orthography",
-      "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "txc:CommunicationModeTerms"
-          }
-        ]
-      }
+      "name": "WrittenLanguage"
     },
     {
       "@id": "txc:OrthographyTypeTerms",
@@ -544,8 +528,10 @@
     {
       "@id": "txc:PartOfSpeech",
       "@type": "DefinedTerm",
+      "description": "TODO - Olac definitons are circular",
       "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": "PartOfSpeech"
+      "name": "PartOfSpeech",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech"
     },
     {
       "@id": "txc:PersonSnapshot",
@@ -572,8 +558,10 @@
     {
       "@id": "txc:Phonemic",
       "@type": "DefinedTerm",
+      "description": "TODO - Olac definitons are circular",
       "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Phonemic",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/phonemic",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -585,8 +573,10 @@
     {
       "@id": "txc:Phonetic",
       "@type": "DefinedTerm",
+      "description": "TODO - Olac definitons are circular",
       "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Phonetic",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/phonetic",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -598,8 +588,10 @@
     {
       "@id": "txc:Phonological",
       "@type": "DefinedTerm",
+      "description": "TODO - Olac definitons are circular",
       "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Phonological",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/phonological",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -609,42 +601,23 @@
       }
     },
     {
-      "@id": "txc:PrimaryText",
+      "@id": "txc:PrimaryResource",
       "@type": "rdfs:Class",
-      "name": "PrimaryText",
+      "name": "PrimaryResource",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
-      "rdfs:comment": "This is a primary resource: the object of study.   A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse",
-      "rdfs:label": "PrimaryText",
+      "rdfs:comment": "This is a primary resource: the object of study, such as a literary work, film, or recording of natural discourse",
+      "rdfs:label": "PrimaryResource",
       "rdfs:subClassOf": {
         "@id": "schema:CreativeWork"
-      },
-      "@reverse": {
-        "rangeIncludes": [
-          {
-            "@id": "txc:annotationOf"
-          },
-          {
-            "@id": "txc:derivationOf"
-          }
-        ],
-        "domainIncludes": [
-          {
-            "@id": "txc:hasAnnotation"
-          },
-          {
-            "@id": "txc:hasDerivation"
-          },
-          {
-            "@id": "txc:linguisticGenre"
-          }
-        ]
       }
     },
     {
       "@id": "txc:Procedural",
       "@type": "DefinedTerm",
+      "description": "An explanation or description of a method, process, or situation having ordered steps.",
       "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Procedural",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/procedural",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -656,8 +629,10 @@
     {
       "@id": "txc:Prosodic",
       "@type": "DefinedTerm",
+      "description": "TODO - Olac definitons are circular",
       "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Prosodic",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/prosodic",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -669,8 +644,10 @@
     {
       "@id": "txc:Report",
       "@type": "DefinedTerm",
+      "description": "A factual account of some event or circumstance.",
       "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Report",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/report",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -682,9 +659,10 @@
     {
       "@id": "txc:Semantic",
       "@type": "DefinedTerm",
-      "description": "TODO",
-      "inDefinedTermSet": "CommunicationModeTerms",
+      "description": "The resource contains annotations of the meaning of another resource",
+      "inDefinedTermSet": "txc:DerivedTextTypeTerms",
       "name": "Semantic",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/semantic",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -716,34 +694,22 @@
       "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
       "inDefinedTermSet": "CommunicationModeTerms",
       "name": "Song",
-      "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "txc:CommunicationModeTerms"
-          }
-        ]
-      }
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/singing"
     },
     {
       "@id": "txc:Speech",
       "@type": "DefinedTerm",
-      "description": "This resource contains a video recording of  sign language",
+      "description": "This resource contains  spoken language",
       "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "Speech",
-      "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "txc:CommunicationModeTerms"
-          }
-        ]
-      }
+      "name": "SpokenLanguage"
     },
     {
       "@id": "txc:Syntactic",
       "@type": "DefinedTerm",
-      "description": "The resource contains annotation or other analysis describing  the syntactic structure of a PrimaryText",
+      "description": "The resource contains annotation or analysis describing  the syntactic structure of another resource",
       "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Syntactic",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/syntactic",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -774,7 +740,7 @@
       "description": "The resource contains  a list or data structure consisting  of words or concepts arranged according to sense.  \n",
       "inDefinedTermSet": "CommunicationGenreTerms",
       "name": "Thesaurus",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/singing",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -789,7 +755,6 @@
       "description": "The resource contains a written or coded annotation(s) which has data aligning the annotation(s)  with a PrimaryText",
       "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "TimeAligned",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -816,8 +781,10 @@
     {
       "@id": "txc:Translation",
       "@type": "DefinedTerm",
+      "description": "The resource has been translated from one natual language to another",
       "inDefinedTermSet": "DerivedTextTypeTerms",
       "name": "Translation",
+      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/translation",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -845,7 +812,7 @@
     {
       "@id": "txc:Typewritten",
       "@type": "DefinedTerm",
-      "description": "The annotation has time-alignement with the PrimaryText",
+      "description": "The resource contains text produced on a tpyewriter (From Nyingarn - TODO check this)",
       "inDefinedTermSet": {
         "@id": "txc:OrthographyTypeTerms"
       },
@@ -865,9 +832,7 @@
         "@id": "schema:CreativeWork"
       },
       "name": "annotationOf",
-      "rangeIncludes": {
-        "@id": "txc:PrimaryText"
-      },
+      "rangeIncludes": "\"txc:PrimaryText\"",
       "rdfs:comment": "This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references",
       "rdfs:label": "annotationOf"
     },
@@ -1039,14 +1004,10 @@
     {
       "@id": "txc:derivationOf",
       "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "txc:DerivedText"
-      },
+      "domainIncludes": "\"txc:DerivedText\"",
       "name": "derivationOf",
       "rangeIncludes": [
-        {
-          "@id": "txc:PrimaryText"
-        },
+        "\"txc:PrimaryText\"",
         {
           "@id": "txc:Annotation"
         }
@@ -1126,9 +1087,7 @@
     {
       "@id": "txc:hasAnnotation",
       "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "txc:PrimaryText"
-      },
+      "domainIncludes": "\"txc:PrimaryText\"",
       "name": "hasAnnotation",
       "rangeIncludes": "\"txc:Annnotation\"",
       "rdfs:comment": "This resource references another resource that describes it  such as a translation, transcription or other analysis ",
@@ -1150,13 +1109,9 @@
     {
       "@id": "txc:hasDerivation",
       "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "txc:PrimaryText"
-      },
+      "domainIncludes": "\"txc:PrimaryText\"",
       "name": "hasDerivation",
-      "rangeIncludes": {
-        "@id": "txc:DerivedText"
-      },
+      "rangeIncludes": "\"txc:DerivedText\"",
       "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF",
       "rdfs:label": "hasDerivation"
     },
@@ -1282,9 +1237,7 @@
       "definedTermSet": {
         "@id": "txc:CommunicationGenreTerms"
       },
-      "domainIncludes": {
-        "@id": "txc:PrimaryText"
-      },
+      "domainIncludes": "\"txc:PrimaryText\"",
       "name": "linguisticGenre",
       "rdfs:label": "linguisticGenre"
     },
