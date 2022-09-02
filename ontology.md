@@ -24,7 +24,7 @@ The resource includes information which annotates, describes or otherwise an som
 
 ## Properties
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#annotationType
+[<a href='#annotationType'> annotationType </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annotation'> http://www.language-archives.org/REC/type-20020628.html#annotation </a>] |
 
@@ -53,7 +53,7 @@ A description of an event at which one or more PrimaryTexts were captured,  eg a
 
 ## Properties
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#collectionEventType
+[<a href='#collectionEventType'> collectionEventType </a>] | 
 
 
 
@@ -72,7 +72,7 @@ Description of how this Object or Collection was obtained – such as strategy u
 
 ## Properties
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#collectionProtocolType
+[<a href='#collectionProtocolType'> collectionProtocolType </a>] | 
 
 
 
@@ -103,7 +103,7 @@ An interactive discourse with two or more participants. Examples of dialogues in
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#linguisticGenre
+[<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 </div><br>
 <div id="Drama"  style="border-style: solid">
@@ -115,7 +115,7 @@ A planned, creative, rendition of discourse with two or more participants.
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#linguisticGenre
+[<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/drama'> http://www.language-archives.org/REC/type-20020628.html#text/drama </a>] |
 
@@ -129,7 +129,7 @@ The collection protocol includes a task-based prompt to participants
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#collectionProtocolType
+[<a href='#collectionProtocolType'> collectionProtocolType </a>] | 
 
 </div><br>
 <div id="Formulaic"  style="border-style: solid">
@@ -151,7 +151,7 @@ The resource contains non-linguistic gestural communication (ie not sign languag
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#modality
+[<a href='#modality'> modality </a>] | 
 
 </div><br>
 <div id="Handwritten"  style="border-style: solid">
@@ -169,7 +169,7 @@ The resource was written using a writing implement such as pen, pencil, brush or
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#linguisticGenre
+[<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 </div><br>
 <div id="Interview"  style="border-style: solid">
@@ -180,7 +180,7 @@ The resource is conversation where one or more speakers are directing the conver
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#linguisticGenre
+[<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 </div><br>
 <div id="Lexicon"  style="border-style: solid">
@@ -202,7 +202,7 @@ Ludic discourse is language whose primary function is to be part of play, or a s
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#linguisticGenre
+[<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/ludic'> http://www.language-archives.org/REC/type-20020628.html#text/ludic </a>] |
 
@@ -216,7 +216,7 @@ A monologic discourse which represents temporally organized events. Types of nar
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#linguisticGenre
+[<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/narrative'> http://www.language-archives.org/REC/type-20020628.html#text/narrative </a>] |
 
@@ -230,7 +230,7 @@ The art of public speaking, or of speaking eloquently according to rules or conv
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#linguisticGenre
+[<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/orratory'> http://www.language-archives.org/REC/type-20020628.html#text/orratory </a>] |
 
@@ -250,7 +250,7 @@ A licence document  setting out rights and oblications could be based copyright 
 
 ## Properties
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#licensedOrganization
+[<a href='#licensedOrganization'> licensedOrganization </a>] | 
 
 
 
@@ -263,7 +263,7 @@ A license document setting out terms for deposit into a repository by one or mor
 
 ## Subclass of 
 
-  CANT RESOLVE  https://purl.archive.org/textcommons/terms#OrganizationBasedLicense
+  [<a href='#OrganizationBasedLicense'> OrganizationBasedLicense </a>] | 
 
 
 
@@ -278,7 +278,7 @@ A license document setting out terms for reuse of data by one or more identified
 
 ## Subclass of 
 
-  CANT RESOLVE  https://purl.archive.org/textcommons/terms#OrganizationBasedLicense
+  [<a href='#OrganizationBasedLicense'> OrganizationBasedLicense </a>] | 
 
 
 
@@ -319,7 +319,7 @@ This class represents a snapshot of a Person in time, in their role as a contrib
 
 ## Properties
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#person
+[<a href='#person'> person </a>] | 
 
 
 
@@ -332,7 +332,7 @@ TODO - Olac definitons are circular
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#annotationType
+[<a href='#annotationType'> annotationType </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonemic'> http://www.language-archives.org/REC/type-20020628.html#description/phonemic </a>] |
 
@@ -346,7 +346,7 @@ TODO - Olac definitons are circular
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#annotationType
+[<a href='#annotationType'> annotationType </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonetic'> http://www.language-archives.org/REC/type-20020628.html#description/phonetic </a>] |
 
@@ -360,7 +360,7 @@ TODO - Olac definitons are circular
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#annotationType
+[<a href='#annotationType'> annotationType </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonological'> http://www.language-archives.org/REC/type-20020628.html#description/phonological </a>] |
 
@@ -392,7 +392,7 @@ An explanation or description of a method, process, or situation having ordered 
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#linguisticGenre
+[<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/procedural'> http://www.language-archives.org/REC/type-20020628.html#text/procedural </a>] |
 
@@ -406,7 +406,7 @@ TODO - Olac definitons are circular
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#annotationType
+[<a href='#annotationType'> annotationType </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/prosodic'> http://www.language-archives.org/REC/type-20020628.html#description/prosodic </a>] |
 
@@ -420,7 +420,7 @@ A factual account of some event or circumstance.
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#linguisticGenre
+[<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/report'> http://www.language-archives.org/REC/type-20020628.html#text/report </a>] |
 
@@ -434,7 +434,7 @@ The resource contains annotations of the meaning of another resource
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#annotationType
+[<a href='#annotationType'> annotationType </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/semantic'> http://www.language-archives.org/REC/type-20020628.html#description/semantic </a>] |
 
@@ -448,7 +448,7 @@ A collection event which is a recording or elicitation Session with particpants
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#collectionEventType
+[<a href='#collectionEventType'> collectionEventType </a>] | 
 
 Same as: [<a href='https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
 '> https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
@@ -464,7 +464,7 @@ This resource contains  sign language
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#modality
+[<a href='#modality'> modality </a>] | 
 
 </div><br>
 <div id="Song"  style="border-style: solid">
@@ -475,7 +475,7 @@ CANT RESOLVE  https://purl.archive.org/textcommons/terms#modality
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#modality
+[<a href='#modality'> modality </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/singing'> http://www.language-archives.org/REC/type-20020628.html#text/singing </a>] |
 
@@ -489,7 +489,7 @@ This resource contains  spoken language
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#modality
+[<a href='#modality'> modality </a>] | 
 
 </div><br>
 <div id="Syntactic"  style="border-style: solid">
@@ -500,7 +500,7 @@ The resource contains annotation or analysis describing  the syntactic structure
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#annotationType
+[<a href='#annotationType'> annotationType </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/syntactic'> http://www.language-archives.org/REC/type-20020628.html#description/syntactic </a>] |
 
@@ -514,7 +514,7 @@ A description of the criteria used to select texts in a collection
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#collectionProtocolType
+[<a href='#collectionProtocolType'> collectionProtocolType </a>] | 
 
 </div><br>
 <div id="Thesaurus"  style="border-style: solid">
@@ -526,7 +526,7 @@ The resource contains  a list or data structure consisting  of words or concepts
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#linguisticGenre
+[<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus'> http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus </a>] |
 
@@ -540,7 +540,7 @@ The resource contains a written or coded annotation(s) which has data aligning t
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#annotationType
+[<a href='#annotationType'> annotationType </a>] | 
 
 </div><br>
 <div id="Transcription"  style="border-style: solid">
@@ -551,7 +551,7 @@ The resource contains a transcription, which  is a written (orthographic) or cod
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#annotationType
+[<a href='#annotationType'> annotationType </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#transcription'> http://www.language-archives.org/REC/type-20020628.html#transcription </a>] |
 
@@ -565,7 +565,7 @@ The resource has been translated from one natual language to another
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#annotationType
+[<a href='#annotationType'> annotationType </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annotation/translation'> http://www.language-archives.org/REC/type-20020628.html#annotation/translation </a>] |
 
@@ -593,7 +593,7 @@ The resource contains written material using a standard or conventional orthogra
 
 ## Is an expected value for the following property
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#modality
+[<a href='#modality'> modality </a>] | 
 
 </div><br>
 <div id="annotationOf"  style="border-style: solid">
@@ -631,13 +631,13 @@ undefined
 
 ## Used on these types: 
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#Annotation
+[<a href='#Annotation'> Annotation </a>] | 
 
 
 
 ## Values expected to be one of these defined terms: 
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#PhonemicCANT RESOLVE  https://purl.archive.org/textcommons/terms#PhoneticCANT RESOLVE  https://purl.archive.org/textcommons/terms#PhonologicalCANT RESOLVE  https://purl.archive.org/textcommons/terms#SyntacticCANT RESOLVE  https://purl.archive.org/textcommons/terms#TranslationCANT RESOLVE  https://purl.archive.org/textcommons/terms#SemanticCANT RESOLVE  https://purl.archive.org/textcommons/terms#TranscriptionCANT RESOLVE  https://purl.archive.org/textcommons/terms#TimeAlignedCANT RESOLVE  https://purl.archive.org/textcommons/terms#Prosodic
+[<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Translation'> Translation </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#TimeAligned'> TimeAligned </a>] | [<a href='#Prosodic'> Prosodic </a>] | 
 
 
 
@@ -727,13 +727,13 @@ An event with a start and end time during which data are gathered from partipant
 
 ## Used on these types: 
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#CollectionEvent
+[<a href='#CollectionEvent'> CollectionEvent </a>] | 
 
 
 
 ## Values expected to be one of these defined terms: 
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#Session
+[<a href='#Session'> Session </a>] | 
 
 
 
@@ -754,13 +754,13 @@ A description of the process used to collect or collate data, such as prompts gi
 
 ## Used on these types: 
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#CollectionProtocol
+[<a href='#CollectionProtocol'> CollectionProtocol </a>] | 
 
 
 
 ## Values expected to be one of these defined terms: 
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#ElicitationTaskCANT RESOLVE  https://purl.archive.org/textcommons/terms#TextSelectionCriteria
+[<a href='#ElicitationTask'> ElicitationTask </a>] | [<a href='#TextSelectionCriteria'> TextSelectionCriteria </a>] | 
 
 
 
@@ -871,7 +871,7 @@ This resource references another resource that is derived from it such as a down
 
 ## Values expected to be one of these types: 
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#PrimaryTextCANT RESOLVE  https://purl.archive.org/textcommons/terms#Annotation
+[<a href='#PrimaryText'> PrimaryText </a>] | [<a href='#Annotation'> Annotation </a>] | 
 
 
 
@@ -1003,7 +1003,7 @@ This resource  was assembled or collected according to the linked protocol
 
 ## Values expected to be one of these types: 
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#CollectionProtocol
+[<a href='#CollectionProtocol'> CollectionProtocol </a>] | 
 
 
 
@@ -1189,7 +1189,7 @@ Indicates a group of people who have the rights described in this license
 
 ## Used on these types: 
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#OrganizationBasedLicense
+[<a href='#OrganizationBasedLicense'> OrganizationBasedLicense </a>] | 
 
 
 
@@ -1219,7 +1219,7 @@ undefined
 
 ## Values expected to be one of these defined terms: 
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#ThesaurusCANT RESOLVE  https://purl.archive.org/textcommons/terms#DialogueCANT RESOLVE  https://purl.archive.org/textcommons/terms#OratoryCANT RESOLVE  https://purl.archive.org/textcommons/terms#ReportCANT RESOLVE  https://purl.archive.org/textcommons/terms#LudicCANT RESOLVE  https://purl.archive.org/textcommons/terms#ProceduralCANT RESOLVE  https://purl.archive.org/textcommons/terms#NarrativeCANT RESOLVE  https://purl.archive.org/textcommons/terms#InterviewCANT RESOLVE  https://purl.archive.org/textcommons/terms#DramaCANT RESOLVE  https://purl.archive.org/textcommons/terms#Informational[<a href='"https://purl.archive.org/textcommons/terms#formulaic"'> "https://purl.archive.org/textcommons/terms#formulaic" </a>] |
+[<a href='#Thesaurus'> Thesaurus </a>] | [<a href='#Dialogue'> Dialogue </a>] | [<a href='#Oratory'> Oratory </a>] | [<a href='#Report'> Report </a>] | [<a href='#Ludic'> Ludic </a>] | [<a href='#Procedural'> Procedural </a>] | [<a href='#Narrative'> Narrative </a>] | [<a href='#Interview'> Interview </a>] | [<a href='#Drama'> Drama </a>] | [<a href='#Informational'> Informational </a>] | [<a href='"https://purl.archive.org/textcommons/terms#formulaic"'> "https://purl.archive.org/textcommons/terms#formulaic" </a>] |
 
 
 
@@ -1246,7 +1246,7 @@ undefined
 
 ## Values expected to be one of these defined terms: 
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#SpokenLanguageCANT RESOLVE  https://purl.archive.org/textcommons/terms#WrittenLanguageCANT RESOLVE  https://purl.archive.org/textcommons/terms#SongCANT RESOLVE  https://purl.archive.org/textcommons/terms#GestureCANT RESOLVE  https://purl.archive.org/textcommons/terms#SignLanguage
+[<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | 
 
 
 
@@ -1315,7 +1315,7 @@ This property references a Person item which represents the persistent identity 
 
 ## Used on these types: 
 
-CANT RESOLVE  https://purl.archive.org/textcommons/terms#PersonSnapshot
+[<a href='#PersonSnapshot'> PersonSnapshot </a>] | 
 
 
 
