@@ -13,21 +13,294 @@
   ],
   "@graph": [
     {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      },
+      "identifier": {
+        "@id": "#:localid:describo:0e1971ef-6e36-4873-8bfd-3d64505f052a"
+      }
+    },
+    {
       "@id": "#261c406f-63bd-491f-ae4f-8208a9c784b8",
       "@type": "Thing",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": ""
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
     },
     {
       "@id": "./",
       "@type": "Dataset",
-      "hasFile": "",
       "description": "This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects",
-      "hasPart": [],
-      "name": "Language Data Ontology"
+      "name": "Language Data Ontology",
+      "mentions": [
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Annotation"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Code"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#CollectionEvent"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#DerivedResource"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Dialogue"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Drama"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#ElicitationTask"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Formulaic"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Gesture"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Handwritten"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Informational"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Interview"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Lexicon"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Ludic"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Narrative"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Oratory"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#OrganizationBasedLicense"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#OrganizationDepositLicense"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#OrganizationReuseLicense"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Orthographic"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#PartOfSpeech"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#PersonSnapshot"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Phonemic"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Phonetic"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Phonological"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#PrimaryText"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Procedural"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Prosodic"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Report"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Semantic"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Session"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#SignLanguage"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Song"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#SpokenLanguage"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Syntactic"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#TextSelectionCriteria"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Thesaurus"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#TimeAligned"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Transcription"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Translation"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Typeset"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Typewritten"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#WrittenLanguage"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#annotationOf"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#annotationType"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#annotator"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#author"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#channels"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#collectionEventType"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#collectionProtocolType"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#compiler"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#consultant"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#dataInputter"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#depositor"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#derivationOf"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#developer"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#doi"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#editor"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#geoJSON"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#hasAnnotation"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#hasCollectionProtocol"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#hasDerivation"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#illustrator"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#indexableText"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#interpreter"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#interviewee"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#interviewer"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#isDeIdentified"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#licensedOrganization"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#linguisticGenre"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#modality"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#participant"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#performer"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#person"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#photographer"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#recorder"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#register"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#researchParticipant"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#researcher"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#responder"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#signer"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#singer"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#speaker"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#sponsor"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#transcriber"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#translator"
+        }
+      ]
     },
     {
-      "@id": "txc:Annotation",
+      "@id": "https://purl.archive.org/textcommons/terms#Annotation",
       "@type": "rdfs:Class",
       "name": "Annotation",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation",
@@ -38,14 +311,14 @@
       }
     },
     {
-      "@id": "txc:Code",
+      "@id": "https://purl.archive.org/textcommons/terms#Code",
       "@type": "DefinedTerm",
       "description": "The resource contains a coded analysis or annotation",
-      "inDefinedTermSet": "CommunicationModeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms",
       "name": "Coded"
     },
     {
-      "@id": "txc:CollectionEvent",
+      "@id": "https://purl.archive.org/textcommons/terms#CollectionEvent",
       "@type": "rdfs:Class",
       "name": "CollectionEvent",
       "rdfs:comment": "A description of an event at which one or more PrimaryTexts were captured,  eg as video or audio",
@@ -60,15 +333,15 @@
       ]
     },
     {
-      "@id": "txc:CollectionEventTypeTerms",
+      "@id": "https://purl.archive.org/textcommons/terms#CollectionEventTypeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": {
-        "@id": "txc:Session"
+        "@id": "https://purl.archive.org/textcommons/terms#Session"
       },
-      "name": "txc:CollectionEventTypeTerms"
+      "name": "CollectionEventTypeTerms"
     },
     {
-      "@id": "txc:CollectionProtocol",
+      "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol",
       "@type": "rdfs:Class",
       "name": "CollectionProtocol",
       "rdfs:comment": "Description of how this Object or Collection was obtained – such as strategy used for selecting written source texts, or the prompts given to participants ",
@@ -78,80 +351,80 @@
       }
     },
     {
-      "@id": "txc:CollectionProtocolTypeTerms",
+      "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocolTypeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
-          "@id": "txc:ElicitationTask"
+          "@id": "https://purl.archive.org/textcommons/terms#ElicitationTask"
         },
         {
-          "@id": "txc:TextSelectionCriteria"
+          "@id": "https://purl.archive.org/textcommons/terms#TextSelectionCriteria"
         }
       ],
-      "name": "txc:CollectionProtocolTypeTerms"
+      "name": "CollectionProtocolTypeTerms"
     },
     {
-      "@id": "txc:CommunicationGenreTerms",
+      "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
-          "@id": "txc:Thesaurus"
+          "@id": "https://purl.archive.org/textcommons/terms#Thesaurus"
         },
         {
-          "@id": "txc:Dialogue"
+          "@id": "https://purl.archive.org/textcommons/terms#Dialogue"
         },
         {
-          "@id": "txc:Oratory"
+          "@id": "https://purl.archive.org/textcommons/terms#Oratory"
         },
         {
-          "@id": "txc:Report"
+          "@id": "https://purl.archive.org/textcommons/terms#Report"
         },
         {
-          "@id": "txc:Ludic"
+          "@id": "https://purl.archive.org/textcommons/terms#Ludic"
         },
         {
-          "@id": "txc:Procedural"
+          "@id": "https://purl.archive.org/textcommons/terms#Procedural"
         },
         {
-          "@id": "txc:Narrative"
+          "@id": "https://purl.archive.org/textcommons/terms#Narrative"
         },
         {
-          "@id": "txc:Interview"
+          "@id": "https://purl.archive.org/textcommons/terms#Interview"
         },
         {
-          "@id": "txc:Drama"
+          "@id": "https://purl.archive.org/textcommons/terms#Drama"
         },
         {
-          "@id": "txc:Informational"
+          "@id": "https://purl.archive.org/textcommons/terms#Informational"
         },
-        "\"txc:formulaic\""
+        "\"https://purl.archive.org/textcommons/terms#formulaic\""
       ],
       "name": "LinguistcGenreTerms"
     },
     {
-      "@id": "txc:CommunicationModeTerms",
+      "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
-          "@id": "txc:SpokenLanguage"
+          "@id": "https://purl.archive.org/textcommons/terms#SpokenLanguage"
         },
         {
-          "@id": "txc:WrittenLanguage"
+          "@id": "https://purl.archive.org/textcommons/terms#WrittenLanguage"
         },
         {
-          "@id": "txc:Song"
+          "@id": "https://purl.archive.org/textcommons/terms#Song"
         },
         {
-          "@id": "txc:Gesture"
+          "@id": "https://purl.archive.org/textcommons/terms#Gesture"
         },
         {
-          "@id": "txc:SignLanguage"
+          "@id": "https://purl.archive.org/textcommons/terms#SignLanguage"
         }
       ],
       "name": "ModalityTerms"
     },
     {
-      "@id": "txc:DerivedResource",
+      "@id": "https://purl.archive.org/textcommons/terms#DerivedResource",
       "@type": "rdfs:Class",
       "name": "DerivedResource",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
@@ -162,132 +435,146 @@
       }
     },
     {
-      "@id": "txc:DerivedTextTypeTerms",
+      "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
-          "@id": "txc:Phonemic"
+          "@id": "https://purl.archive.org/textcommons/terms#Phonemic"
         },
         {
-          "@id": "txc:Phonetic"
+          "@id": "https://purl.archive.org/textcommons/terms#Phonetic"
         },
         {
-          "@id": "txc:Phonological"
+          "@id": "https://purl.archive.org/textcommons/terms#Phonological"
         },
         {
-          "@id": "txc:Syntactic"
+          "@id": "https://purl.archive.org/textcommons/terms#Syntactic"
         },
         {
-          "@id": "txc:Translation"
+          "@id": "https://purl.archive.org/textcommons/terms#Translation"
         },
         {
-          "@id": "txc:Semantic"
+          "@id": "https://purl.archive.org/textcommons/terms#Semantic"
         },
         {
-          "@id": "txc:Transcription"
+          "@id": "https://purl.archive.org/textcommons/terms#Transcription"
         },
         {
-          "@id": "txc:TimeAligned"
+          "@id": "https://purl.archive.org/textcommons/terms#TimeAligned"
         },
         {
-          "@id": "txc:Prosodic"
+          "@id": "https://purl.archive.org/textcommons/terms#Prosodic"
         }
       ],
       "name": "AnnotationTypeTerms"
     },
     {
-      "@id": "txc:Dialogue",
+      "@id": "https://purl.archive.org/textcommons/terms#Dialogue",
       "@type": "DefinedTerm",
       "description": "An interactive discourse with two or more participants. Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.",
-      "inDefinedTermSet": "CommunicationGenreTerms",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+      },
       "name": "Dialogue"
     },
     {
-      "@id": "txc:Drama",
+      "@id": "https://purl.archive.org/textcommons/terms#Drama",
       "@type": "DefinedTerm",
       "description": "A planned, creative, rendition of discourse with two or more participants.\n",
-      "inDefinedTermSet": "CommunicationGenreTerms",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+      },
       "name": "Drama",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/drama"
     },
     {
-      "@id": "txc:ElicitationTask",
+      "@id": "https://purl.archive.org/textcommons/terms#ElicitationTask",
       "@type": "DefinedTerm",
       "description": "The collection protocol includes a task-based prompt to participants",
       "inDefinedTermSet": {
-        "@id": "txc:CollectionProtocolTypeTerms"
+        "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocolTypeTerms"
       },
       "name": "ElicitationTask"
     },
     {
-      "@id": "txc:Formulaic",
+      "@id": "https://purl.archive.org/textcommons/terms#Formulaic",
       "@type": "DefinedTerm",
       "description": "The resource is a ritually or conventionally structured discourse.\n",
-      "inDefinedTermSet": "CommunicationGenreTerms",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+      },
       "name": "Formulaic",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/formulaic"
     },
     {
-      "@id": "txc:Gesture",
+      "@id": "https://purl.archive.org/textcommons/terms#Gesture",
       "@type": "DefinedTerm",
       "description": "The resource contains non-linguistic gestural communication (ie not sign language)",
-      "inDefinedTermSet": "CommunicationModeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms",
       "name": "Gesture"
     },
     {
-      "@id": "txc:Handwritten",
+      "@id": "https://purl.archive.org/textcommons/terms#Handwritten",
       "@type": "DefinedTerm",
       "description": "The resource was written using a writing implement such as pen, pencil, brush or computer stylus  (From Nyingarn - TODO check this)",
-      "inDefinedTermSet": "CommunicationModeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms",
       "name": "Handwritten"
     },
     {
-      "@id": "txc:Informational",
+      "@id": "https://purl.archive.org/textcommons/terms#Informational",
       "@type": "DefinedTerm",
       "description": " Discourse whose primary purpose is to inform the reader about the natural or social world.",
-      "inDefinedTermSet": "CommunicationGenreTerms",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+      },
       "name": "Informational"
     },
     {
-      "@id": "txc:Interview",
+      "@id": "https://purl.archive.org/textcommons/terms#Interview",
       "@type": "DefinedTerm",
       "description": "The resource is conversation where one or more speakers are directing the conversation",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "name": "Interview"
     },
     {
-      "@id": "txc:Lexicon",
+      "@id": "https://purl.archive.org/textcommons/terms#Lexicon",
       "@type": "DefinedTerm",
       "description": "The resource includes a systematic listing of lexical items.\n",
       "name": "Lexicon",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon"
     },
     {
-      "@id": "txc:Ludic",
+      "@id": "https://purl.archive.org/textcommons/terms#Ludic",
       "@type": "DefinedTerm",
       "description": "Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language. Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.",
-      "inDefinedTermSet": "CommunicationGenreTerms",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+      },
       "name": "Ludic",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/ludic"
     },
     {
-      "@id": "txc:Narrative",
+      "@id": "https://purl.archive.org/textcommons/terms#Narrative",
       "@type": "DefinedTerm",
       "description": "A monologic discourse which represents temporally organized events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
-      "inDefinedTermSet": "CommunicationGenreTerms",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+      },
       "name": "Narrative",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/narrative"
     },
     {
-      "@id": "txc:Oratory",
+      "@id": "https://purl.archive.org/textcommons/terms#Oratory",
       "@type": "DefinedTerm",
       "description": "The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.",
-      "inDefinedTermSet": "CommunicationGenreTerms",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+      },
       "name": "Oratory",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/orratory"
     },
     {
-      "@id": "txc:OrganizationBasedLicense",
+      "@id": "https://purl.archive.org/textcommons/terms#OrganizationBasedLicense",
       "@type": "rdfs:Class",
       "name": "OrganizationBasedLicense",
       "rdfs:comment": "A licence document  setting out rights and oblications could be based copyright or other rights  based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community",
@@ -297,59 +584,59 @@
       }
     },
     {
-      "@id": "txc:OrganizationDepositLicense",
+      "@id": "https://purl.archive.org/textcommons/terms#OrganizationDepositLicense",
       "@type": "rdfs:Class",
       "name": "OrganizationDepositLicense",
       "rdfs:comment": "A license document setting out terms for deposit into a repository by one or more identified groups ",
       "rdfs:label": "OrganizationDepositLicense",
       "rdfs:subClassOf": {
-        "@id": "txc:OrganizationBasedLicense"
+        "@id": "https://purl.archive.org/textcommons/terms#OrganizationBasedLicense"
       }
     },
     {
-      "@id": "txc:OrganizationReuseLicense",
+      "@id": "https://purl.archive.org/textcommons/terms#OrganizationReuseLicense",
       "@type": "rdfs:Class",
       "name": "OrganizationReuseLicense",
       "rdfs:comment": "A license document setting out terms for reuse of data by one or more identified groups ",
       "rdfs:label": "OrganizationReuseLicense",
       "rdfs:subClassOf": {
-        "@id": "txc:OrganizationBasedLicense"
+        "@id": "https://purl.archive.org/textcommons/terms#OrganizationBasedLicense"
       }
     },
     {
-      "@id": "txc:Orthographic",
+      "@id": "https://purl.archive.org/textcommons/terms#Orthographic",
       "@type": "DefinedTerm",
       "description": "The resource contains annotations using  orthography (a writing ssytem) as opposed to a coded analysis such as a phonetic transcription",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "name": "Orthographic",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic"
     },
     {
-      "@id": "txc:OrthographyTypeTerms",
+      "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms",
       "@type": "DefinedTermSet",
       "hasDefinedTerm": [
         {
-          "@id": "txc:Handwritten"
+          "@id": "https://purl.archive.org/textcommons/terms#Handwritten"
         },
         {
-          "@id": "txc:Typewritten"
+          "@id": "https://purl.archive.org/textcommons/terms#Typewritten"
         },
         {
-          "@id": "txc:Typeset"
+          "@id": "https://purl.archive.org/textcommons/terms#Typeset"
         }
       ],
       "name": "OrthographyTypeTerms"
     },
     {
-      "@id": "txc:PartOfSpeech",
+      "@id": "https://purl.archive.org/textcommons/terms#PartOfSpeech",
       "@type": "DefinedTerm",
       "description": "TODO - Olac definitons are circular",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "name": "PartOfSpeech",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech"
     },
     {
-      "@id": "txc:PersonSnapshot",
+      "@id": "https://purl.archive.org/textcommons/terms#PersonSnapshot",
       "@type": "rdfs:Class",
       "name": "PersonSnapshot",
       "rdfs:comment": "This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class  is to caputre the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time. ",
@@ -364,202 +651,208 @@
       ]
     },
     {
-      "@id": "txc:Phonemic",
+      "@id": "https://purl.archive.org/textcommons/terms#Phonemic",
       "@type": "DefinedTerm",
       "description": "TODO - Olac definitons are circular",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "name": "Phonemic",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/phonemic"
     },
     {
-      "@id": "txc:Phonetic",
+      "@id": "https://purl.archive.org/textcommons/terms#Phonetic",
       "@type": "DefinedTerm",
       "description": "TODO - Olac definitons are circular",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "name": "Phonetic",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/phonetic"
     },
     {
-      "@id": "txc:Phonological",
+      "@id": "https://purl.archive.org/textcommons/terms#Phonological",
       "@type": "DefinedTerm",
       "description": "TODO - Olac definitons are circular",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "name": "Phonological",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/phonological"
     },
     {
-      "@id": "txc:PrimaryResource",
+      "@id": "https://purl.archive.org/textcommons/terms#PrimaryText",
       "@type": "rdfs:Class",
-      "name": "PrimaryResource",
+      "name": "PrimaryText",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
       "rdfs:comment": "This is a primary resource: the object of study, such as a literary work, film, or recording of natural discourse",
-      "rdfs:label": "PrimaryResource",
+      "rdfs:label": "PrimaryText",
       "rdfs:subClassOf": {
         "@id": "schema:CreativeWork"
       }
     },
     {
-      "@id": "txc:Procedural",
+      "@id": "https://purl.archive.org/textcommons/terms#Procedural",
       "@type": "DefinedTerm",
       "description": "An explanation or description of a method, process, or situation having ordered steps.",
-      "inDefinedTermSet": "CommunicationGenreTerms",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+      },
       "name": "Procedural",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/procedural"
     },
     {
-      "@id": "txc:Prosodic",
+      "@id": "https://purl.archive.org/textcommons/terms#Prosodic",
       "@type": "DefinedTerm",
       "description": "TODO - Olac definitons are circular",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "name": "Prosodic",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/prosodic"
     },
     {
-      "@id": "txc:Report",
+      "@id": "https://purl.archive.org/textcommons/terms#Report",
       "@type": "DefinedTerm",
       "description": "A factual account of some event or circumstance.",
-      "inDefinedTermSet": "CommunicationGenreTerms",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+      },
       "name": "Report",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/report"
     },
     {
-      "@id": "txc:Semantic",
+      "@id": "https://purl.archive.org/textcommons/terms#Semantic",
       "@type": "DefinedTerm",
       "description": "The resource contains annotations of the meaning of another resource",
-      "inDefinedTermSet": "txc:DerivedTextTypeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "name": "Semantic",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/semantic"
     },
     {
-      "@id": "txc:Session",
+      "@id": "https://purl.archive.org/textcommons/terms#Session",
       "@type": "DefinedTerm",
       "description": "A collection event which is a recording or elicitation Session with particpants",
       "inDefinedTermSet": {
-        "@id": "txc:OrthographyTypeTerms"
+        "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms"
       },
       "name": "Session",
       "sameAs": "https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"
     },
     {
-      "@id": "txc:SignLanguage",
+      "@id": "https://purl.archive.org/textcommons/terms#SignLanguage",
       "@type": "DefinedTerm",
       "description": "This resource contains  sign language",
-      "inDefinedTermSet": "CommunicationModeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms",
       "name": "SignLanguage"
     },
     {
-      "@id": "txc:Song",
+      "@id": "https://purl.archive.org/textcommons/terms#Song",
       "@type": "DefinedTerm",
       "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
-      "inDefinedTermSet": "CommunicationModeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms",
       "name": "Song",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/singing"
     },
     {
-      "@id": "txc:SpokenLanguage",
+      "@id": "https://purl.archive.org/textcommons/terms#SpokenLanguage",
       "@type": "DefinedTerm",
       "description": "This resource contains  spoken language",
-      "inDefinedTermSet": "CommunicationModeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms",
       "name": "SpokenLanguage"
     },
     {
-      "@id": "txc:Syntactic",
+      "@id": "https://purl.archive.org/textcommons/terms#Syntactic",
       "@type": "DefinedTerm",
       "description": "The resource contains annotation or analysis describing  the syntactic structure of another resource",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "name": "Syntactic",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description/syntactic"
     },
     {
-      "@id": "txc:TextSelectionCriteria",
+      "@id": "https://purl.archive.org/textcommons/terms#TextSelectionCriteria",
       "@type": "DefinedTerm",
       "description": "A description of the criteria used to select texts in a collection",
       "inDefinedTermSet": {
-        "@id": "txc:CollectionProtocolTypeTerms"
+        "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocolTypeTerms"
       },
       "name": "TextSelectionCriteria"
     },
     {
-      "@id": "txc:Thesaurus",
+      "@id": "https://purl.archive.org/textcommons/terms#Thesaurus",
       "@type": "DefinedTerm",
       "description": "The resource contains  a list or data structure consisting  of words or concepts arranged according to sense.  \n",
-      "inDefinedTermSet": "CommunicationGenreTerms",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+      },
       "name": "Thesaurus",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus"
     },
     {
-      "@id": "txc:TimeAligned",
+      "@id": "https://purl.archive.org/textcommons/terms#TimeAligned",
       "@type": "DefinedTerm",
       "description": "The resource contains a written or coded annotation(s) which has data aligning the annotation(s)  with a PrimaryText",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "name": "TimeAligned"
     },
     {
-      "@id": "txc:Transcription",
+      "@id": "https://purl.archive.org/textcommons/terms#Transcription",
       "@type": "DefinedTerm",
       "description": "The resource contains a transcription, which  is a written (orthographic) or coded  representation of an audio or visual signal. ",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "name": "Transcription",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription"
     },
     {
-      "@id": "txc:Translation",
+      "@id": "https://purl.archive.org/textcommons/terms#Translation",
       "@type": "DefinedTerm",
       "description": "The resource has been translated from one natual language to another",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "name": "Translation",
       "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation/translation"
     },
     {
-      "@id": "txc:Typeset",
+      "@id": "https://purl.archive.org/textcommons/terms#Typeset",
       "@type": "DefinedTerm",
       "description": "The resource has been formatted for display",
       "inDefinedTermSet": {
-        "@id": "txc:OrthographyTypeTerms"
+        "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms"
       },
       "name": "Typeset"
     },
     {
-      "@id": "txc:Typewritten",
+      "@id": "https://purl.archive.org/textcommons/terms#Typewritten",
       "@type": "DefinedTerm",
       "description": "The resource contains text produced on a tpyewriter (From Nyingarn - TODO check this)",
       "inDefinedTermSet": {
-        "@id": "txc:OrthographyTypeTerms"
+        "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms"
       },
       "name": "Typewritten"
     },
     {
-      "@id": "txc:WrittenLanguage",
+      "@id": "https://purl.archive.org/textcommons/terms#WrittenLanguage",
       "@type": "DefinedTerm",
       "description": "The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc",
-      "inDefinedTermSet": "CommunicationModeTerms",
+      "inDefinedTermSet": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms",
       "name": "WrittenLanguage"
     },
     {
-      "@id": "txc:annotationOf",
+      "@id": "https://purl.archive.org/textcommons/terms#annotationOf",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
       },
       "name": "annotationOf",
-      "rangeIncludes": "\"txc:PrimaryText\"",
+      "rangeIncludes": "https://purl.archive.org/textcommons/terms#PrimaryText",
       "rdfs:comment": "This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references",
       "rdfs:label": "annotationOf"
     },
     {
-      "@id": "txc:annotationType",
+      "@id": "https://purl.archive.org/textcommons/terms#annotationType",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "txc:DerivedTextTypeTerms"
+        "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
       },
       "domainIncludes": {
-        "@id": "txc:Annotation"
+        "@id": "https://purl.archive.org/textcommons/terms#Annotation"
       },
       "name": "annotationType",
       "rdfs:label": "annotationType"
     },
     {
-      "@id": "txc:annotator",
+      "@id": "https://purl.archive.org/textcommons/terms#annotator",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -578,7 +871,7 @@
       "rdfs:label": "annotator"
     },
     {
-      "@id": "txc:author",
+      "@id": "https://purl.archive.org/textcommons/terms#author",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -597,7 +890,7 @@
       "rdfs:label": "author"
     },
     {
-      "@id": "txc:channels",
+      "@id": "https://purl.archive.org/textcommons/terms#channels",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -607,33 +900,33 @@
       "rdfs:label": "channels"
     },
     {
-      "@id": "txc:collectionEventType",
+      "@id": "https://purl.archive.org/textcommons/terms#collectionEventType",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "txc:CollectionEventTypeTerms"
+        "@id": "https://purl.archive.org/textcommons/terms#CollectionEventTypeTerms"
       },
       "domainIncludes": {
-        "@id": "txc:CollectionEvent"
+        "@id": "https://purl.archive.org/textcommons/terms#CollectionEvent"
       },
       "name": "collectionEventType",
       "rdfs:comment": "An event with a start and end time during which data are gathered from partipants, or from other materials",
       "rdfs:label": "collectionEventType"
     },
     {
-      "@id": "txc:collectionProtocolType",
+      "@id": "https://purl.archive.org/textcommons/terms#collectionProtocolType",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "txc:CollectionProtocolTypeTerms"
+        "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocolTypeTerms"
       },
       "domainIncludes": {
-        "@id": "txc:CollectionProtocol"
+        "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol"
       },
       "name": "collectionProtocolType",
       "rdfs:comment": "A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection",
       "rdfs:label": "collectionProtocolType"
     },
     {
-      "@id": "txc:compiler",
+      "@id": "https://purl.archive.org/textcommons/terms#compiler",
       "@type": "rdf:Property",
       "description": "This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately.",
       "domainIncludes": {
@@ -654,7 +947,7 @@
       "rdfs:label": "compiler"
     },
     {
-      "@id": "txc:consultant",
+      "@id": "https://purl.archive.org/textcommons/terms#consultant",
       "@type": "rdf:Property",
       "description": "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\".",
       "domainIncludes": {
@@ -674,7 +967,7 @@
       "rdfs:label": "consultant"
     },
     {
-      "@id": "txc:dataInputter",
+      "@id": "https://purl.archive.org/textcommons/terms#dataInputter",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -693,7 +986,7 @@
       "rdfs:label": "dataInputter"
     },
     {
-      "@id": "txc:depositor",
+      "@id": "https://purl.archive.org/textcommons/terms#depositor",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -712,21 +1005,23 @@
       "rdfs:label": "depositor"
     },
     {
-      "@id": "txc:derivationOf",
+      "@id": "https://purl.archive.org/textcommons/terms#derivationOf",
       "@type": "rdf:Property",
-      "domainIncludes": "\"txc:DerivedText\"",
+      "domainIncludes": "\"https://purl.archive.org/textcommons/terms#DerivedText\"",
       "name": "derivationOf",
       "rangeIncludes": [
-        "\"txc:PrimaryText\"",
         {
-          "@id": "txc:Annotation"
+          "@id": "https://purl.archive.org/textcommons/terms#PrimaryText"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Annotation"
         }
       ],
       "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF",
       "rdfs:label": "derivationOf"
     },
     {
-      "@id": "txc:developer",
+      "@id": "https://purl.archive.org/textcommons/terms#developer",
       "@type": "rdf:Property",
       "description": "A software programmer, designer, or analyst; a designer of a questionnaire or research task.",
       "domainIncludes": {
@@ -746,7 +1041,7 @@
       "rdfs:label": "developer"
     },
     {
-      "@id": "txc:doi",
+      "@id": "https://purl.archive.org/textcommons/terms#doi",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -756,7 +1051,7 @@
       "rdfs:label": "doi"
     },
     {
-      "@id": "txc:editor",
+      "@id": "https://purl.archive.org/textcommons/terms#editor",
       "@type": "rdf:Property",
       "description": "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases.",
       "domainIncludes": {
@@ -776,7 +1071,7 @@
       "rdfs:label": "editor"
     },
     {
-      "@id": "txc:geoJSON",
+      "@id": "https://purl.archive.org/textcommons/terms#geoJSON",
       "@type": "rdf:Property",
       "domainIncludes": [
         {
@@ -795,38 +1090,38 @@
       "rdfs:label": "geoJSON"
     },
     {
-      "@id": "txc:hasAnnotation",
+      "@id": "https://purl.archive.org/textcommons/terms#hasAnnotation",
       "@type": "rdf:Property",
-      "domainIncludes": "\"txc:PrimaryText\"",
+      "domainIncludes": "https://purl.archive.org/textcommons/terms#PrimaryText",
       "name": "hasAnnotation",
-      "rangeIncludes": "\"txc:Annnotation\"",
+      "rangeIncludes": "\"https://purl.archive.org/textcommons/terms#Annnotation\"",
       "rdfs:comment": "This resource references another resource that describes it  such as a translation, transcription or other analysis ",
       "rdfs:label": "hasCollectionProtocol"
     },
     {
-      "@id": "txc:hasCollectionProtocol",
+      "@id": "https://purl.archive.org/textcommons/terms#hasCollectionProtocol",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
       },
       "name": "hasAnnotation",
       "rangeIncludes": {
-        "@id": "txc:CollectionProtocol"
+        "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol"
       },
       "rdfs:comment": "This resource  was assembled or collected according to the linked protocol",
       "rdfs:label": "hasAnnotation"
     },
     {
-      "@id": "txc:hasDerivation",
+      "@id": "https://purl.archive.org/textcommons/terms#hasDerivation",
       "@type": "rdf:Property",
-      "domainIncludes": "\"txc:PrimaryText\"",
+      "domainIncludes": "https://purl.archive.org/textcommons/terms#PrimaryText",
       "name": "hasDerivation",
-      "rangeIncludes": "\"txc:DerivedText\"",
+      "rangeIncludes": "\"https://purl.archive.org/textcommons/terms#DerivedText\"",
       "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF",
       "rdfs:label": "hasDerivation"
     },
     {
-      "@id": "txc:illustrator",
+      "@id": "https://purl.archive.org/textcommons/terms#illustrator",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -845,7 +1140,7 @@
       "rdfs:label": "illustrator"
     },
     {
-      "@id": "txc:indexableText",
+      "@id": "https://purl.archive.org/textcommons/terms#indexableText",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -858,7 +1153,7 @@
       "rdfs:label": "indexableText"
     },
     {
-      "@id": "txc:interpreter",
+      "@id": "https://purl.archive.org/textcommons/terms#interpreter",
       "@type": "rdf:Property",
       "description": "The choice between 'interpreter' and 'translator' may depend on the dynamics of the resource creation event or process. Generally, if the participant is translating 'live'; that is, while the speaker or signer is speaking or signing, she or he should be identified as an interpreter. Also, some discourse genres include a participant who interprets or explains a performance of some kind.",
       "domainIncludes": {
@@ -879,7 +1174,7 @@
       "rdfs:label": "interpreter"
     },
     {
-      "@id": "txc:interviewee",
+      "@id": "https://purl.archive.org/textcommons/terms#interviewee",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -898,7 +1193,7 @@
       "rdfs:label": "interviewee"
     },
     {
-      "@id": "txc:interviewer",
+      "@id": "https://purl.archive.org/textcommons/terms#interviewer",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -917,9 +1212,9 @@
       "rdfs:label": "interviewer"
     },
     {
-      "@id": "txc:isDeIdentified",
+      "@id": "https://purl.archive.org/textcommons/terms#isDeIdentified",
       "@type": "rdf:Property",
-      "domainIncludes": "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, txc:PersonSnapshot]",
+      "domainIncludes": "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, https://purl.archive.org/textcommons/terms#PersonSnapshot]",
       "name": "deidentified",
       "rangeIncludes": {
         "@id": "schema:Boolean"
@@ -928,10 +1223,10 @@
       "rdfs:label": "isDeIdentified"
     },
     {
-      "@id": "txc:licensedOrganization",
+      "@id": "https://purl.archive.org/textcommons/terms#licensedOrganization",
       "@type": "rdf:Property",
       "domainIncludes": {
-        "@id": "txc:OrganizationBasedLicense"
+        "@id": "https://purl.archive.org/textcommons/terms#OrganizationBasedLicense"
       },
       "name": "licensedOrganization",
       "rangeIncludes": {
@@ -942,20 +1237,20 @@
       "rdfs:label": "licensedOrganization"
     },
     {
-      "@id": "txc:linguisticGenre",
+      "@id": "https://purl.archive.org/textcommons/terms#linguisticGenre",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "txc:CommunicationGenreTerms"
+        "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
       },
-      "domainIncludes": "\"txc:PrimaryText\"",
+      "domainIncludes": "https://purl.archive.org/textcommons/terms#PrimaryText",
       "name": "linguisticGenre",
       "rdfs:label": "linguisticGenre"
     },
     {
-      "@id": "txc:modality",
+      "@id": "https://purl.archive.org/textcommons/terms#modality",
       "@type": "rdf:Property",
       "definedTermSet": {
-        "@id": "txc:CommunicationModeTerms"
+        "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
       },
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -964,7 +1259,7 @@
       "rdfs:label": "modality"
     },
     {
-      "@id": "txc:participant",
+      "@id": "https://purl.archive.org/textcommons/terms#participant",
       "@type": "rdf:Property",
       "description": "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in general sense of having allowed the creation event to take place, such as the mayor of an indigenous community.",
       "domainIncludes": {
@@ -984,7 +1279,7 @@
       "rdfs:label": "participant"
     },
     {
-      "@id": "txc:performer",
+      "@id": "https://purl.archive.org/textcommons/terms#performer",
       "@type": "rdf:Property",
       "description": "It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.",
       "domainIncludes": {
@@ -1005,10 +1300,10 @@
       "rdfs:label": "performer"
     },
     {
-      "@id": "txc:person",
+      "@id": "https://purl.archive.org/textcommons/terms#person",
       "@type": "rdf:Property",
       "domainIncludes": {
-        "@id": "txc:PersonSnapshot"
+        "@id": "https://purl.archive.org/textcommons/terms#PersonSnapshot"
       },
       "name": "person",
       "rangeIncludes": {
@@ -1018,7 +1313,7 @@
       "rdfs:label": "person"
     },
     {
-      "@id": "txc:photographer",
+      "@id": "https://purl.archive.org/textcommons/terms#photographer",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1037,7 +1332,7 @@
       "rdfs:label": "photographer"
     },
     {
-      "@id": "txc:recorder",
+      "@id": "https://purl.archive.org/textcommons/terms#recorder",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1056,7 +1351,7 @@
       "rdfs:label": "recorder"
     },
     {
-      "@id": "txc:register",
+      "@id": "https://purl.archive.org/textcommons/terms#register",
       "@type": "rdf:Property",
       "description": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
       "domainIncludes": {
@@ -1068,7 +1363,7 @@
       "rdfs:label": "register"
     },
     {
-      "@id": "txc:researchParticipant",
+      "@id": "https://purl.archive.org/textcommons/terms#researchParticipant",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1087,7 +1382,7 @@
       "rdfs:label": "researchParticipant"
     },
     {
-      "@id": "txc:researcher",
+      "@id": "https://purl.archive.org/textcommons/terms#researcher",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1106,7 +1401,7 @@
       "rdfs:label": "researcher"
     },
     {
-      "@id": "txc:responder",
+      "@id": "https://purl.archive.org/textcommons/terms#responder",
       "@type": "rdf:Property",
       "description": "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\".",
       "domainIncludes": {
@@ -1126,7 +1421,7 @@
       "rdfs:label": "responder"
     },
     {
-      "@id": "txc:signer",
+      "@id": "https://purl.archive.org/textcommons/terms#signer",
       "@type": "rdf:Property",
       "description": "Signers are those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
       "domainIncludes": {
@@ -1147,7 +1442,7 @@
       "rdfs:label": "signer"
     },
     {
-      "@id": "txc:singer",
+      "@id": "https://purl.archive.org/textcommons/terms#singer",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1166,7 +1461,7 @@
       "rdfs:label": "singer"
     },
     {
-      "@id": "txc:speaker",
+      "@id": "https://purl.archive.org/textcommons/terms#speaker",
       "@type": "rdf:Property",
       "description": "Speakers are those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
       "domainIncludes": {
@@ -1187,7 +1482,7 @@
       "rdfs:label": "speaker"
     },
     {
-      "@id": "txc:sponsor",
+      "@id": "https://purl.archive.org/textcommons/terms#sponsor",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1206,7 +1501,7 @@
       "rdfs:label": "sponsor"
     },
     {
-      "@id": "txc:transcriber",
+      "@id": "https://purl.archive.org/textcommons/terms#transcriber",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1225,7 +1520,7 @@
       "rdfs:label": "transcriber"
     },
     {
-      "@id": "txc:translator",
+      "@id": "https://purl.archive.org/textcommons/terms#translator",
       "@type": "rdf:Property",
       "domainIncludes": {
         "@id": "schema:CreativeWork"
@@ -1242,17 +1537,6 @@
       "sameAs": "http://www.language-archives.org/REC/role.html#translator",
       "rdfs:comment": "The participant produced a translation of this or a related resource.",
       "rdfs:label": "translator"
-    },
-    {
-      "@id": "ro-crate-metadata.json",
-      "@type": "CreativeWork",
-      "conformsTo": {
-        "@id": "https://w3id.org/ro/crate/1.1"
-      },
-      "about": {
-        "@id": "./"
-      },
-      "identifier": "ro-crate-metadata.json"
     }
   ]
 }
