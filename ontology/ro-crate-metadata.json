@@ -28,6 +28,35 @@
       ]
     },
     {
+      "@id": "https://purl.archive.org/textcommons/terms#PrimaryText",
+      "@type": "rdfs:Class",
+      "name": "PrimaryResource",
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text"
+      ],
+      "rdfs:comment": [
+        "This is a primary resource: the object of study, such as a literary work, film, or recording of natural discourse"
+      ],
+      "rdfs:label": [
+        "PrimaryText"
+      ],
+      "rdfs:subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ],
+        "rangeIncludes": [
+          {
+            "@id": "https://purl.archive.org/textcommons/terms#derivationOf"
+          }
+        ]
+      }
+    },
+    {
       "@id": "#261c406f-63bd-491f-ae4f-8208a9c784b8",
       "@type": "Thing",
       "name": "",
@@ -315,14 +344,14 @@
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#annotation"
       ],
-      "rdfs:comment": [
-        "The resource includes information which annotates, describes or otherwise an some other linguistic record."
-      ],
       "rdfs:label": [
         "Annotation"
       ],
       "rdfs:subClassOf": [
         "schema:CreativeWork"
+      ],
+      "rdfs:comment": [
+        "The resource includes material which adds information to some other linguistic record."
       ],
       "@reverse": {
         "mentions": [
@@ -351,6 +380,9 @@
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+      ],
+      "Description": [
+        "The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet)."
       ],
       "@reverse": {
         "mentions": [
@@ -487,16 +519,16 @@
       "@reverse": {
         "inDefinedTermSet": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#SpokenLanguage"
-          },
-          {
             "@id": "https://purl.archive.org/textcommons/terms#Gesture"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#WrittenLanguage"
+            "@id": "https://purl.archive.org/textcommons/terms#Song"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Song"
+            "@id": "https://purl.archive.org/textcommons/terms#SpokenLanguage"
+          },
+          {
+            "@id": "https://purl.archive.org/textcommons/terms#WrittenLanguage"
           }
         ],
         "definedTermSet": [
@@ -514,7 +546,7 @@
         "http://www.language-archives.org/REC/type-20020628.html#text"
       ],
       "rdfs:comment": [
-        "A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a resource which  is not an annoation (description)"
+        "A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a resource which is not an annotation (description)"
       ],
       "rdfs:label": [
         "DerivedResource"
@@ -569,14 +601,14 @@
         }
       ],
       "@reverse": {
-        "definedTermSet": [
-          {
-            "@id": "https://purl.archive.org/textcommons/terms#annotationType"
-          }
-        ],
         "inDefinedTermSet": [
           {
             "@id": "https://purl.archive.org/textcommons/terms#Syntactic"
+          }
+        ],
+        "definedTermSet": [
+          {
+            "@id": "https://purl.archive.org/textcommons/terms#annotationType"
           }
         ]
       }
@@ -615,6 +647,9 @@
       ],
       "description": [
         "A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience.\n"
+      ],
+      "Description": [
+        "A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience."
       ],
       "inDefinedTermSet": [
         {
@@ -675,14 +710,14 @@
         }
       ],
       "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
-          }
-        ],
         "mentions": [
           {
             "@id": "./"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
           }
         ]
       }
@@ -740,7 +775,7 @@
       "@type": "DefinedTerm",
       "name": "Informational",
       "description": [
-        " Discourse whose primary purpose is to inform the reader about the natural or social world."
+        " Discourse whose primary purpose is to inform the audience about the natural or social world."
       ],
       "inDefinedTermSet": [
         {
@@ -942,7 +977,7 @@
       "@type": "DefinedTerm",
       "name": "Orthographic",
       "description": [
-        "The resource contains annotations using  orthography (a writing ssytem) as opposed to a coded analysis such as a phonetic transcription"
+        "The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription"
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -992,7 +1027,7 @@
       "@type": "DefinedTerm",
       "name": "PartOfSpeech",
       "description": [
-        "TODO - Olac definitons are circular"
+        "An annotation which assigns lexical elements of language to classes on the basis of their distributional properties. (For sign languages, the term 'sign class' is appropriate)"
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1040,7 +1075,7 @@
       "@type": "DefinedTerm",
       "name": "Phonemic",
       "description": [
-        "TODO - Olac definitons are circular"
+        "An annotation which represents speech in terms of the sound contrasts made in a language"
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1066,7 +1101,7 @@
       "@type": "DefinedTerm",
       "name": "Phonetic",
       "description": [
-        "TODO - Olac definitons are circular"
+        "An annotation which represents speech in terms of the sounds produced, typically using the International Phonetic Alphabet"
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1092,7 +1127,7 @@
       "@type": "DefinedTerm",
       "name": "Phonological",
       "description": [
-        "TODO - Olac definitons are circular"
+        "An annotation which includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language"
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1109,35 +1144,6 @@
         "hasDefinedTerm": [
           {
             "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/textcommons/terms#PrimaryText",
-      "@type": "rdfs:Class",
-      "name": "PrimaryText",
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text"
-      ],
-      "rdfs:comment": [
-        "This is a primary resource: the object of study, such as a literary work, film, or recording of natural discourse"
-      ],
-      "rdfs:label": [
-        "PrimaryText"
-      ],
-      "rdfs:subClassOf": [
-        "schema:CreativeWork"
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
-        "rangeIncludes": [
-          {
-            "@id": "https://purl.archive.org/textcommons/terms#derivationOf"
           }
         ]
       }
@@ -1178,7 +1184,7 @@
       "@type": "DefinedTerm",
       "name": "Prosodic",
       "description": [
-        "TODO - Olac definitons are circular"
+        "AN annotation which provides a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription"
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1258,7 +1264,7 @@
       "@type": "DefinedTerm",
       "name": "Session",
       "description": [
-        "A collection event which is a recording or elicitation Session with particpants"
+        "A collection event which is a recording or elicitation Session with participants"
       ],
       "sameAs": [
         "https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"
@@ -1286,7 +1292,7 @@
       "@type": "DefinedTerm",
       "name": "SignLanguage",
       "description": [
-        "This resource contains  sign language"
+        "The resource contains data for which the medium of interaction was signing"
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
@@ -1337,7 +1343,7 @@
       "@type": "DefinedTerm",
       "name": "SpokenLanguage",
       "description": [
-        "This resource contains  spoken language"
+        "The resource contains data for which the medium of interaction was speech"
       ],
       "inDefinedTermSet": [
         {
@@ -1361,8 +1367,11 @@
       "@id": "https://purl.archive.org/textcommons/terms#Syntactic",
       "@type": "DefinedTerm",
       "name": "Syntactic",
+      "Description": [
+        "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource"
+      ],
       "description": [
-        "The resource contains annotation or analysis describing  the syntactic structure of another resource"
+        "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#description/syntactic"
@@ -1415,7 +1424,7 @@
       "@type": "DefinedTerm",
       "name": "Thesaurus",
       "description": [
-        "The resource contains  a list or data structure consisting  of words or concepts arranged according to sense.  \n"
+        "The resource contains a list or data structure consisting of words or concepts arranged according to sense.  "
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus"
@@ -1443,7 +1452,7 @@
       "@type": "DefinedTerm",
       "name": "TimeAligned",
       "description": [
-        "The resource contains a written or coded annotation(s) which has data aligning the annotation(s)  with a PrimaryText"
+        "The resource contains a written or coded annotation(s) which has data aligning the annotation(s) with a PrimaryText"
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1466,7 +1475,7 @@
       "@type": "DefinedTerm",
       "name": "Narrative",
       "description": [
-        "A monologic discourse which represents temporally organized events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.\n"
+        "A discourse, monologic or co-constructed, which represents temporally organized events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories."
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#text/narrative"
@@ -1494,7 +1503,7 @@
       "@type": "DefinedTerm",
       "name": "Transcription",
       "description": [
-        "The resource contains a transcription, which  is a written (orthographic) or coded  representation of an audio or visual signal. "
+        "The resource contains a transcription, which is a written representation (orthographic or coded) of an audio or visual signal."
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1596,7 +1605,7 @@
       "@type": "DefinedTerm",
       "name": "WrittenLanguage",
       "description": [
-        "The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc"
+        "TThe resource contains data for which the medium of interaction was writing"
       ],
       "inDefinedTermSet": [
         {
@@ -1627,7 +1636,7 @@
         "https://purl.archive.org/textcommons/terms#PrimaryText"
       ],
       "rdfs:comment": [
-        "This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references"
+        "This resource contains some kind of description which adds information to the resource it references"
       ],
       "rdfs:label": [
         "annotationOf"
@@ -1729,7 +1738,7 @@
         "schema:CreativeWork"
       ],
       "rdfs:comment": [
-        "Number of audio channels this resource contains (eg 1, 2 5.1)"
+        "Number of audio channels this resource contains (eg 1, 2, 5.1)"
       ],
       "rdfs:label": [
         "channels"
@@ -1747,7 +1756,7 @@
       "@type": "rdf:Property",
       "name": "collectionEventType",
       "rdfs:comment": [
-        "An event with a start and end time during which data are gathered from partipants, or from other materials"
+        "An event with a start and end time during which data are gathered from participants, or from other materials"
       ],
       "rdfs:label": [
         "collectionEventType"
@@ -2063,43 +2072,17 @@
       "@id": "https://purl.archive.org/textcommons/terms#hasAnnotation",
       "@type": "rdf:Property",
       "name": "hasAnnotation",
+      "label": [
+        "hasAnnotation"
+      ],
+      "rdfs:comment": [
+        "This resource is referenced by another resource that describes it such as a translation, transcription or other analysis "
+      ],
       "domainIncludes": [
         "https://purl.archive.org/textcommons/terms#PrimaryText"
       ],
       "rangeIncludes": [
         "\"https://purl.archive.org/textcommons/terms#Annnotation\""
-      ],
-      "rdfs:comment": [
-        "This resource references another resource that describes it  such as a translation, transcription or other analysis "
-      ],
-      "rdfs:label": [
-        "hasCollectionProtocol"
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/textcommons/terms#hasCollectionProtocol",
-      "@type": "rdf:Property",
-      "name": "hasAnnotation",
-      "domainIncludes": [
-        "schema:CreativeWork"
-      ],
-      "rdfs:comment": [
-        "This resource  was assembled or collected according to the linked protocol"
-      ],
-      "rdfs:label": [
-        "hasAnnotation"
-      ],
-      "rangeIncludes": [
-        {
-          "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol"
-        }
       ],
       "@reverse": {
         "mentions": [
@@ -2172,7 +2155,7 @@
         "schema:File"
       ],
       "rdfs:comment": [
-        "Indicates one or more  target File that  together contain the full text of an item  – each  file should indicate its language"
+        "Indicates one or more target File that together contain the full text of an item – each file should indicate its language"
       ],
       "rdfs:label": [
         "indexableText"
@@ -2263,30 +2246,6 @@
       ],
       "rdfs:label": [
         "interviewer"
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/textcommons/terms#isDeIdentified",
-      "@type": "rdf:Property",
-      "name": "deidentified",
-      "domainIncludes": [
-        "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, https://purl.archive.org/textcommons/terms#PersonSnapshot]"
-      ],
-      "rangeIncludes": [
-        "schema:Boolean"
-      ],
-      "rdfs:comment": [
-        "This data in this item has had identifying information removed, or in the case of a person the name is an alias"
-      ],
-      "rdfs:label": [
-        "isDeIdentified"
       ],
       "@reverse": {
         "mentions": [
@@ -2670,6 +2629,9 @@
       "@id": "https://purl.archive.org/textcommons/terms#singer",
       "@type": "rdf:Property",
       "name": "singer",
+      "rdfs:label": [
+        "singer"
+      ],
       "domainIncludes": [
         "schema:CreativeWork"
       ],
@@ -2682,9 +2644,6 @@
       ],
       "rdfs:comment": [
         "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource."
-      ],
-      "rdfs:label": [
-        "singer"
       ],
       "@reverse": {
         "mentions": [
@@ -2869,9 +2828,6 @@
             "@id": "https://purl.archive.org/textcommons/terms#Ludic"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Narrative"
-          },
-          {
             "@id": "https://purl.archive.org/textcommons/terms#Oratory"
           },
           {
@@ -2882,11 +2838,64 @@
           },
           {
             "@id": "https://purl.archive.org/textcommons/terms#Thesaurus"
+          },
+          {
+            "@id": "https://purl.archive.org/textcommons/terms#Narrative"
           }
         ],
         "definedTermSet": [
           {
             "@id": "https://purl.archive.org/textcommons/terms#linguisticGenre"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/textcommons/terms#hasCollectionProtocol",
+      "@type": "rdf:Property",
+      "name": "hasCollectionProtocol",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rdfs:comment": [
+        "This resource  was assembled or collected according to the linked protocol"
+      ],
+      "rdfs:label": [
+        "hasCollectionProtocol"
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol"
+        }
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/textcommons/terms#isDeIdentified",
+      "@type": "rdf:Property",
+      "name": "isDeIdentified",
+      "domainIncludes": [
+        "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, https://purl.archive.org/textcommons/terms#PersonSnapshot]"
+      ],
+      "rangeIncludes": [
+        "schema:Boolean"
+      ],
+      "rdfs:comment": [
+        "This data in this item has had identifying information removed, or in the case of a person the name is an alias"
+      ],
+      "rdfs:label": [
+        "isDeIdentified"
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
           }
         ]
       }
