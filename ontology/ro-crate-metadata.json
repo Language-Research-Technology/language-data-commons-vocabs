@@ -20,12 +20,7 @@
       },
       "about": {
         "@id": "./"
-      },
-      "identifier": [
-        {
-          "@id": "#:localid:describo:7f82c7ad-d382-4634-b5a9-3f9a8dbe5765"
-        }
-      ]
+      }
     },
     {
       "@id": "https://purl.archive.org/textcommons/terms#PrimaryText",
@@ -376,13 +371,10 @@
       "@type": "DefinedTerm",
       "name": "Coded",
       "description": [
-        "The resource contains a coded analysis or annotation"
+        "The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet)."
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
-      ],
-      "Description": [
-        "The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet)."
       ],
       "@reverse": {
         "mentions": [
@@ -423,6 +415,9 @@
       "@id": "https://purl.archive.org/textcommons/terms#CollectionEventTypeTerms",
       "@type": "DefinedTermSet",
       "name": "CollectionEventTypeTerms",
+      "description": [
+        "Set of terms which are expected values for CollectionEvent types"
+      ],
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/textcommons/terms#Session"
@@ -440,14 +435,14 @@
       "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol",
       "@type": "rdfs:Class",
       "name": "CollectionProtocol",
-      "rdfs:comment": [
-        "Description of how this Object or Collection was obtained – such as strategy used for selecting written source texts, or the prompts given to participants "
-      ],
       "rdfs:label": [
         "CollectionProtocol"
       ],
       "rdfs:subClassOf": [
         "schema:CreativeWork"
+      ],
+      "rdfs:comment": [
+        "Description of how this Object or Collection was obtained – such as strategy used for selecting written source texts, or the prompts given to participants "
       ],
       "@reverse": {
         "mentions": [
@@ -471,6 +466,9 @@
       "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocolTypeTerms",
       "@type": "DefinedTermSet",
       "name": "CollectionProtocolTypeTerms",
+      "description": [
+        "Set of terms which are expected values for CollectionProtocol types"
+      ],
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/textcommons/terms#ElicitationTask"
@@ -499,6 +497,9 @@
       "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "name": "ModalityTerms",
+      "description": [
+        "Set of expected values for modality types"
+      ],
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/textcommons/terms#SpokenLanguage"
@@ -529,6 +530,9 @@
           },
           {
             "@id": "https://purl.archive.org/textcommons/terms#WrittenLanguage"
+          },
+          {
+            "@id": "https://purl.archive.org/textcommons/terms#WhistledLanguage"
           }
         ],
         "definedTermSet": [
@@ -571,6 +575,9 @@
       "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
       "@type": "DefinedTermSet",
       "name": "AnnotationTypeTerms",
+      "description": [
+        "The set of expected values for annotation types"
+      ],
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/textcommons/terms#Phonemic"
@@ -646,9 +653,6 @@
         "http://www.language-archives.org/REC/type-20020628.html#text/drama"
       ],
       "description": [
-        "A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience.\n"
-      ],
-      "Description": [
         "A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience."
       ],
       "inDefinedTermSet": [
@@ -699,7 +703,7 @@
       "@type": "DefinedTerm",
       "name": "Formulaic",
       "description": [
-        "The resource is a ritually or conventionally structured discourse.\n"
+        "The resource is a ritually or conventionally structured discourse."
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#text/formulaic"
@@ -775,7 +779,7 @@
       "@type": "DefinedTerm",
       "name": "Informational",
       "description": [
-        " Discourse whose primary purpose is to inform the audience about the natural or social world."
+        "Discourse whose primary purpose is to inform the audience about the natural or social world."
       ],
       "inDefinedTermSet": [
         {
@@ -823,7 +827,7 @@
       "@type": "DefinedTerm",
       "name": "Lexicon",
       "description": [
-        "The resource includes a systematic listing of lexical items.\n"
+        "The resource includes a systematic listing of lexical items."
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#Lexicon"
@@ -897,7 +901,7 @@
       "@type": "rdfs:Class",
       "name": "OrganizationBasedLicense",
       "rdfs:comment": [
-        "A licence document  setting out rights and oblications could be based copyright or other rights  based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community"
+        "A licence document setting out rights and oblications could be based copyright or other rights based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community"
       ],
       "rdfs:label": [
         "OrganizationBasedLicense"
@@ -957,7 +961,7 @@
         "OrganizationReuseLicense"
       ],
       "rdfs:comment": [
-        "A license document setting out terms for reuse of data by one or more identified groups "
+        "A license document setting out terms for reuse of data by one or more identified groups."
       ],
       "rdfs:subClassOf": [
         {
@@ -994,40 +998,11 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms",
-      "@type": "DefinedTermSet",
-      "name": "OrthographyTypeTerms",
-      "hasDefinedTerm": [
-        {
-          "@id": "https://purl.archive.org/textcommons/terms#Handwritten"
-        },
-        {
-          "@id": "https://purl.archive.org/textcommons/terms#Typewritten"
-        },
-        {
-          "@id": "https://purl.archive.org/textcommons/terms#Typeset"
-        }
-      ],
-      "@reverse": {
-        "inDefinedTermSet": [
-          {
-            "@id": "https://purl.archive.org/textcommons/terms#Session"
-          },
-          {
-            "@id": "https://purl.archive.org/textcommons/terms#Typeset"
-          },
-          {
-            "@id": "https://purl.archive.org/textcommons/terms#Typewritten"
-          }
-        ]
-      }
-    },
-    {
       "@id": "https://purl.archive.org/textcommons/terms#PartOfSpeech",
       "@type": "DefinedTerm",
       "name": "PartOfSpeech",
       "description": [
-        "An annotation which assigns lexical elements of language to classes on the basis of their distributional properties. (For sign languages, the term 'sign class' is appropriate)"
+        "An annotation which assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate)"
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1048,7 +1023,7 @@
       "@type": "rdfs:Class",
       "name": "PersonSnapshot",
       "rdfs:comment": [
-        "This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class  is to caputre the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time. "
+        "This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class is to capture the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time."
       ],
       "rdfs:label": [
         "PersonSnapshot"
@@ -1075,7 +1050,7 @@
       "@type": "DefinedTerm",
       "name": "Phonemic",
       "description": [
-        "An annotation which represents speech in terms of the sound contrasts made in a language"
+        "An annotation which represents speech in terms of the sound contrasts made in a language."
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1101,7 +1076,7 @@
       "@type": "DefinedTerm",
       "name": "Phonetic",
       "description": [
-        "An annotation which represents speech in terms of the sounds produced, typically using the International Phonetic Alphabet"
+        "A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet"
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1127,7 +1102,7 @@
       "@type": "DefinedTerm",
       "name": "Phonological",
       "description": [
-        "An annotation which includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language"
+        "An annotation which includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language."
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1152,9 +1127,6 @@
       "@id": "https://purl.archive.org/textcommons/terms#Procedural",
       "@type": "DefinedTerm",
       "name": "Procedural",
-      "Description": [
-        "Simon todo\n"
-      ],
       "description": [
         "An explanation or description of a method, process, or situation having ordered steps."
       ],
@@ -1184,7 +1156,7 @@
       "@type": "DefinedTerm",
       "name": "Prosodic",
       "description": [
-        "AN annotation which provides a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription"
+        "An annotation which provides a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription."
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1238,7 +1210,7 @@
       "@type": "DefinedTerm",
       "name": "Semantic",
       "description": [
-        "The resource contains annotations of the meaning of another resource"
+        "The resource includes annotation or analysis concerning the encoding of meaning."
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1264,7 +1236,7 @@
       "@type": "DefinedTerm",
       "name": "Session",
       "description": [
-        "A collection event which is a recording or elicitation Session with participants"
+        "A collection event which is a recording or elicitation Session with participants."
       ],
       "sameAs": [
         "https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"
@@ -1292,7 +1264,7 @@
       "@type": "DefinedTerm",
       "name": "SignLanguage",
       "description": [
-        "The resource contains data for which the medium of interaction was signing"
+        "The resource contains data for which the medium of interaction was signing."
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
@@ -1367,9 +1339,6 @@
       "@id": "https://purl.archive.org/textcommons/terms#Syntactic",
       "@type": "DefinedTerm",
       "name": "Syntactic",
-      "Description": [
-        "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource"
-      ],
       "description": [
         "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource"
       ],
@@ -1424,7 +1393,7 @@
       "@type": "DefinedTerm",
       "name": "Thesaurus",
       "description": [
-        "The resource contains a list or data structure consisting of words or concepts arranged according to sense.  "
+        "The resource contains a list or data structure consisting of words or concepts arranged according to sense."
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus"
@@ -1529,7 +1498,7 @@
       "@type": "DefinedTerm",
       "name": "Translation",
       "description": [
-        "The resource has been translated from one natual language to another"
+        "The resource has been translated from one natural language to another."
       ],
       "inDefinedTermSet": [
         "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
@@ -1555,7 +1524,7 @@
       "@type": "DefinedTerm",
       "name": "Typeset",
       "description": [
-        "The resource has been formatted for display"
+        "The resource has been formatted for display."
       ],
       "inDefinedTermSet": [
         {
@@ -1605,7 +1574,7 @@
       "@type": "DefinedTerm",
       "name": "WrittenLanguage",
       "description": [
-        "TThe resource contains data for which the medium of interaction was writing"
+        "TThe resource contains data for which the medium of interaction was writing."
       ],
       "inDefinedTermSet": [
         {
@@ -1624,6 +1593,20 @@
           }
         ]
       }
+    },
+    {
+      "@id": "https://purl.archive.org/textcommons/terms#WhistledLanguage",
+      "@type": "DefinedTerm",
+      "name": "WhistledLanguage",
+      "description": [
+        "The resource contains data for which the medium of interaction was whistling."
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+        }
+      ],
+      "@reverse": {}
     },
     {
       "@id": "https://purl.archive.org/textcommons/terms#annotationOf",
@@ -1656,14 +1639,17 @@
       "rdfs:label": [
         "annotationType"
       ],
-      "definedTermSet": [
-        {
-          "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
-        }
+      "rdfs:comment": [
+        "The type of annotation for Annotation resources"
       ],
       "domainIncludes": [
         {
           "@id": "https://purl.archive.org/textcommons/terms#Annotation"
+        }
+      ],
+      "definedTermSet": [
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
         }
       ],
       "@reverse": {
@@ -2072,7 +2058,7 @@
       "@id": "https://purl.archive.org/textcommons/terms#hasAnnotation",
       "@type": "rdf:Property",
       "name": "hasAnnotation",
-      "label": [
+      "rdfs:label": [
         "hasAnnotation"
       ],
       "rdfs:comment": [
@@ -2294,6 +2280,9 @@
       "rdfs:label": [
         "linguisticGenre"
       ],
+      "rdfs:comment": [
+        "A linguistic classification of the genre of this resource"
+      ],
       "definedTermSet": [
         {
           "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
@@ -2316,6 +2305,9 @@
       ],
       "rdfs:label": [
         "modality"
+      ],
+      "rdfs:comment": [
+        "The mode (spoken, written, signed etc) of this resource. There may be more than one value for this property."
       ],
       "definedTermSet": [
         {
@@ -2482,7 +2474,7 @@
       "@type": "rdf:Property",
       "name": "register",
       "description": [
-        "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n"
+        "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource."
       ],
       "domainIncludes": [
         "schema:CreativeWork"
@@ -2491,7 +2483,7 @@
         "http://w3id.org/meta-share/meta-share/register"
       ],
       "rdfs:comment": [
-        "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n"
+        "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource."
       ],
       "rdfs:label": [
         "register"
@@ -2536,12 +2528,12 @@
       "@id": "https://purl.archive.org/textcommons/terms#researcher",
       "@type": "rdf:Property",
       "name": "researcher",
-      "domainIncludes": [
-        "schema:CreativeWork"
-      ],
       "rangeIncludes": [
         "schema:Person",
         "schema:Organization"
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#researcher"
@@ -2747,12 +2739,12 @@
       "@id": "https://purl.archive.org/textcommons/terms#translator",
       "@type": "rdf:Property",
       "name": "translator",
+      "rangeIncludes": [
+        "schema:Organization",
+        "schema:Person"
+      ],
       "domainIncludes": [
         "schema:CreativeWork"
-      ],
-      "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#translator"
@@ -2772,9 +2764,94 @@
       }
     },
     {
+      "@id": "https://purl.archive.org/textcommons/terms#hasCollectionProtocol",
+      "@type": "rdf:Property",
+      "name": "hasCollectionProtocol",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rdfs:comment": [
+        "This resource  was assembled or collected according to the linked protocol"
+      ],
+      "rdfs:label": [
+        "hasCollectionProtocol"
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol"
+        }
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/textcommons/terms#isDeIdentified",
+      "@type": "rdf:Property",
+      "name": "isDeIdentified",
+      "domainIncludes": [
+        "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, https://purl.archive.org/textcommons/terms#PersonSnapshot]"
+      ],
+      "rangeIncludes": [
+        "schema:Boolean"
+      ],
+      "rdfs:comment": [
+        "The data in this item has had identifying information removed, or in the case of a person the name is an alias"
+      ],
+      "rdfs:label": [
+        "isDeIdentified"
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "WrittenLanguageTypeTerms",
+      "description": [
+        "Set of expected types for WrittenLanguage modality (this set is incomplete - more work needed)"
+      ],
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Handwritten"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Typewritten"
+        },
+        {
+          "@id": "https://purl.archive.org/textcommons/terms#Typeset"
+        }
+      ],
+      "@reverse": {
+        "inDefinedTermSet": [
+          {
+            "@id": "https://purl.archive.org/textcommons/terms#Session"
+          },
+          {
+            "@id": "https://purl.archive.org/textcommons/terms#Typeset"
+          },
+          {
+            "@id": "https://purl.archive.org/textcommons/terms#Typewritten"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms",
       "@type": "DefinedTermSet",
-      "name": "LinguistcGenreTerms",
+      "name": "LinguisticGenreTerms",
+      "description": [
+        "Set of expected values for linguistic genre of a resource"
+      ],
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/textcommons/terms#Formulaic"
@@ -2846,56 +2923,6 @@
         "definedTermSet": [
           {
             "@id": "https://purl.archive.org/textcommons/terms#linguisticGenre"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/textcommons/terms#hasCollectionProtocol",
-      "@type": "rdf:Property",
-      "name": "hasCollectionProtocol",
-      "domainIncludes": [
-        "schema:CreativeWork"
-      ],
-      "rdfs:comment": [
-        "This resource  was assembled or collected according to the linked protocol"
-      ],
-      "rdfs:label": [
-        "hasCollectionProtocol"
-      ],
-      "rangeIncludes": [
-        {
-          "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol"
-        }
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/textcommons/terms#isDeIdentified",
-      "@type": "rdf:Property",
-      "name": "isDeIdentified",
-      "domainIncludes": [
-        "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, https://purl.archive.org/textcommons/terms#PersonSnapshot]"
-      ],
-      "rangeIncludes": [
-        "schema:Boolean"
-      ],
-      "rdfs:comment": [
-        "This data in this item has had identifying information removed, or in the case of a person the name is an alias"
-      ],
-      "rdfs:label": [
-        "isDeIdentified"
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
           }
         ]
       }
