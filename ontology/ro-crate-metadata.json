@@ -5,7 +5,7 @@
       "@vocab": "http://schema.org/"
     },
     {
-      "txc": "https://purl.archive.org/textcommons/terms#"
+      "txc": "https://purl.archive.org/language-data-node-tools/terms#"
     },
     {
       "@base": null
@@ -20,10 +20,15 @@
       },
       "about": {
         "@id": "./"
-      }
+      },
+      "identifier": [
+        {
+          "@id": "#:localid:describo:ad55b69a-ca9a-46ab-a581-d57f06979290"
+        }
+      ]
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#PrimaryText",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#PrimaryText",
       "@type": "rdfs:Class",
       "name": "PrimaryResource",
       "sameAs": [
@@ -39,14 +44,9 @@
         "schema:CreativeWork"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "rangeIncludes": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#derivationOf"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#derivationOf"
           }
         ]
       }
@@ -56,7 +56,7 @@
       "@type": "Thing",
       "name": "",
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
       ],
       "@reverse": {}
     },
@@ -69,271 +69,271 @@
       ],
       "mentions": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Annotation"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonological"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Code"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Annotation"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CollectionEvent"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Code"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionEvent"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#DerivedResource"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocol"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Dialogue"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedResource"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Drama"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Dialogue"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#ElicitationTask"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Drama"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Formulaic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#ElicitationTask"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Gesture"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Formulaic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Handwritten"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Gesture"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Informational"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Handwritten"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Interview"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Informational"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Lexicon"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Interview"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Ludic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Lexicon"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Narrative"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Ludic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Oratory"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Narrative"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#OrganizationBasedLicense"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Oratory"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#OrganizationDepositLicense"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationBasedLicense"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#OrganizationReuseLicense"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationDepositLicense"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Orthographic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationReuseLicense"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#PartOfSpeech"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Orthographic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#PersonSnapshot"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#PartOfSpeech"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Phonemic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#PersonSnapshot"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Phonetic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonemic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Phonological"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonetic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#PrimaryText"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#PrimaryText"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Procedural"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Procedural"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Prosodic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Prosodic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Report"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Report"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Semantic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Semantic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Session"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Session"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#SignLanguage"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#SignLanguage"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Song"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Song"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#SpokenLanguage"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#SpokenLanguage"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Syntactic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Syntactic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#TextSelectionCriteria"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#TextSelectionCriteria"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Thesaurus"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Thesaurus"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#TimeAligned"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Transcription"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Transcription"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Translation"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Translation"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Typeset"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Typeset"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Typewritten"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Typewritten"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#WrittenLanguage"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#WrittenLanguage"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#annotationOf"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#annotationOf"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#annotationType"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#annotationType"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#annotator"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#annotator"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#author"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#author"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#channels"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#channels"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionEventType"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#collectionEventType"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionProtocolType"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#collectionProtocolType"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#compiler"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#compiler"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#consultant"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#consultant"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#dataInputter"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#dataInputter"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#depositor"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#depositor"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#derivationOf"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#derivationOf"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#developer"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#developer"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#doi"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#doi"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#editor"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#editor"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#geoJSON"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#geoJSON"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#hasAnnotation"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#hasAnnotation"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#hasCollectionProtocol"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#hasCollectionProtocol"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#hasDerivation"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#hasDerivation"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#illustrator"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#illustrator"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#indexableText"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#indexableText"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#interpreter"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#interpreter"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#interviewee"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#interviewee"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#interviewer"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#interviewer"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#isDeIdentified"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#isDeIdentified"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#licensedOrganization"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#licensedOrganization"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#linguisticGenre"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#linguisticGenre"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#modality"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#modality"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#participant"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#participant"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#performer"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#performer"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#person"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#person"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#photographer"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#photographer"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#recorder"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#recorder"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#register"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#register"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#researchParticipant"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#researchParticipant"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#researcher"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#researcher"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#responder"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#responder"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#signer"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#signer"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#singer"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#singer"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#speaker"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#speaker"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#sponsor"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#sponsor"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#transcriber"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#transcriber"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#translator"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#translator"
+          "@id": "http://purl.archive.org/language-data-commons/terms#TimeAligned"
         }
       ],
       "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Annotation",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Annotation",
       "@type": "rdfs:Class",
       "name": "Annotation",
       "sameAs": [
@@ -349,43 +349,32 @@
         "The resource includes material which adds information to some other linguistic record."
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "domainIncludes": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#annotationType"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#annotationType"
           }
         ],
         "rangeIncludes": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#derivationOf"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#derivationOf"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Code",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Code",
       "@type": "DefinedTerm",
       "name": "Coded",
       "description": [
         "The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet)."
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#CollectionEvent",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionEvent",
       "@type": "rdfs:Class",
       "name": "CollectionEvent",
       "rdfs:comment": [
@@ -399,20 +388,15 @@
         "schema:CreateAction"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "domainIncludes": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#collectionEventType"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionEventType"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#CollectionEventTypeTerms",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionEventTypeTerms",
       "@type": "DefinedTermSet",
       "name": "CollectionEventTypeTerms",
       "description": [
@@ -420,19 +404,19 @@
       ],
       "hasDefinedTerm": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Session"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Session"
         }
       ],
       "@reverse": {
         "definedTermSet": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#collectionEventType"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionEventType"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocol",
       "@type": "rdfs:Class",
       "name": "CollectionProtocol",
       "rdfs:label": [
@@ -445,25 +429,20 @@
         "Description of how this Object or Collection was obtained – such as strategy used for selecting written source texts, or the prompts given to participants "
       ],
       "@reverse": {
-        "mentions": [
+        "rangeIncludes": [
           {
-            "@id": "./"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#hasCollectionProtocol"
           }
         ],
         "domainIncludes": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#collectionProtocolType"
-          }
-        ],
-        "rangeIncludes": [
-          {
-            "@id": "https://purl.archive.org/textcommons/terms#hasCollectionProtocol"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionProtocolType"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocolTypeTerms",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocolTypeTerms",
       "@type": "DefinedTermSet",
       "name": "CollectionProtocolTypeTerms",
       "description": [
@@ -471,30 +450,30 @@
       ],
       "hasDefinedTerm": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#ElicitationTask"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#ElicitationTask"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#TextSelectionCriteria"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#TextSelectionCriteria"
         }
       ],
       "@reverse": {
         "inDefinedTermSet": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#ElicitationTask"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#ElicitationTask"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#TextSelectionCriteria"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#TextSelectionCriteria"
           }
         ],
         "definedTermSet": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#collectionProtocolType"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionProtocolType"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "name": "ModalityTerms",
       "description": [
@@ -502,48 +481,51 @@
       ],
       "hasDefinedTerm": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#SpokenLanguage"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#SpokenLanguage"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#WrittenLanguage"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#WrittenLanguage"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Song"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Song"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Gesture"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Gesture"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#SignLanguage"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#SignLanguage"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#WhistledLanguage"
         }
       ],
       "@reverse": {
         "inDefinedTermSet": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Gesture"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Gesture"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Song"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Song"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#SpokenLanguage"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#SpokenLanguage"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#WrittenLanguage"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#WrittenLanguage"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#WhistledLanguage"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#WhistledLanguage"
           }
         ],
         "definedTermSet": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#modality"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#modality"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#DerivedResource",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedResource",
       "@type": "rdfs:Class",
       "name": "DerivedResource",
       "sameAs": [
@@ -559,20 +541,15 @@
         "schema:CreativeWork"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "domainIncludes": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#derivationOf"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#derivationOf"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms",
       "@type": "DefinedTermSet",
       "name": "AnnotationTypeTerms",
       "description": [
@@ -580,48 +557,34 @@
       ],
       "hasDefinedTerm": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Phonemic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonemic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Phonetic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonetic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Phonological"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonological"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Syntactic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Syntactic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Translation"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Translation"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Semantic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Semantic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Transcription"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Transcription"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#TimeAligned"
-        },
-        {
-          "@id": "https://purl.archive.org/textcommons/terms#Prosodic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Prosodic"
         }
       ],
-      "@reverse": {
-        "inDefinedTermSet": [
-          {
-            "@id": "https://purl.archive.org/textcommons/terms#Syntactic"
-          }
-        ],
-        "definedTermSet": [
-          {
-            "@id": "https://purl.archive.org/textcommons/terms#annotationType"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Dialogue",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Dialogue",
       "@type": "DefinedTerm",
       "name": "Dialogue",
       "description": [
@@ -629,24 +592,19 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Drama",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Drama",
       "@type": "DefinedTerm",
       "name": "Drama",
       "sameAs": [
@@ -657,24 +615,19 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#ElicitationTask",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#ElicitationTask",
       "@type": "DefinedTerm",
       "name": "ElicitationTask",
       "description": [
@@ -682,24 +635,19 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocolTypeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocolTypeTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocolTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocolTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Formulaic",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Formulaic",
       "@type": "DefinedTerm",
       "name": "Formulaic",
       "description": [
@@ -710,24 +658,19 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Gesture",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Gesture",
       "@type": "DefinedTerm",
       "name": "Gesture",
       "description": [
@@ -735,47 +678,37 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Handwritten",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Handwritten",
       "@type": "DefinedTerm",
       "name": "Handwritten",
       "description": [
         "The resource was written using a writing implement such as pen, pencil, brush or computer stylus  (From Nyingarn - TODO check this)"
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Informational",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Informational",
       "@type": "DefinedTerm",
       "name": "Informational",
       "description": [
@@ -783,47 +716,37 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Interview",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Interview",
       "@type": "DefinedTerm",
       "name": "Interview",
       "description": [
         "The resource is conversation where one or more speakers are directing the conversation"
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Lexicon",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Lexicon",
       "@type": "DefinedTerm",
       "name": "Lexicon",
       "description": [
@@ -832,16 +755,10 @@
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#Lexicon"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Ludic",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Ludic",
       "@type": "DefinedTerm",
       "name": "Ludic",
       "description": [
@@ -852,24 +769,19 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Oratory",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Oratory",
       "@type": "DefinedTerm",
       "name": "Oratory",
       "description": [
@@ -880,24 +792,19 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#OrganizationBasedLicense",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationBasedLicense",
       "@type": "rdfs:Class",
       "name": "OrganizationBasedLicense",
       "rdfs:comment": [
@@ -910,28 +817,23 @@
         "schema:CreativeWork"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "rdfs:subClassOf": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#OrganizationDepositLicense"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationDepositLicense"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#OrganizationReuseLicense"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationReuseLicense"
           }
         ],
         "domainIncludes": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#licensedOrganization"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#licensedOrganization"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#OrganizationDepositLicense",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationDepositLicense",
       "@type": "rdfs:Class",
       "name": "OrganizationDepositLicense",
       "rdfs:comment": [
@@ -942,19 +844,13 @@
       ],
       "rdfs:subClassOf": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#OrganizationBasedLicense"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationBasedLicense"
         }
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#OrganizationReuseLicense",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationReuseLicense",
       "@type": "rdfs:Class",
       "name": "OrganizationReuseLicense",
       "rdfs:label": [
@@ -965,61 +861,43 @@
       ],
       "rdfs:subClassOf": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#OrganizationBasedLicense"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationBasedLicense"
         }
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Orthographic",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Orthographic",
       "@type": "DefinedTerm",
       "name": "Orthographic",
       "description": [
         "The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription"
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#description/orthographic"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#PartOfSpeech",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#PartOfSpeech",
       "@type": "DefinedTerm",
       "name": "PartOfSpeech",
       "description": [
         "An annotation which assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate)"
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#PersonSnapshot",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#PersonSnapshot",
       "@type": "rdfs:Class",
       "name": "PersonSnapshot",
       "rdfs:comment": [
@@ -1033,98 +911,78 @@
         "schema:Role"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "domainIncludes": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#person"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#person"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Phonemic",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonemic",
       "@type": "DefinedTerm",
       "name": "Phonemic",
       "description": [
         "An annotation which represents speech in terms of the sound contrasts made in a language."
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#description/phonemic"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Phonetic",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonetic",
       "@type": "DefinedTerm",
       "name": "Phonetic",
       "description": [
         "A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet"
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#description/phonetic"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Phonological",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonological",
       "@type": "DefinedTerm",
       "name": "Phonological",
       "description": [
         "An annotation which includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language."
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#description/phonological"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Procedural",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Procedural",
       "@type": "DefinedTerm",
       "name": "Procedural",
       "description": [
@@ -1135,50 +993,40 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Prosodic",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Prosodic",
       "@type": "DefinedTerm",
       "name": "Prosodic",
       "description": [
         "An annotation which provides a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription."
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#description/prosodic"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Report",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Report",
       "@type": "DefinedTerm",
       "name": "Report",
       "description": [
@@ -1189,50 +1037,40 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Semantic",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Semantic",
       "@type": "DefinedTerm",
       "name": "Semantic",
       "description": [
         "The resource includes annotation or analysis concerning the encoding of meaning."
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#description/semantic"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Session",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Session",
       "@type": "DefinedTerm",
       "name": "Session",
       "description": [
@@ -1243,75 +1081,60 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CollectionEventTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionEventTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#SignLanguage",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#SignLanguage",
       "@type": "DefinedTerm",
       "name": "SignLanguage",
       "description": [
         "The resource contains data for which the medium of interaction was signing."
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Song",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Song",
       "@type": "DefinedTerm",
       "name": "Song",
-      "description": [
-        "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED."
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#text/singing"
       ],
+      "description": [
+        "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED."
+      ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#SpokenLanguage",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#SpokenLanguage",
       "@type": "DefinedTerm",
       "name": "SpokenLanguage",
       "description": [
@@ -1319,24 +1142,19 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Syntactic",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Syntactic",
       "@type": "DefinedTerm",
       "name": "Syntactic",
       "description": [
@@ -1345,26 +1163,16 @@
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#description/syntactic"
       ],
-      "inDefinedTermSet": [
-        {
-          "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
-        }
-      ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#TextSelectionCriteria",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#TextSelectionCriteria",
       "@type": "DefinedTerm",
       "name": "TextSelectionCriteria",
       "description": [
@@ -1372,24 +1180,19 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocolTypeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocolTypeTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocolTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocolTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Thesaurus",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Thesaurus",
       "@type": "DefinedTerm",
       "name": "Thesaurus",
       "description": [
@@ -1400,47 +1203,19 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#TimeAligned",
-      "@type": "DefinedTerm",
-      "name": "TimeAligned",
-      "description": [
-        "The resource contains a written or coded annotation(s) which has data aligning the annotation(s) with a PrimaryText"
-      ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
-        "hasDefinedTerm": [
-          {
-            "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/textcommons/terms#Narrative",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Narrative",
       "@type": "DefinedTerm",
       "name": "Narrative",
       "description": [
@@ -1451,76 +1226,61 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Transcription",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Transcription",
       "@type": "DefinedTerm",
       "name": "Transcription",
       "description": [
         "The resource contains a transcription, which is a written representation (orthographic or coded) of an audio or visual signal."
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#transcription"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Translation",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Translation",
       "@type": "DefinedTerm",
       "name": "Translation",
       "description": [
         "The resource has been translated from one natural language to another."
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#annotation/translation"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Typeset",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Typeset",
       "@type": "DefinedTerm",
       "name": "Typeset",
       "description": [
@@ -1528,24 +1288,19 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#Typewritten",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Typewritten",
       "@type": "DefinedTerm",
       "name": "Typewritten",
       "description": [
@@ -1553,24 +1308,19 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#WrittenLanguage",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#WrittenLanguage",
       "@type": "DefinedTerm",
       "name": "WrittenLanguage",
       "description": [
@@ -1578,24 +1328,19 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#WhistledLanguage",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#WhistledLanguage",
       "@type": "DefinedTerm",
       "name": "WhistledLanguage",
       "description": [
@@ -1603,20 +1348,26 @@
       ],
       "inDefinedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
         }
       ],
-      "@reverse": {}
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+          }
+        ]
+      }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#annotationOf",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#annotationOf",
       "@type": "rdf:Property",
       "name": "annotationOf",
       "domainIncludes": [
         "schema:CreativeWork"
       ],
       "rangeIncludes": [
-        "https://purl.archive.org/textcommons/terms#PrimaryText"
+        "https://purl.archive.org/language-data-node-tools/terms#PrimaryText"
       ],
       "rdfs:comment": [
         "This resource contains some kind of description which adds information to the resource it references"
@@ -1624,16 +1375,10 @@
       "rdfs:label": [
         "annotationOf"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#annotationType",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#annotationType",
       "@type": "rdf:Property",
       "name": "annotationType",
       "rdfs:label": [
@@ -1644,24 +1389,13 @@
       ],
       "domainIncludes": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Annotation"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Annotation"
         }
       ],
-      "definedTermSet": [
-        {
-          "@id": "https://purl.archive.org/textcommons/terms#DerivedTextTypeTerms"
-        }
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#annotator",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#annotator",
       "@type": "rdf:Property",
       "name": "annotator",
       "domainIncludes": [
@@ -1680,16 +1414,10 @@
       "rdfs:label": [
         "annotator"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#author",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#author",
       "@type": "rdf:Property",
       "name": "author",
       "domainIncludes": [
@@ -1708,16 +1436,10 @@
       "rdfs:label": [
         "author"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#channels",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#channels",
       "@type": "rdf:Property",
       "name": "channels",
       "domainIncludes": [
@@ -1729,16 +1451,10 @@
       "rdfs:label": [
         "channels"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#collectionEventType",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionEventType",
       "@type": "rdf:Property",
       "name": "collectionEventType",
       "rdfs:comment": [
@@ -1749,24 +1465,18 @@
       ],
       "definedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CollectionEventTypeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionEventTypeTerms"
         }
       ],
       "domainIncludes": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CollectionEvent"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionEvent"
         }
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#collectionProtocolType",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionProtocolType",
       "@type": "rdf:Property",
       "name": "collectionProtocolType",
       "rdfs:comment": [
@@ -1777,24 +1487,18 @@
       ],
       "definedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocolTypeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocolTypeTerms"
         }
       ],
       "domainIncludes": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocol"
         }
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#compiler",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#compiler",
       "@type": "rdf:Property",
       "name": "compiler",
       "description": [
@@ -1819,16 +1523,10 @@
       "rdfs:label": [
         "compiler"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#consultant",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#consultant",
       "@type": "rdf:Property",
       "name": "consultant",
       "description": [
@@ -1850,16 +1548,10 @@
       "rdfs:label": [
         "consultant"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#dataInputter",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#dataInputter",
       "@type": "rdf:Property",
       "name": "dataInputter",
       "domainIncludes": [
@@ -1878,16 +1570,10 @@
       "rdfs:label": [
         "dataInputter"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#depositor",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#depositor",
       "@type": "rdf:Property",
       "name": "depositor",
       "domainIncludes": [
@@ -1906,16 +1592,10 @@
       "rdfs:label": [
         "depositor"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#derivationOf",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#derivationOf",
       "@type": "rdf:Property",
       "name": "derivationOf",
       "rdfs:comment": [
@@ -1926,27 +1606,21 @@
       ],
       "rangeIncludes": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#PrimaryText"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#PrimaryText"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Annotation"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Annotation"
         }
       ],
       "domainIncludes": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#DerivedResource"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedResource"
         }
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#developer",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#developer",
       "@type": "rdf:Property",
       "name": "developer",
       "description": [
@@ -1968,16 +1642,10 @@
       "rdfs:label": [
         "developer"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#doi",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#doi",
       "@type": "rdf:Property",
       "name": "doi",
       "domainIncludes": [
@@ -1989,16 +1657,10 @@
       "rdfs:label": [
         "doi"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#editor",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#editor",
       "@type": "rdf:Property",
       "name": "editor",
       "description": [
@@ -2020,16 +1682,10 @@
       "rdfs:label": [
         "editor"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#geoJSON",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#geoJSON",
       "@type": "rdf:Property",
       "name": "geoJSON",
       "domainIncludes": [
@@ -2046,16 +1702,10 @@
       "rdfs:label": [
         "geoJSON"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#hasAnnotation",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#hasAnnotation",
       "@type": "rdf:Property",
       "name": "hasAnnotation",
       "rdfs:label": [
@@ -2065,28 +1715,22 @@
         "This resource is referenced by another resource that describes it such as a translation, transcription or other analysis "
       ],
       "domainIncludes": [
-        "https://purl.archive.org/textcommons/terms#PrimaryText"
+        "https://purl.archive.org/language-data-node-tools/terms#PrimaryText"
       ],
       "rangeIncludes": [
-        "\"https://purl.archive.org/textcommons/terms#Annnotation\""
+        "\"https://purl.archive.org/language-data-node-tools/terms#Annnotation\""
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#hasDerivation",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#hasDerivation",
       "@type": "rdf:Property",
       "name": "hasDerivation",
       "domainIncludes": [
-        "https://purl.archive.org/textcommons/terms#PrimaryText"
+        "https://purl.archive.org/language-data-node-tools/terms#PrimaryText"
       ],
       "rangeIncludes": [
-        "\"https://purl.archive.org/textcommons/terms#DerivedText\""
+        "\"https://purl.archive.org/language-data-node-tools/terms#DerivedText\""
       ],
       "rdfs:comment": [
         "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF"
@@ -2094,16 +1738,10 @@
       "rdfs:label": [
         "hasDerivation"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#illustrator",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#illustrator",
       "@type": "rdf:Property",
       "name": "illustrator",
       "domainIncludes": [
@@ -2122,18 +1760,15 @@
       "rdfs:label": [
         "illustrator"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#indexableText",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#indexableText",
       "@type": "rdf:Property",
       "name": "indexableText",
+      "rdfs:label": [
+        "indexableText"
+      ],
       "domainIncludes": [
         "schema:CreativeWork"
       ],
@@ -2143,19 +1778,10 @@
       "rdfs:comment": [
         "Indicates one or more target File that together contain the full text of an item – each file should indicate its language"
       ],
-      "rdfs:label": [
-        "indexableText"
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#interpreter",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#interpreter",
       "@type": "rdf:Property",
       "name": "interpreter",
       "description": [
@@ -2180,16 +1806,10 @@
       "rdfs:label": [
         "interpreter"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#interviewee",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#interviewee",
       "@type": "rdf:Property",
       "name": "interviewee",
       "domainIncludes": [
@@ -2205,16 +1825,10 @@
       "rdfs:label": [
         "interviewee"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#interviewer",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#interviewer",
       "@type": "rdf:Property",
       "name": "interviewer",
       "domainIncludes": [
@@ -2233,16 +1847,10 @@
       "rdfs:label": [
         "interviewer"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#licensedOrganization",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#licensedOrganization",
       "@type": "rdf:Property",
       "name": "licensedOrganization",
       "rangeIncludes": [
@@ -2259,23 +1867,17 @@
       ],
       "domainIncludes": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#OrganizationBasedLicense"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationBasedLicense"
         }
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#linguisticGenre",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#linguisticGenre",
       "@type": "rdf:Property",
       "name": "linguisticGenre",
       "domainIncludes": [
-        "https://purl.archive.org/textcommons/terms#PrimaryText"
+        "https://purl.archive.org/language-data-node-tools/terms#PrimaryText"
       ],
       "rdfs:label": [
         "linguisticGenre"
@@ -2285,19 +1887,13 @@
       ],
       "definedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
         }
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#modality",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#modality",
       "@type": "rdf:Property",
       "name": "modality",
       "domainIncludes": [
@@ -2311,19 +1907,13 @@
       ],
       "definedTermSet": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CommunicationModeTerms"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
         }
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#participant",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#participant",
       "@type": "rdf:Property",
       "name": "participant",
       "description": [
@@ -2345,16 +1935,10 @@
       "rdfs:label": [
         "participant"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#performer",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#performer",
       "@type": "rdf:Property",
       "name": "performer",
       "description": [
@@ -2379,16 +1963,10 @@
       "rdfs:label": [
         "performer"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#person",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#person",
       "@type": "rdf:Property",
       "name": "person",
       "rangeIncludes": [
@@ -2402,19 +1980,13 @@
       ],
       "domainIncludes": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#PersonSnapshot"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#PersonSnapshot"
         }
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#photographer",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#photographer",
       "@type": "rdf:Property",
       "name": "photographer",
       "domainIncludes": [
@@ -2433,16 +2005,10 @@
       "rdfs:label": [
         "photographer"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#recorder",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#recorder",
       "@type": "rdf:Property",
       "name": "recorder",
       "domainIncludes": [
@@ -2461,16 +2027,10 @@
       "rdfs:label": [
         "recorder"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#register",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#register",
       "@type": "rdf:Property",
       "name": "register",
       "description": [
@@ -2488,16 +2048,10 @@
       "rdfs:label": [
         "register"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#researchParticipant",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#researchParticipant",
       "@type": "rdf:Property",
       "name": "researchParticipant",
       "domainIncludes": [
@@ -2516,16 +2070,10 @@
       "rdfs:label": [
         "researchParticipant"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#researcher",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#researcher",
       "@type": "rdf:Property",
       "name": "researcher",
       "rangeIncludes": [
@@ -2544,16 +2092,10 @@
       "rdfs:label": [
         "researcher"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#responder",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#responder",
       "@type": "rdf:Property",
       "name": "responder",
       "description": [
@@ -2575,16 +2117,10 @@
       "rdfs:label": [
         "responder"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#signer",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#signer",
       "@type": "rdf:Property",
       "name": "signer",
       "description": [
@@ -2609,16 +2145,10 @@
       "rdfs:label": [
         "signer"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#singer",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#singer",
       "@type": "rdf:Property",
       "name": "singer",
       "rdfs:label": [
@@ -2637,16 +2167,10 @@
       "rdfs:comment": [
         "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource."
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#speaker",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#speaker",
       "@type": "rdf:Property",
       "name": "speaker",
       "description": [
@@ -2671,16 +2195,10 @@
       "rdfs:label": [
         "speaker"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#sponsor",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#sponsor",
       "@type": "rdf:Property",
       "name": "sponsor",
       "domainIncludes": [
@@ -2699,16 +2217,10 @@
       "rdfs:label": [
         "sponsor"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#transcriber",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#transcriber",
       "@type": "rdf:Property",
       "name": "transcriber",
       "domainIncludes": [
@@ -2727,16 +2239,10 @@
       "rdfs:label": [
         "transcriber"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#translator",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#translator",
       "@type": "rdf:Property",
       "name": "translator",
       "rangeIncludes": [
@@ -2755,46 +2261,37 @@
       "rdfs:label": [
         "translator"
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#hasCollectionProtocol",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#hasCollectionProtocol",
       "@type": "rdf:Property",
       "name": "hasCollectionProtocol",
+      "rdfs:label": [
+        "hasCollectionProtocol"
+      ],
       "domainIncludes": [
         "schema:CreativeWork"
       ],
       "rdfs:comment": [
         "This resource  was assembled or collected according to the linked protocol"
       ],
-      "rdfs:label": [
-        "hasCollectionProtocol"
-      ],
       "rangeIncludes": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#CollectionProtocol"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocol"
         }
       ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#isDeIdentified",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#isDeIdentified",
       "@type": "rdf:Property",
       "name": "isDeIdentified",
+      "rdfs:label": [
+        "isDeIdentified"
+      ],
       "domainIncludes": [
-        "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, https://purl.archive.org/textcommons/terms#PersonSnapshot]"
+        "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, https://purl.archive.org/language-data-node-tools/terms#PersonSnapshot]"
       ],
       "rangeIncludes": [
         "schema:Boolean"
@@ -2802,19 +2299,10 @@
       "rdfs:comment": [
         "The data in this item has had identifying information removed, or in the case of a person the name is an alias"
       ],
-      "rdfs:label": [
-        "isDeIdentified"
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@reverse": {}
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#OrthographyTypeTerms",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms",
       "@type": "DefinedTermSet",
       "name": "WrittenLanguageTypeTerms",
       "description": [
@@ -2822,31 +2310,31 @@
       ],
       "hasDefinedTerm": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Handwritten"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Handwritten"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Typewritten"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Typewritten"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Typeset"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Typeset"
         }
       ],
       "@reverse": {
         "inDefinedTermSet": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Session"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Session"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Typeset"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Typeset"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Typewritten"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Typewritten"
           }
         ]
       }
     },
     {
-      "@id": "https://purl.archive.org/textcommons/terms#CommunicationGenreTerms",
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms",
       "@type": "DefinedTermSet",
       "name": "LinguisticGenreTerms",
       "description": [
@@ -2854,75 +2342,96 @@
       ],
       "hasDefinedTerm": [
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Formulaic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Formulaic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Thesaurus"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Thesaurus"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Dialogue"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Dialogue"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Oratory"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Oratory"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Report"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Report"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Ludic"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Ludic"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Procedural"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Procedural"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Narrative"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Narrative"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Interview"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Interview"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Drama"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Drama"
         },
         {
-          "@id": "https://purl.archive.org/textcommons/terms#Informational"
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Informational"
         }
       ],
       "@reverse": {
         "inDefinedTermSet": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Dialogue"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Dialogue"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Drama"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Drama"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Formulaic"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Formulaic"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Informational"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Informational"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Ludic"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Ludic"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Oratory"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Oratory"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Procedural"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Procedural"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Report"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Report"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Thesaurus"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Thesaurus"
           },
           {
-            "@id": "https://purl.archive.org/textcommons/terms#Narrative"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Narrative"
           }
         ],
         "definedTermSet": [
           {
-            "@id": "https://purl.archive.org/textcommons/terms#linguisticGenre"
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#linguisticGenre"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#timeAligned",
+      "@type": "rdf:Property",
+      "name": "hasTimeAligned",
+      "@reverse": {}
+    },
+    {
+      "@id": "http://purl.archive.org/language-data-commons/terms#TimeAligned",
+      "@type": "definedTerm",
+      "name": "TimeAligned",
+      "description": [
+        "The resource contains a written or coded annotation(s) which has data aligning the annotation(s) with a PrimaryResource"
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
           }
         ]
       }
