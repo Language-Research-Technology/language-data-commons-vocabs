@@ -94,7 +94,7 @@ An instance of a component for one participant
 
 ### Properties
 
-CANT RESOLVE  austalk:videoratingCANT RESOLVE  austalk:audioratingCANT RESOLVE  austalk:comment
+[<a href='#videorating'> austalk:videorating </a>] | [<a href='#audiorating'> austalk:audiorating </a>] | [<a href='#comment'> austalk:comment </a>] | 
 
 
 
@@ -128,7 +128,7 @@ An individual item in the corpus - one recording of a prompt/interview/maptask
 
 ### Properties
 
-CANT RESOLVE  austalk:idCANT RESOLVE  austalk:shortnameCANT RESOLVE  austalk:promptCANT RESOLVE  austalk:mother_pob_stateCANT RESOLVE  austalk:research_assistantCANT RESOLVE  austalk:recording_siteCANT RESOLVE  austalk:cameraSN1CANT RESOLVE  austalk:timestampCANT RESOLVE  austalk:cameraSN0CANT RESOLVE  austalk:basenameCANT RESOLVE  austalk:institutionCANT RESOLVE  austalk:cityCANT RESOLVE  austalk:typeCANT RESOLVE  austalk:channelCANT RESOLVE  austalk:versionCANT RESOLVE  austalk:checksumCANT RESOLVE  austalk:information_giverCANT RESOLVE  austalk:mapCANT RESOLVE  austalk:information_followerCANT RESOLVE  austalk:regeneratedCANT RESOLVE  austalk:frequencyCANT RESOLVE  austalk:maptaskcommentCANT RESOLVE  austalk:age_fromCANT RESOLVE  austalk:age_toCANT RESOLVE  austalk:less_than_a_yearCANT RESOLVE  austalk:stateCANT RESOLVE  austalk:countryCANT RESOLVE  austalk:town
+[<a href='#id'> austalk:id </a>] | [<a href='#shortname'> austalk:shortname </a>] | [<a href='#prompt'> austalk:prompt </a>] | [<a href='#mother_pob_state'> austalk:mother_pob_state </a>] | [<a href='#research_assistant'> austalk:research_assistant </a>] | [<a href='#recording_site'> austalk:recording_site </a>] | [<a href='#cameraSN1'> austalk:cameraSN1 </a>] | [<a href='#timestamp'> austalk:timestamp </a>] | [<a href='#cameraSN0'> austalk:cameraSN0 </a>] | [<a href='#basename'> austalk:basename </a>] | [<a href='#institution'> austalk:institution </a>] | [<a href='#city'> austalk:city </a>] | [<a href='#type'> austalk:type </a>] | [<a href='#channel'> austalk:channel </a>] | [<a href='#version'> austalk:version </a>] | [<a href='#checksum'> austalk:checksum </a>] | [<a href='#information_giver'> austalk:information_giver </a>] | [<a href='#map'> austalk:map </a>] | [<a href='#information_follower'> austalk:information_follower </a>] | [<a href='#regenerated'> austalk:regenerated </a>] | [<a href='#frequency'> austalk:frequency </a>] | [<a href='#maptaskcomment'> austalk:maptaskcomment </a>] | [<a href='#age_from'> austalk:age_from </a>] | [<a href='#age_to'> austalk:age_to </a>] | [<a href='#less_than_a_year'> austalk:less_than_a_year </a>] | [<a href='#state'> austalk:state </a>] | [<a href='#country'> austalk:country </a>] | [<a href='#town'> austalk:town </a>] | 
 
 
 
@@ -183,7 +183,7 @@ numerical identifier for a session/component/item
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -204,7 +204,7 @@ short name for a component
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -225,7 +225,7 @@ the prompt text shown when recording an item
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -267,7 +267,7 @@ a rating of video quality A-D
 
 ### Used on these types: 
 
-CANT RESOLVE  austalk:RecordedComponent
+[<a href='#RecordedComponent'> austalk:RecordedComponent </a>] | 
 
 
 
@@ -288,7 +288,7 @@ a rating of audio quality A-D
 
 ### Used on these types: 
 
-CANT RESOLVE  austalk:RecordedComponent
+[<a href='#RecordedComponent'> austalk:RecordedComponent </a>] | 
 
 
 
@@ -309,7 +309,7 @@ a comment on the recording quality
 
 ### Used on these types: 
 
-CANT RESOLVE  austalk:RecordedComponent
+[<a href='#RecordedComponent'> austalk:RecordedComponent </a>] | 
 
 
 
@@ -603,7 +603,7 @@ the state where the mother of this person was born
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -708,7 +708,7 @@ the RA who ran the recording session
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -786,13 +786,13 @@ recording site
 
 ### Values expected to be one of these types: 
 
-CANT RESOLVE  austalk:RecordingSite
+[<a href='#RecordingSite'> austalk:RecordingSite </a>] | 
 
 
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1317,7 +1317,7 @@ cameraSN1
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1338,7 +1338,7 @@ timestamp
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1359,7 +1359,7 @@ cameraSN0
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1380,7 +1380,7 @@ basename
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1401,7 +1401,7 @@ institution
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1422,7 +1422,7 @@ city
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1443,7 +1443,7 @@ type
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1464,7 +1464,7 @@ channel
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1485,7 +1485,7 @@ version
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1506,7 +1506,7 @@ checksum
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1527,7 +1527,7 @@ information giver
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1548,7 +1548,7 @@ map
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1569,7 +1569,7 @@ information follower
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1611,7 +1611,7 @@ regenerated
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1779,7 +1779,7 @@ frequency
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1842,7 +1842,7 @@ maptaskcomment
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1863,7 +1863,7 @@ age from
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1884,7 +1884,7 @@ age to
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1905,7 +1905,7 @@ less than a year
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1926,7 +1926,7 @@ state
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1947,7 +1947,7 @@ country
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
@@ -1968,7 +1968,7 @@ town
 
 ### Used on these types: 
 
-CANT RESOLVE  ausnc:AusNCObject
+[<a href='#AusNCObject'> ausnc:AusNCObject </a>] | 
 
 
 
