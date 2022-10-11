@@ -5,1222 +5,13 @@
       "@vocab": "http://schema.org/"
     },
     {
-      "txc": "https://purl.archive.org/textcommons/terms#"
+      "txc": "https://purl.archive.org/language-data-node-tools/terms#"
     },
     {
       "@base": null
     }
   ],
   "@graph": [
-    {
-      "@id": "#261c406f-63bd-491f-ae4f-8208a9c784b8",
-      "@type": "Thing",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": ""
-    },
-    {
-      "@id": "./",
-      "@type": "Dataset",
-      "hasFile": "",
-      "description": "This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects",
-      "hasPart": [],
-      "name": "Language Data Ontology"
-    },
-    {
-      "@id": "txc:Annotation",
-      "@type": "rdfs:Class",
-      "name": "Annotation",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#annotation",
-      "rdfs:comment": "The resource includes information which annotates, describes or otherwise an some other linguistic record.",
-      "rdfs:label": "Annotation",
-      "rdfs:subClassOf": {
-        "@id": "schema:CreativeWork"
-      }
-    },
-    {
-      "@id": "txc:Code",
-      "@type": "DefinedTerm",
-      "description": "The resource contains a coded analysis or annotation",
-      "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "Code"
-    },
-    {
-      "@id": "txc:CollectionEvent",
-      "@type": "rdfs:Class",
-      "name": "CollectionEvent",
-      "rdfs:comment": "A description of an event at which one or more PrimaryTexts were captured,  eg as video or audio",
-      "rdfs:label": "CollectionEvent",
-      "rdfs:subClassOf": [
-        {
-          "@id": "schema:Event"
-        },
-        {
-          "@id": "schema:CreateAction"
-        }
-      ]
-    },
-    {
-      "@id": "txc:CollectionEventTypeTerms",
-      "@type": "DefinedTermSet",
-      "hasDefinedTerm": {
-        "@id": "txc:Session"
-      },
-      "name": "txc:CollectionEventTypeTerms"
-    },
-    {
-      "@id": "txc:CollectionProtocol",
-      "@type": "rdfs:Class",
-      "name": "CollectionProtocol",
-      "rdfs:comment": "Description of how this Object or Collection was obtained – such as strategy used for selecting orthographic text, or the prompts given to participants ",
-      "rdfs:label": "CollectionProtocol",
-      "rdfs:subClassOf": {
-        "@id": "schema:CreativeWork"
-      }
-    },
-    {
-      "@id": "txc:CollectionProtocolTypeTerms",
-      "@type": "DefinedTermSet",
-      "hasDefinedTerm": [
-        {
-          "@id": "txc:ElicitationTask"
-        },
-        {
-          "@id": "txc:TextSelectionCriteria"
-        }
-      ],
-      "name": "txc:CollectionProtocolTypeTerms"
-    },
-    {
-      "@id": "txc:CommunicationGenreTerms",
-      "@type": "DefinedTermSet",
-      "hasDefinedTerm": [
-        {
-          "@id": "txc:Thesaurus"
-        },
-        {
-          "@id": "txc:Dialogue"
-        },
-        {
-          "@id": "txc:Oratory"
-        },
-        {
-          "@id": "txc:Report"
-        },
-        {
-          "@id": "txc:Ludic"
-        },
-        {
-          "@id": "txc:Procedural"
-        },
-        {
-          "@id": "txc:Narrative"
-        },
-        {
-          "@id": "txc:Interview"
-        },
-        {
-          "@id": "txc:Drama"
-        },
-        {
-          "@id": "txc:Informational"
-        },
-        "\"txc:formulaic\""
-      ],
-      "name": "LinguistcGenreTerms"
-    },
-    {
-      "@id": "txc:CommunicationModeTerms",
-      "@type": "DefinedTermSet",
-      "hasDefinedTerm": [
-        {
-          "@id": "txc:Speech"
-        },
-        {
-          "@id": "txc:Orthography"
-        },
-        {
-          "@id": "txc:Singing"
-        },
-        {
-          "@id": "txc:Gesture"
-        }
-      ],
-      "name": "ModalityTerms"
-    },
-    {
-      "@id": "txc:DerivedText",
-      "@type": "rdfs:Class",
-      "name": "DerivedText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
-      "rdfs:comment": "A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a text which  is not an analytical product ",
-      "rdfs:label": "DerivedText",
-      "rdfs:subClassOf": {
-        "@id": "schema:CreativeWork"
-      }
-    },
-    {
-      "@id": "txc:DerivedTextTypeTerms",
-      "@type": "DefinedTermSet",
-      "hasDefinedTerm": [
-        {
-          "@id": "txc:Phonemic"
-        },
-        {
-          "@id": "txc:Phonetic"
-        },
-        {
-          "@id": "txc:Phonological"
-        },
-        {
-          "@id": "txc:Syntactic"
-        },
-        {
-          "@id": "txc:Translation"
-        },
-        {
-          "@id": "txc:Semantic"
-        },
-        {
-          "@id": "txc:Transcription"
-        },
-        {
-          "@id": "txc:TimeAligned"
-        },
-        {
-          "@id": "txc:Prosodic"
-        }
-      ],
-      "name": "AnnotationTypeTerms"
-    },
-    {
-      "@id": "txc:Dialogue",
-      "@type": "DefinedTerm",
-      "description": "An interactive discourse with two or more participants. Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.",
-      "inDefinedTermSet": "CommunicationGenreTerms",
-      "name": "Dialogue"
-    },
-    {
-      "@id": "txc:Drama",
-      "@type": "DefinedTerm",
-      "description": "A planned, creative, rendition of discourse with two or more participants.\n",
-      "inDefinedTermSet": "CommunicationGenreTerms",
-      "name": "Drama",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/drama"
-    },
-    {
-      "@id": "txc:ElicitationTask",
-      "@type": "DefinedTerm",
-      "description": "The collection protocol includes a task-based prompt to participants",
-      "inDefinedTermSet": {
-        "@id": "txc:CollectionProtocolTypeTerms"
-      },
-      "name": "ElicitationTask"
-    },
-    {
-      "@id": "txc:Formulaic",
-      "@type": "DefinedTerm",
-      "description": "The resource is a ritually or conventionally structured discourse.\n",
-      "inDefinedTermSet": "CommunicationGenreTerms",
-      "name": "Formulaic",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/formulaic"
-    },
-    {
-      "@id": "txc:Gesture",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "Gesture"
-    },
-    {
-      "@id": "txc:Handwritten",
-      "@type": "DefinedTerm",
-      "description": "The resource was written using a writing implement such as pen, pencil, brush or computer stylus",
-      "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "Handwritten"
-    },
-    {
-      "@id": "txc:Informational",
-      "@type": "DefinedTerm",
-      "description": "SIMON – TODO",
-      "inDefinedTermSet": "CommunicationGenreTerms",
-      "name": "Informational"
-    },
-    {
-      "@id": "txc:Interview",
-      "@type": "DefinedTerm",
-      "description": "The resource is conversation where one or more speakers are directing the conversation",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": "Interview"
-    },
-    {
-      "@id": "txc:Lexicon",
-      "@type": "DefinedTerm",
-      "description": "The resource includes a systematic listing of lexical items.\n",
-      "name": "Lexicon",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#Lexicon"
-    },
-    {
-      "@id": "txc:LinguisticDescription",
-      "@type": "DefinedTerm",
-      "name": "LinguisticDescription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#description"
-    },
-    {
-      "@id": "txc:Ludic",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "CommunicationGenreTerms",
-      "name": "Ludic"
-    },
-    {
-      "@id": "txc:Narrative",
-      "@type": "DefinedTerm",
-      "description": "A monologic discourse which represents temporally organized events.",
-      "inDefinedTermSet": "CommunicationGenreTerms",
-      "name": "Narrative"
-    },
-    {
-      "@id": "txc:Oratory",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "CommunicationGenreTerms",
-      "name": "Oratory"
-    },
-    {
-      "@id": "txc:OrganizationBasedLicense",
-      "@type": "rdfs:Class",
-      "name": "OrganizationBasedLicense",
-      "rdfs:comment": "A licence document  setting out rights and oblications could be based copyright or other rights  based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community",
-      "rdfs:label": "OrganizationBasedLicense",
-      "rdfs:subClassOf": {
-        "@id": "schema:CreativeWork"
-      }
-    },
-    {
-      "@id": "txc:OrganizationDepositLicense",
-      "@type": "rdfs:Class",
-      "name": "OrganizationDepositLicense",
-      "rdfs:comment": "A license document setting out terms for deposit into a repository by one or more identified groups ",
-      "rdfs:label": "OrganizationDepositLicense",
-      "rdfs:subClassOf": {
-        "@id": "txc:OrganizationBasedLicense"
-      }
-    },
-    {
-      "@id": "txc:OrganizationReuseLicense",
-      "@type": "rdfs:Class",
-      "name": "OrganizationReuseLicense",
-      "rdfs:comment": "A license document setting out terms for reuse of data by one or more identified groups ",
-      "rdfs:label": "OrganizationReuseLicense",
-      "rdfs:subClassOf": {
-        "@id": "txc:OrganizationBasedLicense"
-      }
-    },
-    {
-      "@id": "txc:Orthography",
-      "@type": "DefinedTerm",
-      "description": "The resource contains written material using a standard or conventional orthography with conventions for punctuation, capitalization etc",
-      "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "Orthography"
-    },
-    {
-      "@id": "txc:OrthographyTypeTerms",
-      "@type": "DefinedTermSet",
-      "hasDefinedTerm": [
-        {
-          "@id": "txc:Handwritten"
-        },
-        {
-          "@id": "txc:Typewritten"
-        },
-        {
-          "@id": "txc:Typeset"
-        }
-      ],
-      "name": "OrthographyTypeTerms"
-    },
-    {
-      "@id": "txc:PartOfSpeech",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": "PartOfSpeech"
-    },
-    {
-      "@id": "txc:PersonSnapshot",
-      "@type": "rdfs:Class",
-      "name": "PersonSnapshot",
-      "rdfs:comment": "This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class  is to caputre the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time. ",
-      "rdfs:label": "PersonSnapshot",
-      "rdfs:subClassOf": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Role"
-        }
-      ]
-    },
-    {
-      "@id": "txc:Phonemic",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": "Phonemic"
-    },
-    {
-      "@id": "txc:Phonetic",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": "Phonetic"
-    },
-    {
-      "@id": "txc:Phonological",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": "Phonological"
-    },
-    {
-      "@id": "txc:PrimaryText",
-      "@type": "rdfs:Class",
-      "name": "PrimaryText",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text",
-      "rdfs:comment": "This is a primary resource: the object of study.   A text is defined as any primary resource or research material, such as a literary work, film, or recording of natural discourse",
-      "rdfs:label": "PrimaryText",
-      "rdfs:subClassOf": {
-        "@id": "schema:CreativeWork"
-      }
-    },
-    {
-      "@id": "txc:Procedural",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "CommunicationGenreTerms",
-      "name": "Procedural"
-    },
-    {
-      "@id": "txc:Prosodic",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": "Prosodic"
-    },
-    {
-      "@id": "txc:Report",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "CommunicationGenreTerms",
-      "name": "Report"
-    },
-    {
-      "@id": "txc:Semantic",
-      "@type": "DefinedTerm",
-      "description": "TODO",
-      "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "Semantic"
-    },
-    {
-      "@id": "txc:Session",
-      "@type": "DefinedTerm",
-      "description": "A collection event which is a recording or elicitation Session with particpants",
-      "inDefinedTermSet": {
-        "@id": "txc:OrthographyTypeTerms"
-      },
-      "name": "Session",
-      "sameAs": "https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"
-    },
-    {
-      "@id": "txc:Singing",
-      "@type": "DefinedTerm",
-      "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
-      "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "Song"
-    },
-    {
-      "@id": "txc:Speech",
-      "@type": "DefinedTerm",
-      "description": "This resource contains a video recording of  sign language",
-      "inDefinedTermSet": "CommunicationModeTerms",
-      "name": "Speech"
-    },
-    {
-      "@id": "txc:Syntactic",
-      "@type": "DefinedTerm",
-      "description": "The resource contains annotation or other analysis describing  the syntactic structure of a PrimaryText",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": "Syntactic"
-    },
-    {
-      "@id": "txc:TextSelectionCriteria",
-      "@type": "DefinedTerm",
-      "description": "A description of the criteria used to select texts in a collection",
-      "inDefinedTermSet": {
-        "@id": "txc:CollectionProtocolTypeTerms"
-      },
-      "name": "TextSelectionCriteria"
-    },
-    {
-      "@id": "txc:Thesaurus",
-      "@type": "DefinedTerm",
-      "description": "The resource contains  a list or data structure consisting  of words or concepts arranged according to sense.  \n",
-      "inDefinedTermSet": "CommunicationGenreTerms",
-      "name": "Thesaurus",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#text/singing"
-    },
-    {
-      "@id": "txc:TimeAligned",
-      "@type": "DefinedTerm",
-      "description": "The resource contains a written or coded annotation(s) which has data aligning the annotation(s)  with a PrimaryText",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": "TimeAligned",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription"
-    },
-    {
-      "@id": "txc:Transcription",
-      "@type": "DefinedTerm",
-      "description": "The resource contains a transcription, which  is a written (orthographic) or coded  representation of an audio or visual signal. ",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": "Transcription",
-      "sameAs": "http://www.language-archives.org/REC/type-20020628.html#transcription"
-    },
-    {
-      "@id": "txc:Translation",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "DerivedTextTypeTerms",
-      "name": "Translation"
-    },
-    {
-      "@id": "txc:Typeset",
-      "@type": "DefinedTerm",
-      "description": "The resource has been formatted for display",
-      "inDefinedTermSet": {
-        "@id": "txc:OrthographyTypeTerms"
-      },
-      "name": "Typeset"
-    },
-    {
-      "@id": "txc:Typewritten",
-      "@type": "DefinedTerm",
-      "description": "The annotation has time-alignement with the PrimaryText",
-      "inDefinedTermSet": {
-        "@id": "txc:OrthographyTypeTerms"
-      },
-      "name": "Typewritten"
-    },
-    {
-      "@id": "txc:annotationOf",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "annotationOf",
-      "rangeIncludes": {
-        "@id": "txc:PrimaryText"
-      },
-      "rdfs:comment": "This resource contains some kind a description such as a translation, transcription or other analysis of the resource it references",
-      "rdfs:label": "annotationOf"
-    },
-    {
-      "@id": "txc:annotationType",
-      "@type": "rdf:Property",
-      "definedTermSet": {
-        "@id": "txc:DerivedTextTypeTerms"
-      },
-      "domainIncludes": {
-        "@id": "txc:Annotation"
-      },
-      "name": "annotationType",
-      "rdfs:label": "annotationType"
-    },
-    {
-      "@id": "txc:annotator",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "annotator",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#annotator",
-      "rdfs:comment": "The participant produced an annotation of this or a related resource.",
-      "rdfs:label": "annotator"
-    },
-    {
-      "@id": "txc:author",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "author",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#author",
-      "rdfs:comment": "The participant contributed original writings to the resource.",
-      "rdfs:label": "author"
-    },
-    {
-      "@id": "txc:channels",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "channels",
-      "rdfs:comment": "Number of audio channels this resource contains (eg 1, 2 5.1)",
-      "rdfs:label": "channels"
-    },
-    {
-      "@id": "txc:collectionEventType",
-      "@type": "rdf:Property",
-      "definedTermSet": {
-        "@id": "txc:CollectionEventTypeTerms"
-      },
-      "domainIncludes": {
-        "@id": "txc:CollectionEvent"
-      },
-      "name": "collectionEventType",
-      "rdfs:comment": "An event with a start and end time during which data are gathered from partipants, or from other materials",
-      "rdfs:label": "collectionEventType"
-    },
-    {
-      "@id": "txc:collectionProtocolType",
-      "@type": "rdf:Property",
-      "definedTermSet": {
-        "@id": "txc:CollectionProtocolTypeTerms"
-      },
-      "domainIncludes": {
-        "@id": "txc:CollectionProtocol"
-      },
-      "name": "collectionProtocolType",
-      "rdfs:comment": "A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection",
-      "rdfs:label": "collectionProtocolType"
-    },
-    {
-      "@id": "txc:compiler",
-      "@type": "rdf:Property",
-      "description": "This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately.",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "example": "A compiler of a book of short stories or a CD with several songs on it; a collector of a corpus of recordings in some language or on a given topic; a person who assembles a suite of software tools.",
-      "name": "compiler",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#compiler",
-      "rdfs:comment": "The participant is responsible for collecting the sub-parts of the resource together.",
-      "rdfs:label": "compiler"
-    },
-    {
-      "@id": "txc:consultant",
-      "@type": "rdf:Property",
-      "description": "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\".",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "consultant",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#consultant",
-      "rdfs:comment": "The participant contributes expertise to the creation of a work.",
-      "rdfs:label": "consultant"
-    },
-    {
-      "@id": "txc:dataInputter",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "dataInputter",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#data_inputter",
-      "rdfs:comment": "The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.",
-      "rdfs:label": "dataInputter"
-    },
-    {
-      "@id": "txc:depositor",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "depositor",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#depositor",
-      "rdfs:comment": "The participant was responsible for depositing the resource in an archive.",
-      "rdfs:label": "depositor"
-    },
-    {
-      "@id": "txc:derivationOf",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "txc:DerivedText"
-      },
-      "name": "derivationOf",
-      "rangeIncludes": [
-        {
-          "@id": "txc:PrimaryText"
-        },
-        {
-          "@id": "txc:Annotation"
-        }
-      ],
-      "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF",
-      "rdfs:label": "derivationOf"
-    },
-    {
-      "@id": "txc:developer",
-      "@type": "rdf:Property",
-      "description": "A software programmer, designer, or analyst; a designer of a questionnaire or research task.",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "developer",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#developer",
-      "rdfs:comment": "The participant developed the methodology or tools that constitute the resource, or that were used to create the resource.",
-      "rdfs:label": "developer"
-    },
-    {
-      "@id": "txc:doi",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "doi",
-      "rdfs:comment": "A digital Object Identifier",
-      "rdfs:label": "doi"
-    },
-    {
-      "@id": "txc:editor",
-      "@type": "rdf:Property",
-      "description": "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases.",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "editor",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#editor",
-      "rdfs:comment": "The participant reviewed, corrected, and/or tested the resource.",
-      "rdfs:label": "editor"
-    },
-    {
-      "@id": "txc:geoJSON",
-      "@type": "rdf:Property",
-      "domainIncludes": [
-        {
-          "@id": "schema:GeoCoordinates"
-        },
-        {
-          "@id": "schema:GeoShape"
-        },
-        {
-          "@id": "schema:Language"
-        }
-      ],
-      "name": "geoJSON",
-      "rangeIncludes": "Text",
-      "rdfs:comment": "A valid GEOJson feature or feature collection as a string that can be parsed as JSON ",
-      "rdfs:label": "geoJSON"
-    },
-    {
-      "@id": "txc:hasAnnotation",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "txc:PrimaryText"
-      },
-      "name": "hasAnnotation",
-      "rangeIncludes": "\"txc:Annnotation\"",
-      "rdfs:comment": "This resource references another resource that describes it  such as a translation, transcription or other analysis ",
-      "rdfs:label": "hasCollectionProtocol"
-    },
-    {
-      "@id": "txc:hasCollectionProtocol",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "hasAnnotation",
-      "rangeIncludes": {
-        "@id": "txc:CollectionProtocol"
-      },
-      "rdfs:comment": "This resource  was assembled or collected according to the linked protocol",
-      "rdfs:label": "hasAnnotation"
-    },
-    {
-      "@id": "txc:hasDerivation",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "txc:PrimaryText"
-      },
-      "name": "hasDerivation",
-      "rangeIncludes": {
-        "@id": "txc:DerivedText"
-      },
-      "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF",
-      "rdfs:label": "hasDerivation"
-    },
-    {
-      "@id": "txc:illustrator",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "illustrator",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#illustrator",
-      "rdfs:comment": "The participant contributed drawings or other illustrations to the resource.",
-      "rdfs:label": "illustrator"
-    },
-    {
-      "@id": "txc:indexableText",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "indexableText",
-      "rangeIncludes": {
-        "@id": "schema:File"
-      },
-      "rdfs:comment": "Indicates one or more  target File that  together contain the full text of an item  – each  file should indicate its language",
-      "rdfs:label": "indexableText"
-    },
-    {
-      "@id": "txc:interpreter",
-      "@type": "rdf:Property",
-      "description": "The choice between 'interpreter' and 'translator' may depend on the dynamics of the resource creation event or process. Generally, if the participant is translating 'live'; that is, while the speaker or signer is speaking or signing, she or he should be identified as an interpreter. Also, some discourse genres include a participant who interprets or explains a performance of some kind.",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "example": "A person translating from English to ASL during a speech; a Kuna chief who interprets a chant that another chief has just performed, thus completing the ceremony.",
-      "name": "interpreter",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#interpreter",
-      "rdfs:comment": "The participant translates in real-time or explains the discourse recorded in the resource.",
-      "rdfs:label": "interpreter"
-    },
-    {
-      "@id": "txc:interviewee",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "interviewee",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#interviewer",
-      "rdfs:comment": "The participant was a respondent in an interview",
-      "rdfs:label": "interviewee"
-    },
-    {
-      "@id": "txc:interviewer",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "interviewer",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#interviewer",
-      "rdfs:comment": "The participant conducted an interview that forms part of the resource.",
-      "rdfs:label": "interviewer"
-    },
-    {
-      "@id": "txc:isDeIdentified",
-      "@type": "rdf:Property",
-      "domainIncludes": "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, txc:PersonSnapshot]",
-      "name": "deidentified",
-      "rangeIncludes": {
-        "@id": "schema:Boolean"
-      },
-      "rdfs:comment": "This data in this item has had identifying information removed, or in the case of a person the name is an alias",
-      "rdfs:label": "isDeIdentified"
-    },
-    {
-      "@id": "txc:licensedOrganization",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "txc:OrganizationBasedLicense"
-      },
-      "name": "licensedOrganization",
-      "rangeIncludes": {
-        "@id": "schema:Organization"
-      },
-      "sameAs": "http://www.language-archives.org/REC/role.html#translator",
-      "rdfs:comment": "Indicates a group of people who have the rights described in this license",
-      "rdfs:label": "licensedOrganization"
-    },
-    {
-      "@id": "txc:linguisticGenre",
-      "@type": "rdf:Property",
-      "definedTermSet": {
-        "@id": "txc:CommunicationGenreTerms"
-      },
-      "domainIncludes": {
-        "@id": "txc:PrimaryText"
-      },
-      "name": "linguisticGenre",
-      "rdfs:label": "linguisticGenre"
-    },
-    {
-      "@id": "txc:modality",
-      "@type": "rdf:Property",
-      "definedTermSet": {
-        "@id": "txc:CommunicationModeTerms"
-      },
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "modality",
-      "rdfs:label": "modality"
-    },
-    {
-      "@id": "txc:participant",
-      "@type": "rdf:Property",
-      "description": "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in general sense of having allowed the creation event to take place, such as the mayor of an indigenous community.",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "participant",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#participant",
-      "rdfs:comment": "The participant was present during the creation of the resource, but did not contribute substantially to its content.",
-      "rdfs:label": "participant"
-    },
-    {
-      "@id": "txc:performer",
-      "@type": "rdf:Property",
-      "description": "It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "example": "A person performing a ceremony or delivering an oration or a sermon; native speakers re-enacting a traditional genre of speech, such as ritual greetings or insults; an actor or musician.",
-      "name": "performer",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#performer",
-      "rdfs:comment": "The participant performed some portion of a recorded, filmed, or transcribed resource.",
-      "rdfs:label": "performer"
-    },
-    {
-      "@id": "txc:person",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "txc:PersonSnapshot"
-      },
-      "name": "person",
-      "rangeIncludes": {
-        "@id": "schema:Person"
-      },
-      "rdfs:comment": "This property references a Person item which represents the persistent identity of one or more ContributingPerson items.",
-      "rdfs:label": "person"
-    },
-    {
-      "@id": "txc:photographer",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "photographer",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#photographer",
-      "rdfs:comment": "The participant took the photograph, or shot the film, that appears in or constitutes the resource.",
-      "rdfs:label": "photographer"
-    },
-    {
-      "@id": "txc:recorder",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "recorder",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#recorder",
-      "rdfs:comment": "The participant operated the recording machinery used to create the resource.",
-      "rdfs:label": "recorder"
-    },
-    {
-      "@id": "txc:register",
-      "@type": "rdf:Property",
-      "description": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "register",
-      "sameAs": "http://w3id.org/meta-share/meta-share/register",
-      "rdfs:comment": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource\n",
-      "rdfs:label": "register"
-    },
-    {
-      "@id": "txc:researchParticipant",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "researchParticipant",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#research_participant",
-      "rdfs:comment": "The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.",
-      "rdfs:label": "researchParticipant"
-    },
-    {
-      "@id": "txc:researcher",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "researcher",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#researcher",
-      "rdfs:comment": "The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.",
-      "rdfs:label": "researcher"
-    },
-    {
-      "@id": "txc:responder",
-      "@type": "rdf:Property",
-      "description": "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\".",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "responder",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#responder",
-      "rdfs:comment": "The participant was an interlocutor in some sort of discourse event.",
-      "rdfs:label": "responder"
-    },
-    {
-      "@id": "txc:signer",
-      "@type": "rdf:Property",
-      "description": "Signers are those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
-      "name": "signer",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#signer",
-      "rdfs:comment": "The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
-      "rdfs:label": "signer"
-    },
-    {
-      "@id": "txc:singer",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "singer",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#singer",
-      "rdfs:comment": "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
-      "rdfs:label": "singer"
-    },
-    {
-      "@id": "txc:speaker",
-      "@type": "rdf:Property",
-      "description": "Speakers are those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Speakers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
-      "name": "speaker",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#speaker",
-      "rdfs:comment": "The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
-      "rdfs:label": "speaker"
-    },
-    {
-      "@id": "txc:sponsor",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "sponsor",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#sponsor",
-      "rdfs:comment": "The participant contributed financial support to the creation of the resource.",
-      "rdfs:label": "sponsor"
-    },
-    {
-      "@id": "txc:transcriber",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "transcriber",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#transcriber",
-      "rdfs:comment": "The participant produced a transcription of this or a related resource.",
-      "rdfs:label": "transcriber"
-    },
-    {
-      "@id": "txc:translator",
-      "@type": "rdf:Property",
-      "domainIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "name": "translator",
-      "rangeIncludes": [
-        {
-          "@id": "schema:Person"
-        },
-        {
-          "@id": "schema:Organization"
-        }
-      ],
-      "sameAs": "http://www.language-archives.org/REC/role.html#translator",
-      "rdfs:comment": "The participant produced a translation of this or a related resource.",
-      "rdfs:label": "translator"
-    },
     {
       "@id": "ro-crate-metadata.json",
       "@type": "CreativeWork",
@@ -1230,7 +21,2420 @@
       "about": {
         "@id": "./"
       },
-      "identifier": "ro-crate-metadata.json"
+      "identifier": [
+        {
+          "@id": "#:localid:describo:ad55b69a-ca9a-46ab-a581-d57f06979290"
+        }
+      ]
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#PrimaryText",
+      "@type": "rdfs:Class",
+      "name": "PrimaryResource",
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text"
+      ],
+      "rdfs:comment": [
+        "This is a primary resource: the object of study, such as a literary work, film, or recording of natural discourse"
+      ],
+      "rdfs:label": [
+        "PrimaryText"
+      ],
+      "rdfs:subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "@reverse": {
+        "rangeIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#derivationOf"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#261c406f-63bd-491f-ae4f-8208a9c784b8",
+      "@type": "Thing",
+      "name": "",
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Language Data Ontology",
+      "description": [
+        "This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects"
+      ],
+      "mentions": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonological"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Annotation"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Code"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionEvent"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocol"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedResource"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Dialogue"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Drama"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#ElicitationTask"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Formulaic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Gesture"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Handwritten"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Informational"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Interview"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Lexicon"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Ludic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Narrative"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Oratory"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationBasedLicense"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationDepositLicense"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationReuseLicense"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Orthographic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#PartOfSpeech"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#PersonSnapshot"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonemic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonetic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#PrimaryText"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Procedural"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Prosodic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Report"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Semantic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Session"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#SignLanguage"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Song"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#SpokenLanguage"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Syntactic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#TextSelectionCriteria"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Thesaurus"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Transcription"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Translation"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Typeset"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Typewritten"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#WrittenLanguage"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#annotationOf"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#annotationType"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#annotator"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#author"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#channels"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionEventType"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionProtocolType"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#compiler"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#consultant"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#dataInputter"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#depositor"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#derivationOf"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#developer"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#doi"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#editor"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#geoJSON"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#hasAnnotation"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#hasCollectionProtocol"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#hasDerivation"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#illustrator"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#indexableText"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#interpreter"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#interviewee"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#interviewer"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#isDeIdentified"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#licensedOrganization"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#linguisticGenre"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#modality"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#participant"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#performer"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#person"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#photographer"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#recorder"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#register"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#researchParticipant"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#researcher"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#responder"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#signer"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#singer"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#speaker"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#sponsor"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#transcriber"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#translator"
+        },
+        {
+          "@id": "http://purl.archive.org/language-data-commons/terms#TimeAligned"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Annotation",
+      "@type": "rdfs:Class",
+      "name": "Annotation",
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      ],
+      "rdfs:label": [
+        "Annotation"
+      ],
+      "rdfs:subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "rdfs:comment": [
+        "The resource includes material which adds information to some other linguistic record."
+      ],
+      "@reverse": {
+        "domainIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#annotationType"
+          }
+        ],
+        "rangeIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#derivationOf"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Code",
+      "@type": "DefinedTerm",
+      "name": "Coded",
+      "description": [
+        "The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet)."
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionEvent",
+      "@type": "rdfs:Class",
+      "name": "CollectionEvent",
+      "rdfs:comment": [
+        "A description of an event at which one or more PrimaryTexts were captured,  eg as video or audio"
+      ],
+      "rdfs:label": [
+        "CollectionEvent"
+      ],
+      "rdfs:subClassOf": [
+        "schema:Event",
+        "schema:CreateAction"
+      ],
+      "@reverse": {
+        "domainIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionEventType"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionEventTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "CollectionEventTypeTerms",
+      "description": [
+        "Set of terms which are expected values for CollectionEvent types"
+      ],
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Session"
+        }
+      ],
+      "@reverse": {
+        "definedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionEventType"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocol",
+      "@type": "rdfs:Class",
+      "name": "CollectionProtocol",
+      "rdfs:label": [
+        "CollectionProtocol"
+      ],
+      "rdfs:subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "rdfs:comment": [
+        "Description of how this Object or Collection was obtained – such as strategy used for selecting written source texts, or the prompts given to participants "
+      ],
+      "@reverse": {
+        "rangeIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#hasCollectionProtocol"
+          }
+        ],
+        "domainIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionProtocolType"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocolTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "CollectionProtocolTypeTerms",
+      "description": [
+        "Set of terms which are expected values for CollectionProtocol types"
+      ],
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#ElicitationTask"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#TextSelectionCriteria"
+        }
+      ],
+      "@reverse": {
+        "inDefinedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#ElicitationTask"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#TextSelectionCriteria"
+          }
+        ],
+        "definedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionProtocolType"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms",
+      "@type": "DefinedTermSet",
+      "name": "ModalityTerms",
+      "description": [
+        "Set of expected values for modality types"
+      ],
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#SpokenLanguage"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#WrittenLanguage"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Song"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Gesture"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#SignLanguage"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#WhistledLanguage"
+        }
+      ],
+      "@reverse": {
+        "inDefinedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Gesture"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Song"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#SpokenLanguage"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#WrittenLanguage"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#WhistledLanguage"
+          }
+        ],
+        "definedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#modality"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedResource",
+      "@type": "rdfs:Class",
+      "name": "DerivedResource",
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text"
+      ],
+      "rdfs:comment": [
+        "A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a resource which is not an annotation (description)"
+      ],
+      "rdfs:label": [
+        "DerivedResource"
+      ],
+      "rdfs:subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "@reverse": {
+        "domainIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#derivationOf"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "AnnotationTypeTerms",
+      "description": [
+        "The set of expected values for annotation types"
+      ],
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonemic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonetic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonological"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Syntactic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Translation"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Semantic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Transcription"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Prosodic"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Dialogue",
+      "@type": "DefinedTerm",
+      "name": "Dialogue",
+      "description": [
+        "An interactive discourse with two or more participants. Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings."
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Drama",
+      "@type": "DefinedTerm",
+      "name": "Drama",
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text/drama"
+      ],
+      "description": [
+        "A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience."
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#ElicitationTask",
+      "@type": "DefinedTerm",
+      "name": "ElicitationTask",
+      "description": [
+        "The collection protocol includes a task-based prompt to participants"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocolTypeTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocolTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Formulaic",
+      "@type": "DefinedTerm",
+      "name": "Formulaic",
+      "description": [
+        "The resource is a ritually or conventionally structured discourse."
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text/formulaic"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Gesture",
+      "@type": "DefinedTerm",
+      "name": "Gesture",
+      "description": [
+        "The resource contains non-linguistic gestural communication (ie not sign language)"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Handwritten",
+      "@type": "DefinedTerm",
+      "name": "Handwritten",
+      "description": [
+        "The resource was written using a writing implement such as pen, pencil, brush or computer stylus  (From Nyingarn - TODO check this)"
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Informational",
+      "@type": "DefinedTerm",
+      "name": "Informational",
+      "description": [
+        "Discourse whose primary purpose is to inform the audience about the natural or social world."
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Interview",
+      "@type": "DefinedTerm",
+      "name": "Interview",
+      "description": [
+        "The resource is conversation where one or more speakers are directing the conversation"
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Lexicon",
+      "@type": "DefinedTerm",
+      "name": "Lexicon",
+      "description": [
+        "The resource includes a systematic listing of lexical items."
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#Lexicon"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Ludic",
+      "@type": "DefinedTerm",
+      "name": "Ludic",
+      "description": [
+        "Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language. Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises."
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text/ludic"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Oratory",
+      "@type": "DefinedTerm",
+      "name": "Oratory",
+      "description": [
+        "The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations."
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text/orratory"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationBasedLicense",
+      "@type": "rdfs:Class",
+      "name": "OrganizationBasedLicense",
+      "rdfs:comment": [
+        "A licence document setting out rights and oblications could be based copyright or other rights based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community"
+      ],
+      "rdfs:label": [
+        "OrganizationBasedLicense"
+      ],
+      "rdfs:subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "@reverse": {
+        "rdfs:subClassOf": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationDepositLicense"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationReuseLicense"
+          }
+        ],
+        "domainIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#licensedOrganization"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationDepositLicense",
+      "@type": "rdfs:Class",
+      "name": "OrganizationDepositLicense",
+      "rdfs:comment": [
+        "A license document setting out terms for deposit into a repository by one or more identified groups "
+      ],
+      "rdfs:label": [
+        "OrganizationDepositLicense"
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationBasedLicense"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationReuseLicense",
+      "@type": "rdfs:Class",
+      "name": "OrganizationReuseLicense",
+      "rdfs:label": [
+        "OrganizationReuseLicense"
+      ],
+      "rdfs:comment": [
+        "A license document setting out terms for reuse of data by one or more identified groups."
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationBasedLicense"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Orthographic",
+      "@type": "DefinedTerm",
+      "name": "Orthographic",
+      "description": [
+        "The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription"
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#description/orthographic"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#PartOfSpeech",
+      "@type": "DefinedTerm",
+      "name": "PartOfSpeech",
+      "description": [
+        "An annotation which assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate)"
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#PersonSnapshot",
+      "@type": "rdfs:Class",
+      "name": "PersonSnapshot",
+      "rdfs:comment": [
+        "This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class is to capture the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time."
+      ],
+      "rdfs:label": [
+        "PersonSnapshot"
+      ],
+      "rdfs:subClassOf": [
+        "schema:Person",
+        "schema:Role"
+      ],
+      "@reverse": {
+        "domainIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#person"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonemic",
+      "@type": "DefinedTerm",
+      "name": "Phonemic",
+      "description": [
+        "An annotation which represents speech in terms of the sound contrasts made in a language."
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#description/phonemic"
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonetic",
+      "@type": "DefinedTerm",
+      "name": "Phonetic",
+      "description": [
+        "A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet"
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#description/phonetic"
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Phonological",
+      "@type": "DefinedTerm",
+      "name": "Phonological",
+      "description": [
+        "An annotation which includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language."
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#description/phonological"
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Procedural",
+      "@type": "DefinedTerm",
+      "name": "Procedural",
+      "description": [
+        "An explanation or description of a method, process, or situation having ordered steps."
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text/procedural"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Prosodic",
+      "@type": "DefinedTerm",
+      "name": "Prosodic",
+      "description": [
+        "An annotation which provides a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription."
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#description/prosodic"
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Report",
+      "@type": "DefinedTerm",
+      "name": "Report",
+      "description": [
+        "A factual account of some event or circumstance."
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text/report"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Semantic",
+      "@type": "DefinedTerm",
+      "name": "Semantic",
+      "description": [
+        "The resource includes annotation or analysis concerning the encoding of meaning."
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#description/semantic"
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Session",
+      "@type": "DefinedTerm",
+      "name": "Session",
+      "description": [
+        "A collection event which is a recording or elicitation Session with participants."
+      ],
+      "sameAs": [
+        "https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionEventTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#SignLanguage",
+      "@type": "DefinedTerm",
+      "name": "SignLanguage",
+      "description": [
+        "The resource contains data for which the medium of interaction was signing."
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Song",
+      "@type": "DefinedTerm",
+      "name": "Song",
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text/singing"
+      ],
+      "description": [
+        "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED."
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#SpokenLanguage",
+      "@type": "DefinedTerm",
+      "name": "SpokenLanguage",
+      "description": [
+        "The resource contains data for which the medium of interaction was speech"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Syntactic",
+      "@type": "DefinedTerm",
+      "name": "Syntactic",
+      "description": [
+        "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#description/syntactic"
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#TextSelectionCriteria",
+      "@type": "DefinedTerm",
+      "name": "TextSelectionCriteria",
+      "description": [
+        "A description of the criteria used to select texts in a collection"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocolTypeTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocolTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Thesaurus",
+      "@type": "DefinedTerm",
+      "name": "Thesaurus",
+      "description": [
+        "The resource contains a list or data structure consisting of words or concepts arranged according to sense."
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Narrative",
+      "@type": "DefinedTerm",
+      "name": "Narrative",
+      "description": [
+        "A discourse, monologic or co-constructed, which represents temporally organized events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories."
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text/narrative"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Transcription",
+      "@type": "DefinedTerm",
+      "name": "Transcription",
+      "description": [
+        "The resource contains a transcription, which is a written representation (orthographic or coded) of an audio or visual signal."
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#transcription"
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Translation",
+      "@type": "DefinedTerm",
+      "name": "Translation",
+      "description": [
+        "The resource has been translated from one natural language to another."
+      ],
+      "inDefinedTermSet": [
+        "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#annotation/translation"
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedTextTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Typeset",
+      "@type": "DefinedTerm",
+      "name": "Typeset",
+      "description": [
+        "The resource has been formatted for display."
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#Typewritten",
+      "@type": "DefinedTerm",
+      "name": "Typewritten",
+      "description": [
+        "The resource contains text produced on a tpyewriter (From Nyingarn - TODO check this)"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#WrittenLanguage",
+      "@type": "DefinedTerm",
+      "name": "WrittenLanguage",
+      "description": [
+        "TThe resource contains data for which the medium of interaction was writing."
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#WhistledLanguage",
+      "@type": "DefinedTerm",
+      "name": "WhistledLanguage",
+      "description": [
+        "The resource contains data for which the medium of interaction was whistling."
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#annotationOf",
+      "@type": "rdf:Property",
+      "name": "annotationOf",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "https://purl.archive.org/language-data-node-tools/terms#PrimaryText"
+      ],
+      "rdfs:comment": [
+        "This resource contains some kind of description which adds information to the resource it references"
+      ],
+      "rdfs:label": [
+        "annotationOf"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#annotationType",
+      "@type": "rdf:Property",
+      "name": "annotationType",
+      "rdfs:label": [
+        "annotationType"
+      ],
+      "rdfs:comment": [
+        "The type of annotation for Annotation resources"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Annotation"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#annotator",
+      "@type": "rdf:Property",
+      "name": "annotator",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#annotator"
+      ],
+      "rdfs:comment": [
+        "The participant produced an annotation of this or a related resource."
+      ],
+      "rdfs:label": [
+        "annotator"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#author",
+      "@type": "rdf:Property",
+      "name": "author",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#author"
+      ],
+      "rdfs:comment": [
+        "The participant contributed original writings to the resource."
+      ],
+      "rdfs:label": [
+        "author"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#channels",
+      "@type": "rdf:Property",
+      "name": "channels",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rdfs:comment": [
+        "Number of audio channels this resource contains (eg 1, 2, 5.1)"
+      ],
+      "rdfs:label": [
+        "channels"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionEventType",
+      "@type": "rdf:Property",
+      "name": "collectionEventType",
+      "rdfs:comment": [
+        "An event with a start and end time during which data are gathered from participants, or from other materials"
+      ],
+      "rdfs:label": [
+        "collectionEventType"
+      ],
+      "definedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionEventTypeTerms"
+        }
+      ],
+      "domainIncludes": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionEvent"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#collectionProtocolType",
+      "@type": "rdf:Property",
+      "name": "collectionProtocolType",
+      "rdfs:comment": [
+        "A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection"
+      ],
+      "rdfs:label": [
+        "collectionProtocolType"
+      ],
+      "definedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocolTypeTerms"
+        }
+      ],
+      "domainIncludes": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocol"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#compiler",
+      "@type": "rdf:Property",
+      "name": "compiler",
+      "description": [
+        "This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately."
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "example": [
+        "A compiler of a book of short stories or a CD with several songs on it; a collector of a corpus of recordings in some language or on a given topic; a person who assembles a suite of software tools."
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#compiler"
+      ],
+      "rdfs:comment": [
+        "The participant is responsible for collecting the sub-parts of the resource together."
+      ],
+      "rdfs:label": [
+        "compiler"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#consultant",
+      "@type": "rdf:Property",
+      "name": "consultant",
+      "description": [
+        "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\"."
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#consultant"
+      ],
+      "rdfs:comment": [
+        "The participant contributes expertise to the creation of a work."
+      ],
+      "rdfs:label": [
+        "consultant"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#dataInputter",
+      "@type": "rdf:Property",
+      "name": "dataInputter",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#data_inputter"
+      ],
+      "rdfs:comment": [
+        "The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource."
+      ],
+      "rdfs:label": [
+        "dataInputter"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#depositor",
+      "@type": "rdf:Property",
+      "name": "depositor",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#depositor"
+      ],
+      "rdfs:comment": [
+        "The participant was responsible for depositing the resource in an archive."
+      ],
+      "rdfs:label": [
+        "depositor"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#derivationOf",
+      "@type": "rdf:Property",
+      "name": "derivationOf",
+      "rdfs:comment": [
+        "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF"
+      ],
+      "rdfs:label": [
+        "derivationOf"
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#PrimaryText"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Annotation"
+        }
+      ],
+      "domainIncludes": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#DerivedResource"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#developer",
+      "@type": "rdf:Property",
+      "name": "developer",
+      "description": [
+        "A software programmer, designer, or analyst; a designer of a questionnaire or research task."
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#developer"
+      ],
+      "rdfs:comment": [
+        "The participant developed the methodology or tools that constitute the resource, or that were used to create the resource."
+      ],
+      "rdfs:label": [
+        "developer"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#doi",
+      "@type": "rdf:Property",
+      "name": "doi",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rdfs:comment": [
+        "A digital Object Identifier"
+      ],
+      "rdfs:label": [
+        "doi"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#editor",
+      "@type": "rdf:Property",
+      "name": "editor",
+      "description": [
+        "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases."
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#editor"
+      ],
+      "rdfs:comment": [
+        "The participant reviewed, corrected, and/or tested the resource."
+      ],
+      "rdfs:label": [
+        "editor"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#geoJSON",
+      "@type": "rdf:Property",
+      "name": "geoJSON",
+      "domainIncludes": [
+        "schema:GeoCoordinates",
+        "schema:GeoShape",
+        "schema:Language"
+      ],
+      "rangeIncludes": [
+        "Text"
+      ],
+      "rdfs:comment": [
+        "A valid GEOJson feature or feature collection as a string that can be parsed as JSON "
+      ],
+      "rdfs:label": [
+        "geoJSON"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#hasAnnotation",
+      "@type": "rdf:Property",
+      "name": "hasAnnotation",
+      "rdfs:label": [
+        "hasAnnotation"
+      ],
+      "rdfs:comment": [
+        "This resource is referenced by another resource that describes it such as a translation, transcription or other analysis "
+      ],
+      "domainIncludes": [
+        "https://purl.archive.org/language-data-node-tools/terms#PrimaryText"
+      ],
+      "rangeIncludes": [
+        "\"https://purl.archive.org/language-data-node-tools/terms#Annnotation\""
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#hasDerivation",
+      "@type": "rdf:Property",
+      "name": "hasDerivation",
+      "domainIncludes": [
+        "https://purl.archive.org/language-data-node-tools/terms#PrimaryText"
+      ],
+      "rangeIncludes": [
+        "\"https://purl.archive.org/language-data-node-tools/terms#DerivedText\""
+      ],
+      "rdfs:comment": [
+        "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF"
+      ],
+      "rdfs:label": [
+        "hasDerivation"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#illustrator",
+      "@type": "rdf:Property",
+      "name": "illustrator",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#illustrator"
+      ],
+      "rdfs:comment": [
+        "The participant contributed drawings or other illustrations to the resource."
+      ],
+      "rdfs:label": [
+        "illustrator"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#indexableText",
+      "@type": "rdf:Property",
+      "name": "indexableText",
+      "rdfs:label": [
+        "indexableText"
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:File"
+      ],
+      "rdfs:comment": [
+        "Indicates one or more target File that together contain the full text of an item – each file should indicate its language"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#interpreter",
+      "@type": "rdf:Property",
+      "name": "interpreter",
+      "description": [
+        "The choice between 'interpreter' and 'translator' may depend on the dynamics of the resource creation event or process. Generally, if the participant is translating 'live'; that is, while the speaker or signer is speaking or signing, she or he should be identified as an interpreter. Also, some discourse genres include a participant who interprets or explains a performance of some kind."
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "example": [
+        "A person translating from English to ASL during a speech; a Kuna chief who interprets a chant that another chief has just performed, thus completing the ceremony."
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#interpreter"
+      ],
+      "rdfs:comment": [
+        "The participant translates in real-time or explains the discourse recorded in the resource."
+      ],
+      "rdfs:label": [
+        "interpreter"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#interviewee",
+      "@type": "rdf:Property",
+      "name": "interviewee",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "rdfs:comment": [
+        "The participant was a respondent in an interview"
+      ],
+      "rdfs:label": [
+        "interviewee"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#interviewer",
+      "@type": "rdf:Property",
+      "name": "interviewer",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#interviewer"
+      ],
+      "rdfs:comment": [
+        "The participant conducted an interview that forms part of the resource."
+      ],
+      "rdfs:label": [
+        "interviewer"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#licensedOrganization",
+      "@type": "rdf:Property",
+      "name": "licensedOrganization",
+      "rangeIncludes": [
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#translator"
+      ],
+      "rdfs:comment": [
+        "Indicates a group of people who have the rights described in this license"
+      ],
+      "rdfs:label": [
+        "licensedOrganization"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#OrganizationBasedLicense"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#linguisticGenre",
+      "@type": "rdf:Property",
+      "name": "linguisticGenre",
+      "domainIncludes": [
+        "https://purl.archive.org/language-data-node-tools/terms#PrimaryText"
+      ],
+      "rdfs:label": [
+        "linguisticGenre"
+      ],
+      "rdfs:comment": [
+        "A linguistic classification of the genre of this resource"
+      ],
+      "definedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#modality",
+      "@type": "rdf:Property",
+      "name": "modality",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rdfs:label": [
+        "modality"
+      ],
+      "rdfs:comment": [
+        "The mode (spoken, written, signed etc) of this resource. There may be more than one value for this property."
+      ],
+      "definedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationModeTerms"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#participant",
+      "@type": "rdf:Property",
+      "name": "participant",
+      "description": [
+        "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in general sense of having allowed the creation event to take place, such as the mayor of an indigenous community."
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#participant"
+      ],
+      "rdfs:comment": [
+        "The participant was present during the creation of the resource, but did not contribute substantially to its content."
+      ],
+      "rdfs:label": [
+        "participant"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#performer",
+      "@type": "rdf:Property",
+      "name": "performer",
+      "description": [
+        "It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'."
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "example": [
+        "A person performing a ceremony or delivering an oration or a sermon; native speakers re-enacting a traditional genre of speech, such as ritual greetings or insults; an actor or musician."
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#performer"
+      ],
+      "rdfs:comment": [
+        "The participant performed some portion of a recorded, filmed, or transcribed resource."
+      ],
+      "rdfs:label": [
+        "performer"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#person",
+      "@type": "rdf:Property",
+      "name": "person",
+      "rangeIncludes": [
+        "schema:Person"
+      ],
+      "rdfs:comment": [
+        "This property references a Person item which represents the persistent identity of one or more ContributingPerson items."
+      ],
+      "rdfs:label": [
+        "person"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#PersonSnapshot"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#photographer",
+      "@type": "rdf:Property",
+      "name": "photographer",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#photographer"
+      ],
+      "rdfs:comment": [
+        "The participant took the photograph, or shot the film, that appears in or constitutes the resource."
+      ],
+      "rdfs:label": [
+        "photographer"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#recorder",
+      "@type": "rdf:Property",
+      "name": "recorder",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#recorder"
+      ],
+      "rdfs:comment": [
+        "The participant operated the recording machinery used to create the resource."
+      ],
+      "rdfs:label": [
+        "recorder"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#register",
+      "@type": "rdf:Property",
+      "name": "register",
+      "description": [
+        "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource."
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "sameAs": [
+        "http://w3id.org/meta-share/meta-share/register"
+      ],
+      "rdfs:comment": [
+        "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource."
+      ],
+      "rdfs:label": [
+        "register"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#researchParticipant",
+      "@type": "rdf:Property",
+      "name": "researchParticipant",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#research_participant"
+      ],
+      "rdfs:comment": [
+        "The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource."
+      ],
+      "rdfs:label": [
+        "researchParticipant"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#researcher",
+      "@type": "rdf:Property",
+      "name": "researcher",
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#researcher"
+      ],
+      "rdfs:comment": [
+        "The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research."
+      ],
+      "rdfs:label": [
+        "researcher"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#responder",
+      "@type": "rdf:Property",
+      "name": "responder",
+      "description": [
+        "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\"."
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#responder"
+      ],
+      "rdfs:comment": [
+        "The participant was an interlocutor in some sort of discourse event."
+      ],
+      "rdfs:label": [
+        "responder"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#signer",
+      "@type": "rdf:Property",
+      "name": "signer",
+      "description": [
+        "Signers are those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)"
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "example": [
+        "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders."
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#signer"
+      ],
+      "rdfs:comment": [
+        "The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource."
+      ],
+      "rdfs:label": [
+        "signer"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#singer",
+      "@type": "rdf:Property",
+      "name": "singer",
+      "rdfs:label": [
+        "singer"
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#singer"
+      ],
+      "rdfs:comment": [
+        "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource."
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#speaker",
+      "@type": "rdf:Property",
+      "name": "speaker",
+      "description": [
+        "Speakers are those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)"
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "example": [
+        "Participants in a recorded conversation, elicitation session, or informal narration would be termed Speakers. Audience members who do not participate beyond the occasional backchannel would be termed Responders."
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#speaker"
+      ],
+      "rdfs:comment": [
+        "The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource."
+      ],
+      "rdfs:label": [
+        "speaker"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#sponsor",
+      "@type": "rdf:Property",
+      "name": "sponsor",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#sponsor"
+      ],
+      "rdfs:comment": [
+        "The participant contributed financial support to the creation of the resource."
+      ],
+      "rdfs:label": [
+        "sponsor"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#transcriber",
+      "@type": "rdf:Property",
+      "name": "transcriber",
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rangeIncludes": [
+        "schema:Person",
+        "schema:Organization"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#transcriber"
+      ],
+      "rdfs:comment": [
+        "The participant produced a transcription of this or a related resource."
+      ],
+      "rdfs:label": [
+        "transcriber"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#translator",
+      "@type": "rdf:Property",
+      "name": "translator",
+      "rangeIncludes": [
+        "schema:Organization",
+        "schema:Person"
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "sameAs": [
+        "http://www.language-archives.org/REC/role.html#translator"
+      ],
+      "rdfs:comment": [
+        "The participant produced a translation of this or a related resource."
+      ],
+      "rdfs:label": [
+        "translator"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#hasCollectionProtocol",
+      "@type": "rdf:Property",
+      "name": "hasCollectionProtocol",
+      "rdfs:label": [
+        "hasCollectionProtocol"
+      ],
+      "domainIncludes": [
+        "schema:CreativeWork"
+      ],
+      "rdfs:comment": [
+        "This resource  was assembled or collected according to the linked protocol"
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#CollectionProtocol"
+        }
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#isDeIdentified",
+      "@type": "rdf:Property",
+      "name": "isDeIdentified",
+      "rdfs:label": [
+        "isDeIdentified"
+      ],
+      "domainIncludes": [
+        "[{\"@id\":\"schema:CreativeWork\"}, {\"@id\":\"schema:Person\"}, https://purl.archive.org/language-data-node-tools/terms#PersonSnapshot]"
+      ],
+      "rangeIncludes": [
+        "schema:Boolean"
+      ],
+      "rdfs:comment": [
+        "The data in this item has had identifying information removed, or in the case of a person the name is an alias"
+      ],
+      "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#OrthographyTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "WrittenLanguageTypeTerms",
+      "description": [
+        "Set of expected types for WrittenLanguage modality (this set is incomplete - more work needed)"
+      ],
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Handwritten"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Typewritten"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Typeset"
+        }
+      ],
+      "@reverse": {
+        "inDefinedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Session"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Typeset"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Typewritten"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#CommunicationGenreTerms",
+      "@type": "DefinedTermSet",
+      "name": "LinguisticGenreTerms",
+      "description": [
+        "Set of expected values for linguistic genre of a resource"
+      ],
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Formulaic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Thesaurus"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Dialogue"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Oratory"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Report"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Ludic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Procedural"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Narrative"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Interview"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Drama"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-node-tools/terms#Informational"
+        }
+      ],
+      "@reverse": {
+        "inDefinedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Dialogue"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Drama"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Formulaic"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Informational"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Ludic"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Oratory"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Procedural"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Report"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Thesaurus"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#Narrative"
+          }
+        ],
+        "definedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-node-tools/terms#linguisticGenre"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-node-tools/terms#timeAligned",
+      "@type": "rdf:Property",
+      "name": "hasTimeAligned",
+      "@reverse": {}
+    },
+    {
+      "@id": "http://purl.archive.org/language-data-commons/terms#TimeAligned",
+      "@type": "definedTerm",
+      "name": "TimeAligned",
+      "description": [
+        "The resource contains a written or coded annotation(s) which has data aligning the annotation(s) with a PrimaryResource"
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
     }
   ]
 }
