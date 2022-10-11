@@ -586,7 +586,7 @@ This resource contains some kind of description which adds information to the re
 
 ### Values expected to be one of these types: 
 
-[<a href='https://purl.archive.org/language-data-node-tools/terms#PrimaryText'> https://purl.archive.org/language-data-node-tools/terms#PrimaryText </a>] |
+[<a href='https://purl.archive.org/language-data-commons/terms#PrimaryText'> https://purl.archive.org/language-data-commons/terms#PrimaryText </a>] |
 
 
 
@@ -958,13 +958,13 @@ This resource is referenced by another resource that describes it such as a tran
 
 ### Values expected to be one of these types: 
 
-[<a href='"https://purl.archive.org/language-data-node-tools/terms#Annnotation"'> "https://purl.archive.org/language-data-node-tools/terms#Annnotation" </a>] |
+[<a href='"https://purl.archive.org/language-data-commons/terms#Annnotation"'> "https://purl.archive.org/language-data-commons/terms#Annnotation" </a>] |
 
 
 
 ### Used on these types: 
 
-[<a href='https://purl.archive.org/language-data-node-tools/terms#PrimaryText'> https://purl.archive.org/language-data-node-tools/terms#PrimaryText </a>] |
+[<a href='https://purl.archive.org/language-data-commons/terms#PrimaryText'> https://purl.archive.org/language-data-commons/terms#PrimaryText </a>] |
 
 
 
@@ -979,13 +979,13 @@ This resource references another resource that is derived from it such as a down
 
 ### Values expected to be one of these types: 
 
-[<a href='"https://purl.archive.org/language-data-node-tools/terms#DerivedText"'> "https://purl.archive.org/language-data-node-tools/terms#DerivedText" </a>] |
+[<a href='"https://purl.archive.org/language-data-commons/terms#DerivedText"'> "https://purl.archive.org/language-data-commons/terms#DerivedText" </a>] |
 
 
 
 ### Used on these types: 
 
-[<a href='https://purl.archive.org/language-data-node-tools/terms#PrimaryText'> https://purl.archive.org/language-data-node-tools/terms#PrimaryText </a>] |
+[<a href='https://purl.archive.org/language-data-commons/terms#PrimaryText'> https://purl.archive.org/language-data-commons/terms#PrimaryText </a>] |
 
 
 
@@ -1144,7 +1144,7 @@ A linguistic classification of the genre of this resource
 
 ### Used on these types: 
 
-[<a href='https://purl.archive.org/language-data-node-tools/terms#PrimaryText'> https://purl.archive.org/language-data-node-tools/terms#PrimaryText </a>] |
+[<a href='https://purl.archive.org/language-data-commons/terms#PrimaryText'> https://purl.archive.org/language-data-commons/terms#PrimaryText </a>] |
 
 
 
@@ -1576,7 +1576,7 @@ The data in this item has had identifying information removed, or in the case of
 
 ### Used on these types: 
 
-[<a href='[{"@id":"schema:CreativeWork"}, {"@id":"schema:Person"}, https://purl.archive.org/language-data-node-tools/terms#PersonSnapshot]'> [{"@id":"schema:CreativeWork"}, {"@id":"schema:Person"}, https://purl.archive.org/language-data-node-tools/terms#PersonSnapshot] </a>] |
+[<a href='[{"@id":"schema:CreativeWork"}, {"@id":"schema:Person"}, https://purl.archive.org/language-data-commons/terms#PersonSnapshot]'> [{"@id":"schema:CreativeWork"}, {"@id":"schema:Person"}, https://purl.archive.org/language-data-commons/terms#PersonSnapshot] </a>] |
 
 
 
