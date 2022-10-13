@@ -1,5 +1,5 @@
 {
-  "name": "language-data-node-tools",
+  "name": "language-data-commons-vocabs",
   "version": "1.0.0",
   "description": "Utilities for packaging and descring lanaguage data using RO-Crate",
   "main": "index.js",
@@ -27,7 +27,7 @@
     "install": "^0.13.0",
     "npm": "^8.18.0",
     "oni-ocfl": "git+https://github.com/Language-Research-Technology/oni-ocfl.git",
-    "ro-crate": "github:Arkisto-Platform/ro-crate-js#develop-rewrite",
+    "ro-crate": "^3.1.0",
     "shelljs": "^0.8.4",
     "tmp": "^0.2.1"
   }
