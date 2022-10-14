@@ -27,7 +27,7 @@
     "install": "^0.13.0",
     "npm": "^8.18.0",
     "oni-ocfl": "git+https://github.com/Language-Research-Technology/oni-ocfl.git",
-    "ro-crate": "^3.1.0",
+    "ro-crate": "github:Arkisto-Platform/ro-crate-js#develop-rewrite",
     "shelljs": "^0.8.4",
     "tmp": "^0.2.1"
   }
