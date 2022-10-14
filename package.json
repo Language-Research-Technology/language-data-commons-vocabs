@@ -4,11 +4,11 @@
   "description": "Utilities for packaging and descring lanaguage data using RO-Crate",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha lib"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Language-Research-Technology/language-data-node-tools.git"
+    "url": "git+https://github.com/Language-Research-Technology/language-data-commons-vocab.git"
   },
   "keywords": [
     "ATAP",
@@ -25,7 +25,7 @@
     "axios": "^1.1.2",
     "chai": "^4.3.4",
     "install": "^0.13.0",
-    "npm": "^8.18.0",
+    "mocha": "^10.0.0",
     "oni-ocfl": "git+https://github.com/Language-Research-Technology/oni-ocfl.git",
     "ro-crate": "^3.1.0",
     "shelljs": "^0.8.4",
