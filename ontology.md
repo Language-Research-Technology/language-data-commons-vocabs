@@ -4,7 +4,7 @@ This is an experimental language data ontology based on OLAC terms for use in th
 
 ## Classes
 
-<a href="#PrimaryText">PrimaryText</a> | <a href="#Annotation">Annotation</a> | <a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DerivedResource">DerivedResource</a> | <a href="#OrganizationBasedLicense">OrganizationBasedLicense</a> | <a href="#OrganizationDepositLicense">OrganizationDepositLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#PersonSnapshot">PersonSnapshot</a>
+<a href="#PrimaryText">PrimaryText</a> | <a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DerivedResource">DerivedResource</a> | <a href="#OrganizationBasedLicense">OrganizationBasedLicense</a> | <a href="#OrganizationDepositLicense">OrganizationDepositLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#Annotation">Annotation</a>
 
 ## Properties
 
@@ -18,7 +18,7 @@ This is an experimental language data ontology based on OLAC terms for use in th
 
 ## DefinedTermsSets
 
-
+<a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#ModalityTerms">ModalityTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a>
 
 <div id="PrimaryText" style="border-style: solid">
 
@@ -33,28 +33,6 @@ This is a primary resource: the object of study, such as a literary work, film, 
 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text'> http://www.language-archives.org/REC/type-20020628.html#text </a>] |
-
-
-
-
-</div><br>
-<div id="Annotation" style="border-style: solid">
-
-## Class: Annotation
-
-The resource includes material which adds information to some other linguistic record.
-
-### Subclass of 
-
-   schema:CreativeWork | 
-
-
-
-### Properties
-
-[<a href='#annotationType'> annotationType </a>] | 
-
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annotation'> http://www.language-archives.org/REC/type-20020628.html#annotation </a>] |
 
 
 
@@ -86,6 +64,15 @@ A description of an event at which one or more PrimaryTexts were captured,  eg a
 
 
 </div><br>
+<div id="CollectionEventTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: CollectionEventTypeTerms
+
+Set of terms which are expected values for CollectionEvent types
+
+### Has defined terms[<a href='#Session'> Session </a>] | 
+
+</div><br>
 <div id="CollectionProtocol" style="border-style: solid">
 
 ## Class: CollectionProtocol
@@ -103,6 +90,24 @@ Description of how this Object or Collection was obtained – such as strategy u
 [<a href='#collectionProtocolType'> collectionProtocolType </a>] | 
 
 
+
+</div><br>
+<div id="CollectionProtocolTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: CollectionProtocolTypeTerms
+
+Set of terms which are expected values for CollectionProtocol types
+
+### Has defined terms[<a href='#ElicitationTask'> ElicitationTask </a>] | [<a href='#TextSelectionCriteria'> TextSelectionCriteria </a>] | 
+
+</div><br>
+<div id="ModalityTerms"  style="border-style: solid">
+
+## Defined Term Set: ModalityTerms
+
+Set of expected values for modality types
+
+### Has defined terms[<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | 
 
 </div><br>
 <div id="DerivedResource" style="border-style: solid">
@@ -125,6 +130,15 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text'
 
 
 
+
+</div><br>
+<div id="AnnotationTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: AnnotationTypeTerms
+
+The set of expected values for annotation types
+
+### Has defined terms[<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Translation'> Translation </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Prosodic'> Prosodic </a>] | 
 
 </div><br>
 <div id="Dialogue"  style="border-style: solid">
@@ -913,7 +927,7 @@ The participant reviewed, corrected, and/or tested the resource.
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+ schema:Organization |  schema:Person | 
 
 
 
@@ -1583,6 +1597,24 @@ The data in this item has had identifying information removed, or in the case of
 
 
 </div><br>
+<div id="WrittenLanguageTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: WrittenLanguageTypeTerms
+
+Set of expected types for WrittenLanguage modality (this set is incomplete - more work needed)
+
+### Has defined terms[<a href='#Handwritten'> Handwritten </a>] | [<a href='#Typewritten'> Typewritten </a>] | [<a href='#Typeset'> Typeset </a>] | 
+
+</div><br>
+<div id="LinguisticGenreTerms"  style="border-style: solid">
+
+## Defined Term Set: LinguisticGenreTerms
+
+Set of expected values for linguistic genre of a resource
+
+### Has defined terms[<a href='#Formulaic'> Formulaic </a>] | [<a href='#Thesaurus'> Thesaurus </a>] | [<a href='#Dialogue'> Dialogue </a>] | [<a href='#Oratory'> Oratory </a>] | [<a href='#Report'> Report </a>] | [<a href='#Ludic'> Ludic </a>] | [<a href='#Procedural'> Procedural </a>] | [<a href='#Narrative'> Narrative </a>] | [<a href='#Interview'> Interview </a>] | [<a href='#Drama'> Drama </a>] | [<a href='#Informational'> Informational </a>] | 
+
+</div><br>
 <div id="undefined"  style="border-style: solid">
 
 ## Property: undefined
@@ -1599,6 +1631,28 @@ undefined
 
 
 
+
+
+
+
+</div><br>
+<div id="Annotation" style="border-style: solid">
+
+## Class: Annotation
+
+The resource includes material which adds information to some other linguistic record.
+
+### Subclass of 
+
+   schema:CreativeWork | 
+
+
+
+### Properties
+
+[<a href='#annotationType'> annotationType </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annotation'> http://www.language-archives.org/REC/type-20020628.html#annotation </a>] |
 
 
 
