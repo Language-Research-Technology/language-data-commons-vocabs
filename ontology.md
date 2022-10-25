@@ -4,7 +4,7 @@ This is an experimental language data ontology based on OLAC terms for use in th
 
 ## Classes
 
-<a href="#PrimaryText">PrimaryText</a> | <a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DerivedResource">DerivedResource</a> | <a href="#OrganizationBasedLicense">OrganizationBasedLicense</a> | <a href="#OrganizationDepositLicense">OrganizationDepositLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#Annotation">Annotation</a>
+<a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DerivedResource">DerivedResource</a> | <a href="#OrganizationBasedLicense">OrganizationBasedLicense</a> | <a href="#OrganizationDepositLicense">OrganizationDepositLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#Annotation">Annotation</a> | <a href="#PrimaryResource">PrimaryResource</a>
 
 ## Properties
 
@@ -20,24 +20,6 @@ This is an experimental language data ontology based on OLAC terms for use in th
 
 <a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#ModalityTerms">ModalityTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a>
 
-<div id="PrimaryText" style="border-style: solid">
-
-## Class: PrimaryText
-
-This is a primary resource: the object of study, such as a literary work, film, or recording of natural discourse
-
-### Subclass of 
-
-   schema:CreativeWork | 
-
-
-
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text'> http://www.language-archives.org/REC/type-20020628.html#text </a>] |
-
-
-
-
-</div><br>
 <div id="Coded"  style="border-style: solid">
 
 ## Defined Term: Coded
@@ -130,15 +112,6 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text'
 
 
 
-
-</div><br>
-<div id="AnnotationTypeTerms"  style="border-style: solid">
-
-## Defined Term Set: AnnotationTypeTerms
-
-The set of expected values for annotation types
-
-### Has defined terms[<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Translation'> Translation </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Prosodic'> Prosodic </a>] | 
 
 </div><br>
 <div id="Dialogue"  style="border-style: solid">
@@ -556,6 +529,15 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annot
 
 
 </div><br>
+<div id="AnnotationTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: AnnotationTypeTerms
+
+The set of expected values for annotation types
+
+### Has defined terms[<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Translation'> Translation </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Prosodic'> Prosodic </a>] | 
+
+</div><br>
 <div id="Typeset"  style="border-style: solid">
 
 ## Defined Term: Typeset
@@ -861,7 +843,7 @@ This resource references another resource that is derived from it such as a down
 
 ### Values expected to be one of these types: 
 
-[<a href='#PrimaryText'> PrimaryText </a>] | [<a href='#Annotation'> Annotation </a>] | 
+[<a href='#PrimaryResource'> PrimaryResource </a>] | [<a href='#Annotation'> Annotation </a>] | 
 
 
 
@@ -1419,7 +1401,7 @@ The participant was a principal signer in a resource that consists of a recordin
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+ schema:Organization |  schema:Person | 
 
 
 
@@ -1653,6 +1635,24 @@ The resource includes material which adds information to some other linguistic r
 [<a href='#annotationType'> annotationType </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annotation'> http://www.language-archives.org/REC/type-20020628.html#annotation </a>] |
+
+
+
+
+</div><br>
+<div id="PrimaryResource" style="border-style: solid">
+
+## Class: PrimaryResource
+
+This is a primary resource: the object of study, such as a literary work, film, or recording of natural discourse
+
+### Subclass of 
+
+   schema:CreativeWork | 
+
+
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text'> http://www.language-archives.org/REC/type-20020628.html#text </a>] |
 
 
 

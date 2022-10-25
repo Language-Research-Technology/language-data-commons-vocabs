@@ -1,6 +1,5 @@
 {
   "@context": {
-    "PrimaryText": "https://purl.archive.org/language-data-commons/terms#PrimaryText",
     "CollectionEvent": "https://purl.archive.org/language-data-commons/terms#CollectionEvent",
     "CollectionProtocol": "https://purl.archive.org/language-data-commons/terms#CollectionProtocol",
     "DerivedResource": "https://purl.archive.org/language-data-commons/terms#DerivedResource",
@@ -52,6 +51,7 @@
     "hasCollectionProtocol": "https://purl.archive.org/language-data-commons/terms#hasCollectionProtocol",
     "isDeIdentified": "https://purl.archive.org/language-data-commons/terms#isDeIdentified",
     "undefined": "https://purl.archive.org/language-data-commons/terms#timeAligned",
-    "Annotation": "https://purl.archive.org/language-data-commons/terms#Annotation"
+    "Annotation": "https://purl.archive.org/language-data-commons/terms#Annotation",
+    "PrimaryResource": "https://purl.archive.org/language-data-commons/terms#PrimaryResource"
   }
 }

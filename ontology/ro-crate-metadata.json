@@ -28,35 +28,6 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryText",
-      "@type": "rdfs:Class",
-      "name": "PrimaryResource",
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text"
-      ],
-      "rdfs:comment": [
-        "This is a primary resource: the object of study, such as a literary work, film, or recording of natural discourse"
-      ],
-      "rdfs:label": [
-        "PrimaryText"
-      ],
-      "rdfs:subClassOf": [
-        "schema:CreativeWork"
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
-        "rangeIncludes": [
-          {
-            "@id": "https://purl.archive.org/language-data-commons/terms#derivationOf"
-          }
-        ]
-      }
-    },
-    {
       "@id": "#261c406f-63bd-491f-ae4f-8208a9c784b8",
       "@type": "Thing",
       "name": "",
@@ -152,7 +123,7 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#Phonetic"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryText"
+          "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryResource"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Procedural"
@@ -544,41 +515,6 @@
           }
         ]
       }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#DerivedTextTypeTerms",
-      "@type": "DefinedTermSet",
-      "name": "AnnotationTypeTerms",
-      "description": [
-        "The set of expected values for annotation types"
-      ],
-      "hasDefinedTerm": [
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Phonemic"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Phonetic"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Phonological"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Syntactic"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Translation"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Semantic"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Transcription"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Prosodic"
-        }
-      ],
-      "@reverse": {}
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#Dialogue",
@@ -1026,7 +962,7 @@
         ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/language-data-commons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
           }
         ]
       }
@@ -1052,7 +988,7 @@
         ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/language-data-commons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
           }
         ]
       }
@@ -1078,7 +1014,7 @@
         ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/language-data-commons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
           }
         ]
       }
@@ -1132,7 +1068,7 @@
         ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/language-data-commons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
           }
         ]
       }
@@ -1186,7 +1122,7 @@
         ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/language-data-commons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
           }
         ]
       }
@@ -1313,7 +1249,7 @@
         ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/language-data-commons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
           }
         ]
       }
@@ -1420,7 +1356,7 @@
         ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/language-data-commons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
           }
         ]
       }
@@ -1446,10 +1382,45 @@
         ],
         "hasDefinedTerm": [
           {
-            "@id": "https://purl.archive.org/language-data-commons/terms#DerivedTextTypeTerms"
+            "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
           }
         ]
       }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "AnnotationTypeTerms",
+      "description": [
+        "The set of expected values for annotation types"
+      ],
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Phonemic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Phonetic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Phonological"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Syntactic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Translation"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Semantic"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Transcription"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Prosodic"
+        }
+      ],
+      "@reverse": {}
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#Typeset",
@@ -1859,7 +1830,7 @@
       ],
       "rangeIncludes": [
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryText"
+          "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryResource"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Annotation"
@@ -2520,6 +2491,10 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#signer",
       "@type": "rdf:Property",
       "name": "signer",
+      "rangeIncludes": [
+        "schema:Organization",
+        "schema:Person"
+      ],
       "description": [
         "Signers are those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)"
       ],
@@ -2528,10 +2503,6 @@
       ],
       "example": [
         "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders."
-      ],
-      "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#signer"
@@ -2906,6 +2877,35 @@
         "domainIncludes": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#annotationType"
+          }
+        ],
+        "rangeIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#derivationOf"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryResource",
+      "@type": "rdfs:Class",
+      "name": "PrimaryResource",
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text"
+      ],
+      "rdfs:comment": [
+        "This is a primary resource: the object of study, such as a literary work, film, or recording of natural discourse"
+      ],
+      "rdfs:subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "rdfs:label": [
+        "PrimaryResource"
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
           }
         ],
         "rangeIncludes": [
