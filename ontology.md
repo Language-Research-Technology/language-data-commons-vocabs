@@ -4,7 +4,7 @@ This is an experimental language data ontology based on OLAC terms for use in th
 
 ## Classes
 
-<a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DerivedResource">DerivedResource</a> | <a href="#OrganizationBasedLicense">OrganizationBasedLicense</a> | <a href="#OrganizationDepositLicense">OrganizationDepositLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#Annotation">Annotation</a> | <a href="#PrimaryResource">PrimaryResource</a>
+<a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#DataDepositLicense">DataDepositLicense</a> | <a href="#DataLicense">DataLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#DerivedResource">DerivedResource</a> | <a href="#Annotation">Annotation</a> | <a href="#PrimaryResource">PrimaryResource</a>
 
 ## Properties
 
@@ -90,28 +90,6 @@ Set of terms which are expected values for CollectionProtocol types
 Set of expected values for modality types
 
 ### Has defined terms[<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | 
-
-</div><br>
-<div id="DerivedResource" style="border-style: solid">
-
-## Class: DerivedResource
-
-A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a resource which is not an annotation (description)
-
-### Subclass of 
-
-   schema:CreativeWork | 
-
-
-
-### Properties
-
-[<a href='#derivationOf'> derivationOf </a>] | 
-
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text'> http://www.language-archives.org/REC/type-20020628.html#text </a>] |
-
-
-
 
 </div><br>
 <div id="Dialogue"  style="border-style: solid">
@@ -239,55 +217,6 @@ The art of public speaking, or of speaking eloquently according to rules or conv
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/orratory'> http://www.language-archives.org/REC/type-20020628.html#text/orratory </a>] |
-
-
-</div><br>
-<div id="OrganizationBasedLicense" style="border-style: solid">
-
-## Class: OrganizationBasedLicense
-
-A licence document setting out rights and oblications could be based copyright or other rights based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community
-
-### Subclass of 
-
-   schema:CreativeWork | 
-
-
-
-### Properties
-
-[<a href='#licensedOrganization'> licensedOrganization </a>] | 
-
-
-
-</div><br>
-<div id="OrganizationDepositLicense" style="border-style: solid">
-
-## Class: OrganizationDepositLicense
-
-A license document setting out terms for deposit into a repository by one or more identified groups 
-
-### Subclass of 
-
-  [<a href='#OrganizationBasedLicense'> OrganizationBasedLicense </a>] | 
-
-
-
-
-
-</div><br>
-<div id="OrganizationReuseLicense" style="border-style: solid">
-
-## Class: OrganizationReuseLicense
-
-A license document setting out terms for reuse of data by one or more identified groups.
-
-### Subclass of 
-
-  [<a href='#OrganizationBasedLicense'> OrganizationBasedLicense </a>] | 
-
-
-
 
 
 </div><br>
@@ -536,6 +465,77 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annot
 The set of expected values for annotation types
 
 ### Has defined terms[<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Translation'> Translation </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Prosodic'> Prosodic </a>] | 
+
+</div><br>
+<div id="DataDepositLicense" style="border-style: solid">
+
+## Class: DataDepositLicense
+
+A license document setting out terms for deposit into a repository
+
+### Subclass of 
+
+  [<a href='#DataLicense'> DataLicense </a>] | 
+
+
+
+
+
+</div><br>
+<div id="DataLicense" style="border-style: solid">
+
+## Class: DataLicense
+
+A licence document setting out rights and oblications could be based copyright or other rights based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community
+
+### Subclass of 
+
+   schema:CreativeWork | 
+
+
+
+### Properties
+
+[<a href='#licensedOrganization'> licensedOrganization </a>] | 
+
+
+
+</div><br>
+<div id="OrganizationReuseLicense" style="border-style: solid">
+
+## Class: OrganizationReuseLicense
+
+A license document setting out terms for reuse of data 
+
+### Subclass of 
+
+  [<a href='#DataLicense'> DataLicense </a>] | 
+
+
+
+
+
+</div><br>
+<div id="DerivedResource" style="border-style: solid">
+
+## Class: DerivedResource
+
+This is derived from another source, such as a Primary Resource, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)
+
+### Subclass of 
+
+   schema:CreativeWork | 
+
+
+
+### Properties
+
+[<a href='#derivationOf'> derivationOf </a>] | 
+
+Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text'> http://www.language-archives.org/REC/type-20020628.html#text </a>] |
+
+
+
 
 </div><br>
 <div id="Typeset"  style="border-style: solid">
@@ -1116,7 +1116,7 @@ Indicates a group of people who have the rights described in this license
 
 ### Used on these types: 
 
-[<a href='#OrganizationBasedLicense'> OrganizationBasedLicense </a>] | 
+[<a href='#DataLicense'> DataLicense </a>] | 
 
 
 
@@ -1644,7 +1644,7 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annot
 
 ## Class: PrimaryResource
 
-This is a primary resource: the object of study, such as a literary work, film, or recording of natural discourse
+The object of study, such as a literary work, film, or recording of natural discourse
 
 ### Subclass of 
 

@@ -99,13 +99,13 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#Oratory"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#OrganizationBasedLicense"
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#OrganizationDepositLicense"
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#OrganizationReuseLicense"
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Orthographic"
@@ -488,35 +488,6 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#DerivedResource",
-      "@type": "rdfs:Class",
-      "name": "DerivedResource",
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text"
-      ],
-      "rdfs:comment": [
-        "A resource is derived from another resource, via some automated process, eg a downsampled video or an abstract of a resource which is not an annotation (description)"
-      ],
-      "rdfs:label": [
-        "DerivedResource"
-      ],
-      "rdfs:subClassOf": [
-        "schema:CreativeWork"
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
-        "domainIncludes": [
-          {
-            "@id": "https://purl.archive.org/language-data-commons/terms#derivationOf"
-          }
-        ]
-      }
-    },
-    {
       "@id": "https://purl.archive.org/language-data-commons/terms#Dialogue",
       "@type": "DefinedTerm",
       "name": "Dialogue",
@@ -788,86 +759,6 @@
         "hasDefinedTerm": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#OrganizationBasedLicense",
-      "@type": "rdfs:Class",
-      "name": "OrganizationBasedLicense",
-      "rdfs:comment": [
-        "A licence document setting out rights and oblications could be based copyright or other rights based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community"
-      ],
-      "rdfs:label": [
-        "OrganizationBasedLicense"
-      ],
-      "rdfs:subClassOf": [
-        "schema:CreativeWork"
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
-        "rdfs:subClassOf": [
-          {
-            "@id": "https://purl.archive.org/language-data-commons/terms#OrganizationDepositLicense"
-          },
-          {
-            "@id": "https://purl.archive.org/language-data-commons/terms#OrganizationReuseLicense"
-          }
-        ],
-        "domainIncludes": [
-          {
-            "@id": "https://purl.archive.org/language-data-commons/terms#licensedOrganization"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#OrganizationDepositLicense",
-      "@type": "rdfs:Class",
-      "name": "OrganizationDepositLicense",
-      "rdfs:comment": [
-        "A license document setting out terms for deposit into a repository by one or more identified groups "
-      ],
-      "rdfs:label": [
-        "OrganizationDepositLicense"
-      ],
-      "rdfs:subClassOf": [
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#OrganizationBasedLicense"
-        }
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#OrganizationReuseLicense",
-      "@type": "rdfs:Class",
-      "name": "OrganizationReuseLicense",
-      "rdfs:label": [
-        "OrganizationReuseLicense"
-      ],
-      "rdfs:comment": [
-        "A license document setting out terms for reuse of data by one or more identified groups."
-      ],
-      "rdfs:subClassOf": [
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#OrganizationBasedLicense"
-        }
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
           }
         ]
       }
@@ -1421,6 +1312,115 @@
         }
       ],
       "@reverse": {}
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense",
+      "@type": "rdfs:Class",
+      "name": "DataDepositLicense",
+      "rdfs:comment": [
+        "A license document setting out terms for deposit into a repository"
+      ],
+      "rdfs:label": [
+        "DataDepositLicense"
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+        }
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense",
+      "@type": "rdfs:Class",
+      "name": "DataLicense",
+      "rdfs:comment": [
+        "A licence document setting out rights and oblications could be based copyright or other rights based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community"
+      ],
+      "rdfs:subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "rdfs:label": [
+        "DataLicense"
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ],
+        "rdfs:subClassOf": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
+          }
+        ],
+        "domainIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#licensedOrganization"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense",
+      "@type": "rdfs:Class",
+      "name": "DataReuseLicense",
+      "rdfs:label": [
+        "OrganizationReuseLicense"
+      ],
+      "rdfs:comment": [
+        "A license document setting out terms for reuse of data "
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+        }
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#DerivedResource",
+      "@type": "rdfs:Class",
+      "name": "DerivedMaterial",
+      "sameAs": [
+        "http://www.language-archives.org/REC/type-20020628.html#text"
+      ],
+      "rdfs:label": [
+        "DerivedResource"
+      ],
+      "rdfs:subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "rdfs:comment": [
+        "This is derived from another source, such as a Primary Resource, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)"
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ],
+        "domainIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#derivationOf"
+          }
+        ]
+      }
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#Typeset",
@@ -2163,7 +2163,7 @@
       ],
       "domainIncludes": [
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#OrganizationBasedLicense"
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
         }
       ],
       "@reverse": {
@@ -2889,18 +2889,18 @@
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryResource",
       "@type": "rdfs:Class",
-      "name": "PrimaryResource",
+      "name": "PrimaryMaterial",
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#text"
-      ],
-      "rdfs:comment": [
-        "This is a primary resource: the object of study, such as a literary work, film, or recording of natural discourse"
       ],
       "rdfs:subClassOf": [
         "schema:CreativeWork"
       ],
       "rdfs:label": [
         "PrimaryResource"
+      ],
+      "rdfs:comment": [
+        "The object of study, such as a literary work, film, or recording of natural discourse"
       ],
       "@reverse": {
         "mentions": [
