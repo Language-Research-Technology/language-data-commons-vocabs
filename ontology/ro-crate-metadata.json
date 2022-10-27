@@ -249,9 +249,6 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#isDeIdentified"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#licensedOrganization"
-        },
-        {
           "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre"
         },
         {
@@ -1362,11 +1359,6 @@
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
           }
-        ],
-        "domainIncludes": [
-          {
-            "@id": "https://purl.archive.org/language-data-commons/terms#licensedOrganization"
-          }
         ]
       }
     },
@@ -1375,7 +1367,7 @@
       "@type": "rdfs:Class",
       "name": "DataReuseLicense",
       "rdfs:label": [
-        "OrganizationReuseLicense"
+        "DataReuseLicense"
       ],
       "rdfs:comment": [
         "A license document setting out terms for reuse of data "
@@ -2136,35 +2128,6 @@
       ],
       "rdfs:label": [
         "interviewer"
-      ],
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#licensedOrganization",
-      "@type": "rdf:Property",
-      "name": "licensedOrganization",
-      "rangeIncludes": [
-        "schema:Organization"
-      ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#translator"
-      ],
-      "rdfs:comment": [
-        "Indicates a group of people who have the rights described in this license"
-      ],
-      "rdfs:label": [
-        "licensedOrganization"
-      ],
-      "domainIncludes": [
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
-        }
       ],
       "@reverse": {
         "mentions": [
