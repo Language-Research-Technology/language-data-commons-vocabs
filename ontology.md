@@ -4,11 +4,11 @@ This is an experimental language data ontology based on OLAC terms for use in th
 
 ## Classes
 
-<a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#DataDepositLicense">DataDepositLicense</a> | <a href="#DataLicense">DataLicense</a> | <a href="#OrganizationReuseLicense">OrganizationReuseLicense</a> | <a href="#DerivedResource">DerivedResource</a> | <a href="#Annotation">Annotation</a> | <a href="#PrimaryResource">PrimaryResource</a>
+<a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#DataDepositLicense">DataDepositLicense</a> | <a href="#DataLicense">DataLicense</a> | <a href="#DataReuseLicense">DataReuseLicense</a> | <a href="#DerivedResource">DerivedResource</a> | <a href="#Annotation">Annotation</a> | <a href="#PrimaryResource">PrimaryResource</a>
 
 ## Properties
 
-<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#licensedOrganization">licensedOrganization</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#undefined">undefined</a>
+<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#undefined">undefined</a>
 
 ## DefinedTerms
 
@@ -494,16 +494,12 @@ A licence document setting out rights and oblications could be based copyright o
 
 
 
-### Properties
-
-[<a href='#licensedOrganization'> licensedOrganization </a>] | 
-
 
 
 </div><br>
-<div id="OrganizationReuseLicense" style="border-style: solid">
+<div id="DataReuseLicense" style="border-style: solid">
 
-## Class: OrganizationReuseLicense
+## Class: DataReuseLicense
 
 A license document setting out terms for reuse of data 
 
@@ -1097,30 +1093,6 @@ The participant conducted an interview that forms part of the resource.
 
 
 Same as: [<a href='http://www.language-archives.org/REC/role.html#interviewer'> http://www.language-archives.org/REC/role.html#interviewer </a>] |
-
-
-
-
-</div><br>
-<div id="licensedOrganization"  style="border-style: solid">
-
-## Property: licensedOrganization
-
-Indicates a group of people who have the rights described in this license
-
-### Values expected to be one of these types: 
-
- schema:Organization | 
-
-
-
-### Used on these types: 
-
-[<a href='#DataLicense'> DataLicense </a>] | 
-
-
-
-Same as: [<a href='http://www.language-archives.org/REC/role.html#translator'> http://www.language-archives.org/REC/role.html#translator </a>] |
 
 
 
