@@ -99,9 +99,6 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#Oratory"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
-        },
-        {
           "@id": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense"
         },
         {
@@ -1320,11 +1317,6 @@
       "rdfs:label": [
         "DataDepositLicense"
       ],
-      "rdfs:subClassOf": [
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
-        }
-      ],
       "@reverse": {
         "mentions": [
           {
@@ -1345,6 +1337,11 @@
       ],
       "rdfs:label": [
         "DataLicense"
+      ],
+      "sameAs": [
+        {
+          "@id": "https://creativecommons.org/ns#License"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1371,11 +1368,6 @@
       ],
       "rdfs:comment": [
         "A license document setting out terms for reuse of data "
-      ],
-      "rdfs:subClassOf": [
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
-        }
       ],
       "@reverse": {
         "mentions": [
@@ -2874,6 +2866,24 @@
         "rangeIncludes": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#derivationOf"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#61e381a6-8e32-49ce-bff4-54c9e8b1cdc6",
+      "@type": "URL",
+      "name": "",
+      "@reverse": {}
+    },
+    {
+      "@id": "https://creativecommons.org/ns#License",
+      "@type": "URL",
+      "name": "",
+      "@reverse": {
+        "sameAs": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
           }
         ]
       }

@@ -475,7 +475,7 @@ A license document setting out terms for deposit into a repository
 
 ### Subclass of 
 
-  [<a href='#DataLicense'> DataLicense </a>] | 
+  
 
 
 
@@ -494,6 +494,9 @@ A licence document setting out rights and oblications could be based copyright o
 
 
 
+Same as: [<a href='https://creativecommons.org/ns#License'> License </a>] | 
+
+
 
 
 </div><br>
@@ -505,7 +508,7 @@ A license document setting out terms for reuse of data
 
 ### Subclass of 
 
-  [<a href='#DataLicense'> DataLicense </a>] | 
+  
 
 
 
