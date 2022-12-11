@@ -41,9 +41,18 @@
       "@type": "Dataset",
       "name": "Language Data Ontology",
       "description": [
-        "This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects"
+        "This is a language data ontology based on OLAC terms for use in the ATAP and LDaCA projects"
       ],
       "mentions": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Oratory"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Orthographic"
+        },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Phonological"
         },
@@ -94,18 +103,6 @@
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Narrative"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Oratory"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Orthographic"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#PartOfSpeech"
@@ -298,6 +295,9 @@
         },
         {
           "@id": "http://purl.archive.org/language-data-commons/terms#TimeAligned"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
         }
       ],
       "@reverse": {}
@@ -375,7 +375,7 @@
         "CollectionProtocol"
       ],
       "rdfs:subClassOf": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rdfs:comment": [
         "Description of how this Object or Collection was obtained – such as strategy used for selecting written source texts, or the prompts given to participants "
@@ -810,7 +810,7 @@
         "PersonSnapshot"
       ],
       "rdfs:subClassOf": [
-        "schema:Person",
+        {"@id": "http://schema.org/Person"},
         "schema:Role"
       ],
       "@reverse": {
@@ -1281,6 +1281,9 @@
       ],
       "hasDefinedTerm": [
         {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Prosodic"
+        },
+        {
           "@id": "https://purl.archive.org/language-data-commons/terms#Phonemic"
         },
         {
@@ -1300,9 +1303,6 @@
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Transcription"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Prosodic"
         }
       ],
       "@reverse": {}
@@ -1316,6 +1316,11 @@
       ],
       "rdfs:label": [
         "DataDepositLicense"
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1333,7 +1338,7 @@
         "A licence document setting out rights and oblications could be based copyright or other rights based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community"
       ],
       "rdfs:subClassOf": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rdfs:label": [
         "DataLicense"
@@ -1352,9 +1357,6 @@
         "rdfs:subClassOf": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense"
-          },
-          {
-            "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
           }
         ]
       }
@@ -1367,7 +1369,17 @@
         "DataReuseLicense"
       ],
       "rdfs:comment": [
-        "A license document setting out terms for reuse of data "
+        "A license document, setting out terms for reuse of data "
+      ],
+      "rdfs:subClassOf": 
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+        }
+      ,
+      "sameAs": [
+        {
+          "@id": "https://creativecommons.org/ns#License"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1388,7 +1400,7 @@
         "DerivedResource"
       ],
       "rdfs:subClassOf": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rdfs:comment": [
         "This is derived from another source, such as a Primary Resource, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)"
@@ -1506,7 +1518,7 @@
       "@type": "rdf:Property",
       "name": "annotationOf",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
         "https://purl.archive.org/language-data-commons/terms#PrimaryText"
@@ -1553,11 +1565,11 @@
       "@type": "rdf:Property",
       "name": "annotator",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#annotator"
@@ -1581,11 +1593,11 @@
       "@type": "rdf:Property",
       "name": "author",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#author"
@@ -1609,7 +1621,7 @@
       "@type": "rdf:Property",
       "name": "channels",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rdfs:comment": [
         "Number of audio channels this resource contains (eg 1, 2, 5.1)"
@@ -1689,14 +1701,14 @@
         "This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately."
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "example": [
         "A compiler of a book of short stories or a CD with several songs on it; a collector of a corpus of recordings in some language or on a given topic; a person who assembles a suite of software tools."
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#compiler"
@@ -1723,11 +1735,11 @@
         "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\"."
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#consultant"
@@ -1751,11 +1763,11 @@
       "@type": "rdf:Property",
       "name": "dataInputter",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#data_inputter"
@@ -1779,11 +1791,11 @@
       "@type": "rdf:Property",
       "name": "depositor",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#depositor"
@@ -1841,11 +1853,11 @@
         "A software programmer, designer, or analyst; a designer of a questionnaire or research task."
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#developer"
@@ -1869,7 +1881,7 @@
       "@type": "rdf:Property",
       "name": "doi",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rdfs:comment": [
         "A digital Object Identifier"
@@ -1890,14 +1902,14 @@
       "@type": "rdf:Property",
       "name": "editor",
       "rangeIncludes": [
-        "schema:Organization",
-        "schema:Person"
+        {"@id": "http://schema.org/Organization"},
+        {"@id": "http://schema.org/Person"}
       ],
       "description": [
         "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases."
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#editor"
@@ -1995,11 +2007,11 @@
       "@type": "rdf:Property",
       "name": "illustrator",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#illustrator"
@@ -2026,7 +2038,7 @@
         "indexableText"
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
         "schema:File"
@@ -2050,14 +2062,14 @@
         "The choice between 'interpreter' and 'translator' may depend on the dynamics of the resource creation event or process. Generally, if the participant is translating 'live'; that is, while the speaker or signer is speaking or signing, she or he should be identified as an interpreter. Also, some discourse genres include a participant who interprets or explains a performance of some kind."
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "example": [
         "A person translating from English to ASL during a speech; a Kuna chief who interprets a chant that another chief has just performed, thus completing the ceremony."
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#interpreter"
@@ -2081,11 +2093,11 @@
       "@type": "rdf:Property",
       "name": "interviewee",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "rdfs:comment": [
         "The participant was a respondent in an interview"
@@ -2106,11 +2118,11 @@
       "@type": "rdf:Property",
       "name": "interviewer",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#interviewer"
@@ -2160,7 +2172,7 @@
       "@type": "rdf:Property",
       "name": "modality",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rdfs:label": [
         "modality"
@@ -2189,11 +2201,11 @@
         "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in general sense of having allowed the creation event to take place, such as the mayor of an indigenous community."
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#participant"
@@ -2220,14 +2232,14 @@
         "It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'."
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "example": [
         "A person performing a ceremony or delivering an oration or a sermon; native speakers re-enacting a traditional genre of speech, such as ritual greetings or insults; an actor or musician."
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#performer"
@@ -2251,7 +2263,7 @@
       "@type": "rdf:Property",
       "name": "person",
       "rangeIncludes": [
-        "schema:Person"
+        {"@id": "http://schema.org/Person"}
       ],
       "rdfs:comment": [
         "This property references a Person item which represents the persistent identity of one or more ContributingPerson items."
@@ -2277,11 +2289,11 @@
       "@type": "rdf:Property",
       "name": "photographer",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#photographer"
@@ -2305,11 +2317,11 @@
       "@type": "rdf:Property",
       "name": "recorder",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#recorder"
@@ -2336,7 +2348,7 @@
         "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource."
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "sameAs": [
         "http://w3id.org/meta-share/meta-share/register"
@@ -2360,11 +2372,11 @@
       "@type": "rdf:Property",
       "name": "researchParticipant",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#research_participant"
@@ -2388,11 +2400,11 @@
       "@type": "rdf:Property",
       "name": "researcher",
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#researcher"
@@ -2419,11 +2431,11 @@
         "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\"."
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#responder"
@@ -2447,14 +2459,14 @@
       "@type": "rdf:Property",
       "name": "signer",
       "rangeIncludes": [
-        "schema:Organization",
-        "schema:Person"
+        {"@id": "http://schema.org/Organization"},
+        {"@id": "http://schema.org/Person"}
       ],
       "description": [
         "Signers are those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)"
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "example": [
         "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders."
@@ -2484,11 +2496,11 @@
         "singer"
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#singer"
@@ -2512,14 +2524,14 @@
         "Speakers are those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)"
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "example": [
         "Participants in a recorded conversation, elicitation session, or informal narration would be termed Speakers. Audience members who do not participate beyond the occasional backchannel would be termed Responders."
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#speaker"
@@ -2543,11 +2555,11 @@
       "@type": "rdf:Property",
       "name": "sponsor",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#sponsor"
@@ -2571,11 +2583,11 @@
       "@type": "rdf:Property",
       "name": "transcriber",
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rangeIncludes": [
-        "schema:Person",
-        "schema:Organization"
+        {"@id": "http://schema.org/Person"},
+        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#transcriber"
@@ -2599,11 +2611,11 @@
       "@type": "rdf:Property",
       "name": "translator",
       "rangeIncludes": [
-        "schema:Organization",
-        "schema:Person"
+        {"@id": "http://schema.org/Organization"},
+        {"@id": "http://schema.org/Person"}
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#translator"
@@ -2630,7 +2642,7 @@
         "hasCollectionProtocol"
       ],
       "domainIncludes": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rdfs:comment": [
         "This resource  was assembled or collected according to the linked protocol"
@@ -2818,7 +2830,7 @@
         "Annotation"
       ],
       "rdfs:subClassOf": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rdfs:comment": [
         "The resource includes material which adds information to some other linguistic record."
@@ -2849,7 +2861,7 @@
         "http://www.language-archives.org/REC/type-20020628.html#text"
       ],
       "rdfs:subClassOf": [
-        "schema:CreativeWork"
+        {"@id": "http://schema.org/CreativeWork"}
       ],
       "rdfs:label": [
         "PrimaryResource"

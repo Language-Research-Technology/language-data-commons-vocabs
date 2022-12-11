@@ -87,7 +87,7 @@
           },
           {
             "id": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-            "name": "rdfs:subClassof",
+            "name": "rdfs:subClassOf",
             "help": "Parent Class (if any)",
             "type": ["Class"],
             "multiple": false
@@ -117,7 +117,7 @@
         
             {
               "id": "https://schema.org/description",
-              "name": "Description",
+              "name": "description",
               "help": "A description of the defined Term",
               "type": ["TextArea"],
               "multiple": false
@@ -155,7 +155,7 @@
         
             {
               "id": "https://schema.org/description",
-              "name": "Description",
+              "name": "description",
               "help": "A description of the defined set of defined terms",
               "type": ["TextArea"],
               "multiple": false
@@ -194,7 +194,7 @@
                 "id": "http://www.w3.org/2000/01/rdf-schema#label",
                 "name": "label",
                 "label": "Label",
-                "help": "The label for this class",
+                "help": "The label for this property",
                 "required": true,
                 "multiple": false,
                 "type": ["Text"]

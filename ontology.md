@@ -1,6 +1,6 @@
 # Language Data Ontology
 
-This is an experimental language data ontology based on OLAC terms for use in the ATAP and LDaCA projects
+This is a language data ontology based on OLAC terms for use in the ATAP and LDaCA projects
 
 ## Classes
 
@@ -33,7 +33,7 @@ The resource contains an analysis or annotations represented by a code (such as 
 
 A description of an event at which one or more PrimaryTexts were captured,  eg as video or audio
 
-### Subclass of 
+### Subclass of: 
 
    schema:Event |  schema:CreateAction | 
 
@@ -43,7 +43,7 @@ A description of an event at which one or more PrimaryTexts were captured,  eg a
 
 [<a href='#collectionEventType'> collectionEventType </a>] | 
 
-
+:
 
 </div><br>
 <div id="CollectionEventTypeTerms"  style="border-style: solid">
@@ -61,9 +61,9 @@ Set of terms which are expected values for CollectionEvent types
 
 Description of how this Object or Collection was obtained – such as strategy used for selecting written source texts, or the prompts given to participants 
 
-### Subclass of 
+### Subclass of: 
 
-   schema:CreativeWork | 
+  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -71,7 +71,7 @@ Description of how this Object or Collection was obtained – such as strategy u
 
 [<a href='#collectionProtocolType'> collectionProtocolType </a>] | 
 
-
+:
 
 </div><br>
 <div id="CollectionProtocolTypeTerms"  style="border-style: solid">
@@ -113,7 +113,9 @@ A planned, creative, rendition of discourse with two or more participants intend
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/drama'> http://www.language-archives.org/REC/type-20020628.html#text/drama </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text/drama'> http://www.language-archives.org/REC/type-20020628.html#text/drama </a>] |
 
 
 </div><br>
@@ -138,7 +140,9 @@ The resource is a ritually or conventionally structured discourse.
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/formulaic'> http://www.language-archives.org/REC/type-20020628.html#text/formulaic </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text/formulaic'> http://www.language-archives.org/REC/type-20020628.html#text/formulaic </a>] |
 
 
 </div><br>
@@ -188,7 +192,9 @@ The resource is conversation where one or more speakers are directing the conver
 
 The resource includes a systematic listing of lexical items.
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#Lexicon'> http://www.language-archives.org/REC/type-20020628.html#Lexicon </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#Lexicon'> http://www.language-archives.org/REC/type-20020628.html#Lexicon </a>] |
 
 
 </div><br>
@@ -202,7 +208,9 @@ Ludic discourse is language whose primary function is to be part of play, or a s
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/ludic'> http://www.language-archives.org/REC/type-20020628.html#text/ludic </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text/ludic'> http://www.language-archives.org/REC/type-20020628.html#text/ludic </a>] |
 
 
 </div><br>
@@ -216,7 +224,9 @@ The art of public speaking, or of speaking eloquently according to rules or conv
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/orratory'> http://www.language-archives.org/REC/type-20020628.html#text/orratory </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text/orratory'> http://www.language-archives.org/REC/type-20020628.html#text/orratory </a>] |
 
 
 </div><br>
@@ -226,7 +236,9 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/
 
 The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/orthographic'> http://www.language-archives.org/REC/type-20020628.html#description/orthographic </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#description/orthographic'> http://www.language-archives.org/REC/type-20020628.html#description/orthographic </a>] |
 
 
 </div><br>
@@ -236,7 +248,9 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#descr
 
 An annotation which assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate)
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech'> http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech'> http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech </a>] |
 
 
 </div><br>
@@ -246,9 +260,9 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#descr
 
 This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class is to capture the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time.
 
-### Subclass of 
+### Subclass of: 
 
-   schema:Person |  schema:Role | 
+  [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |  schema:Role | 
 
 
 
@@ -256,7 +270,7 @@ This class represents a snapshot of a Person in time, in their role as a contrib
 
 [<a href='#person'> person </a>] | 
 
-
+:
 
 </div><br>
 <div id="Phonemic"  style="border-style: solid">
@@ -265,7 +279,9 @@ This class represents a snapshot of a Person in time, in their role as a contrib
 
 An annotation which represents speech in terms of the sound contrasts made in a language.
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonemic'> http://www.language-archives.org/REC/type-20020628.html#description/phonemic </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonemic'> http://www.language-archives.org/REC/type-20020628.html#description/phonemic </a>] |
 
 
 </div><br>
@@ -275,7 +291,9 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#descr
 
 A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonetic'> http://www.language-archives.org/REC/type-20020628.html#description/phonetic </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonetic'> http://www.language-archives.org/REC/type-20020628.html#description/phonetic </a>] |
 
 
 </div><br>
@@ -285,7 +303,9 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#descr
 
 An annotation which includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language.
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonological'> http://www.language-archives.org/REC/type-20020628.html#description/phonological </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonological'> http://www.language-archives.org/REC/type-20020628.html#description/phonological </a>] |
 
 
 </div><br>
@@ -299,7 +319,9 @@ An explanation or description of a method, process, or situation having ordered 
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/procedural'> http://www.language-archives.org/REC/type-20020628.html#text/procedural </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text/procedural'> http://www.language-archives.org/REC/type-20020628.html#text/procedural </a>] |
 
 
 </div><br>
@@ -309,7 +331,9 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/
 
 An annotation which provides a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription.
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/prosodic'> http://www.language-archives.org/REC/type-20020628.html#description/prosodic </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#description/prosodic'> http://www.language-archives.org/REC/type-20020628.html#description/prosodic </a>] |
 
 
 </div><br>
@@ -323,7 +347,9 @@ A factual account of some event or circumstance.
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/report'> http://www.language-archives.org/REC/type-20020628.html#text/report </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text/report'> http://www.language-archives.org/REC/type-20020628.html#text/report </a>] |
 
 
 </div><br>
@@ -333,7 +359,9 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/
 
 The resource includes annotation or analysis concerning the encoding of meaning.
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/semantic'> http://www.language-archives.org/REC/type-20020628.html#description/semantic </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#description/semantic'> http://www.language-archives.org/REC/type-20020628.html#description/semantic </a>] |
 
 
 </div><br>
@@ -347,7 +375,9 @@ A collection event which is a recording or elicitation Session with participants
 
 [<a href='#collectionEventType'> collectionEventType </a>] | 
 
-Same as: [<a href='https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
+### Same as: 
+
+[<a href='https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
 '> https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
  </a>] |
 
@@ -374,7 +404,9 @@ The resource contains data for which the medium of interaction was signing.
 
 [<a href='#modality'> modality </a>] | 
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/singing'> http://www.language-archives.org/REC/type-20020628.html#text/singing </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text/singing'> http://www.language-archives.org/REC/type-20020628.html#text/singing </a>] |
 
 
 </div><br>
@@ -395,7 +427,9 @@ The resource contains data for which the medium of interaction was speech
 
 The resource contains annotation or analysis describing the combinatorial patterns of words in another resource
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#description/syntactic'> http://www.language-archives.org/REC/type-20020628.html#description/syntactic </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#description/syntactic'> http://www.language-archives.org/REC/type-20020628.html#description/syntactic </a>] |
 
 
 </div><br>
@@ -420,7 +454,9 @@ The resource contains a list or data structure consisting of words or concepts a
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus'> http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus'> http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus </a>] |
 
 
 </div><br>
@@ -434,7 +470,9 @@ A discourse, monologic or co-constructed, which represents temporally organized 
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/narrative'> http://www.language-archives.org/REC/type-20020628.html#text/narrative </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text/narrative'> http://www.language-archives.org/REC/type-20020628.html#text/narrative </a>] |
 
 
 </div><br>
@@ -444,7 +482,9 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text/
 
 The resource contains a transcription, which is a written representation (orthographic or coded) of an audio or visual signal.
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#transcription'> http://www.language-archives.org/REC/type-20020628.html#transcription </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#transcription'> http://www.language-archives.org/REC/type-20020628.html#transcription </a>] |
 
 
 </div><br>
@@ -454,7 +494,9 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#trans
 
 The resource has been translated from one natural language to another.
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annotation/translation'> http://www.language-archives.org/REC/type-20020628.html#annotation/translation </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#annotation/translation'> http://www.language-archives.org/REC/type-20020628.html#annotation/translation </a>] |
 
 
 </div><br>
@@ -464,7 +506,7 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annot
 
 The set of expected values for annotation types
 
-### Has defined terms[<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Translation'> Translation </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Prosodic'> Prosodic </a>] | 
+### Has defined terms[<a href='#Prosodic'> Prosodic </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Translation'> Translation </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Transcription'> Transcription </a>] | 
 
 </div><br>
 <div id="DataDepositLicense" style="border-style: solid">
@@ -473,13 +515,13 @@ The set of expected values for annotation types
 
 A license document setting out terms for deposit into a repository
 
-### Subclass of 
+### Subclass of: 
 
-  
-
-
+  [<a href='#DataLicense'> DataLicense </a>] | 
 
 
+
+:
 
 </div><br>
 <div id="DataLicense" style="border-style: solid">
@@ -488,31 +530,38 @@ A license document setting out terms for deposit into a repository
 
 A licence document setting out rights and oblications could be based copyright or other rights based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community
 
-### Subclass of 
+### Subclass of: 
 
-   schema:CreativeWork | 
-
-
-
-Same as: [<a href='https://creativecommons.org/ns#License'> License </a>] | 
+  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
+### Same as: 
+
+[<a href='https://creativecommons.org/ns#License'> License </a>] | 
+
+
+:
 
 </div><br>
 <div id="DataReuseLicense" style="border-style: solid">
 
 ## Class: DataReuseLicense
 
-A license document setting out terms for reuse of data 
+A license document, setting out terms for reuse of data 
 
-### Subclass of 
+### Subclass of: 
 
-  
-
-
+  [<a href='#DataLicense'> DataLicense </a>] | 
 
 
+
+### Same as: 
+
+[<a href='https://creativecommons.org/ns#License'> License </a>] | 
+
+
+:
 
 </div><br>
 <div id="DerivedResource" style="border-style: solid">
@@ -521,9 +570,9 @@ A license document setting out terms for reuse of data
 
 This is derived from another source, such as a Primary Resource, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)
 
-### Subclass of 
+### Subclass of: 
 
-   schema:CreativeWork | 
+  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -531,10 +580,12 @@ This is derived from another source, such as a Primary Resource, via some proces
 
 [<a href='#derivationOf'> derivationOf </a>] | 
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text'> http://www.language-archives.org/REC/type-20020628.html#text </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text'> http://www.language-archives.org/REC/type-20020628.html#text </a>] |
 
 
-
+:
 
 </div><br>
 <div id="Typeset"  style="border-style: solid">
@@ -587,7 +638,7 @@ This resource contains some kind of description which adds information to the re
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -623,17 +674,19 @@ The participant produced an annotation of this or a related resource.
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#annotator'> http://www.language-archives.org/REC/role.html#annotator </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#annotator'> http://www.language-archives.org/REC/role.html#annotator </a>] |
 
 
 
@@ -647,17 +700,19 @@ The participant contributed original writings to the resource.
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#author'> http://www.language-archives.org/REC/role.html#author </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#author'> http://www.language-archives.org/REC/role.html#author </a>] |
 
 
 
@@ -677,7 +732,7 @@ Number of audio channels this resource contains (eg 1, 2, 5.1)
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -746,17 +801,19 @@ The participant is responsible for collecting the sub-parts of the resource toge
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#compiler'> http://www.language-archives.org/REC/role.html#compiler </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#compiler'> http://www.language-archives.org/REC/role.html#compiler </a>] |
 
 
 
@@ -770,17 +827,19 @@ The participant contributes expertise to the creation of a work.
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#consultant'> http://www.language-archives.org/REC/role.html#consultant </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#consultant'> http://www.language-archives.org/REC/role.html#consultant </a>] |
 
 
 
@@ -794,17 +853,19 @@ The participant was responsible for entering, re-typing, and/or structuring the 
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#data_inputter'> http://www.language-archives.org/REC/role.html#data_inputter </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#data_inputter'> http://www.language-archives.org/REC/role.html#data_inputter </a>] |
 
 
 
@@ -818,17 +879,19 @@ The participant was responsible for depositing the resource in an archive.
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#depositor'> http://www.language-archives.org/REC/role.html#depositor </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#depositor'> http://www.language-archives.org/REC/role.html#depositor </a>] |
 
 
 
@@ -863,17 +926,19 @@ The participant developed the methodology or tools that constitute the resource,
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#developer'> http://www.language-archives.org/REC/role.html#developer </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#developer'> http://www.language-archives.org/REC/role.html#developer </a>] |
 
 
 
@@ -893,7 +958,7 @@ A digital Object Identifier
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -908,17 +973,19 @@ The participant reviewed, corrected, and/or tested the resource.
 
 ### Values expected to be one of these types: 
 
- schema:Organization |  schema:Person | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#editor'> http://www.language-archives.org/REC/role.html#editor </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#editor'> http://www.language-archives.org/REC/role.html#editor </a>] |
 
 
 
@@ -995,17 +1062,19 @@ The participant contributed drawings or other illustrations to the resource.
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#illustrator'> http://www.language-archives.org/REC/role.html#illustrator </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#illustrator'> http://www.language-archives.org/REC/role.html#illustrator </a>] |
 
 
 
@@ -1025,7 +1094,7 @@ Indicates one or more target File that together contain the full text of an item
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -1040,17 +1109,19 @@ The participant translates in real-time or explains the discourse recorded in th
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#interpreter'> http://www.language-archives.org/REC/role.html#interpreter </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#interpreter'> http://www.language-archives.org/REC/role.html#interpreter </a>] |
 
 
 
@@ -1064,13 +1135,13 @@ The participant was a respondent in an interview
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -1085,17 +1156,19 @@ The participant conducted an interview that forms part of the resource.
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#interviewer'> http://www.language-archives.org/REC/role.html#interviewer </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#interviewer'> http://www.language-archives.org/REC/role.html#interviewer </a>] |
 
 
 
@@ -1142,7 +1215,7 @@ The mode (spoken, written, signed etc) of this resource. There may be more than 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -1163,17 +1236,19 @@ The participant was present during the creation of the resource, but did not con
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#participant'> http://www.language-archives.org/REC/role.html#participant </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#participant'> http://www.language-archives.org/REC/role.html#participant </a>] |
 
 
 
@@ -1187,17 +1262,19 @@ The participant performed some portion of a recorded, filmed, or transcribed res
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#performer'> http://www.language-archives.org/REC/role.html#performer </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#performer'> http://www.language-archives.org/REC/role.html#performer </a>] |
 
 
 
@@ -1211,7 +1288,7 @@ This property references a Person item which represents the persistent identity 
 
 ### Values expected to be one of these types: 
 
- schema:Person | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1232,17 +1309,19 @@ The participant took the photograph, or shot the film, that appears in or consti
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#photographer'> http://www.language-archives.org/REC/role.html#photographer </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#photographer'> http://www.language-archives.org/REC/role.html#photographer </a>] |
 
 
 
@@ -1256,17 +1335,19 @@ The participant operated the recording machinery used to create the resource.
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#recorder'> http://www.language-archives.org/REC/role.html#recorder </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#recorder'> http://www.language-archives.org/REC/role.html#recorder </a>] |
 
 
 
@@ -1286,11 +1367,13 @@ Specifies the type of register (any of the varieties of a language that a speake
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://w3id.org/meta-share/meta-share/register'> http://w3id.org/meta-share/meta-share/register </a>] |
+### Same as: 
+
+[<a href='http://w3id.org/meta-share/meta-share/register'> http://w3id.org/meta-share/meta-share/register </a>] |
 
 
 
@@ -1304,17 +1387,19 @@ The participant acted as a research subject or responded to a questionnaire, the
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#research_participant'> http://www.language-archives.org/REC/role.html#research_participant </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#research_participant'> http://www.language-archives.org/REC/role.html#research_participant </a>] |
 
 
 
@@ -1328,17 +1413,19 @@ The resource was created as part of the participant's research, or the research 
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#researcher'> http://www.language-archives.org/REC/role.html#researcher </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#researcher'> http://www.language-archives.org/REC/role.html#researcher </a>] |
 
 
 
@@ -1352,17 +1439,19 @@ The participant was an interlocutor in some sort of discourse event.
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#responder'> http://www.language-archives.org/REC/role.html#responder </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#responder'> http://www.language-archives.org/REC/role.html#responder </a>] |
 
 
 
@@ -1376,17 +1465,19 @@ The participant was a principal signer in a resource that consists of a recordin
 
 ### Values expected to be one of these types: 
 
- schema:Organization |  schema:Person | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#signer'> http://www.language-archives.org/REC/role.html#signer </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#signer'> http://www.language-archives.org/REC/role.html#signer </a>] |
 
 
 
@@ -1400,17 +1491,19 @@ The participant sang, either individually or as part of a group, in a resource t
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#singer'> http://www.language-archives.org/REC/role.html#singer </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#singer'> http://www.language-archives.org/REC/role.html#singer </a>] |
 
 
 
@@ -1424,17 +1517,19 @@ The participant was a principal speaker in a resource that consists of a recordi
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#speaker'> http://www.language-archives.org/REC/role.html#speaker </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#speaker'> http://www.language-archives.org/REC/role.html#speaker </a>] |
 
 
 
@@ -1448,17 +1543,19 @@ The participant contributed financial support to the creation of the resource.
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#sponsor'> http://www.language-archives.org/REC/role.html#sponsor </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#sponsor'> http://www.language-archives.org/REC/role.html#sponsor </a>] |
 
 
 
@@ -1472,17 +1569,19 @@ The participant produced a transcription of this or a related resource.
 
 ### Values expected to be one of these types: 
 
- schema:Person |  schema:Organization | 
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#transcriber'> http://www.language-archives.org/REC/role.html#transcriber </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#transcriber'> http://www.language-archives.org/REC/role.html#transcriber </a>] |
 
 
 
@@ -1496,17 +1595,19 @@ The participant produced a translation of this or a related resource.
 
 ### Values expected to be one of these types: 
 
- schema:Organization |  schema:Person | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
-Same as: [<a href='http://www.language-archives.org/REC/role.html#translator'> http://www.language-archives.org/REC/role.html#translator </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/role.html#translator'> http://www.language-archives.org/REC/role.html#translator </a>] |
 
 
 
@@ -1526,7 +1627,7 @@ This resource  was assembled or collected according to the linked protocol
 
 ### Used on these types: 
 
- schema:CreativeWork | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -1599,9 +1700,9 @@ undefined
 
 The resource includes material which adds information to some other linguistic record.
 
-### Subclass of 
+### Subclass of: 
 
-   schema:CreativeWork | 
+  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -1609,10 +1710,12 @@ The resource includes material which adds information to some other linguistic r
 
 [<a href='#annotationType'> annotationType </a>] | 
 
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annotation'> http://www.language-archives.org/REC/type-20020628.html#annotation </a>] |
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#annotation'> http://www.language-archives.org/REC/type-20020628.html#annotation </a>] |
 
 
-
+:
 
 </div><br>
 <div id="PrimaryResource" style="border-style: solid">
@@ -1621,15 +1724,17 @@ Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#annot
 
 The object of study, such as a literary work, film, or recording of natural discourse
 
-### Subclass of 
+### Subclass of: 
 
-   schema:CreativeWork | 
-
-
-
-Same as: [<a href='http://www.language-archives.org/REC/type-20020628.html#text'> http://www.language-archives.org/REC/type-20020628.html#text </a>] |
+  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text'> http://www.language-archives.org/REC/type-20020628.html#text </a>] |
+
+
+:
 
 </div><br>
