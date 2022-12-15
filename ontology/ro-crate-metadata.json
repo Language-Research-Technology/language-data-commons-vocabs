@@ -20,12 +20,8 @@
       },
       "about": {
         "@id": "./"
-      },
-      "identifier": [
-        {
-          "@id": "#:localid:describo:ad55b69a-ca9a-46ab-a581-d57f06979290"
-        }
-      ]
+      }
+      
     },
     {
       "@id": "#261c406f-63bd-491f-ae4f-8208a9c784b8",
@@ -298,6 +294,12 @@
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#authorizationWorkflow"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#accessControlList"
         }
       ],
       "@reverse": {}
@@ -374,13 +376,20 @@
       "rdfs:label": [
         "CollectionProtocol"
       ],
-      "rdfs:subClassOf": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "rdfs:comment": [
         "Description of how this Object or Collection was obtained – such as strategy used for selecting written source texts, or the prompts given to participants "
       ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
       "@reverse": {
+        "rangeIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#hasCollectionProtocol"
+          }
+        ],
         "mentions": [
           {
             "@id": "./"
@@ -389,11 +398,6 @@
         "domainIncludes": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#collectionProtocolType"
-          }
-        ],
-        "rangeIncludes": [
-          {
-            "@id": "https://purl.archive.org/language-data-commons/terms#hasCollectionProtocol"
           }
         ]
       }
@@ -457,6 +461,11 @@
         }
       ],
       "@reverse": {
+        "definedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#modality"
+          }
+        ],
         "inDefinedTermSet": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#Gesture"
@@ -472,11 +481,6 @@
           },
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#WhistledLanguage"
-          }
-        ],
-        "definedTermSet": [
-          {
-            "@id": "https://purl.archive.org/language-data-commons/terms#modality"
           }
         ]
       }
@@ -623,14 +627,14 @@
         "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#OrthographyTypeTerms"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "./"
           }
         ]
       }
@@ -810,18 +814,20 @@
         "PersonSnapshot"
       ],
       "rdfs:subClassOf": [
-        {"@id": "http://schema.org/Person"},
-        "schema:Role"
+        "schema:Role",
+        {
+          "@id": "http://schema.org/Person"
+        }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "domainIncludes": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#person"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "./"
           }
         ]
       }
@@ -1337,11 +1343,13 @@
       "rdfs:comment": [
         "A licence document setting out rights and oblications could be based copyright or other rights based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community"
       ],
-      "rdfs:subClassOf": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "rdfs:label": [
         "DataLicense"
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "sameAs": [
         {
@@ -1357,6 +1365,9 @@
         "rdfs:subClassOf": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
           }
         ]
       }
@@ -1371,20 +1382,23 @@
       "rdfs:comment": [
         "A license document, setting out terms for reuse of data "
       ],
-      "rdfs:subClassOf": 
+      "rdfs:subClassOf": [
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
         }
-      ,
+      ],
       "sameAs": [
         {
           "@id": "https://creativecommons.org/ns#License"
         }
       ],
       "@reverse": {
-        "mentions": [
+        "domainIncludes": [
           {
-            "@id": "./"
+            "@id": "https://purl.archive.org/language-data-commons/terms#authorizationWorkflow"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#accessControlList"
           }
         ]
       }
@@ -1399,11 +1413,13 @@
       "rdfs:label": [
         "DerivedResource"
       ],
-      "rdfs:subClassOf": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "rdfs:comment": [
         "This is derived from another source, such as a Primary Resource, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)"
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1431,14 +1447,14 @@
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#OrthographyTypeTerms"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "./"
           }
         ]
       }
@@ -1456,14 +1472,14 @@
         }
       ],
       "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ],
         "hasDefinedTerm": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#OrthographyTypeTerms"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "./"
           }
         ]
       }
@@ -1517,17 +1533,19 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#annotationOf",
       "@type": "rdf:Property",
       "name": "annotationOf",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "rangeIncludes": [
-        "https://purl.archive.org/language-data-commons/terms#PrimaryText"
+       {"@id": "https://purl.archive.org/language-data-commons/terms#PrimaryText"}
       ],
       "rdfs:comment": [
         "This resource contains some kind of description which adds information to the resource it references"
       ],
       "rdfs:label": [
         "annotationOf"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1564,13 +1582,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#annotator",
       "@type": "rdf:Property",
       "name": "annotator",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#annotator"
       ],
@@ -1579,6 +1590,19 @@
       ],
       "rdfs:label": [
         "annotator"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1592,13 +1616,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#author",
       "@type": "rdf:Property",
       "name": "author",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#author"
       ],
@@ -1607,6 +1624,19 @@
       ],
       "rdfs:label": [
         "author"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1620,14 +1650,16 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#channels",
       "@type": "rdf:Property",
       "name": "channels",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "rdfs:comment": [
         "Number of audio channels this resource contains (eg 1, 2, 5.1)"
       ],
       "rdfs:label": [
         "channels"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1700,15 +1732,8 @@
       "description": [
         "This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately."
       ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "example": [
         "A compiler of a book of short stories or a CD with several songs on it; a collector of a corpus of recordings in some language or on a given topic; a person who assembles a suite of software tools."
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#compiler"
@@ -1718,6 +1743,19 @@
       ],
       "rdfs:label": [
         "compiler"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1734,13 +1772,6 @@
       "description": [
         "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\"."
       ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#consultant"
       ],
@@ -1749,6 +1780,19 @@
       ],
       "rdfs:label": [
         "consultant"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1762,13 +1806,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#dataInputter",
       "@type": "rdf:Property",
       "name": "dataInputter",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#data_inputter"
       ],
@@ -1777,6 +1814,19 @@
       ],
       "rdfs:label": [
         "dataInputter"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1790,13 +1840,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#depositor",
       "@type": "rdf:Property",
       "name": "depositor",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#depositor"
       ],
@@ -1805,6 +1848,19 @@
       ],
       "rdfs:label": [
         "depositor"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1852,13 +1908,6 @@
       "description": [
         "A software programmer, designer, or analyst; a designer of a questionnaire or research task."
       ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#developer"
       ],
@@ -1867,6 +1916,19 @@
       ],
       "rdfs:label": [
         "developer"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1880,14 +1942,16 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#doi",
       "@type": "rdf:Property",
       "name": "doi",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "rdfs:comment": [
         "A digital Object Identifier"
       ],
       "rdfs:label": [
         "doi"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1901,15 +1965,8 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#editor",
       "@type": "rdf:Property",
       "name": "editor",
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Organization"},
-        {"@id": "http://schema.org/Person"}
-      ],
       "description": [
         "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases."
-      ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#editor"
@@ -1919,6 +1976,19 @@
       ],
       "rdfs:label": [
         "editor"
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -1965,10 +2035,10 @@
         "This resource is referenced by another resource that describes it such as a translation, transcription or other analysis "
       ],
       "domainIncludes": [
-        "https://purl.archive.org/language-data-commons/terms#PrimaryText"
+       {"@id": "https://purl.archive.org/language-data-commons/terms#PrimaryText"}
       ],
       "rangeIncludes": [
-        "\"https://purl.archive.org/language-data-commons/terms#Annnotation\""
+        {"@id": "https://purl.archive.org/language-data-commons/terms#Annnotation"}
       ],
       "@reverse": {
         "mentions": [
@@ -1983,10 +2053,10 @@
       "@type": "rdf:Property",
       "name": "hasDerivation",
       "domainIncludes": [
-        "https://purl.archive.org/language-data-commons/terms#PrimaryText"
+       {"@id": "https://purl.archive.org/language-data-commons/terms#PrimaryText"}
       ],
       "rangeIncludes": [
-        "\"https://purl.archive.org/language-data-commons/terms#DerivedText\""
+        {"@id": "https://purl.archive.org/language-data-commons/terms#DerivedText"}
       ],
       "rdfs:comment": [
         "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF"
@@ -2006,13 +2076,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#illustrator",
       "@type": "rdf:Property",
       "name": "illustrator",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#illustrator"
       ],
@@ -2021,6 +2084,19 @@
       ],
       "rdfs:label": [
         "illustrator"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2037,14 +2113,16 @@
       "rdfs:label": [
         "indexableText"
       ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "rangeIncludes": [
         "schema:File"
       ],
       "rdfs:comment": [
         "Indicates one or more target File that together contain the full text of an item – each file should indicate its language"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2058,18 +2136,8 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#interpreter",
       "@type": "rdf:Property",
       "name": "interpreter",
-      "description": [
-        "The choice between 'interpreter' and 'translator' may depend on the dynamics of the resource creation event or process. Generally, if the participant is translating 'live'; that is, while the speaker or signer is speaking or signing, she or he should be identified as an interpreter. Also, some discourse genres include a participant who interprets or explains a performance of some kind."
-      ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "example": [
         "A person translating from English to ASL during a speech; a Kuna chief who interprets a chant that another chief has just performed, thus completing the ceremony."
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#interpreter"
@@ -2079,6 +2147,22 @@
       ],
       "rdfs:label": [
         "interpreter"
+      ],
+      "description": [
+        "The choice between 'interpreter' and 'translator' may depend on the dynamics of the resource creation event or process. Generally, if the participant is translating 'live'; that is, while the speaker or signer is speaking or signing, she or he should be identified as an interpreter. Also, some discourse genres include a participant who interprets or explains a performance of some kind."
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2092,18 +2176,24 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#interviewee",
       "@type": "rdf:Property",
       "name": "interviewee",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "rdfs:comment": [
         "The participant was a respondent in an interview"
       ],
       "rdfs:label": [
         "interviewee"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2117,13 +2207,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#interviewer",
       "@type": "rdf:Property",
       "name": "interviewer",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#interviewer"
       ],
@@ -2132,6 +2215,19 @@
       ],
       "rdfs:label": [
         "interviewer"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2146,7 +2242,7 @@
       "@type": "rdf:Property",
       "name": "linguisticGenre",
       "domainIncludes": [
-        "https://purl.archive.org/language-data-commons/terms#PrimaryText"
+       {"@id": "https://purl.archive.org/language-data-commons/terms#PrimaryText"}
       ],
       "rdfs:label": [
         "linguisticGenre"
@@ -2171,14 +2267,16 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#modality",
       "@type": "rdf:Property",
       "name": "modality",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "rdfs:label": [
         "modality"
       ],
       "rdfs:comment": [
         "The mode (spoken, written, signed etc) of this resource. There may be more than one value for this property."
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "definedTermSet": [
         {
@@ -2200,13 +2298,6 @@
       "description": [
         "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in general sense of having allowed the creation event to take place, such as the mayor of an indigenous community."
       ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#participant"
       ],
@@ -2215,6 +2306,19 @@
       ],
       "rdfs:label": [
         "participant"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2231,15 +2335,8 @@
       "description": [
         "It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'."
       ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "example": [
         "A person performing a ceremony or delivering an oration or a sermon; native speakers re-enacting a traditional genre of speech, such as ritual greetings or insults; an actor or musician."
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#performer"
@@ -2249,6 +2346,19 @@
       ],
       "rdfs:label": [
         "performer"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2262,14 +2372,16 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#person",
       "@type": "rdf:Property",
       "name": "person",
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"}
-      ],
       "rdfs:comment": [
         "This property references a Person item which represents the persistent identity of one or more ContributingPerson items."
       ],
       "rdfs:label": [
         "person"
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        }
       ],
       "domainIncludes": [
         {
@@ -2288,13 +2400,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#photographer",
       "@type": "rdf:Property",
       "name": "photographer",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#photographer"
       ],
@@ -2303,6 +2408,19 @@
       ],
       "rdfs:label": [
         "photographer"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2316,13 +2434,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#recorder",
       "@type": "rdf:Property",
       "name": "recorder",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#recorder"
       ],
@@ -2331,6 +2442,19 @@
       ],
       "rdfs:label": [
         "recorder"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2347,9 +2471,6 @@
       "description": [
         "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource."
       ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "sameAs": [
         "http://w3id.org/meta-share/meta-share/register"
       ],
@@ -2358,6 +2479,11 @@
       ],
       "rdfs:label": [
         "register"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2371,13 +2497,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#researchParticipant",
       "@type": "rdf:Property",
       "name": "researchParticipant",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#research_participant"
       ],
@@ -2386,6 +2505,19 @@
       ],
       "rdfs:label": [
         "researchParticipant"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2399,13 +2531,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#researcher",
       "@type": "rdf:Property",
       "name": "researcher",
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#researcher"
       ],
@@ -2414,6 +2539,19 @@
       ],
       "rdfs:label": [
         "researcher"
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2430,13 +2568,6 @@
       "description": [
         "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\"."
       ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#responder"
       ],
@@ -2445,6 +2576,19 @@
       ],
       "rdfs:label": [
         "responder"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2458,15 +2602,8 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#signer",
       "@type": "rdf:Property",
       "name": "signer",
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Organization"},
-        {"@id": "http://schema.org/Person"}
-      ],
       "description": [
         "Signers are those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)"
-      ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
       ],
       "example": [
         "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders."
@@ -2479,6 +2616,19 @@
       ],
       "rdfs:label": [
         "signer"
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2495,18 +2645,24 @@
       "rdfs:label": [
         "singer"
       ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#singer"
       ],
       "rdfs:comment": [
         "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource."
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2523,15 +2679,8 @@
       "description": [
         "Speakers are those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)"
       ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "example": [
         "Participants in a recorded conversation, elicitation session, or informal narration would be termed Speakers. Audience members who do not participate beyond the occasional backchannel would be termed Responders."
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
       ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#speaker"
@@ -2541,6 +2690,19 @@
       ],
       "rdfs:label": [
         "speaker"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2554,13 +2716,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#sponsor",
       "@type": "rdf:Property",
       "name": "sponsor",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#sponsor"
       ],
@@ -2569,6 +2724,19 @@
       ],
       "rdfs:label": [
         "sponsor"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2582,13 +2750,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#transcriber",
       "@type": "rdf:Property",
       "name": "transcriber",
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Person"},
-        {"@id": "http://schema.org/Organization"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#transcriber"
       ],
@@ -2597,6 +2758,19 @@
       ],
       "rdfs:label": [
         "transcriber"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Person"
+        },
+        {
+          "@id": "http://schema.org/Organization"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2610,13 +2784,6 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#translator",
       "@type": "rdf:Property",
       "name": "translator",
-      "rangeIncludes": [
-        {"@id": "http://schema.org/Organization"},
-        {"@id": "http://schema.org/Person"}
-      ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "sameAs": [
         "http://www.language-archives.org/REC/role.html#translator"
       ],
@@ -2625,6 +2792,19 @@
       ],
       "rdfs:label": [
         "translator"
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2641,11 +2821,13 @@
       "rdfs:label": [
         "hasCollectionProtocol"
       ],
-      "domainIncludes": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "rdfs:comment": [
         "This resource  was assembled or collected according to the linked protocol"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "rangeIncludes": [
         {
@@ -2759,6 +2941,11 @@
         }
       ],
       "@reverse": {
+        "definedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre"
+          }
+        ],
         "inDefinedTermSet": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#Dialogue"
@@ -2790,19 +2977,8 @@
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#Narrative"
           }
-        ],
-        "definedTermSet": [
-          {
-            "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre"
-          }
         ]
       }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#timeAligned",
-      "@type": "rdf:Property",
-      "name": "hasTimeAligned",
-      "@reverse": {}
     },
     {
       "@id": "http://purl.archive.org/language-data-commons/terms#TimeAligned",
@@ -2829,11 +3005,13 @@
       "rdfs:label": [
         "Annotation"
       ],
-      "rdfs:subClassOf": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "rdfs:comment": [
         "The resource includes material which adds information to some other linguistic record."
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2860,14 +3038,16 @@
       "sameAs": [
         "http://www.language-archives.org/REC/type-20020628.html#text"
       ],
-      "rdfs:subClassOf": [
-        {"@id": "http://schema.org/CreativeWork"}
-      ],
       "rdfs:label": [
         "PrimaryResource"
       ],
       "rdfs:comment": [
         "The object of study, such as a literary work, film, or recording of natural discourse"
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        }
       ],
       "@reverse": {
         "mentions": [
@@ -2896,6 +3076,598 @@
         "sameAs": [
           {
             "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://schema.org/CreativeWork",
+      "@type": "URL",
+      "name": "",
+      "@reverse": {
+        "domainIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#interviewee"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#interviewer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#modality"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#participant"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#performer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#photographer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#recorder"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#register"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#researchParticipant"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#researcher"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#responder"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#signer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#singer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#speaker"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#sponsor"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#transcriber"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#translator"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#hasCollectionProtocol"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#annotationOf"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#annotator"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#author"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#channels"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#compiler"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#consultant"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#dataInputter"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#depositor"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#developer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#doi"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#editor"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#illustrator"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#indexableText"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#interpreter"
+          }
+        ],
+        "rdfs:subClassOf": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocol"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#DerivedResource"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#Annotation"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryResource"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://schema.org/Person",
+      "@type": "URL",
+      "name": "",
+      "@reverse": {
+        "rangeIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#interpreter"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#interviewee"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#interviewer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#participant"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#performer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#person"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#photographer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#recorder"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#researchParticipant"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#researcher"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#responder"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#signer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#singer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#speaker"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#sponsor"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#transcriber"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#translator"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#annotator"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#author"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#compiler"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#consultant"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#dataInputter"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#depositor"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#developer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#editor"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#illustrator"
+          }
+        ],
+        "rdfs:subClassOf": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#PersonSnapshot"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://schema.org/Organization",
+      "@type": "URL",
+      "name": "",
+      "@reverse": {
+        "rangeIncludes": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#interpreter"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#interviewee"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#interviewer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#participant"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#performer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#photographer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#recorder"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#researchParticipant"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#researcher"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#responder"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#signer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#singer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#speaker"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#sponsor"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#transcriber"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#translator"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#annotator"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#author"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#compiler"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#consultant"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#dataInputter"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#depositor"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#developer"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#editor"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#illustrator"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#access",
+      "@type": "rdf:Property",
+      "name": "access",
+      "rdfs:label": [
+        "access"
+      ],
+      "rdfs:comment": [
+        "Is this an open or restricted access license"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
+        }
+      ],
+      "definedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AccessTypes"
+        }
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#9bf486ac-5a6f-4b2b-aa7e-ac9ffd3f50c2",
+      "@type": "DefinedTerm",
+      "name": "OpenAccess",
+      "description": [
+        "Data covered by this license may be accessed as long as the license is served alongside it, does not require any specific authorization step"
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AccessTypes"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#accessControlList",
+      "@type": "rdf:Property",
+      "name": "accessControlList",
+      "rdfs:label": "accessControlList",
+      "rdfs:comment": [
+        "When a license has an authorizationWorkflow property with a value of the DefineTerm AcessControlList this property has a URI value that points to a list of userIDs"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/URL"
+        }
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#AccessControlList",
+      "@type": "DefinedTerm",
+      "name": "AccessControlList",
+      "description": [
+        "License grants access to data based on a list of approved users, specified using the property accessControlList"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#AgreeToTerms",
+      "@type": "DefinedTerm",
+      "name": "AgreeToTerms",
+      "description": [
+        "A user is expected to explicitly agree to a set of license terms, this may be combined with AccessControlList - to note that even if a user has been pre-approved for a license they must agree to license terms"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByApplication",
+      "@type": "DefinedTerm",
+      "name": "AuthorizationByApplication",
+      "description": [
+        "Users may apply for a license via some workflow, such as a form, with the decision being made by a DataSteward or their delegate about whether to grant the license."
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByInvitation",
+      "@type": "DefinedTerm",
+      "name": "AuthorizationByInvitation",
+      "description": [
+        "A data steward or administrator is expected to use an access control system to invite users, for example participants, collaborators or students"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizedAccess",
+      "@type": "DefinedTerm",
+      "name": "AuthorizedAccess",
+      "description": [
+        "Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission"
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AccessTypes"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AccessTypes"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#SelfAuthorization",
+      "@type": "DefinedTerm",
+      "name": "SelfAuthorization",
+      "description": [
+        "A user can be authorized to access data by clicking that they agree to a license, or filling out a form to check their understanding, that can be validated by a machine and does not require human intervention."
+      ],
+      "inDefinedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+        }
+      ],
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#AccessTypes",
+      "@type": "DefinedTermSet",
+      "name": "AccessTypes",
+      "description": [
+        "Set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorized) access"
+      ],
+      "hasDefinedTerm": [
+        {
+          "@id": "#9bf486ac-5a6f-4b2b-aa7e-ac9ffd3f50c2"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizedAccess"
+        }
+      ],
+      "@reverse": {
+        "definedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#access"
+          }
+        ],
+        "inDefinedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizedAccess"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows",
+      "@type": "DefinedTermSet",
+      "name": "AuthorizationWorkflows",
+      "description": [
+        "Set of DefinedTerms for access authorization mechanisms - some of these may be combined - eg AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant"
+      ],
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByInvitation"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByApplication"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AgreeToTerms"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#SelfAuthorization"
+        }
+      ],
+      "@reverse": {
+        "definedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#authorizationWorkflow"
+          }
+        ],
+        "inDefinedTermSet": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AccessControlList"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AgreeToTerms"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByApplication"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByInvitation"
+          },
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#SelfAuthorization"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#authorizationWorkflow",
+      "@type": "rdf:Property",
+      "name": "authorizationWorkflow",
+      "Comment": [
+        "By what process is a user granted authorization to a license"
+      ],
+      "rdfs:label": [
+        "authorizationWorkflow"
+      ],
+      "definedTermSet": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+        }
+      ],
+      "domainIncludes": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
+        }
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
           }
         ]
       }

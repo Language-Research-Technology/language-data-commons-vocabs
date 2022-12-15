@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "name": "TextCommons top level Collection (corpus)",
-        "description": "Describo profile for https://purl.archive.org/textcommons/profile#Collection",
+        "name": "Language Data Commons top level Collection (corpus)",
+        "description": "Describo profile for https://purl.archive.org/language-data-commons/profile#Collection",
         "version": 0.1
     },
     "rootDatasets": {
@@ -29,7 +29,7 @@
                     "help": "A link to the Text Commons RO-Crate profile for collections",
                     "type": ["SelectURL"],
                     "values" :[
-                        "https://purl.archive.org/textcommons/profile#Collection"
+                        "https://purl.archive.org/language-data-commons/profile#Collection"
                     ],
                     "multiple": false
                 },
@@ -123,7 +123,7 @@
                     "help": "A link to the Text Commons RO-Crate profile for collections",
                     "type": ["SelectURL"],
                     "values" :[
-                        "https://purl.archive.org/textcommons/profile#Collection"
+                        "https://purl.archive.org/language-data-commons/profile#Collection"
                     ],
                     "multiple": false
                 },
@@ -382,7 +382,7 @@
       "multiple": false
   },
   {
-    "id": "http://purl.archive.org/textcommons/terms#CollectionProtocolType",
+    "id": "http://purl.archive.org/language-data-commons/terms#CollectionProtocolType",
     "name": "collectionProtocolType",
     "help": "What kind of collection protocol is this",
     "type": ["SelectObject"],

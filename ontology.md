@@ -8,17 +8,17 @@ This is a language data ontology based on OLAC terms for use in the ATAP and LDa
 
 ## Properties
 
-<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#undefined">undefined</a>
+<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a>
 
 ## DefinedTerms
 
-<a href="#Coded">Coded</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignLanguage">SignLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Narrative">Narrative</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#WhistledLanguage">WhistledLanguage</a>
+<a href="#Coded">Coded</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignLanguage">SignLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Narrative">Narrative</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#OpenAccess">OpenAccess</a> | <a href="#AccessControlList">AccessControlList</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#SelfAuthorization">SelfAuthorization</a>
 
 
 
 ## DefinedTermsSets
 
-<a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#ModalityTerms">ModalityTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a>
+<a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#ModalityTerms">ModalityTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#AccessTypes">AccessTypes</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a>
 
 <div id="Coded"  style="border-style: solid">
 
@@ -262,7 +262,7 @@ This class represents a snapshot of a Person in time, in their role as a contrib
 
 ### Subclass of: 
 
-  [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |  schema:Role | 
+   schema:Role | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -555,6 +555,10 @@ A license document, setting out terms for reuse of data
   [<a href='#DataLicense'> DataLicense </a>] | 
 
 
+
+### Properties
+
+[<a href='#access'> access </a>] | [<a href='#accessControlList'> accessControlList </a>] | [<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | 
 
 ### Same as: 
 
@@ -1673,27 +1677,6 @@ Set of expected values for linguistic genre of a resource
 ### Has defined terms[<a href='#Formulaic'> Formulaic </a>] | [<a href='#Thesaurus'> Thesaurus </a>] | [<a href='#Dialogue'> Dialogue </a>] | [<a href='#Oratory'> Oratory </a>] | [<a href='#Report'> Report </a>] | [<a href='#Ludic'> Ludic </a>] | [<a href='#Procedural'> Procedural </a>] | [<a href='#Narrative'> Narrative </a>] | [<a href='#Interview'> Interview </a>] | [<a href='#Drama'> Drama </a>] | [<a href='#Informational'> Informational </a>] | 
 
 </div><br>
-<div id="undefined"  style="border-style: solid">
-
-## Property: undefined
-
-undefined
-
-### Values expected to be one of these types: 
-
-
-
-
-
-### Used on these types: 
-
-
-
-
-
-
-
-</div><br>
 <div id="Annotation" style="border-style: solid">
 
 ## Class: Annotation
@@ -1736,5 +1719,171 @@ The object of study, such as a literary work, film, or recording of natural disc
 
 
 :
+
+</div><br>
+<div id="access"  style="border-style: solid">
+
+## Property: access
+
+Is this an open or restricted access license
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='#DataReuseLicense'> DataReuseLicense </a>] | 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='##9bf486ac-5a6f-4b2b-aa7e-ac9ffd3f50c2'> 9bf486ac-5a6f-4b2b-aa7e-ac9ffd3f50c2 </a>] | [<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | 
+
+
+
+
+
+</div><br>
+<div id="OpenAccess"  style="border-style: solid">
+
+## Defined Term: OpenAccess
+
+Data covered by this license may be accessed as long as the license is served alongside it, does not require any specific authorization step
+
+### Is an expected value for the following property
+
+[<a href='#access'> access </a>] | 
+
+</div><br>
+<div id="accessControlList"  style="border-style: solid">
+
+## Property: accessControlList
+
+When a license has an authorizationWorkflow property with a value of the DefineTerm AcessControlList this property has a URI value that points to a list of userIDs
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='#DataReuseLicense'> DataReuseLicense </a>] | 
+
+
+
+
+
+</div><br>
+<div id="AccessControlList"  style="border-style: solid">
+
+## Defined Term: AccessControlList
+
+License grants access to data based on a list of approved users, specified using the property accessControlList
+
+</div><br>
+<div id="AgreeToTerms"  style="border-style: solid">
+
+## Defined Term: AgreeToTerms
+
+A user is expected to explicitly agree to a set of license terms, this may be combined with AccessControlList - to note that even if a user has been pre-approved for a license they must agree to license terms
+
+### Is an expected value for the following property
+
+[<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | 
+
+</div><br>
+<div id="AuthorizationByApplication"  style="border-style: solid">
+
+## Defined Term: AuthorizationByApplication
+
+Users may apply for a license via some workflow, such as a form, with the decision being made by a DataSteward or their delegate about whether to grant the license.
+
+### Is an expected value for the following property
+
+[<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | 
+
+</div><br>
+<div id="AuthorizationByInvitation"  style="border-style: solid">
+
+## Defined Term: AuthorizationByInvitation
+
+A data steward or administrator is expected to use an access control system to invite users, for example participants, collaborators or students
+
+### Is an expected value for the following property
+
+[<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | 
+
+</div><br>
+<div id="AuthorizedAccess"  style="border-style: solid">
+
+## Defined Term: AuthorizedAccess
+
+Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission
+
+### Is an expected value for the following property
+
+[<a href='#access'> access </a>] | 
+
+</div><br>
+<div id="SelfAuthorization"  style="border-style: solid">
+
+## Defined Term: SelfAuthorization
+
+A user can be authorized to access data by clicking that they agree to a license, or filling out a form to check their understanding, that can be validated by a machine and does not require human intervention.
+
+### Is an expected value for the following property
+
+[<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | 
+
+</div><br>
+<div id="AccessTypes"  style="border-style: solid">
+
+## Defined Term Set: AccessTypes
+
+Set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorized) access
+
+### Has defined terms[<a href='##9bf486ac-5a6f-4b2b-aa7e-ac9ffd3f50c2'> 9bf486ac-5a6f-4b2b-aa7e-ac9ffd3f50c2 </a>] | [<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | 
+
+</div><br>
+<div id="AuthorizationWorkflows"  style="border-style: solid">
+
+## Defined Term Set: AuthorizationWorkflows
+
+Set of DefinedTerms for access authorization mechanisms - some of these may be combined - eg AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant
+
+### Has defined terms[<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
+
+</div><br>
+<div id="authorizationWorkflow"  style="border-style: solid">
+
+## Property: authorizationWorkflow
+
+undefined
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='#DataReuseLicense'> DataReuseLicense </a>] | 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
+
+
+
+
 
 </div><br>

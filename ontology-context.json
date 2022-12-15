@@ -49,8 +49,10 @@
     "translator": "https://purl.archive.org/language-data-commons/terms#translator",
     "hasCollectionProtocol": "https://purl.archive.org/language-data-commons/terms#hasCollectionProtocol",
     "isDeIdentified": "https://purl.archive.org/language-data-commons/terms#isDeIdentified",
-    "undefined": "https://purl.archive.org/language-data-commons/terms#timeAligned",
     "Annotation": "https://purl.archive.org/language-data-commons/terms#Annotation",
-    "PrimaryResource": "https://purl.archive.org/language-data-commons/terms#PrimaryResource"
+    "PrimaryResource": "https://purl.archive.org/language-data-commons/terms#PrimaryResource",
+    "access": "https://purl.archive.org/language-data-commons/terms#access",
+    "accessControlList": "https://purl.archive.org/language-data-commons/terms#accessControlList",
+    "authorizationWorkflow": "https://purl.archive.org/language-data-commons/terms#authorizationWorkflow"
   }
 }

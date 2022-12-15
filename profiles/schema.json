@@ -218,7 +218,7 @@
             "name": "domainIncludes",
             "help": "What clasess use this property (ie what domain does this property occur in)",
             "type": ["Class"],
-            "multiple": false
+            "multiple": true
         },
         {
             "id": "https://schema.org/definedTermSet",
