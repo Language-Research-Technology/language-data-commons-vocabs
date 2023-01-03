@@ -6,7 +6,7 @@
     "DataDepositLicense": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense",
     "DataLicense": "https://purl.archive.org/language-data-commons/terms#DataLicense",
     "DataReuseLicense": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense",
-    "DerivedResource": "https://purl.archive.org/language-data-commons/terms#DerivedResource",
+    "DerivedMaterial": "https://purl.archive.org/language-data-commons/terms#DerivedMaterial",
     "annotationOf": "https://purl.archive.org/language-data-commons/terms#annotationOf",
     "annotationType": "https://purl.archive.org/language-data-commons/terms#annotationType",
     "annotator": "https://purl.archive.org/language-data-commons/terms#annotator",
@@ -50,9 +50,10 @@
     "hasCollectionProtocol": "https://purl.archive.org/language-data-commons/terms#hasCollectionProtocol",
     "isDeIdentified": "https://purl.archive.org/language-data-commons/terms#isDeIdentified",
     "Annotation": "https://purl.archive.org/language-data-commons/terms#Annotation",
-    "PrimaryResource": "https://purl.archive.org/language-data-commons/terms#PrimaryResource",
+    "PrimaryMaterial": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial",
     "access": "https://purl.archive.org/language-data-commons/terms#access",
     "accessControlList": "https://purl.archive.org/language-data-commons/terms#accessControlList",
-    "authorizationWorkflow": "https://purl.archive.org/language-data-commons/terms#authorizationWorkflow"
+    "authorizationWorkflow": "https://purl.archive.org/language-data-commons/terms#authorizationWorkflow",
+    "openAccessIndex": "https://purl.archive.org/language-data-commons/terms#openAccessIndex"
   }
 }

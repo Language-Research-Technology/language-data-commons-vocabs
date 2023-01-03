@@ -4,21 +4,21 @@ This is a language data ontology based on OLAC terms for use in the ATAP and LDa
 
 ## Classes
 
-<a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#DataDepositLicense">DataDepositLicense</a> | <a href="#DataLicense">DataLicense</a> | <a href="#DataReuseLicense">DataReuseLicense</a> | <a href="#DerivedResource">DerivedResource</a> | <a href="#Annotation">Annotation</a> | <a href="#PrimaryResource">PrimaryResource</a>
+<a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#DataDepositLicense">DataDepositLicense</a> | <a href="#DataLicense">DataLicense</a> | <a href="#DataReuseLicense">DataReuseLicense</a> | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#Annotation">Annotation</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a>
 
 ## Properties
 
-<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a>
+<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#openAccessIndex">openAccessIndex</a>
 
 ## DefinedTerms
 
-<a href="#Coded">Coded</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignLanguage">SignLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Narrative">Narrative</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#OpenAccess">OpenAccess</a> | <a href="#AccessControlList">AccessControlList</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#SelfAuthorization">SelfAuthorization</a>
+<a href="#Coded">Coded</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignLanguage">SignLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Narrative">Narrative</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#AccessControlList">AccessControlList</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#SelfAuthorization">SelfAuthorization</a> | <a href="#OpenAccess">OpenAccess</a> | <a href="#FullText">FullText</a>
 
 
 
 ## DefinedTermsSets
 
-<a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#ModalityTerms">ModalityTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#AccessTypes">AccessTypes</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a>
+<a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#ModalityTerms">ModalityTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#AccessTypes">AccessTypes</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#IndexTypes">IndexTypes</a>
 
 <div id="Coded"  style="border-style: solid">
 
@@ -31,7 +31,7 @@ The resource contains an analysis or annotations represented by a code (such as 
 
 ## Class: CollectionEvent
 
-A description of an event at which one or more PrimaryTexts were captured,  eg as video or audio
+A description of an event at which one or more PrimaryMaterials were captured,  eg as video or audio
 
 ### Subclass of: 
 
@@ -528,7 +528,7 @@ A license document setting out terms for deposit into a repository
 
 ## Class: DataLicense
 
-A licence document setting out rights and oblications could be based copyright or other rights based on membership of an Organization. The organization could be any  group of people with appropriate governance from self selected individuals who agree to license terms, to groups of researchers, to ad-hoc groups of members of a community
+A licence document for data licensing. This is a superclass of DataReuseLicense and DataLicense
 
 ### Subclass of: 
 
@@ -568,11 +568,11 @@ A license document, setting out terms for reuse of data
 :
 
 </div><br>
-<div id="DerivedResource" style="border-style: solid">
+<div id="DerivedMaterial" style="border-style: solid">
 
-## Class: DerivedResource
+## Class: DerivedMaterial
 
-This is derived from another source, such as a Primary Resource, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)
+This is derived from another source, such as a Primary Material, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)
 
 ### Subclass of: 
 
@@ -636,7 +636,7 @@ This resource contains some kind of description which adds information to the re
 
 ### Values expected to be one of these types: 
 
-[<a href='https://purl.archive.org/language-data-commons/terms#PrimaryText'> https://purl.archive.org/language-data-commons/terms#PrimaryText </a>] |
+[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | 
 
 
 
@@ -909,13 +909,13 @@ This resource references another resource that is derived from it such as a down
 
 ### Values expected to be one of these types: 
 
-[<a href='#PrimaryResource'> PrimaryResource </a>] | [<a href='#Annotation'> Annotation </a>] | 
+[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | [<a href='#Annotation'> Annotation </a>] | 
 
 
 
 ### Used on these types: 
 
-[<a href='#DerivedResource'> DerivedResource </a>] | 
+[<a href='#DerivedMaterial'> DerivedMaterial </a>] | 
 
 
 
@@ -1024,13 +1024,13 @@ This resource is referenced by another resource that describes it such as a tran
 
 ### Values expected to be one of these types: 
 
-[<a href='"https://purl.archive.org/language-data-commons/terms#Annnotation"'> "https://purl.archive.org/language-data-commons/terms#Annnotation" </a>] |
+[<a href='#Annnotation'> Annnotation </a>] | 
 
 
 
 ### Used on these types: 
 
-[<a href='https://purl.archive.org/language-data-commons/terms#PrimaryText'> https://purl.archive.org/language-data-commons/terms#PrimaryText </a>] |
+[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | 
 
 
 
@@ -1045,13 +1045,13 @@ This resource references another resource that is derived from it such as a down
 
 ### Values expected to be one of these types: 
 
-[<a href='"https://purl.archive.org/language-data-commons/terms#DerivedText"'> "https://purl.archive.org/language-data-commons/terms#DerivedText" </a>] |
+[<a href='#DerivedMaterial'> DerivedMaterial </a>] | 
 
 
 
 ### Used on these types: 
 
-[<a href='https://purl.archive.org/language-data-commons/terms#PrimaryText'> https://purl.archive.org/language-data-commons/terms#PrimaryText </a>] |
+[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | 
 
 
 
@@ -1192,7 +1192,7 @@ A linguistic classification of the genre of this resource
 
 ### Used on these types: 
 
-[<a href='https://purl.archive.org/language-data-commons/terms#PrimaryText'> https://purl.archive.org/language-data-commons/terms#PrimaryText </a>] |
+[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | 
 
 
 
@@ -1701,9 +1701,9 @@ The resource includes material which adds information to some other linguistic r
 :
 
 </div><br>
-<div id="PrimaryResource" style="border-style: solid">
+<div id="PrimaryMaterial" style="border-style: solid">
 
-## Class: PrimaryResource
+## Class: PrimaryMaterial
 
 The object of study, such as a literary work, film, or recording of natural discourse
 
@@ -1712,6 +1712,10 @@ The object of study, such as a literary work, film, or recording of natural disc
   [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
+
+### Properties
+
+[<a href='#hasAnnotation'> hasAnnotation </a>] | [<a href='#hasDerivation'> hasDerivation </a>] | [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 ### Same as: 
 
@@ -1741,22 +1745,11 @@ Is this an open or restricted access license
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='##9bf486ac-5a6f-4b2b-aa7e-ac9ffd3f50c2'> 9bf486ac-5a6f-4b2b-aa7e-ac9ffd3f50c2 </a>] | [<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | 
+[<a href='#OpenAccess'> OpenAccess </a>] | [<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | 
 
 
 
 
-
-</div><br>
-<div id="OpenAccess"  style="border-style: solid">
-
-## Defined Term: OpenAccess
-
-Data covered by this license may be accessed as long as the license is served alongside it, does not require any specific authorization step
-
-### Is an expected value for the following property
-
-[<a href='#access'> access </a>] | 
 
 </div><br>
 <div id="accessControlList"  style="border-style: solid">
@@ -1767,7 +1760,7 @@ When a license has an authorizationWorkflow property with a value of the DefineT
 
 ### Values expected to be one of these types: 
 
-
+[<a href='http://schema.org/URL'> http://schema.org/URL </a>] | 
 
 
 
@@ -1848,7 +1841,7 @@ A user can be authorized to access data by clicking that they agree to a license
 
 Set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorized) access
 
-### Has defined terms[<a href='##9bf486ac-5a6f-4b2b-aa7e-ac9ffd3f50c2'> 9bf486ac-5a6f-4b2b-aa7e-ac9ffd3f50c2 </a>] | [<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | 
+### Has defined terms[<a href='#OpenAccess'> OpenAccess </a>] | [<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | 
 
 </div><br>
 <div id="AuthorizationWorkflows"  style="border-style: solid">
@@ -1864,7 +1857,7 @@ Set of DefinedTerms for access authorization mechanisms - some of these may be c
 
 ## Property: authorizationWorkflow
 
-undefined
+By what process is a user granted authorization to a license
 
 ### Values expected to be one of these types: 
 
@@ -1881,6 +1874,64 @@ undefined
 ## Values expected to be one of these defined terms: 
 
 [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
+
+
+
+
+
+</div><br>
+<div id="OpenAccess"  style="border-style: solid">
+
+## Defined Term: OpenAccess
+
+Data covered by this license may be accessed as long as the license is served alongside it, does not require any specific authorization step
+
+### Is an expected value for the following property
+
+[<a href='#access'> access </a>] | 
+
+</div><br>
+<div id="IndexTypes"  style="border-style: solid">
+
+## Defined Term Set: IndexTypes
+
+Set of defined terms for types of indexing, such as FullText
+
+### Has defined terms[<a href='#FullText'> FullText </a>] | 
+
+</div><br>
+<div id="FullText"  style="border-style: solid">
+
+## Defined Term: FullText
+
+A text index which makes the full text of a data resources findable via a search interface
+
+### Is an expected value for the following property
+
+[<a href='#openAccessIndex'> openAccessIndex </a>] | 
+
+</div><br>
+<div id="openAccessIndex"  style="border-style: solid">
+
+## Property: openAccessIndex
+
+One or more public index types allowed by a license, eg FullText indexing may be allowed for discovery even when an item is not 
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#FullText'> FullText </a>] | 
 
 
 
