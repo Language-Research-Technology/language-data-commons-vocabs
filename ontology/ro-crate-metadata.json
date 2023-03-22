@@ -979,9 +979,33 @@
       "description": [
         "The resource includes annotation or analysis concerning the encoding of meaning."
       ],
-      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"}
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"}
       ],
       "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#description/semantic"}
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#Gestural",
+      "@type": "DefinedTerm",
+      "name": "Gestural",
+      "description": [
+        "The resource describes the gestural content of the resource it annotates."
+      ],
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"}
+      ],
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#description/gestural"}
       ],
       "@reverse": {
         "mentions": [
@@ -1254,6 +1278,9 @@
         "The set of expected values for annotation types"
       ],
       "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Gestural"
+        },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Prosodic"
         },
@@ -1536,6 +1563,11 @@
       ],
       "rdfs:comment": [
         "The type of annotation for Annotation resources"
+      ],
+      "definedTermSet" : [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
+        }
       ],
       "domainIncludes": [
         {
@@ -2196,6 +2228,34 @@
         },
         {
           "@id": "http://schema.org/Organization"
+        }
+      ],
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre",
+      "@type": "rdf:Property",
+      "name": "subjectLanguage",
+      "rdfs:label": [
+        "subjectLanguage"
+      ],
+      "rdfs:comment": [
+        "The language(s) that this annotation resource is about"
+      ],
+      "domainIncludes": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Annotation"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Language"
         }
       ],
       "@reverse": {

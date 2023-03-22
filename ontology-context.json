@@ -30,7 +30,7 @@
     "interpreter": "https://purl.archive.org/language-data-commons/terms#interpreter",
     "interviewee": "https://purl.archive.org/language-data-commons/terms#interviewee",
     "interviewer": "https://purl.archive.org/language-data-commons/terms#interviewer",
-    "linguisticGenre": "https://purl.archive.org/language-data-commons/terms#linguisticGenre",
+    "subjectLanguage": "https://purl.archive.org/language-data-commons/terms#linguisticGenre",
     "modality": "https://purl.archive.org/language-data-commons/terms#modality",
     "participant": "https://purl.archive.org/language-data-commons/terms#participant",
     "performer": "https://purl.archive.org/language-data-commons/terms#performer",
