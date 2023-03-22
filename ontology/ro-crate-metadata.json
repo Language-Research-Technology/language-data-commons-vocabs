@@ -23,7 +23,7 @@
       },
       "identifier": [
         {
-          "@id": "#:localid:describo:eaa1f923-0541-410e-afee-4b21d3f3b36a"
+          "@id": "#:localid:describo:a5b85c10-de9a-4f99-8b91-e0260af669bd"
         }
       ]
     },
@@ -312,8 +312,7 @@
       "description": [
         "The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet)."
       ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"}
       ],
       "@reverse": {
         "mentions": [
@@ -515,8 +514,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Drama",
       "@type": "DefinedTerm",
       "name": "Drama",
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text/drama"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#text/drama"}
       ],
       "description": [
         "A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience."
@@ -571,8 +569,7 @@
       "description": [
         "The resource is a ritually or conventionally structured discourse."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text/formulaic"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#text/formulaic"}
       ],
       "inDefinedTermSet": [
         {
@@ -624,8 +621,7 @@
       "description": [
         "The resource was written using a writing implement such as pen, pencil, brush or computer stylus  (From Nyingarn - TODO check this)"
       ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"}
       ],
       "@reverse": {
         "mentions": [
@@ -672,8 +668,7 @@
       "description": [
         "The resource is conversation where one or more speakers are directing the conversation"
       ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"}
       ],
       "@reverse": {
         "mentions": [
@@ -695,8 +690,7 @@
       "description": [
         "The resource includes a systematic listing of lexical items."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#Lexicon"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#Lexicon"}
       ],
       "@reverse": {
         "mentions": [
@@ -713,8 +707,7 @@
       "description": [
         "Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language. Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text/ludic"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#text/ludic"}
       ],
       "inDefinedTermSet": [
         {
@@ -735,14 +728,13 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Oratory",
+      "@id": "  ",
       "@type": "DefinedTerm",
       "name": "Oratory",
       "description": [
         "The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text/orratory"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#text/orratory"}
       ],
       "inDefinedTermSet": [
         {
@@ -770,10 +762,9 @@
         "The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription"
       ],
       "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        {"@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"}
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#description/orthographic"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic"}
       ],
       "@reverse": {
         "mentions": [
@@ -790,11 +781,9 @@
       "description": [
         "An annotation which assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate)"
       ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"}
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech"}
       ],
       "@reverse": {
         "mentions": [
@@ -840,11 +829,9 @@
       "description": [
         "An annotation which represents speech in terms of the sound contrasts made in a language."
       ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"}
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#description/phonemic"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonemic"}
       ],
       "@reverse": {
         "mentions": [
@@ -866,11 +853,9 @@
       "description": [
         "A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet"
       ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"}
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#description/phonetic"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonetic"}
       ],
       "@reverse": {
         "mentions": [
@@ -892,11 +877,9 @@
       "description": [
         "An annotation which includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language."
       ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"}
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#description/phonological"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonological"}
       ],
       "@reverse": {
         "mentions": [
@@ -918,8 +901,7 @@
       "description": [
         "An explanation or description of a method, process, or situation having ordered steps."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text/procedural"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#text/procedural"}
       ],
       "inDefinedTermSet": [
         {
@@ -946,11 +928,9 @@
       "description": [
         "An annotation which provides a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription."
       ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"}
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#description/prosodic"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#description/prosodic"}
       ],
       "@reverse": {
         "mentions": [
@@ -972,8 +952,7 @@
       "description": [
         "A factual account of some event or circumstance."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text/report"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#text/report"}
       ],
       "inDefinedTermSet": [
         {
@@ -1000,11 +979,9 @@
       "description": [
         "The resource includes annotation or analysis concerning the encoding of meaning."
       ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"}
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#description/semantic"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#description/semantic"}
       ],
       "@reverse": {
         "mentions": [
@@ -1026,8 +1003,7 @@
       "description": [
         "A collection event which is a recording or elicitation Session with participants."
       ],
-      "sameAs": [
-        "https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"
+      "sameAs":  [{"@id": "https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"}
       ],
       "inDefinedTermSet": [
         {
@@ -1054,8 +1030,7 @@
       "description": [
         "The resource contains data for which the medium of interaction was signing."
       ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"}
       ],
       "@reverse": {
         "mentions": [
@@ -1074,8 +1049,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Song",
       "@type": "DefinedTerm",
       "name": "Song",
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text/singing"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#text/singing"}
       ],
       "description": [
         "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED."
@@ -1130,8 +1104,7 @@
       "description": [
         "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource"
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#description/syntactic"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#description/syntactic"}
       ],
       "@reverse": {
         "mentions": [
@@ -1178,8 +1151,7 @@
       "description": [
         "The resource contains a list or data structure consisting of words or concepts arranged according to sense."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus"}
       ],
       "inDefinedTermSet": [
         {
@@ -1206,8 +1178,7 @@
       "description": [
         "A discourse, monologic or co-constructed, which represents temporally organized events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text/narrative"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#text/narrative"}
       ],
       "inDefinedTermSet": [
         {
@@ -1234,11 +1205,9 @@
       "description": [
         "The resource contains a transcription, which is a written representation (orthographic or coded) of an audio or visual signal."
       ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"}
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#transcription"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"}
       ],
       "@reverse": {
         "mentions": [
@@ -1260,11 +1229,9 @@
       "description": [
         "The resource has been translated from one natural language to another."
       ],
-      "inDefinedTermSet": [
-        "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+      "inDefinedTermSet":  [{"@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"}
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#annotation/translation"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/translation"}
       ],
       "@reverse": {
         "mentions": [
@@ -1411,8 +1378,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterial",
       "@type": "rdfs:Class",
       "name": "DerivedMaterial",
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#text"}
       ],
       "rdfs:label": [
         "DerivedMaterial"
@@ -1588,8 +1554,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#annotator",
       "@type": "rdf:Property",
       "name": "annotator",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#annotator"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#annotator"}
       ],
       "rdfs:comment": [
         "The participant produced an annotation of this or a related resource."
@@ -1622,8 +1587,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#author",
       "@type": "rdf:Property",
       "name": "author",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#author"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#author"}
       ],
       "rdfs:comment": [
         "The participant contributed original writings to the resource."
@@ -1741,8 +1705,7 @@
       "example": [
         "A compiler of a book of short stories or a CD with several songs on it; a collector of a corpus of recordings in some language or on a given topic; a person who assembles a suite of software tools."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#compiler"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#compiler"}
       ],
       "rdfs:comment": [
         "The participant is responsible for collecting the sub-parts of the resource together."
@@ -1778,8 +1741,7 @@
       "description": [
         "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\"."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#consultant"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#consultant"}
       ],
       "rdfs:comment": [
         "The participant contributes expertise to the creation of a work."
@@ -1812,8 +1774,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#dataInputter",
       "@type": "rdf:Property",
       "name": "dataInputter",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#data_inputter"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#data_inputter"}
       ],
       "rdfs:comment": [
         "The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource."
@@ -1846,8 +1807,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#depositor",
       "@type": "rdf:Property",
       "name": "depositor",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#depositor"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#depositor"}
       ],
       "rdfs:comment": [
         "The participant was responsible for depositing the resource in an archive."
@@ -1914,8 +1874,7 @@
       "description": [
         "A software programmer, designer, or analyst; a designer of a questionnaire or research task."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#developer"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#developer"}
       ],
       "rdfs:comment": [
         "The participant developed the methodology or tools that constitute the resource, or that were used to create the resource."
@@ -1974,8 +1933,7 @@
       "description": [
         "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#editor"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#editor"}
       ],
       "rdfs:comment": [
         "The participant reviewed, corrected, and/or tested the resource."
@@ -2090,8 +2048,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#illustrator",
       "@type": "rdf:Property",
       "name": "illustrator",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#illustrator"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#illustrator"}
       ],
       "rdfs:comment": [
         "The participant contributed drawings or other illustrations to the resource."
@@ -2153,8 +2110,7 @@
       "example": [
         "A person translating from English to ASL during a speech; a Kuna chief who interprets a chant that another chief has just performed, thus completing the ceremony."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#interpreter"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#interpreter"}
       ],
       "rdfs:comment": [
         "The participant translates in real-time or explains the discourse recorded in the resource."
@@ -2221,8 +2177,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#interviewer",
       "@type": "rdf:Property",
       "name": "interviewer",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#interviewer"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#interviewer"}
       ],
       "rdfs:comment": [
         "The participant conducted an interview that forms part of the resource."
@@ -2314,8 +2269,7 @@
       "description": [
         "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in general sense of having allowed the creation event to take place, such as the mayor of an indigenous community."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#participant"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#participant"}
       ],
       "rdfs:comment": [
         "The participant was present during the creation of the resource, but did not contribute substantially to its content."
@@ -2354,8 +2308,7 @@
       "example": [
         "A person performing a ceremony or delivering an oration or a sermon; native speakers re-enacting a traditional genre of speech, such as ritual greetings or insults; an actor or musician."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#performer"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#performer"}
       ],
       "rdfs:comment": [
         "The participant performed some portion of a recorded, filmed, or transcribed resource."
@@ -2416,8 +2369,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#photographer",
       "@type": "rdf:Property",
       "name": "photographer",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#photographer"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#photographer"}
       ],
       "rdfs:comment": [
         "The participant took the photograph, or shot the film, that appears in or constitutes the resource."
@@ -2450,8 +2402,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#recorder",
       "@type": "rdf:Property",
       "name": "recorder",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#recorder"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#recorder"}
       ],
       "rdfs:comment": [
         "The participant operated the recording machinery used to create the resource."
@@ -2487,8 +2438,7 @@
       "description": [
         "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource."
       ],
-      "sameAs": [
-        "http://w3id.org/meta-share/meta-share/register"
+      "sameAs":  [{"@id": "http://w3id.org/meta-share/meta-share/register"}
       ],
       "rdfs:comment": [
         "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource."
@@ -2513,8 +2463,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#researchParticipant",
       "@type": "rdf:Property",
       "name": "researchParticipant",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#research_participant"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#research_participant"}
       ],
       "rdfs:comment": [
         "The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource."
@@ -2547,8 +2496,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#researcher",
       "@type": "rdf:Property",
       "name": "researcher",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#researcher"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#researcher"}
       ],
       "rdfs:comment": [
         "The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research."
@@ -2584,8 +2532,7 @@
       "description": [
         "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\"."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#responder"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#responder"}
       ],
       "rdfs:comment": [
         "The participant was an interlocutor in some sort of discourse event."
@@ -2624,8 +2571,7 @@
       "example": [
         "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#signer"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#signer"}
       ],
       "rdfs:comment": [
         "The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource."
@@ -2661,8 +2607,7 @@
       "rdfs:label": [
         "singer"
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#singer"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#singer"}
       ],
       "rdfs:comment": [
         "The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource."
@@ -2698,8 +2643,7 @@
       "example": [
         "Participants in a recorded conversation, elicitation session, or informal narration would be termed Speakers. Audience members who do not participate beyond the occasional backchannel would be termed Responders."
       ],
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#speaker"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#speaker"}
       ],
       "rdfs:comment": [
         "The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource."
@@ -2732,8 +2676,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#sponsor",
       "@type": "rdf:Property",
       "name": "sponsor",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#sponsor"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#sponsor"}
       ],
       "rdfs:comment": [
         "The participant contributed financial support to the creation of the resource."
@@ -2766,8 +2709,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#transcriber",
       "@type": "rdf:Property",
       "name": "transcriber",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#transcriber"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#transcriber"}
       ],
       "rdfs:comment": [
         "The participant produced a transcription of this or a related resource."
@@ -2800,8 +2742,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#translator",
       "@type": "rdf:Property",
       "name": "translator",
-      "sameAs": [
-        "http://www.language-archives.org/REC/role.html#translator"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/role.html#translator"}
       ],
       "rdfs:comment": [
         "The participant produced a translation of this or a related resource."
@@ -3015,8 +2956,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Annotation",
       "@type": "rdfs:Class",
       "name": "Annotation",
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#annotation"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"}
       ],
       "rdfs:label": [
         "Annotation"
@@ -3051,8 +2991,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial",
       "@type": "rdfs:Class",
       "name": "PrimaryMaterial",
-      "sameAs": [
-        "http://www.language-archives.org/REC/type-20020628.html#text"
+      "sameAs":  [{"@id": "http://www.language-archives.org/REC/type-20020628.html#text"}
       ],
       "rdfs:label": [
         "PrimaryMaterial"
