@@ -1,7 +1,7 @@
 #  Language Data Commons Vocabulary tools
 
 
-This is a set of libraries and vocaublaries supporting the use ofd RO-Crate lanaguage data.
+This is a set of libraries and vocaublaries supporting the use of RO-Crate lanaguage data.
 
 It contain:
 
