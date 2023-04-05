@@ -2,7 +2,7 @@
 
 # Language Data Ontology
 
-This is a language data ontology based on OLAC terms for use in the ATAP and LDaCA projects
+This is a language data ontology based on OLAC terms for use in the ATAP and LDaCA projects, published at <https://purl.archive.org/language-data-commons/terms>. this vocabulary builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://purl.archive.org/language-data-commons/profile>
 
 ## Classes
 
@@ -10,7 +10,7 @@ This is a language data ontology based on OLAC terms for use in the ATAP and LDa
 
 ## Properties
 
-<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#openAccessIndex">openAccessIndex</a>
+<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#undefined">undefined</a>
 
 ## DefinedTerms
 
@@ -101,7 +101,7 @@ Set of terms which are expected values for CollectionProtocol types
 
 Set of expected values for modality types
 
-### Has defined terms[<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | 
+### Has defined terms[<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -274,7 +274,7 @@ This class represents a snapshot of a Person in time, in their role as a contrib
 
 ### Subclass of: 
 
-   schema:Role | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
+  [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |  schema:Role | 
 
 
 
@@ -435,7 +435,7 @@ A collection event which is a recording or elicitation Session with participants
 
 ### Same as: 
 
-[<a href='https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
+[<a href='#//www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
 '> https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
  </a>] | 
 
@@ -588,7 +588,7 @@ The resource has been translated from one natural language to another.
 
 The set of expected values for annotation types
 
-### Has defined terms[<a href='#Gestural'> Gestural </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Translation'> Translation </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Transcription'> Transcription </a>] | 
+### Has defined terms[<a href='#Gestural'> Gestural </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Translation'> Translation </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -621,6 +621,10 @@ A licence document for data licensing. This is a superclass of DataReuseLicense 
   [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
+
+### Properties
+
+[<a href='##reviewDate'> reviewDate </a>] | 
 
 ### Same as: 
 
@@ -771,7 +775,7 @@ The type of annotation for Annotation resources
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Gestural'> Gestural </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Translation'> Translation </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Transcription'> Transcription </a>] | 
+[<a href='#Gestural'> Gestural </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Translation'> Translation </a>] | 
 
 
 
@@ -788,7 +792,7 @@ The participant produced an annotation of this or a related resource.
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -816,7 +820,7 @@ The participant contributed original writings to the resource.
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -925,7 +929,7 @@ The participant is responsible for collecting the sub-parts of the resource toge
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -953,7 +957,7 @@ The participant contributes expertise to the creation of a work.
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -981,7 +985,7 @@ The participant was responsible for entering, re-typing, and/or structuring the 
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1009,7 +1013,7 @@ The participant was responsible for depositing the resource in an archive.
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1037,7 +1041,7 @@ This resource references another resource that is derived from it such as a down
 
 ### Values expected to be one of these types: 
 
-[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | [<a href='#Annotation'> Annotation </a>] | 
+[<a href='#Annotation'> Annotation </a>] | [<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | 
 
 
 
@@ -1060,7 +1064,7 @@ The participant developed the methodology or tools that constitute the resource,
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1208,7 +1212,7 @@ The participant contributed drawings or other illustrations to the resource.
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1259,7 +1263,7 @@ The participant translates in real-time or explains the discourse recorded in th
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1287,7 +1291,7 @@ The participant was a respondent in an interview
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1310,7 +1314,7 @@ The participant conducted an interview that forms part of the resource.
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1373,7 +1377,7 @@ The mode (spoken, written, signed etc) of this resource. There may be more than 
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | 
+[<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
 
 
 
@@ -1390,7 +1394,7 @@ The participant was present during the creation of the resource, but did not con
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1418,7 +1422,7 @@ The participant performed some portion of a recorded, filmed, or transcribed res
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1469,7 +1473,7 @@ The participant took the photograph, or shot the film, that appears in or consti
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1497,7 +1501,7 @@ The participant operated the recording machinery used to create the resource.
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1553,7 +1557,7 @@ The participant acted as a research subject or responded to a questionnaire, the
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1581,7 +1585,7 @@ The resource was created as part of the participant's research, or the research 
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1609,7 +1613,7 @@ The participant was an interlocutor in some sort of discourse event.
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1665,7 +1669,7 @@ The participant sang, either individually or as part of a group, in a resource t
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1693,7 +1697,7 @@ The participant was a principal speaker in a resource that consists of a recordi
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1721,7 +1725,7 @@ The participant contributed financial support to the creation of the resource.
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1749,7 +1753,7 @@ The participant produced a transcription of this or a related resource.
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1849,7 +1853,7 @@ The data in this item has had identifying information removed, or in the case of
 
 Set of expected types for WrittenLanguage modality (this set is incomplete - more work needed)
 
-### Has defined terms[<a href='#Handwritten'> Handwritten </a>] | [<a href='#Typewritten'> Typewritten </a>] | [<a href='#Typeset'> Typeset </a>] | 
+### Has defined terms[<a href='#Handwritten'> Handwritten </a>] | [<a href='#Typeset'> Typeset </a>] | [<a href='#Typewritten'> Typewritten </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -1860,7 +1864,7 @@ Set of expected types for WrittenLanguage modality (this set is incomplete - mor
 
 Set of expected values for linguistic genre of a resource
 
-### Has defined terms[<a href='#Formulaic'> Formulaic </a>] | [<a href='#Thesaurus'> Thesaurus </a>] | [<a href='#Dialogue'> Dialogue </a>] | [<a href='#Oratory'> Oratory </a>] | [<a href='#Report'> Report </a>] | [<a href='#Ludic'> Ludic </a>] | [<a href='#Procedural'> Procedural </a>] | [<a href='#Narrative'> Narrative </a>] | [<a href='#Interview'> Interview </a>] | [<a href='#Drama'> Drama </a>] | [<a href='#Informational'> Informational </a>] | 
+### Has defined terms[<a href='#Dialogue'> Dialogue </a>] | [<a href='#Drama'> Drama </a>] | [<a href='#Formulaic'> Formulaic </a>] | [<a href='#Informational'> Informational </a>] | [<a href='#Interview'> Interview </a>] | [<a href='#Ludic'> Ludic </a>] | [<a href='#Narrative'> Narrative </a>] | [<a href='#Oratory'> Oratory </a>] | [<a href='#Procedural'> Procedural </a>] | [<a href='#Report'> Report </a>] | [<a href='#Thesaurus'> Thesaurus </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -1937,7 +1941,7 @@ Is this an open or restricted access license
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#OpenAccess'> OpenAccess </a>] | [<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | 
+[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] | 
 
 
 
@@ -2049,7 +2053,7 @@ A user can be authorized to access data by clicking that they agree to a license
 
 Set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorized) access
 
-### Has defined terms[<a href='#OpenAccess'> OpenAccess </a>] | [<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | 
+### Has defined terms[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -2060,7 +2064,7 @@ Set of defined terms to specify whether a DataReuseLicense allows open or restri
 
 Set of DefinedTerms for access authorization mechanisms - some of these may be combined - eg AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant
 
-### Has defined terms[<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
+### Has defined terms[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -2085,7 +2089,7 @@ By what process is a user granted authorization to a license
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
+[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
 
 
 
@@ -2152,6 +2156,29 @@ One or more public index types allowed by a license, eg FullText indexing may be
 ## Values expected to be one of these defined terms: 
 
 [<a href='#FullText'> FullText </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="undefined"  style="border-style: solid">
+
+## Property: undefined
+
+undefined
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='#DataLicense'> DataLicense </a>] | 
 
 
 

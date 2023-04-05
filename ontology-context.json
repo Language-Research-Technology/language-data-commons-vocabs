@@ -54,6 +54,7 @@
     "access": "https://purl.archive.org/language-data-commons/terms#access",
     "accessControlList": "https://purl.archive.org/language-data-commons/terms#accessControlList",
     "authorizationWorkflow": "https://purl.archive.org/language-data-commons/terms#authorizationWorkflow",
-    "openAccessIndex": "https://purl.archive.org/language-data-commons/terms#openAccessIndex"
+    "openAccessIndex": "https://purl.archive.org/language-data-commons/terms#openAccessIndex",
+    "undefined": "#reviewDate"
   }
 }
