@@ -2,25 +2,51 @@
 
 # Language Data Ontology
 
-This is a language data ontology based on OLAC terms for use in the ATAP and LDaCA projects, published at <https://purl.archive.org/language-data-commons/terms>. this vocabulary builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://purl.archive.org/language-data-commons/profile>
+This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://purl.archive.org/language-data-commons/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://purl.archive.org/language-data-commons/profile>
 
 ## Classes
 
-<a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#DataDepositLicense">DataDepositLicense</a> | <a href="#DataLicense">DataLicense</a> | <a href="#DataReuseLicense">DataReuseLicense</a> | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#Annotation">Annotation</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a>
+<a href="#Annotation">Annotation</a> | <a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DataDepositLicense">DataDepositLicense</a> | <a href="#DataLicense">DataLicense</a> | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a> | <a href="#definedTerm">definedTerm</a> | <a href="#CreativeWork">CreativeWork</a> | <a href="#DataReuseLicense">DataReuseLicense</a> | <a href="#Thing">Thing</a> | <a href="#Dataset">Dataset</a> | <a href="#DefinedTerm">DefinedTerm</a> | <a href="#DefinedTermSet">DefinedTermSet</a>
 
 ## Properties
 
-<a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#modality">modality</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#undefined">undefined</a>
+<a href="#accessControlList">accessControlList</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#modality">modality</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#conformsTo">conformsTo</a> | <a href="#about">about</a> | <a href="#identifier">identifier</a> | <a href="#mentions">mentions</a> | <a href="#sameAs">sameAs</a> | <a href="#rdfs:label">rdfs:label</a> | <a href="#rdfs:comment">rdfs:comment</a> | <a href="#rdfs:subClassOf">rdfs:subClassOf</a> | <a href="#inDefinedTermSet">inDefinedTermSet</a> | <a href="#hasDefinedTerm">hasDefinedTerm</a> | <a href="#domainIncludes">domainIncludes</a> | <a href="#rangeIncludes">rangeIncludes</a> | <a href="#definedTermSet">definedTermSet</a> | <a href="#example">example</a> | <a href="#schema:source">schema:source</a> | <a href="#Comment">Comment</a> | <a href="#owl:equivalentClass">owl:equivalentClass</a> | <a href="#http://schema.org/source">http://schema.org/source</a> | <a href="#owl:equivalentProperty">owl:equivalentProperty</a> | <a href="#rdfs:subPropertyOf">rdfs:subPropertyOf</a> | <a href="#schema:isPartOf">schema:isPartOf</a> | <a href="#access">access</a> | <a href="#undefined">undefined</a> | <a href="#name">name</a> | <a href="#description">description</a>
 
 ## DefinedTerms
 
-<a href="#Coded">Coded</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Oratory">Oratory</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Gestural">Gestural</a> | <a href="#Session">Session</a> | <a href="#SignLanguage">SignLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Narrative">Narrative</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#AccessControlList">AccessControlList</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#SelfAuthorization">SelfAuthorization</a> | <a href="#OpenAccess">OpenAccess</a> | <a href="#FullText">FullText</a>
+<a href="#Coded">Coded</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignLanguage">SignLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#FullText">FullText</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#Gestural">Gestural</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#SelfAuthorization">SelfAuthorization</a> | <a href="#Oratory">Oratory</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#OpenAccess">OpenAccess</a> | <a href="#AccessControlList">AccessControlList</a>
 
 
 
 ## DefinedTermsSets
 
-<a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#ModalityTerms">ModalityTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#AccessTypes">AccessTypes</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#IndexTypes">IndexTypes</a>
+<a href="#IndexTypes">IndexTypes</a> | <a href="#ModalityTerms">ModalityTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#AccessTypes">AccessTypes</a>
+
+<div id="Annotation" style="border-style: solid">
+
+## Class: Annotation
+
+The resource includes material which adds information to some other linguistic record.
+
+### Subclass of: 
+
+  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+### Properties
+
+[<a href='#annotationType'> annotationType </a>] | [<a href='#linguisticGenre'> linguisticGenre </a>] | 
+
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#annotation'> annotation </a>] | 
+
+
+:
+
+</div><br>
+<a href="#top">Top of page</a>
 
 <div id="Coded"  style="border-style: solid">
 
@@ -39,7 +65,7 @@ A description of an event at which one or more PrimaryMaterials were captured,  
 
 ### Subclass of: 
 
-   schema:Event |  schema:CreateAction | 
+  [<a href='http://schema.org/Event'> http://schema.org/Event </a>] |[<a href='http://schema.org/CreateAction'> http://schema.org/CreateAction </a>] |
 
 
 
@@ -48,17 +74,6 @@ A description of an event at which one or more PrimaryMaterials were captured,  
 [<a href='#collectionEventType'> collectionEventType </a>] | 
 
 :
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="CollectionEventTypeTerms"  style="border-style: solid">
-
-## Defined Term Set: CollectionEventTypeTerms
-
-Set of terms which are expected values for CollectionEvent types
-
-### Has defined terms[<a href='#Session'> Session </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -84,24 +99,71 @@ Description of how this Object or Collection was obtained – such as strategy u
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="CollectionProtocolTypeTerms"  style="border-style: solid">
+<div id="DataDepositLicense" style="border-style: solid">
 
-## Defined Term Set: CollectionProtocolTypeTerms
+## Class: DataDepositLicense
 
-Set of terms which are expected values for CollectionProtocol types
+A license document setting out terms for deposit into a repository
 
-### Has defined terms[<a href='#ElicitationTask'> ElicitationTask </a>] | [<a href='#TextSelectionCriteria'> TextSelectionCriteria </a>] | 
+### Subclass of: 
+
+  [<a href='#DataLicense'> DataLicense </a>] | 
+
+
+
+:
 
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="ModalityTerms"  style="border-style: solid">
+<div id="DataLicense" style="border-style: solid">
 
-## Defined Term Set: ModalityTerms
+## Class: DataLicense
 
-Set of expected values for modality types
+A licence document for data licensing. This is a superclass of DataReuseLicense and DataLicense
 
-### Has defined terms[<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
+### Subclass of: 
+
+  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+### Properties
+
+[<a href='#//purl.archive.org/language-data-commons/terms#reviewDate'> reviewDate </a>] | 
+
+### Same as: 
+
+[<a href='https://creativecommons.org/ns#License'> License </a>] | 
+
+
+:
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="DerivedMaterial" style="border-style: solid">
+
+## Class: DerivedMaterial
+
+This is derived from another source, such as a Primary Material, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)
+
+### Subclass of: 
+
+  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+### Properties
+
+[<a href='#derivationOf'> derivationOf </a>] | 
+
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text'> text </a>] | 
+
+
+:
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -178,6 +240,17 @@ The resource was written using a writing implement such as pen, pencil, brush or
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="IndexTypes"  style="border-style: solid">
+
+## Defined Term Set: IndexTypes
+
+Set of defined terms for types of indexing, such as FullText
+
+### Has defined terms[<a href='#FullText'> FullText </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="Informational"  style="border-style: solid">
 
 ## Defined Term: Informational
@@ -224,15 +297,15 @@ Ludic discourse is language whose primary function is to be part of play, or a s
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="Oratory"  style="border-style: solid">
+<div id="Narrative"  style="border-style: solid">
 
-## Defined Term: Oratory
+## Defined Term: Narrative
 
-The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.
+A discourse, monologic or co-constructed, which represents temporally organized events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.
 
 ### Same as: 
 
-[<a href='http://www.language-archives.org/REC/type-20020628.html#text/orratory'> text/orratory </a>] | 
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text/narrative'> text/narrative </a>] | 
 
 
 </div><br>
@@ -274,7 +347,7 @@ This class represents a snapshot of a Person in time, in their role as a contrib
 
 ### Subclass of: 
 
-  [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |  schema:Role | 
+  [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Role'> http://schema.org/Role </a>] |
 
 
 
@@ -337,6 +410,32 @@ An annotation which includes information about the sound system of a language, s
 
 [<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonological'> description/phonological </a>] | 
 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="PrimaryMaterial" style="border-style: solid">
+
+## Class: PrimaryMaterial
+
+The object of study, such as a literary work, film, or recording of natural discourse
+
+### Subclass of: 
+
+  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+### Properties
+
+[<a href='#hasAnnotation'> hasAnnotation </a>] | [<a href='#hasDerivation'> hasDerivation </a>] | 
+
+### Same as: 
+
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text'> text </a>] | 
+
+
+:
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -405,24 +504,6 @@ The resource includes annotation or analysis concerning the encoding of meaning.
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="Gestural"  style="border-style: solid">
-
-## Defined Term: Gestural
-
-The resource describes the gestural content of the resource it annotates.
-
-### Is an expected value for the following property
-
-[<a href='#annotationType'> annotationType </a>] | 
-
-### Same as: 
-
-[<a href='http://www.language-archives.org/REC/type-20020628.html#description/gestural'> description/gestural </a>] | 
-
-
-</div><br>
-<a href="#top">Top of page</a>
-
 <div id="Session"  style="border-style: solid">
 
 ## Defined Term: Session
@@ -435,9 +516,8 @@ A collection event which is a recording or elicitation Session with participants
 
 ### Same as: 
 
-[<a href='#//www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
-'> https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
- </a>] | 
+CANT RESOLVE  #https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
+
 
 
 </div><br>
@@ -532,20 +612,6 @@ The resource contains a list or data structure consisting of words or concepts a
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="Narrative"  style="border-style: solid">
-
-## Defined Term: Narrative
-
-A discourse, monologic or co-constructed, which represents temporally organized events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.
-
-### Same as: 
-
-[<a href='http://www.language-archives.org/REC/type-20020628.html#text/narrative'> text/narrative </a>] | 
-
-
-</div><br>
-<a href="#top">Top of page</a>
-
 <div id="Transcription"  style="border-style: solid">
 
 ## Defined Term: Transcription
@@ -582,112 +648,6 @@ The resource has been translated from one natural language to another.
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="AnnotationTypeTerms"  style="border-style: solid">
-
-## Defined Term Set: AnnotationTypeTerms
-
-The set of expected values for annotation types
-
-### Has defined terms[<a href='#Gestural'> Gestural </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Translation'> Translation </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="DataDepositLicense" style="border-style: solid">
-
-## Class: DataDepositLicense
-
-A license document setting out terms for deposit into a repository
-
-### Subclass of: 
-
-  [<a href='#DataLicense'> DataLicense </a>] | 
-
-
-
-:
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="DataLicense" style="border-style: solid">
-
-## Class: DataLicense
-
-A licence document for data licensing. This is a superclass of DataReuseLicense and DataLicense
-
-### Subclass of: 
-
-  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
-
-
-
-### Properties
-
-[<a href='##reviewDate'> reviewDate </a>] | 
-
-### Same as: 
-
-[<a href='https://creativecommons.org/ns#License'> License </a>] | 
-
-
-:
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="DataReuseLicense" style="border-style: solid">
-
-## Class: DataReuseLicense
-
-A license document, setting out terms for reuse of data 
-
-### Subclass of: 
-
-  [<a href='#DataLicense'> DataLicense </a>] | 
-
-
-
-### Properties
-
-[<a href='#access'> access </a>] | [<a href='#accessControlList'> accessControlList </a>] | [<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | 
-
-### Same as: 
-
-[<a href='https://creativecommons.org/ns#License'> License </a>] | 
-
-
-:
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="DerivedMaterial" style="border-style: solid">
-
-## Class: DerivedMaterial
-
-This is derived from another source, such as a Primary Material, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)
-
-### Subclass of: 
-
-  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
-
-
-
-### Properties
-
-[<a href='#derivationOf'> derivationOf </a>] | 
-
-### Same as: 
-
-[<a href='http://www.language-archives.org/REC/type-20020628.html#text'> text </a>] | 
-
-
-:
-
-</div><br>
-<a href="#top">Top of page</a>
-
 <div id="Typeset"  style="border-style: solid">
 
 ## Defined Term: Typeset
@@ -719,15 +679,25 @@ TThe resource contains data for which the medium of interaction was writing.
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="WhistledLanguage"  style="border-style: solid">
+<div id="accessControlList"  style="border-style: solid">
 
-## Defined Term: WhistledLanguage
+## Property: accessControlList
 
-The resource contains data for which the medium of interaction was whistling.
+When a license has an authorizationWorkflow property with a value of the DefineTerm AcessControlList this property has a URI value that points to a list of userIDs
 
-### Is an expected value for the following property
+### Values expected to be one of these types: 
 
-[<a href='#modality'> modality </a>] | 
+[<a href='http://schema.org/URL'> http://schema.org/URL </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='#DataReuseLicense'> DataReuseLicense </a>] | 
+
+
+
+
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -833,6 +803,35 @@ The participant contributed original writings to the resource.
 ### Same as: 
 
 [<a href='http://www.language-archives.org/REC/role.html#author'> author </a>] | 
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="authorizationWorkflow"  style="border-style: solid">
+
+## Property: authorizationWorkflow
+
+By what process is a user granted authorization to a license
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='#DataReuseLicense'> DataReuseLicense </a>] | 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
+
 
 
 
@@ -1149,7 +1148,7 @@ A valid GEOJson feature or feature collection as a string that can be parsed as 
 
 ### Used on these types: 
 
- schema:GeoCoordinates |  schema:GeoShape |  schema:Language | 
+[<a href='http://schema.org/GeoCoordinates'> http://schema.org/GeoCoordinates </a>] |[<a href='http://schema.org/GeoShape'> http://schema.org/GeoShape </a>] |[<a href='http://schema.org/Language'> http://schema.org/Language </a>] |
 
 
 
@@ -1173,6 +1172,29 @@ This resource is referenced by another resource that describes it such as a tran
 ### Used on these types: 
 
 [<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="hasCollectionProtocol"  style="border-style: solid">
+
+## Property: hasCollectionProtocol
+
+This resource  was assembled or collected according to the linked protocol
+
+### Values expected to be one of these types: 
+
+[<a href='#CollectionProtocol'> CollectionProtocol </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -1240,7 +1262,7 @@ Indicates one or more target File that together contain the full text of an item
 
 ### Values expected to be one of these types: 
 
- schema:File | 
+[<a href='http://schema.org/File'> http://schema.org/File </a>] |
 
 
 
@@ -1334,6 +1356,29 @@ The participant conducted an interview that forms part of the resource.
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="isDeIdentified"  style="border-style: solid">
+
+## Property: isDeIdentified
+
+The data in this item has had identifying information removed, or in the case of a person the name is an alias
+
+### Values expected to be one of these types: 
+
+[<a href='http://schema.org/Boolean'> http://schema.org/Boolean </a>] |
+
+
+
+### Used on these types: 
+
+[<a href='[{"@id":"http://schema.org/CreativeWork"}, {"@id":"http://schema.org/Person"}, https://purl.archive.org/language-data-commons/terms#PersonSnapshot]'> [{"@id":"http://schema.org/CreativeWork"}, {"@id":"http://schema.org/Person"}, https://purl.archive.org/language-data-commons/terms#PersonSnapshot] </a>] |
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="subjectLanguage"  style="border-style: solid">
 
 ## Property: subjectLanguage
@@ -1378,6 +1423,35 @@ The mode (spoken, written, signed etc) of this resource. There may be more than 
 ## Values expected to be one of these defined terms: 
 
 [<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="openAccessIndex"  style="border-style: solid">
+
+## Property: openAccessIndex
+
+One or more public index types allowed by a license, eg FullText indexing may be allowed for discovery even when an item is not 
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#FullText'> FullText </a>] | 
 
 
 
@@ -1801,15 +1875,15 @@ The participant produced a translation of this or a related resource.
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="hasCollectionProtocol"  style="border-style: solid">
+<div id="conformsTo"  style="border-style: solid">
 
-## Property: hasCollectionProtocol
+## Property: conformsTo
 
-This resource  was assembled or collected according to the linked protocol
+...
 
 ### Values expected to be one of these types: 
 
-[<a href='#CollectionProtocol'> CollectionProtocol </a>] | 
+
 
 
 
@@ -1824,21 +1898,21 @@ This resource  was assembled or collected according to the linked protocol
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="isDeIdentified"  style="border-style: solid">
+<div id="about"  style="border-style: solid">
 
-## Property: isDeIdentified
+## Property: about
 
-The data in this item has had identifying information removed, or in the case of a person the name is an alias
+...
 
 ### Values expected to be one of these types: 
 
- schema:Boolean | 
+[<a href='http://schema.org/Dataset'> http://schema.org/Dataset </a>] | 
 
 
 
 ### Used on these types: 
 
-[<a href='[{"@id":"schema:CreativeWork"}, {"@id":"schema:Person"}, https://purl.archive.org/language-data-commons/terms#PersonSnapshot]'> [{"@id":"schema:CreativeWork"}, {"@id":"schema:Person"}, https://purl.archive.org/language-data-commons/terms#PersonSnapshot] </a>] |
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -1847,13 +1921,492 @@ The data in this item has had identifying information removed, or in the case of
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="WrittenLanguageTypeTerms"  style="border-style: solid">
+<div id="identifier"  style="border-style: solid">
 
-## Defined Term Set: WrittenLanguageTypeTerms
+## Property: identifier
 
-Set of expected types for WrittenLanguage modality (this set is incomplete - more work needed)
+...
 
-### Has defined terms[<a href='#Handwritten'> Handwritten </a>] | [<a href='#Typeset'> Typeset </a>] | [<a href='#Typewritten'> Typewritten </a>] | 
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="mentions"  style="border-style: solid">
+
+## Property: mentions
+
+...
+
+### Values expected to be one of these types: 
+
+[<a href='https://purl.archive.org/terms#definedTerm'> definedTerm </a>] | [<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | [<a href='http://schema.org/DefinedTerm'> http://schema.org/DefinedTerm </a>] | [<a href='http://schema.org/DefinedTermSet'> http://schema.org/DefinedTermSet </a>] | [<a href='http://schema.org/URL'> http://schema.org/URL </a>] | [<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/Dataset'> http://schema.org/Dataset </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="definedTerm" style="border-style: solid">
+
+## Class: definedTerm
+
+...
+
+### Subclass of: 
+
+  
+
+
+
+### Properties
+
+[<a href='http://schema.org/name'> http://schema.org/name </a>] | [<a href='http://schema.org/description'> http://schema.org/description </a>] | 
+
+:
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="sameAs"  style="border-style: solid">
+
+## Property: sameAs
+
+...
+
+### Values expected to be one of these types: 
+
+[<a href='http://schema.org/URL'> http://schema.org/URL </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | [<a href='http://schema.org/DefinedTerm'> http://schema.org/DefinedTerm </a>] | [<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="rdfs:label"  style="border-style: solid">
+
+## Property: rdfs:label
+
+...
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | [<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="rdfs:comment"  style="border-style: solid">
+
+## Property: rdfs:comment
+
+...
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | [<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="rdfs:subClassOf"  style="border-style: solid">
+
+## Property: rdfs:subClassOf
+
+...
+
+### Values expected to be one of these types: 
+
+[<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | [<a href='http://schema.org/URL'> http://schema.org/URL </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="inDefinedTermSet"  style="border-style: solid">
+
+## Property: inDefinedTermSet
+
+...
+
+### Values expected to be one of these types: 
+
+[<a href='http://schema.org/DefinedTermSet'> http://schema.org/DefinedTermSet </a>] | [<a href='http://schema.org/URL'> http://schema.org/URL </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/DefinedTerm'> http://schema.org/DefinedTerm </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="hasDefinedTerm"  style="border-style: solid">
+
+## Property: hasDefinedTerm
+
+...
+
+### Values expected to be one of these types: 
+
+[<a href='http://schema.org/DefinedTerm'> http://schema.org/DefinedTerm </a>] | [<a href='http://schema.org/URL'> http://schema.org/URL </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/DefinedTermSet'> http://schema.org/DefinedTermSet </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="domainIncludes"  style="border-style: solid">
+
+## Property: domainIncludes
+
+...
+
+### Values expected to be one of these types: 
+
+[<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | [<a href='http://schema.org/URL'> http://schema.org/URL </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="rangeIncludes"  style="border-style: solid">
+
+## Property: rangeIncludes
+
+...
+
+### Values expected to be one of these types: 
+
+[<a href='http://schema.org/URL'> http://schema.org/URL </a>] | [<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="definedTermSet"  style="border-style: solid">
+
+## Property: definedTermSet
+
+...
+
+### Values expected to be one of these types: 
+
+[<a href='http://schema.org/DefinedTermSet'> http://schema.org/DefinedTermSet </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="example"  style="border-style: solid">
+
+## Property: example
+
+...
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="schema:source"  style="border-style: solid">
+
+## Property: schema:source
+
+...
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="Comment"  style="border-style: solid">
+
+## Property: Comment
+
+...
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="owl:equivalentClass"  style="border-style: solid">
+
+## Property: owl:equivalentClass
+
+...
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="http://schema.org/source"  style="border-style: solid">
+
+## Property: http://schema.org/source
+
+...
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="owl:equivalentProperty"  style="border-style: solid">
+
+## Property: owl:equivalentProperty
+
+...
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="rdfs:subPropertyOf"  style="border-style: solid">
+
+## Property: rdfs:subPropertyOf
+
+...
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="schema:isPartOf"  style="border-style: solid">
+
+## Property: schema:isPartOf
+
+...
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="CreativeWork" style="border-style: solid">
+
+## Class: CreativeWork
+
+The most generic kind of creative work, including books, movies, photographs, software programs, etc.
+
+### Subclass of: 
+
+  [<a href='http://schema.org/Thing'> http://schema.org/Thing </a>] | 
+
+
+
+### Properties
+
+[<a href='#annotationOf'> annotationOf </a>] | [<a href='#annotator'> annotator </a>] | [<a href='#author'> author </a>] | [<a href='#channels'> channels </a>] | [<a href='#compiler'> compiler </a>] | [<a href='#consultant'> consultant </a>] | [<a href='#dataInputter'> dataInputter </a>] | [<a href='#depositor'> depositor </a>] | [<a href='#developer'> developer </a>] | [<a href='#doi'> doi </a>] | [<a href='#editor'> editor </a>] | [<a href='#hasCollectionProtocol'> hasCollectionProtocol </a>] | [<a href='#illustrator'> illustrator </a>] | [<a href='#indexableText'> indexableText </a>] | [<a href='#interpreter'> interpreter </a>] | [<a href='#interviewee'> interviewee </a>] | [<a href='#interviewer'> interviewer </a>] | [<a href='#modality'> modality </a>] | [<a href='#openAccessIndex'> openAccessIndex </a>] | [<a href='#participant'> participant </a>] | [<a href='#performer'> performer </a>] | [<a href='#photographer'> photographer </a>] | [<a href='#recorder'> recorder </a>] | [<a href='#register'> register </a>] | [<a href='#researchParticipant'> researchParticipant </a>] | [<a href='#researcher'> researcher </a>] | [<a href='#responder'> responder </a>] | [<a href='#signer'> signer </a>] | [<a href='#singer'> singer </a>] | [<a href='#speaker'> speaker </a>] | [<a href='#sponsor'> sponsor </a>] | [<a href='#transcriber'> transcriber </a>] | [<a href='#translator'> translator </a>] | [<a href='http://purl.org/dc/terms/conformsTo'> http://purl.org/dc/terms/conformsTo </a>] | [<a href='http://schema.org/about'> http://schema.org/about </a>] | [<a href='http://schema.org/identifier'> http://schema.org/identifier </a>] | 
+
+:
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="ModalityTerms"  style="border-style: solid">
+
+## Defined Term Set: ModalityTerms
+
+Set of expected values for modality types
+
+### Has defined terms[<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -1869,25 +2422,71 @@ Set of expected values for linguistic genre of a resource
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="Annotation" style="border-style: solid">
+<div id="CollectionProtocolTypeTerms"  style="border-style: solid">
 
-## Class: Annotation
+## Defined Term Set: CollectionProtocolTypeTerms
 
-The resource includes material which adds information to some other linguistic record.
+Set of terms which are expected values for CollectionProtocol types
+
+### Has defined terms[<a href='#ElicitationTask'> ElicitationTask </a>] | [<a href='#TextSelectionCriteria'> TextSelectionCriteria </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="FullText"  style="border-style: solid">
+
+## Defined Term: FullText
+
+A text index which makes the full text of a data resources findable via a search interface
+
+### Is an expected value for the following property
+
+[<a href='#openAccessIndex'> openAccessIndex </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="AnnotationTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: AnnotationTypeTerms
+
+The set of expected values for annotation types
+
+### Has defined terms[<a href='#Gestural'> Gestural </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Translation'> Translation </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="WrittenLanguageTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: WrittenLanguageTypeTerms
+
+Set of expected types for WrittenLanguage modality (this set is incomplete - more work needed)
+
+### Has defined terms[<a href='#Handwritten'> Handwritten </a>] | [<a href='#Typeset'> Typeset </a>] | [<a href='#Typewritten'> Typewritten </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="DataReuseLicense" style="border-style: solid">
+
+## Class: DataReuseLicense
+
+A license document, setting out terms for reuse of data 
 
 ### Subclass of: 
 
-  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+  [<a href='#DataLicense'> DataLicense </a>] | 
 
 
 
 ### Properties
 
-[<a href='#annotationType'> annotationType </a>] | [<a href='#linguisticGenre'> linguisticGenre </a>] | 
+[<a href='#accessControlList'> accessControlList </a>] | [<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | [<a href='#access'> access </a>] | 
 
 ### Same as: 
 
-[<a href='http://www.language-archives.org/REC/type-20020628.html#annotation'> annotation </a>] | 
+[<a href='https://creativecommons.org/ns#License'> License </a>] | 
 
 
 :
@@ -1895,89 +2494,76 @@ The resource includes material which adds information to some other linguistic r
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="PrimaryMaterial" style="border-style: solid">
+<div id="AuthorizationWorkflows"  style="border-style: solid">
 
-## Class: PrimaryMaterial
+## Defined Term Set: AuthorizationWorkflows
 
-The object of study, such as a literary work, film, or recording of natural discourse
+Set of DefinedTerms for access authorization mechanisms - some of these may be combined - eg AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant
+
+### Has defined terms[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="CollectionEventTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: CollectionEventTypeTerms
+
+Set of terms which are expected values for CollectionEvent types
+
+### Has defined terms[<a href='#Session'> Session </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="Thing" style="border-style: solid">
+
+## Class: Thing
+
+The most generic type of item.
 
 ### Subclass of: 
 
-  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+  
 
 
 
 ### Properties
 
-[<a href='#hasAnnotation'> hasAnnotation </a>] | [<a href='#hasDerivation'> hasDerivation </a>] | 
-
-### Same as: 
-
-[<a href='http://www.language-archives.org/REC/type-20020628.html#text'> text </a>] | 
-
+[<a href='http://schema.org/name'> http://schema.org/name </a>] | [<a href='http://schema.org/description'> http://schema.org/description </a>] | 
 
 :
 
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="access"  style="border-style: solid">
+<div id="WhistledLanguage"  style="border-style: solid">
 
-## Property: access
+## Defined Term: WhistledLanguage
 
-Is this an open or restricted access license
+The resource contains data for which the medium of interaction was whistling.
 
-### Values expected to be one of these types: 
+### Is an expected value for the following property
 
-
-
-
-
-### Used on these types: 
-
-[<a href='#DataReuseLicense'> DataReuseLicense </a>] | 
-
-
-
-## Values expected to be one of these defined terms: 
-
-[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] | 
-
-
-
-
+[<a href='#modality'> modality </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="accessControlList"  style="border-style: solid">
+<div id="Gestural"  style="border-style: solid">
 
-## Property: accessControlList
+## Defined Term: Gestural
 
-When a license has an authorizationWorkflow property with a value of the DefineTerm AcessControlList this property has a URI value that points to a list of userIDs
+The resource describes the gestural content of the resource it annotates.
 
-### Values expected to be one of these types: 
+### Is an expected value for the following property
 
-[<a href='http://schema.org/URL'> http://schema.org/URL </a>] | 
+[<a href='#annotationType'> annotationType </a>] | 
 
+### Same as: 
 
+[<a href='http://www.language-archives.org/REC/type-20020628.html#description/gestural'> description/gestural </a>] | 
 
-### Used on these types: 
-
-[<a href='#DataReuseLicense'> DataReuseLicense </a>] | 
-
-
-
-
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="AccessControlList"  style="border-style: solid">
-
-## Defined Term: AccessControlList
-
-License grants access to data based on a list of approved users, specified using the property accessControlList
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -2021,19 +2607,6 @@ A data steward or administrator is expected to use an access control system to i
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="AuthorizedAccess"  style="border-style: solid">
-
-## Defined Term: AuthorizedAccess
-
-Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission
-
-### Is an expected value for the following property
-
-[<a href='#access'> access </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
 <div id="SelfAuthorization"  style="border-style: solid">
 
 ## Defined Term: SelfAuthorization
@@ -2047,33 +2620,25 @@ A user can be authorized to access data by clicking that they agree to a license
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="AccessTypes"  style="border-style: solid">
+<div id="Oratory"  style="border-style: solid">
 
-## Defined Term Set: AccessTypes
+## Defined Term: Oratory
 
-Set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorized) access
+The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.
 
-### Has defined terms[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] | 
+### Same as: 
 
-</div><br>
-<a href="#top">Top of page</a>
+[<a href='http://www.language-archives.org/REC/type-20020628.html#text/orratory'> text/orratory </a>] | 
 
-<div id="AuthorizationWorkflows"  style="border-style: solid">
-
-## Defined Term Set: AuthorizationWorkflows
-
-Set of DefinedTerms for access authorization mechanisms - some of these may be combined - eg AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant
-
-### Has defined terms[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="authorizationWorkflow"  style="border-style: solid">
+<div id="access"  style="border-style: solid">
 
-## Property: authorizationWorkflow
+## Property: access
 
-By what process is a user granted authorization to a license
+Is this an open or restricted access license
 
 ### Values expected to be one of these types: 
 
@@ -2089,11 +2654,35 @@ By what process is a user granted authorization to a license
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
+[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] | 
 
 
 
 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="AccessTypes"  style="border-style: solid">
+
+## Defined Term Set: AccessTypes
+
+Set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorized) access
+
+### Has defined terms[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="AuthorizedAccess"  style="border-style: solid">
+
+## Defined Term: AuthorizedAccess
+
+Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission
+
+### Is an expected value for the following property
+
+[<a href='#access'> access </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -2111,55 +2700,11 @@ Data covered by this license may be accessed as long as the license is served al
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="IndexTypes"  style="border-style: solid">
+<div id="AccessControlList"  style="border-style: solid">
 
-## Defined Term Set: IndexTypes
+## Defined Term: AccessControlList
 
-Set of defined terms for types of indexing, such as FullText
-
-### Has defined terms[<a href='#FullText'> FullText </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="FullText"  style="border-style: solid">
-
-## Defined Term: FullText
-
-A text index which makes the full text of a data resources findable via a search interface
-
-### Is an expected value for the following property
-
-[<a href='#openAccessIndex'> openAccessIndex </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="openAccessIndex"  style="border-style: solid">
-
-## Property: openAccessIndex
-
-One or more public index types allowed by a license, eg FullText indexing may be allowed for discovery even when an item is not 
-
-### Values expected to be one of these types: 
-
-
-
-
-
-### Used on these types: 
-
-[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
-
-
-
-## Values expected to be one of these defined terms: 
-
-[<a href='#FullText'> FullText </a>] | 
-
-
-
-
+License grants access to data based on a list of approved users, specified using the property accessControlList
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -2179,6 +2724,115 @@ undefined
 ### Used on these types: 
 
 [<a href='#DataLicense'> DataLicense </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="Dataset" style="border-style: solid">
+
+## Class: Dataset
+
+A body of structured information describing some topic(s) of interest.
+
+### Subclass of: 
+
+  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+### Properties
+
+[<a href='http://schema.org/name'> http://schema.org/name </a>] | [<a href='http://schema.org/description'> http://schema.org/description </a>] | [<a href='http://schema.org/mentions'> http://schema.org/mentions </a>] | 
+
+:
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="name"  style="border-style: solid">
+
+## Property: name
+
+The name of the item.
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/Thing'> http://schema.org/Thing </a>] | [<a href='http://schema.org/Dataset'> http://schema.org/Dataset </a>] | [<a href='https://purl.archive.org/terms#definedTerm'> definedTerm </a>] | [<a href='http://www.w3.org/2000/01/rdf-schema#Class'> Class </a>] | [<a href='http://schema.org/DefinedTerm'> http://schema.org/DefinedTerm </a>] | [<a href='http://schema.org/DefinedTermSet'> http://schema.org/DefinedTermSet </a>] | [<a href='http://schema.org/URL'> http://schema.org/URL </a>] | [<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="DefinedTerm" style="border-style: solid">
+
+## Class: DefinedTerm
+
+A word, name, acronym, phrase, etc. with a formal definition. Often used in the context of category or subject classification, glossaries or dictionaries, product or creative work types, etc. Use the name property for the term being defined, use termCode if the term has an alpha-numeric code allocated, use description to provide the definition of the term.
+
+### Subclass of: 
+
+  [<a href='http://schema.org/Intangible'> schema:Intangible </a>] | 
+
+
+
+### Properties
+
+[<a href='http://schema.org/name'> http://schema.org/name </a>] | [<a href='http://schema.org/description'> http://schema.org/description </a>] | [<a href='http://schema.org/sameAs'> http://schema.org/sameAs </a>] | [<a href='http://schema.org/inDefinedTermSet'> http://schema.org/inDefinedTermSet </a>] | 
+
+:
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="DefinedTermSet" style="border-style: solid">
+
+## Class: DefinedTermSet
+
+A set of defined terms, for example a set of categories or a classification scheme, a glossary, dictionary or enumeration.
+
+### Subclass of: 
+
+  [<a href='http://schema.org/CreativeWork'> schema:CreativeWork </a>] | 
+
+
+
+### Properties
+
+[<a href='http://schema.org/name'> http://schema.org/name </a>] | [<a href='http://schema.org/description'> http://schema.org/description </a>] | [<a href='http://schema.org/hasDefinedTerm'> http://schema.org/hasDefinedTerm </a>] | 
+
+:
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="description"  style="border-style: solid">
+
+## Property: description
+
+A description of the item.
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/Thing'> http://schema.org/Thing </a>] | [<a href='http://schema.org/Dataset'> http://schema.org/Dataset </a>] | [<a href='https://purl.archive.org/terms#definedTerm'> definedTerm </a>] | [<a href='http://schema.org/DefinedTerm'> http://schema.org/DefinedTerm </a>] | [<a href='http://schema.org/DefinedTermSet'> http://schema.org/DefinedTermSet </a>] | [<a href='http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'> Property </a>] | 
 
 
 
