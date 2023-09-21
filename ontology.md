@@ -1,6 +1,6 @@
 <a name="top" >
 
-# Language Data Ontology
+# Language Data Commons Schema Terms
 
 This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://purl.archive.org/language-data-commons/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://purl.archive.org/language-data-commons/profile>
 

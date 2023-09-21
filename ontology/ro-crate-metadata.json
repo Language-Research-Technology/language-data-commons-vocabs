@@ -55,7 +55,7 @@
     {
       "@id": "./",
       "@type": "Dataset",
-      "name": "Language Data Ontology",
+      "name": "Language Data Commons Schema Terms",
       "description": "This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://purl.archive.org/language-data-commons/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://purl.archive.org/language-data-commons/profile>",
       "mentions": [
         {
@@ -1643,7 +1643,6 @@
         "@id": "http://schema.org/CreativeWork"
       }
     },
-   
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms",
       "@type": "DefinedTermSet",
@@ -1828,7 +1827,6 @@
         "@id": "https://purl.archive.org/language-data-commons/terms#Session"
       }
     },
-
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#WhistledLanguage",
       "@type": "DefinedTerm",
@@ -1836,6 +1834,18 @@
       "description": "The resource contains data for which the medium of interaction was whistling.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/Oratory",
+      "@type": "DefinedTerm",
+      "name": "Oratory",
+      "description": "The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/orratory"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
       }
     },
     {
@@ -1937,8 +1947,6 @@
         "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
       }
     },
-   
-   
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#reviewDate",
       "@type": "rdf:Property",
@@ -1947,18 +1955,6 @@
       "rdfs:comment": "The date that this license should be reviewed",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/Oratory",
-      "@type": "DefinedTerm",
-      "name": "Oratory",
-      "description": "The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.",
-      "sameAs": {
-        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/orratory"
-      },
-      "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
       }
     }
   ]
