@@ -26,13 +26,16 @@
       "rangeIncludes": "http://schema.org/rangeIncludes",
       "definedTermSet": "https://purl.archive.org/terms#definedTermSet",
       "example": "https://purl.archive.org/terms#example",
-      "schema:source": "https://purl.archive.org/terms#schema:source",
+      "source": "https://purl.archive.org/terms#source",
       "Comment": "http://schema.org/Comment",
       "owl:equivalentClass": "https://purl.archive.org/terms#owl:equivalentClass",
       "http://schema.org/source": "http://schema.org/source",
       "owl:equivalentProperty": "https://purl.archive.org/terms#owl:equivalentProperty",
       "rdfs:subPropertyOf": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
-      "schema:isPartOf": "http://schema.org/isPartOf"
+      "isPartOf": "http://schema.org/isPartOf"
+    },
+    {
+      "@id": "@id"
     }
   ],
   "@graph": [
@@ -55,9 +58,6 @@
       "name": "Language Data Ontology",
       "description": "This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://purl.archive.org/language-data-commons/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://purl.archive.org/language-data-commons/profile>",
       "mentions": [
-        {
-          "@id": "#reviewDate"
-        },
         {
           "@id": "http://purl.archive.org/language-data-commons/terms#TimeAligned"
         },
@@ -117,9 +117,6 @@
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Narrative"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Oratory"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Orthographic"
@@ -371,7 +368,7 @@
           "@id": "https://purl.archive.org/terms#example"
         },
         {
-          "@id": "https://purl.archive.org/terms#schema:source"
+          "@id": "https://purl.archive.org/terms#source"
         },
         {
           "@id": "http://schema.org/Comment"
@@ -1646,19 +1643,7 @@
         "@id": "http://schema.org/CreativeWork"
       }
     },
-    {
-      "@id": "http://schema.org/CreativeWork",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "The most generic kind of creative work, including books, movies, photographs, software programs, etc.",
-      "rdfs:label": "CreativeWork",
-      "rdfs:subClassOf": {
-        "@id": "http://schema.org/Thing"
-      },
-      "schema:source": {
-        "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews"
-      },
-      "name": "CreativeWork"
-    },
+   
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms",
       "@type": "DefinedTermSet",
@@ -1713,9 +1698,6 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#Narrative"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Oratory"
-        },
-        {
           "@id": "https://purl.archive.org/language-data-commons/terms#Procedural"
         },
         {
@@ -1723,6 +1705,9 @@
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Thesaurus"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/Oratory"
         }
       ]
     },
@@ -1843,6 +1828,7 @@
         "@id": "https://purl.archive.org/language-data-commons/terms#Session"
       }
     },
+
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#WhistledLanguage",
       "@type": "DefinedTerm",
@@ -1850,18 +1836,6 @@
       "description": "The resource contains data for which the medium of interaction was whistling.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
-      }
-    },
-    {
-      "@id": "#  ",
-      "@type": "DefinedTerm",
-      "name": "Oratory",
-      "description": "The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.",
-      "sameAs": {
-        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/orratory"
-      },
-      "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
       }
     },
     {
@@ -1874,6 +1848,42 @@
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/gestural"
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#AgreeToTerms",
+      "@type": "DefinedTerm",
+      "name": "AgreeToTerms",
+      "description": "A user is expected to explicitly agree to a set of license terms, this may be combined with AccessControlList - to note that even if a user has been pre-approved for a license they must agree to license terms",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByApplication",
+      "@type": "DefinedTerm",
+      "name": "AuthorizationByApplication",
+      "description": "Users may apply for a license via some workflow, such as a form, with the decision being made by a DataSteward or their delegate about whether to grant the license.",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByInvitation",
+      "@type": "DefinedTerm",
+      "name": "AuthorizationByInvitation",
+      "description": "A data steward or administrator is expected to use an access control system to invite users, for example participants, collaborators or students",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#SelfAuthorization",
+      "@type": "DefinedTerm",
+      "name": "SelfAuthorization",
+      "description": "A user can be authorized to access data by clicking that they agree to a license, or filling out a form to check their understanding, that can be validated by a machine and does not require human intervention.",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
       }
     },
     {
@@ -1927,493 +1937,28 @@
         "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
       }
     },
+   
+   
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#AgreeToTerms",
-      "@type": "DefinedTerm",
-      "name": "AgreeToTerms",
-      "description": "A user is expected to explicitly agree to a set of license terms, this may be combined with AccessControlList - to note that even if a user has been pre-approved for a license they must agree to license terms",
-      "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByApplication",
-      "@type": "DefinedTerm",
-      "name": "AuthorizationByApplication",
-      "description": "Users may apply for a license via some workflow, such as a form, with the decision being made by a DataSteward or their delegate about whether to grant the license.",
-      "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByInvitation",
-      "@type": "DefinedTerm",
-      "name": "AuthorizationByInvitation",
-      "description": "A data steward or administrator is expected to use an access control system to invite users, for example participants, collaborators or students",
-      "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#SelfAuthorization",
-      "@type": "DefinedTerm",
-      "name": "SelfAuthorization",
-      "description": "A user can be authorized to access data by clicking that they agree to a license, or filling out a form to check their understanding, that can be validated by a machine and does not require human intervention.",
-      "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
-      }
-    },
-    {
-      "@id": "ttps://purl.archive.org/language-data-commons/terms#reviewDate",
+      "@id": "https://purl.archive.org/language-data-commons/terms#reviewDate",
       "@type": "rdf:Property",
       "name": "reviewDate",
-      "Comment": "The date that this license should be reviewed",
+      "rdfs:label": "reviewDate",
+      "rdfs:comment": "The date that this license should be reviewed",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
       }
     },
     {
-      "@id": "http://schema.org/Dataset",
-      "@type": "rdfs:Class",
-      "owl:equivalentClass": [
-        {
-          "@id": "dcmitype:Dataset"
-        },
-        {
-          "@id": "dcat:Dataset"
-        },
-        {
-          "@id": "void:Dataset"
-        }
-      ],
-      "rdfs:comment": "A body of structured information describing some topic(s) of interest.",
-      "rdfs:label": "Dataset",
-      "rdfs:subClassOf": {
-        "@id": "http://schema.org/CreativeWork"
+      "@id": "https://purl.archive.org/language-data-commons/Oratory",
+      "@type": "DefinedTerm",
+      "name": "Oratory",
+      "description": "The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.",
+      "sameAs": {
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/orratory"
       },
-      "http://schema.org/source": {
-        "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_DatasetClass"
-      }
-    },
-    {
-      "@id": "http://schema.org/Thing",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "The most generic type of item.",
-      "rdfs:label": "Thing"
-    },
-    {
-      "@id": "http://schema.org/name",
-      "@type": "rdf:Property",
-      "owl:equivalentProperty": {
-        "@id": "dcterms:title"
-      },
-      "rdfs:comment": "The name of the item.",
-      "rdfs:label": "name",
-      "rdfs:subPropertyOf": {
-        "@id": "rdfs:label"
-      },
-      "domainIncludes": [
-        {
-          "@id": "http://schema.org/Thing"
-        },
-        {
-          "@id": "http://schema.org/Dataset"
-        },
-        {
-          "@id": "https://purl.archive.org/terms#definedTerm"
-        },
-        {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
-        },
-        {
-          "@id": "http://schema.org/DefinedTerm"
-        },
-        {
-          "@id": "http://schema.org/DefinedTermSet"
-        },
-        {
-          "@id": "http://schema.org/URL"
-        },
-        {
-          "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-        }
-      ],
-      "rangeIncludes": []
-    },
-    {
-      "@id": "http://schema.org/description",
-      "@type": "rdf:Property",
-      "owl:equivalentProperty": {
-        "@id": "dcterms:description"
-      },
-      "rdfs:comment": "A description of the item.",
-      "rdfs:label": "description",
-      "domainIncludes": [
-        {
-          "@id": "http://schema.org/Thing"
-        },
-        {
-          "@id": "http://schema.org/Dataset"
-        },
-        {
-          "@id": "https://purl.archive.org/terms#definedTerm"
-        },
-        {
-          "@id": "http://schema.org/DefinedTerm"
-        },
-        {
-          "@id": "http://schema.org/DefinedTermSet"
-        },
-        {
-          "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-        }
-      ],
-      "rangeIncludes": []
-    },
-    {
-      "@id": "http://purl.org/dc/terms/conformsTo",
-      "@type": "rdf:Property",
-      "name": "conformsTo",
-      "rdfs:label": "conformsTo",
-      "rdfs:comment": "...",
-      "rangeIncludes": [],
-      "domainIncludes": {
-        "@id": "http://schema.org/CreativeWork"
-      }
-    },
-    {
-      "@id": "http://schema.org/about",
-      "@type": "rdf:Property",
-      "name": "about",
-      "rdfs:label": "about",
-      "rdfs:comment": "...",
-      "rangeIncludes": {
-        "@id": "http://schema.org/Dataset"
-      },
-      "domainIncludes": {
-        "@id": "http://schema.org/CreativeWork"
-      }
-    },
-    {
-      "@id": "http://schema.org/identifier",
-      "@type": "rdf:Property",
-      "name": "identifier",
-      "rdfs:label": "identifier",
-      "rdfs:comment": "...",
-      "rangeIncludes": [],
-      "domainIncludes": {
-        "@id": "http://schema.org/CreativeWork"
-      }
-    },
-    {
-      "@id": "http://schema.org/mentions",
-      "@type": "rdf:Property",
-      "name": "mentions",
-      "rdfs:label": "mentions",
-      "rdfs:comment": "...",
-      "rangeIncludes": [
-        {
-          "@id": "https://purl.archive.org/terms#definedTerm"
-        },
-        {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
-        },
-        {
-          "@id": "http://schema.org/DefinedTerm"
-        },
-        {
-          "@id": "http://schema.org/DefinedTermSet"
-        },
-        {
-          "@id": "http://schema.org/URL"
-        },
-        {
-          "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-        }
-      ],
-      "domainIncludes": {
-        "@id": "http://schema.org/Dataset"
-      }
-    },
-    {
-      "@id": "http://schema.org/DefinedTerm",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A word, name, acronym, phrase, etc. with a formal definition. Often used in the context of category or subject classification, glossaries or dictionaries, product or creative work types, etc. Use the name property for the term being defined, use termCode if the term has an alpha-numeric code allocated, use description to provide the definition of the term.",
-      "rdfs:label": "DefinedTerm",
-      "rdfs:subClassOf": {
-        "@id": "schema:Intangible"
-      },
-      "schema:isPartOf": {
-        "@id": "http://pending.schema.org"
-      },
-      "schema:source": {
-        "@id": "https://github.com/schemaorg/schemaorg/issues/894"
-      }
-    },
-    {
-      "@id": "http://schema.org/DefinedTermSet",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A set of defined terms, for example a set of categories or a classification scheme, a glossary, dictionary or enumeration.",
-      "rdfs:label": "DefinedTermSet",
-      "rdfs:subClassOf": {
-        "@id": "schema:CreativeWork"
-      },
-      "schema:isPartOf": {
-        "@id": "http://pending.schema.org"
-      },
-      "schema:source": {
-        "@id": "https://github.com/schemaorg/schemaorg/issues/894"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/terms#definedTerm",
-      "@type": "rdfs:Class",
-      "name": "definedTerm",
-      "rdfs:label": "definedTerm",
-      "rdfs:comment": "..."
-    },
-    {
-      "@id": "http://schema.org/sameAs",
-      "@type": "rdf:Property",
-      "name": "sameAs",
-      "rdfs:label": "sameAs",
-      "rdfs:comment": "...",
-      "rangeIncludes": {
-        "@id": "http://schema.org/URL"
-      },
-      "domainIncludes": [
-        {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
-        },
-        {
-          "@id": "http://schema.org/DefinedTerm"
-        },
-        {
-          "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-        }
-      ]
-    },
-    {
-      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-      "@type": "rdf:Property",
-      "name": "rdfs:label",
-      "rdfs:label": "rdfs:label",
-      "rdfs:comment": "...",
-      "rangeIncludes": [],
-      "domainIncludes": [
-        {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
-        },
-        {
-          "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-        }
-      ]
-    },
-    {
-      "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
-      "@type": "rdf:Property",
-      "name": "rdfs:comment",
-      "rdfs:label": "rdfs:comment",
-      "rdfs:comment": "...",
-      "rangeIncludes": [],
-      "domainIncludes": [
-        {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
-        },
-        {
-          "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-        }
-      ]
-    },
-    {
-      "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-      "@type": "rdf:Property",
-      "name": "rdfs:subClassOf",
-      "rdfs:label": "rdfs:subClassOf",
-      "rdfs:comment": "...",
-      "rangeIncludes": [
-        {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
-        },
-        {
-          "@id": "http://schema.org/URL"
-        }
-      ],
-      "domainIncludes": {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
-      }
-    },
-    {
-      "@id": "http://schema.org/inDefinedTermSet",
-      "@type": "rdf:Property",
-      "name": "inDefinedTermSet",
-      "rdfs:label": "inDefinedTermSet",
-      "rdfs:comment": "...",
-      "rangeIncludes": [
-        {
-          "@id": "http://schema.org/DefinedTermSet"
-        },
-        {
-          "@id": "http://schema.org/URL"
-        }
-      ],
-      "domainIncludes": {
-        "@id": "http://schema.org/DefinedTerm"
-      }
-    },
-    {
-      "@id": "http://schema.org/hasDefinedTerm",
-      "@type": "rdf:Property",
-      "name": "hasDefinedTerm",
-      "rdfs:label": "hasDefinedTerm",
-      "rdfs:comment": "...",
-      "rangeIncludes": [
-        {
-          "@id": "http://schema.org/DefinedTerm"
-        },
-        {
-          "@id": "http://schema.org/URL"
-        }
-      ],
-      "domainIncludes": {
-        "@id": "http://schema.org/DefinedTermSet"
-      }
-    },
-    {
-      "@id": "http://schema.org/domainIncludes",
-      "@type": "rdf:Property",
-      "name": "domainIncludes",
-      "rdfs:label": "domainIncludes",
-      "rdfs:comment": "...",
-      "rangeIncludes": [
-        {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
-        },
-        {
-          "@id": "http://schema.org/URL"
-        }
-      ],
-      "domainIncludes": {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-      }
-    },
-    {
-      "@id": "http://schema.org/rangeIncludes",
-      "@type": "rdf:Property",
-      "name": "rangeIncludes",
-      "rdfs:label": "rangeIncludes",
-      "rdfs:comment": "...",
-      "rangeIncludes": [
-        {
-          "@id": "http://schema.org/URL"
-        },
-        {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
-        }
-      ],
-      "domainIncludes": {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/terms#definedTermSet",
-      "@type": "rdf:Property",
-      "name": "definedTermSet",
-      "rdfs:label": "definedTermSet",
-      "rdfs:comment": "...",
-      "rangeIncludes": {
-        "@id": "http://schema.org/DefinedTermSet"
-      },
-      "domainIncludes": {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/terms#example",
-      "@type": "rdf:Property",
-      "name": "example",
-      "rdfs:label": "example",
-      "rdfs:comment": "...",
-      "rangeIncludes": [],
-      "domainIncludes": {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/terms#schema:source",
-      "@type": "rdf:Property",
-      "name": "schema:source",
-      "rdfs:label": "schema:source",
-      "rdfs:comment": "...",
-      "rangeIncludes": [],
-      "domainIncludes": {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
-      }
-    },
-    {
-      "@id": "http://schema.org/Comment",
-      "@type": "rdf:Property",
-      "name": "Comment",
-      "rdfs:label": "Comment",
-      "rdfs:comment": "...",
-      "rangeIncludes": [],
-      "domainIncludes": {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/terms#owl:equivalentClass",
-      "@type": "rdf:Property",
-      "name": "owl:equivalentClass",
-      "rdfs:label": "owl:equivalentClass",
-      "rdfs:comment": "...",
-      "rangeIncludes": [],
-      "domainIncludes": {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
-      }
-    },
-    {
-      "@id": "http://schema.org/source",
-      "@type": "rdf:Property",
-      "name": "http://schema.org/source",
-      "rdfs:label": "http://schema.org/source",
-      "rdfs:comment": "...",
-      "rangeIncludes": [],
-      "domainIncludes": {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/terms#owl:equivalentProperty",
-      "@type": "rdf:Property",
-      "name": "owl:equivalentProperty",
-      "rdfs:label": "owl:equivalentProperty",
-      "rdfs:comment": "...",
-      "rangeIncludes": [],
-      "domainIncludes": {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-      }
-    },
-    {
-      "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
-      "@type": "rdf:Property",
-      "name": "rdfs:subPropertyOf",
-      "rdfs:label": "rdfs:subPropertyOf",
-      "rdfs:comment": "...",
-      "rangeIncludes": [],
-      "domainIncludes": {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-      }
-    },
-    {
-      "@id": "http://schema.org/isPartOf",
-      "@type": "rdf:Property",
-      "name": "schema:isPartOf",
-      "rdfs:label": "schema:isPartOf",
-      "rdfs:comment": "...",
-      "rangeIncludes": [],
-      "domainIncludes": {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
       }
     }
   ]
