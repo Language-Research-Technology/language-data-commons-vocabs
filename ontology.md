@@ -10,7 +10,7 @@ This is a language data Schema, in the style of the Schema.org schema. It is bas
 
 ## Properties
 
-<a href="#accessControlList">accessControlList</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#modality">modality</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#access">access</a> | <a href="#reviewDate">reviewDate</a>
+<a href="#accessControlList">accessControlList</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#communicationMode">communicationMode</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#access">access</a> | <a href="#reviewDate">reviewDate</a>
 
 ## DefinedTerms
 
@@ -20,7 +20,7 @@ This is a language data Schema, in the style of the Schema.org schema. It is bas
 
 ## DefinedTermsSets
 
-<a href="#IndexTypes">IndexTypes</a> | <a href="#ModalityTerms">ModalityTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#AccessTypes">AccessTypes</a>
+<a href="#IndexTypes">IndexTypes</a> | <a href="#CommunicationModeTerms">CommunicationModeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#AccessTypes">AccessTypes</a>
 
 <div id="Annotation" style="border-style: solid">
 
@@ -226,7 +226,7 @@ The resource contains non-linguistic gestural communication (ie not sign languag
 
 ### Is an expected value for the following property
 
-[<a href='#modality'> modality </a>] | 
+[<a href='#communicationMode'> communicationMode </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -531,7 +531,7 @@ The resource contains data for which the medium of interaction was signing.
 
 ### Is an expected value for the following property
 
-[<a href='#modality'> modality </a>] | 
+[<a href='#communicationMode'> communicationMode </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -544,7 +544,7 @@ The resource contains data for which the medium of interaction was signing.
 
 ### Is an expected value for the following property
 
-[<a href='#modality'> modality </a>] | 
+[<a href='#communicationMode'> communicationMode </a>] | 
 
 ### Same as: 
 
@@ -562,7 +562,7 @@ The resource contains data for which the medium of interaction was speech
 
 ### Is an expected value for the following property
 
-[<a href='#modality'> modality </a>] | 
+[<a href='#communicationMode'> communicationMode </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -674,7 +674,7 @@ TThe resource contains data for which the medium of interaction was writing.
 
 ### Is an expected value for the following property
 
-[<a href='#modality'> modality </a>] | 
+[<a href='#communicationMode'> communicationMode </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -1402,9 +1402,9 @@ The language(s) that this annotation resource is about
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="modality"  style="border-style: solid">
+<div id="communicationMode"  style="border-style: solid">
 
-## Property: modality
+## Property: communicationMode
 
 The mode (spoken, written, signed etc) of this resource. There may be more than one value for this property.
 
@@ -1875,11 +1875,34 @@ The participant produced a translation of this or a related resource.
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="ModalityTerms"  style="border-style: solid">
+<div id="dateFreeText"  style="border-style: solid">
 
-## Defined Term Set: ModalityTerms
+## Property: dateFreeText
 
-Set of expected values for modality types
+Date information which cannot be put in one of that standard date formats, eg "mid 1970s" or it is not clear, for example if it is a creation or publication date.
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="CommunicationModeTerms"  style="border-style: solid">
+
+## Defined Term Set: CommunicationModeTerms
+
+Set of expected values for  the property communicationMode 
 
 ### Has defined terms[<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
 
@@ -1999,7 +2022,7 @@ The resource contains data for which the medium of interaction was whistling.
 
 ### Is an expected value for the following property
 
-[<a href='#modality'> modality </a>] | 
+[<a href='#communicationMode'> communicationMode </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
