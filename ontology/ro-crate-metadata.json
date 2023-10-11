@@ -36,6 +36,12 @@
     },
     {
       "@id": "@id"
+    },
+    {
+      "definedTermSet": "http://schema.org/definedTermSet"
+    },
+    {
+      "label": "label"
     }
   ],
   "@graph": [
@@ -272,7 +278,7 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#modality"
+          "@id": "https://purl.archive.org/language-data-commons/terms#communicationMode"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#openAccessIndex"
@@ -387,8 +393,14 @@
         },
         {
           "@id": "http://schema.org/isPartOf"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#dateFreeText"
         }
-      ]
+      ],
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/profiles/schema/1.0"
+      }
     },
     {
       "@id": "http://purl.archive.org/language-data-commons/terms#TimeAligned",
@@ -1310,10 +1322,10 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#modality",
+      "@id": "https://purl.archive.org/language-data-commons/terms#communicationMode",
       "@type": "rdf:Property",
-      "name": "modality",
-      "rdfs:label": "modality",
+      "name": "communicationMode",
+      "rdfs:label": "communicationMode",
       "rdfs:comment": "The mode (spoken, written, signed etc) of this resource. There may be more than one value for this property.",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
@@ -1644,10 +1656,20 @@
       }
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/terms#dateFreeText",
+      "@type": "rdf:Property",
+      "name": "dateFreeText",
+      "rdfs:label": "dateFreeText",
+      "rdfs:comment": "Date information which cannot be put in one of that standard date formats, eg \"mid 1970s\" or it is not clear, for example if it is a creation or publication date.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
       "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms",
       "@type": "DefinedTermSet",
-      "name": "ModalityTerms",
-      "description": "Set of expected values for modality types",
+      "name": "CommunicationModeTerms",
+      "description": "Set of expected values for  the property communicationMode ",
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Gesture"
