@@ -14,7 +14,7 @@ This is a language data Schema, in the style of the Schema.org schema. It is bas
 
 ## DefinedTerms
 
-<a href="#Coded">Coded</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignLanguage">SignLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#FullText">FullText</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#Oratory">Oratory</a> | <a href="#Gestural">Gestural</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#SelfAuthorization">SelfAuthorization</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#OpenAccess">OpenAccess</a> | <a href="#AccessControlList">AccessControlList</a>
+<a href="#Coded">Coded</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignedLanguage">SignedLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#FullText">FullText</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#Oratory">Oratory</a> | <a href="#Gestural">Gestural</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#SelfAuthorization">SelfAuthorization</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#OpenAccess">OpenAccess</a> | <a href="#AccessControlList">AccessControlList</a>
 
 
 
@@ -523,9 +523,9 @@ CANT RESOLVE  #https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="SignLanguage"  style="border-style: solid">
+<div id="SignedLanguage"  style="border-style: solid">
 
-## Defined Term: SignLanguage
+## Defined Term: SignedLanguage
 
 The resource contains data for which the medium of interaction was signing.
 
@@ -1422,7 +1422,7 @@ The mode (spoken, written, signed etc) of this resource. There may be more than 
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
+[<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
 
 
 
@@ -1904,7 +1904,7 @@ Date information which cannot be put in one of that standard date formats, eg "m
 
 Set of expected values for  the property communicationMode 
 
-### Has defined terms[<a href='#Gesture'> Gesture </a>] | [<a href='#SignLanguage'> SignLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
+### Has defined terms[<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>

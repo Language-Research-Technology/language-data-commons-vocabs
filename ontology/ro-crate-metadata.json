@@ -161,7 +161,7 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#Session"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#SignLanguage"
+          "@id": "https://purl.archive.org/language-data-commons/terms#SignedLanguage"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Song"
@@ -754,9 +754,9 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#SignLanguage",
+      "@id": "https://purl.archive.org/language-data-commons/terms#SignedLanguage",
       "@type": "DefinedTerm",
-      "name": "SignLanguage",
+      "name": "SignedLanguage",
       "description": "The resource contains data for which the medium of interaction was signing.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
@@ -1675,7 +1675,7 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#Gesture"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#SignLanguage"
+          "@id": "https://purl.archive.org/language-data-commons/terms#SignedLanguage"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Song"
