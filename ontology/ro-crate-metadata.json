@@ -170,7 +170,7 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#Syntactic"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria"
+          "@id": "https://purl.archive.org/language-data-commons/terms#MaterialSelectionCriteria"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Thesaurus"
@@ -780,9 +780,9 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria",
+      "@id": "https://purl.archive.org/language-data-commons/terms#MaterialSelectionCriteria",
       "@type": "DefinedTerm",
-      "name": "TextSelectionCriteria",
+      "name": "MaterialSelectionCriteria",
       "description": "A description of the criteria used to select texts in a collection",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocolTypeTerms"
@@ -1742,7 +1742,7 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#ElicitationTask"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria"
+          "@id": "https://purl.archive.org/language-data-commons/terms#MaterialSelectionCriteria"
         }
       ]
     },

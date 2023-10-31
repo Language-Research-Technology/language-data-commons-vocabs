@@ -177,7 +177,7 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#Syntactic"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria"
+          "@id": "https://purl.archive.org/language-data-commons/terms#MaterialSelectionCriteria"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Thesaurus"
@@ -397,6 +397,12 @@
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#dateFreeText"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#MaterialTypes"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#materialType"
         }
       ],
       "conformsTo": {
@@ -411,7 +417,7 @@
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#Annotation",
-      "@type": "rdfs:Class",
+      "@type": "DefinedTerm",
       "name": "Annotation",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
@@ -477,7 +483,7 @@
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterial",
-      "@type": "rdfs:Class",
+      "@type": "DefinedTerm",
       "name": "DerivedMaterial",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
@@ -670,7 +676,7 @@
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial",
-      "@type": "rdfs:Class",
+      "@type": "DefinedTerm",
       "name": "PrimaryMaterial",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
@@ -781,9 +787,9 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria",
+      "@id": "https://purl.archive.org/language-data-commons/terms#MaterialSelectionCriteria",
       "@type": "DefinedTerm",
-      "name": "TextSelectionCriteria",
+      "name": "MaterialSelectionCriteria",
       "description": "A description of the criteria used to select texts in a collection",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocolTypeTerms"
@@ -1650,6 +1656,36 @@
       }
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/terms#MaterialTypes",
+      "@type": "DefinedTermSet",
+      "name": "MaterialTypes",
+      "description": "Set of terms describing the relationship of a resource to the original data source",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Annotation"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterial"
+        }
+      ]
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#materialType",
+      "@type": "rdf:Property",
+      "name": "materialType",
+      "rdfs:label": "materialType",
+      "rdfs:comment": "Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation",
+      "domainIncludes": {
+        "@id": "http://schema.org/File"
+      },
+      "definedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#MaterialTypes"
+      }
+    },
+    {
       "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "name": "CommunicationModeTerms",
@@ -1726,7 +1762,7 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#ElicitationTask"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria"
+          "@id": "https://purl.archive.org/language-data-commons/terms#MaterialSelectionCriteria"
         }
       ]
     },
@@ -2111,7 +2147,7 @@ table.table {
                         
                         <li><a href="#https%3A//purl.archive.org/language-data-commons/terms%23Syntactic">Syntactic</a></li>
                         
-                        <li><a href="#https%3A//purl.archive.org/language-data-commons/terms%23TextSelectionCriteria">TextSelectionCriteria</a></li>
+                        <li><a href="#https%3A//purl.archive.org/language-data-commons/terms%23MaterialSelectionCriteria">MaterialSelectionCriteria</a></li>
                         
                         <li><a href="#https%3A//purl.archive.org/language-data-commons/terms%23Thesaurus">Thesaurus</a></li>
                         
@@ -2252,7 +2288,7 @@ table.table {
                 
                         <details style='margin-left: 3%'>
                             <summary>
-                                <a href="https://purl.archive.org/terms#example">https://purl.archive.org/terms#example</a> -to- <a href="#https%3A//purl.archive.org/language-data-commons/terms%23dateFreeText">dateFreeText</a>
+                                <a href="https://purl.archive.org/terms#example">https://purl.archive.org/terms#example</a> -to- <a href="#https%3A//purl.archive.org/language-data-commons/terms%23materialType">materialType</a>
                             </summary>
                             <ul>
                         <li><a href="https://purl.archive.org/terms#example">https://purl.archive.org/terms#example</a></li>
@@ -2272,6 +2308,10 @@ table.table {
                         <li><a href="http://schema.org/isPartOf">http://schema.org/isPartOf</a></li>
                         
                         <li><a href="#https%3A//purl.archive.org/language-data-commons/terms%23dateFreeText">dateFreeText</a></li>
+                        
+                        <li><a href="#https%3A//purl.archive.org/language-data-commons/terms%23MaterialTypes">MaterialTypes</a></li>
+                        
+                        <li><a href="#https%3A//purl.archive.org/language-data-commons/terms%23materialType">materialType</a></li>
                         </ul>
                         </details>
                 </td>
@@ -2334,7 +2374,7 @@ table.table {
             <td style='text-align:left'><span>Annotation</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>rdfs:Class</span></td>
+            <td style='text-align:left'><span>DefinedTerm</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">sameAs<span>&nbsp;</span><a href="http://schema.org/sameAs">[?]</a></th>
             <td style='text-align:left'><a href="http://www.language-archives.org/REC/type-20020628.html#annotation">http://www.language-archives.org/REC/type-20020628.html#annotation</a></td>
@@ -2360,6 +2400,9 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">rangeIncludes<span>&nbsp;</span><a href="http://schema.org/rangeIncludes">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//purl.archive.org/language-data-commons/terms%23derivationOf">derivationOf</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasDefinedTerm<span>&nbsp;</span><a href="http://schema.org/hasDefinedTerm">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//purl.archive.org/language-data-commons/terms%23MaterialTypes">MaterialTypes</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -2586,7 +2629,7 @@ table.table {
             <td style='text-align:left'><span>DerivedMaterial</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>rdfs:Class</span></td>
+            <td style='text-align:left'><span>DefinedTerm</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">sameAs<span>&nbsp;</span><a href="http://schema.org/sameAs">[?]</a></th>
             <td style='text-align:left'><a href="http://www.language-archives.org/REC/type-20020628.html#text">http://www.language-archives.org/REC/type-20020628.html#text</a></td>
@@ -2608,6 +2651,9 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">rangeIncludes<span>&nbsp;</span><a href="http://schema.org/rangeIncludes">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//purl.archive.org/language-data-commons/terms%23hasDerivation">hasDerivation</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasDefinedTerm<span>&nbsp;</span><a href="http://schema.org/hasDefinedTerm">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//purl.archive.org/language-data-commons/terms%23MaterialTypes">MaterialTypes</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -3264,7 +3310,7 @@ table.table {
             <td style='text-align:left'><span>PrimaryMaterial</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>rdfs:Class</span></td>
+            <td style='text-align:left'><span>DefinedTerm</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">sameAs<span>&nbsp;</span><a href="http://schema.org/sameAs">[?]</a></th>
             <td style='text-align:left'><a href="http://www.language-archives.org/REC/type-20020628.html#text">http://www.language-archives.org/REC/type-20020628.html#text</a></td>
@@ -3294,6 +3340,9 @@ table.table {
                         
                         <li><a href="#https%3A//purl.archive.org/language-data-commons/terms%23hasDerivation">hasDerivation</a></li>
                         </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasDefinedTerm<span>&nbsp;</span><a href="http://schema.org/hasDefinedTerm">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//purl.archive.org/language-data-commons/terms%23MaterialTypes">MaterialTypes</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -3644,20 +3693,20 @@ table.table {
         </div>
         <hr/><br/><br/>
            <div>
-            <h3><a href="https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria">Go to: </a> TextSelectionCriteria</h3>
+            <h3><a href="https://purl.archive.org/language-data-commons/terms#MaterialSelectionCriteria">Go to: </a> MaterialSelectionCriteria</h3>
             
             
             
             
-        <div id="https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria">
+        <div id="https://purl.archive.org/language-data-commons/terms#MaterialSelectionCriteria">
             
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><a href="https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria">https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria</a></td>
+            <td style='text-align:left'><a href="https://purl.archive.org/language-data-commons/terms#MaterialSelectionCriteria">https://purl.archive.org/language-data-commons/terms#MaterialSelectionCriteria</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>TextSelectionCriteria</span></td>
+            <td style='text-align:left'><span>MaterialSelectionCriteria</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>DefinedTerm</span></td>
@@ -5875,6 +5924,87 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">domainIncludes<span>&nbsp;</span><a href="http://schema.org/domainIncludes">[?]</a></th>
             <td style='text-align:left'><a href="http://schema.org/CreativeWork">http://schema.org/CreativeWork</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">mentions<span>&nbsp;</span><a href="http://schema.org/mentions">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Language Data Commons Schema Terms</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3><a href="https://purl.archive.org/language-data-commons/terms#MaterialTypes">Go to: </a> MaterialTypes</h3>
+            
+            
+            
+            
+        <div id="https://purl.archive.org/language-data-commons/terms#MaterialTypes">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><a href="https://purl.archive.org/language-data-commons/terms#MaterialTypes">https://purl.archive.org/language-data-commons/terms#MaterialTypes</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>MaterialTypes</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>DefinedTermSet</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>Set of terms describing the relationship of a resource to the original data source</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasDefinedTerm<span>&nbsp;</span><a href="http://schema.org/hasDefinedTerm">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//purl.archive.org/language-data-commons/terms%23PrimaryMaterial">PrimaryMaterial</a></li>
+                        
+                        <li><a href="#https%3A//purl.archive.org/language-data-commons/terms%23Annotation">Annotation</a></li>
+                        
+                        <li><a href="#https%3A//purl.archive.org/language-data-commons/terms%23DerivedMaterial">DerivedMaterial</a></li>
+                        </ul></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">mentions<span>&nbsp;</span><a href="http://schema.org/mentions">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Language Data Commons Schema Terms</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">definedTermSet<span>&nbsp;</span><a href="http://schema.org/definedTermSet">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//purl.archive.org/language-data-commons/terms%23materialType">materialType</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3><a href="https://purl.archive.org/language-data-commons/terms#materialType">Go to: </a> materialType</h3>
+            
+            
+            
+            
+        <div id="https://purl.archive.org/language-data-commons/terms#materialType">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><a href="https://purl.archive.org/language-data-commons/terms#materialType">https://purl.archive.org/language-data-commons/terms#materialType</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>materialType</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>rdf:Property</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">rdfs:label<span>&nbsp;</span><a href="http://www.w3.org/2000/01/rdf-schema#label">[?]</a></th>
+            <td style='text-align:left'><span>materialType</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">rdfs:comment<span>&nbsp;</span><a href="http://www.w3.org/2000/01/rdf-schema#comment">[?]</a></th>
+            <td style='text-align:left'><span>Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">domainIncludes<span>&nbsp;</span><a href="http://schema.org/domainIncludes">[?]</a></th>
+            <td style='text-align:left'><a href="http://schema.org/File">http://schema.org/File</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">definedTermSet<span>&nbsp;</span><a href="http://schema.org/definedTermSet">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//purl.archive.org/language-data-commons/terms%23MaterialTypes">MaterialTypes</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">mentions<span>&nbsp;</span><a href="http://schema.org/mentions">[?]</a></th>
             <td style='text-align:left'><a href="#./">Language Data Commons Schema Terms</a></td>
