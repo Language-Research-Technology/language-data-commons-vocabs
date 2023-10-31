@@ -131,9 +131,6 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#PartOfSpeech"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#PersonSnapshot"
-        },
-        {
           "@id": "https://purl.archive.org/language-data-commons/terms#Phonemic"
         },
         {
@@ -288,9 +285,6 @@
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#performer"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#person"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#photographer"
@@ -630,19 +624,6 @@
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech"
       }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#PersonSnapshot",
-      "@type": "rdfs:Class",
-      "name": "PersonSnapshot",
-      "rdfs:comment": "This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class is to capture the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time.",
-      "rdfs:label": "PersonSnapshot",
-      "rdfs:subClassOf": [
-        {
-          "@id": "http://schema.org/Person"
-        },
-        "http://schema.org/Role"
-      ]
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#Phonemic",
@@ -1304,8 +1285,17 @@
       "@type": "rdf:Property",
       "name": "isDeIdentified",
       "rdfs:label": "isDeIdentified",
-      "domainIncludes": "[{\"@id\":\"http://schema.org/CreativeWork\"}, {\"@id\":\"http://schema.org/Person\"}, https://purl.archive.org/language-data-commons/terms#PersonSnapshot]",
-      "rangeIncludes": "http://schema.org/Boolean",
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ],
+      "rangeIncludes": {
+        "@id": "http://schema.org/Boolean"
+      },
       "rdfs:comment": "The data in this item has had identifying information removed, or in the case of a person the name is an alias"
     },
     {
@@ -1391,19 +1381,6 @@
           "@id": "http://schema.org/Person"
         }
       ]
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#person",
-      "@type": "rdf:Property",
-      "name": "person",
-      "rdfs:comment": "This property references a Person item which represents the persistent identity of one or more ContributingPerson items.",
-      "rdfs:label": "person",
-      "rangeIncludes": {
-        "@id": "http://schema.org/Person"
-      },
-      "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#PersonSnapshot"
-      }
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#photographer",

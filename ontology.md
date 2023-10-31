@@ -6,11 +6,11 @@ This is a language data Schema, in the style of the Schema.org schema. It is bas
 
 ## Classes
 
-<a href="#Annotation">Annotation</a> | <a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DataDepositLicense">DataDepositLicense</a> | <a href="#DataLicense">DataLicense</a> | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#PersonSnapshot">PersonSnapshot</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a> | <a href="#DataReuseLicense">DataReuseLicense</a>
+<a href="#Annotation">Annotation</a> | <a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DataDepositLicense">DataDepositLicense</a> | <a href="#DataLicense">DataLicense</a> | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a> | <a href="#DataReuseLicense">DataReuseLicense</a>
 
 ## Properties
 
-<a href="#accessControlList">accessControlList</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#communicationMode">communicationMode</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#person">person</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#access">access</a> | <a href="#reviewDate">reviewDate</a>
+<a href="#accessControlList">accessControlList</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#communicationMode">communicationMode</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#access">access</a> | <a href="#reviewDate">reviewDate</a>
 
 ## DefinedTerms
 
@@ -335,27 +335,6 @@ An annotation which assigns lexical elements of language to classes on the basis
 
 [<a href='http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech'> description/part-of-spoeech </a>] | 
 
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="PersonSnapshot" style="border-style: solid">
-
-## Class: PersonSnapshot
-
-This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class is to capture the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time.
-
-### Subclass of: 
-
-  [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | [<a href='http://schema.org/Role'> http://schema.org/Role </a>] |
-
-
-
-### Properties
-
-[<a href='#person'> person </a>] | 
-
-:
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -1364,13 +1343,13 @@ The data in this item has had identifying information removed, or in the case of
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Boolean'> http://schema.org/Boolean </a>] |
+[<a href='http://schema.org/Boolean'> http://schema.org/Boolean </a>] | 
 
 
 
 ### Used on these types: 
 
-[<a href='[{"@id":"http://schema.org/CreativeWork"}, {"@id":"http://schema.org/Person"}, https://purl.archive.org/language-data-commons/terms#PersonSnapshot]'> [{"@id":"http://schema.org/CreativeWork"}, {"@id":"http://schema.org/Person"}, https://purl.archive.org/language-data-commons/terms#PersonSnapshot] </a>] |
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
 
 
 
@@ -1509,29 +1488,6 @@ The participant performed some portion of a recorded, filmed, or transcribed res
 ### Same as: 
 
 [<a href='http://www.language-archives.org/REC/role.html#performer'> performer </a>] | 
-
-
-
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="person"  style="border-style: solid">
-
-## Property: person
-
-This property references a Person item which represents the persistent identity of one or more ContributingPerson items.
-
-### Values expected to be one of these types: 
-
-[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
-
-
-
-### Used on these types: 
-
-[<a href='#PersonSnapshot'> PersonSnapshot </a>] | 
-
 
 
 
