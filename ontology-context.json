@@ -1,12 +1,9 @@
 {
   "@context": {
-    "Annotation": "https://purl.archive.org/language-data-commons/terms#Annotation",
     "CollectionEvent": "https://purl.archive.org/language-data-commons/terms#CollectionEvent",
     "CollectionProtocol": "https://purl.archive.org/language-data-commons/terms#CollectionProtocol",
     "DataDepositLicense": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense",
     "DataLicense": "https://purl.archive.org/language-data-commons/terms#DataLicense",
-    "DerivedMaterial": "https://purl.archive.org/language-data-commons/terms#DerivedMaterial",
-    "PrimaryMaterial": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial",
     "accessControlList": "https://purl.archive.org/language-data-commons/terms#accessControlList",
     "annotationOf": "https://purl.archive.org/language-data-commons/terms#annotationOf",
     "annotationType": "https://purl.archive.org/language-data-commons/terms#annotationType",
@@ -52,6 +49,7 @@
     "transcriber": "https://purl.archive.org/language-data-commons/terms#transcriber",
     "translator": "https://purl.archive.org/language-data-commons/terms#translator",
     "dateFreeText": "https://purl.archive.org/language-data-commons/terms#dateFreeText",
+    "materialType": "https://purl.archive.org/language-data-commons/terms#materialType",
     "DataReuseLicense": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense",
     "access": "https://purl.archive.org/language-data-commons/terms#access",
     "reviewDate": "https://purl.archive.org/language-data-commons/terms#reviewDate"

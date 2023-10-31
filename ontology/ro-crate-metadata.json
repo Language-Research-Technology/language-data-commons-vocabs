@@ -390,6 +390,12 @@
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#dateFreeText"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#MaterialTypes"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#materialType"
         }
       ],
       "conformsTo": {
@@ -404,7 +410,7 @@
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#Annotation",
-      "@type": "rdfs:Class",
+      "@type": "DefinedTerm",
       "name": "Annotation",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
@@ -470,7 +476,7 @@
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterial",
-      "@type": "rdfs:Class",
+      "@type": "DefinedTerm",
       "name": "DerivedMaterial",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
@@ -663,7 +669,7 @@
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial",
-      "@type": "rdfs:Class",
+      "@type": "DefinedTerm",
       "name": "PrimaryMaterial",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
@@ -1643,6 +1649,23 @@
       }
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/terms#MaterialTypes",
+      "@type": "DefinedTermSet",
+      "name": "MaterialTypes",
+      "description": "Set of terms describing the relationship of a resource to the original data source",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Annotation"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterial"
+        }
+      ]
+    },
+    {
       "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "name": "CommunicationModeTerms",
@@ -1954,6 +1977,19 @@
       "rdfs:comment": "The date that this license should be reviewed",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#materialType",
+      "@type": "rdf:Property",
+      "name": "materialType",
+      "rdfs:label": "materialType",
+      "rdfs:comment": "Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation",
+      "domainIncludes": {
+        "@id": "http://schema.org/File"
+      },
+      "definedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#MaterialTypes"
       }
     }
   ]

@@ -6,44 +6,36 @@ This is a language data Schema, in the style of the Schema.org schema. It is bas
 
 ## Classes
 
-<a href="#Annotation">Annotation</a> | <a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DataDepositLicense">DataDepositLicense</a> | <a href="#DataLicense">DataLicense</a> | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a> | <a href="#DataReuseLicense">DataReuseLicense</a>
+<a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DataDepositLicense">DataDepositLicense</a> | <a href="#DataLicense">DataLicense</a> | <a href="#DataReuseLicense">DataReuseLicense</a>
 
 ## Properties
 
-<a href="#accessControlList">accessControlList</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#communicationMode">communicationMode</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#access">access</a> | <a href="#reviewDate">reviewDate</a>
+<a href="#accessControlList">accessControlList</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#communicationMode">communicationMode</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#materialType">materialType</a> | <a href="#access">access</a> | <a href="#reviewDate">reviewDate</a>
 
 ## DefinedTerms
 
-<a href="#Coded">Coded</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignedLanguage">SignedLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#FullText">FullText</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#Oratory">Oratory</a> | <a href="#Gestural">Gestural</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#SelfAuthorization">SelfAuthorization</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#OpenAccess">OpenAccess</a> | <a href="#AccessControlList">AccessControlList</a>
+<a href="#Annotation">Annotation</a> | <a href="#Coded">Coded</a> | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignedLanguage">SignedLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#TextSelectionCriteria">TextSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#FullText">FullText</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#Oratory">Oratory</a> | <a href="#Gestural">Gestural</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#SelfAuthorization">SelfAuthorization</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#OpenAccess">OpenAccess</a> | <a href="#AccessControlList">AccessControlList</a>
 
 
 
 ## DefinedTermsSets
 
-<a href="#IndexTypes">IndexTypes</a> | <a href="#CommunicationModeTerms">CommunicationModeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#AccessTypes">AccessTypes</a>
+<a href="#IndexTypes">IndexTypes</a> | <a href="#MaterialTypes">MaterialTypes</a> | <a href="#CommunicationModeTerms">CommunicationModeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#AccessTypes">AccessTypes</a>
 
-<div id="Annotation" style="border-style: solid">
+<div id="Annotation"  style="border-style: solid">
 
-## Class: Annotation
+## Defined Term: Annotation
 
-The resource includes material which adds information to some other linguistic record.
+undefined
 
-### Subclass of: 
+### Is an expected value for the following property
 
-  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
-
-
-
-### Properties
-
-[<a href='#annotationType'> annotationType </a>] | [<a href='#linguisticGenre'> linguisticGenre </a>] | 
+[<a href='#materialType'> materialType </a>] | 
 
 ### Same as: 
 
 [<a href='http://www.language-archives.org/REC/type-20020628.html#annotation'> annotation </a>] | 
 
-
-:
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -142,28 +134,20 @@ A licence document for data licensing. This is a superclass of DataReuseLicense 
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="DerivedMaterial" style="border-style: solid">
+<div id="DerivedMaterial"  style="border-style: solid">
 
-## Class: DerivedMaterial
+## Defined Term: DerivedMaterial
 
-This is derived from another source, such as a Primary Material, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)
+undefined
 
-### Subclass of: 
+### Is an expected value for the following property
 
-  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
-
-
-
-### Properties
-
-[<a href='#derivationOf'> derivationOf </a>] | 
+[<a href='#materialType'> materialType </a>] | 
 
 ### Same as: 
 
 [<a href='http://www.language-archives.org/REC/type-20020628.html#text'> text </a>] | 
 
-
-:
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -393,28 +377,20 @@ An annotation which includes information about the sound system of a language, s
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="PrimaryMaterial" style="border-style: solid">
+<div id="PrimaryMaterial"  style="border-style: solid">
 
-## Class: PrimaryMaterial
+## Defined Term: PrimaryMaterial
 
-The object of study, such as a literary work, film, or recording of natural discourse
+undefined
 
-### Subclass of: 
+### Is an expected value for the following property
 
-  [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
-
-
-
-### Properties
-
-[<a href='#hasAnnotation'> hasAnnotation </a>] | [<a href='#hasDerivation'> hasDerivation </a>] | 
+[<a href='#materialType'> materialType </a>] | 
 
 ### Same as: 
 
 [<a href='http://www.language-archives.org/REC/type-20020628.html#text'> text </a>] | 
 
-
-:
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -1846,6 +1822,46 @@ Date information which cannot be put in one of that standard date formats, eg "m
 ### Used on these types: 
 
 [<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="MaterialTypes"  style="border-style: solid">
+
+## Defined Term Set: MaterialTypes
+
+Set of terms describing the relationship of a resource to the original data source
+
+### Has defined terms[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | [<a href='#Annotation'> Annotation </a>] | [<a href='#DerivedMaterial'> DerivedMaterial </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="materialType"  style="border-style: solid">
+
+## Property: materialType
+
+Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/File'> http://schema.org/File </a>] | 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | [<a href='#Annotation'> Annotation </a>] | [<a href='#DerivedMaterial'> DerivedMaterial </a>] | 
 
 
 
