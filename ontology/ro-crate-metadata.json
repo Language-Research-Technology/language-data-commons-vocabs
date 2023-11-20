@@ -406,7 +406,7 @@
       "@id": "http://purl.archive.org/language-data-commons/terms#TimeAligned",
       "@type": "definedTerm",
       "name": "TimeAligned",
-      "description": "The resource contains a written or coded annotation(s) which has data aligning the annotation(s) with a PrimaryMaterial item"
+      "coded": "The resource contains a written or coded annotation(s) which has data aligning the annotation(s) with a PrimaryMaterial item"
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#Annotation",
@@ -416,7 +416,7 @@
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
       },
       "rdfs:label": "Annotation",
-      "rdfs:comment": "The resource includes material which adds information to some other linguistic record.",
+      "description": "The resource includes material which adds information to some other linguistic record.",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
@@ -482,7 +482,7 @@
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
       },
       "rdfs:label": "DerivedMaterial",
-      "rdfs:comment": "This is derived from another source, such as a Primary Material, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)",
+      "description": "This is derived from another source, such as a Primary Material, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
@@ -675,7 +675,7 @@
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
       },
       "rdfs:label": "PrimaryMaterial",
-      "rdfs:comment": "The object of study, such as a literary work, film, or recording of natural discourse",
+      "description": "The object of study, such as a literary work, film, or recording of natural discourse",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
@@ -856,7 +856,7 @@
       "@type": "rdf:Property",
       "name": "accessControlList",
       "rdfs:label": "accessControlList",
-      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefineTerm AcessControlList this property has a URI value that points to a list of userIDs",
+      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
       },
@@ -887,7 +887,7 @@
         "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
       },
       "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#Annotation"
+        "@id": "http://schema.org/CreativeWork"
       }
     },
     {
@@ -1160,7 +1160,7 @@
       "rdfs:label": "hasAnnotation",
       "rdfs:comment": "This resource is referenced by another resource that describes it such as a translation, transcription or other analysis ",
       "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
+        "@id": "http://schema.org/CreativeWork"
       },
       "rangeIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#Annnotation"

@@ -26,7 +26,7 @@ This is a language data Schema, in the style of the Schema.org schema. It is bas
 
 ## Defined Term: Annotation
 
-undefined
+The resource includes material which adds information to some other linguistic record.
 
 ### Is an expected value for the following property
 
@@ -112,7 +112,7 @@ A license document setting out terms for deposit into a repository
 
 ## Class: DataLicense
 
-A licence document for data licensing. This is a superclass of DataReuseLicense and DataLicense
+A licence document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense
 
 ### Subclass of: 
 
@@ -138,7 +138,7 @@ A licence document for data licensing. This is a superclass of DataReuseLicense 
 
 ## Defined Term: DerivedMaterial
 
-undefined
+This is derived from another source, such as a Primary Material, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)
 
 ### Is an expected value for the following property
 
@@ -381,7 +381,7 @@ An annotation which includes information about the sound system of a language, s
 
 ## Defined Term: PrimaryMaterial
 
-undefined
+The object of study, such as a literary work, film, or recording of natural discourse
 
 ### Is an expected value for the following property
 
@@ -638,7 +638,7 @@ TThe resource contains data for which the medium of interaction was writing.
 
 ## Property: accessControlList
 
-When a license has an authorizationWorkflow property with a value of the DefineTerm AcessControlList this property has a URI value that points to a list of userIDs
+When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs
 
 ### Values expected to be one of these types: 
 
@@ -694,7 +694,7 @@ The type of annotation for Annotation resources
 
 ### Used on these types: 
 
-[<a href='#Annotation'> Annotation </a>] | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -1126,7 +1126,7 @@ This resource is referenced by another resource that describes it such as a tran
 
 ### Used on these types: 
 
-[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | 
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
