@@ -857,7 +857,7 @@
       "@type": "rdf:Property",
       "name": "accessControlList",
       "rdfs:label": "accessControlList",
-      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefineTerm AcessControlList this property has a URI value that points to a list of userIDs",
+      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefineTerm AccessControlList, this property has a URI value that points to a list of userIDs.",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
       },
