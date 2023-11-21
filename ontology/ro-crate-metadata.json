@@ -856,7 +856,7 @@
       "@type": "rdf:Property",
       "name": "accessControlList",
       "rdfs:label": "accessControlList",
-      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs",
+      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefinedTerm AccessControlList this property has a URI value that points to a list of userIDs",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
       },
@@ -1666,6 +1666,19 @@
       ]
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/terms#materialType",
+      "@type": "rdf:Property",
+      "name": "materialType",
+      "rdfs:label": "materialType",
+      "rdfs:comment": "Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation",
+      "domainIncludes": {
+        "@id": "http://schema.org/File"
+      },
+      "definedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#MaterialTypes"
+      }
+    },
+    {
       "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "name": "CommunicationModeTerms",
@@ -1977,19 +1990,6 @@
       "rdfs:comment": "The date that this license should be reviewed",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#materialType",
-      "@type": "rdf:Property",
-      "name": "materialType",
-      "rdfs:label": "materialType",
-      "rdfs:comment": "Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation",
-      "domainIncludes": {
-        "@id": "http://schema.org/File"
-      },
-      "definedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#MaterialTypes"
       }
     }
   ]
