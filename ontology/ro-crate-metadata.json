@@ -856,7 +856,7 @@
       "@type": "rdf:Property",
       "name": "accessControlList",
       "rdfs:label": "accessControlList",
-      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefinedTerm AccessControlList this property has a URI value that points to a list of userIDs",
+      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the Defined Term AccessControlList, this property has a URI value that points to a list of userIDs.",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
       },
@@ -868,7 +868,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#annotationOf",
       "@type": "rdf:Property",
       "name": "annotationOf",
-      "rdfs:comment": "This resource contains some kind of description which adds information to the resource it references",
+      "rdfs:comment": "This resource contains some kind of description which adds information to the resource it references.",
       "rdfs:label": "annotationOf",
       "rangeIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
