@@ -1221,7 +1221,9 @@
       "@type": "rdf:Property",
       "name": "indexableText",
       "rdfs:label": "indexableText",
-      "rangeIncludes": {"@id": "http://schema.org/MediaObject"},
+      "rangeIncludes": {
+        "@id": "http://schema.org/MediaObject"
+      },
       "rdfs:comment": "Indicates one or more target File that together contain the full text of an item – each file should indicate its language",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
@@ -1313,9 +1315,7 @@
       "name": "subjectLanguage",
       "rdfs:label": "subjectLanguage",
       "rdfs:comment": "The language(s) that this annotation resource is about",
-      "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#Annotation"
-      },
+      "domainIncludes": [],
       "rangeIncludes": {
         "@id": "http://schema.org/Language"
       }
@@ -1669,6 +1669,19 @@
       ]
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/terms#materialType",
+      "@type": "rdf:Property",
+      "name": "materialType",
+      "rdfs:label": "materialType",
+      "rdfs:comment": "Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation",
+      "domainIncludes": {
+        "@id": "http://schema.org/MediaObject"
+      },
+      "definedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#MaterialTypes"
+      }
+    },
+    {
       "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "name": "CommunicationModeTerms",
@@ -1980,19 +1993,6 @@
       "rdfs:comment": "The date that this license should be reviewed",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#materialType",
-      "@type": "rdf:Property",
-      "name": "materialType",
-      "rdfs:label": "materialType",
-      "rdfs:comment": "Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation",
-      "domainIncludes": {
-        "@id": "http://schema.org/MediaObject"
-      },
-      "definedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#MaterialTypes"
       }
     }
   ]

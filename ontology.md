@@ -2,7 +2,7 @@
 
 # Language Data Commons Schema Terms
 
-This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://purl.archive.org/language-data-commons/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://purl.archive.org/language-data-commons/profile>
+This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://purl.archive.org/language-data-commons/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://purl.archive.org/language-data-commons/profile>.
 
 ## Classes
 
@@ -821,11 +821,11 @@ Number of audio channels this resource contains (eg 1, 2, 5.1)
 
 ## Property: collectionEventType
 
-An event with a start and end time during which data are gathered from participants, or from other materials
+An event with a start and end time during which data are gathered from participants, or from other materials.
 
 ### Values expected to be one of these types: 
 
-
+[<a href='#Session'> Session </a>] | 
 
 
 
@@ -850,7 +850,7 @@ An event with a start and end time during which data are gathered from participa
 
 ## Property: collectionProtocolType
 
-A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection
+A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection.
 
 ### Values expected to be one of these types: 
 
@@ -1217,7 +1217,7 @@ Indicates one or more target File that together contain the full text of an item
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/File'> http://schema.org/File </a>] |
+[<a href='http://schema.org/MediaObject'> http://schema.org/MediaObject </a>] | 
 
 
 
@@ -1855,7 +1855,7 @@ Indicates whether the material in a file is the original (primary) source or is 
 
 ### Used on these types: 
 
-[<a href='http://schema.org/File'> http://schema.org/File </a>] | 
+[<a href='http://schema.org/MediaObject'> http://schema.org/MediaObject </a>] | 
 
 
 
