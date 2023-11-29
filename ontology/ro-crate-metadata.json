@@ -62,7 +62,7 @@
       "@id": "./",
       "@type": "Dataset",
       "name": "Language Data Commons Schema Terms",
-      "description": "This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://purl.archive.org/language-data-commons/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://purl.archive.org/language-data-commons/profile>",
+      "description": "This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://purl.archive.org/language-data-commons/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://purl.archive.org/language-data-commons/profile>.",
       "mentions": [
         {
           "@id": "http://purl.archive.org/language-data-commons/terms#TimeAligned"
@@ -959,20 +959,23 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#collectionEventType",
       "@type": "rdf:Property",
       "name": "collectionEventType",
-      "rdfs:comment": "An event with a start and end time during which data are gathered from participants, or from other materials",
+      "rdfs:comment": "An event with a start and end time during which data are gathered from participants, or from other materials.",
       "rdfs:label": "collectionEventType",
       "definedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEventTypeTerms"
       },
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEvent"
+      },
+      "rangeIncludes": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#Session"
       }
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#collectionProtocolType",
       "@type": "rdf:Property",
       "name": "collectionProtocolType",
-      "rdfs:comment": "A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection",
+      "rdfs:comment": "A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection.",
       "rdfs:label": "collectionProtocolType",
       "definedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocolTypeTerms"
