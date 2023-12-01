@@ -416,7 +416,7 @@
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
       },
       "rdfs:label": "Annotation",
-      "description": "The resource includes material which adds information to some other linguistic record.",
+      "description": "The resource includes material that adds information to some other linguistic record.",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
@@ -434,7 +434,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEvent",
       "@type": "rdfs:Class",
       "name": "CollectionEvent",
-      "rdfs:comment": "A description of an event at which one or more PrimaryMaterials were captured,  eg as video or audio",
+      "rdfs:comment": "A description of an event at which one or more PrimaryMaterials were captured, e.g. as video or audio.",
       "rdfs:label": "CollectionEvent",
       "rdfs:subClassOf": [
         "http://schema.org/Event",
@@ -446,7 +446,7 @@
       "@type": "rdfs:Class",
       "name": "CollectionProtocol",
       "rdfs:label": "CollectionProtocol",
-      "rdfs:comment": "Description of how this Object or Collection was obtained – such as strategy used for selecting written source texts, or the prompts given to participants ",
+      "rdfs:comment": "A description of how this Object or Collection was obtained, such as the strategy used for selecting written source texts, or the prompts given to participants.",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
@@ -455,7 +455,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense",
       "@type": "rdfs:Class",
       "name": "DataDepositLicense",
-      "rdfs:comment": "A license document setting out terms for deposit into a repository",
+      "rdfs:comment": "A license document setting out terms for deposit into a repository.",
       "rdfs:label": "DataDepositLicense",
       "rdfs:subClassOf": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
@@ -466,7 +466,7 @@
       "@type": "rdfs:Class",
       "name": "DataLicense",
       "rdfs:label": "DataLicense",
-      "rdfs:comment": "A licence document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense",
+      "rdfs:comment": "A licence document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       },
@@ -482,7 +482,7 @@
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
       },
       "rdfs:label": "DerivedMaterial",
-      "description": "This is derived from another source, such as a Primary Material, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)",
+      "description": "This is derived from another source, such as a Primary Material, via some process, e.g. a downsampled video or a sample or an abstract of a resource that is not an annotation (an analysis or description).",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
@@ -512,7 +512,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#ElicitationTask",
       "@type": "DefinedTerm",
       "name": "ElicitationTask",
-      "description": "The collection protocol includes a task-based prompt to participants",
+      "description": "The collection protocol includes a task-based prompt to participants.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocolTypeTerms"
       }
@@ -533,7 +533,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Gesture",
       "@type": "DefinedTerm",
       "name": "Gesture",
-      "description": "The resource contains non-linguistic gestural communication (ie not sign language)",
+      "description": "The resource contains non-linguistic gestural communication (i.e. not sign language).",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
       }
@@ -542,7 +542,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Handwritten",
       "@type": "DefinedTerm",
       "name": "Handwritten",
-      "description": "The resource was written using a writing implement such as pen, pencil, brush or computer stylus  (From Nyingarn - TODO check this)",
+      "description": "The resource was written using a writing implement such as a pen, pencil, brush or computer stylus. (From Nyingarn - TODO check this).",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
       }
@@ -551,7 +551,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#IndexTypes",
       "@type": "DefinedTermSet",
       "name": "IndexTypes",
-      "description": "Set of defined terms for types of indexing, such as FullText",
+      "description": "A set of defined terms for types of indexing, such as FullText.",
       "hasDefinedTerm": {
         "@id": "https://purl.archive.org/language-data-commons/terms#FullText"
       }
@@ -569,7 +569,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Interview",
       "@type": "DefinedTerm",
       "name": "Interview",
-      "description": "The resource is conversation where one or more speakers are directing the conversation",
+      "description": "The resource is a conversation where one or more speakers are directing the conversation.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
       }
@@ -599,7 +599,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Narrative",
       "@type": "DefinedTerm",
       "name": "Narrative",
-      "description": "A discourse, monologic or co-constructed, which represents temporally organized events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
+      "description": "A discourse, monologic or co-constructed, which represents temporally organised events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text/narrative"
       },
@@ -611,7 +611,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Orthographic",
       "@type": "DefinedTerm",
       "name": "Orthographic",
-      "description": "The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription",
+      "description": "The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
       },
@@ -623,7 +623,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#PartOfSpeech",
       "@type": "DefinedTerm",
       "name": "PartOfSpeech",
-      "description": "An annotation which assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate)",
+      "description": "An annotation that assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate).",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
       },
@@ -635,7 +635,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Phonemic",
       "@type": "DefinedTerm",
       "name": "Phonemic",
-      "description": "An annotation which represents speech in terms of the sound contrasts made in a language.",
+      "description": "An annotation that represents speech in terms of the sound contrasts made in a language.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
       },
@@ -647,7 +647,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Phonetic",
       "@type": "DefinedTerm",
       "name": "Phonetic",
-      "description": "A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet",
+      "description": "A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
       },
@@ -659,7 +659,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Phonological",
       "@type": "DefinedTerm",
       "name": "Phonological",
-      "description": "An annotation which includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language.",
+      "description": "An annotation that includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
       },
@@ -675,7 +675,7 @@
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
       },
       "rdfs:label": "PrimaryMaterial",
-      "description": "The object of study, such as a literary work, film, or recording of natural discourse",
+      "description": "The object of study, such as a literary work, film, or recording of natural discourse.",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
@@ -696,7 +696,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Prosodic",
       "@type": "DefinedTerm",
       "name": "Prosodic",
-      "description": "An annotation which provides a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription.",
+      "description": "An annotation that provides a symbolic record of intonation, stress, tone or other suprasegmental features, which is expressed independently of regular phonetic transcription.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
       },
@@ -732,7 +732,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Session",
       "@type": "DefinedTerm",
       "name": "Session",
-      "description": "A collection event which is a recording or elicitation Session with participants.",
+      "description": "A collection event that is a recording or elicitation session with participants.",
       "sameAs": {
         "@id": "#https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"
       },
@@ -765,7 +765,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#SpokenLanguage",
       "@type": "DefinedTerm",
       "name": "SpokenLanguage",
-      "description": "The resource contains data for which the medium of interaction was speech",
+      "description": "The resource contains data for which the medium of interaction was speech.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
       }
@@ -774,7 +774,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Syntactic",
       "@type": "DefinedTerm",
       "name": "Syntactic",
-      "description": "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource",
+      "description": "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/syntactic"
       }
@@ -783,7 +783,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#MaterialSelectionCriteria",
       "@type": "DefinedTerm",
       "name": "MaterialSelectionCriteria",
-      "description": "A description of the criteria used to select texts in a collection",
+      "description": "A description of the criteria used to select texts in a collection.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocolTypeTerms"
       }
@@ -837,7 +837,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Typewritten",
       "@type": "DefinedTerm",
       "name": "Typewritten",
-      "description": "The resource contains text produced on a tpyewriter (From Nyingarn - TODO check this)",
+      "description": "The resource contains text produced on a typewriter (From Nyingarn - TODO check this).",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#OrthographyTypeTerms"
       }
@@ -846,7 +846,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#WrittenLanguage",
       "@type": "DefinedTerm",
       "name": "WrittenLanguage",
-      "description": "TThe resource contains data for which the medium of interaction was writing.",
+      "description": "The resource contains data for which the medium of interaction was writing.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
       }
@@ -856,7 +856,7 @@
       "@type": "rdf:Property",
       "name": "accessControlList",
       "rdfs:label": "accessControlList",
-      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs",
+      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs.",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
       },
@@ -868,7 +868,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#annotationOf",
       "@type": "rdf:Property",
       "name": "annotationOf",
-      "rdfs:comment": "This resource contains some kind of description which adds information to the resource it references",
+      "rdfs:comment": "This resource contains some kind of description that adds information to the resource it references.",
       "rdfs:label": "annotationOf",
       "rangeIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
@@ -882,7 +882,7 @@
       "@type": "rdf:Property",
       "name": "annotationType",
       "rdfs:label": "annotationType",
-      "rdfs:comment": "The type of annotation for Annotation resources",
+      "rdfs:comment": "The type of annotation for Annotation resources.",
       "definedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
       },
@@ -936,7 +936,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#authorizationWorkflow",
       "@type": "rdf:Property",
       "name": "authorizationWorkflow",
-      "rdfs:comment": "By what process is a user granted authorization to a license",
+      "rdfs:comment": "By what process a user is granted authorization to a license.",
       "rdfs:label": "authorizationWorkflow",
       "definedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
@@ -949,7 +949,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#channels",
       "@type": "rdf:Property",
       "name": "channels",
-      "rdfs:comment": "Number of audio channels this resource contains (eg 1, 2, 5.1)",
+      "rdfs:comment": "The number of audio channels this resource contains (e.g. 1, 2, 5.1).",
       "rdfs:label": "channels",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
@@ -1011,7 +1011,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#consultant",
       "@type": "rdf:Property",
       "name": "consultant",
-      "description": "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\".",
+      "description": "This term is commonly used by field linguists for the native speakers who work with them in describing and analysing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world, the preferred term for this role is 'informant'.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#consultant"
       },
@@ -1075,7 +1075,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#derivationOf",
       "@type": "rdf:Property",
       "name": "derivationOf",
-      "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF",
+      "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.",
       "rdfs:label": "derivationOf",
       "rangeIncludes": [
         {
@@ -1115,7 +1115,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#doi",
       "@type": "rdf:Property",
       "name": "doi",
-      "rdfs:comment": "A digital Object Identifier",
+      "rdfs:comment": "A Digital Object Identifier.",
       "rdfs:label": "doi",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
@@ -1125,7 +1125,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#editor",
       "@type": "rdf:Property",
       "name": "editor",
-      "description": "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases.",
+      "description": "This role includes anyone whose role was editorial in nature, such as proofreaders, debuggers, testers, etc. It may overlap the Compiler role in some cases.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#editor"
       },
@@ -1153,7 +1153,7 @@
         "http://schema.org/Language"
       ],
       "rangeIncludes": "Text",
-      "rdfs:comment": "A valid GEOJson feature or feature collection as a string that can be parsed as JSON ",
+      "rdfs:comment": "A valid GEOJson feature or feature collection as a string that can be parsed as JSON.",
       "rdfs:label": "geoJSON"
     },
     {
@@ -1161,7 +1161,7 @@
       "@type": "rdf:Property",
       "name": "hasAnnotation",
       "rdfs:label": "hasAnnotation",
-      "rdfs:comment": "This resource is referenced by another resource that describes it such as a translation, transcription or other analysis ",
+      "rdfs:comment": "This resource is referenced by another resource that describes it such as a translation, transcription or other analysis.",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       },
@@ -1174,7 +1174,7 @@
       "@type": "rdf:Property",
       "name": "hasCollectionProtocol",
       "rdfs:label": "hasCollectionProtocol",
-      "rdfs:comment": "This resource  was assembled or collected according to the linked protocol",
+      "rdfs:comment": "This resource was assembled or collected according to the linked protocol.",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       },
@@ -1186,7 +1186,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#hasDerivation",
       "@type": "rdf:Property",
       "name": "hasDerivation",
-      "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF",
+      "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.",
       "rdfs:label": "hasDerivation",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
@@ -1224,7 +1224,7 @@
       "rangeIncludes": {
         "@id": "http://schema.org/MediaObject"
       },
-      "rdfs:comment": "Indicates one or more target File that together contain the full text of an item – each file should indicate its language",
+      "rdfs:comment": "One or more target File(s) that together contain the full text of an item – each file should indicate its language.",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       }
@@ -1256,7 +1256,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#interviewee",
       "@type": "rdf:Property",
       "name": "interviewee",
-      "rdfs:comment": "The participant was a respondent in an interview",
+      "rdfs:comment": "The participant was a respondent in an interview.",
       "rdfs:label": "interviewee",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
@@ -1307,14 +1307,14 @@
       "rangeIncludes": {
         "@id": "http://schema.org/Boolean"
       },
-      "rdfs:comment": "The data in this item has had identifying information removed, or in the case of a person the name is an alias"
+      "rdfs:comment": "The data in this item has had identifying information removed, or in the case of a person the name is an alias."
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre",
       "@type": "rdf:Property",
       "name": "subjectLanguage",
       "rdfs:label": "subjectLanguage",
-      "rdfs:comment": "The language(s) that this annotation resource is about",
+      "rdfs:comment": "The language(s) that this annotation resource is about.",
       "domainIncludes": [],
       "rangeIncludes": {
         "@id": "http://schema.org/Language"
@@ -1338,7 +1338,7 @@
       "@type": "rdf:Property",
       "name": "openAccessIndex",
       "rdfs:label": "openAccessIndex",
-      "rdfs:comment": "One or more public index types allowed by a license, eg FullText indexing may be allowed for discovery even when an item is not ",
+      "rdfs:comment": "One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not.",
       "definedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#IndexTypes"
       },
@@ -1350,7 +1350,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#participant",
       "@type": "rdf:Property",
       "name": "participant",
-      "description": "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in general sense of having allowed the creation event to take place, such as the mayor of an indigenous community.",
+      "description": "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in a general sense of having allowed the creation event to take place, such as the mayor of an indigenous community.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#participant"
       },
@@ -1437,7 +1437,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#register",
       "@type": "rdf:Property",
       "name": "register",
-      "description": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.",
+      "description": "The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.",
       "sameAs": {
         "@id": "http://w3id.org/meta-share/meta-share/register"
       },
@@ -1515,7 +1515,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#signer",
       "@type": "rdf:Property",
       "name": "signer",
-      "description": "Signers are those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
+      "description": "Those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
       "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#signer"
@@ -1559,7 +1559,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#speaker",
       "@type": "rdf:Property",
       "name": "speaker",
-      "description": "Speakers are those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
+      "description": "Those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
       "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Speakers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#speaker"
@@ -1646,7 +1646,7 @@
       "@type": "rdf:Property",
       "name": "dateFreeText",
       "rdfs:label": "dateFreeText",
-      "rdfs:comment": "Date information which cannot be put in one of that standard date formats, eg \"mid 1970s\" or it is not clear, for example if it is a creation or publication date.",
+      "rdfs:comment": "Date information that cannot be put in one of the standard date formats, e.g. \"mid-1970s\", or it is not clear, for example, if it is a creation or publication date.",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       }
@@ -1655,7 +1655,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#MaterialTypes",
       "@type": "DefinedTermSet",
       "name": "MaterialTypes",
-      "description": "Set of terms describing the relationship of a resource to the original data source",
+      "description": "A set of terms describing the relationship of a resource to the original data source.",
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
@@ -1673,7 +1673,7 @@
       "@type": "rdf:Property",
       "name": "materialType",
       "rdfs:label": "materialType",
-      "rdfs:comment": "Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation",
+      "rdfs:comment": "Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation.",
       "domainIncludes": {
         "@id": "http://schema.org/MediaObject"
       },
@@ -1685,7 +1685,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "name": "CommunicationModeTerms",
-      "description": "Set of expected values for  the property communicationMode ",
+      "description": "A set of expected values for the property communicationMode.",
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Gesture"
@@ -1711,7 +1711,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms",
       "@type": "DefinedTermSet",
       "name": "LinguisticGenreTerms",
-      "description": "Set of expected values for linguistic genre of a resource",
+      "description": "A set of expected values for the linguistic genre of a resource.",
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Dialogue"
@@ -1752,7 +1752,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocolTypeTerms",
       "@type": "DefinedTermSet",
       "name": "CollectionProtocolTypeTerms",
-      "description": "Set of terms which are expected values for CollectionProtocol types",
+      "description": "A set of terms which are expected values for CollectionProtocol types.",
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#ElicitationTask"
@@ -1766,7 +1766,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#FullText",
       "@type": "DefinedTerm",
       "name": "FullText",
-      "description": "A text index which makes the full text of a data resources findable via a search interface",
+      "description": "A text index that makes the full text of a data resource findable via a search interface.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#IndexTypes"
       }
@@ -1775,7 +1775,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms",
       "@type": "DefinedTermSet",
       "name": "AnnotationTypeTerms",
-      "description": "The set of expected values for annotation types",
+      "description": "The set of expected values for annotation types.",
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Gestural"
@@ -1810,7 +1810,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#OrthographyTypeTerms",
       "@type": "DefinedTermSet",
       "name": "WrittenLanguageTypeTerms",
-      "description": "Set of expected types for WrittenLanguage modality (this set is incomplete - more work needed)",
+      "description": "A set of expected types for WrittenLanguage modality (this set is incomplete - more work needed).",
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#Handwritten"
@@ -1828,7 +1828,7 @@
       "@type": "rdfs:Class",
       "name": "DataReuseLicense",
       "rdfs:label": "DataReuseLicense",
-      "rdfs:comment": "A license document, setting out terms for reuse of data ",
+      "rdfs:comment": "A license document, setting out terms for reuse of data.",
       "rdfs:subClassOf": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
       },
@@ -1840,7 +1840,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows",
       "@type": "DefinedTermSet",
       "name": "AuthorizationWorkflows",
-      "description": "Set of DefinedTerms for access authorization mechanisms - some of these may be combined - eg AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant",
+      "description": "A set of DefinedTerms for access authorization mechanisms - some of these may be combined - e.g. AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant.",
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#AgreeToTerms"
@@ -1860,7 +1860,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEventTypeTerms",
       "@type": "DefinedTermSet",
       "name": "CollectionEventTypeTerms",
-      "description": "Set of terms which are expected values for CollectionEvent types",
+      "description": "A set of terms which are expected values for CollectionEvent types.",
       "hasDefinedTerm": {
         "@id": "https://purl.archive.org/language-data-commons/terms#Session"
       }
@@ -1902,7 +1902,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#AgreeToTerms",
       "@type": "DefinedTerm",
       "name": "AgreeToTerms",
-      "description": "A user is expected to explicitly agree to a set of license terms, this may be combined with AccessControlList - to note that even if a user has been pre-approved for a license they must agree to license terms",
+      "description": "A user is expected to explicitly agree to a set of license terms, this may be combined with AccessControlList - to note that even if a user has been pre-approved for a license they must agree to license terms.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
       }
@@ -1920,7 +1920,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByInvitation",
       "@type": "DefinedTerm",
       "name": "AuthorizationByInvitation",
-      "description": "A data steward or administrator is expected to use an access control system to invite users, for example participants, collaborators or students",
+      "description": "A data steward or administrator is expected to use an access control system to invite users, for example, participants, collaborators or students.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
       }
@@ -1929,7 +1929,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#SelfAuthorization",
       "@type": "DefinedTerm",
       "name": "SelfAuthorization",
-      "description": "A user can be authorized to access data by clicking that they agree to a license, or filling out a form to check their understanding, that can be validated by a machine and does not require human intervention.",
+      "description": "A user can be authorised to access data by clicking that they agree to a license, or filling out a form to check their understanding, which can be validated by a machine and does not require human intervention.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
       }
@@ -1939,7 +1939,7 @@
       "@type": "rdf:Property",
       "name": "access",
       "rdfs:label": "access",
-      "rdfs:comment": "Is this an open or restricted access license",
+      "rdfs:comment": "Whether this is an open or restricted access license.",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
       },
@@ -1951,7 +1951,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#AccessTypes",
       "@type": "DefinedTermSet",
       "name": "AccessTypes",
-      "description": "Set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorized) access",
+      "description": "A set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorised) access.",
       "hasDefinedTerm": [
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizedAccess"
@@ -1965,7 +1965,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizedAccess",
       "@type": "DefinedTerm",
       "name": "AuthorizedAccess",
-      "description": "Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission",
+      "description": "Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#AccessTypes"
       }
@@ -1974,13 +1974,13 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#OpenAccess",
       "@type": "DefinedTerm",
       "name": "OpenAccess",
-      "description": "Data covered by this license may be accessed as long as the license is served alongside it, does not require any specific authorization step"
+      "description": "Data covered by this license may be accessed as long as the license is served alongside it, and does not require any specific authorization step."
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#AccessControlList",
       "@type": "DefinedTerm",
       "name": "AccessControlList",
-      "description": "License grants access to data based on a list of approved users, specified using the property accessControlList",
+      "description": "License grants access to data based on a list of approved users, specified using the property accessControlList.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
       }
@@ -1990,7 +1990,7 @@
       "@type": "rdf:Property",
       "name": "reviewDate",
       "rdfs:label": "reviewDate",
-      "rdfs:comment": "The date that this license should be reviewed",
+      "rdfs:comment": "The date that this license should be reviewed.",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
       }
