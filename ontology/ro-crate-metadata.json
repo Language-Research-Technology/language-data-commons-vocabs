@@ -396,6 +396,9 @@
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#materialType"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre"
         }
       ],
       "conformsTo": {
@@ -1310,6 +1313,17 @@
       "rdfs:comment": "The data in this item has had identifying information removed, or in the case of a person the name is an alias."
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/terms#subjectLanguage",
+      "@type": "rdf:Property",
+      "name": "subjectLanguage",
+      "rdfs:label": "subjectLanguage",
+      "rdfs:comment": "The language(s) that this annotation resource is about.",
+      "domainIncludes": [],
+      "rangeIncludes": {
+        "@id": "http://schema.org/Language"
+      }
+    },
+    {
       "@id": "https://purl.archive.org/language-data-commons/terms#communicationMode",
       "@type": "rdf:Property",
       "name": "communicationMode",
@@ -1671,6 +1685,18 @@
       }
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre",
+      "@type": "rdf:Property",
+      "name": "linguisticGenre",
+      "Comment": "",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "A linguistic classification of the genre of this resource.",
+      "label": "",
+      "http://www.w3.org/2000/01/rdf-schema#label": "linguisticGenre",
+      "definedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
+      }
+    },
+    {
       "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms",
       "@type": "DefinedTermSet",
       "name": "CommunicationModeTerms",
@@ -1982,17 +2008,6 @@
       "rdfs:comment": "The date that this license should be reviewed.",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#subjectLanguage",
-      "@type": "rdf:Property",
-      "name": "subjectLanguage",
-      "rdfs:label": "subjectLanguage",
-      "rdfs:comment": "The language(s) that this annotation resource is about.",
-      "domainIncludes": [],
-      "rangeIncludes": {
-        "@id": "http://schema.org/Language"
       }
     }
   ]
