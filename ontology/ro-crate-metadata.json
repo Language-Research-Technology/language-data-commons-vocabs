@@ -1688,12 +1688,15 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre",
       "@type": "rdf:Property",
       "name": "linguisticGenre",
-      "Comment": "A linguistic classification of the genre of this resource.",
-      "http://www.w3.org/2000/01/rdf-schema#comment": [],
-      "label": "linguisticGenre",
-      "http://www.w3.org/2000/01/rdf-schema#label": "",
+      "Comment": [],
+      "http://www.w3.org/2000/01/rdf-schema#comment": "A linguistic classification of the genre of this resource.",
+      "label": [],
+      "http://www.w3.org/2000/01/rdf-schema#label": "linguisticGenre",
       "definedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
+      },
+      "domainIncludes": {
+        "@id": "#http___schema_org_CreativeWork-1"
       }
     },
     {
@@ -1879,6 +1882,11 @@
       "hasDefinedTerm": {
         "@id": "https://purl.archive.org/language-data-commons/terms#Session"
       }
+    },
+    {
+      "@id": "#http___schema_org_CreativeWork-1",
+      "@type": "Class",
+      "name": []
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#WhistledLanguage",
