@@ -272,7 +272,7 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#isDeIdentified"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre"
+          "@id": "https://purl.archive.org/language-data-commons/terms#subjectLanguage"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#communicationMode"
@@ -1310,22 +1310,11 @@
       "rdfs:comment": "The data in this item has had identifying information removed, or in the case of a person the name is an alias."
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre",
-      "@type": "rdf:Property",
-      "name": "subjectLanguage",
-      "rdfs:label": "subjectLanguage",
-      "rdfs:comment": "The language(s) that this annotation resource is about.",
-      "domainIncludes": [],
-      "rangeIncludes": {
-        "@id": "http://schema.org/Language"
-      }
-    },
-    {
       "@id": "https://purl.archive.org/language-data-commons/terms#communicationMode",
       "@type": "rdf:Property",
       "name": "communicationMode",
       "rdfs:label": "communicationMode",
-      "rdfs:comment": "The mode (spoken, written, signed etc) of this resource. There may be more than one value for this property.",
+      "rdfs:comment": "The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       },
@@ -1993,6 +1982,17 @@
       "rdfs:comment": "The date that this license should be reviewed.",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+      }
+    },
+    {
+      "@id": "https://purl.archive.org/language-data-commons/terms#subjectLanguage",
+      "@type": "rdf:Property",
+      "name": "subjectLanguage",
+      "rdfs:label": "subjectLanguage",
+      "rdfs:comment": "The language(s) that this annotation resource is about.",
+      "domainIncludes": [],
+      "rangeIncludes": {
+        "@id": "http://schema.org/Language"
       }
     }
   ]
