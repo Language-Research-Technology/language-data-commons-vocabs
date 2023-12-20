@@ -1690,8 +1690,8 @@
       "name": "linguisticGenre",
       "Comment": "A linguistic classification of the genre of this resource.",
       "http://www.w3.org/2000/01/rdf-schema#comment": [],
-      "label": "",
-      "http://www.w3.org/2000/01/rdf-schema#label": "linguisticGenre",
+      "label": "linguisticGenre",
+      "http://www.w3.org/2000/01/rdf-schema#label": "",
       "definedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
       }
