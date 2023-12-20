@@ -1695,9 +1695,7 @@
       "definedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
       },
-      "domainIncludes": {
-        "@id": "#http___schema_org_CreativeWork-1"
-      }
+      "domainIncludes": []
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms",
@@ -1884,11 +1882,6 @@
       }
     },
     {
-      "@id": "#http___schema_org_CreativeWork-1",
-      "@type": "Class",
-      "name": []
-    },
-    {
       "@id": "https://purl.archive.org/language-data-commons/terms#WhistledLanguage",
       "@type": "DefinedTerm",
       "name": "WhistledLanguage",
@@ -1956,6 +1949,11 @@
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
       }
+    },
+    {
+      "@id": "#http___schema_org_CreativeWork-1",
+      "@type": "Class",
+      "name": []
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#access",
