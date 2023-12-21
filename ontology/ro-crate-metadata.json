@@ -819,7 +819,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#Translation",
       "@type": "DefinedTerm",
       "name": "Translation",
-      "description": "The resource has been translated from one natural language to another.",
+      "description": "This is a translation of a resource in another language.",
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
       },
@@ -1078,7 +1078,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#derivationOf",
       "@type": "rdf:Property",
       "name": "derivationOf",
-      "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.",
+      "rdfs:comment": "This resource is derived from another resource.",
       "rdfs:label": "derivationOf",
       "rangeIncludes": [
         {
