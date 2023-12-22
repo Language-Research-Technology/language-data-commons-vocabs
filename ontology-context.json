@@ -31,7 +31,7 @@
     "interviewee": "https://purl.archive.org/language-data-commons/terms#interviewee",
     "interviewer": "https://purl.archive.org/language-data-commons/terms#interviewer",
     "isDeIdentified": "https://purl.archive.org/language-data-commons/terms#isDeIdentified",
-    "subjectLanguage": "https://purl.archive.org/language-data-commons/terms#linguisticGenre",
+    "subjectLanguage": "https://purl.archive.org/language-data-commons/terms#subjectLanguage",
     "communicationMode": "https://purl.archive.org/language-data-commons/terms#communicationMode",
     "openAccessIndex": "https://purl.archive.org/language-data-commons/terms#openAccessIndex",
     "participant": "https://purl.archive.org/language-data-commons/terms#participant",
@@ -50,6 +50,7 @@
     "translator": "https://purl.archive.org/language-data-commons/terms#translator",
     "dateFreeText": "https://purl.archive.org/language-data-commons/terms#dateFreeText",
     "materialType": "https://purl.archive.org/language-data-commons/terms#materialType",
+    "linguisticGenre": "https://purl.archive.org/language-data-commons/terms#linguisticGenre",
     "DataReuseLicense": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense",
     "access": "https://purl.archive.org/language-data-commons/terms#access",
     "reviewDate": "https://purl.archive.org/language-data-commons/terms#reviewDate"

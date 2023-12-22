@@ -27,7 +27,6 @@
       "definedTermSet": "https://purl.archive.org/terms#definedTermSet",
       "example": "https://purl.archive.org/terms#example",
       "source": "https://purl.archive.org/terms#source",
-      "Comment": "http://schema.org/Comment",
       "owl:equivalentClass": "https://purl.archive.org/terms#owl:equivalentClass",
       "http://schema.org/source": "http://schema.org/source",
       "owl:equivalentProperty": "https://purl.archive.org/terms#owl:equivalentProperty",
@@ -370,9 +369,7 @@
         {
           "@id": "https://purl.archive.org/terms#source"
         },
-        {
-          "@id": "http://schema.org/Comment"
-        },
+       
         {
           "@id": "https://purl.archive.org/terms#owl:equivalentClass"
         },
@@ -1688,14 +1685,14 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre",
       "@type": "rdf:Property",
       "name": "linguisticGenre",
-      "Comment": [],
-      "http://www.w3.org/2000/01/rdf-schema#comment": "A linguistic classification of the genre of this resource.",
-      "label": [],
-      "http://www.w3.org/2000/01/rdf-schema#label": "linguisticGenre",
+      "rdfs:comment": "A linguistic classification of the genre of this resource.",
+      "rdfs:label": "linguisticGenre",
       "definedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
       },
-      "domainIncludes": []
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms",
@@ -1760,7 +1757,7 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#Thesaurus"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/Oratory"
+          "@id": "https://purl.archive.org/language-data-commons/terms#Oratory"
         }
       ]
     },
@@ -1891,12 +1888,12 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/Oratory",
+      "@id": "https://purl.archive.org/language-data-commons/terms#Oratory",
       "@type": "DefinedTerm",
       "name": "Oratory",
       "description": "The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.",
       "sameAs": {
-        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/orratory"
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/oratory"
       },
       "inDefinedTermSet": {
         "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
