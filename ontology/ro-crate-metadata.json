@@ -369,7 +369,6 @@
         {
           "@id": "https://purl.archive.org/terms#source"
         },
-       
         {
           "@id": "https://purl.archive.org/terms#owl:equivalentClass"
         },
@@ -466,7 +465,7 @@
       "@type": "rdfs:Class",
       "name": "DataLicense",
       "rdfs:label": "DataLicense",
-      "rdfs:comment": "A licence document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.",
+      "rdfs:comment": "A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       },
