@@ -543,7 +543,7 @@
       "name": "Handwritten",
       "description": "The resource was written using a writing implement such as a pen, pencil, brush or computer stylus. (From Nyingarn - TODO check this).",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+        "@id": "https://purl.archive.org/language-data-commons/terms#WrittenLanguageTypeTerms"
       }
     },
     {
@@ -805,7 +805,7 @@
       "name": "Transcription",
       "description": "The resource contains a transcription, which is a written representation (orthographic or coded) of an audio or visual signal.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"
@@ -1819,6 +1819,23 @@
       ]
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/terms#WrittenLanguageTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "WrittenLanguageTypeTerms",
+      "description": "A set of expected types for WrittenLanguage communication mode (this set is incomplete - more work needed).",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Handwritten"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Typeset"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Typewritten"
+        }
+      ]
+    },
+    {
       "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense",
       "@type": "rdfs:Class",
       "name": "DataReuseLicense",
@@ -1994,23 +2011,6 @@
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
       }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#WrittenLanguageTypeTerms",
-      "@type": "DefinedTermSet",
-      "name": "WrittenLanguageTypeTerms",
-      "description": "A set of expected types for WrittenLanguage communication mode (this set is incomplete - more work needed).",
-      "hasDefinedTerm": [
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Handwritten"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Typeset"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Typewritten"
-        }
-      ]
     }
   ]
 }
