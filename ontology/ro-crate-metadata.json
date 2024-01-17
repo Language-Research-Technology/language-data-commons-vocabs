@@ -1775,6 +1775,23 @@
       ]
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/terms#WrittenLanguageTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "WrittenLanguageTypeTerms",
+      "description": "A set of expected types for WrittenLanguage communication mode (this set is incomplete - more work needed).",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Handwritten"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Typeset"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#Typewritten"
+        }
+      ]
+    },
+    {
       "@id": "https://purl.archive.org/language-data-commons/terms#FullText",
       "@type": "DefinedTerm",
       "name": "FullText",
@@ -1819,23 +1836,6 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#WrittenLanguageTypeTerms",
-      "@type": "DefinedTermSet",
-      "name": "WrittenLanguageTypeTerms",
-      "description": "A set of expected types for WrittenLanguage communication mode (this set is incomplete - more work needed).",
-      "hasDefinedTerm": [
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Handwritten"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Typeset"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Typewritten"
-        }
-      ]
-    },
-    {
       "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense",
       "@type": "rdfs:Class",
       "name": "DataReuseLicense",
@@ -1865,6 +1865,9 @@
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#SelfAuthorization"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#AccessControlList"
         }
       ]
     },
