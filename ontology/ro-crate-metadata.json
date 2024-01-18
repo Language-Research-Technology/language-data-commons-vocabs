@@ -1950,6 +1950,15 @@
       }
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/terms#AccessControlList",
+      "@type": "DefinedTerm",
+      "name": "AccessControlList",
+      "description": "License grants access to data based on a list of approved users, specified using the property accessControlList.",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+      }
+    },
+    {
       "@id": "#http___schema_org_CreativeWork-1",
       "@type": "Class",
       "name": []
@@ -1995,15 +2004,6 @@
       "@type": "DefinedTerm",
       "name": "OpenAccess",
       "description": "Data covered by this license may be accessed as long as the license is served alongside it, and does not require any specific authorization step."
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#AccessControlList",
-      "@type": "DefinedTerm",
-      "name": "AccessControlList",
-      "description": "License grants access to data based on a list of approved users, specified using the property accessControlList.",
-      "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
-      }
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#reviewDate",
