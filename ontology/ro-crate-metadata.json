@@ -70,7 +70,7 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#Annotation"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Code"
+          "@id": "https://purl.archive.org/language-data-commons/terms#Coded"
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEvent"
@@ -421,7 +421,7 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Code",
+      "@id": "https://purl.archive.org/language-data-commons/terms#Coded",
       "@type": "DefinedTerm",
       "name": "Coded",
       "description": "The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet).",
@@ -570,7 +570,7 @@
       "name": "Interview",
       "description": "The resource is a conversation where one or more speakers are directing the conversation.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://purl.archive.org/language-data-commons/terms#LinguisticGenreTerms"
       }
     },
     {
@@ -636,7 +636,7 @@
       "name": "Phonemic",
       "description": "An annotation that represents speech in terms of the sound contrasts made in a language.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonemic"
@@ -648,7 +648,7 @@
       "name": "Phonetic",
       "description": "A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonetic"
@@ -660,7 +660,7 @@
       "name": "Phonological",
       "description": "An annotation that includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonological"
@@ -697,7 +697,7 @@
       "name": "Prosodic",
       "description": "An annotation that provides a symbolic record of intonation, stress, tone or other suprasegmental features, which is expressed independently of regular phonetic transcription.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/prosodic"
@@ -736,7 +736,7 @@
         "@id": "#https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"
       },
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#WrittenLanguageTypeTerms"
+        "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEventTypeTerms"
       }
     },
     {
@@ -776,6 +776,9 @@
       "description": "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/syntactic"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
       }
     },
     {
@@ -817,7 +820,7 @@
       "name": "Translation",
       "description": "This is a translation of a resource in another language.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/translation"
@@ -1836,6 +1839,15 @@
       ]
     },
     {
+      "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEventTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "CollectionEventTypeTerms",
+      "description": "A set of terms which are expected values for CollectionEvent types.",
+      "hasDefinedTerm": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#Session"
+      }
+    },
+    {
       "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense",
       "@type": "rdfs:Class",
       "name": "DataReuseLicense",
@@ -1870,15 +1882,6 @@
           "@id": "https://purl.archive.org/language-data-commons/terms#AccessControlList"
         }
       ]
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEventTypeTerms",
-      "@type": "DefinedTermSet",
-      "name": "CollectionEventTypeTerms",
-      "description": "A set of terms which are expected values for CollectionEvent types.",
-      "hasDefinedTerm": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#Session"
-      }
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#WhistledLanguage",
@@ -2003,7 +2006,10 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#OpenAccess",
       "@type": "DefinedTerm",
       "name": "OpenAccess",
-      "description": "Data covered by this license may be accessed as long as the license is served alongside it, and does not require any specific authorization step."
+      "description": "Data covered by this license may be accessed as long as the license is served alongside it, and does not require any specific authorization step.",
+      "inDefinedTermSet": {
+        "@id": "https://purl.archive.org/language-data-commons/terms#AccessTypes"
+      }
     },
     {
       "@id": "https://purl.archive.org/language-data-commons/terms#reviewDate",
