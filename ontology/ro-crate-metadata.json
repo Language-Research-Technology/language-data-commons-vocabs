@@ -1077,7 +1077,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#derivationOf",
       "@type": "rdf:Property",
       "name": "derivationOf",
-      "rdfs:comment": "This resource is derived from another resource.",
+      "rdfs:comment": "This property references another resource from which the current resource is derived by e.g. downsampling audio or video file, or extracting text from a PDF.",
       "rdfs:label": "derivationOf",
       "rangeIncludes": [
         {
@@ -1188,7 +1188,7 @@
       "@id": "https://purl.archive.org/language-data-commons/terms#hasDerivation",
       "@type": "rdf:Property",
       "name": "hasDerivation",
-      "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.",
+      "rdfs:comment": "This property references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.",
       "rdfs:label": "hasDerivation",
       "domainIncludes": {
         "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
