@@ -395,6 +395,12 @@
         },
         {
           "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#access"
+        },
+        {
+          "@id": "https://purl.archive.org/language-data-commons/terms#reviewDate"
         }
       ],
       "conformsTo": {
