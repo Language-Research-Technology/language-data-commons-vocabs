@@ -2,7 +2,7 @@
 
 # Language Data Commons Schema Terms
 
-This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://purl.archive.org/language-data-commons/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://purl.archive.org/language-data-commons/profile>.
+This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://w3id.org/ldac/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://w3id.org/ldac/profile>.
 
 ## Classes
 
@@ -14,13 +14,13 @@ This is a language data Schema, in the style of the Schema.org schema. It is bas
 
 ## DefinedTerms
 
-<a href="#Annotation">Annotation</a> | <a href="#Coded">Coded</a> | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignedLanguage">SignedLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#MaterialSelectionCriteria">MaterialSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#FullText">FullText</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#Oratory">Oratory</a> | <a href="#Gestural">Gestural</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#SelfAuthorization">SelfAuthorization</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#OpenAccess">OpenAccess</a> | <a href="#AccessControlList">AccessControlList</a>
+<a href="#Annotation">Annotation</a> | <a href="#Coded">Coded</a> | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignedLanguage">SignedLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#MaterialSelectionCriteria">MaterialSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#FullText">FullText</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#Oratory">Oratory</a> | <a href="#Gestural">Gestural</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#SelfAuthorization">SelfAuthorization</a> | <a href="#AccessControlList">AccessControlList</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#OpenAccess">OpenAccess</a>
 
 
 
 ## DefinedTermsSets
 
-<a href="#IndexTypes">IndexTypes</a> | <a href="#MaterialTypes">MaterialTypes</a> | <a href="#CommunicationModeTerms">CommunicationModeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#AccessTypes">AccessTypes</a>
+<a href="#IndexTypes">IndexTypes</a> | <a href="#MaterialTypes">MaterialTypes</a> | <a href="#CommunicationModeTerms">CommunicationModeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#AccessTypes">AccessTypes</a>
 
 <div id="Annotation"  style="border-style: solid">
 
@@ -112,7 +112,7 @@ A license document setting out terms for deposit into a repository.
 
 ## Class: DataLicense
 
-A licence document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.
+A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.
 
 ### Subclass of: 
 
@@ -825,7 +825,7 @@ By what process a user is granted authorization to a license.
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
+[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | [<a href='#AccessControlList'> AccessControlList </a>] | 
 
 
 
@@ -1031,7 +1031,7 @@ The participant was responsible for depositing the resource in an archive.
 
 ## Property: derivationOf
 
-This resource is derived from another resource.
+This property references another resource from which the current resource is derived by e.g. downsampling audio or video file, or extracting text from a PDF.
 
 ### Values expected to be one of these types: 
 
@@ -1202,7 +1202,7 @@ This resource was assembled or collected according to the linked protocol.
 
 ## Property: hasDerivation
 
-This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.
+This property references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.
 
 ### Values expected to be one of these types: 
 
@@ -1939,6 +1939,58 @@ A linguistic classification of the genre of this resource.
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="access"  style="border-style: solid">
+
+## Property: access
+
+Whether this is an open or restricted access license.
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='#DataReuseLicense'> DataReuseLicense </a>] | 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="reviewDate"  style="border-style: solid">
+
+## Property: reviewDate
+
+The date that this license should be reviewed.
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='#DataLicense'> DataLicense </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="CommunicationModeTerms"  style="border-style: solid">
 
 ## Defined Term Set: CommunicationModeTerms
@@ -1972,6 +2024,17 @@ A set of terms which are expected values for CollectionProtocol types.
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="WrittenLanguageTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: WrittenLanguageTypeTerms
+
+A set of expected types for WrittenLanguage communication mode (this set is incomplete - more work needed).
+
+### Has defined terms[<a href='#Handwritten'> Handwritten </a>] | [<a href='#Typeset'> Typeset </a>] | [<a href='#Typewritten'> Typewritten </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="FullText"  style="border-style: solid">
 
 ## Defined Term: FullText
@@ -1996,13 +2059,13 @@ The set of expected values for annotation types.
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="WrittenLanguageTypeTerms"  style="border-style: solid">
+<div id="CollectionEventTypeTerms"  style="border-style: solid">
 
-## Defined Term Set: WrittenLanguageTypeTerms
+## Defined Term Set: CollectionEventTypeTerms
 
-A set of expected types for WrittenLanguage modality (this set is incomplete - more work needed).
+A set of terms which are expected values for CollectionEvent types.
 
-### Has defined terms[<a href='#Handwritten'> Handwritten </a>] | [<a href='#Typeset'> Typeset </a>] | [<a href='#Typewritten'> Typewritten </a>] | 
+### Has defined terms[<a href='#Session'> Session </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -2039,18 +2102,7 @@ A license document, setting out terms for reuse of data.
 
 A set of DefinedTerms for access authorization mechanisms - some of these may be combined - e.g. AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant.
 
-### Has defined terms[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="CollectionEventTypeTerms"  style="border-style: solid">
-
-## Defined Term Set: CollectionEventTypeTerms
-
-A set of terms which are expected values for CollectionEvent types.
-
-### Has defined terms[<a href='#Session'> Session </a>] | 
+### Has defined terms[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | [<a href='#AccessControlList'> AccessControlList </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -2156,31 +2208,15 @@ A user can be authorised to access data by clicking that they agree to a license
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="access"  style="border-style: solid">
+<div id="AccessControlList"  style="border-style: solid">
 
-## Property: access
+## Defined Term: AccessControlList
 
-Whether this is an open or restricted access license.
+License grants access to data based on a list of approved users, specified using the property accessControlList.
 
-### Values expected to be one of these types: 
+### Is an expected value for the following property
 
-
-
-
-
-### Used on these types: 
-
-[<a href='#DataReuseLicense'> DataReuseLicense </a>] | 
-
-
-
-## Values expected to be one of these defined terms: 
-
-[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] | 
-
-
-
-
+[<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -2218,38 +2254,6 @@ Data covered by this license may be accessed as long as the license is served al
 ### Is an expected value for the following property
 
 [<a href='#access'> access </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="AccessControlList"  style="border-style: solid">
-
-## Defined Term: AccessControlList
-
-License grants access to data based on a list of approved users, specified using the property accessControlList.
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="reviewDate"  style="border-style: solid">
-
-## Property: reviewDate
-
-The date that this license should be reviewed.
-
-### Values expected to be one of these types: 
-
-
-
-
-
-### Used on these types: 
-
-[<a href='#DataLicense'> DataLicense </a>] | 
-
-
-
-
 
 </div><br>
 <a href="#top">Top of page</a>
