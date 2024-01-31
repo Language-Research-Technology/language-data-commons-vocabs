@@ -5,7 +5,7 @@
       "@vocab": "http://schema.org/"
     },
     {
-      "ldac": "https://purl.archive.org/language-data-commons/terms#"
+      "ldac": "https://w3id.org/ldac/terms#"
     },
     {
       "@base": null
@@ -27,7 +27,6 @@
       "definedTermSet": "https://purl.archive.org/terms#definedTermSet",
       "example": "https://purl.archive.org/terms#example",
       "source": "https://purl.archive.org/terms#source",
-      "Comment": "http://schema.org/Comment",
       "owl:equivalentClass": "https://purl.archive.org/terms#owl:equivalentClass",
       "http://schema.org/source": "http://schema.org/source",
       "owl:equivalentProperty": "https://purl.archive.org/terms#owl:equivalentProperty",
@@ -36,6 +35,12 @@
     },
     {
       "@id": "@id"
+    },
+    {
+      "definedTermSet": "http://schema.org/definedTermSet"
+    },
+    {
+      "label": "label"
     }
   ],
   "@graph": [
@@ -56,271 +61,265 @@
       "@id": "./",
       "@type": "Dataset",
       "name": "Language Data Commons Schema Terms",
-      "description": "This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://purl.archive.org/language-data-commons/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://purl.archive.org/language-data-commons/profile>",
+      "description": "This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://w3id.org/ldac/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://w3id.org/ldac/profile>.",
       "mentions": [
         {
-          "@id": "http://purl.archive.org/language-data-commons/terms#TimeAligned"
+          "@id": "https://w3id.org/ldac/terms#TimeAligned"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Annotation"
+          "@id": "https://w3id.org/ldac/terms#Annotation"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Code"
+          "@id": "https://w3id.org/ldac/terms#Coded"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEvent"
+          "@id": "https://w3id.org/ldac/terms#CollectionEvent"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocol"
+          "@id": "https://w3id.org/ldac/terms#CollectionProtocol"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense"
+          "@id": "https://w3id.org/ldac/terms#DataDepositLicense"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+          "@id": "https://w3id.org/ldac/terms#DataLicense"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterial"
+          "@id": "https://w3id.org/ldac/terms#DerivedMaterial"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Dialogue"
+          "@id": "https://w3id.org/ldac/terms#Dialogue"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Drama"
+          "@id": "https://w3id.org/ldac/terms#Drama"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#ElicitationTask"
+          "@id": "https://w3id.org/ldac/terms#ElicitationTask"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Formulaic"
+          "@id": "https://w3id.org/ldac/terms#Formulaic"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Gesture"
+          "@id": "https://w3id.org/ldac/terms#Gesture"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Handwritten"
+          "@id": "https://w3id.org/ldac/terms#Handwritten"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#IndexTypes"
+          "@id": "https://w3id.org/ldac/terms#IndexTypes"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Informational"
+          "@id": "https://w3id.org/ldac/terms#Informational"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Interview"
+          "@id": "https://w3id.org/ldac/terms#Interview"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Lexicon"
+          "@id": "https://w3id.org/ldac/terms#Lexicon"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Ludic"
+          "@id": "https://w3id.org/ldac/terms#Ludic"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Narrative"
+          "@id": "https://w3id.org/ldac/terms#Narrative"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Orthographic"
+          "@id": "https://w3id.org/ldac/terms#Orthographic"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#PartOfSpeech"
+          "@id": "https://w3id.org/ldac/terms#PartOfSpeech"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#PersonSnapshot"
+          "@id": "https://w3id.org/ldac/terms#Phonemic"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Phonemic"
+          "@id": "https://w3id.org/ldac/terms#Phonetic"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Phonetic"
+          "@id": "https://w3id.org/ldac/terms#Phonological"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Phonological"
+          "@id": "https://w3id.org/ldac/terms#PrimaryMaterial"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
+          "@id": "https://w3id.org/ldac/terms#Procedural"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Procedural"
+          "@id": "https://w3id.org/ldac/terms#Prosodic"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Prosodic"
+          "@id": "https://w3id.org/ldac/terms#Report"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Report"
+          "@id": "https://w3id.org/ldac/terms#Semantic"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Semantic"
+          "@id": "https://w3id.org/ldac/terms#Session"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Session"
+          "@id": "https://w3id.org/ldac/terms#SignedLanguage"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#SignLanguage"
+          "@id": "https://w3id.org/ldac/terms#Song"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Song"
+          "@id": "https://w3id.org/ldac/terms#SpokenLanguage"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#SpokenLanguage"
+          "@id": "https://w3id.org/ldac/terms#Syntactic"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Syntactic"
+          "@id": "https://w3id.org/ldac/terms#MaterialSelectionCriteria"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria"
+          "@id": "https://w3id.org/ldac/terms#Thesaurus"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Thesaurus"
+          "@id": "https://w3id.org/ldac/terms#Transcription"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Transcription"
+          "@id": "https://w3id.org/ldac/terms#Translation"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Translation"
+          "@id": "https://w3id.org/ldac/terms#Typeset"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Typeset"
+          "@id": "https://w3id.org/ldac/terms#Typewritten"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Typewritten"
+          "@id": "https://w3id.org/ldac/terms#WrittenLanguage"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#WrittenLanguage"
+          "@id": "https://w3id.org/ldac/terms#accessControlList"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#accessControlList"
+          "@id": "https://w3id.org/ldac/terms#annotationOf"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#annotationOf"
+          "@id": "https://w3id.org/ldac/terms#annotationType"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#annotationType"
+          "@id": "https://w3id.org/ldac/terms#annotator"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#annotator"
+          "@id": "https://w3id.org/ldac/terms#author"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#author"
+          "@id": "https://w3id.org/ldac/terms#authorizationWorkflow"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#authorizationWorkflow"
+          "@id": "https://w3id.org/ldac/terms#channels"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#channels"
+          "@id": "https://w3id.org/ldac/terms#collectionEventType"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#collectionEventType"
+          "@id": "https://w3id.org/ldac/terms#collectionProtocolType"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#collectionProtocolType"
+          "@id": "https://w3id.org/ldac/terms#compiler"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#compiler"
+          "@id": "https://w3id.org/ldac/terms#consultant"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#consultant"
+          "@id": "https://w3id.org/ldac/terms#dataInputter"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#dataInputter"
+          "@id": "https://w3id.org/ldac/terms#depositor"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#depositor"
+          "@id": "https://w3id.org/ldac/terms#derivationOf"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#derivationOf"
+          "@id": "https://w3id.org/ldac/terms#developer"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#developer"
+          "@id": "https://w3id.org/ldac/terms#doi"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#doi"
+          "@id": "https://w3id.org/ldac/terms#editor"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#editor"
+          "@id": "https://w3id.org/ldac/terms#geoJSON"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#geoJSON"
+          "@id": "https://w3id.org/ldac/terms#hasAnnotation"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#hasAnnotation"
+          "@id": "https://w3id.org/ldac/terms#hasCollectionProtocol"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#hasCollectionProtocol"
+          "@id": "https://w3id.org/ldac/terms#hasDerivation"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#hasDerivation"
+          "@id": "https://w3id.org/ldac/terms#illustrator"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#illustrator"
+          "@id": "https://w3id.org/ldac/terms#indexableText"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#indexableText"
+          "@id": "https://w3id.org/ldac/terms#interpreter"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#interpreter"
+          "@id": "https://w3id.org/ldac/terms#interviewee"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#interviewee"
+          "@id": "https://w3id.org/ldac/terms#interviewer"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#interviewer"
+          "@id": "https://w3id.org/ldac/terms#isDeIdentified"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#isDeIdentified"
+          "@id": "https://w3id.org/ldac/terms#subjectLanguage"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre"
+          "@id": "https://w3id.org/ldac/terms#communicationMode"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#modality"
+          "@id": "https://w3id.org/ldac/terms#openAccessIndex"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#openAccessIndex"
+          "@id": "https://w3id.org/ldac/terms#participant"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#participant"
+          "@id": "https://w3id.org/ldac/terms#performer"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#performer"
+          "@id": "https://w3id.org/ldac/terms#photographer"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#person"
+          "@id": "https://w3id.org/ldac/terms#recorder"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#photographer"
+          "@id": "https://w3id.org/ldac/terms#register"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#recorder"
+          "@id": "https://w3id.org/ldac/terms#researchParticipant"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#register"
+          "@id": "https://w3id.org/ldac/terms#researcher"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#researchParticipant"
+          "@id": "https://w3id.org/ldac/terms#responder"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#researcher"
+          "@id": "https://w3id.org/ldac/terms#signer"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#responder"
+          "@id": "https://w3id.org/ldac/terms#singer"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#signer"
+          "@id": "https://w3id.org/ldac/terms#speaker"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#singer"
+          "@id": "https://w3id.org/ldac/terms#sponsor"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#speaker"
+          "@id": "https://w3id.org/ldac/terms#transcriber"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#sponsor"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#transcriber"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#translator"
+          "@id": "https://w3id.org/ldac/terms#translator"
         },
         {
           "@id": "http://purl.org/dc/terms/conformsTo"
@@ -371,9 +370,6 @@
           "@id": "https://purl.archive.org/terms#source"
         },
         {
-          "@id": "http://schema.org/Comment"
-        },
-        {
           "@id": "https://purl.archive.org/terms#owl:equivalentClass"
         },
         {
@@ -387,42 +383,63 @@
         },
         {
           "@id": "http://schema.org/isPartOf"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#dateFreeText"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#MaterialTypes"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#materialType"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#linguisticGenre"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#access"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#reviewDate"
         }
-      ]
+      ],
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/profiles/schema/1.0"
+      }
     },
     {
-      "@id": "http://purl.archive.org/language-data-commons/terms#TimeAligned",
+      "@id": "https://w3id.org/ldac/terms#TimeAligned",
       "@type": "definedTerm",
       "name": "TimeAligned",
-      "description": "The resource contains a written or coded annotation(s) which has data aligning the annotation(s) with a PrimaryMaterial item"
+      "coded": "The resource contains a written or coded annotation(s) which has data aligning the annotation(s) with a PrimaryMaterial item"
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Annotation",
-      "@type": "rdfs:Class",
+      "@id": "https://w3id.org/ldac/terms#Annotation",
+      "@type": "DefinedTerm",
       "name": "Annotation",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
       },
       "rdfs:label": "Annotation",
-      "rdfs:comment": "The resource includes material which adds information to some other linguistic record.",
+      "description": "The resource includes material that adds information to some other linguistic record.",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Code",
+      "@id": "https://w3id.org/ldac/terms#Coded",
       "@type": "DefinedTerm",
       "name": "Coded",
       "description": "The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet).",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEvent",
+      "@id": "https://w3id.org/ldac/terms#CollectionEvent",
       "@type": "rdfs:Class",
       "name": "CollectionEvent",
-      "rdfs:comment": "A description of an event at which one or more PrimaryMaterials were captured,  eg as video or audio",
+      "rdfs:comment": "A description of an event at which one or more PrimaryMaterials were captured, e.g. as video or audio.",
       "rdfs:label": "CollectionEvent",
       "rdfs:subClassOf": [
         "http://schema.org/Event",
@@ -430,31 +447,31 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocol",
+      "@id": "https://w3id.org/ldac/terms#CollectionProtocol",
       "@type": "rdfs:Class",
       "name": "CollectionProtocol",
       "rdfs:label": "CollectionProtocol",
-      "rdfs:comment": "Description of how this Object or Collection was obtained – such as strategy used for selecting written source texts, or the prompts given to participants ",
+      "rdfs:comment": "A description of how this Object or Collection was obtained, such as the strategy used for selecting written source texts, or the prompts given to participants.",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#DataDepositLicense",
+      "@id": "https://w3id.org/ldac/terms#DataDepositLicense",
       "@type": "rdfs:Class",
       "name": "DataDepositLicense",
-      "rdfs:comment": "A license document setting out terms for deposit into a repository",
+      "rdfs:comment": "A license document setting out terms for deposit into a repository.",
       "rdfs:label": "DataDepositLicense",
       "rdfs:subClassOf": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+        "@id": "https://w3id.org/ldac/terms#DataLicense"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense",
+      "@id": "https://w3id.org/ldac/terms#DataLicense",
       "@type": "rdfs:Class",
       "name": "DataLicense",
       "rdfs:label": "DataLicense",
-      "rdfs:comment": "A licence document for data licensing. This is a superclass of DataReuseLicense and DataLicense",
+      "rdfs:comment": "A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       },
@@ -463,29 +480,29 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterial",
-      "@type": "rdfs:Class",
+      "@id": "https://w3id.org/ldac/terms#DerivedMaterial",
+      "@type": "DefinedTerm",
       "name": "DerivedMaterial",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
       },
       "rdfs:label": "DerivedMaterial",
-      "rdfs:comment": "This is derived from another source, such as a Primary Material, via some process, eg a downsampled video or a sample or an abstract of a resource which is not an annotation (an analysis or description)",
+      "description": "This is derived from another source, such as a Primary Material, via some process, e.g. a downsampled video or a sample or an abstract of a resource that is not an annotation (an analysis or description).",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Dialogue",
+      "@id": "https://w3id.org/ldac/terms#Dialogue",
       "@type": "DefinedTerm",
       "name": "Dialogue",
       "description": "An interactive discourse with two or more participants. Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Drama",
+      "@id": "https://w3id.org/ldac/terms#Drama",
       "@type": "DefinedTerm",
       "name": "Drama",
       "sameAs": {
@@ -493,20 +510,20 @@
       },
       "description": "A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#ElicitationTask",
+      "@id": "https://w3id.org/ldac/terms#ElicitationTask",
       "@type": "DefinedTerm",
       "name": "ElicitationTask",
-      "description": "The collection protocol includes a task-based prompt to participants",
+      "description": "The collection protocol includes a task-based prompt to participants.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocolTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#CollectionProtocolTypeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Formulaic",
+      "@id": "https://w3id.org/ldac/terms#Formulaic",
       "@type": "DefinedTerm",
       "name": "Formulaic",
       "description": "The resource is a ritually or conventionally structured discourse.",
@@ -514,56 +531,56 @@
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text/formulaic"
       },
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Gesture",
+      "@id": "https://w3id.org/ldac/terms#Gesture",
       "@type": "DefinedTerm",
       "name": "Gesture",
-      "description": "The resource contains non-linguistic gestural communication (ie not sign language)",
+      "description": "The resource contains non-linguistic gestural communication (i.e. not sign language).",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Handwritten",
+      "@id": "https://w3id.org/ldac/terms#Handwritten",
       "@type": "DefinedTerm",
       "name": "Handwritten",
-      "description": "The resource was written using a writing implement such as pen, pencil, brush or computer stylus  (From Nyingarn - TODO check this)",
+      "description": "The resource was written using a writing implement such as a pen, pencil, brush or computer stylus. (From Nyingarn - TODO check this).",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+        "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#IndexTypes",
+      "@id": "https://w3id.org/ldac/terms#IndexTypes",
       "@type": "DefinedTermSet",
       "name": "IndexTypes",
-      "description": "Set of defined terms for types of indexing, such as FullText",
+      "description": "A set of defined terms for types of indexing, such as FullText.",
       "hasDefinedTerm": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#FullText"
+        "@id": "https://w3id.org/ldac/terms#FullText"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Informational",
+      "@id": "https://w3id.org/ldac/terms#Informational",
       "@type": "DefinedTerm",
       "name": "Informational",
       "description": "Discourse whose primary purpose is to inform the audience about the natural or social world.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Interview",
+      "@id": "https://w3id.org/ldac/terms#Interview",
       "@type": "DefinedTerm",
       "name": "Interview",
-      "description": "The resource is conversation where one or more speakers are directing the conversation",
+      "description": "The resource is a conversation where one or more speakers are directing the conversation.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Lexicon",
+      "@id": "https://w3id.org/ldac/terms#Lexicon",
       "@type": "DefinedTerm",
       "name": "Lexicon",
       "description": "The resource includes a systematic listing of lexical items.",
@@ -572,7 +589,7 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Ludic",
+      "@id": "https://w3id.org/ldac/terms#Ludic",
       "@type": "DefinedTerm",
       "name": "Ludic",
       "description": "Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language. Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.",
@@ -580,109 +597,96 @@
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text/ludic"
       },
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Narrative",
+      "@id": "https://w3id.org/ldac/terms#Narrative",
       "@type": "DefinedTerm",
       "name": "Narrative",
-      "description": "A discourse, monologic or co-constructed, which represents temporally organized events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
+      "description": "A discourse, monologic or co-constructed, which represents temporally organised events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text/narrative"
       },
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Orthographic",
+      "@id": "https://w3id.org/ldac/terms#Orthographic",
       "@type": "DefinedTerm",
       "name": "Orthographic",
-      "description": "The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription",
+      "description": "The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#DerivedMaterialTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#PartOfSpeech",
+      "@id": "https://w3id.org/ldac/terms#PartOfSpeech",
       "@type": "DefinedTerm",
       "name": "PartOfSpeech",
-      "description": "An annotation which assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate)",
+      "description": "An annotation that assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate).",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#DerivedMaterialTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#PersonSnapshot",
-      "@type": "rdfs:Class",
-      "name": "PersonSnapshot",
-      "rdfs:comment": "This class represents a snapshot of a Person in time, in their role as a contributor to one or more creative works. The purpose of this class is to capture the metadata that applies to a person at a particular time, as their name, age, gender, social status  etc may be different over time.",
-      "rdfs:label": "PersonSnapshot",
-      "rdfs:subClassOf": [
-        {
-          "@id": "http://schema.org/Person"
-        },
-        "http://schema.org/Role"
-      ]
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Phonemic",
+      "@id": "https://w3id.org/ldac/terms#Phonemic",
       "@type": "DefinedTerm",
       "name": "Phonemic",
-      "description": "An annotation which represents speech in terms of the sound contrasts made in a language.",
+      "description": "An annotation that represents speech in terms of the sound contrasts made in a language.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonemic"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Phonetic",
+      "@id": "https://w3id.org/ldac/terms#Phonetic",
       "@type": "DefinedTerm",
       "name": "Phonetic",
-      "description": "A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet",
+      "description": "A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonetic"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Phonological",
+      "@id": "https://w3id.org/ldac/terms#Phonological",
       "@type": "DefinedTerm",
       "name": "Phonological",
-      "description": "An annotation which includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language.",
+      "description": "An annotation that includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/phonological"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial",
-      "@type": "rdfs:Class",
+      "@id": "https://w3id.org/ldac/terms#PrimaryMaterial",
+      "@type": "DefinedTerm",
       "name": "PrimaryMaterial",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
       },
       "rdfs:label": "PrimaryMaterial",
-      "rdfs:comment": "The object of study, such as a literary work, film, or recording of natural discourse",
+      "description": "The object of study, such as a literary work, film, or recording of natural discourse.",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Procedural",
+      "@id": "https://w3id.org/ldac/terms#Procedural",
       "@type": "DefinedTerm",
       "name": "Procedural",
       "description": "An explanation or description of a method, process, or situation having ordered steps.",
@@ -690,23 +694,23 @@
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text/procedural"
       },
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Prosodic",
+      "@id": "https://w3id.org/ldac/terms#Prosodic",
       "@type": "DefinedTerm",
       "name": "Prosodic",
-      "description": "An annotation which provides a symbolic record of intonation, stress, tone or other suprasegmental features that is expressed independently of regular phonetic transcription.",
+      "description": "An annotation that provides a symbolic record of intonation, stress, tone or other suprasegmental features, which is expressed independently of regular phonetic transcription.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/prosodic"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Report",
+      "@id": "https://w3id.org/ldac/terms#Report",
       "@type": "DefinedTerm",
       "name": "Report",
       "description": "A factual account of some event or circumstance.",
@@ -714,44 +718,44 @@
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text/report"
       },
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Semantic",
+      "@id": "https://w3id.org/ldac/terms#Semantic",
       "@type": "DefinedTerm",
       "name": "Semantic",
       "description": "The resource includes annotation or analysis concerning the encoding of meaning.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/semantic"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Session",
+      "@id": "https://w3id.org/ldac/terms#Session",
       "@type": "DefinedTerm",
       "name": "Session",
-      "description": "A collection event which is a recording or elicitation Session with participants.",
+      "description": "A collection event that is a recording or elicitation session with participants.",
       "sameAs": {
         "@id": "#https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"
       },
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#OrthographyTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#CollectionEventTypeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#SignLanguage",
+      "@id": "https://w3id.org/ldac/terms#SignedLanguage",
       "@type": "DefinedTerm",
-      "name": "SignLanguage",
+      "name": "SignedLanguage",
       "description": "The resource contains data for which the medium of interaction was signing.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Song",
+      "@id": "https://w3id.org/ldac/terms#Song",
       "@type": "DefinedTerm",
       "name": "Song",
       "sameAs": {
@@ -759,38 +763,41 @@
       },
       "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#SpokenLanguage",
+      "@id": "https://w3id.org/ldac/terms#SpokenLanguage",
       "@type": "DefinedTerm",
       "name": "SpokenLanguage",
-      "description": "The resource contains data for which the medium of interaction was speech",
+      "description": "The resource contains data for which the medium of interaction was speech.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Syntactic",
+      "@id": "https://w3id.org/ldac/terms#Syntactic",
       "@type": "DefinedTerm",
       "name": "Syntactic",
-      "description": "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource",
+      "description": "The resource contains annotation or analysis describing the combinatorial patterns of words in another resource.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/syntactic"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria",
-      "@type": "DefinedTerm",
-      "name": "TextSelectionCriteria",
-      "description": "A description of the criteria used to select texts in a collection",
+      },
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocolTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Thesaurus",
+      "@id": "https://w3id.org/ldac/terms#MaterialSelectionCriteria",
+      "@type": "DefinedTerm",
+      "name": "MaterialSelectionCriteria",
+      "description": "A description of the criteria used to select texts in a collection.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#CollectionProtocolTypeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#Thesaurus",
       "@type": "DefinedTerm",
       "name": "Thesaurus",
       "description": "The resource contains a list or data structure consisting of words or concepts arranged according to sense.",
@@ -798,101 +805,101 @@
         "@id": "http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus"
       },
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Transcription",
+      "@id": "https://w3id.org/ldac/terms#Transcription",
       "@type": "DefinedTerm",
       "name": "Transcription",
       "description": "The resource contains a transcription, which is a written representation (orthographic or coded) of an audio or visual signal.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#transcription"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Translation",
+      "@id": "https://w3id.org/ldac/terms#Translation",
       "@type": "DefinedTerm",
       "name": "Translation",
-      "description": "The resource has been translated from one natural language to another.",
+      "description": "This is a translation of a resource in another language.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation/translation"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Typeset",
+      "@id": "https://w3id.org/ldac/terms#Typeset",
       "@type": "DefinedTerm",
       "name": "Typeset",
       "description": "The resource has been formatted for display.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#OrthographyTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Typewritten",
+      "@id": "https://w3id.org/ldac/terms#Typewritten",
       "@type": "DefinedTerm",
       "name": "Typewritten",
-      "description": "The resource contains text produced on a tpyewriter (From Nyingarn - TODO check this)",
+      "description": "The resource contains text produced on a typewriter (From Nyingarn - TODO check this).",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#OrthographyTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#WrittenLanguage",
+      "@id": "https://w3id.org/ldac/terms#WrittenLanguage",
       "@type": "DefinedTerm",
       "name": "WrittenLanguage",
-      "description": "TThe resource contains data for which the medium of interaction was writing.",
+      "description": "The resource contains data for which the medium of interaction was writing.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#accessControlList",
+      "@id": "https://w3id.org/ldac/terms#accessControlList",
       "@type": "rdf:Property",
       "name": "accessControlList",
       "rdfs:label": "accessControlList",
-      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefineTerm AccessControlList, this property has a URI value that points to a list of userIDs.",
+      "rdfs:comment": "When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs.",
       "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
+        "@id": "https://w3id.org/ldac/terms#DataReuseLicense"
       },
       "rangeIncludes": {
         "@id": "http://schema.org/URL"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#annotationOf",
+      "@id": "https://w3id.org/ldac/terms#annotationOf",
       "@type": "rdf:Property",
       "name": "annotationOf",
-      "rdfs:comment": "This resource contains some kind of description which adds information to the resource it references",
+      "rdfs:comment": "This resource contains some kind of description that adds information to the resource it references.",
       "rdfs:label": "annotationOf",
       "rangeIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
+        "@id": "https://w3id.org/ldac/terms#PrimaryMaterial"
       },
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#annotationType",
+      "@id": "https://w3id.org/ldac/terms#annotationType",
       "@type": "rdf:Property",
       "name": "annotationType",
       "rdfs:label": "annotationType",
-      "rdfs:comment": "The type of annotation for Annotation resources",
+      "rdfs:comment": "The type of annotation for Annotation resources.",
       "definedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#Annotation"
+        "@id": "http://schema.org/CreativeWork"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#annotator",
+      "@id": "https://w3id.org/ldac/terms#annotator",
       "@type": "rdf:Property",
       "name": "annotator",
       "sameAs": {
@@ -913,7 +920,7 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#author",
+      "@id": "https://w3id.org/ldac/terms#author",
       "@type": "rdf:Property",
       "name": "author",
       "sameAs": {
@@ -934,56 +941,59 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#authorizationWorkflow",
+      "@id": "https://w3id.org/ldac/terms#authorizationWorkflow",
       "@type": "rdf:Property",
       "name": "authorizationWorkflow",
-      "rdfs:comment": "By what process is a user granted authorization to a license",
+      "rdfs:comment": "By what process a user is granted authorization to a license.",
       "rdfs:label": "authorizationWorkflow",
       "definedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+        "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
       },
       "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
+        "@id": "https://w3id.org/ldac/terms#DataReuseLicense"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#channels",
+      "@id": "https://w3id.org/ldac/terms#channels",
       "@type": "rdf:Property",
       "name": "channels",
-      "rdfs:comment": "Number of audio channels this resource contains (eg 1, 2, 5.1)",
+      "rdfs:comment": "The number of audio channels this resource contains (e.g. 1, 2, 5.1).",
       "rdfs:label": "channels",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#collectionEventType",
+      "@id": "https://w3id.org/ldac/terms#collectionEventType",
       "@type": "rdf:Property",
       "name": "collectionEventType",
-      "rdfs:comment": "An event with a start and end time during which data are gathered from participants, or from other materials",
+      "rdfs:comment": "An event with a start and end time during which data are gathered from participants, or from other materials.",
       "rdfs:label": "collectionEventType",
       "definedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEventTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#CollectionEventTypeTerms"
       },
       "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEvent"
+        "@id": "https://w3id.org/ldac/terms#CollectionEvent"
+      },
+      "rangeIncludes": {
+        "@id": "https://w3id.org/ldac/terms#Session"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#collectionProtocolType",
+      "@id": "https://w3id.org/ldac/terms#collectionProtocolType",
       "@type": "rdf:Property",
       "name": "collectionProtocolType",
-      "rdfs:comment": "A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection",
+      "rdfs:comment": "A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection.",
       "rdfs:label": "collectionProtocolType",
       "definedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocolTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#CollectionProtocolTypeTerms"
       },
       "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocol"
+        "@id": "https://w3id.org/ldac/terms#CollectionProtocol"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#compiler",
+      "@id": "https://w3id.org/ldac/terms#compiler",
       "@type": "rdf:Property",
       "name": "compiler",
       "description": "This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately.",
@@ -1006,10 +1016,10 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#consultant",
+      "@id": "https://w3id.org/ldac/terms#consultant",
       "@type": "rdf:Property",
       "name": "consultant",
-      "description": "This term is commonly used by field linguists for the native speakers who work with them in describing and analyzing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world the preferred term for this role is \"informant\".",
+      "description": "This term is commonly used by field linguists for the native speakers who work with them in describing and analysing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world, the preferred term for this role is 'informant'.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#consultant"
       },
@@ -1028,7 +1038,7 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#dataInputter",
+      "@id": "https://w3id.org/ldac/terms#dataInputter",
       "@type": "rdf:Property",
       "name": "dataInputter",
       "sameAs": {
@@ -1049,7 +1059,7 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#depositor",
+      "@id": "https://w3id.org/ldac/terms#depositor",
       "@type": "rdf:Property",
       "name": "depositor",
       "sameAs": {
@@ -1070,25 +1080,25 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#derivationOf",
+      "@id": "https://w3id.org/ldac/terms#derivationOf",
       "@type": "rdf:Property",
       "name": "derivationOf",
-      "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF",
+      "rdfs:comment": "This property references another resource from which the current resource is derived by e.g. downsampling audio or video file, or extracting text from a PDF.",
       "rdfs:label": "derivationOf",
       "rangeIncludes": [
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Annotation"
+          "@id": "https://w3id.org/ldac/terms#Annotation"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
+          "@id": "https://w3id.org/ldac/terms#PrimaryMaterial"
         }
       ],
       "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterial"
+        "@id": "https://w3id.org/ldac/terms#DerivedMaterial"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#developer",
+      "@id": "https://w3id.org/ldac/terms#developer",
       "@type": "rdf:Property",
       "name": "developer",
       "description": "A software programmer, designer, or analyst; a designer of a questionnaire or research task.",
@@ -1110,20 +1120,20 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#doi",
+      "@id": "https://w3id.org/ldac/terms#doi",
       "@type": "rdf:Property",
       "name": "doi",
-      "rdfs:comment": "A digital Object Identifier",
+      "rdfs:comment": "A Digital Object Identifier.",
       "rdfs:label": "doi",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#editor",
+      "@id": "https://w3id.org/ldac/terms#editor",
       "@type": "rdf:Property",
       "name": "editor",
-      "description": "This role includes anyone whose role was editorial in nature, such as proof-readers, debuggers, testers, etc. It may overlap the Compiler role in some cases.",
+      "description": "This role includes anyone whose role was editorial in nature, such as proofreaders, debuggers, testers, etc. It may overlap the Compiler role in some cases.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#editor"
       },
@@ -1142,7 +1152,7 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#geoJSON",
+      "@id": "https://w3id.org/ldac/terms#geoJSON",
       "@type": "rdf:Property",
       "name": "geoJSON",
       "domainIncludes": [
@@ -1151,50 +1161,50 @@
         "http://schema.org/Language"
       ],
       "rangeIncludes": "Text",
-      "rdfs:comment": "A valid GEOJson feature or feature collection as a string that can be parsed as JSON ",
+      "rdfs:comment": "A valid GEOJson feature or feature collection as a string that can be parsed as JSON.",
       "rdfs:label": "geoJSON"
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#hasAnnotation",
+      "@id": "https://w3id.org/ldac/terms#hasAnnotation",
       "@type": "rdf:Property",
       "name": "hasAnnotation",
       "rdfs:label": "hasAnnotation",
-      "rdfs:comment": "This resource is referenced by another resource that describes it such as a translation, transcription or other analysis ",
-      "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
-      },
-      "rangeIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#Annnotation"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#hasCollectionProtocol",
-      "@type": "rdf:Property",
-      "name": "hasCollectionProtocol",
-      "rdfs:label": "hasCollectionProtocol",
-      "rdfs:comment": "This resource  was assembled or collected according to the linked protocol",
+      "rdfs:comment": "This resource is referenced by another resource that describes it such as a translation, transcription or other analysis.",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       },
       "rangeIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocol"
+        "@id": "https://w3id.org/ldac/terms#Annnotation"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#hasDerivation",
+      "@id": "https://w3id.org/ldac/terms#hasCollectionProtocol",
       "@type": "rdf:Property",
-      "name": "hasDerivation",
-      "rdfs:comment": "This resource references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF",
-      "rdfs:label": "hasDerivation",
+      "name": "hasCollectionProtocol",
+      "rdfs:label": "hasCollectionProtocol",
+      "rdfs:comment": "This resource was assembled or collected according to the linked protocol.",
       "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#PrimaryMaterial"
+        "@id": "http://schema.org/CreativeWork"
       },
       "rangeIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DerivedMaterial"
+        "@id": "https://w3id.org/ldac/terms#CollectionProtocol"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#illustrator",
+      "@id": "https://w3id.org/ldac/terms#hasDerivation",
+      "@type": "rdf:Property",
+      "name": "hasDerivation",
+      "rdfs:comment": "This property references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.",
+      "rdfs:label": "hasDerivation",
+      "domainIncludes": {
+        "@id": "https://w3id.org/ldac/terms#PrimaryMaterial"
+      },
+      "rangeIncludes": {
+        "@id": "https://w3id.org/ldac/terms#DerivedMaterial"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#illustrator",
       "@type": "rdf:Property",
       "name": "illustrator",
       "sameAs": {
@@ -1215,18 +1225,20 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#indexableText",
+      "@id": "https://w3id.org/ldac/terms#indexableText",
       "@type": "rdf:Property",
       "name": "indexableText",
       "rdfs:label": "indexableText",
-      "rangeIncludes": "http://schema.org/File",
-      "rdfs:comment": "Indicates one or more target File that together contain the full text of an item – each file should indicate its language",
+      "rangeIncludes": {
+        "@id": "http://schema.org/MediaObject"
+      },
+      "rdfs:comment": "One or more target File(s) that together contain the full text of an item – each file should indicate its language.",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#interpreter",
+      "@id": "https://w3id.org/ldac/terms#interpreter",
       "@type": "rdf:Property",
       "name": "interpreter",
       "example": "A person translating from English to ASL during a speech; a Kuna chief who interprets a chant that another chief has just performed, thus completing the ceremony.",
@@ -1249,10 +1261,10 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#interviewee",
+      "@id": "https://w3id.org/ldac/terms#interviewee",
       "@type": "rdf:Property",
       "name": "interviewee",
-      "rdfs:comment": "The participant was a respondent in an interview",
+      "rdfs:comment": "The participant was a respondent in an interview.",
       "rdfs:label": "interviewee",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
@@ -1267,7 +1279,7 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#interviewer",
+      "@id": "https://w3id.org/ldac/terms#interviewer",
       "@type": "rdf:Property",
       "name": "interviewer",
       "sameAs": {
@@ -1288,58 +1300,65 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#isDeIdentified",
+      "@id": "https://w3id.org/ldac/terms#isDeIdentified",
       "@type": "rdf:Property",
       "name": "isDeIdentified",
       "rdfs:label": "isDeIdentified",
-      "domainIncludes": "[{\"@id\":\"http://schema.org/CreativeWork\"}, {\"@id\":\"http://schema.org/Person\"}, https://purl.archive.org/language-data-commons/terms#PersonSnapshot]",
-      "rangeIncludes": "http://schema.org/Boolean",
-      "rdfs:comment": "The data in this item has had identifying information removed, or in the case of a person the name is an alias"
+      "domainIncludes": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        },
+        {
+          "@id": "http://schema.org/Person"
+        }
+      ],
+      "rangeIncludes": {
+        "@id": "http://schema.org/Boolean"
+      },
+      "rdfs:comment": "The data in this item has had identifying information removed, or in the case of a person the name is an alias."
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#linguisticGenre",
+      "@id": "https://w3id.org/ldac/terms#subjectLanguage",
       "@type": "rdf:Property",
       "name": "subjectLanguage",
       "rdfs:label": "subjectLanguage",
-      "rdfs:comment": "The language(s) that this annotation resource is about",
-      "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#Annotation"
-      },
+      "rdfs:comment": "The language(s) that this annotation resource is about.",
+      "domainIncludes": [],
       "rangeIncludes": {
         "@id": "http://schema.org/Language"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#modality",
+      "@id": "https://w3id.org/ldac/terms#communicationMode",
       "@type": "rdf:Property",
-      "name": "modality",
-      "rdfs:label": "modality",
-      "rdfs:comment": "The mode (spoken, written, signed etc) of this resource. There may be more than one value for this property.",
+      "name": "communicationMode",
+      "rdfs:label": "communicationMode",
+      "rdfs:comment": "The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       },
       "definedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#openAccessIndex",
+      "@id": "https://w3id.org/ldac/terms#openAccessIndex",
       "@type": "rdf:Property",
       "name": "openAccessIndex",
       "rdfs:label": "openAccessIndex",
-      "rdfs:comment": "One or more public index types allowed by a license, eg FullText indexing may be allowed for discovery even when an item is not ",
+      "rdfs:comment": "One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not.",
       "definedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#IndexTypes"
+        "@id": "https://w3id.org/ldac/terms#IndexTypes"
       },
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#participant",
+      "@id": "https://w3id.org/ldac/terms#participant",
       "@type": "rdf:Property",
       "name": "participant",
-      "description": "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in general sense of having allowed the creation event to take place, such as the mayor of an indigenous community.",
+      "description": "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in a general sense of having allowed the creation event to take place, such as the mayor of an indigenous community.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#participant"
       },
@@ -1358,7 +1377,7 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#performer",
+      "@id": "https://w3id.org/ldac/terms#performer",
       "@type": "rdf:Property",
       "name": "performer",
       "description": "It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.",
@@ -1381,20 +1400,7 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#person",
-      "@type": "rdf:Property",
-      "name": "person",
-      "rdfs:comment": "This property references a Person item which represents the persistent identity of one or more ContributingPerson items.",
-      "rdfs:label": "person",
-      "rangeIncludes": {
-        "@id": "http://schema.org/Person"
-      },
-      "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#PersonSnapshot"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#photographer",
+      "@id": "https://w3id.org/ldac/terms#photographer",
       "@type": "rdf:Property",
       "name": "photographer",
       "sameAs": {
@@ -1415,7 +1421,7 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#recorder",
+      "@id": "https://w3id.org/ldac/terms#recorder",
       "@type": "rdf:Property",
       "name": "recorder",
       "sameAs": {
@@ -1436,10 +1442,10 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#register",
+      "@id": "https://w3id.org/ldac/terms#register",
       "@type": "rdf:Property",
       "name": "register",
-      "description": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.",
+      "description": "The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.",
       "sameAs": {
         "@id": "http://w3id.org/meta-share/meta-share/register"
       },
@@ -1450,7 +1456,7 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#researchParticipant",
+      "@id": "https://w3id.org/ldac/terms#researchParticipant",
       "@type": "rdf:Property",
       "name": "researchParticipant",
       "sameAs": {
@@ -1471,7 +1477,7 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#researcher",
+      "@id": "https://w3id.org/ldac/terms#researcher",
       "@type": "rdf:Property",
       "name": "researcher",
       "sameAs": {
@@ -1492,7 +1498,7 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#responder",
+      "@id": "https://w3id.org/ldac/terms#responder",
       "@type": "rdf:Property",
       "name": "responder",
       "description": "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\".",
@@ -1514,10 +1520,10 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#signer",
+      "@id": "https://w3id.org/ldac/terms#signer",
       "@type": "rdf:Property",
       "name": "signer",
-      "description": "Signers are those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
+      "description": "Those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
       "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#signer"
@@ -1537,7 +1543,7 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#singer",
+      "@id": "https://w3id.org/ldac/terms#singer",
       "@type": "rdf:Property",
       "name": "singer",
       "rdfs:label": "singer",
@@ -1558,10 +1564,10 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#speaker",
+      "@id": "https://w3id.org/ldac/terms#speaker",
       "@type": "rdf:Property",
       "name": "speaker",
-      "description": "Speakers are those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
+      "description": "Those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
       "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Speakers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#speaker"
@@ -1581,7 +1587,7 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#sponsor",
+      "@id": "https://w3id.org/ldac/terms#sponsor",
       "@type": "rdf:Property",
       "name": "sponsor",
       "sameAs": {
@@ -1602,7 +1608,7 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#transcriber",
+      "@id": "https://w3id.org/ldac/terms#transcriber",
       "@type": "rdf:Property",
       "name": "transcriber",
       "sameAs": {
@@ -1623,7 +1629,7 @@
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#translator",
+      "@id": "https://w3id.org/ldac/terms#translator",
       "@type": "rdf:Property",
       "name": "translator",
       "sameAs": {
@@ -1644,317 +1650,381 @@
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms",
-      "@type": "DefinedTermSet",
-      "name": "ModalityTerms",
-      "description": "Set of expected values for modality types",
-      "hasDefinedTerm": [
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Gesture"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#SignLanguage"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Song"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#SpokenLanguage"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#WhistledLanguage"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#WrittenLanguage"
-        }
-      ]
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms",
-      "@type": "DefinedTermSet",
-      "name": "LinguisticGenreTerms",
-      "description": "Set of expected values for linguistic genre of a resource",
-      "hasDefinedTerm": [
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Dialogue"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Drama"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Formulaic"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Informational"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Interview"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Ludic"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Narrative"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Procedural"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Report"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Thesaurus"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/Oratory"
-        }
-      ]
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#CollectionProtocolTypeTerms",
-      "@type": "DefinedTermSet",
-      "name": "CollectionProtocolTypeTerms",
-      "description": "Set of terms which are expected values for CollectionProtocol types",
-      "hasDefinedTerm": [
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#ElicitationTask"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#TextSelectionCriteria"
-        }
-      ]
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#FullText",
-      "@type": "DefinedTerm",
-      "name": "FullText",
-      "description": "A text index which makes the full text of a data resources findable via a search interface",
-      "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#IndexTypes"
+      "@id": "https://w3id.org/ldac/terms#dateFreeText",
+      "@type": "rdf:Property",
+      "name": "dateFreeText",
+      "rdfs:label": "dateFreeText",
+      "rdfs:comment": "Date information that cannot be put in one of the standard date formats, e.g. \"mid-1970s\", or it is not clear, for example, if it is a creation or publication date.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms",
+      "@id": "https://w3id.org/ldac/terms#MaterialTypes",
       "@type": "DefinedTermSet",
-      "name": "AnnotationTypeTerms",
-      "description": "The set of expected values for annotation types",
+      "name": "MaterialTypes",
+      "description": "A set of terms describing the relationship of a resource to the original data source.",
       "hasDefinedTerm": [
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Gestural"
+          "@id": "https://w3id.org/ldac/terms#PrimaryMaterial"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Phonemic"
+          "@id": "https://w3id.org/ldac/terms#Annotation"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Phonetic"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Phonological"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Prosodic"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Semantic"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Syntactic"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Transcription"
-        },
-        {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Translation"
+          "@id": "https://w3id.org/ldac/terms#DerivedMaterial"
         }
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#OrthographyTypeTerms",
+      "@id": "https://w3id.org/ldac/terms#materialType",
+      "@type": "rdf:Property",
+      "name": "materialType",
+      "rdfs:label": "materialType",
+      "rdfs:comment": "Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation.",
+      "domainIncludes": {
+        "@id": "http://schema.org/MediaObject"
+      },
+      "definedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#MaterialTypes"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#linguisticGenre",
+      "@type": "rdf:Property",
+      "name": "linguisticGenre",
+      "rdfs:comment": "A linguistic classification of the genre of this resource.",
+      "rdfs:label": "linguisticGenre",
+      "definedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+      },
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms",
+      "@type": "DefinedTermSet",
+      "name": "CommunicationModeTerms",
+      "description": "A set of expected values for the property communicationMode.",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://w3id.org/ldac/terms#Gesture"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#SignedLanguage"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Song"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#SpokenLanguage"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#WhistledLanguage"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#WrittenLanguage"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms",
+      "@type": "DefinedTermSet",
+      "name": "LinguisticGenreTerms",
+      "description": "A set of expected values for the linguistic genre of a resource.",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://w3id.org/ldac/terms#Dialogue"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Drama"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Formulaic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Informational"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Interview"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Ludic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Narrative"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Procedural"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Report"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Thesaurus"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Oratory"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#CollectionProtocolTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "CollectionProtocolTypeTerms",
+      "description": "A set of terms which are expected values for CollectionProtocol types.",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://w3id.org/ldac/terms#ElicitationTask"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#MaterialSelectionCriteria"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms",
       "@type": "DefinedTermSet",
       "name": "WrittenLanguageTypeTerms",
-      "description": "Set of expected types for WrittenLanguage modality (this set is incomplete - more work needed)",
+      "description": "A set of expected types for WrittenLanguage communication mode (this set is incomplete - more work needed).",
       "hasDefinedTerm": [
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Handwritten"
+          "@id": "https://w3id.org/ldac/terms#Handwritten"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Typeset"
+          "@id": "https://w3id.org/ldac/terms#Typeset"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#Typewritten"
+          "@id": "https://w3id.org/ldac/terms#Typewritten"
         }
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense",
+      "@id": "https://w3id.org/ldac/terms#FullText",
+      "@type": "DefinedTerm",
+      "name": "FullText",
+      "description": "A text index that makes the full text of a data resource findable via a search interface.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#IndexTypes"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "AnnotationTypeTerms",
+      "description": "The set of expected values for annotation types.",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://w3id.org/ldac/terms#Gestural"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Phonemic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Phonetic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Phonological"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Prosodic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Semantic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Syntactic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Transcription"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Translation"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#CollectionEventTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "CollectionEventTypeTerms",
+      "description": "A set of terms which are expected values for CollectionEvent types.",
+      "hasDefinedTerm": {
+        "@id": "https://w3id.org/ldac/terms#Session"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#DataReuseLicense",
       "@type": "rdfs:Class",
       "name": "DataReuseLicense",
       "rdfs:label": "DataReuseLicense",
-      "rdfs:comment": "A license document, setting out terms for reuse of data ",
+      "rdfs:comment": "A license document, setting out terms for reuse of data.",
       "rdfs:subClassOf": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+        "@id": "https://w3id.org/ldac/terms#DataLicense"
       },
       "sameAs": {
         "@id": "https://creativecommons.org/ns#License"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows",
+      "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows",
       "@type": "DefinedTermSet",
       "name": "AuthorizationWorkflows",
-      "description": "Set of DefinedTerms for access authorization mechanisms - some of these may be combined - eg AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant",
+      "description": "A set of DefinedTerms for access authorization mechanisms - some of these may be combined - e.g. AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant.",
       "hasDefinedTerm": [
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#AgreeToTerms"
+          "@id": "https://w3id.org/ldac/terms#AgreeToTerms"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByApplication"
+          "@id": "https://w3id.org/ldac/terms#AuthorizationByApplication"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByInvitation"
+          "@id": "https://w3id.org/ldac/terms#AuthorizationByInvitation"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#SelfAuthorization"
+          "@id": "https://w3id.org/ldac/terms#SelfAuthorization"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#AccessControlList"
         }
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#CollectionEventTypeTerms",
-      "@type": "DefinedTermSet",
-      "name": "CollectionEventTypeTerms",
-      "description": "Set of terms which are expected values for CollectionEvent types",
-      "hasDefinedTerm": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#Session"
-      }
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#WhistledLanguage",
+      "@id": "https://w3id.org/ldac/terms#WhistledLanguage",
       "@type": "DefinedTerm",
       "name": "WhistledLanguage",
       "description": "The resource contains data for which the medium of interaction was whistling.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationModeTerms"
+        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/Oratory",
+      "@id": "https://w3id.org/ldac/terms#Oratory",
       "@type": "DefinedTerm",
       "name": "Oratory",
       "description": "The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.",
       "sameAs": {
-        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/orratory"
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#text/oratory"
       },
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#CommunicationGenreTerms"
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#Gestural",
+      "@id": "https://w3id.org/ldac/terms#Gestural",
       "@type": "DefinedTerm",
       "name": "Gestural",
       "description": "The resource describes the gestural content of the resource it annotates.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AnnotationTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/gestural"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#AgreeToTerms",
+      "@id": "https://w3id.org/ldac/terms#AgreeToTerms",
       "@type": "DefinedTerm",
       "name": "AgreeToTerms",
-      "description": "A user is expected to explicitly agree to a set of license terms, this may be combined with AccessControlList - to note that even if a user has been pre-approved for a license they must agree to license terms",
+      "description": "A user is expected to explicitly agree to a set of license terms, this may be combined with AccessControlList - to note that even if a user has been pre-approved for a license they must agree to license terms.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+        "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByApplication",
+      "@id": "https://w3id.org/ldac/terms#AuthorizationByApplication",
       "@type": "DefinedTerm",
       "name": "AuthorizationByApplication",
       "description": "Users may apply for a license via some workflow, such as a form, with the decision being made by a DataSteward or their delegate about whether to grant the license.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+        "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationByInvitation",
+      "@id": "https://w3id.org/ldac/terms#AuthorizationByInvitation",
       "@type": "DefinedTerm",
       "name": "AuthorizationByInvitation",
-      "description": "A data steward or administrator is expected to use an access control system to invite users, for example participants, collaborators or students",
+      "description": "A data steward or administrator is expected to use an access control system to invite users, for example, participants, collaborators or students.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+        "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#SelfAuthorization",
+      "@id": "https://w3id.org/ldac/terms#SelfAuthorization",
       "@type": "DefinedTerm",
       "name": "SelfAuthorization",
-      "description": "A user can be authorized to access data by clicking that they agree to a license, or filling out a form to check their understanding, that can be validated by a machine and does not require human intervention.",
+      "description": "A user can be authorised to access data by clicking that they agree to a license, or filling out a form to check their understanding, which can be validated by a machine and does not require human intervention.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+        "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#access",
+      "@id": "https://w3id.org/ldac/terms#AccessControlList",
+      "@type": "DefinedTerm",
+      "name": "AccessControlList",
+      "description": "License grants access to data based on a list of approved users, specified using the property accessControlList.",
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
+      }
+    },
+    {
+      "@id": "#http___schema_org_CreativeWork-1",
+      "@type": "Class",
+      "name": []
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#access",
       "@type": "rdf:Property",
       "name": "access",
       "rdfs:label": "access",
-      "rdfs:comment": "Is this an open or restricted access license",
+      "rdfs:comment": "Whether this is an open or restricted access license.",
       "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DataReuseLicense"
+        "@id": "https://w3id.org/ldac/terms#DataReuseLicense"
       },
       "definedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AccessTypes"
+        "@id": "https://w3id.org/ldac/terms#AccessTypes"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#AccessTypes",
+      "@id": "https://w3id.org/ldac/terms#AccessTypes",
       "@type": "DefinedTermSet",
       "name": "AccessTypes",
-      "description": "Set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorized) access",
+      "description": "A set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorised) access.",
       "hasDefinedTerm": [
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizedAccess"
+          "@id": "https://w3id.org/ldac/terms#AuthorizedAccess"
         },
         {
-          "@id": "https://purl.archive.org/language-data-commons/terms#OpenAccess"
+          "@id": "https://w3id.org/ldac/terms#OpenAccess"
         }
       ]
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizedAccess",
+      "@id": "https://w3id.org/ldac/terms#AuthorizedAccess",
       "@type": "DefinedTerm",
       "name": "AuthorizedAccess",
-      "description": "Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission",
+      "description": "Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AccessTypes"
+        "@id": "https://w3id.org/ldac/terms#AccessTypes"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#OpenAccess",
+      "@id": "https://w3id.org/ldac/terms#OpenAccess",
       "@type": "DefinedTerm",
       "name": "OpenAccess",
-      "description": "Data covered by this license may be accessed as long as the license is served alongside it, does not require any specific authorization step"
-    },
-    {
-      "@id": "https://purl.archive.org/language-data-commons/terms#AccessControlList",
-      "@type": "DefinedTerm",
-      "name": "AccessControlList",
-      "description": "License grants access to data based on a list of approved users, specified using the property accessControlList",
+      "description": "Data covered by this license may be accessed as long as the license is served alongside it, and does not require any specific authorization step.",
       "inDefinedTermSet": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#AuthorizationWorkflows"
+        "@id": "https://w3id.org/ldac/terms#AccessTypes"
       }
     },
     {
-      "@id": "https://purl.archive.org/language-data-commons/terms#reviewDate",
+      "@id": "https://w3id.org/ldac/terms#reviewDate",
       "@type": "rdf:Property",
       "name": "reviewDate",
       "rdfs:label": "reviewDate",
-      "rdfs:comment": "The date that this license should be reviewed",
+      "rdfs:comment": "The date that this license should be reviewed.",
       "domainIncludes": {
-        "@id": "https://purl.archive.org/language-data-commons/terms#DataLicense"
+        "@id": "https://w3id.org/ldac/terms#DataLicense"
       }
     }
   ]
