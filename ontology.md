@@ -10,7 +10,7 @@ This is a language data Schema, in the style of the Schema.org schema. It is bas
 
 ## Properties
 
-<a href="#accessControlList">accessControlList</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#communicationMode">communicationMode</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#materialType">materialType</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#access">access</a> | <a href="#reviewDate">reviewDate</a>
+<a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#communicationMode">communicationMode</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#itemLocation">itemLocation</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#material">material</a> | <a href="#materialType">materialType</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#reviewDate">reviewDate</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
 
 ## DefinedTerms
 
@@ -20,15 +20,28 @@ This is a language data Schema, in the style of the Schema.org schema. It is bas
 
 ## DefinedTermsSets
 
-<a href="#IndexTypes">IndexTypes</a> | <a href="#MaterialTypes">MaterialTypes</a> | <a href="#CommunicationModeTerms">CommunicationModeTerms</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#AccessTypes">AccessTypes</a>
+<a href="#AccessTypes">AccessTypes</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#CommunicationModeTerms">CommunicationModeTerms</a> | <a href="#IndexTypes">IndexTypes</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#MaterialTypes">MaterialTypes</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a>
+
+<div id="AccessTypes"  style="border-style: solid">
+
+## Defined Term Set: AccessTypes (https://w3id.org/ldac/terms#AccessTypes)
+
+A set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorised) access.
+
+### Has defined terms:
+
+[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
 
 <div id="Annotation"  style="border-style: solid">
 
-## Defined Term: Annotation
+## Defined Term: Annotation (https://w3id.org/ldac/terms#Annotation)
 
 The resource includes material that adds information to some other linguistic record.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#materialType'> materialType </a>] | 
 
@@ -40,9 +53,35 @@ The resource includes material that adds information to some other linguistic re
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="AnnotationTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: AnnotationTypeTerms (https://w3id.org/ldac/terms#AnnotationTypeTerms)
+
+The set of expected values for annotation types.
+
+### Has defined terms:
+
+[<a href='#Gestural'> Gestural </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Translation'> Translation </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="AuthorizationWorkflows"  style="border-style: solid">
+
+## Defined Term Set: AuthorizationWorkflows (https://w3id.org/ldac/terms#AuthorizationWorkflows)
+
+A set of DefinedTerms for access authorization mechanisms - some of these may be combined, e.g. AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant.
+
+### Has defined terms:
+
+[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | [<a href='#AccessControlList'> AccessControlList </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="Coded"  style="border-style: solid">
 
-## Defined Term: Coded
+## Defined Term: Coded (https://w3id.org/ldac/terms#Coded)
 
 The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet).
 
@@ -51,7 +90,7 @@ The resource contains an analysis or annotations represented by a code (such as 
 
 <div id="CollectionEvent" style="border-style: solid">
 
-## Class: CollectionEvent
+## Class: CollectionEvent (https://w3id.org/ldac/terms#CollectionEvent)
 
 A description of an event at which one or more PrimaryMaterials were captured, e.g. as video or audio.
 
@@ -70,9 +109,22 @@ A description of an event at which one or more PrimaryMaterials were captured, e
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="CollectionEventTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: CollectionEventTypeTerms (https://w3id.org/ldac/terms#CollectionEventTypeTerms)
+
+A set of terms which are expected values for CollectionEvent types.
+
+### Has defined terms:
+
+[<a href='#Session'> Session </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="CollectionProtocol" style="border-style: solid">
 
-## Class: CollectionProtocol
+## Class: CollectionProtocol (https://w3id.org/ldac/terms#CollectionProtocol)
 
 A description of how this Object or Collection was obtained, such as the strategy used for selecting written source texts, or the prompts given to participants.
 
@@ -91,9 +143,35 @@ A description of how this Object or Collection was obtained, such as the strateg
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="CollectionProtocolTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: CollectionProtocolTypeTerms (https://w3id.org/ldac/terms#CollectionProtocolTypeTerms)
+
+A set of terms which are expected values for CollectionProtocol types.
+
+### Has defined terms:
+
+[<a href='#ElicitationTask'> ElicitationTask </a>] | [<a href='#MaterialSelectionCriteria'> MaterialSelectionCriteria </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="CommunicationModeTerms"  style="border-style: solid">
+
+## Defined Term Set: CommunicationModeTerms (https://w3id.org/ldac/terms#CommunicationModeTerms)
+
+A set of expected values for the property communicationMode.
+
+### Has defined terms:
+
+[<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="DataDepositLicense" style="border-style: solid">
 
-## Class: DataDepositLicense
+## Class: DataDepositLicense (https://w3id.org/ldac/terms#DataDepositLicense)
 
 A license document setting out terms for deposit into a repository.
 
@@ -110,7 +188,7 @@ A license document setting out terms for deposit into a repository.
 
 <div id="DataLicense" style="border-style: solid">
 
-## Class: DataLicense
+## Class: DataLicense (https://w3id.org/ldac/terms#DataLicense)
 
 A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.
 
@@ -136,11 +214,11 @@ A license document for data licensing. This is a superclass of DataReuseLicense 
 
 <div id="DerivedMaterial"  style="border-style: solid">
 
-## Defined Term: DerivedMaterial
+## Defined Term: DerivedMaterial (https://w3id.org/ldac/terms#DerivedMaterial)
 
 This is derived from another source, such as a Primary Material, via some process, e.g. a downsampled video or a sample or an abstract of a resource that is not an annotation (an analysis or description).
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#materialType'> materialType </a>] | 
 
@@ -154,11 +232,11 @@ This is derived from another source, such as a Primary Material, via some proces
 
 <div id="Dialogue"  style="border-style: solid">
 
-## Defined Term: Dialogue
+## Defined Term: Dialogue (https://w3id.org/ldac/terms#Dialogue)
 
 An interactive discourse with two or more participants. Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
@@ -167,11 +245,11 @@ An interactive discourse with two or more participants. Examples of dialogues in
 
 <div id="Drama"  style="border-style: solid">
 
-## Defined Term: Drama
+## Defined Term: Drama (https://w3id.org/ldac/terms#Drama)
 
 A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
@@ -185,11 +263,11 @@ A planned, creative, rendition of discourse with two or more participants intend
 
 <div id="ElicitationTask"  style="border-style: solid">
 
-## Defined Term: ElicitationTask
+## Defined Term: ElicitationTask (https://w3id.org/ldac/terms#ElicitationTask)
 
 The collection protocol includes a task-based prompt to participants.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#collectionProtocolType'> collectionProtocolType </a>] | 
 
@@ -198,11 +276,11 @@ The collection protocol includes a task-based prompt to participants.
 
 <div id="Formulaic"  style="border-style: solid">
 
-## Defined Term: Formulaic
+## Defined Term: Formulaic (https://w3id.org/ldac/terms#Formulaic)
 
 The resource is a ritually or conventionally structured discourse.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
@@ -216,11 +294,11 @@ The resource is a ritually or conventionally structured discourse.
 
 <div id="Gesture"  style="border-style: solid">
 
-## Defined Term: Gesture
+## Defined Term: Gesture (https://w3id.org/ldac/terms#Gesture)
 
 The resource contains non-linguistic gestural communication (i.e. not sign language).
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#communicationMode'> communicationMode </a>] | 
 
@@ -229,7 +307,7 @@ The resource contains non-linguistic gestural communication (i.e. not sign langu
 
 <div id="Handwritten"  style="border-style: solid">
 
-## Defined Term: Handwritten
+## Defined Term: Handwritten (https://w3id.org/ldac/terms#Handwritten)
 
 The resource was written using a writing implement such as a pen, pencil, brush or computer stylus. (From Nyingarn - TODO check this).
 
@@ -238,22 +316,24 @@ The resource was written using a writing implement such as a pen, pencil, brush 
 
 <div id="IndexTypes"  style="border-style: solid">
 
-## Defined Term Set: IndexTypes
+## Defined Term Set: IndexTypes (https://w3id.org/ldac/terms#IndexTypes)
 
 A set of defined terms for types of indexing, such as FullText.
 
-### Has defined terms[<a href='#FullText'> FullText </a>] | 
+### Has defined terms:
+
+[<a href='#FullText'> FullText </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
 
 <div id="Informational"  style="border-style: solid">
 
-## Defined Term: Informational
+## Defined Term: Informational (https://w3id.org/ldac/terms#Informational)
 
 Discourse whose primary purpose is to inform the audience about the natural or social world.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
@@ -262,11 +342,11 @@ Discourse whose primary purpose is to inform the audience about the natural or s
 
 <div id="Interview"  style="border-style: solid">
 
-## Defined Term: Interview
+## Defined Term: Interview (https://w3id.org/ldac/terms#Interview)
 
 The resource is a conversation where one or more speakers are directing the conversation.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
@@ -275,9 +355,13 @@ The resource is a conversation where one or more speakers are directing the conv
 
 <div id="Lexicon"  style="border-style: solid">
 
-## Defined Term: Lexicon
+## Defined Term: Lexicon (https://w3id.org/ldac/terms#Lexicon)
 
 The resource includes a systematic listing of lexical items.
+
+### Is an expected value for the following property:
+
+[<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
 ### Same as: 
 
@@ -287,13 +371,26 @@ The resource includes a systematic listing of lexical items.
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="LinguisticGenreTerms"  style="border-style: solid">
+
+## Defined Term Set: LinguisticGenreTerms (https://w3id.org/ldac/terms#LinguisticGenreTerms)
+
+A set of expected values for the linguistic genre of a resource.
+
+### Has defined terms:
+
+[<a href='#Dialogue'> Dialogue </a>] | [<a href='#Drama'> Drama </a>] | [<a href='#Formulaic'> Formulaic </a>] | [<a href='#Informational'> Informational </a>] | [<a href='#Interview'> Interview </a>] | [<a href='#Ludic'> Ludic </a>] | [<a href='#Narrative'> Narrative </a>] | [<a href='#Procedural'> Procedural </a>] | [<a href='#Report'> Report </a>] | [<a href='#Thesaurus'> Thesaurus </a>] | [<a href='#Oratory'> Oratory </a>] | [<a href='#Lexicon'> Lexicon </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="Ludic"  style="border-style: solid">
 
-## Defined Term: Ludic
+## Defined Term: Ludic (https://w3id.org/ldac/terms#Ludic)
 
 Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language. Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
@@ -305,13 +402,26 @@ Ludic discourse is language whose primary function is to be part of play, or a s
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="MaterialTypes"  style="border-style: solid">
+
+## Defined Term Set: MaterialTypes (https://w3id.org/ldac/terms#MaterialTypes)
+
+A set of terms describing the relationship of a resource to the original data source.
+
+### Has defined terms:
+
+[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | [<a href='#Annotation'> Annotation </a>] | [<a href='#DerivedMaterial'> DerivedMaterial </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="Narrative"  style="border-style: solid">
 
-## Defined Term: Narrative
+## Defined Term: Narrative (https://w3id.org/ldac/terms#Narrative)
 
 A discourse, monologic or co-constructed, which represents temporally organised events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
@@ -325,7 +435,7 @@ A discourse, monologic or co-constructed, which represents temporally organised 
 
 <div id="Orthographic"  style="border-style: solid">
 
-## Defined Term: Orthographic
+## Defined Term: Orthographic (https://w3id.org/ldac/terms#Orthographic)
 
 The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription.
 
@@ -339,13 +449,13 @@ The resource contains annotations using orthography (a writing system) as oppose
 
 <div id="PartOfSpeech"  style="border-style: solid">
 
-## Defined Term: PartOfSpeech
+## Defined Term: PartOfSpeech (https://w3id.org/ldac/terms#PartOfSpeech)
 
 An annotation that assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate).
 
 ### Same as: 
 
-[<a href='http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech'> description/part-of-spoeech </a>] | 
+[<a href='http://www.language-archives.org/REC/type-20020628.html#description/part-of-speech'> description/part-of-speech </a>] | 
 
 
 </div><br>
@@ -353,11 +463,11 @@ An annotation that assigns lexical elements of language to classes on the basis 
 
 <div id="Phonemic"  style="border-style: solid">
 
-## Defined Term: Phonemic
+## Defined Term: Phonemic (https://w3id.org/ldac/terms#Phonemic)
 
 An annotation that represents speech in terms of the sound contrasts made in a language.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#annotationType'> annotationType </a>] | 
 
@@ -371,11 +481,11 @@ An annotation that represents speech in terms of the sound contrasts made in a l
 
 <div id="Phonetic"  style="border-style: solid">
 
-## Defined Term: Phonetic
+## Defined Term: Phonetic (https://w3id.org/ldac/terms#Phonetic)
 
 A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#annotationType'> annotationType </a>] | 
 
@@ -389,11 +499,11 @@ A representation of speech in terms of the sounds produced, typically using the 
 
 <div id="Phonological"  style="border-style: solid">
 
-## Defined Term: Phonological
+## Defined Term: Phonological (https://w3id.org/ldac/terms#Phonological)
 
 An annotation that includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#annotationType'> annotationType </a>] | 
 
@@ -407,11 +517,11 @@ An annotation that includes information about the sound system of a language, su
 
 <div id="PrimaryMaterial"  style="border-style: solid">
 
-## Defined Term: PrimaryMaterial
+## Defined Term: PrimaryMaterial (https://w3id.org/ldac/terms#PrimaryMaterial)
 
 The object of study, such as a literary work, film, or recording of natural discourse.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#materialType'> materialType </a>] | 
 
@@ -425,11 +535,11 @@ The object of study, such as a literary work, film, or recording of natural disc
 
 <div id="Procedural"  style="border-style: solid">
 
-## Defined Term: Procedural
+## Defined Term: Procedural (https://w3id.org/ldac/terms#Procedural)
 
 An explanation or description of a method, process, or situation having ordered steps.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
@@ -443,11 +553,11 @@ An explanation or description of a method, process, or situation having ordered 
 
 <div id="Prosodic"  style="border-style: solid">
 
-## Defined Term: Prosodic
+## Defined Term: Prosodic (https://w3id.org/ldac/terms#Prosodic)
 
 An annotation that provides a symbolic record of intonation, stress, tone or other suprasegmental features, which is expressed independently of regular phonetic transcription.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#annotationType'> annotationType </a>] | 
 
@@ -461,11 +571,11 @@ An annotation that provides a symbolic record of intonation, stress, tone or oth
 
 <div id="Report"  style="border-style: solid">
 
-## Defined Term: Report
+## Defined Term: Report (https://w3id.org/ldac/terms#Report)
 
 A factual account of some event or circumstance.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
@@ -479,11 +589,11 @@ A factual account of some event or circumstance.
 
 <div id="Semantic"  style="border-style: solid">
 
-## Defined Term: Semantic
+## Defined Term: Semantic (https://w3id.org/ldac/terms#Semantic)
 
 The resource includes annotation or analysis concerning the encoding of meaning.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#annotationType'> annotationType </a>] | 
 
@@ -497,18 +607,17 @@ The resource includes annotation or analysis concerning the encoding of meaning.
 
 <div id="Session"  style="border-style: solid">
 
-## Defined Term: Session
+## Defined Term: Session (https://w3id.org/ldac/terms#Session)
 
 A collection event that is a recording or elicitation session with participants.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#collectionEventType'> collectionEventType </a>] | 
 
 ### Same as: 
 
-CANT RESOLVE  #https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
-
+[<a href='https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf'> https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf </a>] | 
 
 
 </div><br>
@@ -516,11 +625,11 @@ CANT RESOLVE  #https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf
 
 <div id="SignedLanguage"  style="border-style: solid">
 
-## Defined Term: SignedLanguage
+## Defined Term: SignedLanguage (https://w3id.org/ldac/terms#SignedLanguage)
 
 The resource contains data for which the medium of interaction was signing.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#communicationMode'> communicationMode </a>] | 
 
@@ -529,11 +638,11 @@ The resource contains data for which the medium of interaction was signing.
 
 <div id="Song"  style="border-style: solid">
 
-## Defined Term: Song
+## Defined Term: Song (https://w3id.org/ldac/terms#Song)
 
 "Words or sounds [articulated] in succession with musical inflections or modulations of the voice" OED.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#communicationMode'> communicationMode </a>] | 
 
@@ -547,11 +656,11 @@ The resource contains data for which the medium of interaction was signing.
 
 <div id="SpokenLanguage"  style="border-style: solid">
 
-## Defined Term: SpokenLanguage
+## Defined Term: SpokenLanguage (https://w3id.org/ldac/terms#SpokenLanguage)
 
 The resource contains data for which the medium of interaction was speech.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#communicationMode'> communicationMode </a>] | 
 
@@ -560,11 +669,11 @@ The resource contains data for which the medium of interaction was speech.
 
 <div id="Syntactic"  style="border-style: solid">
 
-## Defined Term: Syntactic
+## Defined Term: Syntactic (https://w3id.org/ldac/terms#Syntactic)
 
 The resource contains annotation or analysis describing the combinatorial patterns of words in another resource.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#annotationType'> annotationType </a>] | 
 
@@ -578,11 +687,11 @@ The resource contains annotation or analysis describing the combinatorial patter
 
 <div id="MaterialSelectionCriteria"  style="border-style: solid">
 
-## Defined Term: MaterialSelectionCriteria
+## Defined Term: MaterialSelectionCriteria (https://w3id.org/ldac/terms#MaterialSelectionCriteria)
 
 A description of the criteria used to select texts in a collection.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#collectionProtocolType'> collectionProtocolType </a>] | 
 
@@ -591,11 +700,11 @@ A description of the criteria used to select texts in a collection.
 
 <div id="Thesaurus"  style="border-style: solid">
 
-## Defined Term: Thesaurus
+## Defined Term: Thesaurus (https://w3id.org/ldac/terms#Thesaurus)
 
 The resource contains a list or data structure consisting of words or concepts arranged according to sense.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
@@ -609,11 +718,11 @@ The resource contains a list or data structure consisting of words or concepts a
 
 <div id="Transcription"  style="border-style: solid">
 
-## Defined Term: Transcription
+## Defined Term: Transcription (https://w3id.org/ldac/terms#Transcription)
 
 The resource contains a transcription, which is a written representation (orthographic or coded) of an audio or visual signal.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#annotationType'> annotationType </a>] | 
 
@@ -627,11 +736,11 @@ The resource contains a transcription, which is a written representation (orthog
 
 <div id="Translation"  style="border-style: solid">
 
-## Defined Term: Translation
+## Defined Term: Translation (https://w3id.org/ldac/terms#Translation)
 
 This is a translation of a resource in another language.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#annotationType'> annotationType </a>] | 
 
@@ -645,7 +754,7 @@ This is a translation of a resource in another language.
 
 <div id="Typeset"  style="border-style: solid">
 
-## Defined Term: Typeset
+## Defined Term: Typeset (https://w3id.org/ldac/terms#Typeset)
 
 The resource has been formatted for display.
 
@@ -654,7 +763,7 @@ The resource has been formatted for display.
 
 <div id="Typewritten"  style="border-style: solid">
 
-## Defined Term: Typewritten
+## Defined Term: Typewritten (https://w3id.org/ldac/terms#Typewritten)
 
 The resource contains text produced on a typewriter (From Nyingarn - TODO check this).
 
@@ -663,20 +772,62 @@ The resource contains text produced on a typewriter (From Nyingarn - TODO check 
 
 <div id="WrittenLanguage"  style="border-style: solid">
 
-## Defined Term: WrittenLanguage
+## Defined Term: WrittenLanguage (https://w3id.org/ldac/terms#WrittenLanguage)
 
 The resource contains data for which the medium of interaction was writing.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#communicationMode'> communicationMode </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="WrittenLanguageTypeTerms"  style="border-style: solid">
+
+## Defined Term Set: WrittenLanguageTypeTerms (https://w3id.org/ldac/terms#WrittenLanguageTypeTerms)
+
+A set of expected types for WrittenLanguage communication mode (this set is incomplete - more work needed).
+
+### Has defined terms:
+
+[<a href='#Handwritten'> Handwritten </a>] | [<a href='#Typeset'> Typeset </a>] | [<a href='#Typewritten'> Typewritten </a>] | 
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="access"  style="border-style: solid">
+
+## Property: access (https://w3id.org/ldac/terms#access)
+
+Whether this is an open or restricted access license.
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='#DataReuseLicense'> DataReuseLicense </a>] | 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="accessControlList"  style="border-style: solid">
 
-## Property: accessControlList
+## Property: accessControlList (https://w3id.org/ldac/terms#accessControlList)
 
 When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs.
 
@@ -699,7 +850,7 @@ When a license has an authorizationWorkflow property with a value of the Defined
 
 <div id="annotationOf"  style="border-style: solid">
 
-## Property: annotationOf
+## Property: annotationOf (https://w3id.org/ldac/terms#annotationOf)
 
 This resource contains some kind of description that adds information to the resource it references.
 
@@ -722,7 +873,7 @@ This resource contains some kind of description that adds information to the res
 
 <div id="annotationType"  style="border-style: solid">
 
-## Property: annotationType
+## Property: annotationType (https://w3id.org/ldac/terms#annotationType)
 
 The type of annotation for Annotation resources.
 
@@ -751,7 +902,7 @@ The type of annotation for Annotation resources.
 
 <div id="annotator"  style="border-style: solid">
 
-## Property: annotator
+## Property: annotator (https://w3id.org/ldac/terms#annotator)
 
 The participant produced an annotation of this or a related resource.
 
@@ -779,7 +930,7 @@ The participant produced an annotation of this or a related resource.
 
 <div id="author"  style="border-style: solid">
 
-## Property: author
+## Property: author (https://w3id.org/ldac/terms#author)
 
 The participant contributed original writings to the resource.
 
@@ -807,7 +958,7 @@ The participant contributed original writings to the resource.
 
 <div id="authorizationWorkflow"  style="border-style: solid">
 
-## Property: authorizationWorkflow
+## Property: authorizationWorkflow (https://w3id.org/ldac/terms#authorizationWorkflow)
 
 By what process a user is granted authorization to a license.
 
@@ -836,7 +987,7 @@ By what process a user is granted authorization to a license.
 
 <div id="channels"  style="border-style: solid">
 
-## Property: channels
+## Property: channels (https://w3id.org/ldac/terms#channels)
 
 The number of audio channels this resource contains (e.g. 1, 2, 5.1).
 
@@ -859,7 +1010,7 @@ The number of audio channels this resource contains (e.g. 1, 2, 5.1).
 
 <div id="collectionEventType"  style="border-style: solid">
 
-## Property: collectionEventType
+## Property: collectionEventType (https://w3id.org/ldac/terms#collectionEventType)
 
 An event with a start and end time during which data are gathered from participants, or from other materials.
 
@@ -888,7 +1039,7 @@ An event with a start and end time during which data are gathered from participa
 
 <div id="collectionProtocolType"  style="border-style: solid">
 
-## Property: collectionProtocolType
+## Property: collectionProtocolType (https://w3id.org/ldac/terms#collectionProtocolType)
 
 A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection.
 
@@ -915,9 +1066,38 @@ A description of the process used to collect or collate data, such as prompts gi
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="communicationMode"  style="border-style: solid">
+
+## Property: communicationMode (https://w3id.org/ldac/terms#communicationMode)
+
+The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="compiler"  style="border-style: solid">
 
-## Property: compiler
+## Property: compiler (https://w3id.org/ldac/terms#compiler)
 
 The participant is responsible for collecting the sub-parts of the resource together.
 
@@ -945,7 +1125,7 @@ The participant is responsible for collecting the sub-parts of the resource toge
 
 <div id="consultant"  style="border-style: solid">
 
-## Property: consultant
+## Property: consultant (https://w3id.org/ldac/terms#consultant)
 
 The participant contributes expertise to the creation of a work.
 
@@ -973,7 +1153,7 @@ The participant contributes expertise to the creation of a work.
 
 <div id="dataInputter"  style="border-style: solid">
 
-## Property: dataInputter
+## Property: dataInputter (https://w3id.org/ldac/terms#dataInputter)
 
 The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.
 
@@ -999,9 +1179,32 @@ The participant was responsible for entering, re-typing, and/or structuring the 
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="dateFreeText"  style="border-style: solid">
+
+## Property: dateFreeText (https://w3id.org/ldac/terms#dateFreeText)
+
+Date information that cannot be put in one of the standard date formats, e.g. "mid-1970s", or it is not clear, for example, if it is a creation or publication date.
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="depositor"  style="border-style: solid">
 
-## Property: depositor
+## Property: depositor (https://w3id.org/ldac/terms#depositor)
 
 The participant was responsible for depositing the resource in an archive.
 
@@ -1029,9 +1232,9 @@ The participant was responsible for depositing the resource in an archive.
 
 <div id="derivationOf"  style="border-style: solid">
 
-## Property: derivationOf
+## Property: derivationOf (https://w3id.org/ldac/terms#derivationOf)
 
-This property references another resource from which the current resource is derived by e.g. downsampling audio or video file, or extracting text from a PDF.
+This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF.
 
 ### Values expected to be one of these types: 
 
@@ -1052,7 +1255,7 @@ This property references another resource from which the current resource is der
 
 <div id="developer"  style="border-style: solid">
 
-## Property: developer
+## Property: developer (https://w3id.org/ldac/terms#developer)
 
 The participant developed the methodology or tools that constitute the resource, or that were used to create the resource.
 
@@ -1080,7 +1283,7 @@ The participant developed the methodology or tools that constitute the resource,
 
 <div id="doi"  style="border-style: solid">
 
-## Property: doi
+## Property: doi (https://w3id.org/ldac/terms#doi)
 
 A Digital Object Identifier.
 
@@ -1103,7 +1306,7 @@ A Digital Object Identifier.
 
 <div id="editor"  style="border-style: solid">
 
-## Property: editor
+## Property: editor (https://w3id.org/ldac/terms#editor)
 
 The participant reviewed, corrected, and/or tested the resource.
 
@@ -1131,7 +1334,7 @@ The participant reviewed, corrected, and/or tested the resource.
 
 <div id="geoJSON"  style="border-style: solid">
 
-## Property: geoJSON
+## Property: geoJSON (https://w3id.org/ldac/terms#geoJSON)
 
 A valid GEOJson feature or feature collection as a string that can be parsed as JSON.
 
@@ -1154,13 +1357,13 @@ A valid GEOJson feature or feature collection as a string that can be parsed as 
 
 <div id="hasAnnotation"  style="border-style: solid">
 
-## Property: hasAnnotation
+## Property: hasAnnotation (https://w3id.org/ldac/terms#hasAnnotation)
 
 This resource is referenced by another resource that describes it such as a translation, transcription or other analysis.
 
 ### Values expected to be one of these types: 
 
-[<a href='#Annnotation'> Annnotation </a>] | 
+[<a href='#Annotation'> Annotation </a>] | 
 
 
 
@@ -1177,7 +1380,7 @@ This resource is referenced by another resource that describes it such as a tran
 
 <div id="hasCollectionProtocol"  style="border-style: solid">
 
-## Property: hasCollectionProtocol
+## Property: hasCollectionProtocol (https://w3id.org/ldac/terms#hasCollectionProtocol)
 
 This resource was assembled or collected according to the linked protocol.
 
@@ -1200,7 +1403,7 @@ This resource was assembled or collected according to the linked protocol.
 
 <div id="hasDerivation"  style="border-style: solid">
 
-## Property: hasDerivation
+## Property: hasDerivation (https://w3id.org/ldac/terms#hasDerivation)
 
 This property references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.
 
@@ -1223,7 +1426,7 @@ This property references another resource that is derived from it such as a down
 
 <div id="illustrator"  style="border-style: solid">
 
-## Property: illustrator
+## Property: illustrator (https://w3id.org/ldac/terms#illustrator)
 
 The participant contributed drawings or other illustrations to the resource.
 
@@ -1251,7 +1454,7 @@ The participant contributed drawings or other illustrations to the resource.
 
 <div id="indexableText"  style="border-style: solid">
 
-## Property: indexableText
+## Property: indexableText (https://w3id.org/ldac/terms#indexableText)
 
 One or more target File(s) that together contain the full text of an item – each file should indicate its language.
 
@@ -1274,7 +1477,7 @@ One or more target File(s) that together contain the full text of an item – ea
 
 <div id="interpreter"  style="border-style: solid">
 
-## Property: interpreter
+## Property: interpreter (https://w3id.org/ldac/terms#interpreter)
 
 The participant translates in real-time or explains the discourse recorded in the resource.
 
@@ -1302,7 +1505,7 @@ The participant translates in real-time or explains the discourse recorded in th
 
 <div id="interviewee"  style="border-style: solid">
 
-## Property: interviewee
+## Property: interviewee (https://w3id.org/ldac/terms#interviewee)
 
 The participant was a respondent in an interview.
 
@@ -1325,7 +1528,7 @@ The participant was a respondent in an interview.
 
 <div id="interviewer"  style="border-style: solid">
 
-## Property: interviewer
+## Property: interviewer (https://w3id.org/ldac/terms#interviewer)
 
 The participant conducted an interview that forms part of the resource.
 
@@ -1353,7 +1556,7 @@ The participant conducted an interview that forms part of the resource.
 
 <div id="isDeIdentified"  style="border-style: solid">
 
-## Property: isDeIdentified
+## Property: isDeIdentified (https://w3id.org/ldac/terms#isDeIdentified)
 
 The data in this item has had identifying information removed, or in the case of a person the name is an alias.
 
@@ -1374,21 +1577,21 @@ The data in this item has had identifying information removed, or in the case of
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="subjectLanguage"  style="border-style: solid">
+<div id="itemLocation"  style="border-style: solid">
 
-## Property: subjectLanguage
+## Property: itemLocation (https://w3id.org/ldac/terms#itemLocation)
 
-The language(s) that this annotation resource is about.
+Current location of the item, e.g. where a set of audio tapes are stored.
 
 ### Values expected to be one of these types: 
 
-[<a href='http://schema.org/Language'> http://schema.org/Language </a>] | 
+[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Place'> http://schema.org/Place </a>] | 
 
 
 
 ### Used on these types: 
 
-
+[<a href='http://pcdm.org/models#Object'> Object </a>] | [<a href='http://schema.org/Collection'> http://schema.org/Collection </a>] | 
 
 
 
@@ -1397,11 +1600,11 @@ The language(s) that this annotation resource is about.
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="communicationMode"  style="border-style: solid">
+<div id="linguisticGenre"  style="border-style: solid">
 
-## Property: communicationMode
+## Property: linguisticGenre (https://w3id.org/ldac/terms#linguisticGenre)
 
-The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.
+A linguistic classification of the genre of this resource.
 
 ### Values expected to be one of these types: 
 
@@ -1417,7 +1620,59 @@ The mode (spoken, written, signed etc.) of this resource. There may be more than
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
+[<a href='#Dialogue'> Dialogue </a>] | [<a href='#Drama'> Drama </a>] | [<a href='#Formulaic'> Formulaic </a>] | [<a href='#Informational'> Informational </a>] | [<a href='#Interview'> Interview </a>] | [<a href='#Ludic'> Ludic </a>] | [<a href='#Narrative'> Narrative </a>] | [<a href='#Procedural'> Procedural </a>] | [<a href='#Report'> Report </a>] | [<a href='#Thesaurus'> Thesaurus </a>] | [<a href='#Oratory'> Oratory </a>] | [<a href='#Lexicon'> Lexicon </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="material"  style="border-style: solid">
+
+## Property: material (https://w3id.org/ldac/terms#material)
+
+Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes.
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="materialType"  style="border-style: solid">
+
+## Property: materialType (https://w3id.org/ldac/terms#materialType)
+
+Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation.
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/MediaObject'> http://schema.org/MediaObject </a>] | 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | [<a href='#Annotation'> Annotation </a>] | [<a href='#DerivedMaterial'> DerivedMaterial </a>] | 
 
 
 
@@ -1428,7 +1683,7 @@ The mode (spoken, written, signed etc.) of this resource. There may be more than
 
 <div id="openAccessIndex"  style="border-style: solid">
 
-## Property: openAccessIndex
+## Property: openAccessIndex (https://w3id.org/ldac/terms#openAccessIndex)
 
 One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not.
 
@@ -1457,7 +1712,7 @@ One or more public index types allowed by a license, e.g. FullText indexing may 
 
 <div id="participant"  style="border-style: solid">
 
-## Property: participant
+## Property: participant (https://w3id.org/ldac/terms#participant)
 
 The participant was present during the creation of the resource, but did not contribute substantially to its content.
 
@@ -1485,7 +1740,7 @@ The participant was present during the creation of the resource, but did not con
 
 <div id="performer"  style="border-style: solid">
 
-## Property: performer
+## Property: performer (https://w3id.org/ldac/terms#performer)
 
 The participant performed some portion of a recorded, filmed, or transcribed resource.
 
@@ -1513,7 +1768,7 @@ The participant performed some portion of a recorded, filmed, or transcribed res
 
 <div id="photographer"  style="border-style: solid">
 
-## Property: photographer
+## Property: photographer (https://w3id.org/ldac/terms#photographer)
 
 The participant took the photograph, or shot the film, that appears in or constitutes the resource.
 
@@ -1541,7 +1796,7 @@ The participant took the photograph, or shot the film, that appears in or consti
 
 <div id="recorder"  style="border-style: solid">
 
-## Property: recorder
+## Property: recorder (https://w3id.org/ldac/terms#recorder)
 
 The participant operated the recording machinery used to create the resource.
 
@@ -1569,7 +1824,7 @@ The participant operated the recording machinery used to create the resource.
 
 <div id="register"  style="border-style: solid">
 
-## Property: register
+## Property: register (https://w3id.org/ldac/terms#register)
 
 Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.
 
@@ -1597,7 +1852,7 @@ Specifies the type of register (any of the varieties of a language that a speake
 
 <div id="researchParticipant"  style="border-style: solid">
 
-## Property: researchParticipant
+## Property: researchParticipant (https://w3id.org/ldac/terms#researchParticipant)
 
 The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.
 
@@ -1625,7 +1880,7 @@ The participant acted as a research subject or responded to a questionnaire, the
 
 <div id="researcher"  style="border-style: solid">
 
-## Property: researcher
+## Property: researcher (https://w3id.org/ldac/terms#researcher)
 
 The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.
 
@@ -1653,7 +1908,7 @@ The resource was created as part of the participant's research, or the research 
 
 <div id="responder"  style="border-style: solid">
 
-## Property: responder
+## Property: responder (https://w3id.org/ldac/terms#responder)
 
 The participant was an interlocutor in some sort of discourse event.
 
@@ -1679,9 +1934,32 @@ The participant was an interlocutor in some sort of discourse event.
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="reviewDate"  style="border-style: solid">
+
+## Property: reviewDate (https://w3id.org/ldac/terms#reviewDate)
+
+The date that this license should be reviewed.
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='#DataLicense'> DataLicense </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="signer"  style="border-style: solid">
 
-## Property: signer
+## Property: signer (https://w3id.org/ldac/terms#signer)
 
 The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource.
 
@@ -1709,7 +1987,7 @@ The participant was a principal signer in a resource that consists of a recordin
 
 <div id="singer"  style="border-style: solid">
 
-## Property: singer
+## Property: singer (https://w3id.org/ldac/terms#singer)
 
 The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.
 
@@ -1737,7 +2015,7 @@ The participant sang, either individually or as part of a group, in a resource t
 
 <div id="speaker"  style="border-style: solid">
 
-## Property: speaker
+## Property: speaker (https://w3id.org/ldac/terms#speaker)
 
 The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource.
 
@@ -1765,7 +2043,7 @@ The participant was a principal speaker in a resource that consists of a recordi
 
 <div id="sponsor"  style="border-style: solid">
 
-## Property: sponsor
+## Property: sponsor (https://w3id.org/ldac/terms#sponsor)
 
 The participant contributed financial support to the creation of the resource.
 
@@ -1791,9 +2069,32 @@ The participant contributed financial support to the creation of the resource.
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="subjectLanguage"  style="border-style: solid">
+
+## Property: subjectLanguage (https://w3id.org/ldac/terms#subjectLanguage)
+
+The language(s) that this annotation resource is about.
+
+### Values expected to be one of these types: 
+
+[<a href='http://schema.org/Language'> http://schema.org/Language </a>] | 
+
+
+
+### Used on these types: 
+
+
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="transcriber"  style="border-style: solid">
 
-## Property: transcriber
+## Property: transcriber (https://w3id.org/ldac/terms#transcriber)
 
 The participant produced a transcription of this or a related resource.
 
@@ -1821,7 +2122,7 @@ The participant produced a transcription of this or a related resource.
 
 <div id="translator"  style="border-style: solid">
 
-## Property: translator
+## Property: translator (https://w3id.org/ldac/terms#translator)
 
 The participant produced a translation of this or a related resource.
 
@@ -1847,232 +2148,22 @@ The participant produced a translation of this or a related resource.
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="dateFreeText"  style="border-style: solid">
-
-## Property: dateFreeText
-
-Date information that cannot be put in one of the standard date formats, e.g. "mid-1970s", or it is not clear, for example, if it is a creation or publication date.
-
-### Values expected to be one of these types: 
-
-
-
-
-
-### Used on these types: 
-
-[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
-
-
-
-
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="MaterialTypes"  style="border-style: solid">
-
-## Defined Term Set: MaterialTypes
-
-A set of terms describing the relationship of a resource to the original data source.
-
-### Has defined terms[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | [<a href='#Annotation'> Annotation </a>] | [<a href='#DerivedMaterial'> DerivedMaterial </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="materialType"  style="border-style: solid">
-
-## Property: materialType
-
-Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation.
-
-### Values expected to be one of these types: 
-
-
-
-
-
-### Used on these types: 
-
-[<a href='http://schema.org/MediaObject'> http://schema.org/MediaObject </a>] | 
-
-
-
-## Values expected to be one of these defined terms: 
-
-[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | [<a href='#Annotation'> Annotation </a>] | [<a href='#DerivedMaterial'> DerivedMaterial </a>] | 
-
-
-
-
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="linguisticGenre"  style="border-style: solid">
-
-## Property: linguisticGenre
-
-A linguistic classification of the genre of this resource.
-
-### Values expected to be one of these types: 
-
-
-
-
-
-### Used on these types: 
-
-[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
-
-
-
-## Values expected to be one of these defined terms: 
-
-[<a href='#Dialogue'> Dialogue </a>] | [<a href='#Drama'> Drama </a>] | [<a href='#Formulaic'> Formulaic </a>] | [<a href='#Informational'> Informational </a>] | [<a href='#Interview'> Interview </a>] | [<a href='#Ludic'> Ludic </a>] | [<a href='#Narrative'> Narrative </a>] | [<a href='#Procedural'> Procedural </a>] | [<a href='#Report'> Report </a>] | [<a href='#Thesaurus'> Thesaurus </a>] | [<a href='#Oratory'> Oratory </a>] | 
-
-
-
-
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="access"  style="border-style: solid">
-
-## Property: access
-
-Whether this is an open or restricted access license.
-
-### Values expected to be one of these types: 
-
-
-
-
-
-### Used on these types: 
-
-[<a href='#DataReuseLicense'> DataReuseLicense </a>] | 
-
-
-
-## Values expected to be one of these defined terms: 
-
-[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] | 
-
-
-
-
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="reviewDate"  style="border-style: solid">
-
-## Property: reviewDate
-
-The date that this license should be reviewed.
-
-### Values expected to be one of these types: 
-
-
-
-
-
-### Used on these types: 
-
-[<a href='#DataLicense'> DataLicense </a>] | 
-
-
-
-
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="CommunicationModeTerms"  style="border-style: solid">
-
-## Defined Term Set: CommunicationModeTerms
-
-A set of expected values for the property communicationMode.
-
-### Has defined terms[<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="LinguisticGenreTerms"  style="border-style: solid">
-
-## Defined Term Set: LinguisticGenreTerms
-
-A set of expected values for the linguistic genre of a resource.
-
-### Has defined terms[<a href='#Dialogue'> Dialogue </a>] | [<a href='#Drama'> Drama </a>] | [<a href='#Formulaic'> Formulaic </a>] | [<a href='#Informational'> Informational </a>] | [<a href='#Interview'> Interview </a>] | [<a href='#Ludic'> Ludic </a>] | [<a href='#Narrative'> Narrative </a>] | [<a href='#Procedural'> Procedural </a>] | [<a href='#Report'> Report </a>] | [<a href='#Thesaurus'> Thesaurus </a>] | [<a href='#Oratory'> Oratory </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="CollectionProtocolTypeTerms"  style="border-style: solid">
-
-## Defined Term Set: CollectionProtocolTypeTerms
-
-A set of terms which are expected values for CollectionProtocol types.
-
-### Has defined terms[<a href='#ElicitationTask'> ElicitationTask </a>] | [<a href='#MaterialSelectionCriteria'> MaterialSelectionCriteria </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="WrittenLanguageTypeTerms"  style="border-style: solid">
-
-## Defined Term Set: WrittenLanguageTypeTerms
-
-A set of expected types for WrittenLanguage communication mode (this set is incomplete - more work needed).
-
-### Has defined terms[<a href='#Handwritten'> Handwritten </a>] | [<a href='#Typeset'> Typeset </a>] | [<a href='#Typewritten'> Typewritten </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
 <div id="FullText"  style="border-style: solid">
 
-## Defined Term: FullText
+## Defined Term: FullText (https://w3id.org/ldac/terms#FullText)
 
 A text index that makes the full text of a data resource findable via a search interface.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#openAccessIndex'> openAccessIndex </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="AnnotationTypeTerms"  style="border-style: solid">
-
-## Defined Term Set: AnnotationTypeTerms
-
-The set of expected values for annotation types.
-
-### Has defined terms[<a href='#Gestural'> Gestural </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Translation'> Translation </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="CollectionEventTypeTerms"  style="border-style: solid">
-
-## Defined Term Set: CollectionEventTypeTerms
-
-A set of terms which are expected values for CollectionEvent types.
-
-### Has defined terms[<a href='#Session'> Session </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
 <div id="DataReuseLicense" style="border-style: solid">
 
-## Class: DataReuseLicense
+## Class: DataReuseLicense (https://w3id.org/ldac/terms#DataReuseLicense)
 
 A license document, setting out terms for reuse of data.
 
@@ -2096,24 +2187,13 @@ A license document, setting out terms for reuse of data.
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="AuthorizationWorkflows"  style="border-style: solid">
-
-## Defined Term Set: AuthorizationWorkflows
-
-A set of DefinedTerms for access authorization mechanisms - some of these may be combined - e.g. AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant.
-
-### Has defined terms[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | [<a href='#AccessControlList'> AccessControlList </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
 <div id="WhistledLanguage"  style="border-style: solid">
 
-## Defined Term: WhistledLanguage
+## Defined Term: WhistledLanguage (https://w3id.org/ldac/terms#WhistledLanguage)
 
 The resource contains data for which the medium of interaction was whistling.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#communicationMode'> communicationMode </a>] | 
 
@@ -2122,11 +2202,11 @@ The resource contains data for which the medium of interaction was whistling.
 
 <div id="Oratory"  style="border-style: solid">
 
-## Defined Term: Oratory
+## Defined Term: Oratory (https://w3id.org/ldac/terms#Oratory)
 
 The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#linguisticGenre'> linguisticGenre </a>] | 
 
@@ -2140,11 +2220,11 @@ The art of public speaking, or of speaking eloquently according to rules or conv
 
 <div id="Gestural"  style="border-style: solid">
 
-## Defined Term: Gestural
+## Defined Term: Gestural (https://w3id.org/ldac/terms#Gestural)
 
 The resource describes the gestural content of the resource it annotates.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#annotationType'> annotationType </a>] | 
 
@@ -2158,11 +2238,11 @@ The resource describes the gestural content of the resource it annotates.
 
 <div id="AgreeToTerms"  style="border-style: solid">
 
-## Defined Term: AgreeToTerms
+## Defined Term: AgreeToTerms (https://w3id.org/ldac/terms#AgreeToTerms)
 
 A user is expected to explicitly agree to a set of license terms, this may be combined with AccessControlList - to note that even if a user has been pre-approved for a license they must agree to license terms.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | 
 
@@ -2171,11 +2251,11 @@ A user is expected to explicitly agree to a set of license terms, this may be co
 
 <div id="AuthorizationByApplication"  style="border-style: solid">
 
-## Defined Term: AuthorizationByApplication
+## Defined Term: AuthorizationByApplication (https://w3id.org/ldac/terms#AuthorizationByApplication)
 
 Users may apply for a license via some workflow, such as a form, with the decision being made by a DataSteward or their delegate about whether to grant the license.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | 
 
@@ -2184,11 +2264,11 @@ Users may apply for a license via some workflow, such as a form, with the decisi
 
 <div id="AuthorizationByInvitation"  style="border-style: solid">
 
-## Defined Term: AuthorizationByInvitation
+## Defined Term: AuthorizationByInvitation (https://w3id.org/ldac/terms#AuthorizationByInvitation)
 
 A data steward or administrator is expected to use an access control system to invite users, for example, participants, collaborators or students.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | 
 
@@ -2197,11 +2277,11 @@ A data steward or administrator is expected to use an access control system to i
 
 <div id="SelfAuthorization"  style="border-style: solid">
 
-## Defined Term: SelfAuthorization
+## Defined Term: SelfAuthorization (https://w3id.org/ldac/terms#SelfAuthorization)
 
 A user can be authorised to access data by clicking that they agree to a license, or filling out a form to check their understanding, which can be validated by a machine and does not require human intervention.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | 
 
@@ -2210,35 +2290,24 @@ A user can be authorised to access data by clicking that they agree to a license
 
 <div id="AccessControlList"  style="border-style: solid">
 
-## Defined Term: AccessControlList
+## Defined Term: AccessControlList (https://w3id.org/ldac/terms#AccessControlList)
 
 License grants access to data based on a list of approved users, specified using the property accessControlList.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
 
-<div id="AccessTypes"  style="border-style: solid">
-
-## Defined Term Set: AccessTypes
-
-A set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorised) access.
-
-### Has defined terms[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
 <div id="AuthorizedAccess"  style="border-style: solid">
 
-## Defined Term: AuthorizedAccess
+## Defined Term: AuthorizedAccess (https://w3id.org/ldac/terms#AuthorizedAccess)
 
 Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#access'> access </a>] | 
 
@@ -2247,11 +2316,11 @@ Indicates that a DataReuseLicense requires some kind of authorization step, from
 
 <div id="OpenAccess"  style="border-style: solid">
 
-## Defined Term: OpenAccess
+## Defined Term: OpenAccess (https://w3id.org/ldac/terms#OpenAccess)
 
 Data covered by this license may be accessed as long as the license is served alongside it, and does not require any specific authorization step.
 
-### Is an expected value for the following property
+### Is an expected value for the following property:
 
 [<a href='#access'> access </a>] | 
 

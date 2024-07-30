@@ -1,0 +1,1012 @@
+<a name="top" >
+<h1>Language Data Commons Schema Terms</h1>
+<p>This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <a href="https://w3id.org/ldac/terms">https://w3id.org/ldac/terms</a>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <a href="https://w3id.org/ldac/profile">https://w3id.org/ldac/profile</a>.</p>
+<h2>Classes</h2>
+<p><a href="#CollectionEvent">CollectionEvent</a> | <a href="#CollectionProtocol">CollectionProtocol</a> | <a href="#DataDepositLicense">DataDepositLicense</a> | <a href="#DataLicense">DataLicense</a> | <a href="#DataReuseLicense">DataReuseLicense</a></p>
+<h2>Properties</h2>
+<p><a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#author">author</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#communicationMode">communicationMode</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#itemLocation">itemLocation</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#material">material</a> | <a href="#materialType">materialType</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#reviewDate">reviewDate</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a></p>
+<h2>DefinedTerms</h2>
+<p><a href="#Annotation">Annotation</a> | <a href="#Coded">Coded</a> | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignedLanguage">SignedLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#MaterialSelectionCriteria">MaterialSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#FullText">FullText</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#Oratory">Oratory</a> | <a href="#Gestural">Gestural</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#SelfAuthorization">SelfAuthorization</a> | <a href="#AccessControlList">AccessControlList</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#OpenAccess">OpenAccess</a></p>
+<h2>DefinedTermsSets</h2>
+<p><a href="#AccessTypes">AccessTypes</a> | <a href="#AnnotationTypeTerms">AnnotationTypeTerms</a> | <a href="#AuthorizationWorkflows">AuthorizationWorkflows</a> | <a href="#CollectionEventTypeTerms">CollectionEventTypeTerms</a> | <a href="#CollectionProtocolTypeTerms">CollectionProtocolTypeTerms</a> | <a href="#CommunicationModeTerms">CommunicationModeTerms</a> | <a href="#IndexTypes">IndexTypes</a> | <a href="#LinguisticGenreTerms">LinguisticGenreTerms</a> | <a href="#MaterialTypes">MaterialTypes</a> | <a href="#WrittenLanguageTypeTerms">WrittenLanguageTypeTerms</a></p>
+<div id="AccessTypes"  style="border-style: solid">
+<h2>Defined Term Set: AccessTypes (https://w3id.org/ldac/terms#AccessTypes)</h2>
+<p>A set of defined terms to specify whether a DataReuseLicense allows open or restricted (authorised) access.</p>
+<h3>Has defined terms:</h3>
+<p>[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Annotation"  style="border-style: solid">
+<h2>Defined Term: Annotation (https://w3id.org/ldac/terms#Annotation)</h2>
+<p>The resource includes material that adds information to some other linguistic record.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#materialType'> materialType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#annotation'> annotation </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="AnnotationTypeTerms"  style="border-style: solid">
+<h2>Defined Term Set: AnnotationTypeTerms (https://w3id.org/ldac/terms#AnnotationTypeTerms)</h2>
+<p>The set of expected values for annotation types.</p>
+<h3>Has defined terms:</h3>
+<p>[<a href='#Gestural'> Gestural </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Translation'> Translation </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="AuthorizationWorkflows"  style="border-style: solid">
+<h2>Defined Term Set: AuthorizationWorkflows (https://w3id.org/ldac/terms#AuthorizationWorkflows)</h2>
+<p>A set of DefinedTerms for access authorization mechanisms - some of these may be combined, e.g. AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant.</p>
+<h3>Has defined terms:</h3>
+<p>[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | [<a href='#AccessControlList'> AccessControlList </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Coded"  style="border-style: solid">
+<h2>Defined Term: Coded (https://w3id.org/ldac/terms#Coded)</h2>
+<p>The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet).</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="CollectionEvent" style="border-style: solid">
+<h2>Class: CollectionEvent (https://w3id.org/ldac/terms#CollectionEvent)</h2>
+<p>A description of an event at which one or more PrimaryMaterials were captured, e.g. as video or audio.</p>
+<h3>Subclass of:</h3>
+<p>[<a href='http://schema.org/Event'> http://schema.org/Event </a>] |[<a href='http://schema.org/CreateAction'> http://schema.org/CreateAction </a>] |</p>
+<h3>Properties</h3>
+<p>[<a href='#collectionEventType'> collectionEventType </a>] |</p>
+<p>:</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="CollectionEventTypeTerms"  style="border-style: solid">
+<h2>Defined Term Set: CollectionEventTypeTerms (https://w3id.org/ldac/terms#CollectionEventTypeTerms)</h2>
+<p>A set of terms which are expected values for CollectionEvent types.</p>
+<h3>Has defined terms:</h3>
+<p>[<a href='#Session'> Session </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="CollectionProtocol" style="border-style: solid">
+<h2>Class: CollectionProtocol (https://w3id.org/ldac/terms#CollectionProtocol)</h2>
+<p>A description of how this Object or Collection was obtained, such as the strategy used for selecting written source texts, or the prompts given to participants.</p>
+<h3>Subclass of:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Properties</h3>
+<p>[<a href='#collectionProtocolType'> collectionProtocolType </a>] |</p>
+<p>:</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="CollectionProtocolTypeTerms"  style="border-style: solid">
+<h2>Defined Term Set: CollectionProtocolTypeTerms (https://w3id.org/ldac/terms#CollectionProtocolTypeTerms)</h2>
+<p>A set of terms which are expected values for CollectionProtocol types.</p>
+<h3>Has defined terms:</h3>
+<p>[<a href='#ElicitationTask'> ElicitationTask </a>] | [<a href='#MaterialSelectionCriteria'> MaterialSelectionCriteria </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="CommunicationModeTerms"  style="border-style: solid">
+<h2>Defined Term Set: CommunicationModeTerms (https://w3id.org/ldac/terms#CommunicationModeTerms)</h2>
+<p>A set of expected values for the property communicationMode.</p>
+<h3>Has defined terms:</h3>
+<p>[<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="DataDepositLicense" style="border-style: solid">
+<h2>Class: DataDepositLicense (https://w3id.org/ldac/terms#DataDepositLicense)</h2>
+<p>A license document setting out terms for deposit into a repository.</p>
+<h3>Subclass of:</h3>
+<p>[<a href='#DataLicense'> DataLicense </a>] |</p>
+<p>:</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="DataLicense" style="border-style: solid">
+<h2>Class: DataLicense (https://w3id.org/ldac/terms#DataLicense)</h2>
+<p>A license document for data licensing. This is a superclass of DataReuseLicense and DataDepositLicense.</p>
+<h3>Subclass of:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Properties</h3>
+<p>[<a href='#reviewDate'> reviewDate </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='https://creativecommons.org/ns#License'> License </a>] |</p>
+<p>:</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="DerivedMaterial"  style="border-style: solid">
+<h2>Defined Term: DerivedMaterial (https://w3id.org/ldac/terms#DerivedMaterial)</h2>
+<p>This is derived from another source, such as a Primary Material, via some process, e.g. a downsampled video or a sample or an abstract of a resource that is not an annotation (an analysis or description).</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#materialType'> materialType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#text'> text </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Dialogue"  style="border-style: solid">
+<h2>Defined Term: Dialogue (https://w3id.org/ldac/terms#Dialogue)</h2>
+<p>An interactive discourse with two or more participants. Examples of dialogues include conversations, interviews, correspondence, consultations, greetings and leave-takings.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#linguisticGenre'> linguisticGenre </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Drama"  style="border-style: solid">
+<h2>Defined Term: Drama (https://w3id.org/ldac/terms#Drama)</h2>
+<p>A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#linguisticGenre'> linguisticGenre </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#text/drama'> text/drama </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="ElicitationTask"  style="border-style: solid">
+<h2>Defined Term: ElicitationTask (https://w3id.org/ldac/terms#ElicitationTask)</h2>
+<p>The collection protocol includes a task-based prompt to participants.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#collectionProtocolType'> collectionProtocolType </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Formulaic"  style="border-style: solid">
+<h2>Defined Term: Formulaic (https://w3id.org/ldac/terms#Formulaic)</h2>
+<p>The resource is a ritually or conventionally structured discourse.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#linguisticGenre'> linguisticGenre </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#text/formulaic'> text/formulaic </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Gesture"  style="border-style: solid">
+<h2>Defined Term: Gesture (https://w3id.org/ldac/terms#Gesture)</h2>
+<p>The resource contains non-linguistic gestural communication (i.e. not sign language).</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#communicationMode'> communicationMode </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Handwritten"  style="border-style: solid">
+<h2>Defined Term: Handwritten (https://w3id.org/ldac/terms#Handwritten)</h2>
+<p>The resource was written using a writing implement such as a pen, pencil, brush or computer stylus. (From Nyingarn - TODO check this).</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="IndexTypes"  style="border-style: solid">
+<h2>Defined Term Set: IndexTypes (https://w3id.org/ldac/terms#IndexTypes)</h2>
+<p>A set of defined terms for types of indexing, such as FullText.</p>
+<h3>Has defined terms:</h3>
+<p>[<a href='#FullText'> FullText </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Informational"  style="border-style: solid">
+<h2>Defined Term: Informational (https://w3id.org/ldac/terms#Informational)</h2>
+<p>Discourse whose primary purpose is to inform the audience about the natural or social world.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#linguisticGenre'> linguisticGenre </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Interview"  style="border-style: solid">
+<h2>Defined Term: Interview (https://w3id.org/ldac/terms#Interview)</h2>
+<p>The resource is a conversation where one or more speakers are directing the conversation.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#linguisticGenre'> linguisticGenre </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Lexicon"  style="border-style: solid">
+<h2>Defined Term: Lexicon (https://w3id.org/ldac/terms#Lexicon)</h2>
+<p>The resource includes a systematic listing of lexical items.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#linguisticGenre'> linguisticGenre </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#Lexicon'> Lexicon </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="LinguisticGenreTerms"  style="border-style: solid">
+<h2>Defined Term Set: LinguisticGenreTerms (https://w3id.org/ldac/terms#LinguisticGenreTerms)</h2>
+<p>A set of expected values for the linguistic genre of a resource.</p>
+<h3>Has defined terms:</h3>
+<p>[<a href='#Dialogue'> Dialogue </a>] | [<a href='#Drama'> Drama </a>] | [<a href='#Formulaic'> Formulaic </a>] | [<a href='#Informational'> Informational </a>] | [<a href='#Interview'> Interview </a>] | [<a href='#Ludic'> Ludic </a>] | [<a href='#Narrative'> Narrative </a>] | [<a href='#Procedural'> Procedural </a>] | [<a href='#Report'> Report </a>] | [<a href='#Thesaurus'> Thesaurus </a>] | [<a href='#Oratory'> Oratory </a>] | [<a href='#Lexicon'> Lexicon </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Ludic"  style="border-style: solid">
+<h2>Defined Term: Ludic (https://w3id.org/ldac/terms#Ludic)</h2>
+<p>Ludic discourse is language whose primary function is to be part of play, or a style of speech that involves a creative manipulation of the structures of the language. Examples of ludic discourse are play languages, jokes, secret languages, and speech disguises.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#linguisticGenre'> linguisticGenre </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#text/ludic'> text/ludic </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="MaterialTypes"  style="border-style: solid">
+<h2>Defined Term Set: MaterialTypes (https://w3id.org/ldac/terms#MaterialTypes)</h2>
+<p>A set of terms describing the relationship of a resource to the original data source.</p>
+<h3>Has defined terms:</h3>
+<p>[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | [<a href='#Annotation'> Annotation </a>] | [<a href='#DerivedMaterial'> DerivedMaterial </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Narrative"  style="border-style: solid">
+<h2>Defined Term: Narrative (https://w3id.org/ldac/terms#Narrative)</h2>
+<p>A discourse, monologic or co-constructed, which represents temporally organised events. Types of narratives include historical, traditional, and personal narratives, myths, folktales, fables, and humorous stories.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#linguisticGenre'> linguisticGenre </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#text/narrative'> text/narrative </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Orthographic"  style="border-style: solid">
+<h2>Defined Term: Orthographic (https://w3id.org/ldac/terms#Orthographic)</h2>
+<p>The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription.</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#description/orthographic'> description/orthographic </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="PartOfSpeech"  style="border-style: solid">
+<h2>Defined Term: PartOfSpeech (https://w3id.org/ldac/terms#PartOfSpeech)</h2>
+<p>An annotation that assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate).</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#description/part-of-speech'> description/part-of-speech </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Phonemic"  style="border-style: solid">
+<h2>Defined Term: Phonemic (https://w3id.org/ldac/terms#Phonemic)</h2>
+<p>An annotation that represents speech in terms of the sound contrasts made in a language.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#annotationType'> annotationType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonemic'> description/phonemic </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Phonetic"  style="border-style: solid">
+<h2>Defined Term: Phonetic (https://w3id.org/ldac/terms#Phonetic)</h2>
+<p>A representation of speech in terms of the sounds produced, typically using the International Phonetic Alphabet.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#annotationType'> annotationType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonetic'> description/phonetic </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Phonological"  style="border-style: solid">
+<h2>Defined Term: Phonological (https://w3id.org/ldac/terms#Phonological)</h2>
+<p>An annotation that includes information about the sound system of a language, such as the contrasts between sounds which make up the sound system and the locally conditioned realisations of sounds which characterise speech in the language.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#annotationType'> annotationType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#description/phonological'> description/phonological </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="PrimaryMaterial"  style="border-style: solid">
+<h2>Defined Term: PrimaryMaterial (https://w3id.org/ldac/terms#PrimaryMaterial)</h2>
+<p>The object of study, such as a literary work, film, or recording of natural discourse.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#materialType'> materialType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#text'> text </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Procedural"  style="border-style: solid">
+<h2>Defined Term: Procedural (https://w3id.org/ldac/terms#Procedural)</h2>
+<p>An explanation or description of a method, process, or situation having ordered steps.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#linguisticGenre'> linguisticGenre </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#text/procedural'> text/procedural </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Prosodic"  style="border-style: solid">
+<h2>Defined Term: Prosodic (https://w3id.org/ldac/terms#Prosodic)</h2>
+<p>An annotation that provides a symbolic record of intonation, stress, tone or other suprasegmental features, which is expressed independently of regular phonetic transcription.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#annotationType'> annotationType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#description/prosodic'> description/prosodic </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Report"  style="border-style: solid">
+<h2>Defined Term: Report (https://w3id.org/ldac/terms#Report)</h2>
+<p>A factual account of some event or circumstance.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#linguisticGenre'> linguisticGenre </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#text/report'> text/report </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Semantic"  style="border-style: solid">
+<h2>Defined Term: Semantic (https://w3id.org/ldac/terms#Semantic)</h2>
+<p>The resource includes annotation or analysis concerning the encoding of meaning.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#annotationType'> annotationType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#description/semantic'> description/semantic </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Session"  style="border-style: solid">
+<h2>Defined Term: Session (https://w3id.org/ldac/terms#Session)</h2>
+<p>A collection event that is a recording or elicitation session with participants.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#collectionEventType'> collectionEventType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf'> https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="SignedLanguage"  style="border-style: solid">
+<h2>Defined Term: SignedLanguage (https://w3id.org/ldac/terms#SignedLanguage)</h2>
+<p>The resource contains data for which the medium of interaction was signing.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#communicationMode'> communicationMode </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Song"  style="border-style: solid">
+<h2>Defined Term: Song (https://w3id.org/ldac/terms#Song)</h2>
+<p>&quot;Words or sounds [articulated] in succession with musical inflections or modulations of the voice&quot; OED.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#communicationMode'> communicationMode </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#text/singing'> text/singing </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="SpokenLanguage"  style="border-style: solid">
+<h2>Defined Term: SpokenLanguage (https://w3id.org/ldac/terms#SpokenLanguage)</h2>
+<p>The resource contains data for which the medium of interaction was speech.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#communicationMode'> communicationMode </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Syntactic"  style="border-style: solid">
+<h2>Defined Term: Syntactic (https://w3id.org/ldac/terms#Syntactic)</h2>
+<p>The resource contains annotation or analysis describing the combinatorial patterns of words in another resource.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#annotationType'> annotationType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#description/syntactic'> description/syntactic </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="MaterialSelectionCriteria"  style="border-style: solid">
+<h2>Defined Term: MaterialSelectionCriteria (https://w3id.org/ldac/terms#MaterialSelectionCriteria)</h2>
+<p>A description of the criteria used to select texts in a collection.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#collectionProtocolType'> collectionProtocolType </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Thesaurus"  style="border-style: solid">
+<h2>Defined Term: Thesaurus (https://w3id.org/ldac/terms#Thesaurus)</h2>
+<p>The resource contains a list or data structure consisting of words or concepts arranged according to sense.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#linguisticGenre'> linguisticGenre </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#lexicon/thesaurus'> lexicon/thesaurus </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Transcription"  style="border-style: solid">
+<h2>Defined Term: Transcription (https://w3id.org/ldac/terms#Transcription)</h2>
+<p>The resource contains a transcription, which is a written representation (orthographic or coded) of an audio or visual signal.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#annotationType'> annotationType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#transcription'> transcription </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Translation"  style="border-style: solid">
+<h2>Defined Term: Translation (https://w3id.org/ldac/terms#Translation)</h2>
+<p>This is a translation of a resource in another language.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#annotationType'> annotationType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#annotation/translation'> annotation/translation </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Typeset"  style="border-style: solid">
+<h2>Defined Term: Typeset (https://w3id.org/ldac/terms#Typeset)</h2>
+<p>The resource has been formatted for display.</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Typewritten"  style="border-style: solid">
+<h2>Defined Term: Typewritten (https://w3id.org/ldac/terms#Typewritten)</h2>
+<p>The resource contains text produced on a typewriter (From Nyingarn - TODO check this).</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="WrittenLanguage"  style="border-style: solid">
+<h2>Defined Term: WrittenLanguage (https://w3id.org/ldac/terms#WrittenLanguage)</h2>
+<p>The resource contains data for which the medium of interaction was writing.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#communicationMode'> communicationMode </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="WrittenLanguageTypeTerms"  style="border-style: solid">
+<h2>Defined Term Set: WrittenLanguageTypeTerms (https://w3id.org/ldac/terms#WrittenLanguageTypeTerms)</h2>
+<p>A set of expected types for WrittenLanguage communication mode (this set is incomplete - more work needed).</p>
+<h3>Has defined terms:</h3>
+<p>[<a href='#Handwritten'> Handwritten </a>] | [<a href='#Typeset'> Typeset </a>] | [<a href='#Typewritten'> Typewritten </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="access"  style="border-style: solid">
+<h2>Property: access (https://w3id.org/ldac/terms#access)</h2>
+<p>Whether this is an open or restricted access license.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='#DataReuseLicense'> DataReuseLicense </a>] |</p>
+<h2>Values expected to be one of these defined terms:</h2>
+<p>[<a href='#AuthorizedAccess'> AuthorizedAccess </a>] | [<a href='#OpenAccess'> OpenAccess </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="accessControlList"  style="border-style: solid">
+<h2>Property: accessControlList (https://w3id.org/ldac/terms#accessControlList)</h2>
+<p>When a license has an authorizationWorkflow property with a value of the DefinedTerm AcessControlList this property has a URI value that points to a list of userIDs.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/URL'> http://schema.org/URL </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='#DataReuseLicense'> DataReuseLicense </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="annotationOf"  style="border-style: solid">
+<h2>Property: annotationOf (https://w3id.org/ldac/terms#annotationOf)</h2>
+<p>This resource contains some kind of description that adds information to the resource it references.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="annotationType"  style="border-style: solid">
+<h2>Property: annotationType (https://w3id.org/ldac/terms#annotationType)</h2>
+<p>The type of annotation for Annotation resources.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h2>Values expected to be one of these defined terms:</h2>
+<p>[<a href='#Gestural'> Gestural </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Translation'> Translation </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="annotator"  style="border-style: solid">
+<h2>Property: annotator (https://w3id.org/ldac/terms#annotator)</h2>
+<p>The participant produced an annotation of this or a related resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#annotator'> annotator </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="author"  style="border-style: solid">
+<h2>Property: author (https://w3id.org/ldac/terms#author)</h2>
+<p>The participant contributed original writings to the resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#author'> author </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="authorizationWorkflow"  style="border-style: solid">
+<h2>Property: authorizationWorkflow (https://w3id.org/ldac/terms#authorizationWorkflow)</h2>
+<p>By what process a user is granted authorization to a license.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='#DataReuseLicense'> DataReuseLicense </a>] |</p>
+<h2>Values expected to be one of these defined terms:</h2>
+<p>[<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | [<a href='#AccessControlList'> AccessControlList </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="channels"  style="border-style: solid">
+<h2>Property: channels (https://w3id.org/ldac/terms#channels)</h2>
+<p>The number of audio channels this resource contains (e.g. 1, 2, 5.1).</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="collectionEventType"  style="border-style: solid">
+<h2>Property: collectionEventType (https://w3id.org/ldac/terms#collectionEventType)</h2>
+<p>An event with a start and end time during which data are gathered from participants, or from other materials.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='#Session'> Session </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='#CollectionEvent'> CollectionEvent </a>] |</p>
+<h2>Values expected to be one of these defined terms:</h2>
+<p>[<a href='#Session'> Session </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="collectionProtocolType"  style="border-style: solid">
+<h2>Property: collectionProtocolType (https://w3id.org/ldac/terms#collectionProtocolType)</h2>
+<p>A description of the process used to collect or collate data, such as prompts given to participants, or how texts are selected for inclusion in a collection.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='#CollectionProtocol'> CollectionProtocol </a>] |</p>
+<h2>Values expected to be one of these defined terms:</h2>
+<p>[<a href='#ElicitationTask'> ElicitationTask </a>] | [<a href='#MaterialSelectionCriteria'> MaterialSelectionCriteria </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="communicationMode"  style="border-style: solid">
+<h2>Property: communicationMode (https://w3id.org/ldac/terms#communicationMode)</h2>
+<p>The mode (spoken, written, signed etc.) of this resource. There may be more than one value for this property.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h2>Values expected to be one of these defined terms:</h2>
+<p>[<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="compiler"  style="border-style: solid">
+<h2>Property: compiler (https://w3id.org/ldac/terms#compiler)</h2>
+<p>The participant is responsible for collecting the sub-parts of the resource together.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#compiler'> compiler </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="consultant"  style="border-style: solid">
+<h2>Property: consultant (https://w3id.org/ldac/terms#consultant)</h2>
+<p>The participant contributes expertise to the creation of a work.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#consultant'> consultant </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="dataInputter"  style="border-style: solid">
+<h2>Property: dataInputter (https://w3id.org/ldac/terms#dataInputter)</h2>
+<p>The participant was responsible for entering, re-typing, and/or structuring the data contained in the resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#data_inputter'> data_inputter </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="dateFreeText"  style="border-style: solid">
+<h2>Property: dateFreeText (https://w3id.org/ldac/terms#dateFreeText)</h2>
+<p>Date information that cannot be put in one of the standard date formats, e.g. &quot;mid-1970s&quot;, or it is not clear, for example, if it is a creation or publication date.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="depositor"  style="border-style: solid">
+<h2>Property: depositor (https://w3id.org/ldac/terms#depositor)</h2>
+<p>The participant was responsible for depositing the resource in an archive.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#depositor'> depositor </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="derivationOf"  style="border-style: solid">
+<h2>Property: derivationOf (https://w3id.org/ldac/terms#derivationOf)</h2>
+<p>This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='#Annotation'> Annotation </a>] | [<a href='#PrimaryMaterial'> PrimaryMaterial </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='#DerivedMaterial'> DerivedMaterial </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="developer"  style="border-style: solid">
+<h2>Property: developer (https://w3id.org/ldac/terms#developer)</h2>
+<p>The participant developed the methodology or tools that constitute the resource, or that were used to create the resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#developer'> developer </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="doi"  style="border-style: solid">
+<h2>Property: doi (https://w3id.org/ldac/terms#doi)</h2>
+<p>A Digital Object Identifier.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="editor"  style="border-style: solid">
+<h2>Property: editor (https://w3id.org/ldac/terms#editor)</h2>
+<p>The participant reviewed, corrected, and/or tested the resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#editor'> editor </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="geoJSON"  style="border-style: solid">
+<h2>Property: geoJSON (https://w3id.org/ldac/terms#geoJSON)</h2>
+<p>A valid GEOJson feature or feature collection as a string that can be parsed as JSON.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>Text |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/GeoCoordinates'> http://schema.org/GeoCoordinates </a>] |[<a href='http://schema.org/GeoShape'> http://schema.org/GeoShape </a>] |[<a href='http://schema.org/Language'> http://schema.org/Language </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="hasAnnotation"  style="border-style: solid">
+<h2>Property: hasAnnotation (https://w3id.org/ldac/terms#hasAnnotation)</h2>
+<p>This resource is referenced by another resource that describes it such as a translation, transcription or other analysis.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='#Annotation'> Annotation </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="hasCollectionProtocol"  style="border-style: solid">
+<h2>Property: hasCollectionProtocol (https://w3id.org/ldac/terms#hasCollectionProtocol)</h2>
+<p>This resource was assembled or collected according to the linked protocol.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='#CollectionProtocol'> CollectionProtocol </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="hasDerivation"  style="border-style: solid">
+<h2>Property: hasDerivation (https://w3id.org/ldac/terms#hasDerivation)</h2>
+<p>This property references another resource that is derived from it such as a downsampled audio or video file, or text extracted from a PDF.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='#DerivedMaterial'> DerivedMaterial </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="illustrator"  style="border-style: solid">
+<h2>Property: illustrator (https://w3id.org/ldac/terms#illustrator)</h2>
+<p>The participant contributed drawings or other illustrations to the resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#illustrator'> illustrator </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="indexableText"  style="border-style: solid">
+<h2>Property: indexableText (https://w3id.org/ldac/terms#indexableText)</h2>
+<p>One or more target File(s) that together contain the full text of an item – each file should indicate its language.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/MediaObject'> http://schema.org/MediaObject </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="interpreter"  style="border-style: solid">
+<h2>Property: interpreter (https://w3id.org/ldac/terms#interpreter)</h2>
+<p>The participant translates in real-time or explains the discourse recorded in the resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#interpreter'> interpreter </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="interviewee"  style="border-style: solid">
+<h2>Property: interviewee (https://w3id.org/ldac/terms#interviewee)</h2>
+<p>The participant was a respondent in an interview.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="interviewer"  style="border-style: solid">
+<h2>Property: interviewer (https://w3id.org/ldac/terms#interviewer)</h2>
+<p>The participant conducted an interview that forms part of the resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#interviewer'> interviewer </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="isDeIdentified"  style="border-style: solid">
+<h2>Property: isDeIdentified (https://w3id.org/ldac/terms#isDeIdentified)</h2>
+<p>The data in this item has had identifying information removed, or in the case of a person the name is an alias.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Boolean'> http://schema.org/Boolean </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="itemLocation"  style="border-style: solid">
+<h2>Property: itemLocation (https://w3id.org/ldac/terms#itemLocation)</h2>
+<p>Current location of the item, e.g. where a set of audio tapes are stored.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Place'> http://schema.org/Place </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://pcdm.org/models#Object'> Object </a>] | [<a href='http://schema.org/Collection'> http://schema.org/Collection </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="linguisticGenre"  style="border-style: solid">
+<h2>Property: linguisticGenre (https://w3id.org/ldac/terms#linguisticGenre)</h2>
+<p>A linguistic classification of the genre of this resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h2>Values expected to be one of these defined terms:</h2>
+<p>[<a href='#Dialogue'> Dialogue </a>] | [<a href='#Drama'> Drama </a>] | [<a href='#Formulaic'> Formulaic </a>] | [<a href='#Informational'> Informational </a>] | [<a href='#Interview'> Interview </a>] | [<a href='#Ludic'> Ludic </a>] | [<a href='#Narrative'> Narrative </a>] | [<a href='#Procedural'> Procedural </a>] | [<a href='#Report'> Report </a>] | [<a href='#Thesaurus'> Thesaurus </a>] | [<a href='#Oratory'> Oratory </a>] | [<a href='#Lexicon'> Lexicon </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="material"  style="border-style: solid">
+<h2>Property: material (https://w3id.org/ldac/terms#material)</h2>
+<p>Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="materialType"  style="border-style: solid">
+<h2>Property: materialType (https://w3id.org/ldac/terms#materialType)</h2>
+<p>Indicates whether the material in a file is the original (primary) source or is derived from it or describes it via annotation.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/MediaObject'> http://schema.org/MediaObject </a>] |</p>
+<h2>Values expected to be one of these defined terms:</h2>
+<p>[<a href='#PrimaryMaterial'> PrimaryMaterial </a>] | [<a href='#Annotation'> Annotation </a>] | [<a href='#DerivedMaterial'> DerivedMaterial </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="openAccessIndex"  style="border-style: solid">
+<h2>Property: openAccessIndex (https://w3id.org/ldac/terms#openAccessIndex)</h2>
+<p>One or more public index types allowed by a license, e.g. FullText indexing may be allowed for discovery even when an item is not.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h2>Values expected to be one of these defined terms:</h2>
+<p>[<a href='#FullText'> FullText </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="participant"  style="border-style: solid">
+<h2>Property: participant (https://w3id.org/ldac/terms#participant)</h2>
+<p>The participant was present during the creation of the resource, but did not contribute substantially to its content.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#participant'> participant </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="performer"  style="border-style: solid">
+<h2>Property: performer (https://w3id.org/ldac/terms#performer)</h2>
+<p>The participant performed some portion of a recorded, filmed, or transcribed resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#performer'> performer </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="photographer"  style="border-style: solid">
+<h2>Property: photographer (https://w3id.org/ldac/terms#photographer)</h2>
+<p>The participant took the photograph, or shot the film, that appears in or constitutes the resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#photographer'> photographer </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="recorder"  style="border-style: solid">
+<h2>Property: recorder (https://w3id.org/ldac/terms#recorder)</h2>
+<p>The participant operated the recording machinery used to create the resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#recorder'> recorder </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="register"  style="border-style: solid">
+<h2>Property: register (https://w3id.org/ldac/terms#register)</h2>
+<p>Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://w3id.org/meta-share/meta-share/register'> http://w3id.org/meta-share/meta-share/register </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="researchParticipant"  style="border-style: solid">
+<h2>Property: researchParticipant (https://w3id.org/ldac/terms#researchParticipant)</h2>
+<p>The participant acted as a research subject or responded to a questionnaire, the results of which study form the basis of the resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#research_participant'> research_participant </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="researcher"  style="border-style: solid">
+<h2>Property: researcher (https://w3id.org/ldac/terms#researcher)</h2>
+<p>The resource was created as part of the participant's research, or the research presents interim or final results from the participant's research.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#researcher'> researcher </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="responder"  style="border-style: solid">
+<h2>Property: responder (https://w3id.org/ldac/terms#responder)</h2>
+<p>The participant was an interlocutor in some sort of discourse event.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#responder'> responder </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="reviewDate"  style="border-style: solid">
+<h2>Property: reviewDate (https://w3id.org/ldac/terms#reviewDate)</h2>
+<p>The date that this license should be reviewed.</p>
+<h3>Values expected to be one of these types:</h3>
+<h3>Used on these types:</h3>
+<p>[<a href='#DataLicense'> DataLicense </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="signer"  style="border-style: solid">
+<h2>Property: signer (https://w3id.org/ldac/terms#signer)</h2>
+<p>The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#signer'> signer </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="singer"  style="border-style: solid">
+<h2>Property: singer (https://w3id.org/ldac/terms#singer)</h2>
+<p>The participant sang, either individually or as part of a group, in a resource that consists of a recording, a film, or a transcription of a recorded resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#singer'> singer </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="speaker"  style="border-style: solid">
+<h2>Property: speaker (https://w3id.org/ldac/terms#speaker)</h2>
+<p>The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#speaker'> speaker </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="sponsor"  style="border-style: solid">
+<h2>Property: sponsor (https://w3id.org/ldac/terms#sponsor)</h2>
+<p>The participant contributed financial support to the creation of the resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#sponsor'> sponsor </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="subjectLanguage"  style="border-style: solid">
+<h2>Property: subjectLanguage (https://w3id.org/ldac/terms#subjectLanguage)</h2>
+<p>The language(s) that this annotation resource is about.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Language'> http://schema.org/Language </a>] |</p>
+<h3>Used on these types:</h3>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="transcriber"  style="border-style: solid">
+<h2>Property: transcriber (https://w3id.org/ldac/terms#transcriber)</h2>
+<p>The participant produced a transcription of this or a related resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#transcriber'> transcriber </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="translator"  style="border-style: solid">
+<h2>Property: translator (https://w3id.org/ldac/terms#translator)</h2>
+<p>The participant produced a translation of this or a related resource.</p>
+<h3>Values expected to be one of these types:</h3>
+<p>[<a href='http://schema.org/Organization'> http://schema.org/Organization </a>] | [<a href='http://schema.org/Person'> http://schema.org/Person </a>] |</p>
+<h3>Used on these types:</h3>
+<p>[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/role.html#translator'> translator </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="FullText"  style="border-style: solid">
+<h2>Defined Term: FullText (https://w3id.org/ldac/terms#FullText)</h2>
+<p>A text index that makes the full text of a data resource findable via a search interface.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#openAccessIndex'> openAccessIndex </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="DataReuseLicense" style="border-style: solid">
+<h2>Class: DataReuseLicense (https://w3id.org/ldac/terms#DataReuseLicense)</h2>
+<p>A license document, setting out terms for reuse of data.</p>
+<h3>Subclass of:</h3>
+<p>[<a href='#DataLicense'> DataLicense </a>] |</p>
+<h3>Properties</h3>
+<p>[<a href='#accessControlList'> accessControlList </a>] | [<a href='#authorizationWorkflow'> authorizationWorkflow </a>] | [<a href='#access'> access </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='https://creativecommons.org/ns#License'> License </a>] |</p>
+<p>:</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="WhistledLanguage"  style="border-style: solid">
+<h2>Defined Term: WhistledLanguage (https://w3id.org/ldac/terms#WhistledLanguage)</h2>
+<p>The resource contains data for which the medium of interaction was whistling.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#communicationMode'> communicationMode </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Oratory"  style="border-style: solid">
+<h2>Defined Term: Oratory (https://w3id.org/ldac/terms#Oratory)</h2>
+<p>The art of public speaking, or of speaking eloquently according to rules or conventions. Examples of oratory include sermons, lectures, political speeches, and invocations.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#linguisticGenre'> linguisticGenre </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#text/oratory'> text/oratory </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="Gestural"  style="border-style: solid">
+<h2>Defined Term: Gestural (https://w3id.org/ldac/terms#Gestural)</h2>
+<p>The resource describes the gestural content of the resource it annotates.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#annotationType'> annotationType </a>] |</p>
+<h3>Same as:</h3>
+<p>[<a href='http://www.language-archives.org/REC/type-20020628.html#description/gestural'> description/gestural </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="AgreeToTerms"  style="border-style: solid">
+<h2>Defined Term: AgreeToTerms (https://w3id.org/ldac/terms#AgreeToTerms)</h2>
+<p>A user is expected to explicitly agree to a set of license terms, this may be combined with AccessControlList - to note that even if a user has been pre-approved for a license they must agree to license terms.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#authorizationWorkflow'> authorizationWorkflow </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="AuthorizationByApplication"  style="border-style: solid">
+<h2>Defined Term: AuthorizationByApplication (https://w3id.org/ldac/terms#AuthorizationByApplication)</h2>
+<p>Users may apply for a license via some workflow, such as a form, with the decision being made by a DataSteward or their delegate about whether to grant the license.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#authorizationWorkflow'> authorizationWorkflow </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="AuthorizationByInvitation"  style="border-style: solid">
+<h2>Defined Term: AuthorizationByInvitation (https://w3id.org/ldac/terms#AuthorizationByInvitation)</h2>
+<p>A data steward or administrator is expected to use an access control system to invite users, for example, participants, collaborators or students.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#authorizationWorkflow'> authorizationWorkflow </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="SelfAuthorization"  style="border-style: solid">
+<h2>Defined Term: SelfAuthorization (https://w3id.org/ldac/terms#SelfAuthorization)</h2>
+<p>A user can be authorised to access data by clicking that they agree to a license, or filling out a form to check their understanding, which can be validated by a machine and does not require human intervention.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#authorizationWorkflow'> authorizationWorkflow </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="AccessControlList"  style="border-style: solid">
+<h2>Defined Term: AccessControlList (https://w3id.org/ldac/terms#AccessControlList)</h2>
+<p>License grants access to data based on a list of approved users, specified using the property accessControlList.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#authorizationWorkflow'> authorizationWorkflow </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="AuthorizedAccess"  style="border-style: solid">
+<h2>Defined Term: AuthorizedAccess (https://w3id.org/ldac/terms#AuthorizedAccess)</h2>
+<p>Indicates that a DataReuseLicense requires some kind of authorization step, from SelfAuthorization (click-through) to processes that require a data steward to grant permission.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#access'> access </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
+<div id="OpenAccess"  style="border-style: solid">
+<h2>Defined Term: OpenAccess (https://w3id.org/ldac/terms#OpenAccess)</h2>
+<p>Data covered by this license may be accessed as long as the license is served alongside it, and does not require any specific authorization step.</p>
+<h3>Is an expected value for the following property:</h3>
+<p>[<a href='#access'> access </a>] |</p>
+</div><br>
+<a href="#top">Top of page</a>
