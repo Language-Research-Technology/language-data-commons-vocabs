@@ -67,7 +67,16 @@
           "@id": "https://w3id.org/ldac/terms#TimeAligned"
         },
         {
+          "@id": "https://w3id.org/ldac/terms#AccessTypes"
+        },
+        {
           "@id": "https://w3id.org/ldac/terms#Annotation"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
         },
         {
           "@id": "https://w3id.org/ldac/terms#Coded"
@@ -76,7 +85,16 @@
           "@id": "https://w3id.org/ldac/terms#CollectionEvent"
         },
         {
+          "@id": "https://w3id.org/ldac/terms#CollectionEventTypeTerms"
+        },
+        {
           "@id": "https://w3id.org/ldac/terms#CollectionProtocol"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#CollectionProtocolTypeTerms"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
         },
         {
           "@id": "https://w3id.org/ldac/terms#DataDepositLicense"
@@ -118,7 +136,13 @@
           "@id": "https://w3id.org/ldac/terms#Lexicon"
         },
         {
+          "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
+        },
+        {
           "@id": "https://w3id.org/ldac/terms#Ludic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#MaterialTypes"
         },
         {
           "@id": "https://w3id.org/ldac/terms#Narrative"
@@ -190,6 +214,12 @@
           "@id": "https://w3id.org/ldac/terms#WrittenLanguage"
         },
         {
+          "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#access"
+        },
+        {
           "@id": "https://w3id.org/ldac/terms#accessControlList"
         },
         {
@@ -217,6 +247,12 @@
           "@id": "https://w3id.org/ldac/terms#collectionProtocolType"
         },
         {
+          "@id": "https://w3id.org/ldac/terms#comment"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#communicationMode"
+        },
+        {
           "@id": "https://w3id.org/ldac/terms#compiler"
         },
         {
@@ -224,6 +260,9 @@
         },
         {
           "@id": "https://w3id.org/ldac/terms#dataInputter"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#dateFreeText"
         },
         {
           "@id": "https://w3id.org/ldac/terms#depositor"
@@ -271,10 +310,16 @@
           "@id": "https://w3id.org/ldac/terms#isDeIdentified"
         },
         {
-          "@id": "https://w3id.org/ldac/terms#subjectLanguage"
+          "@id": "https://w3id.org/ldac/terms#itemLocation"
         },
         {
-          "@id": "https://w3id.org/ldac/terms#communicationMode"
+          "@id": "https://w3id.org/ldac/terms#linguisticGenre"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#material"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#materialType"
         },
         {
           "@id": "https://w3id.org/ldac/terms#openAccessIndex"
@@ -304,6 +349,9 @@
           "@id": "https://w3id.org/ldac/terms#responder"
         },
         {
+          "@id": "https://w3id.org/ldac/terms#reviewDate"
+        },
+        {
           "@id": "https://w3id.org/ldac/terms#signer"
         },
         {
@@ -314,6 +362,9 @@
         },
         {
           "@id": "https://w3id.org/ldac/terms#sponsor"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#subjectLanguage"
         },
         {
           "@id": "https://w3id.org/ldac/terms#transcriber"
@@ -383,24 +434,6 @@
         },
         {
           "@id": "http://schema.org/isPartOf"
-        },
-        {
-          "@id": "https://w3id.org/ldac/terms#dateFreeText"
-        },
-        {
-          "@id": "https://w3id.org/ldac/terms#MaterialTypes"
-        },
-        {
-          "@id": "https://w3id.org/ldac/terms#materialType"
-        },
-        {
-          "@id": "https://w3id.org/ldac/terms#linguisticGenre"
-        },
-        {
-          "@id": "https://w3id.org/ldac/terms#access"
-        },
-        {
-          "@id": "https://w3id.org/ldac/terms#reviewDate"
         }
       ],
       "conformsTo": {
@@ -580,12 +613,38 @@
       }
     },
     {
+      "@id": "https://w3id.org/ldac/terms#itemLocation",
+      "@type": "rdf:Property",
+      "name": "itemLocation",
+      "rdfs:comment": "Current location of the item, e.g. where a set of audio tapes are stored.",
+      "rdfs:label": "itemLocation",
+      "domainIncludes": [
+        {
+          "@id": "http://pcdm.org/models#Object"
+        },
+        {
+          "@id": "http://schema.org/Collection"
+         }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "http://schema.org/Organization"
+        },
+        {
+          "@id": "http://schema.org/Place"
+        }
+      ]
+    },
+    {
       "@id": "https://w3id.org/ldac/terms#Lexicon",
       "@type": "DefinedTerm",
       "name": "Lexicon",
       "description": "The resource includes a systematic listing of lexical items.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#Lexicon"
+      },
+      "inDefinedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
     },
     {
@@ -633,7 +692,7 @@
         "@id": "https://w3id.org/ldac/terms#DerivedMaterialTypeTerms"
       },
       "sameAs": {
-        "@id": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-spoeech"
+        "@id": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-speech"
       }
     },
     {
@@ -739,7 +798,7 @@
       "name": "Session",
       "description": "A collection event that is a recording or elicitation session with participants.",
       "sameAs": {
-        "@id": "#https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf\n"
+        "@id": "https://www.mpi.nl/ISLE/documents/draft/ISLE_MetaData_2.5.pdf"
       },
       "inDefinedTermSet": {
         "@id": "https://w3id.org/ldac/terms#CollectionEventTypeTerms"
@@ -1083,7 +1142,7 @@
       "@id": "https://w3id.org/ldac/terms#derivationOf",
       "@type": "rdf:Property",
       "name": "derivationOf",
-      "rdfs:comment": "This property references another resource from which the current resource is derived by e.g. downsampling audio or video file, or extracting text from a PDF.",
+      "rdfs:comment": "This property references another resource from which the current resource is derived, e.g. downsampling audio or video files, or extracting text from a PDF.",
       "rdfs:label": "derivationOf",
       "rangeIncludes": [
         {
@@ -1174,7 +1233,7 @@
         "@id": "http://schema.org/CreativeWork"
       },
       "rangeIncludes": {
-        "@id": "https://w3id.org/ldac/terms#Annnotation"
+        "@id": "https://w3id.org/ldac/terms#Annotation"
       }
     },
     {
@@ -1339,6 +1398,16 @@
       },
       "definedTermSet": {
         "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#material",
+      "@type": "rdf:Property",
+      "name": "material",
+      "rdfs:label": "material",
+      "rdfs:comment": "Description of the original media, e.g. audio cassette tapes, participant questionnaires, field notes.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
       }
     },
     {
@@ -1766,6 +1835,9 @@
         },
         {
           "@id": "https://w3id.org/ldac/terms#Oratory"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Lexicon"
         }
       ]
     },
@@ -1870,7 +1942,7 @@
       "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows",
       "@type": "DefinedTermSet",
       "name": "AuthorizationWorkflows",
-      "description": "A set of DefinedTerms for access authorization mechanisms - some of these may be combined - e.g. AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant.",
+      "description": "A set of DefinedTerms for access authorization mechanisms - some of these may be combined, e.g. AccessControlList and AgreeToTerms, but SelfAuthorization and AgreeToTerms would be redundant.",
       "hasDefinedTerm": [
         {
           "@id": "https://w3id.org/ldac/terms#AgreeToTerms"
