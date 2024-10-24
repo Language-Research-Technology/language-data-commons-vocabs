@@ -232,9 +232,6 @@
           "@id": "https://w3id.org/ldac/terms#annotator"
         },
         {
-          "@id": "https://w3id.org/ldac/terms#author"
-        },
-        {
           "@id": "https://w3id.org/ldac/terms#authorizationWorkflow"
         },
         {
@@ -966,27 +963,6 @@
       },
       "rdfs:comment": "The participant produced an annotation of this or a related resource.",
       "rdfs:label": "annotator",
-      "domainIncludes": {
-        "@id": "http://schema.org/CreativeWork"
-      },
-      "rangeIncludes": [
-        {
-          "@id": "http://schema.org/Organization"
-        },
-        {
-          "@id": "http://schema.org/Person"
-        }
-      ]
-    },
-    {
-      "@id": "https://w3id.org/ldac/terms#author",
-      "@type": "rdf:Property",
-      "name": "author",
-      "sameAs": {
-        "@id": "http://www.language-archives.org/REC/role.html#author"
-      },
-      "rdfs:comment": "The participant contributed original writings to the resource.",
-      "rdfs:label": "author",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       },

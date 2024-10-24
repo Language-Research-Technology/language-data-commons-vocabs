@@ -9,7 +9,6 @@
     "annotationOf": "https://w3id.org/ldac/terms#annotationOf",
     "annotationType": "https://w3id.org/ldac/terms#annotationType",
     "annotator": "https://w3id.org/ldac/terms#annotator",
-    "author": "https://w3id.org/ldac/terms#author",
     "authorizationWorkflow": "https://w3id.org/ldac/terms#authorizationWorkflow",
     "channels": "https://w3id.org/ldac/terms#channels",
     "collectionEventType": "https://w3id.org/ldac/terms#collectionEventType",
