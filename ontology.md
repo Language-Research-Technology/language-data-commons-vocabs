@@ -2,7 +2,7 @@
 
 # Language Data Commons Schema Terms
 
-This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://w3id.org/ldac/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://w3id.org/ldac/profile>.
+This is a language data schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the LDaCA project and is published at <https://w3id.org/ldac/terms>. This schema builds on Schema.org and is intended to be used with the Language Data Commons RO-Crate Profile: <https://w3id.org/ldac/profile>.
 
 ## Classes
 
@@ -10,7 +10,7 @@ This is a language data Schema, in the style of the Schema.org schema. It is bas
 
 ## Properties
 
-<a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#communicationMode">communicationMode</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#itemLocation">itemLocation</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#material">material</a> | <a href="#materialType">materialType</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#reviewDate">reviewDate</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
+<a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#age">age</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#communicationMode">communicationMode</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#itemLocation">itemLocation</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#material">material</a> | <a href="#materialType">materialType</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#reviewDate">reviewDate</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
 
 ## DefinedTerms
 
@@ -84,6 +84,10 @@ A set of DefinedTerms for access authorization mechanisms - some of these may be
 ## Defined Term: Coded (https://w3id.org/ldac/terms#Coded)
 
 The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet).
+
+### Is an expected value for the following property:
+
+[<a href='#communicationMode'> communicationMode </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -164,7 +168,7 @@ A set of expected values for the property communicationMode.
 
 ### Has defined terms:
 
-[<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
+[<a href='#Coded'> Coded </a>] | [<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -848,6 +852,29 @@ When a license has an authorizationWorkflow property with a value of the Defined
 </div><br>
 <a href="#top">Top of page</a>
 
+<div id="age"  style="border-style: solid">
+
+## Property: age (https://w3id.org/ldac/terms#age)
+
+The age of a person. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included.
+
+### Values expected to be one of these types: 
+
+[<a href='http://schema.org/Text'> http://schema.org/Text </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/Person'> http://schema.org/Person </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
 <div id="annotationOf"  style="border-style: solid">
 
 ## Property: annotationOf (https://w3id.org/ldac/terms#annotationOf)
@@ -1058,7 +1085,7 @@ The mode (spoken, written, signed etc.) of this resource. There may be more than
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
+[<a href='#Coded'> Coded </a>] | [<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
 
 
 
@@ -1099,7 +1126,7 @@ The participant is responsible for collecting the sub-parts of the resource toge
 
 ## Property: consultant (https://w3id.org/ldac/terms#consultant)
 
-The participant contributes expertise to the creation of a work.
+The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language.
 
 ### Values expected to be one of these types: 
 
@@ -1229,7 +1256,7 @@ This property references another resource from which the current resource is der
 
 ## Property: developer (https://w3id.org/ldac/terms#developer)
 
-The participant developed the methodology or tools that constitute the resource, or that were used to create the resource.
+The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource.
 
 ### Values expected to be one of these types: 
 
@@ -1451,7 +1478,7 @@ One or more target File(s) that together contain the full text of an item – ea
 
 ## Property: interpreter (https://w3id.org/ldac/terms#interpreter)
 
-The participant translates in real-time or explains the discourse recorded in the resource.
+The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource.
 
 ### Values expected to be one of these types: 
 
@@ -1530,7 +1557,7 @@ The participant conducted an interview that forms part of the resource.
 
 ## Property: isDeIdentified (https://w3id.org/ldac/terms#isDeIdentified)
 
-The data in this item has had identifying information removed, or in the case of a person the name is an alias.
+The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms.
 
 ### Values expected to be one of these types: 
 
@@ -1714,7 +1741,7 @@ The participant was present during the creation of the resource, but did not con
 
 ## Property: performer (https://w3id.org/ldac/terms#performer)
 
-The participant performed some portion of a recorded, filmed, or transcribed resource.
+The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.
 
 ### Values expected to be one of these types: 
 
@@ -1798,7 +1825,7 @@ The participant operated the recording machinery used to create the resource.
 
 ## Property: register (https://w3id.org/ldac/terms#register)
 
-Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.
+The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.
 
 ### Values expected to be one of these types: 
 
@@ -1882,7 +1909,7 @@ The resource was created as part of the participant's research, or the research 
 
 ## Property: responder (https://w3id.org/ldac/terms#responder)
 
-The participant was an interlocutor in some sort of discourse event.
+The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others.
 
 ### Values expected to be one of these types: 
 
@@ -1933,7 +1960,7 @@ The date that this license should be reviewed.
 
 ## Property: signer (https://w3id.org/ldac/terms#signer)
 
-The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource.
+The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).
 
 ### Values expected to be one of these types: 
 
@@ -1989,7 +2016,7 @@ The participant sang, either individually or as part of a group, in a resource t
 
 ## Property: speaker (https://w3id.org/ldac/terms#speaker)
 
-The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource.
+The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).
 
 ### Values expected to be one of these types: 
 

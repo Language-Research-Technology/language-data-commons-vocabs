@@ -6,6 +6,7 @@
     "DataLicense": "https://w3id.org/ldac/terms#DataLicense",
     "access": "https://w3id.org/ldac/terms#access",
     "accessControlList": "https://w3id.org/ldac/terms#accessControlList",
+    "age": "https://w3id.org/ldac/terms#age",
     "annotationOf": "https://w3id.org/ldac/terms#annotationOf",
     "annotationType": "https://w3id.org/ldac/terms#annotationType",
     "annotator": "https://w3id.org/ldac/terms#annotator",
