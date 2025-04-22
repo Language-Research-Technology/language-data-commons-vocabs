@@ -373,6 +373,9 @@
           "@id": "https://w3id.org/ldac/terms#translator"
         },
         {
+          "@id": "https://w3id.org/ldac/terms#writtenLanguageFormat"
+        },
+        {
           "@id": "http://purl.org/dc/terms/conformsTo"
         },
         {
@@ -582,7 +585,7 @@
       "@id": "https://w3id.org/ldac/terms#Handwritten",
       "@type": "DefinedTerm",
       "name": "Handwritten",
-      "description": "The resource was written using a writing implement such as a pen, pencil, brush or computer stylus. (From Nyingarn - TODO check this).",
+      "description": "The resource was written using a writing implement such as a pen, pencil, brush or computer stylus (except where the digital handwriting is converted to standard text).",
       "inDefinedTermSet": {
         "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
       }
@@ -679,7 +682,7 @@
       "name": "Orthographic",
       "description": "The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription.",
       "inDefinedTermSet": {
-        "@id": "https://w3id.org/ldac/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic"
@@ -691,7 +694,7 @@
       "name": "PartOfSpeech",
       "description": "An annotation that assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate).",
       "inDefinedTermSet": {
-        "@id": "https://w3id.org/ldac/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-speech"
@@ -897,7 +900,7 @@
       "@id": "https://w3id.org/ldac/terms#Typeset",
       "@type": "DefinedTerm",
       "name": "Typeset",
-      "description": "The resource has been formatted for display.",
+      "description": "The resource has been formatted for printing or display.",
       "inDefinedTermSet": {
         "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
       }
@@ -906,7 +909,7 @@
       "@id": "https://w3id.org/ldac/terms#Typewritten",
       "@type": "DefinedTerm",
       "name": "Typewritten",
-      "description": "The resource contains text produced on a typewriter (From Nyingarn - TODO check this).",
+      "description": "The resource contains text produced on a typewriter.",
       "inDefinedTermSet": {
         "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
       }
@@ -1020,7 +1023,7 @@
       "@id": "https://w3id.org/ldac/terms#collectionEventType",
       "@type": "rdf:Property",
       "name": "collectionEventType",
-      "rdfs:comment": "An event with a start and end time during which data are gathered from participants, or from other materials.",
+      "rdfs:comment": "A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment.",
       "rdfs:label": "collectionEventType",
       "definedTermSet": {
         "@id": "https://w3id.org/ldac/terms#CollectionEventTypeTerms"
@@ -1371,7 +1374,9 @@
       "name": "subjectLanguage",
       "rdfs:label": "subjectLanguage",
       "rdfs:comment": "The language(s) that this annotation resource is about.",
-      "domainIncludes": [],
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
       "rangeIncludes": {
         "@id": "http://schema.org/Language"
       }
@@ -1842,6 +1847,19 @@
       ]
     },
     {
+      "@id": "https://w3id.org/ldac/terms#writtenLanguageFormat",
+      "@type": "rdf:Property",
+      "name": "writtenLanguageFormat",
+      "rdfs:label": "writtenLanguageFormat",
+      "rdfs:comment": "The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten).",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "definedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
+      }
+    },
+    {
       "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms",
       "@type": "DefinedTermSet",
       "name": "WrittenLanguageTypeTerms",
@@ -1875,6 +1893,12 @@
       "hasDefinedTerm": [
         {
           "@id": "https://w3id.org/ldac/terms#Gestural"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Orthographic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#PartOfSpeech"
         },
         {
           "@id": "https://w3id.org/ldac/terms#Phonemic"

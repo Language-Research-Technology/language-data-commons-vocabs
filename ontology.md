@@ -10,7 +10,7 @@ This is a language data schema, in the style of the Schema.org schema. It is bas
 
 ## Properties
 
-<a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#age">age</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#communicationMode">communicationMode</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#itemLocation">itemLocation</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#material">material</a> | <a href="#materialType">materialType</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#reviewDate">reviewDate</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a>
+<a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#age">age</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#communicationMode">communicationMode</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#itemLocation">itemLocation</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#material">material</a> | <a href="#materialType">materialType</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#reviewDate">reviewDate</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#writtenLanguageFormat">writtenLanguageFormat</a>
 
 ## DefinedTerms
 
@@ -61,7 +61,7 @@ The set of expected values for annotation types.
 
 ### Has defined terms:
 
-[<a href='#Gestural'> Gestural </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Translation'> Translation </a>] | 
+[<a href='#Gestural'> Gestural </a>] | [<a href='#Orthographic'> Orthographic </a>] | [<a href='#PartOfSpeech'> PartOfSpeech </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Translation'> Translation </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -313,7 +313,11 @@ The resource contains non-linguistic gestural communication (i.e. not sign langu
 
 ## Defined Term: Handwritten (https://w3id.org/ldac/terms#Handwritten)
 
-The resource was written using a writing implement such as a pen, pencil, brush or computer stylus. (From Nyingarn - TODO check this).
+The resource was written using a writing implement such as a pen, pencil, brush or computer stylus (except where the digital handwriting is converted to standard text).
+
+### Is an expected value for the following property:
+
+[<a href='#writtenLanguageFormat'> writtenLanguageFormat </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -443,6 +447,10 @@ A discourse, monologic or co-constructed, which represents temporally organised 
 
 The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription.
 
+### Is an expected value for the following property:
+
+[<a href='#annotationType'> annotationType </a>] | 
+
 ### Same as: 
 
 [<a href='http://www.language-archives.org/REC/type-20020628.html#description/orthographic'> description/orthographic </a>] | 
@@ -456,6 +464,10 @@ The resource contains annotations using orthography (a writing system) as oppose
 ## Defined Term: PartOfSpeech (https://w3id.org/ldac/terms#PartOfSpeech)
 
 An annotation that assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate).
+
+### Is an expected value for the following property:
+
+[<a href='#annotationType'> annotationType </a>] | 
 
 ### Same as: 
 
@@ -760,7 +772,11 @@ This is a translation of a resource in another language.
 
 ## Defined Term: Typeset (https://w3id.org/ldac/terms#Typeset)
 
-The resource has been formatted for display.
+The resource has been formatted for printing or display.
+
+### Is an expected value for the following property:
+
+[<a href='#writtenLanguageFormat'> writtenLanguageFormat </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -769,7 +785,11 @@ The resource has been formatted for display.
 
 ## Defined Term: Typewritten (https://w3id.org/ldac/terms#Typewritten)
 
-The resource contains text produced on a typewriter (From Nyingarn - TODO check this).
+The resource contains text produced on a typewriter.
+
+### Is an expected value for the following property:
+
+[<a href='#writtenLanguageFormat'> writtenLanguageFormat </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -918,7 +938,7 @@ The type of annotation for Annotation resources.
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Gestural'> Gestural </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Translation'> Translation </a>] | 
+[<a href='#Gestural'> Gestural </a>] | [<a href='#Orthographic'> Orthographic </a>] | [<a href='#PartOfSpeech'> PartOfSpeech </a>] | [<a href='#Phonemic'> Phonemic </a>] | [<a href='#Phonetic'> Phonetic </a>] | [<a href='#Phonological'> Phonological </a>] | [<a href='#Prosodic'> Prosodic </a>] | [<a href='#Semantic'> Semantic </a>] | [<a href='#Syntactic'> Syntactic </a>] | [<a href='#Transcription'> Transcription </a>] | [<a href='#Translation'> Translation </a>] | 
 
 
 
@@ -1011,7 +1031,7 @@ The number of audio channels this resource contains (e.g. 1, 2, 5.1).
 
 ## Property: collectionEventType (https://w3id.org/ldac/terms#collectionEventType)
 
-An event with a start and end time during which data are gathered from participants, or from other materials.
+A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment.
 
 ### Values expected to be one of these types: 
 
@@ -2082,7 +2102,7 @@ The language(s) that this annotation resource is about.
 
 ### Used on these types: 
 
-
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 
@@ -2140,6 +2160,35 @@ The participant produced a translation of this or a related resource.
 ### Same as: 
 
 [<a href='http://www.language-archives.org/REC/role.html#translator'> translator </a>] | 
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="writtenLanguageFormat"  style="border-style: solid">
+
+## Property: writtenLanguageFormat (https://w3id.org/ldac/terms#writtenLanguageFormat)
+
+The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten).
+
+### Values expected to be one of these types: 
+
+
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
+
+
+
+## Values expected to be one of these defined terms: 
+
+[<a href='#Handwritten'> Handwritten </a>] | [<a href='#Typeset'> Typeset </a>] | [<a href='#Typewritten'> Typewritten </a>] | 
+
 
 
 

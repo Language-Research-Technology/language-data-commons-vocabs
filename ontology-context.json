@@ -55,6 +55,7 @@
     "subjectLanguage": "https://w3id.org/ldac/terms#subjectLanguage",
     "transcriber": "https://w3id.org/ldac/terms#transcriber",
     "translator": "https://w3id.org/ldac/terms#translator",
+    "writtenLanguageFormat": "https://w3id.org/ldac/terms#writtenLanguageFormat",
     "DataReuseLicense": "https://w3id.org/ldac/terms#DataReuseLicense"
   }
 }
