@@ -61,7 +61,7 @@
       "@id": "./",
       "@type": "Dataset",
       "name": "Language Data Commons Schema Terms",
-      "description": "This is a language data Schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the ATAP and LDaCA projects and is published at <https://w3id.org/ldac/terms>. This schema builds on schema.org and is intended to be used with the Language Data Commons RO-Crate profile: <https://w3id.org/ldac/profile>.",
+      "description": "This is a language data schema, in the style of the Schema.org schema. It is based on OLAC terms for use in the LDaCA project and is published at <https://w3id.org/ldac/terms>. This schema builds on Schema.org and is intended to be used with the Language Data Commons RO-Crate Profile: <https://w3id.org/ldac/profile>.",
       "mentions": [
         {
           "@id": "https://w3id.org/ldac/terms#TimeAligned"
@@ -223,6 +223,9 @@
           "@id": "https://w3id.org/ldac/terms#accessControlList"
         },
         {
+          "@id": "https://w3id.org/ldac/terms#age"
+        },
+        {
           "@id": "https://w3id.org/ldac/terms#annotationOf"
         },
         {
@@ -370,6 +373,9 @@
           "@id": "https://w3id.org/ldac/terms#translator"
         },
         {
+          "@id": "https://w3id.org/ldac/terms#writtenLanguageFormat"
+        },
+        {
           "@id": "http://purl.org/dc/terms/conformsTo"
         },
         {
@@ -447,11 +453,11 @@
       "@id": "https://w3id.org/ldac/terms#Annotation",
       "@type": "DefinedTerm",
       "name": "Annotation",
+      "description": "The resource includes material that adds information to some other linguistic record.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#annotation"
       },
       "rdfs:label": "Annotation",
-      "description": "The resource includes material that adds information to some other linguistic record.",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
@@ -513,11 +519,12 @@
       "@id": "https://w3id.org/ldac/terms#DerivedMaterial",
       "@type": "DefinedTerm",
       "name": "DerivedMaterial",
+      "description": "This is derived from another source, such as a Primary Material, via some process, e.g. a downsampled video or a sample or an abstract of a resource that is not an annotation (an analysis or description).",
+
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
       },
       "rdfs:label": "DerivedMaterial",
-      "description": "This is derived from another source, such as a Primary Material, via some process, e.g. a downsampled video or a sample or an abstract of a resource that is not an annotation (an analysis or description).",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
@@ -535,10 +542,11 @@
       "@id": "https://w3id.org/ldac/terms#Drama",
       "@type": "DefinedTerm",
       "name": "Drama",
+      "description": "A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience.",
+
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text/drama"
       },
-      "description": "A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience.",
       "inDefinedTermSet": {
         "@id": "https://w3id.org/ldac/terms#LinguisticGenreTerms"
       }
@@ -577,7 +585,7 @@
       "@id": "https://w3id.org/ldac/terms#Handwritten",
       "@type": "DefinedTerm",
       "name": "Handwritten",
-      "description": "The resource was written using a writing implement such as a pen, pencil, brush or computer stylus. (From Nyingarn - TODO check this).",
+      "description": "The resource was written using a writing implement such as a pen, pencil, brush or computer stylus (except where the digital handwriting is converted to standard text).",
       "inDefinedTermSet": {
         "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
       }
@@ -674,7 +682,7 @@
       "name": "Orthographic",
       "description": "The resource contains annotations using orthography (a writing system) as opposed to a coded representation such as a phonetic transcription.",
       "inDefinedTermSet": {
-        "@id": "https://w3id.org/ldac/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/orthographic"
@@ -686,7 +694,7 @@
       "name": "PartOfSpeech",
       "description": "An annotation that assigns lexical elements of language to classes on the basis of their distributional properties (for sign languages, the term 'sign class' is appropriate).",
       "inDefinedTermSet": {
-        "@id": "https://w3id.org/ldac/terms#DerivedMaterialTypeTerms"
+        "@id": "https://w3id.org/ldac/terms#AnnotationTypeTerms"
       },
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#description/part-of-speech"
@@ -732,11 +740,11 @@
       "@id": "https://w3id.org/ldac/terms#PrimaryMaterial",
       "@type": "DefinedTerm",
       "name": "PrimaryMaterial",
+      "description": "The object of study, such as a literary work, film, or recording of natural discourse.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
       },
       "rdfs:label": "PrimaryMaterial",
-      "description": "The object of study, such as a literary work, film, or recording of natural discourse.",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
       }
@@ -814,10 +822,10 @@
       "@id": "https://w3id.org/ldac/terms#Song",
       "@type": "DefinedTerm",
       "name": "Song",
+      "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text/singing"
       },
-      "description": "\"Words or sounds [articulated] in succession with musical inflections or modulations of the voice\" OED.",
       "inDefinedTermSet": {
         "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
       }
@@ -892,7 +900,7 @@
       "@id": "https://w3id.org/ldac/terms#Typeset",
       "@type": "DefinedTerm",
       "name": "Typeset",
-      "description": "The resource has been formatted for display.",
+      "description": "The resource has been formatted for printing or display.",
       "inDefinedTermSet": {
         "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
       }
@@ -901,7 +909,7 @@
       "@id": "https://w3id.org/ldac/terms#Typewritten",
       "@type": "DefinedTerm",
       "name": "Typewritten",
-      "description": "The resource contains text produced on a typewriter (From Nyingarn - TODO check this).",
+      "description": "The resource contains text produced on a typewriter.",
       "inDefinedTermSet": {
         "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
       }
@@ -926,6 +934,19 @@
       },
       "rangeIncludes": {
         "@id": "http://schema.org/URL"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#age",
+      "@type": "rdf:Property",
+      "name": "age",
+      "rdfs:label": "age",
+      "rdfs:comment": "The age of a person. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included.",
+      "domainIncludes": {
+        "@id": "http://schema.org/Person"
+      },
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
       }
     },
     {
@@ -1002,7 +1023,7 @@
       "@id": "https://w3id.org/ldac/terms#collectionEventType",
       "@type": "rdf:Property",
       "name": "collectionEventType",
-      "rdfs:comment": "An event with a start and end time during which data are gathered from participants, or from other materials.",
+      "rdfs:comment": "A kind of CollectionEvent characterised by some specific procedures, e.g. a psycholinguistic experiment.",
       "rdfs:label": "collectionEventType",
       "definedTermSet": {
         "@id": "https://w3id.org/ldac/terms#CollectionEventTypeTerms"
@@ -1031,7 +1052,6 @@
       "@id": "https://w3id.org/ldac/terms#compiler",
       "@type": "rdf:Property",
       "name": "compiler",
-      "description": "This refers to someone who creates a single resource with multiple parts, such as a book of short stories, or a person who produces a corpus of resources, which may be archived separately.",
       "example": "A compiler of a book of short stories or a CD with several songs on it; a collector of a corpus of recordings in some language or on a given topic; a person who assembles a suite of software tools.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#compiler"
@@ -1054,11 +1074,10 @@
       "@id": "https://w3id.org/ldac/terms#consultant",
       "@type": "rdf:Property",
       "name": "consultant",
-      "description": "This term is commonly used by field linguists for the native speakers who work with them in describing and analysing a language. They contribute their expertise in their native language to the resource, although their speech, sign, or writing may not appear directly in the resource. In some parts of the world, the preferred term for this role is 'informant'.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#consultant"
       },
-      "rdfs:comment": "The participant contributes expertise to the creation of a work.",
+      "rdfs:comment": "The participant contributes expertise to the creation of a work, for example by contributing knowledge of their native language.",
       "rdfs:label": "consultant",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
@@ -1136,11 +1155,10 @@
       "@id": "https://w3id.org/ldac/terms#developer",
       "@type": "rdf:Property",
       "name": "developer",
-      "description": "A software programmer, designer, or analyst; a designer of a questionnaire or research task.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#developer"
       },
-      "rdfs:comment": "The participant developed the methodology or tools that constitute the resource, or that were used to create the resource.",
+      "rdfs:comment": "The participant developed the methodology or tools (including software) that constitute the resource, or that were used to create the resource.",
       "rdfs:label": "developer",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
@@ -1168,7 +1186,6 @@
       "@id": "https://w3id.org/ldac/terms#editor",
       "@type": "rdf:Property",
       "name": "editor",
-      "description": "This role includes anyone whose role was editorial in nature, such as proofreaders, debuggers, testers, etc. It may overlap the Compiler role in some cases.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#editor"
       },
@@ -1280,9 +1297,8 @@
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#interpreter"
       },
-      "rdfs:comment": "The participant translates in real-time or explains the discourse recorded in the resource.",
+      "rdfs:comment": "The contributor renders the discourse recorded in the resource into another language in real time, or the contributor explains the discourse recorded in the resource.",
       "rdfs:label": "interpreter",
-      "description": "The choice between 'interpreter' and 'translator' may depend on the dynamics of the resource creation event or process. Generally, if the participant is translating 'live'; that is, while the speaker or signer is speaking or signing, she or he should be identified as an interpreter. Also, some discourse genres include a participant who interprets or explains a performance of some kind.",
       "rangeIncludes": [
         {
           "@id": "http://schema.org/Organization"
@@ -1350,7 +1366,7 @@
       "rangeIncludes": {
         "@id": "http://schema.org/Boolean"
       },
-      "rdfs:comment": "The data in this item has had identifying information removed, or in the case of a person the name is an alias."
+      "rdfs:comment": "The data in this item has had potentially identifying information removed, which may include replacing names with pseudonyms."
     },
     {
       "@id": "https://w3id.org/ldac/terms#subjectLanguage",
@@ -1358,7 +1374,9 @@
       "name": "subjectLanguage",
       "rdfs:label": "subjectLanguage",
       "rdfs:comment": "The language(s) that this annotation resource is about.",
-      "domainIncludes": [],
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
       "rangeIncludes": {
         "@id": "http://schema.org/Language"
       }
@@ -1403,7 +1421,6 @@
       "@id": "https://w3id.org/ldac/terms#participant",
       "@type": "rdf:Property",
       "name": "participant",
-      "description": "This role is intended for minor participants such as audience members or other peripherally-involved participants in the event. These interlocutors need not have been physically present. They could be participants in some form of long-distance communication, such as lurkers in an online discussion, or they may have participated in a general sense of having allowed the creation event to take place, such as the mayor of an indigenous community.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#participant"
       },
@@ -1425,12 +1442,11 @@
       "@id": "https://w3id.org/ldac/terms#performer",
       "@type": "rdf:Property",
       "name": "performer",
-      "description": "It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.",
       "example": "A person performing a ceremony or delivering an oration or a sermon; native speakers re-enacting a traditional genre of speech, such as ritual greetings or insults; an actor or musician.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#performer"
       },
-      "rdfs:comment": "The participant performed some portion of a recorded, filmed, or transcribed resource.",
+      "rdfs:comment": "The participant performed some portion of a recorded, filmed, or transcribed resource. It is recommended that this term be used only for creative participants whose role is not better indicated by a more specific term, such as 'speaker', 'signer', or 'singer'.",
       "rdfs:label": "performer",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
@@ -1490,11 +1506,10 @@
       "@id": "https://w3id.org/ldac/terms#register",
       "@type": "rdf:Property",
       "name": "register",
-      "description": "The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.",
       "sameAs": {
         "@id": "http://w3id.org/meta-share/meta-share/register"
       },
-      "rdfs:comment": "Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.",
+      "rdfs:comment": "The type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource.",
       "rdfs:label": "register",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
@@ -1546,11 +1561,10 @@
       "@id": "https://w3id.org/ldac/terms#responder",
       "@type": "rdf:Property",
       "name": "responder",
-      "description": "This person's voice can be heard (or their words can be read) in the resource, typically saying the language-appropriate equivalent of \"uh-huh\", \"amen\", \"you don't say\", etc. This role is sometimes referred to as a \"yes-sayer\", \"backchanneler, or \"co-conversant\".",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#responder"
       },
-      "rdfs:comment": "The participant was an interlocutor in some sort of discourse event.",
+      "rdfs:comment": "The participant was an interlocutor in some sort of discourse event, but only reacted to the contributions of others.",
       "rdfs:label": "responder",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
@@ -1568,12 +1582,11 @@
       "@id": "https://w3id.org/ldac/terms#signer",
       "@type": "rdf:Property",
       "name": "signer",
-      "description": "Those whose gestures predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
       "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Signers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#signer"
       },
-      "rdfs:comment": "The participant was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
+      "rdfs:comment": "The contributor was a principal signer in a resource that consists of a recording, a film, or a transcription of a recorded resource. Signers are those whose gestures predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).",
       "rdfs:label": "signer",
       "rangeIncludes": [
         {
@@ -1612,12 +1625,11 @@
       "@id": "https://w3id.org/ldac/terms#speaker",
       "@type": "rdf:Property",
       "name": "speaker",
-      "description": "Those whose voices predominate in a recorded or filmed resource. (This resource may be a transcription of that recording.)",
       "example": "Participants in a recorded conversation, elicitation session, or informal narration would be termed Speakers. Audience members who do not participate beyond the occasional backchannel would be termed Responders.",
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/role.html#speaker"
       },
-      "rdfs:comment": "The participant was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource.",
+      "rdfs:comment": "The contributor was a principal speaker in a resource that consists of a recording, a film, or a transcription of a recorded resource. Speakers are those whose voices predominate in a recorded or filmed resource. (The resource may be a transcription of that recording).",
       "rdfs:label": "speaker",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
@@ -1754,6 +1766,9 @@
       "description": "A set of expected values for the property communicationMode.",
       "hasDefinedTerm": [
         {
+          "@id": "https://w3id.org/ldac/terms#Coded"
+        },
+        {
           "@id": "https://w3id.org/ldac/terms#Gesture"
         },
         {
@@ -1832,6 +1847,19 @@
       ]
     },
     {
+      "@id": "https://w3id.org/ldac/terms#writtenLanguageFormat",
+      "@type": "rdf:Property",
+      "name": "writtenLanguageFormat",
+      "rdfs:label": "writtenLanguageFormat",
+      "rdfs:comment": "The format of the resource resulting from the way the text was produced (handwritten, typeset, typewritten).",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "definedTermSet": {
+        "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms"
+      }
+    },
+    {
       "@id": "https://w3id.org/ldac/terms#WrittenLanguageTypeTerms",
       "@type": "DefinedTermSet",
       "name": "WrittenLanguageTypeTerms",
@@ -1865,6 +1893,12 @@
       "hasDefinedTerm": [
         {
           "@id": "https://w3id.org/ldac/terms#Gestural"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#Orthographic"
+        },
+        {
+          "@id": "https://w3id.org/ldac/terms#PartOfSpeech"
         },
         {
           "@id": "https://w3id.org/ldac/terms#Phonemic"
