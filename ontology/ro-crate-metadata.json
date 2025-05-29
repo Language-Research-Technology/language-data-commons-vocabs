@@ -316,6 +316,9 @@
           "@id": "https://w3id.org/ldac/terms#linguisticGenre"
         },
         {
+          "@id": "https://w3id.org/ldac/terms#mainText"
+        },
+        {
           "@id": "https://w3id.org/ldac/terms#material"
         },
         {
@@ -520,7 +523,6 @@
       "@type": "DefinedTerm",
       "name": "DerivedMaterial",
       "description": "This is derived from another source, such as a Primary Material, via some process, e.g. a downsampled video or a sample or an abstract of a resource that is not an annotation (an analysis or description).",
-
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text"
       },
@@ -543,7 +545,6 @@
       "@type": "DefinedTerm",
       "name": "Drama",
       "description": "A planned, creative, rendition of discourse with two or more participants intended for presentation to an audience.",
-
       "sameAs": {
         "@id": "http://www.language-archives.org/REC/type-20020628.html#text/drama"
       },
@@ -629,7 +630,7 @@
         },
         {
           "@id": "http://schema.org/Collection"
-         }
+        }
       ],
       "rangeIncludes": [
         {
@@ -1712,6 +1713,19 @@
       "name": "dateFreeText",
       "rdfs:label": "dateFreeText",
       "rdfs:comment": "Date information that cannot be put in one of the standard date formats, e.g. \"mid-1970s\", or it is not clear, for example, if it is a creation or publication date.",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      }
+    },
+    {
+      "@id": "https://w3id.org/ldac/terms#mainText",
+      "@type": "rdf:Property",
+      "name": "mainText",
+      "rdfs:label": "mainText",
+      "rangeIncludes": {
+        "@id": "http://schema.org/MediaObject"
+      },
+      "rdfs:comment": "Identifies the most relevant sub-component for computational text analytics.",
       "domainIncludes": {
         "@id": "http://schema.org/CreativeWork"
       }
