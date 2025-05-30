@@ -10,7 +10,7 @@ This is a language data schema, in the style of the Schema.org schema. It is bas
 
 ## Properties
 
-<a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#age">age</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#communicationMode">communicationMode</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#itemLocation">itemLocation</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#material">material</a> | <a href="#materialType">materialType</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#reviewDate">reviewDate</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#writtenLanguageFormat">writtenLanguageFormat</a>
+<a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#age">age</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#communicationMode">communicationMode</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#itemLocation">itemLocation</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#mainText">mainText</a> | <a href="#material">material</a> | <a href="#materialType">materialType</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#reviewDate">reviewDate</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#writtenLanguageFormat">writtenLanguageFormat</a>
 
 ## DefinedTerms
 
@@ -1640,6 +1640,29 @@ A linguistic classification of the genre of this resource.
 ## Values expected to be one of these defined terms: 
 
 [<a href='#Dialogue'> Dialogue </a>] | [<a href='#Drama'> Drama </a>] | [<a href='#Formulaic'> Formulaic </a>] | [<a href='#Informational'> Informational </a>] | [<a href='#Interview'> Interview </a>] | [<a href='#Ludic'> Ludic </a>] | [<a href='#Narrative'> Narrative </a>] | [<a href='#Procedural'> Procedural </a>] | [<a href='#Report'> Report </a>] | [<a href='#Thesaurus'> Thesaurus </a>] | [<a href='#Oratory'> Oratory </a>] | [<a href='#Lexicon'> Lexicon </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="mainText"  style="border-style: solid">
+
+## Property: mainText (https://w3id.org/ldac/terms#mainText)
+
+Identifies the most relevant sub-component for computational text analytics.
+
+### Values expected to be one of these types: 
+
+[<a href='http://schema.org/MediaObject'> http://schema.org/MediaObject </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 

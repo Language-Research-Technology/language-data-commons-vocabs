@@ -36,6 +36,7 @@
     "isDeIdentified": "https://w3id.org/ldac/terms#isDeIdentified",
     "itemLocation": "https://w3id.org/ldac/terms#itemLocation",
     "linguisticGenre": "https://w3id.org/ldac/terms#linguisticGenre",
+    "mainText": "https://w3id.org/ldac/terms#mainText",
     "material": "https://w3id.org/ldac/terms#material",
     "materialType": "https://w3id.org/ldac/terms#materialType",
     "openAccessIndex": "https://w3id.org/ldac/terms#openAccessIndex",
