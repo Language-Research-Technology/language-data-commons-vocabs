@@ -10,11 +10,11 @@ This is a language data schema, in the style of the Schema.org schema. It is bas
 
 ## Properties
 
-<a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#age">age</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#communicationMode">communicationMode</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#itemLocation">itemLocation</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#mainText">mainText</a> | <a href="#material">material</a> | <a href="#materialType">materialType</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#reviewDate">reviewDate</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#writtenLanguageFormat">writtenLanguageFormat</a>
+<a href="#access">access</a> | <a href="#accessControlList">accessControlList</a> | <a href="#age">age</a> | <a href="#annotationOf">annotationOf</a> | <a href="#annotationType">annotationType</a> | <a href="#annotator">annotator</a> | <a href="#authorizationWorkflow">authorizationWorkflow</a> | <a href="#channels">channels</a> | <a href="#collectionEventType">collectionEventType</a> | <a href="#collectionProtocolType">collectionProtocolType</a> | <a href="#communicationMode">communicationMode</a> | <a href="#compiler">compiler</a> | <a href="#consultant">consultant</a> | <a href="#dataInputter">dataInputter</a> | <a href="#dateFreeText">dateFreeText</a> | <a href="#depositor">depositor</a> | <a href="#derivationOf">derivationOf</a> | <a href="#developer">developer</a> | <a href="#doi">doi</a> | <a href="#editor">editor</a> | <a href="#geoJSON">geoJSON</a> | <a href="#hasAnnotation">hasAnnotation</a> | <a href="#hasCollectionProtocol">hasCollectionProtocol</a> | <a href="#hasDerivation">hasDerivation</a> | <a href="#illustrator">illustrator</a> | <a href="#indexableText">indexableText</a> | <a href="#interpreter">interpreter</a> | <a href="#interviewee">interviewee</a> | <a href="#interviewer">interviewer</a> | <a href="#isDeIdentified">isDeIdentified</a> | <a href="#itemLocation">itemLocation</a> | <a href="#linguisticGenre">linguisticGenre</a> | <a href="#mainText">mainText</a> | <a href="#material">material</a> | <a href="#materialType">materialType</a> | <a href="#openAccessIndex">openAccessIndex</a> | <a href="#orthographicNotes">orthographicNotes</a> | <a href="#participant">participant</a> | <a href="#performer">performer</a> | <a href="#photographer">photographer</a> | <a href="#recorder">recorder</a> | <a href="#register">register</a> | <a href="#researchParticipant">researchParticipant</a> | <a href="#researcher">researcher</a> | <a href="#responder">responder</a> | <a href="#reviewDate">reviewDate</a> | <a href="#signer">signer</a> | <a href="#singer">singer</a> | <a href="#speaker">speaker</a> | <a href="#sponsor">sponsor</a> | <a href="#subjectLanguage">subjectLanguage</a> | <a href="#transcriber">transcriber</a> | <a href="#translator">translator</a> | <a href="#writtenLanguageFormat">writtenLanguageFormat</a>
 
 ## DefinedTerms
 
-<a href="#Annotation">Annotation</a> | <a href="#Coded">Coded</a> | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignedLanguage">SignedLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#MaterialSelectionCriteria">MaterialSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#FullText">FullText</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#Oratory">Oratory</a> | <a href="#Gestural">Gestural</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#SelfAuthorization">SelfAuthorization</a> | <a href="#AccessControlList">AccessControlList</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#OpenAccess">OpenAccess</a>
+<a href="#Annotation">Annotation</a> | <a href="#DerivedMaterial">DerivedMaterial</a> | <a href="#Dialogue">Dialogue</a> | <a href="#Drama">Drama</a> | <a href="#ElicitationTask">ElicitationTask</a> | <a href="#Formulaic">Formulaic</a> | <a href="#Gesture">Gesture</a> | <a href="#Handwritten">Handwritten</a> | <a href="#Informational">Informational</a> | <a href="#Interview">Interview</a> | <a href="#Lexicon">Lexicon</a> | <a href="#Ludic">Ludic</a> | <a href="#Narrative">Narrative</a> | <a href="#Orthographic">Orthographic</a> | <a href="#PartOfSpeech">PartOfSpeech</a> | <a href="#Phonemic">Phonemic</a> | <a href="#Phonetic">Phonetic</a> | <a href="#Phonological">Phonological</a> | <a href="#PrimaryMaterial">PrimaryMaterial</a> | <a href="#Procedural">Procedural</a> | <a href="#Prosodic">Prosodic</a> | <a href="#Report">Report</a> | <a href="#Semantic">Semantic</a> | <a href="#Session">Session</a> | <a href="#SignedLanguage">SignedLanguage</a> | <a href="#Song">Song</a> | <a href="#SpokenLanguage">SpokenLanguage</a> | <a href="#Syntactic">Syntactic</a> | <a href="#MaterialSelectionCriteria">MaterialSelectionCriteria</a> | <a href="#Thesaurus">Thesaurus</a> | <a href="#Transcription">Transcription</a> | <a href="#Translation">Translation</a> | <a href="#Typeset">Typeset</a> | <a href="#Typewritten">Typewritten</a> | <a href="#WrittenLanguage">WrittenLanguage</a> | <a href="#FullText">FullText</a> | <a href="#WhistledLanguage">WhistledLanguage</a> | <a href="#Oratory">Oratory</a> | <a href="#Gestural">Gestural</a> | <a href="#AgreeToTerms">AgreeToTerms</a> | <a href="#AuthorizationByApplication">AuthorizationByApplication</a> | <a href="#AuthorizationByInvitation">AuthorizationByInvitation</a> | <a href="#SelfAuthorization">SelfAuthorization</a> | <a href="#AccessControlList">AccessControlList</a> | <a href="#AuthorizedAccess">AuthorizedAccess</a> | <a href="#OpenAccess">OpenAccess</a>
 
 
 
@@ -75,19 +75,6 @@ A set of DefinedTerms for access authorization mechanisms - some of these may be
 ### Has defined terms:
 
 [<a href='#AgreeToTerms'> AgreeToTerms </a>] | [<a href='#AuthorizationByApplication'> AuthorizationByApplication </a>] | [<a href='#AuthorizationByInvitation'> AuthorizationByInvitation </a>] | [<a href='#SelfAuthorization'> SelfAuthorization </a>] | [<a href='#AccessControlList'> AccessControlList </a>] | 
-
-</div><br>
-<a href="#top">Top of page</a>
-
-<div id="Coded"  style="border-style: solid">
-
-## Defined Term: Coded (https://w3id.org/ldac/terms#Coded)
-
-The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet).
-
-### Is an expected value for the following property:
-
-[<a href='#communicationMode'> communicationMode </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -168,7 +155,7 @@ A set of expected values for the property communicationMode.
 
 ### Has defined terms:
 
-[<a href='#Coded'> Coded </a>] | [<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
+[<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
 
 </div><br>
 <a href="#top">Top of page</a>
@@ -876,7 +863,7 @@ When a license has an authorizationWorkflow property with a value of the Defined
 
 ## Property: age (https://w3id.org/ldac/terms#age)
 
-The age of a person. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included.
+The age or age range of a person, e.g. 25, 30-50, >50. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included.
 
 ### Values expected to be one of these types: 
 
@@ -1105,7 +1092,7 @@ The mode (spoken, written, signed etc.) of this resource. There may be more than
 
 ## Values expected to be one of these defined terms: 
 
-[<a href='#Coded'> Coded </a>] | [<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
+[<a href='#Gesture'> Gesture </a>] | [<a href='#SignedLanguage'> SignedLanguage </a>] | [<a href='#Song'> Song </a>] | [<a href='#SpokenLanguage'> SpokenLanguage </a>] | [<a href='#WhistledLanguage'> WhistledLanguage </a>] | [<a href='#WrittenLanguage'> WrittenLanguage </a>] | 
 
 
 
@@ -1744,6 +1731,29 @@ One or more public index types allowed by a license, e.g. FullText indexing may 
 ## Values expected to be one of these defined terms: 
 
 [<a href='#FullText'> FullText </a>] | 
+
+
+
+
+
+</div><br>
+<a href="#top">Top of page</a>
+
+<div id="orthographicNotes"  style="border-style: solid">
+
+## Property: orthographicNotes (https://w3id.org/ldac/terms#orthographicNotes)
+
+A description of the specific orthographic writing system(s) used in the material (e.g. Latin, Cyrillic, Australian English, IPA), or particular conventions required to understand the material (e.g. O* = ø).
+
+### Values expected to be one of these types: 
+
+[<a href='http://schema.org/Text'> http://schema.org/Text </a>] | 
+
+
+
+### Used on these types: 
+
+[<a href='http://schema.org/CreativeWork'> http://schema.org/CreativeWork </a>] | 
 
 
 

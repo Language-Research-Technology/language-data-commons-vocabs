@@ -79,9 +79,6 @@
           "@id": "https://w3id.org/ldac/terms#AuthorizationWorkflows"
         },
         {
-          "@id": "https://w3id.org/ldac/terms#Coded"
-        },
-        {
           "@id": "https://w3id.org/ldac/terms#CollectionEvent"
         },
         {
@@ -328,6 +325,9 @@
           "@id": "https://w3id.org/ldac/terms#openAccessIndex"
         },
         {
+          "@id": "https://w3id.org/ldac/terms#orthographicNotes"
+        },
+        {
           "@id": "https://w3id.org/ldac/terms#participant"
         },
         {
@@ -463,15 +463,6 @@
       "rdfs:label": "Annotation",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/CreativeWork"
-      }
-    },
-    {
-      "@id": "https://w3id.org/ldac/terms#Coded",
-      "@type": "DefinedTerm",
-      "name": "Coded",
-      "description": "The resource contains an analysis or annotations represented by a code (such as the International Phonetic Alphabet).",
-      "inDefinedTermSet": {
-        "@id": "https://w3id.org/ldac/terms#CommunicationModeTerms"
       }
     },
     {
@@ -942,7 +933,7 @@
       "@type": "rdf:Property",
       "name": "age",
       "rdfs:label": "age",
-      "rdfs:comment": "The age of a person. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included.",
+      "rdfs:comment": "The age or age range of a person, e.g. 25, 30-50, >50. If an age is specified, a specializationOf pointing to a 'canonical' ageless version of that Person can also be included.",
       "domainIncludes": {
         "@id": "http://schema.org/Person"
       },
@@ -1419,6 +1410,19 @@
       }
     },
     {
+      "@id": "https://w3id.org/ldac/terms#orthographicNotes",
+      "@type": "rdf:Property",
+      "name": "orthographicNotes",
+      "rdfs:label": "orthographicNotes",
+      "rdfs:comment": "A description of the specific orthographic writing system(s) used in the material (e.g. Latin, Cyrillic, Australian English, IPA), or particular conventions required to understand the material (e.g. O* = ø).",
+      "domainIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      }
+    },
+    {
       "@id": "https://w3id.org/ldac/terms#participant",
       "@type": "rdf:Property",
       "name": "participant",
@@ -1779,9 +1783,6 @@
       "name": "CommunicationModeTerms",
       "description": "A set of expected values for the property communicationMode.",
       "hasDefinedTerm": [
-        {
-          "@id": "https://w3id.org/ldac/terms#Coded"
-        },
         {
           "@id": "https://w3id.org/ldac/terms#Gesture"
         },
