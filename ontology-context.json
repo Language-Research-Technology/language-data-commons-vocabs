@@ -40,6 +40,7 @@
     "material": "https://w3id.org/ldac/terms#material",
     "materialType": "https://w3id.org/ldac/terms#materialType",
     "openAccessIndex": "https://w3id.org/ldac/terms#openAccessIndex",
+    "orthographicNotes": "https://w3id.org/ldac/terms#orthographicNotes",
     "participant": "https://w3id.org/ldac/terms#participant",
     "performer": "https://w3id.org/ldac/terms#performer",
     "photographer": "https://w3id.org/ldac/terms#photographer",
